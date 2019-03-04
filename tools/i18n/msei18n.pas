@@ -29,10 +29,13 @@ uses
   mseconsts_de,mseconsts_es,mseconsts_zh,mseconsts_id,
   main,messagesform,project;
 
+{$ifdef mse_i18n}
 var
   MSELang,MSEFallbacklang:string;
+{$endif}
 
 begin
+{$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
  //Ukrainian, Belarusian, Bashkir
  if (MSEFallbackLang='uk') or (MSEFallbackLang='be') or (MSEFallbackLang='ba')
@@ -45,6 +48,8 @@ begin
                                                 then MSEFallbackLang:='ru';
  If loadlangunit('i18n_'+MSEFallbackLang,true) then
                                                 setlangconsts(MSEFallbackLang);
+ 
+{$endif}                                               
  application.createForm(tmainfo,mainfo);
  application.createForm(tmessagesfo,messagesfo);
  application.run;
