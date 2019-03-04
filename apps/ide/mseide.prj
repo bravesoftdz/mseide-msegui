@@ -19,6 +19,57 @@ order16=0
 [projectoptions]
 projectdir=/home/fred/mseguinew/mseide-msegui/apps/ide
 projectfilename=/home/fred/mseguinew/mseide-msegui/apps/ide/mseide.prj
+findinfiledialog=41
+ [findinfileadialogfo.subdirs]
+ value=1
+ [findinfileadialogfo.incurrentfile]
+ value=0
+ [findinfileadialogfo.inopenfiles]
+ value=0
+ [findinfileadialogfo.wholeword]
+ value=0
+ [findinfileadialogfo.inprojectdir]
+ value=0
+ [findinfileadialogfo.casesensitive]
+ value=0
+ [findinfileadialogfo.indirectories]
+ value=1
+ [findinfileadialogfo.mask]
+ value="*.pas" "*.pp" "*.inc"
+ history=1
+  "*.pas" "*.pp" "*.inc"
+ [findinfileadialogfo.dir]
+ filenames=1
+  /home/fred/mseguinew/mseide-msegui/
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ filehistory=1
+  /home/fred/mseguinew/mseide-msegui/
+ filefilterindex=0
+ filefilter="*.pas" "*.pp" "*.inc"
+ [findinfileadialogfo.findtext]
+ value=i18n_
+ history=2
+  i18n_
+  
+ [findinfileadialogfo]
+ stackedunder=
+ x=268
+ y=415
+ cx=339
+ cy=275
+finddialog=8
+ [finddialogfo.selectedonly]
+ value=0
+ [finddialogfo]
+ stackedunder=
+ x=319
+ y=205
+ cx=312
+ cy=114
 options=114
  [projectoptionsfo.toolshortcuts]
  dropdowncolwidths=3
@@ -106,7 +157,7 @@ options=114
  value=
  [projectoptionsfo.makegroupbox]
  firsttab=0
- index=2
+ index=0
  [projectoptionsfo.exceptionsgrid]
  propcolwidthref=790
  width0=47
@@ -699,31 +750,36 @@ progparamhistory=0
 workdirparamhistory=0
 envvarons=0
 [edit]
-hintwidth=0
-hintheight=0
+hintwidth=314
+hintheight=214
 finddtext=
 findhistory=0
 findoptions=1
-editpos=4
- 0,9
+editpos=5
  0,0
  0,0
- 0,62
+ 0,0
+ 0,69
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
 bookmarks3=0
-sourcefiles=4
+bookmarks4=0
+sourcefiles=5
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/sourceform.pas
  ${PROJECTDIR}/actionsmodule.pas
  ${PROJECTDIR}/mseide.pas
-relpaths=4
+ /home/fred/mseguinew/mseide-msegui/tools/i18n/msei18n.pas
+relpaths=5
  main.pas
  sourceform.pas
  actionsmodule.pas
  mseide.pas
-ismoduletexts=4
+ tools/i18n/msei18n.pas
+ismoduletexts=5
+ 0
  0
  0
  0
@@ -745,15 +801,10 @@ nomenumodules=3
  0
  0
 [sourcefo.files_tab]
-order=4
- 0
- 3
- 1
- 2
 firsttab=0
-index=1
+index=3
 [layout]
-windowlayout=554
+windowlayout=550
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -861,7 +912,7 @@ windowlayout=554
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=targetconsolefo
  parent=
  mdistate=0
  nx=0
@@ -979,7 +1030,7 @@ windowlayout=554
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_actionsmo_mse_
+ stackedunder=findinfilefo
  parent=
  mdistate=0
  nx=0
@@ -1205,8 +1256,8 @@ windowlayout=554
  mdistate=0
  nx=0
  ny=0
- ncx=1111
- ncy=52
+ ncx=1147
+ ncy=54
  x=0
  y=0
  cx=1147
@@ -1221,8 +1272,9 @@ windowlayout=554
  value=Pascal
  [debuggerfo.file_history]
  value=/home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
- history=3
+ history=4
   /home/fred/mseguinew/mseide-msegui/apps/ide/sourceform.pas
+  /home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
   /home/fred/mseguinew/mseide-msegui/apps/ide/actionsmodule.pas
   ${PROJECTDIR}/main.pas
  [debuggerfo.project_options]
@@ -1246,13 +1298,8 @@ windowlayout=554
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=4
-  0
-  3
-  1
-  2
  firsttab=0
- index=1
+ index=3
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1292,7 +1339,7 @@ windowlayout=554
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo
+ stackedunder=_mse_actionsmo_mse_
  parent=
  mdistate=0
  nx=0
