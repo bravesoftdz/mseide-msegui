@@ -1,0 +1,3284 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mseide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
+"PO-Revision-Date: 2019-03-05 00:06+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Russian (https://www.transifex.com/Magic/teams/44238/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "Watchpoints"
+msgstr "Наблюдения"
+
+msgid "on"
+msgstr "вкл"
+
+msgid "Kind"
+msgstr "Тип"
+
+msgid "Expression"
+msgstr "Выражение"
+
+msgid "Count"
+msgstr "Кол-во"
+
+msgid "Ignore"
+msgstr "Игнорировать"
+
+msgid "Condition"
+msgstr "Состояние"
+
+msgid "Delete all"
+msgstr "Удалить все"
+
+msgid "Watchpoint error."
+msgstr "Ошибка установки наблюдения."
+
+msgid "WATCHPOINT ERROR"
+msgstr "Ошибка установки наблюдения"
+
+msgid "Program not loaded."
+msgstr "Программа не загружена."
+
+msgid "Do you wish to delete all watchpoints?"
+msgstr "Вы хотите удалить все наблюдения?"
+
+msgid "Confirmation"
+msgstr "Подтверждение"
+
+msgid "Watches"
+msgstr "Наблюдения"
+
+msgid "Active"
+msgstr "Активный"
+
+msgid "Expressions starting with # are treated as gdb commands"
+msgstr "Выражения, начинающиеся с #, рассматриваются как команды GDB"
+
+msgid "Result"
+msgstr "Результат"
+
+msgid ""
+"Display format\n"
+"B = Binary\n"
+"D = Decimal signed\n"
+"U = Decimal unsigned\n"
+"H = Hex"
+msgstr ""
+"Формат вывода\n"
+"B = Двоичный\n"
+"D = Десятичный со знаком\n"
+"U = Десятичный без знака\n"
+"H = Шестнадцатеричный"
+
+msgid "Watches &on"
+msgstr "Включить &наблюдения"
+
+msgid "Add Watchpoint"
+msgstr "Добавить наблюдение"
+
+msgid "Address Watchpoint 8"
+msgstr "Адрес наблюдения размер 8 бит"
+
+msgid "Address Watchpoint 16"
+msgstr "Адрес наблюдения размер 16 бит"
+
+msgid "Address Watchpoint 32"
+msgstr "Адрес наблюдения размер 32 бит"
+
+msgid "Address Watchpoint 64"
+msgstr "Адрес наблюдения размер 64 бит"
+
+msgid "&Format default"
+msgstr "&Формат по умолчанию"
+
+msgid "&Binary"
+msgstr "&Двоичный"
+
+msgid "D&ecimal signed"
+msgstr "&Десятичный со знаком"
+
+msgid "Decimal &unsigned"
+msgstr "&Десятичный без знака"
+
+msgid "&Hex"
+msgstr "&Шестнадцатеричный"
+
+msgid "&Size default"
+msgstr "&Размер по умолчанию"
+
+msgid "&8 Bit"
+msgstr "&8 Бит"
+
+msgid "&16 Bit"
+msgstr "&16 Бит"
+
+msgid "&32 Bit"
+msgstr "&32 Бит"
+
+msgid "&64 Bit"
+msgstr "&64 Бит"
+
+msgid "&Reset Formats"
+msgstr "&Сбросить форматы"
+
+msgid "Do you wish to delete all watches?"
+msgstr "Вы хотите удалить все наблюдения?"
+
+msgid "<disabled>"
+msgstr "<неактивный>"
+
+msgid "Threads"
+msgstr "Потоки"
+
+msgid "State"
+msgstr "Состояние"
+
+msgid "Location"
+msgstr "Местоположение"
+
+msgid "Copy to Clipboard"
+msgstr "Копировать в буфер обмена"
+
+msgid "*active*"
+msgstr "*активный*"
+
+msgid "unknown"
+msgstr "неизвестный"
+
+msgid "Code Template Editor"
+msgstr "Редактор шаблонов кода"
+
+msgid "&OK"
+msgstr "&ОК"
+
+msgid "&Cancel"
+msgstr "О&тмена"
+
+msgid "&Name"
+msgstr "&Имя"
+
+msgid "C&omment"
+msgstr "&Комментарий"
+
+msgid "&Parameter"
+msgstr "&Параметр"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Default Value"
+msgstr "Значение по умолчанию"
+
+msgid "Cursor"
+msgstr "Курсор"
+
+msgid "Col"
+msgstr "Кол-ка"
+
+msgid "Row"
+msgstr "Строка"
+
+msgid "&Set Cursor"
+msgstr "&Уст.курсор"
+
+msgid "&select"
+msgstr "&выб"
+
+msgid "&indent"
+msgstr "&сдвиг вправо"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Filename"
+msgstr "Файл"
+
+msgid "Code Temlate Files"
+msgstr "Файлы с кодами шаблонов"
+
+msgid "Do you want to delete \""
+msgstr "Вы хотите удалить \""
+
+msgid "has been added to 'Project'-'Options'-'Editor'-'Code Templates'."
+msgstr "добавлен к Проект -> Опции -> Редактор -> Шаблоны кода."
+
+msgid "Target Console"
+msgstr "Консоль вывода из собранной программы"
+
+msgid "&Clear"
+msgstr "&Очистить"
+
+msgid "Symbols"
+msgstr "Символы"
+
+msgid "Symbol"
+msgstr "Символ"
+
+msgid "Address"
+msgstr "Адрес"
+
+msgid "Info"
+msgstr "Информация"
+
+msgid "GDB not active."
+msgstr "Отладчик GDB не активен."
+
+msgid "Do you wish to delete all symbols?"
+msgstr "Вы хотите удалить все символы?"
+
+msgid "&File"
+msgstr "&Файл"
+
+msgid "Component File"
+msgstr "Файл с компонентом"
+
+msgid "All Files"
+msgstr "Все файлы"
+
+msgid "&Description"
+msgstr "&Описание"
+
+msgid "Stack"
+msgstr "Стек"
+
+msgid "Source"
+msgstr "Исходник"
+
+msgid "<none>"
+msgstr "<пусто>"
+
+msgid "Step back in code navigation"
+msgstr "Шаг назад при навигации в коде"
+
+msgid "Step forward in code navigation"
+msgstr "Шаг вперёд при навигации в коде"
+
+msgid "Select Page"
+msgstr "Выбор страницы"
+
+msgid "&Open File"
+msgstr "&Открыть файл"
+
+msgid "&Close File"
+msgstr "&Закрыть файл"
+
+msgid "&Save File"
+msgstr "&Сохранить файл"
+
+msgid "Show as Form"
+msgstr "Показать как форму"
+
+msgid "Convert to &Pascal string"
+msgstr "Конвертировать в строку &Pascal"
+
+msgid "&Modify Selection"
+msgstr "&Изменить выделение"
+
+msgid "&Edit breakpoint"
+msgstr "&Редактировать точку останова"
+
+msgid "Add &Watch at Cursor"
+msgstr "Добавить &наблюдение на позиции курсора"
+
+msgid "Set Bookmark"
+msgstr "Установить закладку"
+
+msgid "Find Bookmark"
+msgstr "Найти закладку"
+
+msgid "Insert GUID"
+msgstr "Вставить GUID"
+
+msgid "Insert UID"
+msgstr "Вставить UID"
+
+msgid "Insert Template"
+msgstr "Вставить шаблон"
+
+msgid "Complete Class at Cursor"
+msgstr "Завершить класс на позиции курсора"
+
+msgid "Complete class at cursor"
+msgstr "Завершить класс на позиции курсора"
+
+msgid "File \""
+msgstr "Файл \""
+
+msgid "\" has changed."
+msgstr "\" изменился."
+
+msgid "There are modifications in edit buffer also."
+msgstr "Также есть изменения в буфере редактирования."
+
+msgid "Do you wish to reload from disk?"
+msgstr "Вы хотите заменить данными с диска?"
+
+msgid "Do you wish to replace:"
+msgstr "Вы хотите заменить:"
+
+msgid "with:"
+msgstr "на:"
+
+msgid "<new>"
+msgstr "<новый>"
+
+msgid "Syntaxdeffile:"
+msgstr "Файл синтаксического определения:"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "not found."
+msgstr "не найден."
+
+msgid "Restart from begin of file?"
+msgstr "Начать вновь с начала файла?"
+
+msgid "Cancel?"
+msgstr "Отменить?"
+
+msgid "Do you wish to to replace this occurence?"
+msgstr "Вы хотите выполнить замену в этом месте?"
+
+msgid "Go to line number:"
+msgstr "Перейти на строку с номером:"
+
+msgid "Find line"
+msgstr "Найти строку"
+
+msgid "Restart from end of file?"
+msgstr "Перезапустить с конца файла?"
+
+msgid "Set Tab Order"
+msgstr "Установить порядок обхода по Tab"
+
+msgid "OK"
+msgstr "ОК"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "&Start"
+msgstr "&Старт"
+
+msgid "St&op"
+msgstr "С&топ"
+
+msgid "Mouse click"
+msgstr "Щелчок мышью"
+
+msgid "Class"
+msgstr "Класс"
+
+msgid "Order"
+msgstr "Порядок"
+
+msgid "Set Component create Order of"
+msgstr "Установить порядок создания для компонента"
+
+msgid "Select subform"
+msgstr "Выбрать встраиваемую форму"
+
+msgid "Select edit page (Ctrl+E)"
+msgstr "Выбрать редактируемую страницу (Ctrl+E)"
+
+msgid "&Open"
+msgstr "&Открыть"
+
+msgid "0.0mm"
+msgstr "0.0мм"
+
+msgid "Show objectinspector"
+msgstr "Показать инспектор объектов"
+
+msgid "Show componentpalette"
+msgstr "Показать палитру компонентов"
+
+msgid "Show as Text"
+msgstr "Показать как текст"
+
+msgid "Copy Component(s)"
+msgstr "Копировать компонент(ы)"
+
+msgid "Cut Component(s)"
+msgstr "Вырезать компонент(ы)"
+
+msgid "Paste Component(s)"
+msgstr "Вставить компонент(ы)"
+
+msgid "Delete Component(s)"
+msgstr "Удалить компонент(ы)"
+
+msgid "Undelete Component(s)"
+msgstr "Восстановить удалённый компонент(ы)"
+
+msgid "Select Childwidget"
+msgstr "Выбрать встроенный визуальный компонент"
+
+msgid "Edit Component"
+msgstr "Редактировать компонент"
+
+msgid "Bring to Front"
+msgstr "Переместить на передний план"
+
+msgid "Send to Back"
+msgstr "Переместить на задний план"
+
+msgid "Iconify"
+msgstr "Свернуть"
+
+msgid "Deiconify"
+msgstr "Развернуть"
+
+msgid "Set Creation Order"
+msgstr "Установить порядок создания"
+
+msgid "Sync. to Font Height"
+msgstr "Подстроиться к высоте шрифта"
+
+msgid "Revert to inherited"
+msgstr "Вернуть в унаследованное состояние"
+
+msgid "Touch Form"
+msgstr "Создать форму"
+
+msgid "Add report page"
+msgstr "Добавить страницу к отчёту"
+
+msgid "Delete report page"
+msgstr "Удалить страницу из отчёта"
+
+msgid "Do you wish to delete"
+msgstr "Вы хотите удалить"
+
+msgid "WARNING"
+msgstr "Предупреждение"
+
+msgid "Find and Replace Text"
+msgstr "Найти и заменить текст"
+
+msgid "Text to &find"
+msgstr "Текст для &поиска"
+
+msgid "&Replace with"
+msgstr "Заменит&ь на"
+
+msgid "&casesensitive"
+msgstr "&Уч. регистр"
+
+msgid "&whole word"
+msgstr "&Слово целиком"
+
+msgid "&Replace"
+msgstr "&Заменить"
+
+msgid "Replace &all"
+msgstr "Зам. &все"
+
+msgid "select&ed only"
+msgstr "&Выделенное"
+
+msgid "&prompt on rep."
+msgstr "Запрашивать перед за&меной"
+
+msgid "Project Tree"
+msgstr "Дерево проекта"
+
+msgid "&Add Unit"
+msgstr "&Добавить модуль"
+
+msgid "&Remove Unit"
+msgstr "&Удалить модуль"
+
+msgid "Add Text File"
+msgstr "Добавить текстовый файл"
+
+msgid "Remove Text File"
+msgstr "Удалить текстовый файл"
+
+msgid "Remove C-File"
+msgstr "Удалить C-файл"
+
+msgid "Add C-File"
+msgstr "Добавить C-файл"
+
+msgid "C-Source (*.c)"
+msgstr "C-исходник (*.c)"
+
+msgid "Add Directory"
+msgstr "Добавить директорию"
+
+msgid "Remove Directory"
+msgstr "Удалить директорию"
+
+msgid "Edit Directory Caption"
+msgstr "Редактировать название директории"
+
+msgid "Pascal Units"
+msgstr "Модули Pascal"
+
+msgid "C Modules"
+msgstr "Модули C"
+
+msgid "Text Files"
+msgstr "Текстовые файлы"
+
+msgid "Do you wish to remove \""
+msgstr "Вы хотите удалить \""
+
+msgid "Select Directory"
+msgstr "Выбор директории"
+
+msgid "Do you want to remove"
+msgstr "Вы хотите удалить"
+
+msgid "with the sub-items from project?"
+msgstr "со встроенными объектами из проекта?"
+
+msgid "Project Options"
+msgstr "Опции проекта"
+
+msgid "Ok"
+msgstr "ОК"
+
+msgid "&Editor"
+msgstr "&Редактор"
+
+msgid "File filter"
+msgstr "Фильтры по типам файла"
+
+msgid "File mask"
+msgstr "Маска имён файлов"
+
+msgid "Syntax definition files"
+msgstr "Файлы синтаксических определений"
+
+msgid "Syntax definition file"
+msgstr "Файл синтаксического определения"
+
+msgid "Syntaxdef files"
+msgstr "Файлы синтакс. определения"
+
+msgid "Code templates"
+msgstr "Шаблоны кода"
+
+msgid "Code template directories, file extension = .mct"
+msgstr "Директории с файлами шаблонов кода, расширение файла = .mct"
+
+msgid "Directory"
+msgstr "Директория"
+
+msgid "Add to object file search path"
+msgstr "Добавить путь поиска объектных файлов"
+
+msgid "Add to library search path"
+msgstr "Добавить путь поиска библиотек"
+
+msgid "Add to include file search path"
+msgstr "Добавить путь поиска включаемых файлов"
+
+msgid "Add to unit file search path"
+msgstr "Добавить путь поиска модулей"
+
+msgid "Use in Make 4"
+msgstr "Использовать при сборке 4"
+
+msgid "Use in Make 3"
+msgstr "Использовать при сборке 3"
+
+msgid "Use in Make 2"
+msgstr "Использовать при сборке 2"
+
+msgid "Use in Make 1"
+msgstr "Использовать при сборке 1"
+
+msgid "Use in Build"
+msgstr "Использовать при пересборке"
+
+msgid "Use in Make"
+msgstr "Использовать при сборке"
+
+msgid "Select unit directory"
+msgstr "Выбор директории с модулями"
+
+msgid "Test"
+msgstr "Тест"
+
+msgid "ExtSp"
+msgstr "Доп.проб."
+
+msgid "Extra space between lines"
+msgstr "Дополнительный пробел между строками"
+
+msgid "Width"
+msgstr "Шир."
+
+msgid "Height"
+msgstr "Выс."
+
+msgid "Font"
+msgstr "Шрифт"
+
+msgid "Color"
+msgstr "Цвет"
+
+msgid "Bk. Color"
+msgstr "Цвет фона"
+
+msgid "Anti aliased"
+msgstr "Отрисовка без зазубрин"
+
+msgid "Right margin line"
+msgstr "Рис-ть пр.границу"
+
+msgid "Line numbers"
+msgstr "Номера строк"
+
+msgid "Mark brackets"
+msgstr "Парные скобки"
+
+msgid "Mark pairwords"
+msgstr "Парные слова"
+
+msgid "Mark in syntax definition file defined word pairs."
+msgstr "Помечать в файле определения синтаксиса определённые пары слов."
+
+msgid ""
+"Mark\n"
+"color"
+msgstr ""
+"Помечать\n"
+"цветом"
+
+msgid ""
+"Background color of marked brackets and word pairs.\n"
+"Will be overridden by setting in syntax definition file.\n"
+"cl_none -> force none."
+msgstr ""
+"Цвет фона помеченных скобок и пар слов.\n"
+"Будет переопределено установкой в файле определения синтаксиса.\n"
+"cl_none -> не принудительно."
+
+msgid ""
+"Statement\n"
+"color"
+msgstr ""
+"Цвет\n"
+"Pascal"
+
+msgid ""
+"Background color of the active row while debugging.\n"
+"Will be overridden by setting in syntax definition file.\n"
+"cl_none -> force none."
+msgstr ""
+"Цвет фона активной строки при отладке.\n"
+"Будет переопределено установкой в файле определения синтаксиса.\n"
+"cl_none -> не принудительно."
+
+msgid ""
+"Scroll\n"
+"height"
+msgstr ""
+"Шаг\n"
+"прокрут."
+
+msgid ""
+"0 -> accelerated,\n"
+"-1 -> paged"
+msgstr ""
+"0 -> с ускорением на границах,\n"
+"-1 -> постранично"
+
+msgid "Characters"
+msgstr "Символы"
+
+msgid ""
+"Mark max\n"
+"rowcount"
+msgstr ""
+"Помечать максимальное\n"
+"кол-во строк"
+
+msgid "Space"
+msgstr "Пробел"
+
+msgid "Block Indent"
+msgstr "Сдвиг блока вправо"
+
+msgid "Auto indent"
+msgstr "Автоотступ"
+
+msgid "Tab"
+msgstr "Таб"
+
+msgid "Tabstops"
+msgstr "Таб-cтопы"
+
+msgid "Show tabs"
+msgstr "Отображать табы"
+
+msgid "Eolstyle"
+msgstr "Стиль конца строки"
+
+msgid "End of line style for writing. eol_default -> use original style."
+msgstr ""
+"Стиль конца строки для написания. eol_default -> использовать оригинальный "
+"стиль."
+
+msgid ""
+"Trim trailing\n"
+"whitespace\n"
+"on save"
+msgstr ""
+"Обрезать конечные\n"
+"пробелы\n"
+"при сохранении"
+
+msgid "Encoding"
+msgstr "Кодировка"
+
+msgid "Locale"
+msgstr "Локаль"
+
+msgid "Backup file count"
+msgstr "Кол-во файлов резервных копий"
+
+msgid "Form"
+msgstr "Форма"
+
+msgid "Component hints"
+msgstr "Подсказки компонентов"
+
+msgid "Docking"
+msgstr "Пристыкование"
+
+msgid "Move on first click"
+msgstr "Перемещать без предварительного выделения мышью"
+
+msgid "Grid size Y"
+msgstr "Сетка по Y"
+
+msgid "Grid size X"
+msgstr "Сетка по X"
+
+msgid "Snap to Grid"
+msgstr "Привязка к сетке"
+
+msgid ""
+"Hint:\n"
+"Use Ctrl + arrow keys to move selected components without grid snap,\n"
+"use Shift + arrow keys to resize selected components without grid snap."
+msgstr ""
+"Подсказка:\n"
+"Используйте Ctrl + клавиши-стрелки для перемещения выделенных компонентов без привязки к сетке,\n"
+"используйте Shift + клавиши-стрелки для изменения размера выделенных компонентов без привязки к сетке."
+
+msgid "Show Grid"
+msgstr "Показать сетку"
+
+msgid "&Debugger"
+msgstr "&Отладчик"
+
+msgid "&Debug command"
+msgstr "&Команда отладки"
+
+msgid "Debug &options"
+msgstr "&Опции отладчика"
+
+msgid "\"--tty DEVICE\" to set target terminal"
+msgstr "\"--tty DEVICE\" установить терминал вывода из собранной программы"
+
+msgid "Source &directories"
+msgstr "&Директории с файлами исходного кода"
+
+msgid "Select source directory"
+msgstr "Выбрать директорию с файлами исходного кода"
+
+msgid "Object &Base Directory (empty = Make Directory)"
+msgstr "Базовая директория &объекта (пусто = создать директорию)"
+
+msgid "Select source base directory"
+msgstr "Выбрать базовую директорию исходного кода"
+
+msgid "Defi&nes"
+msgstr "Pascal-&определения"
+
+msgid "Space separated defines for {$ifdef}"
+msgstr "Определения для {$ifdef}, разделённые пробелами"
+
+msgid "&Signals"
+msgstr "&Сигналы"
+
+msgid ".. to"
+msgstr ".. на"
+
+msgid "&Exceptions"
+msgstr "&Исключения"
+
+msgid "ignore"
+msgstr "Игнор."
+
+msgid "Exception class"
+msgstr "Класс исключений"
+
+msgid "&Target"
+msgstr "&Цель"
+
+msgid "Target connection"
+msgstr "Соединение с собранной программой"
+
+msgid "Before connect gdb script"
+msgstr "Сценарий перед подключением gdb"
+
+msgid "gdb Scripts"
+msgstr "Сценарии gdb"
+
+msgid "Before load gdb script"
+msgstr "Сценарий перед загрузкой gdb"
+
+msgid "Before run gdb script"
+msgstr "Сценарий перед запуском gdb"
+
+msgid "After connect gdb script"
+msgstr "Сценарий после подключения gdb"
+
+msgid "After load gdb script"
+msgstr "Сценарий после загрузки gdb"
+
+msgid "Processor"
+msgstr "Процессор"
+
+msgid "Simulator"
+msgstr "Имитатор"
+
+msgid "gdb download"
+msgstr "загрузка gdb"
+
+msgid ""
+"Always download\n"
+"before run"
+msgstr ""
+"Всегда загружать\n"
+"перед запуском"
+
+msgid "Startup BKPT"
+msgstr "Точка останова при запуске"
+
+msgid ""
+"Restart gdb\n"
+"before load"
+msgstr ""
+"Перезапускать gdb\n"
+"перед загрузкой"
+
+msgid "Start gdb server command attach target"
+msgstr ""
+"Запустить команду gdb сервера отладки: присоединиться к собранной программе"
+
+msgid "Start gdb server command run target"
+msgstr "Запустить команду gdb сервера отладки: запустить собранную программу"
+
+msgid "Download command"
+msgstr "Команда загрузки"
+
+msgid "Load Timeout"
+msgstr "Время ожидания загрузки"
+
+msgid "0.#sec"
+msgstr "0.#сек"
+
+msgid "Wait before connect"
+msgstr "Ждать перед соединением"
+
+msgid "Start once"
+msgstr "Запустить однократно"
+
+msgid "no wait for exit"
+msgstr "Не ждать выхода"
+
+msgid "TTY"
+msgstr "Консоль"
+
+msgid ""
+"&External\n"
+"Console"
+msgstr ""
+"&Внешняя\n"
+"консоль"
+
+msgid ""
+"Show &Cons.\n"
+"on Run"
+msgstr ""
+"Показывать &консоль\n"
+"при запуске"
+
+msgid "Show console on run"
+msgstr "Показывать консоль при запуске"
+
+msgid ""
+"&Stop\n"
+"on Excep."
+msgstr ""
+"&Остановить\n"
+"при исключении"
+
+msgid "Stop on exceptions"
+msgstr "Остановить при исключении"
+
+msgid ""
+"&Activate\n"
+"on Break"
+msgstr ""
+"&Активировать\n"
+"на прерывании"
+
+msgid ""
+"&Value\n"
+"Hints"
+msgstr ""
+"&Подсказки\n"
+"значений"
+
+msgid ""
+"Call GUI_DEBUGBEGIN/\n"
+"GUI_DEBUGEND"
+msgstr ""
+"Вызвать GUI_DEBUGBEGIN/\n"
+"GUI_DEBUGEND"
+
+msgid ""
+"Release mouse grab by target stop. gdb sometimes crashes with this option."
+msgstr ""
+"Освободить мышь при останове отлаживаемой программы. Отладчик gdb иногда "
+"отказывает с этой опцией."
+
+msgid ""
+"Set\n"
+"TT&Y"
+msgstr ""
+"Установить\n"
+"TT&Y"
+
+msgid ""
+"&Raise\n"
+"on Break"
+msgstr ""
+"&Повысить\n"
+"на прерывании"
+
+msgid ""
+"&FPC\n"
+"bugs"
+msgstr ""
+"&Баги\n"
+"FPC"
+
+msgid "Use workarounds for FPC/gdb bugs"
+msgstr "Использовать обходные пути для багов FPC/gdb"
+
+msgid "Debug &target (empty = make targetfile)"
+msgstr "Файл отлаживаемой про&граммы (пусто = файл собранной программы)"
+
+msgid "xterm command"
+msgstr "команда xterm"
+
+msgid "&Run command (empty = start debugger)"
+msgstr "&Команда запуска (пусто = запустить в отладчике)"
+
+msgid "&Make"
+msgstr "&Сборка"
+
+msgid "Default make col"
+msgstr "Колонка по умолчанию при сборке"
+
+msgid "M (Make)"
+msgstr "С (Сборка)"
+
+msgid "B (Build)"
+msgstr "П (Пересборка)"
+
+msgid "1 (Make 1)"
+msgstr "1 (Сборка варианта 1)"
+
+msgid "2 (Make 2)"
+msgstr "2 (Сборка варианта 2)"
+
+msgid "3 (Make 3)"
+msgstr "3 (Сборка варианта 3)"
+
+msgid "4 (Make 4)"
+msgstr "4 (Сборка варианта 4)"
+
+msgid "&Mainfile"
+msgstr "&Главный файл собираемой программы"
+
+msgid "Select mainfile"
+msgstr "Выбор главного файла собираемой программы"
+
+msgid "&Targetfile"
+msgstr "&Имя файла собранной программы"
+
+msgid "Select target file"
+msgstr "Выбор файла собранной программы"
+
+msgid "Make &Program"
+msgstr "Собрать &программу"
+
+msgid "Select make command"
+msgstr "Выбор команды сборки"
+
+msgid "Show command line"
+msgstr "Показать командную строку"
+
+msgid "Message &output file"
+msgstr "&Файл для вывода сообщений"
+
+msgid "Copy messages to &file"
+msgstr "Копировать сообщения в &файл"
+
+msgid "Close messages window after compile"
+msgstr "Закрыть окно сообщения после компиляции"
+
+msgid "Check method headers"
+msgstr "Проверять заголовки функций и процедур"
+
+msgid "Command before"
+msgstr "Команда до"
+
+msgid "Command"
+msgstr "Команда"
+
+msgid "Make options"
+msgstr "Опции сборки"
+
+msgid "After mainfile"
+msgstr "После главного файла"
+
+msgid "Command line options"
+msgstr "Опции командной строки"
+
+msgid "Directories"
+msgstr "Директории"
+
+msgid "Unit, include and library &directories"
+msgstr "Директории модулей, включаемых файлов и &библиотек"
+
+msgid "Obj pref. (-Fo)"
+msgstr "Объект (-Fo)"
+
+msgid "Lib pref.(-Fl)"
+msgstr "Библ-ка (-Fl)"
+
+msgid "Inc pref.(-Fi)"
+msgstr "Включ. (-Fi)"
+
+msgid "Unit pref.(-Fu)"
+msgstr "Модуль (-Fu)"
+
+msgid "Reverse directory order"
+msgstr "Обратный порядок каталогов"
+
+msgid "Command after"
+msgstr "Команда после"
+
+msgid "Targ. pref. (-o)"
+msgstr "Цель (-o)"
+
+msgid "Make &Directory"
+msgstr "&Директория"
+
+msgid "Select make directory"
+msgstr "Выбор директории для сборки"
+
+msgid "Error Color"
+msgstr "Цвет ошибки"
+
+msgid "Warning Color"
+msgstr "Цвет предупреждения"
+
+msgid "Note Color"
+msgstr "Цвет примечания"
+
+msgid "Strip ESC sequences"
+msgstr "Strip для ESC последовательности"
+
+msgid "M&acros"
+msgstr "&Макро-определения"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Active group"
+msgstr "Активная группа"
+
+msgid "&Font Alias"
+msgstr "&Псевдонимы шрифтов"
+
+msgid "Alias"
+msgstr "Псевдонимы"
+
+msgid "Font name"
+msgstr "Название шрифта"
+
+msgid "Options"
+msgstr "Опции"
+
+msgid "Xscale"
+msgstr "Масштаб по X"
+
+msgid "Ancestor"
+msgstr "Предок"
+
+msgid "User &Colors"
+msgstr "Пользовательские &цвета"
+
+msgid "Copy \"setcolormapvalue\" code to clipboard"
+msgstr "Копировать код \"setcolormapvalue\" в буфер обмена"
+
+msgid "Comment"
+msgstr "Комментарий"
+
+msgid "F&ormat Macros"
+msgstr "Ф&ормат макросов"
+
+msgid "Used by formatfloatmse() and formatdatetimemse()"
+msgstr "Используется formatfloatmse() и formatdatetimemse()"
+
+msgid "&Templates"
+msgstr "&Шаблоны"
+
+msgid "New Project"
+msgstr "Новый проект"
+
+msgid "Load file in editor"
+msgstr "Загрузить файл в редактор"
+
+msgid "Expand macros"
+msgstr "Расширить макро-определения"
+
+msgid "Copied Files"
+msgstr "Скопированные файлы"
+
+msgid "Destination"
+msgstr "Назначение"
+
+msgid "Script before copy"
+msgstr "Сценарий, выполняемый перед копированием"
+
+msgid "Script after copy"
+msgstr "Сценарий, выполняемый после копирования"
+
+msgid "New File"
+msgstr "Новый файл"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Ext"
+msgstr "Расш."
+
+msgid "New Form"
+msgstr "Новая форма"
+
+msgid "Inherited"
+msgstr "Унаследованный"
+
+msgid "Namebase"
+msgstr "База имён"
+
+msgid "Formsuffix"
+msgstr "Файл с исходным кодом"
+
+msgid "Source File"
+msgstr "Файл описания исх.кода"
+
+msgid "Form File"
+msgstr "Файл описания формы"
+
+msgid "Form Files"
+msgstr "Файлы описаний форм"
+
+msgid "Too&ls"
+msgstr "Инстр&ументы"
+
+msgid "Save files"
+msgstr "Сохранить файлы"
+
+msgid "Parse source"
+msgstr "Обработать исходный код"
+
+msgid "Hide console (win32 only)"
+msgstr "Скрыть консоль (только win32)"
+
+msgid "Show output in messages window"
+msgstr "Показывать вывод в окне сообщений"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Shortcut"
+msgstr "Гор.кл-ша"
+
+msgid ""
+"Select item from 'Settings'-'Configure MSEide'-'Shortcuts'\n"
+"'Tool 1'..'Tool 10'."
+msgstr ""
+"Выберите элемент из 'Настройки'->'Конфигурировать MSEide'->'Гор.кл-ши'\n"
+"'Инструмент 1'..'Инструмент 10'."
+
+msgid "Sc.Key"
+msgstr "Гор.клав."
+
+msgid "Shortcut key"
+msgstr "Горячая клавиша"
+
+msgid "Alt.Sc."
+msgstr "Альт.гор.кл-ша"
+
+msgid "Alternate shortcut key"
+msgstr "Альтернативная горячая клавиша"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "Parameters"
+msgstr "Параметры"
+
+msgid "Item"
+msgstr "Элемент"
+
+msgid "Tool 1"
+msgstr "Инструмент 1"
+
+msgid "Tool 2"
+msgstr "Инструмент 2"
+
+msgid "Tool 3"
+msgstr "Инструмент 3"
+
+msgid "Tool 4"
+msgstr "Инструмент 4"
+
+msgid "Tool 5"
+msgstr "Инструмент 5"
+
+msgid "Tool 6"
+msgstr "Инструмент 6"
+
+msgid "Tool 7"
+msgstr "Инструмент 7"
+
+msgid "Tool 8"
+msgstr "Инструмент 8"
+
+msgid "Tool 9"
+msgstr "Инструмент 9"
+
+msgid "Tool 10"
+msgstr "Инструмент 10"
+
+msgid "Alternate"
+msgstr "Альтернатива"
+
+msgid "&Storage"
+msgstr "&Хранилище"
+
+msgid "Editor"
+msgstr "Редактор"
+
+msgid "Auto load"
+msgstr "Автозагрузка"
+
+msgid "Auto save"
+msgstr "Автосохранение"
+
+msgid "Save"
+msgstr "Сохр-ть"
+
+msgid "Load"
+msgstr "Загр-ть"
+
+msgid "Settings File"
+msgstr "Файл с настройками"
+
+msgid "Project Files"
+msgstr "Файлы проектов"
+
+msgid "Enter Settings File"
+msgstr "Выберите имя файла с настройками"
+
+msgid "Debugger"
+msgstr "Отладчик"
+
+msgid "Storage"
+msgstr "Хранилище"
+
+msgid "Macros"
+msgstr "Макросы"
+
+msgid "Tools"
+msgstr "Инструменты"
+
+msgid "Templates"
+msgstr "Шаблоны"
+
+msgid "Component Store"
+msgstr "Хранилище компонентов"
+
+msgid "Window Layout"
+msgstr "Схема окон"
+
+msgid "Load/save settings"
+msgstr "Загрузить/сохранить настройки"
+
+msgid "Make"
+msgstr "Собрать"
+
+msgid "User Colors"
+msgstr "Пользовательские цвета"
+
+msgid "Format Macros"
+msgstr "Формат макросов"
+
+msgid "Font Alias"
+msgstr "Псевдонимы шрифтов"
+
+msgid "Wrong encoding can damage your source files."
+msgstr "Неверная кодировка может повредить ваши файлы с исходным текстом."
+
+msgid "Do you wish to set encoding to"
+msgstr "Вы хотите установить кодировку в"
+
+msgid "*** WARNING ***"
+msgstr "*** Предупреждение ***"
+
+msgid "Hangup"
+msgstr "Отключиться"
+
+msgid "Interrupt"
+msgstr "Прервать"
+
+msgid "Quit"
+msgstr "Выйти"
+
+msgid "Illegal instruction"
+msgstr "Неверная команда"
+
+msgid "Trace trap"
+msgstr "Остановка для трассировки"
+
+msgid "Abort"
+msgstr "Отменить"
+
+msgid "BUS error"
+msgstr "BUS-ошибка"
+
+msgid "Floating-point exception"
+msgstr "Исключение в операции с плавающей точкой"
+
+msgid "Kill"
+msgstr "Принудительно завершить"
+
+msgid "User-defined signal 1"
+msgstr "Послать пользовательский сигнал 1"
+
+msgid "Segmentation violation"
+msgstr "Попытка доступа к запрещённому сегменту памяти"
+
+msgid "User-defined signal 2"
+msgstr "Послать пользовательский сигнал 2"
+
+msgid "Broken pipe"
+msgstr "Межпрограммный канал разорван"
+
+msgid "Alarm clock"
+msgstr "Срабатывание \"будильника\""
+
+msgid "Termination"
+msgstr "Завершение"
+
+msgid "Stack fault"
+msgstr "Ошибка в стеке"
+
+msgid "Child status has changed"
+msgstr "Изменилось состояние дочернего процесса"
+
+msgid "Continue"
+msgstr "Продолжить"
+
+msgid "Stop, unblockable"
+msgstr "Остановить выполнение"
+
+msgid "Keyboard stop"
+msgstr "Остановка по команде от клавиатуры"
+
+msgid "Background read from tty"
+msgstr "Фоновое чтение из консоли"
+
+msgid "Background write to tty"
+msgstr "Фоновая запись в консоль"
+
+msgid "Urgent condition on socket"
+msgstr "Сетевое соединение требует срочной  реакции"
+
+msgid "CPU limit exceeded"
+msgstr "Превышен установленный для процессора лимит"
+
+msgid "File size limit exceeded"
+msgstr "Превышен лимит на размер файла"
+
+msgid "Virtual alarm clock"
+msgstr "Срабатывание виртуального \"будильника\""
+
+msgid "Profiling alarm clock"
+msgstr "Настройка \"будильника\""
+
+msgid "Window size change"
+msgstr "Изменение размера окна"
+
+msgid "I/O now possible"
+msgstr "Теперь можно осуществлять ввод/вывод"
+
+msgid "Power failure restart"
+msgstr "Перезапуск после восстановления электропитания"
+
+msgid "Target Environment"
+msgstr "Окружение выполнения собранной программы"
+
+msgid "&Working directory"
+msgstr "&Рабочая директория"
+
+msgid "Select program working directory"
+msgstr "Выбор рабочей директории собранной программы"
+
+msgid "&Parameters"
+msgstr "&Параметры"
+
+msgid "Environment variables"
+msgstr "Переменные окружения"
+
+msgid "Print File"
+msgstr "Распечатать файл"
+
+msgid "&Ok"
+msgstr "&ОК"
+
+msgid ""
+"Print line\n"
+"&numbers"
+msgstr ""
+"Печатать\n"
+"&№ строк"
+
+msgid "Font &size (Pt)"
+msgstr "&Размер шрифта (Pt)"
+
+msgid "&Title font"
+msgstr "&Шрифт заголовка"
+
+msgid "So&urce font"
+msgstr "&Шрифт исходного кода"
+
+msgid "&Color"
+msgstr "&Цвет"
+
+msgid "Paper size"
+msgstr "Раз-р бумаги"
+
+msgid "Paper orientation"
+msgstr "Ориентация"
+
+msgid "Rotate CCW"
+msgstr "Повернуть против часовой стрелки"
+
+msgid "Pages"
+msgstr "Страницы"
+
+msgid "Page"
+msgstr "Страница"
+
+msgid "Do you wish to cancel printing?"
+msgstr "Вы хотите отменить печать?"
+
+msgid "Mainwindow"
+msgstr "Главное окно"
+
+msgid "Objectinspector"
+msgstr "Инспектор объектов"
+
+msgid "Object Inspector"
+msgstr "Инспектор объектов"
+
+msgid "Show component editor."
+msgstr "Показать редактор компонентов"
+
+msgid "Collapse tree"
+msgstr "Свернуть все ветви дерева"
+
+msgid "Clear Selection"
+msgstr "Очистить выделенное"
+
+msgid "Select Code Template"
+msgstr "Выбрать шаблон кода"
+
+msgid "Par1"
+msgstr "Пар1"
+
+msgid "Par2"
+msgstr "Пар2"
+
+msgid "Par3"
+msgstr "Пар3"
+
+msgid "Par4"
+msgstr "Пар4"
+
+msgid "Macro"
+msgstr "Макро-определение"
+
+msgid "comment"
+msgstr "комментарий"
+
+msgid "Code Template \""
+msgstr "Шаблон кода \""
+
+msgid "Select Component"
+msgstr "Выбрать компонент"
+
+msgid "Messages"
+msgstr "Сообщения"
+
+msgid "Copy to clipboard"
+msgstr "Копировать в буфер обмена"
+
+msgid "Memory"
+msgstr "Содержимое памяти"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Memory &on"
+msgstr "&Включить отслеживание содержимого памяти"
+
+msgid "&Mainform"
+msgstr "&Главная форма"
+
+msgid "&Simple Form"
+msgstr "&Простая форма"
+
+msgid "&Docking Form"
+msgstr "&Пристыкуемая форма"
+
+msgid "D&atamodule"
+msgstr "&Модуль данных"
+
+msgid "S&ubform"
+msgstr "&Встраиваемая форма"
+
+msgid "&Report"
+msgstr "&Отчёт"
+
+msgid "S&criptform"
+msgstr "&Форма со сценариями"
+
+msgid "&Inherited"
+msgstr "&Наследуемый(ая)"
+
+msgid "&Form"
+msgstr "&Форма"
+
+msgid "&New"
+msgstr "&Новый(ая)"
+
+msgid "E&xit"
+msgstr "&Выход"
+
+msgid "Find &Component"
+msgstr "Найти &компонент"
+
+msgid "&Search"
+msgstr "&Найти"
+
+msgid "&Edit"
+msgstr "&Правка"
+
+msgid "En&vironment"
+msgstr "&Окружение"
+
+msgid "Restart Debugger"
+msgstr "Перезапустить отладчик"
+
+msgid "&New Panel"
+msgstr "&Новая панель"
+
+msgid "Pan&els"
+msgstr "&Панели"
+
+msgid "Load Wi&ndow Layout"
+msgstr "Загрузить &схему окон"
+
+msgid "Component &Palette"
+msgstr "П&алитра компонентов"
+
+msgid "Component Sto&re"
+msgstr "&Хранилище компонентов"
+
+msgid "Object &Inspector"
+msgstr "Инсп&ектор объектов"
+
+msgid "So&urce"
+msgstr "&Исходный код"
+
+msgid "&Messages"
+msgstr "Сооб&щения"
+
+msgid "&Find Results"
+msgstr "Иска&ть результаты"
+
+msgid "Symbo&ls"
+msgstr "Символ&ы"
+
+msgid "&Watches"
+msgstr "&Наблюдения"
+
+msgid "&Stack"
+msgstr "&Стек"
+
+msgid "T&hreads"
+msgstr "Поток&и"
+
+msgid "&CPU"
+msgstr "Регистры про&цессора"
+
+msgid "&Assembler"
+msgstr "&Ассемблерный код"
+
+msgid "Memor&y"
+msgstr "Содержимое па&мяти"
+
+msgid "&Target Console"
+msgstr "Консол&ь вывода из собранной программы"
+
+msgid "&Breakpoints"
+msgstr "Точки остан&ова"
+
+msgid "Watchp&oints"
+msgstr "&Наблюдения"
+
+msgid "Toggle Form/Unit"
+msgstr "Переключить: дизайн формы/код формы"
+
+msgid "&View"
+msgstr "&Вид"
+
+msgid "&Build"
+msgstr "&Пересобрать"
+
+msgid "Make &1"
+msgstr "Собрать вариант &1"
+
+msgid "Make &2"
+msgstr "Собрать вариант &2"
+
+msgid "Make &3"
+msgstr "Собрать вариант &3"
+
+msgid "Make &4"
+msgstr "Собрать вариант &4"
+
+msgid "&Abort Make"
+msgstr "&Прервать сборку"
+
+msgid "From &Template"
+msgstr "Из &шаблона"
+
+msgid "From &Program"
+msgstr "Из &программы"
+
+msgid "&Empty"
+msgstr "Пуст&ой"
+
+msgid "Open copy"
+msgstr "Открыть копию"
+
+msgid "Save &as"
+msgstr "Со&хранить как"
+
+msgid "Save as copy"
+msgstr "Сохранить как копию"
+
+msgid "&Close"
+msgstr "&Закрыть"
+
+msgid "&Project"
+msgstr "П&роект"
+
+msgid "&About"
+msgstr "&Информация о MSEide"
+
+msgid "&Configure MSEide"
+msgstr "&Конфигурировать MSEide"
+
+msgid "Sett&ings"
+msgstr "Н&астройки"
+
+msgid "Open file"
+msgstr "Открыть файл"
+
+msgid "Save file as"
+msgstr "Сохранить файл как"
+
+msgid "Project files"
+msgstr "Файлы проекта"
+
+msgid "Open Project"
+msgstr "Открыть проект"
+
+msgid "Save Project"
+msgstr "Сохранить проект"
+
+msgid "Unresolved references in"
+msgstr "Ненайденные ссылки в"
+
+msgid "to"
+msgstr "на"
+
+msgid "Do you wish to search the formfile?"
+msgstr "Вы хотите найти этот файл описания формы?"
+
+msgid "Formfile for"
+msgstr "Файл описания формы для"
+
+msgid "Formfiles"
+msgstr "Файлы описаний форм"
+
+msgid "Recursive form hierarchy for \""
+msgstr "Рекурсия в иерархии форм для \""
+
+msgid "ERROR"
+msgstr "Ошибка"
+
+msgid "Classtype"
+msgstr "Тип класса"
+
+msgid "Project"
+msgstr "Проект"
+
+msgid "is modified. Save?"
+msgstr "модифицирован. Сохранить?"
+
+msgid "Unable to open file \""
+msgstr "Не удалось открыть файл \""
+
+msgid "*** Running ***"
+msgstr "*** Идёт запуск ***"
+
+msgid "Downloading"
+msgstr "Идёт загрузка"
+
+msgid "Downloaded"
+msgstr "Загружено"
+
+msgid "Start gdb server command \""
+msgstr "Команда запуска gdb сервера отладки \""
+
+msgid "\" running."
+msgstr "\" запущен(а)."
+
+msgid "Start gdb Server"
+msgstr "Запуск gdb сервера отладки"
+
+msgid "gdb server start error"
+msgstr "Ошибка запуска gdb сервера отладки"
+
+msgid "gdb server start canceled."
+msgstr "Запуск gdb сервера отладки отменён."
+
+msgid "Can not run start gdb command."
+msgstr "Не удалось запустить команду запуска gdb сервера отладки."
+
+msgid "Uploadcommand \""
+msgstr "Команда для загрузки \""
+
+msgid "Download ***ERROR***"
+msgstr "Загрузка ***Ошибка***"
+
+msgid "Download finished."
+msgstr "Загрузка завершена."
+
+msgid "Download canceled."
+msgstr "Загрузка отменена."
+
+msgid "\" not found."
+msgstr "\" не найден."
+
+msgid "\" exists."
+msgstr "\" существует."
+
+msgid "New"
+msgstr "Новый(ая)"
+
+msgid "Select ancestor"
+msgstr "Выбор предка"
+
+msgid "New form"
+msgstr "Новая форма"
+
+msgid "Pascal Files"
+msgstr "Файлы Pascal"
+
+msgid "new"
+msgstr "новый"
+
+msgid "Can not load Project \""
+msgstr "Не удалось загрузить проект \""
+
+msgid "Select project template"
+msgstr "Выбрать шаблон проекта"
+
+msgid "All files"
+msgstr "Все файлы"
+
+msgid "Select program file"
+msgstr "Выбор файла программы"
+
+msgid "Pascal program files"
+msgstr "Файлы Pascal-программ"
+
+msgid "C program files"
+msgstr "Файлы C-программ"
+
+msgid "Can not start process"
+msgstr "Не удаётся запустить процесс"
+
+msgid "Process"
+msgstr "Процесс"
+
+msgid "running"
+msgstr "выполняется"
+
+msgid "Process terminated. Exitcode: "
+msgstr "Процесс отработал. Код выхода: "
+
+msgid "Process terminated normally."
+msgstr "Процесс отработал штатно."
+
+msgid "Make ***ERROR***"
+msgstr "Сборка ***Ошибка***"
+
+msgid "Make OK."
+msgstr "Сборка успешна."
+
+msgid "Source has changed, do you wish to remake project?"
+msgstr "Исходный код был изменён, Вы хотите пересобрать проект?"
+
+msgid "Load Window Layout"
+msgstr "Загрузить схему окон"
+
+msgid "Docking Area"
+msgstr "Зона пристыкования"
+
+msgid "Open Form File"
+msgstr "Открыть файл описания формы"
+
+msgid ""
+"MSEide Copyright 1999-2015 by Martin Schreiber\n"
+"Usage: mseide [OPTION]... [PROJECTFILE]\n"
+"\n"
+"Options:"
+msgstr ""
+"MSEide Copyright 1999-2015, Martin Schreiber\n"
+"Использование: mseide [ОПЦИЯ]... [ФАЙЛ_ПРОЕКТА]\n"
+"\n"
+"Опции:"
+
+msgid ""
+"\n"
+"Environment variables\n"
+"FPCDIR, FPCLIBDIR, MSEDIR, MSELIBDIR\n"
+"SYNTAXDEFDIR, TEMPLATEDIR, COMPSTOREDIR\n"
+"COMPILER, DEBUGGER, EXEEXT,TARGET,TARGETOSDIR\n"
+"can be used to override the settings macros.\n"
+"\n"
+"Have a lot of fun!\n"
+"\n"
+"Martin"
+msgstr ""
+"\n"
+"Переменные окружения\n"
+"FPCDIR, FPCLIBDIR, MSEDIR, MSELIBDIR\n"
+"SYNTAXDEFDIR, TEMPLATEDIR, COMPSTOREDIR\n"
+"COMPILER, DEBUGGER, EXEEXT,TARGET,TARGETOSDIR\n"
+"могут быть использованы для переопределения макросов из настроек.\n"
+"\n"
+"Получайте удовольствие!\n"
+"\n"
+"Martin"
+
+msgid "Set path to global status file."
+msgstr "Установить путь к файлу глобального статуса."
+
+msgid ""
+"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.\n"
+" Example:\n"
+" --macrodef=MAC1,abc,MAC2,def"
+msgstr ""
+"Макро-определение может быть переопределено через 'Проект'->'Опции'->'Макрос'.\n"
+" Например:\n"
+" --macrodef=MAC1,abc,MAC2,def"
+
+msgid "Store --macrodef values as global macros and terminate MSEide. "
+msgstr ""
+"Сохранить значения --macrodef как глобальные макросы и прервать работу "
+"MSEide. "
+
+msgid ""
+"Use 'Project'-'Options'-'Macros'-'Active group' number <n>,\n"
+"<n> = 1..6."
+msgstr ""
+"Используйте 'Проект'->'Опции'->'Макросы'->'Активная группа' номер <n>,\n"
+"<n> = 1..6."
+
+msgid "Do not load a project."
+msgstr "Не загружать проект."
+
+msgid "Do not touch Z-order of the windows."
+msgstr "Не трогать Z-порядок окон."
+
+msgid "Do not use the NET_RESTACK_WINDOW protocol."
+msgstr "Не использовать протокол NET_RESTACK_WINDOW."
+
+msgid "Use the NET_RESTACK_WINDOW protocol."
+msgstr "Использовать протокол NET_RESTACK_WINDOW."
+
+msgid "Do not use xreconfigurewmwindow() for window stacking operation."
+msgstr ""
+"Не использовать xreconfigurewmwindow() для оперирования окна со стеком."
+
+msgid "Use xreconfigurewmwindow() for window stacking operation."
+msgstr "Использовать xreconfigurewmwindow() для оперирования окна со стеком."
+
+msgid ""
+"Necessarry for windowmanagers with buggy xreconfigurewmwindow() handling."
+msgstr "Необходимо для оконных менеджеров с багами в xreconfigurewmwindow()."
+
+msgid "No workaround."
+msgstr "Нет обходного решения."
+
+msgid ""
+"Use the top level frame window id instead of the application client window id\n"
+"for window raise operation. Implies --NORESTACKWINDOW and\n"
+" --NORECONFIGUREWMWINDOW."
+msgstr ""
+"Использовать id высокого уровня фрейма окна вместо id клиентского окна приложения для операции повышения окна. Включает --NORESTACKWINDOW и\n"
+" --NORECONFIGUREWMWINDOW."
+
+msgid "Find Component"
+msgstr "Найти компонент"
+
+msgid "&Iconify"
+msgstr "&Свернуть"
+
+msgid "&Deiconify"
+msgstr "&Развернуть"
+
+msgid "&Edit Component"
+msgstr "&Редактировать компонент"
+
+msgid "Set Widget Order"
+msgstr "Установить порядок виджетов"
+
+msgid "Touch all Forms"
+msgstr "Создать все формы"
+
+msgid "Insert Submodule"
+msgstr "Вставить встраиваемую форму"
+
+msgid "Insert Component"
+msgstr "Вставить компонент"
+
+msgid "Hide &Components"
+msgstr "Скрыть &компоненты"
+
+msgid "Hide &Widgets"
+msgstr "Скрыть &виджеты"
+
+msgid "&Hide Widgets<>Components"
+msgstr "&Скрыть виджеты<>Компоненты"
+
+msgid "&Show all"
+msgstr "&Показать все"
+
+msgid "Do you wish to revert to inherited"
+msgstr "Вы хотите вернуть в унаследованное состояние"
+
+msgid "the selected component?"
+msgstr "выбранный компонент?"
+
+msgid "Do you want to touch all loaded forms?"
+msgstr "Вы хотите создать все загруженные формы?"
+
+msgid "&again"
+msgstr "&снова"
+
+msgid "*** CANCELED ***"
+msgstr "*** Отменено ***"
+
+msgid "FINISHED"
+msgstr "Конец"
+
+msgid "Findresults"
+msgstr "Результаты поиска"
+
+msgid "Find in file results"
+msgstr "Найти результаты в файле"
+
+msgid "Find Text in Files"
+msgstr "Найти текст в файлах"
+
+msgid "&Text to find"
+msgstr "&Текст для поиска"
+
+msgid "&Directory"
+msgstr "Директори&я"
+
+msgid "&File Mask"
+msgstr "&Маска файлов"
+
+msgid "Search in &directories"
+msgstr "Поиск в &директориях"
+
+msgid "C&asesensitive"
+msgstr "С у&чётом регистра"
+
+msgid "Search in &project dir"
+msgstr "Поиск в &директории проекта"
+
+msgid "&Whole word"
+msgstr "&Слово целиком"
+
+msgid "Search in &open files"
+msgstr "Поиск во всех &открытых файлах"
+
+msgid "Search in &current file"
+msgstr "Поиск в &текущем файле"
+
+msgid "&Include subdirectories"
+msgstr "&Включая поддиректории"
+
+msgid "Find Text"
+msgstr "Найти текст"
+
+msgid "&backward"
+msgstr "&В обратном направлении"
+
+msgid "c&asesensitive"
+msgstr "С у&чётом регистра"
+
+msgid "&selected only"
+msgstr "&Только в выделенном"
+
+msgid "Assembler"
+msgstr "Ассемблер"
+
+msgid "Show &Breakpoint"
+msgstr "Показать &точку останова"
+
+msgid "Next instruction"
+msgstr "Шаг без захода (ассемблер)"
+
+msgid "Step instruction"
+msgstr "Шаг с заходом (ассемблер)"
+
+msgid "MEM"
+msgstr "Память"
+
+msgid "CPU &on"
+msgstr "CPU &вкл"
+
+msgid "yy-mm-dd hh:mm:ss"
+msgstr "год-месяц-день часы:минуты:секунды"
+
+msgid "Set global interrupt mask while stepping"
+msgstr "Установить глобальную маску прерывания при пошаговом выполнении"
+
+msgid "Check Exceptstack"
+msgstr "Проверить стек исключений"
+
+msgid "Return address:"
+msgstr "Адрес возврата:"
+
+msgid "Exception return"
+msgstr "Возврат на исключении"
+
+msgid "Sel"
+msgstr "Выб"
+
+msgid "Select item for inserting"
+msgstr "Выберите элемент для вставки"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "&Copy Component"
+msgstr "&Копировать компонент"
+
+msgid "&Paste Component(s)"
+msgstr "&Вставить компонент(ы)"
+
+msgid "&Copy Component(s)"
+msgstr "&Копировать компонент(ы)"
+
+msgid "Update Component(s)"
+msgstr "Обновить компонент(ы)"
+
+msgid "Remove Component(s)"
+msgstr "Удалить компонент(ы)"
+
+msgid "New  Node"
+msgstr "Новый узел"
+
+msgid "Remove Node"
+msgstr "Удалить узел"
+
+msgid "Copy Node"
+msgstr "Копировать узел"
+
+msgid "Paste Node"
+msgstr "Вставить узел"
+
+msgid "New Store"
+msgstr "Новое хранилище"
+
+msgid "Add Store"
+msgstr "Добавить хранилище"
+
+msgid "Remove Store"
+msgstr "Удалить хранилище"
+
+msgid "Open Store Group"
+msgstr "Открыть группу хранилищ"
+
+msgid "Save Store Group"
+msgstr "Сохранить группу хранилищ"
+
+msgid "Save Store Group as"
+msgstr "Сохранить группу хранилищ как"
+
+msgid "Component Stores"
+msgstr "Хранилища компонентов"
+
+msgid "Load Component Store"
+msgstr "Загрузить хранилище компонентов"
+
+msgid "New Component Store"
+msgstr "Новое хранилище компонентов"
+
+msgid "Store Groups"
+msgstr "Группы хранилищ"
+
+msgid "Add Componentfile"
+msgstr "Добавить файл с компонентом"
+
+msgid "Select Component File"
+msgstr "Выбрать файл с компонентом"
+
+msgid "Component read error."
+msgstr "Ошибка чтения компонента."
+
+msgid "Do you want to overwrite \""
+msgstr "Вы хотите перезаписать \""
+
+msgid "\" with current clipboard content?"
+msgstr "\" текущим содержимым буфера обмена?"
+
+msgid "No component(s) in clipboard."
+msgstr "Нет компонента(ов) в буфере обмена."
+
+msgid "Error while writing the storegroup."
+msgstr "Ошибка при записи группы хранилищ."
+
+msgid "Do you want to remove \""
+msgstr "Вы хотите удалить \""
+
+msgid "\" branch?"
+msgstr "\" ветвь?"
+
+msgid "\" does not exist, do you want to create it?"
+msgstr "\" не существует, Вы хотите создать его?"
+
+msgid "Save Component Store Group"
+msgstr "Сохранить группу хранилищ"
+
+msgid "Component Palette"
+msgstr "Палитра компонентов"
+
+msgid "Command Line"
+msgstr "Командная строка"
+
+msgid "Make disabled by Default make col!"
+msgstr "Сборка отключена, так как нет варианта по умолчанию!"
+
+msgid "Breakpoints"
+msgstr "Точки останова"
+
+msgid "Line Nr."
+msgstr "Строка №"
+
+msgid "Breakpoints &on"
+msgstr "Включить/в&ыключить все точки останова"
+
+msgid "Breakpoint error."
+msgstr "Ошибка установки точки останова."
+
+msgid "BREAKPOINT ERROR"
+msgstr "Ошибка установки точки останова"
+
+msgid "Do you wish to delete all breakpoints?"
+msgstr "Вы хотите удалить все точки останова?"
+
+msgid "&Run"
+msgstr "&Запустить"
+
+msgid "Run"
+msgstr "Запустить"
+
+msgid "&Step"
+msgstr "&Шаг с заходом"
+
+msgid "Step"
+msgstr "Шаг с заходом"
+
+msgid "&Next"
+msgstr "Ша&г без захода"
+
+msgid "Next"
+msgstr "Шаг без захода"
+
+msgid "&Continue"
+msgstr "&Продолжить запуск"
+
+msgid "&Interrupt"
+msgstr "&Прервать"
+
+msgid "&Reset"
+msgstr "&Сбросить"
+
+msgid "Reset"
+msgstr "Сбросить"
+
+msgid "&Finish"
+msgstr "&Завершить подпрограмму"
+
+msgid "Finish"
+msgstr "Завершить подпрограмму"
+
+msgid "&Save"
+msgstr "&Сохранить"
+
+msgid "&Undo"
+msgstr "О&тменить"
+
+msgid "&Redo"
+msgstr "&Повторить"
+
+msgid "Cu&t"
+msgstr "В&ырезать"
+
+msgid "&Copy"
+msgstr "&Копировать"
+
+msgid "&Paste"
+msgstr "&Вставить"
+
+msgid "&Delete"
+msgstr "&Удалить"
+
+msgid "Sa&ve all"
+msgstr "Сохр&анить все"
+
+msgid "&Find"
+msgstr "&Поиск"
+
+msgid "&Search again"
+msgstr "П&овторить поиск"
+
+msgid "Find in F&iles"
+msgstr "Поиск в &файлах"
+
+msgid "C&lose all"
+msgstr "Зак&рыть все"
+
+msgid "&Breakpoints on"
+msgstr "&Включить/выключить все точки останова"
+
+msgid "Breakpoints on/off"
+msgstr "Включить/выключить все точки останова"
+
+msgid "&Watches on"
+msgstr "В&ключить наблюдения"
+
+msgid "Watches on/off"
+msgstr "Включить/выключить наблюдения"
+
+msgid "&Line"
+msgstr "Поиск &строки"
+
+msgid "&Toggle Breakpoint"
+msgstr "Включить/выключить точку ос&танова"
+
+msgid "Toggle Bkpt. &enabled"
+msgstr "&Активировать/деактивировать точку останова"
+
+msgid "Select &Edit Page"
+msgstr "Выбрать редактируемую страни&цу"
+
+msgid "&Indent"
+msgstr "С&двиг вправо"
+
+msgid "U&nindent"
+msgstr "Сд&виг влево"
+
+msgid "Toggle Form/&Unit"
+msgstr "Переключиться: дизайнер формы/код &формы"
+
+msgid "Next Instruction"
+msgstr "Шаг без захода (ассемблер)"
+
+msgid "Step Instruction"
+msgstr "Шаг с заходом (ассемблер)"
+
+msgid "Exec Line Hint on"
+msgstr "Включить/выключить пометку по уже откомпилированной строке"
+
+msgid "Executable lines hint on/off"
+msgstr "Включить/выключить пометку по уже откомпилированным строкам"
+
+msgid "Find && &Replace"
+msgstr "Поиск и &замена"
+
+msgid "&Print"
+msgstr "&Печать"
+
+msgid "Detach"
+msgstr "Отсоединиться от процесса"
+
+msgid "Attach Process"
+msgstr "Присоединиться к процессу"
+
+msgid "&Lowercase"
+msgstr "&Нижний регистр"
+
+msgid "&Uppercase"
+msgstr "&Верхний регистр"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Save all"
+msgstr "Сохранить все"
+
+msgid "Save as"
+msgstr "Сохранить как"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Close all"
+msgstr "Закрыть все"
+
+msgid "Print"
+msgstr "Печать"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Line"
+msgstr "Строка"
+
+msgid "Find"
+msgstr "Найти"
+
+msgid "Search again"
+msgstr "Повторить поиск"
+
+msgid "Search back"
+msgstr "Поиск назад"
+
+msgid "Find and replace"
+msgstr "Найти и заменить"
+
+msgid "Find in File"
+msgstr "Найти в файле"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Select Editpage"
+msgstr "Выбрать страницу для редактирования"
+
+msgid "Copy Word at Cursor"
+msgstr "Копировать слово в позиции курсора"
+
+msgid "Indent"
+msgstr "Сдвиг вправо"
+
+msgid "Unindent"
+msgstr "Сдвиг влево"
+
+msgid "Comment Selection"
+msgstr "Комментировать выделенное"
+
+msgid "Uncomment Selection"
+msgstr "Раскомментировать выделенное"
+
+msgid "Lowercase"
+msgstr "Нижний регистр"
+
+msgid "Uppercase"
+msgstr "Верхний регистр"
+
+msgid "Copy LaTeX"
+msgstr "Копировать LaTeX"
+
+msgid "Complete Class"
+msgstr "Завершить класс"
+
+msgid "Navigate Back"
+msgstr "Навигация назад"
+
+msgid "Navigate Forward"
+msgstr "Навигация вперёд"
+
+msgid "Set Bookmark 0"
+msgstr "Установить закладку 0"
+
+msgid "Set Bookmark 1"
+msgstr "Установить закладку 1"
+
+msgid "Set Bookmark 2"
+msgstr "Установить закладку 2"
+
+msgid "Set Bookmark 3"
+msgstr "Установить закладку 3"
+
+msgid "Set Bookmark 4"
+msgstr "Установить закладку 4"
+
+msgid "Set Bookmark 5"
+msgstr "Установить закладку 5"
+
+msgid "Set Bookmark 6"
+msgstr "Установить закладку 6"
+
+msgid "Set Bookmark 7"
+msgstr "Установить закладку 7"
+
+msgid "Set Bookmark 8"
+msgstr "Установить закладку 8"
+
+msgid "Set Bookmark 9"
+msgstr "Установить закладку 9"
+
+msgid "Clear Bookmark"
+msgstr "Удалить закладку"
+
+msgid "Find Bookmark 0"
+msgstr "Перейти к закладке 0"
+
+msgid "Find Bookmark 1"
+msgstr "Перейти к закладке 1"
+
+msgid "Find Bookmark 2"
+msgstr "Перейти к закладке 2"
+
+msgid "Find Bookmark 3"
+msgstr "Перейти к закладке 3"
+
+msgid "Find Bookmark 4"
+msgstr "Перейти к закладке 4"
+
+msgid "Find Bookmark 5"
+msgstr "Перейти к закладке 5"
+
+msgid "Find Bookmark 6"
+msgstr "Перейти к закладке 6"
+
+msgid "Find Bookmark 7"
+msgstr "Перейти к закладке 7"
+
+msgid "Find Bookmark 8"
+msgstr "Перейти к закладке 8"
+
+msgid "Find Bookmark 9"
+msgstr "Перейти к закладке 9"
+
+msgid "Target"
+msgstr "Цель"
+
+msgid "Detach Target"
+msgstr "Отсоединиться от собранной программы"
+
+msgid "Toggle Breakpoint"
+msgstr "Включить/выключить точку останова"
+
+msgid "Toggle Breakpoint enabled"
+msgstr "Активировать/деактивировать точку останова"
+
+msgid "Exec Line Hints on/off"
+msgstr "Включить/выключить подсказку по выполняемой строке"
+
+msgid "View"
+msgstr "Просмотр"
+
+msgid "Toggle Form/Object Inspector"
+msgstr "Переключиться: дизайнер формы/инспектор объектов"
+
+msgid "Build"
+msgstr "Пересобрать"
+
+msgid "Make 1"
+msgstr "Собрать вариант 1"
+
+msgid "Make 2"
+msgstr "Собрать вариант 2"
+
+msgid "Make 3"
+msgstr "Собрать вариант 3"
+
+msgid "Make 4"
+msgstr "Собрать вариант 4"
+
+msgid "Abort Make"
+msgstr "Прервать сборку"
+
+msgid "Tree"
+msgstr "Дерево структуры"
+
+msgid "Help"
+msgstr "Помощь"
+
+msgid "Toggle Form/Inspector"
+msgstr "Переключиться: дизайнер формы/инспектор объектов"
+
+msgid "Download"
+msgstr "Загрузить"
+
+msgid "Attach Target"
+msgstr "Присоединиться к собранной программе"
+
+msgid "Bookmark &0"
+msgstr "Закладка &0"
+
+msgid "Bookmark &1"
+msgstr "Закладка &1"
+
+msgid "Bookmark &2"
+msgstr "Закладка &2"
+
+msgid "Bookmark &3"
+msgstr "Закладка &3"
+
+msgid "Bookmark &4"
+msgstr "Закладка &4"
+
+msgid "Bookmark &5"
+msgstr "Закладка &5"
+
+msgid "Bookmark &6"
+msgstr "Закладка &6"
+
+msgid "Bookmark &7"
+msgstr "Закладка &7"
+
+msgid "Bookmark &8"
+msgstr "Закладка &8"
+
+msgid "Bookmark &9"
+msgstr "Закладка &9"
+
+msgid "none"
+msgstr "пусто"
+
+msgid "O&pen"
+msgstr "&Открыть"
+
+msgid "&Options"
+msgstr "Оп&ции"
+
+msgid "&Tree"
+msgstr "&Дерево структуры"
+
+msgid "Configure MSEide"
+msgstr "Конфигурировать MSEide"
+
+msgid "Process ID"
+msgstr "ID процесса"
+
+msgid "Attach to process"
+msgstr "Присоединиться к процессу"
+
+msgid "Unknown moduleclass for \""
+msgstr "Неизвестный класс модуля для \""
+
+msgid "Inherited component \""
+msgstr "Унаследованный компонент \""
+
+msgid "\" can not be deleted."
+msgstr "\" не может быть удалён."
+
+msgid "Make aborted."
+msgstr "Сборка прервана."
+
+msgid "Download aborted."
+msgstr "Загрузка прервана."
+
+msgid "Runerror with \""
+msgstr "Запуск завершился ошибкой \""
+
+msgid "Error: Timeout."
+msgstr "Ошибка: Время ожидания истекло."
+
+msgid "Making."
+msgstr "Идёт сборка."
+
+msgid "Make not running."
+msgstr "Сборка не запущена."
+
+msgid "Downloading."
+msgstr "Идёт загрузка."
+
+msgid "Download not running."
+msgstr "Загрузка не запущена."
+
+msgid "Script"
+msgstr "Сценарий"
+
+msgid "Recursive form inheritance of \""
+msgstr "Рекурсивная форма унаследована от \""
+
+msgid "Component \""
+msgstr "Компонент \""
+
+msgid "Ancestor for \""
+msgstr "Предок для \""
+
+msgid "Module \""
+msgstr "Модуль \""
+
+msgid "Invalid name \""
+msgstr "Неверное имя \""
+
+msgid "Invalid methodname"
+msgstr "Неверное имя модуля"
+
+msgid "Module not found"
+msgstr "Модуль не найден"
+
+msgid "Method not found"
+msgstr "Метод не найден"
+
+msgid "Published (managed) method"
+msgstr "Published (управляемый) метод"
+
+msgid "does not exist."
+msgstr "не существует."
+
+msgid "Do you wish to delete the event?"
+msgstr "Вы хотите удалить событие?"
+
+msgid "Method"
+msgstr "Метод"
+
+msgid "has different parameters."
+msgstr "Имеет различные параметры."
+
+msgid "A module \""
+msgstr "Модуль \""
+
+msgid "\" is already open."
+msgstr "\" уже открыт."
+
+msgid "Unresolved reference(s) to"
+msgstr "Нерешённая ссылка(и) на"
+
+msgid "Module(s):"
+msgstr "Модуль(и):"
+
+msgid "Can not read formfile \""
+msgstr "Не удаётся прочитать файл описания формы \""
+
+msgid "Invalid component name."
+msgstr "Неверное имя компонента."
+
+msgid "Invalid exception"
+msgstr "Неверное исключение"
+
+msgid "T&ools"
+msgstr "И&нструменты"
+
+msgid "Forms"
+msgstr "Формы"
+
+msgid "Program"
+msgstr "Программа"
+
+msgid "Unit"
+msgstr "Модуль"
+
+msgid "Textfile"
+msgstr "Текстовый файл"
+
+msgid "Mainform"
+msgstr "Главная форма"
+
+msgid "Simple Form"
+msgstr "Простая форма"
+
+msgid "Docking Form"
+msgstr "Пристыкуемая форма"
+
+msgid "Datamodule"
+msgstr "Модуль данных"
+
+msgid "Subform"
+msgstr "Встраиваемая форма"
+
+msgid "Scrollboxform"
+msgstr "Форма с прокруткой"
+
+msgid "Tabform"
+msgstr "Форма с табами"
+
+msgid "Dockpanel"
+msgstr "Панель закрепления"
+
+msgid "Report"
+msgstr "Отчёт"
+
+msgid "Scriptform"
+msgstr "Форма со сценариями"
+
+msgid "Inherited Form"
+msgstr "Наследуемая форма"
+
+msgid "Do you want to replace the settings by"
+msgstr "Вы хотите заменить настройки"
+
+msgid "Do you want to overwrite?"
+msgstr "Вы хотите перезаписать?"
+
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Startup"
+msgstr "Запуск"
+
+msgid "Exception"
+msgstr "Исключение"
+
+msgid "GDB died"
+msgstr "процесса GDB больше нет"
+
+msgid "Breakpoint hit"
+msgstr "Сработала точка останова"
+
+msgid "Watchpoint triggered"
+msgstr "Сработало наблюдение"
+
+msgid "Read Watchpoint triggered"
+msgstr "Сработало чтение из наблюдения"
+
+msgid "Access Watchpoint triggered"
+msgstr "Сработал доступ к наблюдению"
+
+msgid "End stepping range"
+msgstr "Конец диапазона пошаговой отладки"
+
+msgid "Function finished"
+msgstr "Функция отработала"
+
+msgid "Exited normally"
+msgstr "Программа отработала штатно"
+
+msgid "Exited"
+msgstr "Программа отработала"
+
+msgid "Detached"
+msgstr "Произошло отсоединение от процесса"
+
+msgid "Signal received"
+msgstr "Получен сигнал"
+
+msgid "Stop error"
+msgstr "Ошибка при останове"
+
+msgid "Can not read project"
+msgstr "Не удаётся прочитать проект"
+
+msgid "About"
+msgstr "Информация о"
+
+msgid "Store Component"
+msgstr "Поместить компонент в хранилище"
+
+msgid "Attaching Process"
+msgstr "Присоединённый процесс"
+
+msgid "Loading"
+msgstr "Загрузка"
+
+msgid "Sizing Form"
+msgstr "Масштабируемая форма"
+
+msgid "Copy &LaTeX"
+msgstr "Копировать &LaTeX"
+
+msgid "&Find Component"
+msgstr "&Найти компонент"
+
+msgid "Force &Z-Order"
+msgstr "Принудительный &Z-порядок"
+
+msgid "&Comment"
+msgstr "&Комментировать"
+
+msgid "Unc&omment"
+msgstr "Рас&комментировать"
+
+msgid "Copy &Word at Cursor"
+msgstr "Скопировать &слово в позиции курсора"
+
+msgid "Select &all"
+msgstr "Выбрать &все"
+
+msgid "&Tabs to space"
+msgstr "&Табы в пробел"
+
+msgid "Search &back"
+msgstr "Поиск &назад"
+
+msgid "Texteditor"
+msgstr "Редактор текста"
+
+msgid "&Test"
+msgstr "&Тест"
+
+msgid "&Load file"
+msgstr "&Загрузить файл"
+
+msgid "&Save file"
+msgstr "&Сохранить файл"
+
+msgid "Load file"
+msgstr "Загрузить файл"
+
+msgid "Save file"
+msgstr "Сохранить файл"
+
+msgid "Test OK"
+msgstr "Тест пройден успешно"
+
+msgid "Taborder override"
+msgstr "Переопределение порядка табов"
+
+msgid "Edit tsysenvmanager"
+msgstr "Правка tsysenvmanager"
+
+msgid "Initvalue"
+msgstr "Нач.значение"
+
+msgid "Argument"
+msgstr "Аргумент"
+
+msgid "Before"
+msgstr "До"
+
+msgid "After"
+msgstr "После"
+
+msgid "Rowcount"
+msgstr "Кол-во строк"
+
+msgid "Configure MSE environment"
+msgstr "Настройка окружения MSE"
+
+msgid "&Shortcuts"
+msgstr "&Гор.кл-ши"
+
+msgid "Print command"
+msgstr "Команда печати"
+
+msgid "Path to debugger (gdb)."
+msgstr "Путь к отладчику (gdb)."
+
+msgid "Debugger path"
+msgstr "Путь к отладчику"
+
+msgid "Path to compiler (ppc386)."
+msgstr "Путь к компилятору (ppc386)."
+
+msgid "Compiler path"
+msgstr "Путь к компилятору"
+
+msgid "Directory for component store files."
+msgstr "Директория файлов с описаниями хранилищ компонентов."
+
+msgid "Directory for component stores"
+msgstr "Директория хранилищ компонентов"
+
+msgid "Directory for project template files."
+msgstr "Местонахождение шаблонов проектов."
+
+msgid "Project template directory"
+msgstr "Директория с шаблонами проектов"
+
+msgid "Directory for syntax definition files."
+msgstr "Местоположение файлов с определениями синтаксиса."
+
+msgid "Syntax definitions"
+msgstr "Описания синтаксиса"
+
+msgid "Directory for syntax definition files"
+msgstr "Местоположение файлов с определениями синтаксиса"
+
+msgid "Root directory of MSEgui library."
+msgstr "Корневая директория для библиотеки MSEgui."
+
+msgid "MSEgui library directory"
+msgstr "Корневая директория для библиотеки MSEgui"
+
+msgid "Root directory of MSEgui."
+msgstr "Корневая директория MSEgui."
+
+msgid "MSEgui root directory"
+msgstr "Корневая директория MSEgui"
+
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+"Корневая директория для библиотек FPC (не используется по умолчанию "
+"шаблонами проекта)."
+
+msgid "FPC library directory"
+msgstr "Корневая директория для библиотеки FPC"
+
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+"Корневая директория для компилятора Free Pascal (не используется по "
+"умолчанию шаблонами проекта)."
+
+msgid "FPC root directory"
+msgstr "Корневая директория для компилятора FPC"
+
+msgid "Global Macros"
+msgstr "Глобальные макро-определения"
+
+msgid "Enter Memo Text"
+msgstr "Введите многострочный текст"
+
+msgid "&Font Format"
+msgstr "&Формат шрифта"
+
+msgid "Open image file"
+msgstr "Открыть файл с изображением"
+
+msgid "Invalid set item"
+msgstr "Неверный элемент набора"
+
+msgid "Wrong property value"
+msgstr "Неверное значение свойства"
+
+msgid "Invalid method name"
+msgstr "Неверное имя функции/процедуры"
+
+msgid "Method name"
+msgstr "Имя функции/процедуры"
+
+msgid "exists"
+msgstr "существует"
+
+msgid "Do you wish to destroy"
+msgstr "Вы хотите разрушить экземпляр"
+
+msgid "Do you wish to delete items"
+msgstr "Вы хотите удалить элементы"
+
+msgid "Empty date"
+msgstr "Дата не задана"
+
+msgid "Empty time"
+msgstr "Время не задано"
+
+msgid "Do you wish to clear"
+msgstr "Вы хотите очистить"
+
+msgid "Invalid component name"
+msgstr "Неверное имя компонента"
+
+msgid "Indexlookup Editor"
+msgstr "Редактор поиска индекса"
+
+msgid "Index"
+msgstr "Индекс"
+
+msgid "Image Selector"
+msgstr "Выбор изображения"
+
+msgid "Imagelist Editor"
+msgstr "Редактор Imagelist"
+
+msgid "C&lear"
+msgstr "О&чистить"
+
+msgid "&Add"
+msgstr "&Добавить"
+
+msgid "&stretch"
+msgstr "&растянуть"
+
+msgid ""
+"&Transp.\n"
+"color"
+msgstr ""
+"&Прозрачный\n"
+"цвет"
+
+msgid "Transparent color"
+msgstr "Прозрачный цвет"
+
+msgid "&masked"
+msgstr "&маскированный"
+
+msgid ""
+"Vers.\n"
+"Nr."
+msgstr ""
+"Верс.\n"
+"Ном."
+
+msgid "Current imagelist version number"
+msgstr "Текущий номер версии списка изображений"
+
+msgid "Copy Items"
+msgstr "Копировать элементы"
+
+msgid "Paste Items"
+msgstr "Вставить элементы"
+
+msgid "IIR Filter Coefficients"
+msgstr "Коэффициенты IIR-фильтра"
+
+msgid "Numerator"
+msgstr "Числитель"
+
+msgid "Denominator"
+msgstr "Знаменатель"
+
+msgid "Internal Num."
+msgstr "Встроенный числитель"
+
+msgid "Internal Den."
+msgstr "Встроенный знаменатель"
+
+msgid "Fielddefs"
+msgstr "Опр.полей"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Fields"
+msgstr "Поля"
+
+msgid "fieldname"
+msgstr "имя_поля"
+
+msgid "sourcefieldname"
+msgstr "имя_поля_исходника"
+
+msgid "datatype"
+msgstr "тип_данных"
+
+msgid "Connection"
+msgstr "Соединение"
+
+msgid "ifi Client Editor"
+msgstr "Редактор IFI-клиента"
+
+msgid "Coefficient"
+msgstr "Коэффициент"
+
+msgid "Fade Edit"
+msgstr "Редактор цветовых градиентов"
+
+msgid "Opacity"
+msgstr "Непрозрачн."
+
+msgid "Pos"
+msgstr "Позиция"
+
+msgid ""
+"Separate\n"
+"Opacity"
+msgstr ""
+"Отдельн.\n"
+"непроз-ть"
+
+msgid "&reverse"
+msgstr "&обратный"
+
+msgid "&Load"
+msgstr "&Загрузить"
+
+msgid "Clear opacity gradient"
+msgstr "Очистить градиент непрозрачности"
+
+msgid "ClearOpa"
+msgstr "ОчистНепр-ть"
+
+msgid "Fade Files"
+msgstr "Файлы описаний цветовых градиентов"
+
+msgid "Load Fade File"
+msgstr "Загрузить файл описания цветового градиента"
+
+msgid "Save Fade File"
+msgstr "Сохранить файл описания цветового градиента"
+
+msgid "Do you want to synchronize opacity gradient"
+msgstr "Вы хотите синхронизировать непрозрачный градиент"
+
+msgid "with color gradient?"
+msgstr "с цветным градиентом?"
+
+msgid "Do you want to remove opacity gradient?"
+msgstr "Вы хотите удалить непрозрачный градиент?"
+
+msgid "Face Selector"
+msgstr "Выбор лица"
+
+msgid "Class type"
+msgstr "Тип класса"
+
+msgid "Field kind"
+msgstr "Вид поля"
+
+msgid "Dataset"
+msgstr "Набор данных"
+
+msgid "Cornermask Editor"
+msgstr "Редактор Cornermask"
+
+msgid "Select Color"
+msgstr "Выбор цвета"
+
+msgid "Color &Picker"
+msgstr "&Пипетка"
+
+msgid "old"
+msgstr "старый"
+
+msgid "&blue"
+msgstr "&син"
+
+msgid "&green"
+msgstr "&зел"
+
+msgid "&red"
+msgstr "&крас"
+
+msgid "&BRI"
+msgstr "&ЯРК"
+
+msgid "&SAT"
+msgstr "&НАС"
+
+msgid "&HUE"
+msgstr "&ОТТ"
+
+msgid "&Show hidden files"
+msgstr "Показ. &скрыт. файлы"
+
+msgid "&Filter"
+msgstr "&Фильтр"
+
+msgid "&New dir"
+msgstr "&Нов. кат-г"
+
+msgid "&Home"
+msgstr "&Дом."
+
+msgid "&Dir"
+msgstr "&Кат-г"
+
+msgid "Edit Font Format"
+msgstr "Изменить формат шрифта"
+
+msgid "B&old"
+msgstr "&Жирный"
+
+msgid "&Italic"
+msgstr "&Курсив"
+
+msgid "&Underline"
+msgstr "П&одчёркнутый"
+
+msgid "&Strikeout"
+msgstr "П&еречёркнутый"
+
+msgid "Bl&ank"
+msgstr "П&устой"
+
+msgid "&Backgroundcolor"
+msgstr "&Цвет фона"
+
+msgid "&Fontcolor"
+msgstr "&Цвет шрифта"
+
+msgid "lab"
+msgstr "лаб"
+
+msgid "Shortcuts"
+msgstr "Гор.кл-ши"
+
+msgid "&Alternate"
+msgstr "&Альтернатива"
+
+msgid "Press the desired key combination."
+msgstr "Нажмите нужную комбинацию клавиш."
+
+msgid "&Shortcut"
+msgstr "&Гор.кл-ши"
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "&Default"
+msgstr "&По умолчанию"
+
+msgid "Expand all"
+msgstr "Развернуть все"
+
+msgid "Collapse all"
+msgstr "Свернуть все"

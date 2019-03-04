@@ -32,6 +32,9 @@ IDE and tools are under GPL, library under modified LGPL like FPC-RTL.
 Package maintainers may delete the files "apps/ide/COPYING.GPL", 
 "lib/common/COPYING.LGPL" and "lib/common/COPYING.MSE".
 
+Translations:
+You're welcome to translate: https://www.transifex.com/Magic/mseide-msegui
+
 Installation:
 *************
 1. Download and install FPC 3.0.2 or 3.0.4, you can get it from 

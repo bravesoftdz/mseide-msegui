@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: msei18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Russian (https://www.transifex.com/Magic/teams/44238/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Comment"
+msgstr "Комментарий"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "flat"
+msgstr "плос."
+
+msgid "string only"
+msgstr "одни строки"
+
+msgid "no NT"
+msgstr "без NT"
+
+msgid "NT only"
+msgstr "только NT"
+
+msgid "Show Color"
+msgstr ""
+"показать цветом                Подсказка: используйте графу NT, помечая "
+"строки для фильтра"
+
+msgid "&Open"
+msgstr "&Открыть"
+
+msgid "&Save"
+msgstr "&Сохранить"
+
+msgid "Save &as"
+msgstr "Со&хранить как"
+
+msgid "&New"
+msgstr "&Новый"
+
+msgid "&Edit"
+msgstr "&Редактировать"
+
+msgid "&Import"
+msgstr "&Импорт"
+
+msgid "Ex&port"
+msgstr "&Экспорт"
+
+msgid "&Make"
+msgstr "Со&брать"
+
+msgid "&About"
+msgstr "&Информация о MSEi18n"
+
+msgid "&Configure MSEi18n"
+msgstr "&Конфигурировать MSEi18n"
+
+msgid "Se&ttings"
+msgstr "Н&астройки"
+
+msgid "E&xit"
+msgstr "Вы&ход"
+
+msgid "Translate project"
+msgstr "Проект перевода"
+
+msgid "Open translate project"
+msgstr "Открыть проект перевода"
+
+msgid "Save translate project"
+msgstr "Сохранить проект перевода"
+
+msgid "name"
+msgstr "имя"
+
+msgid "type"
+msgstr "тип"
+
+msgid "notranslate"
+msgstr "без перевода"
+
+msgid "comment"
+msgstr "комментарий"
+
+msgid "value"
+msgstr "значение"
+
+msgid "<no project>"
+msgstr "<без проекта>"
+
+msgid "Can not read module"
+msgstr "Невозможно прочитать модуль"
+
+msgid "New translate project"
+msgstr "Новый проект перевода"
+
+msgid "Exec error"
+msgstr "Ошибка выполнения"
+
+msgid "Making"
+msgstr "Сборка"
+
+msgid "overwrites itself"
+msgstr "переписать себя"
+
+msgid "ERROR"
+msgstr "ОШИБКА"
+
+msgid "Finished OK"
+msgstr "Успешно завершено"
+
+msgid "Configure MSEi18n"
+msgstr "Конфигурировать MSEi18n"
+
+msgid "Data has changed"
+msgstr "Данные были изменены"
+
+msgid "Do you wish to save"
+msgstr "Вы желаете сохранить"
+
+msgid "CONFIRMATION"
+msgstr "ПОДТВЕРЖДЕНИЕ"
+
+msgid "Enter Memo Text"
+msgstr "Ввести Memo текст"
+
+msgid "&OK"
+msgstr "&ОК"
+
+msgid "Make Language Units"
+msgstr "Собрать языковые модули"
+
+msgid "Edit Translate Project"
+msgstr "Редактировать проект перевода"
+
+msgid "Encoding for imp/exp files"
+msgstr "Кодировка для файлов импорта/экспорта"
+
+msgid "Rootname"
+msgstr "Название"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "Kind"
+msgstr "Тип"
+
+msgid "Select unit or form file"
+msgstr "Выбор файла модуля или формы"
+
+msgid "Datafile"
+msgstr "Файл данных .trd (например, введите i18n)"
+
+msgid "MSEi18n Data Files"
+msgstr "Файлы данных MSEi18n"
+
+msgid "All files"
+msgstr "Все файлы"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Directory"
+msgstr "Директория"
+
+msgid "Make command"
+msgstr "Команда сборки"
+
+msgid "on"
+msgstr "вкл"
+
+msgid "OK"
+msgstr "ОК"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Destination Basename (empty = Datafile name)"
+msgstr "Расположение базового имени (пусто = имя файла данных)"
+
+msgid "Before make"
+msgstr "Перед сборкой"
+
+msgid "After make"
+msgstr "После сборки"
+
+msgid "Data exchange files"
+msgstr "Файлы обмена данными"
+
+msgid "Open import file"
+msgstr "Открыть файл импорта"
+
+msgid "Save export file"
+msgstr "Сохранить файл экспорта"
+
+msgid "Configure MSE environment"
+msgstr "Настройка окружения MSE"
+
+msgid "&Cancel"
+msgstr "О&тмена"
+
+msgid "&Shortcuts"
+msgstr "&Гор.кл-ши"
+
+msgid "Print command"
+msgstr "Команда печати"
+
+msgid "Path to debugger (gdb)."
+msgstr "Путь к отладчику (gdb)."
+
+msgid "Debugger path"
+msgstr "Путь к отладчику"
+
+msgid "Path to compiler (ppc386)."
+msgstr "Путь к компилятору (ppc386)."
+
+msgid "Compiler path"
+msgstr "Путь к компилятору"
+
+msgid "Directory for component store files."
+msgstr "Директория файлов с описаниями хранилищ компонентов."
+
+msgid "Project files"
+msgstr "Файлы проекта"
+
+msgid "Directory for component stores"
+msgstr "Директория хранилищ компонентов"
+
+msgid "Directory for project template files."
+msgstr "Местонахождение шаблонов проектов."
+
+msgid "Project template directory"
+msgstr "Директория с шаблонами проектов"
+
+msgid "Directory for syntax definition files."
+msgstr "Местоположение файлов с определениями синтаксиса."
+
+msgid "Syntax definitions"
+msgstr "Описания синтаксиса"
+
+msgid "Directory for syntax definition files"
+msgstr "Директория файлов определений синтаксиса"
+
+msgid "Root directory of MSEgui library."
+msgstr "Корневая директория для библиотеки MSEgui."
+
+msgid "MSEgui library directory"
+msgstr "Корневая директория для библиотеки MSEgui"
+
+msgid "Root directory of MSEgui."
+msgstr "Корневая директория для MSEgui."
+
+msgid "MSEgui root directory"
+msgstr "Корневая директория для MSEgui"
+
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+"Корневая директория для компилятора Free Pascal (не используется по "
+"умолчанию шаблонами проекта)."
+
+msgid "FPC library directory"
+msgstr "Корневая директория для библиотеки FPC"
+
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+"Корневая директория для компилятора Free Pascal (не используется по "
+"умолчанию шаблонами проекта)."
+
+msgid "FPC root directory"
+msgstr "Корневая директория для компилятора FPC"
+
+msgid "Global Macros"
+msgstr "Глобальные макро-определения"

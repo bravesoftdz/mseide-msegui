@@ -1,12 +1,15 @@
 [Desktop Entry]
 Name=MSEide
 GenericName=IDE for Free Pascal
-GenericName[ru]=IDE для Free Pascal
 Comment=Free Pascal Cross Platform GUI Development System
-Comment[ru]=Кроссплатформенная система разработки ПО на Free Pascal
 Type=Application
 Exec=mseide
 Icon=mseide
 Terminal=false
 Categories=IDE;Development;
 Keywords=fpc;ide;mse;pascal;
+
+
+# Translations
+Comment[ru]=Кроссплатформенная система разработки ПО на Free Pascal
+GenericName[ru]=IDE для Free Pascal

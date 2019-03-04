@@ -1,12 +1,15 @@
 [Desktop Entry]
 Name=MSEi18n
 GenericName=i18n for MSEide+MSEgui
-GenericName[ru]=i18n для MSEide+MSEgui
 Comment=Tool for the localization of applications written in MSEide+MSEgui
-Comment[ru]=Утилита для локализации приложений, написанных в MSEide+MSEgui
 Type=Application
 Exec=msei18n
 Icon=msei18n
 Terminal=false
 Categories=IDE;Development;
 Keywords=fpc;mse;pascal;i18n;l10n;
+
+
+# Translations
+Comment[ru]=Утилита для локализации приложений, написанных в MSEide+MSEgui
+GenericName[ru]=i18n для MSEide+MSEgui
