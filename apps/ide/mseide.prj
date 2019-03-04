@@ -759,7 +759,7 @@ editpos=5
  0,0
  0,0
  0,0
- 0,69
+ 0,56
  0,-1073741823
 bookmarks0=0
 bookmarks1=0
@@ -767,10 +767,10 @@ bookmarks2=0
 bookmarks3=0
 bookmarks4=0
 sourcefiles=5
- ${PROJECTDIR}/main.pas
- ${PROJECTDIR}/sourceform.pas
- ${PROJECTDIR}/actionsmodule.pas
- ${PROJECTDIR}/mseide.pas
+ /home/fred/mseguinew/mseide-msegui/apps/ide/main.pas
+ /home/fred/mseguinew/mseide-msegui/apps/ide/sourceform.pas
+ /home/fred/mseguinew/mseide-msegui/apps/ide/actionsmodule.pas
+ /home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
  /home/fred/mseguinew/mseide-msegui/tools/i18n/msei18n.pas
 relpaths=5
  main.pas

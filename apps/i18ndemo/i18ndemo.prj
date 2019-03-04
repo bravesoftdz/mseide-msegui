@@ -324,7 +324,7 @@ newfoforms=11
 forcezorder=0
 stripmessageesc=0
 copymessages=0
-closemessages=1
+closemessages=0
 enablepurpose=0
 enablesource=0
 checkmethods=1
@@ -414,7 +414,7 @@ makeoptionson=5
  31
  34
  32
- 4095
+ 0
 compilerusedon=29
  4095
  0
@@ -566,7 +566,7 @@ gridsizex=8
 gridsizey=8
 autoindent=1
 blockindent=1
-linenumberson=0
+linenumberson=1
 rightmarginon=1
 rightmarginchars=80
 scrollheight=0
@@ -584,9 +584,9 @@ statementcolor=14745599
 pairmarkcolor=-2147483642
 editfontantialiased=1
 editmarkbrackets=1
-editmarkpairwords=0
+editmarkpairwords=1
 fpgdesigner=1
-backupfilecount=2
+backupfilecount=0
 encoding=1
 eolstyle=1
 trimtrailingwhitespace=0
@@ -622,7 +622,7 @@ stoponexception=0
 valuehints=1
 activateonbreak=1
 raiseonbreak=1
-showconsole=0
+showconsole=1
 externalconsole=0
 settty=1
 gdbdownload=0
@@ -716,7 +716,7 @@ findhistory=1
 findoptions=1
 editpos=2
  0,-1073741823
- 0,0
+ 8,16
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2
@@ -754,8 +754,8 @@ windowlayout=548
  ny=0
  ncx=0
  ncy=0
- x=125
- y=46
+ x=152
+ y=50
  cx=1157
  cy=621
  rcx=0
@@ -802,7 +802,7 @@ windowlayout=548
  [memoryfo]
  splitdir=0
  useroptions=268451963
- stackedunder=dialogfilesfo
+ stackedunder=about_form
  parent=
  mdistate=0
  nx=0
@@ -924,14 +924,14 @@ windowlayout=548
  active=0
  visible=0
  [watchpointsfo.grid]
- propcolwidthref=352
+ propcolwidthref=332
  sortdescend0=0
  values1=0
  values1_ci=-1
  width1=33
  sortdescend1=0
  values2=0
- width2=158
+ width2=149
  sortdescend2=0
  width4=34
  sortdescend4=0
@@ -940,7 +940,7 @@ windowlayout=548
  width5=38
  sortdescend5=0
  values6=0
- width6=184
+ width6=172
  sortdescend6=0
  [breakpointsfo]
  splitdir=0
@@ -966,7 +966,7 @@ windowlayout=548
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=componentpalettefo
  parent=
  mdistate=0
  nx=0
@@ -1050,7 +1050,7 @@ windowlayout=548
  rcx=1262
  rcy=583
  [watchfo.grid]
- propcolwidthref=111
+ propcolwidthref=121
  values0=0
  values0_ci=-1
  sortdescend0=0
@@ -1150,7 +1150,7 @@ windowlayout=548
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
@@ -1238,7 +1238,7 @@ windowlayout=548
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -1280,8 +1280,8 @@ windowlayout=548
  ny=0
  ncx=0
  ncy=0
- x=291
- y=247
+ x=981
+ y=114
  cx=413
  cy=196
  rcx=0
