@@ -58,15 +58,6 @@ var
 begin
  {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- //Ukrainian, Belarusian, Bashkir
- if (MSEFallbackLang='uk') or (MSEFallbackLang='be') or (MSEFallbackLang='ba')
- //Bulgarian, Chechen, Church Slavic
- or (MSEFallbackLang='bg') or (MSEFallbackLang='ce') or (MSEFallbackLang='cu')
- //Chuvash, Kazakh, Komi
- or (MSEFallbackLang='cv') or (MSEFallbackLang='kk') or (MSEFallbackLang='kv')
- //Moldavian, Tatar
- or (MSEFallbackLang='mo') or (MSEFallbackLang='tt')
-                                                   then MSEFallbackLang:='ru';
  If loadlangunit('i18n_'+MSEFallbackLang,true) then
                                                    setlangconsts(MSEFallbackLang);
  {$endif}

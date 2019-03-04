@@ -25,8 +25,12 @@ program msei18n;
 
 uses
   {$ifdef FPC}{$ifdef unix}cthreads,{$endif}{$endif}msegui,
+
+  {$ifdef mse_i18n}
   gettext,msei18nutils,mseconsts,mseconsts_ru,mseconsts_uzcyr,
   mseconsts_de,mseconsts_es,mseconsts_zh,mseconsts_id,
+  {$endif}
+
   main,messagesform,project;
 
 {$ifdef mse_i18n}
@@ -37,15 +41,6 @@ var
 begin
 {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- //Ukrainian, Belarusian, Bashkir
- if (MSEFallbackLang='uk') or (MSEFallbackLang='be') or (MSEFallbackLang='ba')
- //Bulgarian, Chechen, Church Slavic
- or (MSEFallbackLang='bg') or (MSEFallbackLang='ce') or (MSEFallbackLang='cu')
- //Chuvash, Kazakh, Komi
- or (MSEFallbackLang='cv') or (MSEFallbackLang='kk') or (MSEFallbackLang='kv')
- //Moldavian, Tatar
- or (MSEFallbackLang='mo') or (MSEFallbackLang='tt')
-                                                then MSEFallbackLang:='ru';
  If loadlangunit('i18n_'+MSEFallbackLang,true) then
                                                 setlangconsts(MSEFallbackLang);
  
