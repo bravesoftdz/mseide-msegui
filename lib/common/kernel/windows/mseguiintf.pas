@@ -2651,32 +2651,22 @@ begin
     escapepressed:= true;
    end;
     kbuffer:='';
-
-  if  eventlist.count>0
+    if  eventlist.count>0
       then begin
-      if  ((key1=key_unknown)
-
-        and  (charbuffer<>'') and (tkeyevent( eventlist[eventlist.count-1]).fkey=key_none) )
-        then
-       begin
-
-         for ki:= 0   to  eventlist.count-1
-       do
-       begin
+      if  ((key1=key_unknown) and (charbuffer<>'') and
+       (tkeyevent( eventlist[eventlist.count-1]).fkey=key_none)) then begin
+         for ki:= 0 to eventlist.count-1 do begin
          kbuffer:=kbuffer+tkeyevent( eventlist[ki]).fchars;
-       end;
+          end;
         //  WriteLog('wm_keydown'+kbuffer);
         //  WriteLog('wm_keydown'+charbuffer);
          // WriteLog('key nb'+inttostr(ord(key1)));
          end;
-
        end;
-          if charbuffer<>kbuffer
-           then
-           begin   eventlist.add(tkeyevent.create(ahwnd,false,key1,key1,shiftstate,
+          if charbuffer<>kbuffer then begin
+           eventlist.add(tkeyevent.create(ahwnd,false,key1,key1,shiftstate,
                                     charbuffer,timestamp));
-
-              end;
+           end;
           charbuffer:= '';
     if (shiftstate = []) and (key1 = key_f10) then begin
     goto nodefwindowproclab; //no windows menu activation
