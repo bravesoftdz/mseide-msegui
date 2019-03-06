@@ -24,7 +24,7 @@ program msei18n;
 {$endif}
 
 uses
-  {$ifdef FPC}{$ifdef unix}cthreads,{$endif}{$endif}msegui,
+  {$ifdef FPC}{$ifdef unix}cthreads,{$endif}{$endif}msegui,sysutils,
 
   {$ifdef mse_i18n}
   gettext,msei18nutils,mseconsts,mseconsts_ru,mseconsts_uzcyr,
@@ -41,7 +41,8 @@ var
 begin
 {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- If loadlangunit('i18n_'+MSEFallbackLang,true) then
+ if loadlangunit('.' + directoryseparator + 'languages' + directoryseparator +
+  'i18n_'+ MSEFallbackLang,true) then
                                                 setlangconsts(MSEFallbackLang);
  
 {$endif}                                               
