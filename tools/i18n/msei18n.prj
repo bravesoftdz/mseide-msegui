@@ -127,11 +127,11 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=2
+ index=0
  [projectoptionsfo]
  stackedunder=
- x=245
- y=57
+ x=275
+ y=66
  cx=839
  cy=634
 mainfile=msei18n.pas
@@ -140,7 +140,7 @@ messageoutputfile=
 makecommand=${COMPILER}
 makedir=
 unitdirs=4
- 
+ ${MSELIBDIR}kernel/windows
  ${MSELIBDIR}kernel/$TARGETOSDIR/
  ${MSELIBDIR}kernel/
  ${MSELIBDIR}*/
@@ -392,18 +392,18 @@ modulefiles=2
  /home/fred/mseguinew/mseide-msegui/tools/i18n/project.mfm
 befcommandon=0
 makeoptionson=6
- 63
+ 127
  31
- 34
- 32
+ 98
+ 96
+ 127
  0
- 4095
 compilerusedon=29
- 4095
+ 4031
  0
  0
  0
- 0
+ 64
  0
  0
  0
@@ -472,10 +472,10 @@ project_date=12:23:56 AM 03/05/2019
 project_comment=
 aftcommandon=0
 unitdirson=4
- 983103
+ 983104
  65599
- 196671
- 65599
+ 196735
+ 65663
 macroon=0
 macronames=0
 macrovalues=0
@@ -565,7 +565,7 @@ editfontextraspace=0
 editfontcolor=-1879048183
 editbkcolor=-1879048186
 statementcolor=14745599
-pairmarkcolor=-2147483642
+pairmarkcolor=-1610612712
 editfontantialiased=1
 editmarkbrackets=1
 editmarkpairwords=1
@@ -698,7 +698,7 @@ finddtext=
 findhistory=0
 findoptions=1
 editpos=4
- 0,-1073741823
+ 12,10
  0,-1073741823
  0,-1073741823
  0,55
@@ -713,7 +713,7 @@ sourcefiles=4
  /home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
 relpaths=4
  main.pas
- ../../../../mseguinew/mseide-msegui/tools/i18n/project.pas
+ ../../../mseguinew/mseide-msegui/tools/i18n/project.pas
  msei18n.pas
  ../apps/ide/mseide.pas
 ismoduletexts=4
@@ -735,7 +735,7 @@ nomenumodules=2
  0
 [sourcefo.files_tab]
 firsttab=0
-index=3
+index=0
 [layout]
 windowlayout=585
  [mainfo.basedock]
@@ -1204,7 +1204,7 @@ windowlayout=585
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
+ value=/home/fred/mseguinew/mseide-msegui/tools/i18n/main.pas
  history=20
   /home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
   /home/fred/uos/examples/uos_libsndfile.pas
@@ -1248,7 +1248,7 @@ windowlayout=585
  rcy=0
  [sourcefo.files_tab]
  firsttab=0
- index=3
+ index=0
  [cpuc86_64fo]
  irqoff=0
  splitdir=0

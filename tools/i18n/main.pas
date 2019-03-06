@@ -19,7 +19,9 @@ unit main;
 
 interface
 uses
+{$ifdef unix}
  unix,
+{$endif}
  mseforms,msefiledialog,msestat,msestatfile,msesimplewidgets,msegrids,
  msewidgetgrid,msegraphics,msegraphutils,mselistbrowser,msedataedits,typinfo,
  msedatanodes,msegraphedits,msestream,mseglob,msemenus,classes,mclasses,
