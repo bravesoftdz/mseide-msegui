@@ -1,0 +1,1401 @@
+name,type,notranslate,comment,value,en
+"watchpointsfo,dragdock.caption",vaString,F,,Watchpoints
+"watchpointsfo,caption",vaString,F,,Watchpoints
+"watchpointsfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,on
+"watchpointsfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Kind
+"watchpointsfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Expression
+"watchpointsfo,grid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Count
+"watchpointsfo,grid,fixrows.items,0:,captions.items,5:,caption",vaString,F,,Ignore
+"watchpointsfo,grid,fixrows.items,0:,captions.items,6:,caption",vaString,F,,Condition
+"watchpointsfo,gripopup,menu.submenu.items,0:,caption",vaString,F,,Delete all
+"watchpointsfo,c,strings.data,0:",vaString,F,,Watchpoint error.
+"watchpointsfo,c,strings.data,1:",vaString,F,,WATCHPOINT ERROR
+"watchpointsfo,c,strings.data,2:",vaString,F,,Program not loaded.
+"watchpointsfo,c,strings.data,3:",vaString,F,,Do you wish to delete all watchpoints?
+"watchpointsfo,c,strings.data,4:",vaString,F,,Confirmation
+"watchfo,dragdock.caption",vaString,F,,Watches
+"watchfo,caption",vaString,F,,Watches
+"watchfo,grid,fixrows.items,0:,captions.items,0:,hint",vaString,F,,Active
+"watchfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Expression
+"watchfo,grid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Expressions starting with # are treated as gdb commands
+"watchfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Result
+"watchfo,grid,fixrows.items,0:,captions.items,3:,hint",vaString,F,,"Display format
+B = Binary
+D = Decimal signed
+U = Decimal unsigned
+H = Hex"
+"watchfo,watcheson,frame.caption",vaString,F,,Watches &on
+"watchfo,gripopup,menu.submenu.items,0:,caption",vaString,F,,Delete all
+"watchfo,gripopup,menu.submenu.items,2:,caption",vaString,F,,Add Watchpoint
+"watchfo,gripopup,menu.submenu.items,3:,caption",vaString,F,,Address Watchpoint 8
+"watchfo,gripopup,menu.submenu.items,4:,caption",vaString,F,,Address Watchpoint 16
+"watchfo,gripopup,menu.submenu.items,5:,caption",vaString,F,,Address Watchpoint 32
+"watchfo,gripopup,menu.submenu.items,6:,caption",vaString,F,,Address Watchpoint 64
+"watchfo,gripopup,menu.submenu.items,8:,caption",vaString,F,,&Format default
+"watchfo,gripopup,menu.submenu.items,9:,caption",vaString,F,,&Binary
+"watchfo,gripopup,menu.submenu.items,10:,caption",vaString,F,,D&ecimal signed
+"watchfo,gripopup,menu.submenu.items,11:,caption",vaString,F,,Decimal &unsigned
+"watchfo,gripopup,menu.submenu.items,12:,caption",vaString,F,,&Hex
+"watchfo,gripopup,menu.submenu.items,14:,caption",vaString,F,,&Size default
+"watchfo,gripopup,menu.submenu.items,15:,caption",vaString,F,,&8 Bit
+"watchfo,gripopup,menu.submenu.items,16:,caption",vaString,F,,&16 Bit
+"watchfo,gripopup,menu.submenu.items,17:,caption",vaString,F,,&32 Bit
+"watchfo,gripopup,menu.submenu.items,18:,caption",vaString,F,,&64 Bit
+"watchfo,gripopup,menu.submenu.items,20:,caption",vaString,F,,&Reset Formats
+"watchfo,c,strings.data,0:",vaString,F,,Do you wish to delete all watches?
+"watchfo,c,strings.data,1:",vaString,F,,Confirmation
+"watchfo,c,strings.data,2:",vaString,F,,<disabled>
+"threadsfo,dragdock.caption",vaString,F,,Threads
+"threadsfo,caption",vaString,F,,Threads
+"threadsfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,State
+"threadsfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Location
+"threadsfo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,Copy to Clipboard
+"threadsfo,c,strings.data,0:",vaString,F,,*active*
+"threadsfo,c,strings.data,1:",vaString,F,,unknown
+"templateeditorfo,caption",vaString,F,,Code Template Editor
+"templateeditorfo,tbutton1,caption",vaString,F,,&OK
+"templateeditorfo,tbutton2,caption",vaString,F,,&Cancel
+"templateeditorfo,nameed,frame.caption",vaString,F,,&Name
+"templateeditorfo,commented,frame.caption",vaString,F,,C&omment
+"templateeditorfo,paramgrid,frame.caption",vaString,F,,&Parameter
+"templateeditorfo,paramgrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"templateeditorfo,paramgrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Default Value
+"templateeditorfo,cursordisp,frame.caption",vaString,F,,Cursor
+"templateeditorfo,coled,frame.caption",vaString,F,,Col
+"templateeditorfo,rowed,frame.caption",vaString,F,,Row
+"templateeditorfo,tbutton3,caption",vaString,F,,&Set Cursor
+"templateeditorfo,selected,frame.caption",vaString,F,,&select
+"templateeditorfo,indented,frame.caption",vaString,F,,&indent
+"templateeditorfo,deletebu,caption",vaString,F,,Delete
+"templateeditorfo,saveasbu,caption",vaString,F,,Filename
+"templateeditorfo,savefiledialog,controller.filterlist.data,0:,0:",vaString,F,,Code Temlate Files
+"templateeditorfo,c,strings.data,0:",vaString,F,,"Do you want to delete """
+"templateeditorfo,c,strings.data,1:",vaString,F,,Code Template Editor
+"templateeditorfo,c,strings.data,2:",vaString,F,,has been added to 'Project'-'Options'-'Editor'-'Code Templates'.
+"targetconsolefo,caption",vaString,F,,Target Console
+"targetconsolefo,popupmen,menu.submenu.items,4:,caption",vaString,F,,&Clear
+"symbolfo,caption",vaString,F,,Symbols
+"symbolfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Symbol
+"symbolfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Address
+"symbolfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Info
+"symbolfo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,Delete all
+"symbolfo,c,strings.data,0:",vaString,F,,GDB not active.
+"symbolfo,c,strings.data,1:",vaString,F,,Do you wish to delete all symbols?
+"storedcomponentinfodialogfo,tbutton1,caption",vaString,F,,&OK
+"storedcomponentinfodialogfo,tbutton2,caption",vaString,F,,&Cancel
+"storedcomponentinfodialogfo,filepath,frame.caption",vaString,F,,&File
+"storedcomponentinfodialogfo,filepath,controller.filterlist.data,0:,0:",vaString,F,,Component File
+"storedcomponentinfodialogfo,filepath,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"storedcomponentinfodialogfo,filepath,controller.captionsave",vaString,F,,Component File
+"storedcomponentinfodialogfo,compname,frame.caption",vaString,F,,&Name
+"storedcomponentinfodialogfo,compdesc,frame.caption",vaString,F,,&Description
+"stackfo,dragdock.caption",vaString,F,,Stack
+"stackfo,caption",vaString,F,,Stack
+"stackfo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,Copy to Clipboard
+"sourcefo,dragdock.caption",vaString,F,,Source
+"sourcefo,caption",vaString,F,,<none>
+"sourcefo,tabwidget,tstockglyphbutton1,hint",vaString,F,,Step back in code navigation
+"sourcefo,tabwidget,tstockglyphbutton2,hint",vaString,F,,Step forward in code navigation
+"sourcefo,formpopup,menu.submenu.items,0:,caption",vaString,F,,Select Page
+"sourcefo,formpopup,menu.submenu.items,1:,caption",vaString,F,,&Open File
+"sourcefo,formpopup,menu.submenu.items,2:,caption",vaString,F,,&Close File
+"sourcefo,formpopup,menu.submenu.items,3:,caption",vaString,F,,&Save File
+"sourcefo,formpopup,menu.submenu.items,5:,caption",vaString,F,,Show as Form
+"sourcefo,formpopup,menu.submenu.items,17:,submenu.items,7:,caption",vaString,F,,Convert to &Pascal string
+"sourcefo,formpopup,menu.submenu.items,17:,caption",vaString,F,,&Modify Selection
+"sourcefo,formpopup,menu.submenu.items,21:,caption",vaString,F,,&Edit breakpoint
+"sourcefo,formpopup,menu.submenu.items,22:,caption",vaString,F,,Add &Watch at Cursor
+"sourcefo,formpopup,menu.submenu.items,23:,caption",vaString,F,,Set Bookmark
+"sourcefo,formpopup,menu.submenu.items,24:,caption",vaString,F,,Find Bookmark
+"sourcefo,formpopup,menu.submenu.items,26:,caption",vaString,F,,Insert GUID
+"sourcefo,formpopup,menu.submenu.items,27:,caption",vaString,F,,Insert UID
+"sourcefo,formpopup,menu.submenu.items,28:,caption",vaString,F,,Insert Template
+"sourcefo,formpopup,menu.submenu.items,29:,caption",vaString,F,,Complete Class at Cursor
+"sourcefo,completeclassact,caption",vaString,F,,Complete class at cursor
+"sourcefo,c,strings.data,0:",vaString,F,,"File """
+"sourcefo,c,strings.data,1:",vaString,F,,""" has changed."
+"sourcefo,c,strings.data,2:",vaString,F,,There are modifications in edit buffer also.
+"sourcefo,c,strings.data,3:",vaString,F,,Do you wish to reload from disk?
+"sourcefo,c,strings.data,4:",vaString,F,,Confirmation
+"sourcefo,c,strings.data,5:",vaString,F,,<none>
+"sourcefo,c,strings.data,6:",vaString,F,,Do you wish to replace:
+"sourcefo,c,strings.data,7:",vaString,F,,with:
+"sourcefo,c,strings.data,8:",vaString,F,,<new>
+"sourcefo,c,strings.data,9:",vaString,F,,Syntaxdeffile:
+"sourcefo,c,strings.data,10:",vaString,F,,Text
+"sourcefo,c,strings.data,11:",vaString,F,,not found.
+"sourcefo,c,strings.data,12:",vaString,F,,Restart from begin of file?
+"sourcefo,c,strings.data,13:",vaString,F,,Cancel?
+"sourcefo,c,strings.data,14:",vaString,F,,Do you wish to to replace this occurence?
+"sourcefo,c,strings.data,15:",vaString,F,,Go to line number:
+"sourcefo,c,strings.data,16:",vaString,F,,Find line
+"sourcefo,c,strings.data,17:",vaString,F,,There are modifications in edit buffer also.
+"sourcefo,c,strings.data,18:",vaString,F,,Restart from end of file?
+"settaborderfo,caption",vaString,F,,Set Tab Order
+"settaborderfo,ok,caption",vaString,F,,OK
+"settaborderfo,cancel,caption",vaString,F,,Cancel
+"settaborderfo,start,caption",vaString,F,,&Start
+"settaborderfo,stop,caption",vaString,F,,St&op
+"settaborderfo,tlabel1,caption",vaString,F,,Mouse click
+"setcreateorderfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"setcreateorderfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Class
+"setcreateorderfo,grid,fixrows.items,0:,captionsfix.items,0:,caption",vaString,F,,Order
+"setcreateorderfo,tbutton1,caption",vaString,F,,&OK
+"setcreateorderfo,tbutton2,caption",vaString,F,,&Cancel
+"setcreateorderfo,c,strings.data,0:",vaString,F,,Set Component create Order of
+"selectsubmoduledialogfo,caption",vaString,F,,Select subform
+"selectsubmoduledialogfo,ok,caption",vaString,F,,OK
+"selectsubmoduledialogfo,cancel,caption",vaString,F,,Cancel
+"selecteditpagefo,caption",vaString,F,,Select edit page (Ctrl+E)
+"selecteditpagefo,openfilebutton,caption",vaString,F,,&Open
+"reportdesignerfo,xdisp,format",vaString,F,,0.0mm
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,0:,caption",vaString,F,,Show objectinspector
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,1:,caption",vaString,F,,Show componentpalette
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,2:,caption",vaString,F,,Show as Text
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,9:,caption",vaString,F,,Copy Component(s)
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,10:,caption",vaString,F,,Cut Component(s)
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,11:,caption",vaString,F,,Paste Component(s)
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,12:,caption",vaString,F,,Delete Component(s)
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,13:,caption",vaString,F,,Undelete Component(s)
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,15:,caption",vaString,F,,Select Childwidget
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,16:,caption",vaString,F,,Edit Component
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,17:,caption",vaString,F,,Bring to Front
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,18:,caption",vaString,F,,Send to Back
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,19:,caption",vaString,F,,Iconify
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,20:,caption",vaString,F,,Deiconify
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,21:,caption",vaString,F,,Set Tab Order
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,22:,caption",vaString,F,,Set Creation Order
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,23:,caption",vaString,F,,Sync. to Font Height
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,24:,caption",vaString,F,,Revert to inherited
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,26:,caption",vaString,F,,Touch Form
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,27:,caption",vaString,F,,Add report page
+"reportdesignerfo,tpopupmenu3,menu.submenu.items,28:,caption",vaString,F,,Delete report page
+"reportdesignerfo,sc,strings.data,0:",vaString,F,,Do you wish to delete
+"reportdesignerfo,sc,strings.data,1:",vaString,F,,WARNING
+"replacedialogfo,caption",vaString,F,,Find and Replace Text
+"replacedialogfo,findtext,frame.caption",vaString,F,,Text to &find
+"replacedialogfo,replacetext,frame.caption",vaString,F,,&Replace with
+"replacedialogfo,casesensitive,frame.caption",vaString,F,,&casesensitive
+"replacedialogfo,wholeword,frame.caption",vaString,F,,&whole word
+"replacedialogfo,tintegerbutton1,caption",vaString,F,,&Replace
+"replacedialogfo,tintegerbutton2,caption",vaString,F,,Replace &all
+"replacedialogfo,selectedonly,frame.caption",vaString,F,,select&ed only
+"replacedialogfo,tintegerbutton3,caption",vaString,F,,&Cancel
+"replacedialogfo,promptonreplace,frame.caption",vaString,F,,&prompt on rep.
+"projecttreefo,caption",vaString,F,,Project Tree
+"projecttreefo,addunitfileact,caption",vaString,F,,&Add Unit
+"projecttreefo,removeunitfileact,caption",vaString,F,,&Remove Unit
+"projecttreefo,addfileact,caption",vaString,F,,Add Text File
+"projecttreefo,removefileact,caption",vaString,F,,Remove Text File
+"projecttreefo,removecmoduleact,caption",vaString,F,,Remove C-File
+"projecttreefo,addcmoduleact,caption",vaString,F,,Add C-File
+"projecttreefo,cmoduledialog,controller.filterlist.data,0:,0:",vaString,F,,C-Source (*.c)
+"projecttreefo,adddiract,caption",vaString,F,,Add Directory
+"projecttreefo,removediract,caption",vaString,F,,Remove Directory
+"projecttreefo,editdiract,caption",vaString,F,,Edit Directory Caption
+"projecttreefo,c,strings.data,0:",vaString,F,,Pascal Units
+"projecttreefo,c,strings.data,1:",vaString,F,,C Modules
+"projecttreefo,c,strings.data,2:",vaString,F,,Text Files
+"projecttreefo,c,strings.data,3:",vaString,F,,"Do you wish to remove """
+"projecttreefo,c,strings.data,4:",vaString,F,,Select Directory
+"projecttreefo,c,strings.data,5:",vaString,F,,Do you want to remove
+"projecttreefo,c,strings.data,6:",vaString,F,,with the sub-items from project?
+"projectoptionsfo,caption",vaString,F,,Project Options
+"projectoptionsfo,tlayouter9,tlayouter8,cancel,caption",vaString,F,,Cancel
+"projectoptionsfo,tlayouter9,tlayouter8,ok,caption",vaString,F,,Ok
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,caption",vaString,F,,&Editor
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,caption",vaString,F,,Source
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage13,caption",vaString,F,,File filter
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage13,filefiltergrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage13,filefiltergrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,File mask
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,caption",vaString,F,,Syntax definition files
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Syntax definition file
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,fixrows.items,0:,captions.items,1:,caption",vaString,F,,File mask
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data,0:,0:",vaString,F,,Syntaxdef files
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,caption",vaString,F,,Code templates
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,frame.caption",vaString,F,,"Code template directories, file extension = .mct"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Directory
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Add to object file search path
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,2:,hint",vaString,F,,Add to library search path
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,3:,hint",vaString,F,,Add to include file search path
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,4:,hint",vaString,F,,Add to unit file search path
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,5:,hint",vaString,F,,Use in Make 4
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,6:,hint",vaString,F,,Use in Make 3
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,7:,hint",vaString,F,,Use in Make 2
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,8:,hint",vaString,F,,Use in Make 1
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,9:,hint",vaString,F,,Use in Build
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,10:,hint",vaString,F,,Use in Make
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,codetemplatedirs,controller.captionopen",vaString,F,,Select unit directory
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,dispgrid,frame.caption",vaString,F,,Test
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontextraspace,frame.caption",vaString,F,,ExtSp
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontextraspace,hint",vaString,F,,Extra space between lines
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontwidth,frame.caption",vaString,F,,Width
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontheight,frame.caption",vaString,F,,Height
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontname,frame.caption",vaString,F,,Font
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontcolor,frame.caption",vaString,F,,Color
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editbkcolor,frame.caption",vaString,F,,Bk. Color
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontantialiased,frame.caption",vaString,F,,Anti aliased
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,rightmarginon,frame.caption",vaString,F,,Right margin line
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,linenumberson,frame.caption",vaString,F,,Line numbers
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,editmarkbrackets,frame.caption",vaString,F,,Mark brackets
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,editmarkpairwords,frame.caption",vaString,F,,Mark pairwords
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,editmarkpairwords,hint",vaString,F,,Mark in syntax definition file defined word pairs.
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,pairmarkcolor,frame.caption",vaString,F,,"Mark
+color"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,pairmarkcolor,hint",vaString,F,,"Background color of marked brackets and word pairs.
+Will be overridden by setting in syntax definition file.
+cl_none -> force none."
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,statementcolor,frame.caption",vaString,F,,"Statement
+color"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,statementcolor,hint",vaString,F,,"Background color of the active row while debugging.
+Will be overridden by setting in syntax definition file.
+cl_none -> force none."
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,scrollheight,frame.caption",vaString,F,,"Scroll
+height"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,scrollheight,hint",vaString,F,,"0 -> accelerated,
+-1 -> paged"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,rightmarginchars,frame.caption",vaString,F,,Characters
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,pairmaxrowcount,frame.caption",vaString,F,,"Mark max
+rowcount"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,spacetabs,frame.caption",vaString,F,,Space
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,blockindent,frame.caption",vaString,F,,Block Indent
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,autoindent,frame.caption",vaString,F,,Auto indent
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,tabindent,frame.caption",vaString,F,,Tab
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,tabstops,frame.caption",vaString,F,,Tabstops
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,showtabs,frame.caption",vaString,F,,Show tabs
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,eolstyle,frame.caption",vaString,F,,Eolstyle
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,eolstyle,hint",vaString,F,,End of line style for writing. eol_default -> use original style.
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,trimtrailingwhitespace,frame.caption",vaString,F,,"Trim trailing
+whitespace
+on save"
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,frame.caption",vaString,F,,Encoding
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,0:",vaString,F,,Locale
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,backupfilecount,frame.caption",vaString,F,,Backup file count
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,caption",vaString,F,,Form
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,componenthints,frame.caption",vaString,F,,Component hints
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,noformdesignerdocking,frame.caption",vaString,F,,Docking
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,moveonfirstclick,frame.caption",vaString,F,,Move on first click
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,gridsizey,frame.caption",vaString,F,,Grid size Y
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,gridsizex,frame.caption",vaString,F,,Grid size X
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,gridsizex,tintegeredit2,frame.caption",vaString,F,,Grid size X
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,snaptogrid,frame.caption",vaString,F,,Snap to Grid
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,snaptogrid,hint",vaString,F,,"Hint:
+Use Ctrl + arrow keys to move selected components without grid snap,
+use Shift + arrow keys to resize selected components without grid snap."
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,showgrid,frame.caption",vaString,F,,Show Grid
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,caption",vaString,F,,&Debugger
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugcommand,frame.caption",vaString,F,,&Debug command
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugoptions,frame.caption",vaString,F,,Debug &options
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugoptions,hint",vaString,F,,"""--tty DEVICE"" to set target terminal"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,caption",vaString,F,,Source &directories
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,sourcedirgrid,sourcedirs,controller.captionopen",vaString,F,,Select source directory
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,sourcebase,frame.caption",vaString,F,,Object &Base Directory (empty = Make Directory)
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,sourcebase,controller.captionopen",vaString,F,,Select source base directory
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,caption",vaString,F,,Defi&nes
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,twidgetgrid2,fixrows.items,0:,captions.items,0:,caption",vaString,F,,on
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,twidgetgrid2,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Space separated defines for {$ifdef}
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage7,caption",vaString,F,,&Signals
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage7,signalgrid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,.. to
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage7,signalgrid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Name
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage8,caption",vaString,F,,&Exceptions
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage8,exceptionsgrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,ignore
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage8,exceptionsgrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Exception class
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,caption",vaString,F,,&Target
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,remoteconnection,frame.caption",vaString,F,,Target connection
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,remoteconnection,hint",vaString,F,,"""--tty DEVICE"" to set target terminal"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,frame.caption",vaString,F,,Before connect gdb script
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,frame.caption",vaString,F,,Before load gdb script
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,frame.caption",vaString,F,,Before run gdb script
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,frame.caption",vaString,F,,After connect gdb script
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,frame.caption",vaString,F,,After load gdb script
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,frame.caption",vaString,F,,Processor
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbsimulator,frame.caption",vaString,F,,Simulator
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbdownload,frame.caption",vaString,F,,gdb download
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,downloadalways,frame.caption",vaString,F,,"Always download
+before run"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,startupbkpt,frame.caption",vaString,F,,Startup BKPT
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,restartgdbbeforeload,frame.caption",vaString,F,,"Restart gdb
+before load"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,downloadlayouter,gdbservercommandattach,frame.caption",vaString,F,,Start gdb server command attach target
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,downloadlayouter,gdbservercommand,frame.caption",vaString,F,,Start gdb server command run target
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,downloadlayouter,uploadcommand,frame.caption",vaString,F,,Download command
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,gdbloadtimeout,frame.caption",vaString,F,,Load Timeout
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,gdbloadtimeout,formatdisp",vaString,F,,0.#sec
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,serverla,gdbserverwait,frame.caption",vaString,F,,Wait before connect
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,serverla,gdbserverwait,formatdisp",vaString,F,,0.#sec
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,serverla,gdbserverstartonce,frame.caption",vaString,F,,Start once
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,tlayouter2,nogdbserverexit,frame.caption",vaString,F,,no wait for exit
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,tlayouter2,gdbservertty,frame.caption",vaString,F,,TTY
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,externalconsole,frame.caption",vaString,F,,"&External
+Console"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,showconsole,frame.caption",vaString,F,,"Show &Cons.
+on Run"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,showconsole,hint",vaString,F,,Show console on run
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,stoponexception,frame.caption",vaString,F,,"&Stop
+on Excep."
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,stoponexception,hint",vaString,F,,Stop on exceptions
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,activateonbreak,frame.caption",vaString,F,,"&Activate
+on Break"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,valuehints,frame.caption",vaString,F,,"&Value
+Hints"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,nodebugbeginend,frame.caption",vaString,F,,"Call GUI_DEBUGBEGIN/
+GUI_DEBUGEND"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,nodebugbeginend,hint",vaString,F,,Release mouse grab by target stop. gdb sometimes crashes with this option.
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,settty,frame.caption",vaString,F,,"Set
+TT&Y"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,raiseonbreak,frame.caption",vaString,F,,"&Raise
+on Break"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,fpcgdbworkaround,frame.caption",vaString,F,,"&FPC
+bugs"
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,fpcgdbworkaround,hint",vaString,F,,Use workarounds for FPC/gdb bugs
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugtarget,frame.caption",vaString,F,,Debug &target (empty = make targetfile)
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,xtermcommand,frame.caption",vaString,F,,xterm command
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,runcommand,frame.caption",vaString,F,,&Run command (empty = start debugger)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,caption",vaString,F,,&Make
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,frame.caption",vaString,F,,Default make col
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,0:",vaString,F,,M (Make)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,1:",vaString,F,,B (Build)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,2:",vaString,F,,1 (Make 1)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,3:",vaString,F,,2 (Make 2)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,4:",vaString,F,,3 (Make 3)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,5:",vaString,F,,4 (Make 4)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile,frame.caption",vaString,F,,&Mainfile
+"projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile,controller.captionopen",vaString,F,,Select mainfile
+"projectoptionsfo,tlayouter9,tabwidget,makepage,targetfile,frame.caption",vaString,F,,&Targetfile
+"projectoptionsfo,tlayouter9,tabwidget,makepage,targetfile,controller.captionopen",vaString,F,,Select target file
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makecommand,frame.caption",vaString,F,,Make &Program
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makecommand,controller.captionopen",vaString,F,,Select make command
+"projectoptionsfo,tlayouter9,tabwidget,makepage,showcommandline,caption",vaString,F,,Show command line
+"projectoptionsfo,tlayouter9,tabwidget,makepage,messageoutputfile,frame.caption",vaString,F,,Message &output file
+"projectoptionsfo,tlayouter9,tabwidget,makepage,copymessages,frame.caption",vaString,F,,Copy messages to &file
+"projectoptionsfo,tlayouter9,tabwidget,makepage,closemessages,frame.caption",vaString,F,,Close messages window after compile
+"projectoptionsfo,tlayouter9,tabwidget,makepage,checkmethods,frame.caption",vaString,F,,Check method headers
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,caption",vaString,F,,Command before
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,0:,hint",vaString,F,,Use in Make
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Use in Build
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,2:,hint",vaString,F,,Use in Make 1
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,3:,hint",vaString,F,,Use in Make 2
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,4:,hint",vaString,F,,Use in Make 3
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,5:,hint",vaString,F,,Use in Make 4
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,6:,caption",vaString,F,,Command
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,caption",vaString,F,,Make options
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Use in Make
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,2:,hint",vaString,F,,Use in Build
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,3:,hint",vaString,F,,Use in Make 1
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,4:,hint",vaString,F,,Use in Make 2
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,5:,hint",vaString,F,,Use in Make 3
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,6:,hint",vaString,F,,Use in Make 4
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,7:,hint",vaString,F,,After mainfile
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,8:,caption",vaString,F,,Command line options
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,caption",vaString,F,,Directories
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,frame.caption",vaString,F,,"Unit, include and library &directories"
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,0:,hint",vaString,F,,Use in Make
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Use in Build
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,2:,hint",vaString,F,,Use in Make 1
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,3:,hint",vaString,F,,Use in Make 2
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,4:,hint",vaString,F,,Use in Make 3
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,5:,hint",vaString,F,,Use in Make 4
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,6:,hint",vaString,F,,Add to unit file search path
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,7:,hint",vaString,F,,Add to include file search path
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,8:,hint",vaString,F,,Add to library search path
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,9:,hint",vaString,F,,Add to object file search path
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,10:,caption",vaString,F,,Directory
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,unitdirs,controller.captionopen",vaString,F,,Select unit directory
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,objpref,frame.caption",vaString,F,,Obj pref. (-Fo)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,libpref,frame.caption",vaString,F,,Lib pref.(-Fl)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,incpref,frame.caption",vaString,F,,Inc pref.(-Fi)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,unitpref,frame.caption",vaString,F,,Unit pref.(-Fu)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,reversepathorder,frame.caption",vaString,F,,Reverse directory order
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,caption",vaString,F,,Command after
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,0:,hint",vaString,F,,Use in Make
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Use in Build
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,2:,hint",vaString,F,,Use in Make 1
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,3:,hint",vaString,F,,Use in Make 2
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,4:,hint",vaString,F,,Use in Make 3
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,5:,hint",vaString,F,,Use in Make 4
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,6:,caption",vaString,F,,Command
+"projectoptionsfo,tlayouter9,tabwidget,makepage,targpref,frame.caption",vaString,F,,Targ. pref. (-o)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makedir,frame.caption",vaString,F,,Make &Directory
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makedir,controller.captionopen",vaString,F,,Select make directory
+"projectoptionsfo,tlayouter9,tabwidget,makepage,colorerror,frame.caption",vaString,F,,Error Color
+"projectoptionsfo,tlayouter9,tabwidget,makepage,colorwarning,frame.caption",vaString,F,,Warning Color
+"projectoptionsfo,tlayouter9,tabwidget,makepage,colornote,frame.caption",vaString,F,,Note Color
+"projectoptionsfo,tlayouter9,tabwidget,makepage,stripmessageesc,frame.caption",vaString,F,,Strip ESC sequences
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,caption",vaString,F,,M&acros
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,macrogrid,fixrows.items,0:,captions.items,6:,caption",vaString,F,,Name
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,macrogrid,fixrows.items,0:,captions.items,7:,caption",vaString,F,,Value
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,selectactivegroupgrid,frame.caption",vaString,F,,Active group
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,caption",vaString,F,,&Font Alias
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Alias
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Font name
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Height
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Width
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Options
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,5:,caption",vaString,F,,Xscale
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,6:,caption",vaString,F,,Ancestor
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,caption",vaString,F,,User &Colors
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,tlayouter7,tbutton1,caption",vaString,F,,"Copy ""setcolormapvalue"" code to clipboard"
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,colgrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Color
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,colgrid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Comment
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,colgrid,fixrows.items,0:,captionsfix.items,0:,caption",vaString,F,,Name
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage21,caption",vaString,F,,F&ormat Macros
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage21,tabhint",vaString,F,,Used by formatfloatmse() and formatdatetimemse()
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage21,formatmacrogrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage21,formatmacrogrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,caption",vaString,F,,&Templates
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,caption",vaString,F,,New Project
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,0:,hint",vaString,F,,Load file in editor
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Expand macros
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Copied Files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Destination
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,scriptbeforecopy,frame.caption",vaString,F,,Script before copy
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,scriptaftercopy,frame.caption",vaString,F,,Script after copy
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,caption",vaString,F,,New File
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Kind
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Filter
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Ext
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Source
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,caption",vaString,F,,New Form
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Kind
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Inherited
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Namebase
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Formsuffix
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Source File
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,5:,caption",vaString,F,,Form File
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,0:,0:",vaString,F,,Source
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,0:,0:",vaString,F,,Form Files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,caption",vaString,F,,Too&ls
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,0:,hint",vaString,F,,Save files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Parse source
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,2:,hint",vaString,F,,Hide console (win32 only)
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,3:,hint",vaString,F,,Show output in messages window
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Menu
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,5:,caption",vaString,F,,Shortcut
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,5:,hint",vaString,F,,"Select item from 'Settings'-'Configure MSEide'-'Shortcuts'
+'Tool 1'..'Tool 10'."
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,6:,caption",vaString,F,,Sc.Key
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,6:,hint",vaString,F,,Shortcut key
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,7:,caption",vaString,F,,Alt.Sc.
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,7:,hint",vaString,F,,Alternate shortcut key
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,8:,caption",vaString,F,,File
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,9:,caption",vaString,F,,Parameters
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,caption",vaString,F,,Item
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,0:",vaString,F,,Tool 1
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,1:",vaString,F,,Tool 2
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,2:",vaString,F,,Tool 3
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,3:",vaString,F,,Tool 4
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,4:",vaString,F,,Tool 5
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,5:",vaString,F,,Tool 6
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,6:",vaString,F,,Tool 7
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,7:",vaString,F,,Tool 8
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,8:",vaString,F,,Tool 9
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,9:",vaString,F,,Tool 10
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,1:,caption",vaString,F,,Shortcut
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,2:,caption",vaString,F,,Alternate
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,caption",vaString,F,,&Storage
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingseditor,frame.caption",vaString,F,,Editor
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsautoload,frame.caption",vaString,F,,Auto load
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsautosave,frame.caption",vaString,F,,Auto save
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,savebu,caption",vaString,F,,Save
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,loadbu,caption",vaString,F,,Load
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,frame.caption",vaString,F,,Settings File
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,0:,0:",vaString,F,,Project Files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.captionopen",vaString,F,,Enter Settings File
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsdebugger,frame.caption",vaString,F,,Debugger
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsstorage,frame.caption",vaString,F,,Storage
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsprojecttree,frame.caption",vaString,F,,Project Tree
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsmacros,frame.caption",vaString,F,,Macros
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingstools,frame.caption",vaString,F,,Tools
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingstemplates,frame.caption",vaString,F,,Templates
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingscomponentstore,frame.caption",vaString,F,,Component Store
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingslayout,frame.caption",vaString,F,,Window Layout
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlabel1,caption",vaString,F,,Load/save settings
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsmake,frame.caption",vaString,F,,Make
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsusercolors,frame.caption",vaString,F,,User Colors
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsformatmacros,frame.caption",vaString,F,,Format Macros
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsfontalias,frame.caption",vaString,F,,Font Alias
+"projectoptionsfo,c,strings.data,0:",vaString,F,,Wrong encoding can damage your source files.
+"projectoptionsfo,c,strings.data,1:",vaString,F,,Do you wish to set encoding to
+"projectoptionsfo,c,strings.data,2:",vaString,F,,*** WARNING ***
+"projectoptionsfo,c,strings.data,3:",vaString,F,,Hangup
+"projectoptionsfo,c,strings.data,4:",vaString,F,,Interrupt
+"projectoptionsfo,c,strings.data,5:",vaString,F,,Quit
+"projectoptionsfo,c,strings.data,6:",vaString,F,,Illegal instruction
+"projectoptionsfo,c,strings.data,7:",vaString,F,,Trace trap
+"projectoptionsfo,c,strings.data,8:",vaString,F,,Abort
+"projectoptionsfo,c,strings.data,9:",vaString,F,,BUS error
+"projectoptionsfo,c,strings.data,10:",vaString,F,,Floating-point exception
+"projectoptionsfo,c,strings.data,11:",vaString,F,,Kill
+"projectoptionsfo,c,strings.data,12:",vaString,F,,User-defined signal 1
+"projectoptionsfo,c,strings.data,13:",vaString,F,,Segmentation violation
+"projectoptionsfo,c,strings.data,14:",vaString,F,,User-defined signal 2
+"projectoptionsfo,c,strings.data,15:",vaString,F,,Broken pipe
+"projectoptionsfo,c,strings.data,16:",vaString,F,,Alarm clock
+"projectoptionsfo,c,strings.data,17:",vaString,F,,Termination
+"projectoptionsfo,c,strings.data,18:",vaString,F,,Stack fault
+"projectoptionsfo,c,strings.data,19:",vaString,F,,Child status has changed
+"projectoptionsfo,c,strings.data,20:",vaString,F,,Continue
+"projectoptionsfo,c,strings.data,21:",vaString,F,,"Stop, unblockable"
+"projectoptionsfo,c,strings.data,22:",vaString,F,,Keyboard stop
+"projectoptionsfo,c,strings.data,23:",vaString,F,,Background read from tty
+"projectoptionsfo,c,strings.data,24:",vaString,F,,Background write to tty
+"projectoptionsfo,c,strings.data,25:",vaString,F,,Urgent condition on socket
+"projectoptionsfo,c,strings.data,26:",vaString,F,,CPU limit exceeded
+"projectoptionsfo,c,strings.data,27:",vaString,F,,File size limit exceeded
+"projectoptionsfo,c,strings.data,28:",vaString,F,,Virtual alarm clock
+"projectoptionsfo,c,strings.data,29:",vaString,F,,Profiling alarm clock
+"projectoptionsfo,c,strings.data,30:",vaString,F,,Window size change
+"projectoptionsfo,c,strings.data,31:",vaString,F,,I/O now possible
+"projectoptionsfo,c,strings.data,32:",vaString,F,,Power failure restart
+"programparametersfo,caption",vaString,F,,Target Environment
+"programparametersfo,workingdirectory,frame.caption",vaString,F,,&Working directory
+"programparametersfo,workingdirectory,controller.captionopen",vaString,F,,Select program working directory
+"programparametersfo,ok,caption",vaString,F,,OK
+"programparametersfo,tbutton2,caption",vaString,F,,Cancel
+"programparametersfo,parameters,frame.caption",vaString,F,,&Parameters
+"programparametersfo,grid,frame.caption",vaString,F,,Environment variables
+"programparametersfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,on
+"programparametersfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Name
+"programparametersfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Value
+"printfo,caption",vaString,F,,Print File
+"printfo,ok,caption",vaString,F,,&Ok
+"printfo,cancel,caption",vaString,F,,Cancel
+"printfo,linenum,frame.caption",vaString,F,,"Print line
+&numbers"
+"printfo,fontsize,frame.caption",vaString,F,,Font &size (Pt)
+"printfo,titlefont,frame.caption",vaString,F,,&Title font
+"printfo,sourcefont,frame.caption",vaString,F,,So&urce font
+"printfo,colorset,frame.caption",vaString,F,,&Color
+"printfo,tpagesizeselector1,frame.caption",vaString,F,,Paper size
+"printfo,tpageorientationselector1,frame.caption",vaString,F,,Paper orientation
+"printfo,rotate,frame.caption",vaString,F,,Rotate CCW
+"printfo,pages,frame.caption",vaString,F,,Pages
+"printfo,c,strings.data,0:",vaString,F,,Page
+"printfo,c,strings.data,1:",vaString,F,,Do you wish to cancel printing?
+"panelfo,dragdock.caption",vaString,F,,Mainwindow
+"objectinspectorfo,dragdock.caption",vaString,F,,Objectinspector
+"objectinspectorfo,caption",vaString,F,,Object Inspector
+"objectinspectorfo,compedit,hint",vaString,F,,Show component editor.
+"objectinspectorfo,gridpopup,menu.submenu.items,0:,caption",vaString,F,,Collapse tree
+"objectinspectorfo,gridpopup,menu.submenu.items,1:,caption",vaString,F,,Revert to inherited
+"objectinspectorfo,gridpopup,menu.submenu.items,2:,caption",vaString,F,,Clear Selection
+"msetemplateselectfo,caption",vaString,F,,Select Code Template
+"msetemplateselectfo,tbutton1,caption",vaString,F,,Cancel
+"msetemplateselectfo,tbutton2,caption",vaString,F,,OK
+"msetemplateselectfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"msetemplateselectfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Comment
+"msetemplateselectfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Par1
+"msetemplateselectfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Par2
+"msetemplateselectfo,grid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Par3
+"msetemplateselectfo,grid,fixrows.items,0:,captions.items,5:,caption",vaString,F,,Par4
+"mseparamentryfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Macro
+"mseparamentryfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value
+"mseparamentryfo,tsplitter1,tbutton2,caption",vaString,F,,Cancel
+"mseparamentryfo,tsplitter1,tbutton1,caption",vaString,F,,OK
+"mseparamentryfo,tsplitter1,comment,caption",vaString,F,,comment
+"mseparamentryfo,c,strings.data,0:",vaString,F,,"Code Template """
+"compnametreefo,caption",vaString,F,,Select Component
+"messagefo,dragdock.caption",vaString,F,,Messages
+"messagefo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,Copy to clipboard
+"memoryfo,caption",vaString,F,,Memory
+"memoryfo,tlayouter1,add,frame.caption",vaString,F,,Add
+"memoryfo,tlayouter1,memon,frame.caption",vaString,F,,Memory &on
+"memoryfo,tlayouter1,bitwidth,frame.caption",vaString,F,,Width
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,0:,caption",vaString,F,,&Mainform
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,1:,caption",vaString,F,,&Simple Form
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,2:,caption",vaString,F,,&Docking Form
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,3:,caption",vaString,F,,D&atamodule
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,4:,caption",vaString,F,,S&ubform
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,5:,caption",vaString,F,,&Report
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,6:,caption",vaString,F,,S&criptform
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,8:,caption",vaString,F,,&Inherited
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,caption",vaString,F,,&Form
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,caption",vaString,F,,&New
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,9:,caption",vaString,F,,E&xit
+"mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&File
+"mainfo,mainmenu1,menu.submenu.items,1:,submenu.items,6:,caption",vaString,F,,Find &Component
+"mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Search
+"mainfo,mainmenu1,menu.submenu.items,2:,caption",vaString,F,,&Edit
+"mainfo,mainmenu1,menu.submenu.items,3:,submenu.items,0:,caption",vaString,F,,En&vironment
+"mainfo,mainmenu1,menu.submenu.items,3:,submenu.items,1:,caption",vaString,F,,Restart Debugger
+"mainfo,mainmenu1,menu.submenu.items,3:,caption",vaString,F,,&Target
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,0:,submenu.items,1:,caption",vaString,F,,&New Panel
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,0:,caption",vaString,F,,Pan&els
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,2:,caption",vaString,F,,Load Wi&ndow Layout
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,4:,caption",vaString,F,,Component &Palette
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,5:,caption",vaString,F,,Component Sto&re
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,6:,caption",vaString,F,,Object &Inspector
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,8:,caption",vaString,F,,So&urce
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,9:,caption",vaString,F,,&Messages
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,10:,caption",vaString,F,,&Find Results
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,12:,caption",vaString,F,,&Debugger
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,13:,caption",vaString,F,,Symbo&ls
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,14:,caption",vaString,F,,&Watches
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,15:,caption",vaString,F,,&Stack
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,16:,caption",vaString,F,,T&hreads
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,17:,caption",vaString,F,,&CPU
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,18:,caption",vaString,F,,&Assembler
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,19:,caption",vaString,F,,Memor&y
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,20:,caption",vaString,F,,&Target Console
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,22:,caption",vaString,F,,&Breakpoints
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,23:,caption",vaString,F,,Watchp&oints
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,26:,caption",vaString,F,,Toggle Form/Unit
+"mainfo,mainmenu1,menu.submenu.items,4:,caption",vaString,F,,&View
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,0:,caption",vaString,F,,&Make
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,1:,caption",vaString,F,,&Build
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,2:,caption",vaString,F,,Make &1
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,3:,caption",vaString,F,,Make &2
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,4:,caption",vaString,F,,Make &3
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,5:,caption",vaString,F,,Make &4
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,6:,caption",vaString,F,,&Abort Make
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,submenu.items,0:,caption",vaString,F,,From &Template
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,submenu.items,1:,caption",vaString,F,,From &Program
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,submenu.items,2:,caption",vaString,F,,&Empty
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,caption",vaString,F,,&New
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,14:,caption",vaString,F,,Open copy
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,16:,caption",vaString,F,,Save &as
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,17:,caption",vaString,F,,Save as copy
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,18:,caption",vaString,F,,&Close
+"mainfo,mainmenu1,menu.submenu.items,5:,caption",vaString,F,,&Project
+"mainfo,mainmenu1,menu.submenu.items,6:,submenu.items,0:,caption",vaString,F,,&About
+"mainfo,mainmenu1,menu.submenu.items,6:,submenu.items,1:,caption",vaString,F,,&Configure MSEide
+"mainfo,mainmenu1,menu.submenu.items,6:,caption",vaString,F,,Sett&ings
+"mainfo,openfile,controller.captionopen",vaString,F,,Open file
+"mainfo,openfile,controller.captionsave",vaString,F,,Save file as
+"mainfo,projectfiledia,controller.filterlist.data,0:,0:",vaString,F,,Project files
+"mainfo,projectfiledia,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"mainfo,projectfiledia,controller.captionopen",vaString,F,,Open Project
+"mainfo,projectfiledia,controller.captionsave",vaString,F,,Save Project
+"mainfo,c,strings.data,0:",vaString,F,,Unresolved references in
+"mainfo,c,strings.data,1:",vaString,F,,to
+"mainfo,c,strings.data,2:",vaString,F,,Do you wish to search the formfile?
+"mainfo,c,strings.data,3:",vaString,F,,WARNING
+"mainfo,c,strings.data,4:",vaString,F,,Formfile for
+"mainfo,c,strings.data,5:",vaString,F,,Formfiles
+"mainfo,c,strings.data,6:",vaString,F,,"Recursive form hierarchy for """
+"mainfo,c,strings.data,7:",vaString,F,,ERROR
+"mainfo,c,strings.data,8:",vaString,F,,Classtype
+"mainfo,c,strings.data,9:",vaString,F,,not found.
+"mainfo,c,strings.data,10:",vaString,F,,Project
+"mainfo,c,strings.data,11:",vaString,F,,is modified. Save?
+"mainfo,c,strings.data,12:",vaString,F,,Confirmation
+"mainfo,c,strings.data,13:",vaString,F,,"Unable to open file """
+"mainfo,c,strings.data,14:",vaString,F,,*** Running ***
+"mainfo,c,strings.data,15:",vaString,F,,Downloading
+"mainfo,c,strings.data,16:",vaString,F,,Downloaded
+"mainfo,c,strings.data,17:",vaString,F,,"Start gdb server command """
+"mainfo,c,strings.data,18:",vaString,F,,""" running."
+"mainfo,c,strings.data,19:",vaString,F,,Start gdb Server
+"mainfo,c,strings.data,20:",vaString,F,,gdb server start error
+"mainfo,c,strings.data,21:",vaString,F,,gdb server start canceled.
+"mainfo,c,strings.data,22:",vaString,F,,Can not run start gdb command.
+"mainfo,c,strings.data,23:",vaString,F,,"Uploadcommand """
+"mainfo,c,strings.data,24:",vaString,F,,Download ***ERROR***
+"mainfo,c,strings.data,25:",vaString,F,,Download finished.
+"mainfo,c,strings.data,26:",vaString,F,,Download canceled.
+"mainfo,c,strings.data,27:",vaString,F,,"File """
+"mainfo,c,strings.data,28:",vaString,F,,""" not found."
+"mainfo,c,strings.data,29:",vaString,F,,""" exists."
+"mainfo,c,strings.data,30:",vaString,F,,New
+"mainfo,c,strings.data,31:",vaString,F,,Select ancestor
+"mainfo,c,strings.data,32:",vaString,F,,New form
+"mainfo,c,strings.data,33:",vaString,F,,Pascal Files
+"mainfo,c,strings.data,34:",vaString,F,,new
+"mainfo,c,strings.data,35:",vaString,F,,"Can not load Project """
+"mainfo,c,strings.data,36:",vaString,F,,Select project template
+"mainfo,c,strings.data,37:",vaString,F,,Project files
+"mainfo,c,strings.data,38:",vaString,F,,All files
+"mainfo,c,strings.data,39:",vaString,F,,Select program file
+"mainfo,c,strings.data,40:",vaString,F,,Pascal program files
+"mainfo,c,strings.data,41:",vaString,F,,C program files
+"mainfo,c,strings.data,42:",vaString,F,,New Project
+"mainfo,c,strings.data,43:",vaString,F,,Can not start process
+"mainfo,c,strings.data,44:",vaString,F,,Process
+"mainfo,c,strings.data,45:",vaString,F,,running
+"mainfo,c,strings.data,46:",vaString,F,,Process terminated. Exitcode: 
+"mainfo,c,strings.data,47:",vaString,F,,Process terminated normally.
+"mainfo,c,strings.data,48:",vaString,F,,Make ***ERROR***
+"mainfo,c,strings.data,49:",vaString,F,,Make OK.
+"mainfo,c,strings.data,50:",vaString,F,,"Source has changed, do you wish to remake project?"
+"mainfo,c,strings.data,51:",vaString,F,,Load Window Layout
+"mainfo,c,strings.data,52:",vaString,F,,Docking Area
+"mainfo,openform,controller.filterlist.data,0:,0:",vaString,F,,Form Files
+"mainfo,openform,controller.captionopen",vaString,F,,Open Form File
+"guitemplatesmo,sysenv,helpheader",vaString,F,,"MSEide Copyright 1999-2015 by Martin Schreiber
+Usage: mseide [OPTION]... [PROJECTFILE]
+
+Options:"
+"guitemplatesmo,sysenv,helpfooter",vaString,F,,"
+Environment variables
+FPCDIR, FPCLIBDIR, MSEDIR, MSELIBDIR
+SYNTAXDEFDIR, TEMPLATEDIR, COMPSTOREDIR
+COMPILER, DEBUGGER, EXEEXT,TARGET,TARGETOSDIR
+can be used to override the settings macros.
+
+Have a lot of fun!
+
+Martin"
+"guitemplatesmo,sysenv,defs,0:,6:",vaString,F,,Set path to global status file.
+"guitemplatesmo,sysenv,defs,1:,6:",vaString,F,,"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
+ Example:
+ --macrodef=MAC1,abc,MAC2,def"
+"guitemplatesmo,sysenv,defs,2:,6:",vaString,F,,Store --macrodef values as global macros and terminate MSEide. 
+"guitemplatesmo,sysenv,defs,3:,6:",vaString,F,,"Use 'Project'-'Options'-'Macros'-'Active group' number <n>,
+<n> = 1..6."
+"guitemplatesmo,sysenv,defs,4:,6:",vaString,F,,Do not load a project.
+"guitemplatesmo,sysenv,defs,20:,6:",vaString,F,,Do not touch Z-order of the windows.
+"guitemplatesmo,sysenv,defs,21:,6:",vaString,F,,Do not use the NET_RESTACK_WINDOW protocol.
+"guitemplatesmo,sysenv,defs,22:,6:",vaString,F,,Use the NET_RESTACK_WINDOW protocol.
+"guitemplatesmo,sysenv,defs,23:,6:",vaString,F,,Do not use xreconfigurewmwindow() for window stacking operation.
+"guitemplatesmo,sysenv,defs,24:,6:",vaString,F,,Use xreconfigurewmwindow() for window stacking operation.
+"guitemplatesmo,sysenv,defs,25:,6:",vaString,F,,Necessarry for windowmanagers with buggy xreconfigurewmwindow() handling.
+"guitemplatesmo,sysenv,defs,26:,6:",vaString,F,,No workaround.
+"guitemplatesmo,sysenv,defs,27:,6:",vaString,F,,"Use the top level frame window id instead of the application client window id
+for window raise operation. Implies --NORESTACKWINDOW and
+ --NORECONFIGUREWMWINDOW."
+"formdesignerfo,popupme,menu.submenu.items,0:,caption",vaString,F,,Show objectinspector
+"formdesignerfo,popupme,menu.submenu.items,1:,caption",vaString,F,,Show componentpalette
+"formdesignerfo,popupme,menu.submenu.items,2:,caption",vaString,F,,Show as Text
+"formdesignerfo,popupme,menu.submenu.items,9:,caption",vaString,F,,Copy Component(s)
+"formdesignerfo,popupme,menu.submenu.items,10:,caption",vaString,F,,Cut Component(s)
+"formdesignerfo,popupme,menu.submenu.items,11:,caption",vaString,F,,Paste Component(s)
+"formdesignerfo,popupme,menu.submenu.items,12:,caption",vaString,F,,Delete Component(s)
+"formdesignerfo,popupme,menu.submenu.items,13:,caption",vaString,F,,Undelete Component(s)
+"formdesignerfo,popupme,menu.submenu.items,15:,caption",vaString,F,,Find Component
+"formdesignerfo,popupme,menu.submenu.items,16:,caption",vaString,F,,Select Childwidget
+"formdesignerfo,popupme,menu.submenu.items,17:,caption",vaString,F,,&Iconify
+"formdesignerfo,popupme,menu.submenu.items,18:,caption",vaString,F,,&Deiconify
+"formdesignerfo,popupme,menu.submenu.items,20:,caption",vaString,F,,&Edit Component
+"formdesignerfo,popupme,menu.submenu.items,21:,caption",vaString,F,,Sync. to Font Height
+"formdesignerfo,popupme,menu.submenu.items,22:,caption",vaString,F,,Bring to Front
+"formdesignerfo,popupme,menu.submenu.items,23:,caption",vaString,F,,Send to Back
+"formdesignerfo,popupme,menu.submenu.items,24:,caption",vaString,F,,Set Widget Order
+"formdesignerfo,popupme,menu.submenu.items,25:,caption",vaString,F,,Set Tab Order
+"formdesignerfo,popupme,menu.submenu.items,26:,caption",vaString,F,,Set Creation Order
+"formdesignerfo,popupme,menu.submenu.items,27:,caption",vaString,F,,Revert to inherited
+"formdesignerfo,popupme,menu.submenu.items,29:,caption",vaString,F,,Touch Form
+"formdesignerfo,popupme,menu.submenu.items,30:,caption",vaString,F,,Touch all Forms
+"formdesignerfo,popupme,menu.submenu.items,31:,caption",vaString,F,,Insert Submodule
+"formdesignerfo,popupme,menu.submenu.items,32:,caption",vaString,F,,Insert Component
+"formdesignerfo,hidecompact,caption",vaString,F,,Hide &Components
+"formdesignerfo,hidewidgetact,caption",vaString,F,,Hide &Widgets
+"formdesignerfo,togglehideact,caption",vaString,F,,&Hide Widgets<>Components
+"formdesignerfo,showallact,caption",vaString,F,,&Show all
+"formdesignerfo,c,strings.data,0:",vaString,F,,Do you wish to revert to inherited
+"formdesignerfo,c,strings.data,1:",vaString,F,,the selected component?
+"formdesignerfo,c,strings.data,2:",vaString,F,,Do you want to touch all loaded forms?
+"findinfilepagefo,cancel,caption",vaString,F,,&Cancel
+"findinfilepagefo,again,caption",vaString,F,,&again
+"findinfilepagefo,c,strings.data,0:",vaString,F,,*** CANCELED ***
+"findinfilepagefo,c,strings.data,1:",vaString,F,,FINISHED
+"findinfilefo,dragdock.caption",vaString,F,,Findresults
+"findinfilefo,caption",vaString,F,,Find in file results
+"findinfileadialogfo,caption",vaString,F,,Find Text in Files
+"findinfileadialogfo,findtext,frame.caption",vaString,F,,&Text to find
+"findinfileadialogfo,dir,frame.caption",vaString,F,,&Directory
+"findinfileadialogfo,mask,frame.caption",vaString,F,,&File Mask
+"findinfileadialogfo,tlayouter1,indirectories,frame.caption",vaString,F,,Search in &directories
+"findinfileadialogfo,tlayouter1,casesensitive,frame.caption",vaString,F,,C&asesensitive
+"findinfileadialogfo,tlayouter1,inprojectdir,frame.caption",vaString,F,,Search in &project dir
+"findinfileadialogfo,tlayouter2,wholeword,frame.caption",vaString,F,,&Whole word
+"findinfileadialogfo,tlayouter2,inopenfiles,frame.caption",vaString,F,,Search in &open files
+"findinfileadialogfo,tlayouter2,incurrentfile,frame.caption",vaString,F,,Search in &current file
+"findinfileadialogfo,tlayouter4,tlayouter3,ok,caption",vaString,F,,OK
+"findinfileadialogfo,tlayouter4,tlayouter3,cancel,caption",vaString,F,,Cancel
+"findinfileadialogfo,tlayouter4,subdirs,frame.caption",vaString,F,,&Include subdirectories
+"finddialogfo,caption",vaString,F,,Find Text
+"finddialogfo,findtext,frame.caption",vaString,F,,&Text to find
+"finddialogfo,tlayouter4,tlayouter3,wholeword,frame.caption",vaString,F,,&whole word
+"finddialogfo,tlayouter4,tlayouter3,backward,frame.caption",vaString,F,,&backward
+"finddialogfo,tlayouter4,tlayouter2,casesensitive,frame.caption",vaString,F,,c&asesensitive
+"finddialogfo,tlayouter4,tlayouter2,selectedonly,frame.caption",vaString,F,,&selected only
+"finddialogfo,tlayouter4,tlayouter1,tlayouter5,cancel,caption",vaString,F,,&Cancel
+"finddialogfo,tlayouter4,tlayouter1,tlayouter5,tbutton2,caption",vaString,F,,&OK
+"disassfo,dragdock.caption",vaString,F,,Assembler
+"disassfo,caption",vaString,F,,Assembler
+"disassfo,popupmen,menu.submenu.items,0:,caption",vaString,F,,Show &Breakpoint
+"debuggerfo,dragdock.caption",vaString,F,,Debugger
+"debuggerfo,gdbtoolbar,buttons.items,7:,hint",vaString,F,,Next instruction
+"debuggerfo,gdbtoolbar,buttons.items,8:,hint",vaString,F,,Step instruction
+"cpurl78fo,mem,frame.caption",vaString,F,,MEM
+"cpufo,on,frame.caption",vaString,F,,CPU &on
+"cpufo,stoptime,format",vaString,F,,yy-mm-dd hh:mm:ss
+"cpuavr32fo,tspacer1,irqoff,hint",vaString,F,,Set global interrupt mask while stepping
+"cpuavr32fo,tspacer1,exceptstack,caption",vaString,F,,Check Exceptstack
+"cpuavr32fo,cs,strings.data,0:",vaString,F,,Return address:
+"cpuavr32fo,cs,strings.data,1:",vaString,F,,Exception return
+"componentstorefo,dragdock.caption",vaString,F,,Component Store
+"componentstorefo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"componentstorefo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Sel
+"componentstorefo,grid,fixrows.items,0:,captions.items,1:,hint",vaString,F,,Select item for inserting
+"componentstorefo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Description
+"componentstorefo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,File
+"componentstorefo,grid,filepath,controller.filterlist.data,0:,0:",vaString,F,,Component File
+"componentstorefo,grid,filepath,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"componentstorefo,copycompact,caption",vaString,F,,&Copy Component
+"componentstorefo,pastecompact,caption",vaString,F,,&Paste Component(s)
+"componentstorefo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,&Copy Component(s)
+"componentstorefo,tpopupmenu1,menu.submenu.items,3:,caption",vaString,F,,Update Component(s)
+"componentstorefo,tpopupmenu1,menu.submenu.items,4:,caption",vaString,F,,Remove Component(s)
+"componentstorefo,tpopupmenu1,menu.submenu.items,6:,caption",vaString,F,,New  Node
+"componentstorefo,tpopupmenu1,menu.submenu.items,7:,caption",vaString,F,,Remove Node
+"componentstorefo,tpopupmenu1,menu.submenu.items,8:,caption",vaString,F,,Copy Node
+"componentstorefo,tpopupmenu1,menu.submenu.items,9:,caption",vaString,F,,Paste Node
+"componentstorefo,tpopupmenu1,menu.submenu.items,11:,caption",vaString,F,,New Store
+"componentstorefo,tpopupmenu1,menu.submenu.items,12:,caption",vaString,F,,Add Store
+"componentstorefo,tpopupmenu1,menu.submenu.items,13:,caption",vaString,F,,Remove Store
+"componentstorefo,tpopupmenu1,menu.submenu.items,15:,caption",vaString,F,,Open Store Group
+"componentstorefo,tpopupmenu1,menu.submenu.items,16:,caption",vaString,F,,Save Store Group
+"componentstorefo,tpopupmenu1,menu.submenu.items,17:,caption",vaString,F,,Save Store Group as
+"componentstorefo,storefiledialog,controller.filterlist.data,0:,0:",vaString,F,,Component Stores
+"componentstorefo,storefiledialog,controller.captionopen",vaString,F,,Load Component Store
+"componentstorefo,storefiledialog,controller.captionsave",vaString,F,,New Component Store
+"componentstorefo,groupfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Store Groups
+"componentstorefo,groupfiledialog,controller.captionopen",vaString,F,,Open Store Group
+"componentstorefo,groupfiledialog,controller.captionsave",vaString,F,,Save Store Group
+"componentstorefo,addfileact,caption",vaString,F,,Add Componentfile
+"componentstorefo,compfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Component File
+"componentstorefo,compfiledialog,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"componentstorefo,compfiledialog,controller.captionopen",vaString,F,,Select Component File
+"componentstorefo,c,strings.data,0:",vaString,F,,Component Store
+"componentstorefo,c,strings.data,1:",vaString,F,,Component read error.
+"componentstorefo,c,strings.data,2:",vaString,F,,"Do you want to overwrite """
+"componentstorefo,c,strings.data,3:",vaString,F,,""" with current clipboard content?"
+"componentstorefo,c,strings.data,4:",vaString,F,,WARNING
+"componentstorefo,c,strings.data,5:",vaString,F,,No component(s) in clipboard.
+"componentstorefo,c,strings.data,6:",vaString,F,,Error while writing the storegroup.
+"componentstorefo,c,strings.data,7:",vaString,F,,ERROR
+"componentstorefo,c,strings.data,8:",vaString,F,,"Do you want to remove """
+"componentstorefo,c,strings.data,10:",vaString,F,,""" branch?"
+"componentstorefo,c,strings.data,11:",vaString,F,,"File """
+"componentstorefo,c,strings.data,12:",vaString,F,,""" does not exist, do you want to create it?"
+"componentstorefo,c,strings.data,13:",vaString,F,,Save Component Store Group
+"componentpalettefo,dragdock.caption",vaString,F,,Component Palette
+"commandlinefo,caption",vaString,F,,Command Line
+"commandlinefo,c,strings.data,0:",vaString,F,,Make disabled by Default make col!
+"breakpointsfo,caption",vaString,F,,Breakpoints
+"breakpointsfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,on
+"breakpointsfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,File
+"breakpointsfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Line Nr.
+"breakpointsfo,grid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Address
+"breakpointsfo,grid,fixrows.items,0:,captions.items,7:,caption",vaString,F,,Count
+"breakpointsfo,grid,fixrows.items,0:,captions.items,8:,caption",vaString,F,,Ignore
+"breakpointsfo,grid,fixrows.items,0:,captions.items,10:,caption",vaString,F,,Condition
+"breakpointsfo,bkptson,frame.caption",vaString,F,,Breakpoints &on
+"breakpointsfo,gripopup,menu.submenu.items,0:,caption",vaString,F,,Delete all
+"breakpointsfo,c,strings.data,0:",vaString,F,,Breakpoint error.
+"breakpointsfo,c,strings.data,1:",vaString,F,,BREAKPOINT ERROR
+"breakpointsfo,c,strings.data,2:",vaString,F,,Do you wish to delete all breakpoints?
+"breakpointsfo,c,strings.data,3:",vaString,F,,Confirmation
+"actionsmo,makeact,caption",vaString,F,,&Make
+"actionsmo,run,caption",vaString,F,,&Run
+"actionsmo,run,hint",vaString,F,,Run
+"actionsmo,step,caption",vaString,F,,&Step
+"actionsmo,step,hint",vaString,F,,Step
+"actionsmo,next,caption",vaString,F,,&Next
+"actionsmo,next,hint",vaString,F,,Next
+"actionsmo,continue,caption",vaString,F,,&Continue
+"actionsmo,continue,hint",vaString,F,,Continue
+"actionsmo,interrupt,caption",vaString,F,,&Interrupt
+"actionsmo,interrupt,hint",vaString,F,,Interrupt
+"actionsmo,reset,caption",vaString,F,,&Reset
+"actionsmo,reset,hint",vaString,F,,Reset
+"actionsmo,opensource,caption",vaString,F,,&Open
+"actionsmo,finish,caption",vaString,F,,&Finish
+"actionsmo,finish,hint",vaString,F,,Finish
+"actionsmo,save,caption",vaString,F,,&Save
+"actionsmo,close,caption",vaString,F,,&Close
+"actionsmo,abortmakeact,caption",vaString,F,,&Abort Make
+"actionsmo,undo,caption",vaString,F,,&Undo
+"actionsmo,redo,caption",vaString,F,,&Redo
+"actionsmo,cut,caption",vaString,F,,Cu&t
+"actionsmo,copy,caption",vaString,F,,&Copy
+"actionsmo,paste,caption",vaString,F,,&Paste
+"actionsmo,delete,caption",vaString,F,,&Delete
+"actionsmo,saveall,caption",vaString,F,,Sa&ve all
+"actionsmo,find,caption",vaString,F,,&Find
+"actionsmo,repeatfind,caption",vaString,F,,&Search again
+"actionsmo,findinfile,caption",vaString,F,,Find in F&iles
+"actionsmo,closeall,caption",vaString,F,,C&lose all
+"actionsmo,saveas,caption",vaString,F,,Save &as
+"actionsmo,bkptsonact,caption",vaString,F,,&Breakpoints on
+"actionsmo,bkptsonact,hint",vaString,F,,Breakpoints on/off
+"actionsmo,watchesonact,caption",vaString,F,,&Watches on
+"actionsmo,watchesonact,hint",vaString,F,,Watches on/off
+"actionsmo,line,caption",vaString,F,,&Line
+"actionsmo,togglebkpt,caption",vaString,F,,&Toggle Breakpoint
+"actionsmo,togglebkptenable,caption",vaString,F,,Toggle Bkpt. &enabled
+"actionsmo,selecteditpage,caption",vaString,F,,Select &Edit Page
+"actionsmo,indent,caption",vaString,F,,&Indent
+"actionsmo,unindent,caption",vaString,F,,U&nindent
+"actionsmo,toggleformunit,caption",vaString,F,,Toggle Form/&Unit
+"actionsmo,nexti,caption",vaString,F,,Next Instruction
+"actionsmo,stepi,caption",vaString,F,,Step Instruction
+"actionsmo,bluedotsonact,caption",vaString,F,,Exec Line Hint on
+"actionsmo,bluedotsonact,hint",vaString,F,,Executable lines hint on/off
+"actionsmo,replace,caption",vaString,F,,Find && &Replace
+"actionsmo,print,caption",vaString,F,,&Print
+"actionsmo,detachtarget,caption",vaString,F,,Detach
+"actionsmo,attachprocess,caption",vaString,F,,Attach Process
+"actionsmo,lowercase,caption",vaString,F,,&Lowercase
+"actionsmo,uppercase,caption",vaString,F,,&Uppercase
+"actionsmo,shortcuts,actions.items,0:,dispname",vaString,F,,File
+"actionsmo,shortcuts,actions.items,1:,dispname",vaString,F,,Open
+"actionsmo,shortcuts,actions.items,2:,dispname",vaString,F,,Save
+"actionsmo,shortcuts,actions.items,3:,dispname",vaString,F,,Save all
+"actionsmo,shortcuts,actions.items,4:,dispname",vaString,F,,Save as
+"actionsmo,shortcuts,actions.items,5:,dispname",vaString,F,,Close
+"actionsmo,shortcuts,actions.items,6:,dispname",vaString,F,,Close all
+"actionsmo,shortcuts,actions.items,7:,dispname",vaString,F,,Print
+"actionsmo,shortcuts,actions.items,8:,dispname",vaString,F,,Search
+"actionsmo,shortcuts,actions.items,9:,dispname",vaString,F,,Line
+"actionsmo,shortcuts,actions.items,10:,dispname",vaString,F,,Find
+"actionsmo,shortcuts,actions.items,11:,dispname",vaString,F,,Search again
+"actionsmo,shortcuts,actions.items,12:,dispname",vaString,F,,Search back
+"actionsmo,shortcuts,actions.items,13:,dispname",vaString,F,,Find and replace
+"actionsmo,shortcuts,actions.items,14:,dispname",vaString,F,,Find in File
+"actionsmo,shortcuts,actions.items,15:,dispname",vaString,F,,Edit
+"actionsmo,shortcuts,actions.items,16:,dispname",vaString,F,,Select Editpage
+"actionsmo,shortcuts,actions.items,17:,dispname",vaString,F,,Copy Word at Cursor
+"actionsmo,shortcuts,actions.items,18:,dispname",vaString,F,,Indent
+"actionsmo,shortcuts,actions.items,19:,dispname",vaString,F,,Unindent
+"actionsmo,shortcuts,actions.items,20:,dispname",vaString,F,,Comment Selection
+"actionsmo,shortcuts,actions.items,21:,dispname",vaString,F,,Uncomment Selection
+"actionsmo,shortcuts,actions.items,22:,dispname",vaString,F,,Lowercase
+"actionsmo,shortcuts,actions.items,23:,dispname",vaString,F,,Uppercase
+"actionsmo,shortcuts,actions.items,24:,dispname",vaString,F,,Copy LaTeX
+"actionsmo,shortcuts,actions.items,25:,dispname",vaString,F,,Complete Class
+"actionsmo,shortcuts,actions.items,26:,dispname",vaString,F,,Insert Template
+"actionsmo,shortcuts,actions.items,27:,dispname",vaString,F,,Navigate Back
+"actionsmo,shortcuts,actions.items,28:,dispname",vaString,F,,Navigate Forward
+"actionsmo,shortcuts,actions.items,29:,dispname",vaString,F,,Set Bookmark
+"actionsmo,shortcuts,actions.items,30:,dispname",vaString,F,,Set Bookmark 0
+"actionsmo,shortcuts,actions.items,31:,dispname",vaString,F,,Set Bookmark 1
+"actionsmo,shortcuts,actions.items,32:,dispname",vaString,F,,Set Bookmark 2
+"actionsmo,shortcuts,actions.items,33:,dispname",vaString,F,,Set Bookmark 3
+"actionsmo,shortcuts,actions.items,34:,dispname",vaString,F,,Set Bookmark 4
+"actionsmo,shortcuts,actions.items,35:,dispname",vaString,F,,Set Bookmark 5
+"actionsmo,shortcuts,actions.items,36:,dispname",vaString,F,,Set Bookmark 6
+"actionsmo,shortcuts,actions.items,37:,dispname",vaString,F,,Set Bookmark 7
+"actionsmo,shortcuts,actions.items,38:,dispname",vaString,F,,Set Bookmark 8
+"actionsmo,shortcuts,actions.items,39:,dispname",vaString,F,,Set Bookmark 9
+"actionsmo,shortcuts,actions.items,40:,dispname",vaString,F,,Clear Bookmark
+"actionsmo,shortcuts,actions.items,41:,dispname",vaString,F,,Find Bookmark
+"actionsmo,shortcuts,actions.items,42:,dispname",vaString,F,,Find Bookmark 0
+"actionsmo,shortcuts,actions.items,43:,dispname",vaString,F,,Find Bookmark 1
+"actionsmo,shortcuts,actions.items,44:,dispname",vaString,F,,Find Bookmark 2
+"actionsmo,shortcuts,actions.items,45:,dispname",vaString,F,,Find Bookmark 3
+"actionsmo,shortcuts,actions.items,46:,dispname",vaString,F,,Find Bookmark 4
+"actionsmo,shortcuts,actions.items,47:,dispname",vaString,F,,Find Bookmark 5
+"actionsmo,shortcuts,actions.items,48:,dispname",vaString,F,,Find Bookmark 6
+"actionsmo,shortcuts,actions.items,49:,dispname",vaString,F,,Find Bookmark 7
+"actionsmo,shortcuts,actions.items,50:,dispname",vaString,F,,Find Bookmark 8
+"actionsmo,shortcuts,actions.items,51:,dispname",vaString,F,,Find Bookmark 9
+"actionsmo,shortcuts,actions.items,52:,dispname",vaString,F,,Target
+"actionsmo,shortcuts,actions.items,53:,dispname",vaString,F,,Attach Process
+"actionsmo,shortcuts,actions.items,54:,dispname",vaString,F,,Detach Target
+"actionsmo,shortcuts,actions.items,55:,dispname",vaString,F,,Continue
+"actionsmo,shortcuts,actions.items,56:,dispname",vaString,F,,Reset
+"actionsmo,shortcuts,actions.items,57:,dispname",vaString,F,,Interrupt
+"actionsmo,shortcuts,actions.items,58:,dispname",vaString,F,,Next
+"actionsmo,shortcuts,actions.items,59:,dispname",vaString,F,,Next Instruction
+"actionsmo,shortcuts,actions.items,60:,dispname",vaString,F,,Step
+"actionsmo,shortcuts,actions.items,61:,dispname",vaString,F,,Step Instruction
+"actionsmo,shortcuts,actions.items,62:,dispname",vaString,F,,Finish
+"actionsmo,shortcuts,actions.items,63:,dispname",vaString,F,,Breakpoints on/off
+"actionsmo,shortcuts,actions.items,64:,dispname",vaString,F,,Toggle Breakpoint
+"actionsmo,shortcuts,actions.items,65:,dispname",vaString,F,,Toggle Breakpoint enabled
+"actionsmo,shortcuts,actions.items,66:,dispname",vaString,F,,Watches on/off
+"actionsmo,shortcuts,actions.items,67:,dispname",vaString,F,,Exec Line Hints on/off
+"actionsmo,shortcuts,actions.items,68:,dispname",vaString,F,,View
+"actionsmo,shortcuts,actions.items,69:,dispname",vaString,F,,Toggle Form/Object Inspector
+"actionsmo,shortcuts,actions.items,70:,dispname",vaString,F,,Toggle Form/Unit
+"actionsmo,shortcuts,actions.items,71:,dispname",vaString,F,,Project
+"actionsmo,shortcuts,actions.items,72:,dispname",vaString,F,,Make
+"actionsmo,shortcuts,actions.items,73:,dispname",vaString,F,,Build
+"actionsmo,shortcuts,actions.items,74:,dispname",vaString,F,,Make 1
+"actionsmo,shortcuts,actions.items,75:,dispname",vaString,F,,Make 2
+"actionsmo,shortcuts,actions.items,76:,dispname",vaString,F,,Make 3
+"actionsmo,shortcuts,actions.items,77:,dispname",vaString,F,,Make 4
+"actionsmo,shortcuts,actions.items,78:,dispname",vaString,F,,Abort Make
+"actionsmo,shortcuts,actions.items,79:,dispname",vaString,F,,Options
+"actionsmo,shortcuts,actions.items,80:,dispname",vaString,F,,Open
+"actionsmo,shortcuts,actions.items,81:,dispname",vaString,F,,Save
+"actionsmo,shortcuts,actions.items,82:,dispname",vaString,F,,Tree
+"actionsmo,shortcuts,actions.items,83:,dispname",vaString,F,,Source
+"actionsmo,shortcuts,actions.items,84:,dispname",vaString,F,,Close
+"actionsmo,shortcuts,actions.items,85:,dispname",vaString,F,,Help
+"actionsmo,shortcuts,actions.items,86:,dispname",vaString,F,,Help
+"actionsmo,shortcuts,actions.items,87:,dispname",vaString,F,,Tools
+"actionsmo,shortcuts,actions.items,88:,dispname",vaString,F,,Tool 1
+"actionsmo,shortcuts,actions.items,89:,dispname",vaString,F,,Tool 2
+"actionsmo,shortcuts,actions.items,90:,dispname",vaString,F,,Tool 3
+"actionsmo,shortcuts,actions.items,91:,dispname",vaString,F,,Tool 4
+"actionsmo,shortcuts,actions.items,92:,dispname",vaString,F,,Tool 5
+"actionsmo,shortcuts,actions.items,93:,dispname",vaString,F,,Tool 6
+"actionsmo,shortcuts,actions.items,94:,dispname",vaString,F,,Tool 7
+"actionsmo,shortcuts,actions.items,95:,dispname",vaString,F,,Tool 8
+"actionsmo,shortcuts,actions.items,96:,dispname",vaString,F,,Tool 9
+"actionsmo,shortcuts,actions.items,97:,dispname",vaString,F,,Tool 10
+"actionsmo,toggleinspector,caption",vaString,F,,Toggle Form/Inspector
+"actionsmo,download,caption",vaString,F,,Download
+"actionsmo,attachtarget,caption",vaString,F,,Attach Target
+"actionsmo,setbm0,caption",vaString,F,,Bookmark &0
+"actionsmo,findbm0,caption",vaString,F,,Bookmark &0
+"actionsmo,findbm1,caption",vaString,F,,Bookmark &1
+"actionsmo,setbm1,caption",vaString,F,,Bookmark &1
+"actionsmo,findbm2,caption",vaString,F,,Bookmark &2
+"actionsmo,setbm2,caption",vaString,F,,Bookmark &2
+"actionsmo,findbm3,caption",vaString,F,,Bookmark &3
+"actionsmo,setbm3,caption",vaString,F,,Bookmark &3
+"actionsmo,findbm4,caption",vaString,F,,Bookmark &4
+"actionsmo,setbm4,caption",vaString,F,,Bookmark &4
+"actionsmo,findbm5,caption",vaString,F,,Bookmark &5
+"actionsmo,setbm5,caption",vaString,F,,Bookmark &5
+"actionsmo,findbm6,caption",vaString,F,,Bookmark &6
+"actionsmo,setbm6,caption",vaString,F,,Bookmark &6
+"actionsmo,findbm7,caption",vaString,F,,Bookmark &7
+"actionsmo,setbm7,caption",vaString,F,,Bookmark &7
+"actionsmo,findbm8,caption",vaString,F,,Bookmark &8
+"actionsmo,setbm8,caption",vaString,F,,Bookmark &8
+"actionsmo,findbm9,caption",vaString,F,,Bookmark &9
+"actionsmo,setbm9,caption",vaString,F,,Bookmark &9
+"actionsmo,setbmnone,caption",vaString,F,,none
+"actionsmo,projectopenact,caption",vaString,F,,O&pen
+"actionsmo,projectoptionsact,caption",vaString,F,,&Options
+"actionsmo,projecttreeact,caption",vaString,F,,&Tree
+"actionsmo,projectsourceact,caption",vaString,F,,So&urce
+"actionsmo,projectsaveact,caption",vaString,F,,&Save
+"actionsmo,projectcloseact,caption",vaString,F,,&Close
+"actionsmo,c,strings.data,0:",vaString,F,,Configure MSEide
+"actionsmo,c,strings.data,1:",vaString,F,,Process ID
+"actionsmo,c,strings.data,2:",vaString,F,,Attach to process
+"actionsmo,c,strings.data,3:",vaString,F,,"Unknown moduleclass for """
+"actionsmo,c,strings.data,4:",vaString,F,,"Inherited component """
+"actionsmo,c,strings.data,5:",vaString,F,,""" can not be deleted."
+"actionsmo,c,strings.data,6:",vaString,F,,ERROR
+"actionsmo,c,strings.data,7:",vaString,F,,Make aborted.
+"actionsmo,c,strings.data,8:",vaString,F,,Download aborted.
+"actionsmo,c,strings.data,9:",vaString,F,,"Runerror with """
+"actionsmo,c,strings.data,10:",vaString,F,,Error: Timeout.
+"actionsmo,c,strings.data,11:",vaString,F,,Making.
+"actionsmo,c,strings.data,12:",vaString,F,,Make not running.
+"actionsmo,c,strings.data,13:",vaString,F,,Downloading.
+"actionsmo,c,strings.data,14:",vaString,F,,Download not running.
+"actionsmo,c,strings.data,15:",vaString,F,,""" running."
+"actionsmo,c,strings.data,16:",vaString,F,,Script
+"actionsmo,c,strings.data,17:",vaString,F,,"Recursive form inheritance of """
+"actionsmo,c,strings.data,18:",vaString,F,,"Component """
+"actionsmo,c,strings.data,19:",vaString,F,,""" exists."
+"actionsmo,c,strings.data,20:",vaString,F,,"Ancestor for """
+"actionsmo,c,strings.data,21:",vaString,F,,""" not found."
+"actionsmo,c,strings.data,22:",vaString,F,,"Module """
+"actionsmo,c,strings.data,23:",vaString,F,,"Invalid name """
+"actionsmo,c,strings.data,24:",vaString,F,,Invalid methodname
+"actionsmo,c,strings.data,25:",vaString,F,,Module not found
+"actionsmo,c,strings.data,26:",vaString,F,,Method not found
+"actionsmo,c,strings.data,27:",vaString,F,,Published (managed) method
+"actionsmo,c,strings.data,28:",vaString,F,,does not exist.
+"actionsmo,c,strings.data,29:",vaString,F,,Do you wish to delete the event?
+"actionsmo,c,strings.data,30:",vaString,F,,WARNING
+"actionsmo,c,strings.data,31:",vaString,F,,Method
+"actionsmo,c,strings.data,32:",vaString,F,,has different parameters.
+"actionsmo,c,strings.data,33:",vaString,F,,"A module """
+"actionsmo,c,strings.data,34:",vaString,F,,""" is already open."
+"actionsmo,c,strings.data,35:",vaString,F,,Unresolved reference(s) to
+"actionsmo,c,strings.data,36:",vaString,F,,Module(s):
+"actionsmo,c,strings.data,37:",vaString,F,,"Can not read formfile """
+"actionsmo,c,strings.data,38:",vaString,F,,Invalid component name.
+"actionsmo,c,strings.data,39:",vaString,F,,Invalid exception
+"actionsmo,c,strings.data,40:",vaString,F,,T&ools
+"actionsmo,c,strings.data,41:",vaString,F,,Forms
+"actionsmo,c,strings.data,42:",vaString,F,,Source
+"actionsmo,c,strings.data,43:",vaString,F,,All Files
+"actionsmo,c,strings.data,44:",vaString,F,,Program
+"actionsmo,c,strings.data,45:",vaString,F,,Unit
+"actionsmo,c,strings.data,46:",vaString,F,,Textfile
+"actionsmo,c,strings.data,47:",vaString,F,,Mainform
+"actionsmo,c,strings.data,48:",vaString,F,,Simple Form
+"actionsmo,c,strings.data,49:",vaString,F,,Docking Form
+"actionsmo,c,strings.data,50:",vaString,F,,Datamodule
+"actionsmo,c,strings.data,51:",vaString,F,,Subform
+"actionsmo,c,strings.data,52:",vaString,F,,Scrollboxform
+"actionsmo,c,strings.data,53:",vaString,F,,Tabform
+"actionsmo,c,strings.data,54:",vaString,F,,Dockpanel
+"actionsmo,c,strings.data,55:",vaString,F,,Report
+"actionsmo,c,strings.data,56:",vaString,F,,Scriptform
+"actionsmo,c,strings.data,57:",vaString,F,,Inherited Form
+"actionsmo,c,strings.data,58:",vaString,F,,Do you want to replace the settings by
+"actionsmo,c,strings.data,59:",vaString,F,,"File """
+"actionsmo,c,strings.data,60:",vaString,F,,Do you want to overwrite?
+"actionsmo,c,strings.data,61:",vaString,F,,Unknown
+"actionsmo,c,strings.data,62:",vaString,F,,Error
+"actionsmo,c,strings.data,63:",vaString,F,,Startup
+"actionsmo,c,strings.data,64:",vaString,F,,Exception
+"actionsmo,c,strings.data,65:",vaString,F,,GDB died
+"actionsmo,c,strings.data,66:",vaString,F,,Breakpoint hit
+"actionsmo,c,strings.data,67:",vaString,F,,Watchpoint triggered
+"actionsmo,c,strings.data,68:",vaString,F,,Read Watchpoint triggered
+"actionsmo,c,strings.data,69:",vaString,F,,Access Watchpoint triggered
+"actionsmo,c,strings.data,70:",vaString,F,,End stepping range
+"actionsmo,c,strings.data,71:",vaString,F,,Function finished
+"actionsmo,c,strings.data,72:",vaString,F,,Exited normally
+"actionsmo,c,strings.data,73:",vaString,F,,Exited
+"actionsmo,c,strings.data,74:",vaString,F,,Detached
+"actionsmo,c,strings.data,75:",vaString,F,,Signal received
+"actionsmo,c,strings.data,76:",vaString,F,,Stop error
+"actionsmo,c,strings.data,77:",vaString,F,,Can not read project
+"actionsmo,c,strings.data,78:",vaString,F,,About
+"actionsmo,c,strings.data,79:",vaString,F,,Object Inspector
+"actionsmo,c,strings.data,80:",vaString,F,,Store Component
+"actionsmo,c,strings.data,81:",vaString,F,,Attaching Process
+"actionsmo,c,strings.data,82:",vaString,F,,Loading
+"actionsmo,c,strings.data,83:",vaString,F,,Sizing Form
+"actionsmo,copylatexact,caption",vaString,F,,Copy &LaTeX
+"actionsmo,findcompallact,caption",vaString,F,,&Find Component
+"actionsmo,forcezorderact,caption",vaString,F,,Force &Z-Order
+"actionsmo,comment,caption",vaString,F,,&Comment
+"actionsmo,uncomment,caption",vaString,F,,Unc&omment
+"actionsmo,copyword,caption",vaString,F,,Copy &Word at Cursor
+"actionsmo,selectall,caption",vaString,F,,Select &all
+"actionsmo,tabtospace,caption",vaString,F,,&Tabs to space
+"actionsmo,findback,caption",vaString,F,,Search &back
+"msetexteditorfo,caption",vaString,F,,Texteditor
+"msetexteditorfo,ok,caption",vaString,F,,&OK
+"msetexteditorfo,cancel,caption",vaString,F,,&Cancel
+"msetexteditorfo,test,caption",vaString,F,,&Test
+"msetexteditorfo,tpopupmenu1,menu.submenu.items,2:,caption",vaString,F,,&Copy
+"msetexteditorfo,tpopupmenu1,menu.submenu.items,3:,caption",vaString,F,,Cu&t
+"msetexteditorfo,tpopupmenu1,menu.submenu.items,4:,caption",vaString,F,,&Paste
+"msetexteditorfo,tpopupmenu1,menu.submenu.items,6:,caption",vaString,F,,&Load file
+"msetexteditorfo,tpopupmenu1,menu.submenu.items,7:,caption",vaString,F,,&Save file
+"msetexteditorfo,filedialog,controller.captionopen",vaString,F,,Load file
+"msetexteditorfo,filedialog,controller.captionsave",vaString,F,,Save file
+"msetexteditorfo,undoact,caption",vaString,F,,&Undo
+"msetexteditorfo,redoact,caption",vaString,F,,&Redo
+"msetexteditorfo,c,strings.data,0:",vaString,F,,Test OK
+"msetaborderoverrideeditorfo,caption",vaString,F,,Taborder override
+"msetaborderoverrideeditorfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel
+"msetaborderoverrideeditorfo,tsplitter1,tbutton1,caption",vaString,F,,&OK
+"msesysenvmanagereditorfo,caption",vaString,F,,Edit tsysenvmanager
+"msesysenvmanagereditorfo,tlayouter2,ok,caption",vaString,F,,&OK
+"msesysenvmanagereditorfo,tlayouter2,cancel,caption",vaString,F,,&Cancel
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Kind
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Name
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Alias
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,11:,caption",vaString,F,,Initvalue
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,12:,caption",vaString,F,,Argument
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,13:,caption",vaString,F,,Help
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,14:,caption",vaString,F,,Before
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,15:,caption",vaString,F,,After
+"stringlisteditor,ok,caption",vaString,F,,&OK
+"stringlisteditor,cancel,caption",vaString,F,,&Cancel
+"stringlisteditor,rowcount,frame.caption",vaString,F,,Rowcount
+"msestringintlisteditor,ok,caption",vaString,F,,&OK
+"msestringintlisteditor,cancel,caption",vaString,F,,&Cancel
+"msestringintlisteditor,rowcount,frame.caption",vaString,F,,Rowcount
+"settingsfo,caption",vaString,F,,Configure MSE environment
+"settingsfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel
+"settingsfo,tsplitter1,tbutton1,caption",vaString,F,,&OK
+"settingsfo,tsplitter1,shortcutbu,caption",vaString,F,,&Shortcuts
+"settingsfo,tlayouter1,printcomm,frame.caption",vaString,F,,Print command
+"settingsfo,tlayouter1,debugger,hint",vaString,F,,Path to debugger (gdb).
+"settingsfo,tlayouter1,debugger,controller.captionopen",vaString,F,,Debugger path
+"settingsfo,tlayouter1,compiler,hint",vaString,F,,Path to compiler (ppc386).
+"settingsfo,tlayouter1,compiler,controller.captionopen",vaString,F,,Compiler path
+"settingsfo,tlayouter1,compstoredir,hint",vaString,F,,Directory for component store files.
+"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:",vaString,F,,Project files
+"settingsfo,tlayouter1,compstoredir,controller.captionopen",vaString,F,,Directory for component stores
+"settingsfo,tlayouter1,templatedir,hint",vaString,F,,Directory for project template files.
+"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:",vaString,F,,Project files
+"settingsfo,tlayouter1,templatedir,controller.captionopen",vaString,F,,Project template directory
+"settingsfo,tlayouter1,syntaxdefdir,hint",vaString,F,,Directory for syntax definition files.
+"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:",vaString,F,,Syntax definitions
+"settingsfo,tlayouter1,syntaxdefdir,controller.captionopen",vaString,F,,Directory for syntax definition files
+"settingsfo,tlayouter1,mselibdir,hint",vaString,F,,Root directory of MSEgui library.
+"settingsfo,tlayouter1,mselibdir,controller.captionopen",vaString,F,,MSEgui library directory
+"settingsfo,tlayouter1,msedir,hint",vaString,F,,Root directory of MSEgui.
+"settingsfo,tlayouter1,msedir,controller.captionopen",vaString,F,,MSEgui root directory
+"settingsfo,tlayouter1,fpclibdir,hint",vaString,F,,Root directory of FPC library (not used by the default project templates).
+"settingsfo,tlayouter1,fpclibdir,controller.captionopen",vaString,F,,FPC library directory
+"settingsfo,tlayouter1,fpcdir,hint",vaString,F,,Root directory of Free Pascal system (not used by the default project templates).
+"settingsfo,tlayouter1,fpcdir,controller.captionopen",vaString,F,,FPC root directory
+"settingsfo,macrogrid,frame.caption",vaString,F,,Global Macros
+"settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value
+"richstringeditorfo,caption",vaString,F,,Enter Memo Text
+"richstringeditorfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel
+"richstringeditorfo,tlayouter1,tbutton1,caption",vaString,F,,&OK
+"richstringeditorfo,formatedact,caption",vaString,F,,&Font Format
+"reallisteditor,ok,caption",vaString,F,,&OK
+"reallisteditor,cancel,caption",vaString,F,,&Cancel
+"reallisteditor,rowcount,frame.caption",vaString,F,,Rowcount
+"msepropertyeditorsmo,c,strings.data,0:",vaString,F,,Open image file
+"msepropertyeditorsmo,c,strings.data,1:",vaString,F,,Invalid set item
+"msepropertyeditorsmo,c,strings.data,2:",vaString,F,,Unknown
+"msepropertyeditorsmo,c,strings.data,3:",vaString,F,,Wrong property value
+"msepropertyeditorsmo,c,strings.data,4:",vaString,F,,Invalid method name
+"msepropertyeditorsmo,c,strings.data,5:",vaString,F,,Method name
+"msepropertyeditorsmo,c,strings.data,6:",vaString,F,,exists
+"msepropertyeditorsmo,c,strings.data,7:",vaString,F,,Do you wish to destroy
+"msepropertyeditorsmo,c,strings.data,8:",vaString,F,,Do you wish to delete items
+"msepropertyeditorsmo,c,strings.data,9:",vaString,F,,to
+"msepropertyeditorsmo,c,strings.data,10:",vaString,F,,Empty date
+"msepropertyeditorsmo,c,strings.data,11:",vaString,F,,Empty time
+"msepropertyeditorsmo,c,strings.data,12:",vaString,F,,Do you wish to clear
+"msepropertyeditorsmo,c,strings.data,14:",vaString,F,,Invalid component name
+"integerlisteditor,ok,caption",vaString,F,,&OK
+"integerlisteditor,cancel,caption",vaString,F,,&Cancel
+"integerlisteditor,rowcount,frame.caption",vaString,F,,Rowcount
+"mseindexlookupeditorfo,caption",vaString,F,,Indexlookup Editor
+"mseindexlookupeditorfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel
+"mseindexlookupeditorfo,tsplitter1,tbutton1,caption",vaString,F,,&OK
+"mseindexlookupeditorfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Index
+"imageselectorfo,caption",vaString,F,,Image Selector
+"imagelisteditorfo,caption",vaString,F,,Imagelist Editor
+"imagelisteditorfo,tlayouter1,la2,tlayouter2,ok,caption",vaString,F,,&OK
+"imagelisteditorfo,tlayouter1,la2,tlayouter2,cancel,caption",vaString,F,,&Cancel
+"imagelisteditorfo,tlayouter1,la2,tlayouter2,clear,caption",vaString,F,,C&lear
+"imagelisteditorfo,tlayouter1,la2,tlayouter2,add,caption",vaString,F,,&Add
+"imagelisteditorfo,tlayouter1,la2,stretch,frame.caption",vaString,F,,&stretch
+"imagelisteditorfo,tlayouter1,la1,transparentcolor,frame.caption",vaString,F,,"&Transp.
+color"
+"imagelisteditorfo,tlayouter1,la1,transparentcolor,hint",vaString,F,,Transparent color
+"imagelisteditorfo,tlayouter1,la1,masked,frame.caption",vaString,F,,&masked
+"imagelisteditorfo,tlayouter1,la1,versionnum,frame.caption",vaString,F,,"Vers.
+Nr."
+"imagelisteditorfo,tlayouter1,la1,versionnum,hint",vaString,F,,Current imagelist version number
+"imagelisteditorfo,popup,menu.submenu.items,0:,caption",vaString,F,,Copy Items
+"imagelisteditorfo,popup,menu.submenu.items,1:,caption",vaString,F,,Paste Items
+"iircoeffeditorfo,caption",vaString,F,,IIR Filter Coefficients
+"iircoeffeditorfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Numerator
+"iircoeffeditorfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Denominator
+"iircoeffeditorfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Internal Num.
+"iircoeffeditorfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Internal Den.
+"iircoeffeditorfo,ok,caption",vaString,F,,&OK
+"iircoeffeditorfo,cancel,caption",vaString,F,,&Cancel
+"mseififieldeditorfo,tbutton1,caption",vaString,F,,OK
+"mseififieldeditorfo,tbutton2,caption",vaString,F,,Cancel
+"mseififieldeditorfo,fielddefli,frame.caption",vaString,F,,Fielddefs
+"mseififieldeditorfo,fielddefli,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"mseififieldeditorfo,fielddefli,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type
+"mseififieldeditorfo,fields,frame.caption",vaString,F,,Fields
+"mseififieldeditorfo,fields,fixrows.items,0:,captions.items,2:,caption",vaString,F,,fieldname
+"mseififieldeditorfo,fields,fixrows.items,0:,captions.items,3:,caption",vaString,F,,sourcefieldname
+"mseififieldeditorfo,fields,fixrows.items,0:,captions.items,4:,caption",vaString,F,,datatype
+"mseififieldeditorfo,c,strings.data,0:",vaString,F,,Connection
+"mseificlienteditorfo,caption",vaString,F,,ifi Client Editor
+"mseificlienteditorfo,tbutton1,caption",vaString,F,,&OK
+"mseificlienteditorfo,tbutton2,caption",vaString,F,,&Cancel
+"fircoeffeditorfo,caption",vaString,F,,IIR Filter Coefficients
+"fircoeffeditorfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Coefficient
+"fircoeffeditorfo,ok,caption",vaString,F,,&OK
+"fircoeffeditorfo,cancel,caption",vaString,F,,&Cancel
+"fadeeditfo,caption",vaString,F,,Fade Edit
+"fadeeditfo,cont2,cont1,gridlayout,opagrid,frame.caption",vaString,F,,Opacity
+"fadeeditfo,cont2,cont1,gridlayout,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Pos
+"fadeeditfo,cont2,cont1,gridlayout,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Color
+"fadeeditfo,cont2,cont1,gridlayout,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Opacity
+"fadeeditfo,cont2,opaedit,frame.caption",vaString,F,,Opacity
+"fadeeditfo,bottomlayout,switchlayout,splitopa,frame.caption",vaString,F,,"Separate
+Opacity"
+"fadeeditfo,bottomlayout,switchlayout,reverse,frame.caption",vaString,F,,&reverse
+"fadeeditfo,bottomlayout,buttonlayout,tbutton2,caption",vaString,F,,&Cancel
+"fadeeditfo,bottomlayout,buttonlayout,tbutton1,caption",vaString,F,,&OK
+"fadeeditfo,bottomlayout,buttonlayout,tbutton3,caption",vaString,F,,&Save
+"fadeeditfo,bottomlayout,buttonlayout,tbutton4,caption",vaString,F,,&Load
+"fadeeditfo,bottomlayout,buttonlayout,clearbu,hint",vaString,F,,Clear opacity gradient
+"fadeeditfo,bottomlayout,buttonlayout,clearbu,caption",vaString,F,,ClearOpa
+"fadeeditfo,filedialog,controller.filterlist.data,0:,0:",vaString,F,,Fade Files
+"fadeeditfo,filedialog,controller.filterlist.data,1:,0:",vaString,F,,All Files
+"fadeeditfo,filedialog,controller.captionopen",vaString,F,,Load Fade File
+"fadeeditfo,filedialog,controller.captionsave",vaString,F,,Save Fade File
+"fadeeditfo,c,strings.data,0:",vaString,F,,Do you want to synchronize opacity gradient
+"fadeeditfo,c,strings.data,1:",vaString,F,,with color gradient?
+"fadeeditfo,c,strings.data,2:",vaString,F,,Do you want to remove opacity gradient?
+"faceselectorfo,caption",vaString,F,,Face Selector
+"doublestringlisteditor,ok,caption",vaString,F,,&OK
+"doublestringlisteditor,cancel,caption",vaString,F,,&Cancel
+"doublestringlisteditor,rowcount,frame.caption",vaString,F,,Rowcount
+"doublereallisteditor,ok,caption",vaString,F,,&OK
+"doublereallisteditor,cancel,caption",vaString,F,,&Cancel
+"doublereallisteditor,rowcount,frame.caption",vaString,F,,Rowcount
+"msedbfieldeditorfo,tbutton1,caption",vaString,F,,OK
+"msedbfieldeditorfo,tbutton2,caption",vaString,F,,Cancel
+"msedbfieldeditorfo,fielddefli,frame.caption",vaString,F,,Fielddefs
+"msedbfieldeditorfo,fielddefli,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"msedbfieldeditorfo,fielddefli,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type
+"msedbfieldeditorfo,fields,frame.caption",vaString,F,,Fields
+"msedbfieldeditorfo,fields,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Name
+"msedbfieldeditorfo,fields,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Class type
+"msedbfieldeditorfo,fields,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Field kind
+"msedbfieldeditorfo,c,strings.data,0:",vaString,F,,Dataset
+"msecornermaskeditorfo,caption",vaString,F,,Cornermask Editor
+"msecornermaskeditorfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel
+"msecornermaskeditorfo,tsplitter1,tbutton1,caption",vaString,F,,&OK
+"msecornermaskeditorfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Width
+"msecornermaskeditorfo,grid,fixrows.items,0:,captionsfix.items,0:,caption",vaString,F,,Row
+"colordialogfo,caption",vaString,F,,Select Color
+"colordialogfo,colorpibu,caption",vaString,F,,Color &Picker
+"colordialogfo,colorarea,frame.caption",vaString,F,,new
+"colordialogfo,colorareabefore,frame.caption",vaString,F,,old
+"colordialogfo,tlayouter1,blue,frame.caption",vaString,F,,&blue
+"colordialogfo,tlayouter1,green,frame.caption",vaString,F,,&green
+"colordialogfo,tlayouter1,red,frame.caption",vaString,F,,&red
+"colordialogfo,tlayouter1,bright,frame.caption",vaString,F,,&BRI
+"colordialogfo,tlayouter1,sat,frame.caption",vaString,F,,&SAT
+"colordialogfo,tlayouter1,hue,frame.caption",vaString,F,,&HUE
+"colordialogfo,tlayouter2,cancel,caption",vaString,F,,&Cancel
+"colordialogfo,tlayouter2,ok,caption",vaString,F,,&OK
+"colordialogfo,tlayouter2,colored,frame.caption",vaString,F,,Color
+"filedialogfo,tlayouter2,bucont,showhidden,frame.caption",vaString,F,,&Show hidden files
+"filedialogfo,tlayouter2,bucont,cancel,caption",vaString,F,,&Cancel
+"filedialogfo,tlayouter2,bucont,ok,caption",vaString,F,,&Ok
+"filedialogfo,tlayouter2,tlayouter1,filter,frame.caption",vaString,F,,&Filter
+"filedialogfo,tlayouter2,tlayouter1,filename,frame.caption",vaString,F,,&Name
+"filedialogfo,tlayouter3,createdir,caption",vaString,F,,&New dir
+"filedialogfo,tlayouter3,home,caption",vaString,F,,&Home
+"filedialogfo,tlayouter3,dir,frame.caption",vaString,F,,&Dir
+"fontformatdialogfo,caption",vaString,F,,Edit Font Format
+"fontformatdialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel
+"fontformatdialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK
+"fontformatdialogfo,tlayouter2,tlayouter3,bolded,frame.caption",vaString,F,,B&old
+"fontformatdialogfo,tlayouter2,tlayouter3,italiced,frame.caption",vaString,F,,&Italic
+"fontformatdialogfo,tlayouter2,tlayouter3,underlineed,frame.caption",vaString,F,,&Underline
+"fontformatdialogfo,tlayouter2,tlayouter3,strikeouted,frame.caption",vaString,F,,&Strikeout
+"fontformatdialogfo,tlayouter2,tlayouter3,blanked,frame.caption",vaString,F,,Bl&ank
+"fontformatdialogfo,tlayouter2,tlayouter4,backgroundcolored,frame.caption",vaString,F,,&Backgroundcolor
+"fontformatdialogfo,tlayouter2,tlayouter4,fontcolored,frame.caption",vaString,F,,&Fontcolor
+"integerenterfo,lab,caption",vaString,F,,lab
+"integerenterfo,ok,caption",vaString,F,,&OK
+"integerenterfo,cancel,caption",vaString,F,,&Cancel
+"msememodialogfo,caption",vaString,F,,Enter Memo Text
+"msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel
+"msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK
+"realenterfo,lab,caption",vaString,F,,lab
+"realenterfo,ok,caption",vaString,F,,&OK
+"realenterfo,cancel,caption",vaString,F,,&Cancel
+"mseshortcutdialogfo,caption",vaString,F,,Shortcuts
+"mseshortcutdialogfo,tsimplewidget1,sc1ed,frame.caption",vaString,F,,&Alternate
+"mseshortcutdialogfo,tsimplewidget1,sc1ed,hint",vaString,F,,Press the desired key combination.
+"mseshortcutdialogfo,tsimplewidget1,sced,frame.caption",vaString,F,,&Shortcut
+"mseshortcutdialogfo,tsimplewidget1,sced,hint",vaString,F,,Press the desired key combination.
+"mseshortcutdialogfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Action
+"mseshortcutdialogfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Shortcut
+"mseshortcutdialogfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Alternate
+"mseshortcutdialogfo,okbu,caption",vaString,F,,&OK
+"mseshortcutdialogfo,cancelbu,caption",vaString,F,,&Cancel
+"mseshortcutdialogfo,defaultbu,caption",vaString,F,,&Default
+"mseshortcutdialogfo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,Expand all
+"mseshortcutdialogfo,tpopupmenu1,menu.submenu.items,1:,caption",vaString,F,,Collapse all
+"stringenterfo,lab,caption",vaString,F,,lab
+"stringenterfo,tlayouter1,cancel,caption",vaString,F,,&Cancel
+"stringenterfo,tlayouter1,ok,caption",vaString,F,,&OK

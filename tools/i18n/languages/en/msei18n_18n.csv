@@ -1,0 +1,96 @@
+name,type,notranslate,comment,value,en
+"mainfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"mainfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type
+"mainfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Comment
+"mainfo,grid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Value
+"mainfo,flat,frame.caption",vaString,F,,flat
+"mainfo,stringonly,frame.caption",vaString,F,,string only
+"mainfo,nont,frame.caption",vaString,F,,no NT
+"mainfo,ntonly,frame.caption",vaString,F,,NT only
+"mainfo,coloron,frame.caption",vaString,F,,Show Color
+"mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open
+"mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Save
+"mainfo,mainmenu1,menu.submenu.items,2:,caption",vaString,F,,Save &as
+"mainfo,mainmenu1,menu.submenu.items,3:,caption",vaString,F,,&New
+"mainfo,mainmenu1,menu.submenu.items,4:,caption",vaString,F,,&Edit
+"mainfo,mainmenu1,menu.submenu.items,5:,caption",vaString,F,,&Import
+"mainfo,mainmenu1,menu.submenu.items,6:,caption",vaString,F,,Ex&port
+"mainfo,mainmenu1,menu.submenu.items,7:,caption",vaString,F,,&Make
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n
+"mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings
+"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,E&xit
+"mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project
+"mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project
+"mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project
+"mainfo,c,strings.data,0:",vaString,F,,name
+"mainfo,c,strings.data,1:",vaString,F,,type
+"mainfo,c,strings.data,2:",vaString,F,,notranslate
+"mainfo,c,strings.data,3:",vaString,F,,comment
+"mainfo,c,strings.data,4:",vaString,F,,value
+"mainfo,c,strings.data,5:",vaString,F,,<no project>
+"mainfo,c,strings.data,6:",vaString,F,,Can not read module
+"mainfo,c,strings.data,7:",vaString,F,,New translate project
+"mainfo,c,strings.data,8:",vaString,F,,Exec error
+"mainfo,c,strings.data,9:",vaString,F,,Making
+"mainfo,c,strings.data,10:",vaString,F,,overwrites itself
+"mainfo,c,strings.data,11:",vaString,F,,ERROR
+"mainfo,c,strings.data,12:",vaString,F,,Finished OK
+"mainfo,c,strings.data,13:",vaString,F,,Configure MSEi18n
+"mainfo,c,strings.data,14:",vaString,F,,Data has changed
+"mainfo,c,strings.data,15:",vaString,F,,Do you wish to save
+"mainfo,c,strings.data,16:",vaString,F,,CONFIRMATION
+"msememodialogfo,caption",vaString,F,,Enter Memo Text
+"msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel
+"msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK
+"messagesfo,caption",vaString,F,,Make Language Units
+"projectfo,caption",vaString,F,,Edit Translate Project
+"projectfo,impexpencoding,frame.caption",vaString,F,,Encoding for imp/exp files
+"projectfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Rootname
+"projectfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,File
+"projectfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Kind
+"projectfo,grid,filename,controller.captionopen",vaString,F,,Select unit or form file
+"projectfo,datafilename,frame.caption",vaString,F,,Datafile
+"projectfo,datafilename,controller.filterlist.data,0:,0:",vaString,F,,MSEi18n Data Files
+"projectfo,datafilename,controller.filterlist.data,1:,0:",vaString,F,,All files
+"projectfo,grid2,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Language
+"projectfo,grid2,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Directory
+"projectfo,makecommand,frame.caption",vaString,F,,Make command
+"projectfo,makeon,frame.caption",vaString,F,,on
+"projectfo,ok,caption",vaString,F,,OK
+"projectfo,cancel,caption",vaString,F,,Cancel
+"projectfo,destname,frame.caption",vaString,F,,Destination Basename (empty = Datafile name)
+"projectfo,beforemake,frame.caption",vaString,F,,Before make
+"projectfo,aftermake,frame.caption",vaString,F,,After make
+"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files
+"projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file
+"projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file
+"settingsfo,caption",vaString,F,,Configure MSE environment
+"settingsfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel
+"settingsfo,tsplitter1,tbutton1,caption",vaString,F,,&OK
+"settingsfo,tsplitter1,shortcutbu,caption",vaString,F,,&Shortcuts
+"settingsfo,tlayouter1,printcomm,frame.caption",vaString,F,,Print command
+"settingsfo,tlayouter1,debugger,hint",vaString,F,,Path to debugger (gdb).
+"settingsfo,tlayouter1,debugger,controller.captionopen",vaString,F,,Debugger path
+"settingsfo,tlayouter1,compiler,hint",vaString,F,,Path to compiler (ppc386).
+"settingsfo,tlayouter1,compiler,controller.captionopen",vaString,F,,Compiler path
+"settingsfo,tlayouter1,compstoredir,hint",vaString,F,,Directory for component store files.
+"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:",vaString,F,,Project files
+"settingsfo,tlayouter1,compstoredir,controller.captionopen",vaString,F,,Directory for component stores
+"settingsfo,tlayouter1,templatedir,hint",vaString,F,,Directory for project template files.
+"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:",vaString,F,,Project files
+"settingsfo,tlayouter1,templatedir,controller.captionopen",vaString,F,,Project template directory
+"settingsfo,tlayouter1,syntaxdefdir,hint",vaString,F,,Directory for syntax definition files.
+"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:",vaString,F,,Syntax definitions
+"settingsfo,tlayouter1,syntaxdefdir,controller.captionopen",vaString,F,,Directory for syntax definition files
+"settingsfo,tlayouter1,mselibdir,hint",vaString,F,,Root directory of MSEgui library.
+"settingsfo,tlayouter1,mselibdir,controller.captionopen",vaString,F,,MSEgui library directory
+"settingsfo,tlayouter1,msedir,hint",vaString,F,,Root directory of MSEgui.
+"settingsfo,tlayouter1,msedir,controller.captionopen",vaString,F,,MSEgui root directory
+"settingsfo,tlayouter1,fpclibdir,hint",vaString,F,,Root directory of FPC library (not used by the default project templates).
+"settingsfo,tlayouter1,fpclibdir,controller.captionopen",vaString,F,,FPC library directory
+"settingsfo,tlayouter1,fpcdir,hint",vaString,F,,Root directory of Free Pascal system (not used by the default project templates).
+"settingsfo,tlayouter1,fpcdir,controller.captionopen",vaString,F,,FPC root directory
+"settingsfo,macrogrid,frame.caption",vaString,F,,Global Macros
+"settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name
+"settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value
