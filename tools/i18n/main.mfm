@@ -6,14 +6,15 @@ object mainfo: tmainfo
   bounds_cy = 390
   container.frame.levelo = 1
   container.frame.localprops = [frl_levelo]
+  container.frame.localprops1 = []
+  container.frame.sbhorz.facebutton.localprops = []
   container.frame.sbhorz.facebutton.template = concavex
-  container.frame.sbhorz.facebutton.dummy = 0
+  container.frame.sbhorz.faceendbutton.localprops = []
   container.frame.sbhorz.faceendbutton.template = concavex
-  container.frame.sbhorz.faceendbutton.dummy = 0
+  container.frame.sbvert.facebutton.localprops = []
   container.frame.sbvert.facebutton.template = concavey
-  container.frame.sbvert.facebutton.dummy = 0
+  container.frame.sbvert.faceendbutton.localprops = []
   container.frame.sbvert.faceendbutton.template = concavey
-  container.frame.sbvert.faceendbutton.dummy = 0
   container.bounds = (
     0
     20
@@ -27,6 +28,7 @@ object mainfo: tmainfo
   caption = 'MSEi18n'
   icon.transparentcolor = -2147483642
   icon.options = [bmo_masked]
+  windowopacity = -Inf
   oncreate = tmainfooncreate
   onloaded = loadedexe
   oneventloopstart = tmainfoonloaded
@@ -35,10 +37,10 @@ object mainfo: tmainfo
   moduleclassname = 'tmseform'
   object tgroupbox1: tgroupbox
     frame.captiondist = -4
+    frame.localprops = []
     frame.localprops1 = [frl1_captiondist]
-    frame.dummy = 0
+    face.localprops = []
     face.template = concavex
-    face.dummy = 0
     bounds_x = 1
     bounds_y = 1
     bounds_cx = 622
@@ -46,14 +48,16 @@ object mainfo: tmainfo
     anchors = [an_top]
   end
   object grid: twidgetgrid
+    frame.sbvert.facebutton.localprops = []
     frame.sbvert.facebutton.template = concavey
-    frame.sbvert.facebutton.dummy = 0
+    frame.sbvert.faceendbutton.localprops = []
     frame.sbvert.faceendbutton.template = concavey
-    frame.sbvert.faceendbutton.dummy = 0
+    frame.sbhorz.facebutton.localprops = []
     frame.sbhorz.facebutton.template = concavex
-    frame.sbhorz.facebutton.dummy = 0
+    frame.sbhorz.faceendbutton.localprops = []
     frame.sbhorz.faceendbutton.template = concavex
-    frame.sbhorz.faceendbutton.dummy = 0
+    frame.localprops = []
+    frame.localprops1 = []
     taborder = 5
     bounds_x = 1
     bounds_y = 25
@@ -64,15 +68,15 @@ object mainfo: tmainfo
     fixcols.count = 1
     fixcols.items = <    
       item
-        width = 39
+        width = 0
         numstart = 1
         numstep = 1
       end>
     fixrows.count = 1
     fixrows.items = <    
       item
+        face.localprops = []
         face.template = convexx
-        face.dummy = 0
         height = 16
         captions.count = 5
         captions.items = <        
@@ -93,19 +97,21 @@ object mainfo: tmainfo
           end>
       end>
     datacols.count = 5
-    datacols.options = [co_proportional, co_savestate]
+    datacols.options = [co_savestate]
     datacols.options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
     datacols.items = <    
       item[tree]
         width = 195
-        options = [co_readonly, co_proportional, co_savestate]
+        options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 200
         widgetname = 'tree'
         dataclass = ttreeitemeditlist
       end    
       item[typedisp]
         options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 60
         widgetname = 'typedisp'
         dataclass = tgridenumdatalist
       end    
@@ -113,20 +119,23 @@ object mainfo: tmainfo
         width = 19
         options = [co_drawfocus, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 25
         widgetname = 'donottranslate'
         dataclass = tgridintegerdatalist
       end    
       item[comment]
-        width = 124
-        options = [co_proportional, co_savestate]
+        width = 66
+        options = [co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 200
         widgetname = 'comment'
         dataclass = tgridmsestringdatalist
       end    
       item[value]
-        width = 102
-        options = [co_readonly, co_proportional, co_savestate]
+        width = 249
+        options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 300
         widgetname = 'value'
         dataclass = tgridmsestringdatalist
       end>
@@ -139,6 +148,7 @@ object mainfo: tmainfo
       frame.levelo = 0
       frame.colorclient = -2147483646
       frame.localprops = [frl_levelo, frl_colorclient]
+      frame.localprops1 = []
       taborder = 1
       visible = False
       bounds_x = 0
@@ -158,7 +168,13 @@ object mainfo: tmainfo
       frame.levelo = 0
       frame.colorclient = -2147483646
       frame.localprops = [frl_levelo, frl_colorclient]
+      frame.localprops1 = []
       frame.button.options = [fbo_invisible, fbo_disabled]
+      frame.buttons.count = 1
+      frame.buttons.items = <      
+        item
+          options = [fbo_invisible, fbo_disabled]
+        end>
       taborder = 2
       visible = False
       bounds_x = 196
@@ -179,7 +195,7 @@ object mainfo: tmainfo
       color = -2147483646
       frame.levelo = 0
       frame.localprops = [frl_levelo]
-      frame.dummy = 0
+      frame.localprops1 = []
       taborder = 3
       bounds_x = 247
       bounds_y = 0
@@ -194,6 +210,14 @@ object mainfo: tmainfo
       frame.levelo = 0
       frame.colorclient = -2147483646
       frame.localprops = [frl_levelo, frl_colorclient]
+      frame.localprops1 = []
+      frame.buttons.count = 1
+      frame.buttons.items = <      
+        item
+          width = 13
+          color = -2147483646
+          imagenr = 17
+        end>
       frame.button.width = 13
       frame.button.color = -2147483646
       frame.button.imagenr = 17
@@ -201,14 +225,14 @@ object mainfo: tmainfo
       visible = False
       bounds_x = 267
       bounds_y = 0
-      bounds_cx = 124
+      bounds_cx = 66
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick, oe_hintclippedtext]
       font.height = 12
       font.name = 'stf_default'
       font.xscale = 1
-      font.dummy = 0
+      font.localprops = [flp_xscale, flp_height]
       onsetvalue = commentonsetvalue
       reffontheight = 14
     end
@@ -218,13 +242,20 @@ object mainfo: tmainfo
       frame.levelo = 0
       frame.colorclient = -2147483646
       frame.localprops = [frl_levelo, frl_colorclient]
+      frame.localprops1 = []
+      frame.buttons.count = 1
+      frame.buttons.items = <      
+        item
+          imagenr = 17
+          options = [fbo_invisible, fbo_disabled]
+        end>
       frame.button.imagenr = 17
       frame.button.options = [fbo_invisible, fbo_disabled]
       taborder = 5
       visible = False
-      bounds_x = 392
+      bounds_x = 334
       bounds_y = 0
-      bounds_cx = 102
+      bounds_cx = 249
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_readonly, oe_undoonesc, oe_checkmrcancel, oe_exitoncursor, oe_hintclippedtext]
@@ -234,17 +265,18 @@ object mainfo: tmainfo
   object flat: tbooleanedit
     color = -2147483645
     frame.caption = 'flat'
-    frame.dummy = 0
+    frame.localprops = []
+    frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      19
+      22
       2
     )
     taborder = 1
     bounds_x = 9
     bounds_y = 5
-    bounds_cx = 32
+    bounds_cx = 35
     bounds_cy = 16
     statfile = projectfo.projectstat
     optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
@@ -253,17 +285,18 @@ object mainfo: tmainfo
   object stringonly: tbooleanedit
     color = -2147483645
     frame.caption = 'string only'
-    frame.dummy = 0
+    frame.localprops = []
+    frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      59
+      67
       2
     )
     taborder = 2
     bounds_x = 57
     bounds_y = 5
-    bounds_cx = 72
+    bounds_cx = 80
     bounds_cy = 16
     statfile = projectfo.projectstat
     ondataentered = formatchanged
@@ -271,17 +304,18 @@ object mainfo: tmainfo
   object nont: tbooleanedit
     color = -2147483645
     frame.caption = 'no NT'
-    frame.dummy = 0
+    frame.localprops = []
+    frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      36
+      38
       2
     )
     taborder = 3
     bounds_x = 153
     bounds_y = 5
-    bounds_cx = 49
+    bounds_cx = 51
     bounds_cy = 16
     statfile = projectfo.projectstat
     ondataentered = formatchanged
@@ -290,17 +324,18 @@ object mainfo: tmainfo
   object ntonly: tbooleanedit
     color = -2147483645
     frame.caption = 'NT only'
-    frame.dummy = 0
+    frame.localprops = []
+    frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      44
+      48
       2
     )
     taborder = 4
     bounds_x = 233
     bounds_y = 5
-    bounds_cx = 57
+    bounds_cx = 61
     bounds_cy = 16
     statfile = projectfo.projectstat
     ondataentered = formatchanged
@@ -309,17 +344,18 @@ object mainfo: tmainfo
   object coloron: tbooleanedit
     color = -2147483645
     frame.caption = 'Show Color'
-    frame.dummy = 0
+    frame.localprops = []
+    frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      67
+      70
       2
     )
     taborder = 6
     bounds_x = 321
     bounds_y = 5
-    bounds_cx = 80
+    bounds_cx = 83
     bounds_cy = 16
     statfile = projectfo.projectstat
     ondataentered = showcolordataentered
