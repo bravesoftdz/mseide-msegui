@@ -352,6 +352,7 @@ begin
 // grid.datacols.count:= variantshift;
  grid.datacols.count:= length(ar1);
  grid.fixrows[-1].captions.count:= length(ar1);
+//if high(ar1) >= variantshift then
  for int1:= variantshift to high(ar1) do begin
   grid.fixrows[-1].captions[int1].caption:= getcolumnheaders[int1];
   with grid.datacols[int1] do begin
@@ -368,6 +369,7 @@ begin
    onbeforedrawcell:= @beforelangdrawcell;
   end;
  end;
+// application.processmessages;
  grid.beginupdate;
  try
   item:= rootnode.converttotreelistitem(flat.value,false,
@@ -376,6 +378,7 @@ begin
   tree.itemlist.assign(item);
  finally
   grid.endupdate;
+//  application.processmessages;
  end;
 end;
 
@@ -1063,6 +1066,7 @@ begin
  if avalue then begin
   ntonly.value:= false;
  end;
+ application.processmessages;
 end;
 
 procedure tmainfo.ntonlyonsetvalue(const sender: tobject; var avalue,
@@ -1071,6 +1075,7 @@ begin
  if avalue then begin
   nont.value:= false;
  end;
+ application.processmessages;
 end;
 
 procedure tmainfo.mainupdatestat(const sender: TObject; const filer: tstatfiler);
