@@ -349,10 +349,8 @@ var
  edit1: tmemodialogedit;
 begin
  ar1:= getcolumnheaders;
-// grid.datacols.count:= variantshift;
  grid.datacols.count:= length(ar1);
  grid.fixrows[-1].captions.count:= length(ar1);
-//if high(ar1) >= variantshift then
  for int1:= variantshift to high(ar1) do begin
   grid.fixrows[-1].captions[int1].caption:= getcolumnheaders[int1];
   with grid.datacols[int1] do begin
@@ -369,7 +367,6 @@ begin
    onbeforedrawcell:= @beforelangdrawcell;
   end;
  end;
-// application.processmessages;
  grid.beginupdate;
  try
   item:= rootnode.converttotreelistitem(flat.value,false,
@@ -378,7 +375,6 @@ begin
   tree.itemlist.assign(item);
  finally
   grid.endupdate;
-//  application.processmessages;
  end;
 end;
 
