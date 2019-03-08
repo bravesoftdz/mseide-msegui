@@ -1,2 +1,4 @@
 #!/bin/sh
+pushd /usr/share/mseide-msegui/apps/ide
 exec "/usr/share/mseide-msegui/apps/ide/mseide" --macrodef=MSEDIR,/usr/share/mseide-msegui/ "$@"
+popd
