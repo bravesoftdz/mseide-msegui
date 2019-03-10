@@ -1,4 +1,2 @@
 #!/bin/sh
-pushd /usr/share/mseide-msegui/tools/i18n
 exec "/usr/share/mseide-msegui/tools/i18n/msei18n" --macrodef=MSEDIR,/usr/share/mseide-msegui/ "$@"
-popd

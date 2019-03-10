@@ -35,7 +35,7 @@ program mseide;
 uses
 {$ifdef FPC}{$ifdef unix}cthreads,{$endif}{$endif}
 //  mseopenglgdiinit,
-  mseskindesign,menusdesign,sysutils,
+  mseskindesign,menusdesign,
   
   {$ifdef mse_i18n}
   gettext,msei18nutils,mseconsts,mseconsts_ru,mseconsts_uzcyr,
@@ -58,9 +58,8 @@ var
 begin
  {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- if loadlangunit('.' + directoryseparator + 'languages' + directoryseparator +
-  'i18n_'+ MSEFallbackLang,true) then
-                                                   setlangconsts(MSEFallbackLang);
+ If loadlangunit('i18n_'+MSEFallbackLang,true) then
+                                                setlangconsts(MSEFallbackLang);
  {$endif}
 
  registerfontalias('mseide_source',gui_getdefaultfontnames[stf_courier],
