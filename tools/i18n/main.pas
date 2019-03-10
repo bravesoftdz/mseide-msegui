@@ -281,7 +281,8 @@ begin
  end;
  if result then begin
   if nont.value then begin
-   result:= not tpropinfonode(anode).info.donottranslate;
+   result:= (not tpropinfonode(anode).info.donottranslate) or
+   (tpropinfonode(anode).info.valuetype in [vanull,valist,vacollection]);
   end
   else begin
    if ntonly.value then begin
@@ -375,15 +376,14 @@ begin
  grid.datacols[int1].widthmax:= 500;
  grid.datacols[int1].widthmin:= 60;
  end;
- 
+ grid.beginupdate;
  try
-  grid.beginupdate;
   item:= rootnode.converttotreelistitem(flat.value,false,
                   {$ifdef FPC}@{$endif}filternode);
   item.checkitems({$ifdef FPC}@{$endif}checkitem);
   tree.itemlist.assign(item);
-  grid.endupdate;
  finally
+ grid.endupdate;
  end;
 end;
 
