@@ -703,19 +703,19 @@ envvarons=0
 [edit]
 hintwidth=0
 hintheight=0
-finddtext=try
+finddtext=filternode
 findhistory=3
- try
  filternode
+ try
  tmainfo.updatedata
 findoptions=1
 editpos=7
- 0,1150
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
+ 34,0
  0,0
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
  0,-1073741823
 bookmarks0=0
 bookmarks1=0
@@ -738,8 +738,8 @@ relpaths=7
  msei18n.pas
  project.mfm
  project.pas
- ../../mseguinew/mseide-msegui/tools/i18n/project.mfm
- ../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+ mseguinew/mseide-msegui/tools/i18n/project.mfm
+ mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
 ismoduletexts=7
  0
  0
@@ -998,7 +998,7 @@ windowlayout=593
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1015,10 +1015,10 @@ windowlayout=593
  active=0
  visible=0
  [objectinspectorfo.grid]
- propcolwidthref=426
- width0=188
+ propcolwidthref=411
+ width0=181
  sortdescend0=0
- width1=232
+ width1=224
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1241,8 +1241,8 @@ windowlayout=593
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
-  /home/fred/mseguinew/mseide-msegui/tools/i18n/project.mfm
   /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseguinew/mseide-msegui/tools/i18n/project.mfm
   /home/fred/mseide-msegui/tools/i18n/project.mfm
   /home/fred/mseguinew/mseide-mseguitest/tools/i18n/project.pas
   /home/fred/main.pas
@@ -1296,7 +1296,7 @@ windowlayout=593
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -1331,7 +1331,7 @@ windowlayout=593
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_projectfo_mse_
+ stackedunder=targetconsolefo
  parent=
  mdistate=0
  nx=0

@@ -1,4 +1,4 @@
-{ MSEtools Copyright (c) 1999-2012 by Martin Schreiber
+{ MSEtools Copyright (c) 1999-2019 by Martin Schreiber
    
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,9 +19,7 @@ unit main;
 
 interface
 uses
-{$ifdef unix}
  unix,
-{$endif}
  mseforms,msefiledialog,msestat,msestatfile,msesimplewidgets,msegrids,
  msewidgetgrid,msegraphics,msegraphutils,mselistbrowser,msedataedits,typinfo,
  msedatanodes,msegraphedits,msestream,mseglob,msemenus,classes,mclasses,
@@ -350,6 +348,7 @@ var
  edit1: tmemodialogedit;
 begin
  ar1:= getcolumnheaders;
+// grid.datacols.count:= variantshift;
  grid.datacols.count:= length(ar1);
  grid.fixrows[-1].captions.count:= length(ar1);
  for int1:= variantshift to high(ar1) do begin
@@ -368,14 +367,6 @@ begin
    onbeforedrawcell:= @beforelangdrawcell;
   end;
  end;
- 
- for int1 := grid.datacols.count - projectfo.grid2.rowcount -1 to 
- grid.datacols.count - 1 do
- begin
- //grid.datacols[int1].width:= 200;
- grid.datacols[int1].widthmax:= 500;
- grid.datacols[int1].widthmin:= 60;
- end;
  grid.beginupdate;
  try
   item:= rootnode.converttotreelistitem(flat.value,false,
@@ -383,7 +374,7 @@ begin
   item.checkitems({$ifdef FPC}@{$endif}checkitem);
   tree.itemlist.assign(item);
  finally
- grid.endupdate;
+  grid.endupdate;
  end;
 end;
 
@@ -1068,11 +1059,9 @@ end;
 procedure tmainfo.nontonsetvalue(const sender: tobject; var avalue,
   accept: boolean);
 begin
-
  if avalue then begin
   ntonly.value:= false;
  end;
-// application.processmessages;
 end;
 
 procedure tmainfo.ntonlyonsetvalue(const sender: tobject; var avalue,
@@ -1081,7 +1070,6 @@ begin
  if avalue then begin
   nont.value:= false;
  end;
-// application.processmessages;
 end;
 
 procedure tmainfo.mainupdatestat(const sender: TObject; const filer: tstatfiler);
