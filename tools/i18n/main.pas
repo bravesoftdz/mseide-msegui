@@ -367,14 +367,23 @@ begin
    onbeforedrawcell:= @beforelangdrawcell;
   end;
  end;
- grid.beginupdate;
+ 
+ for int1 := grid.datacols.count - projectfo.grid2.rowcount -1 to 
+ grid.datacols.count - 1 do
+ begin
+ //grid.datacols[int1].width:= 200;
+ grid.datacols[int1].widthmax:= 500;
+ grid.datacols[int1].widthmin:= 60;
+ end;
+ 
  try
+  grid.beginupdate;
   item:= rootnode.converttotreelistitem(flat.value,false,
                   {$ifdef FPC}@{$endif}filternode);
   item.checkitems({$ifdef FPC}@{$endif}checkitem);
   tree.itemlist.assign(item);
- finally
   grid.endupdate;
+ finally
  end;
 end;
 
@@ -1059,10 +1068,11 @@ end;
 procedure tmainfo.nontonsetvalue(const sender: tobject; var avalue,
   accept: boolean);
 begin
+
  if avalue then begin
   ntonly.value:= false;
  end;
- application.processmessages;
+// application.processmessages;
 end;
 
 procedure tmainfo.ntonlyonsetvalue(const sender: tobject; var avalue,
@@ -1071,7 +1081,7 @@ begin
  if avalue then begin
   nont.value:= false;
  end;
- application.processmessages;
+// application.processmessages;
 end;
 
 procedure tmainfo.mainupdatestat(const sender: TObject; const filer: tstatfiler);

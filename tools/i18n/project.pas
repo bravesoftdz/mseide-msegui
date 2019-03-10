@@ -69,7 +69,7 @@ implementation
 uses
  main,project_mfm,msesysenv,msesettings,msestream,msemacros;
 const
- defaultmakecommand = '${COMPILER} -Fu${MSELIBDIR}i18n -FE.. -FU. ${LIBFILE}';
+ defaultmakecommand = '${COMPILER} -Fu${MSELIBDIR}i18n -FE.. -FU. ${LIBFILE} -fPIC';
 
 procedure tprojectfo.filekindoninit(const sender: tenumtypeedit);
 begin
