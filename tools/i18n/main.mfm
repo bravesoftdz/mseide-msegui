@@ -1,7 +1,7 @@
 object mainfo: tmainfo
   visible = False
-  bounds_x = 107
-  bounds_y = 283
+  bounds_x = 320
+  bounds_y = 259
   bounds_cx = 624
   bounds_cy = 390
   container.frame.levelo = 1
@@ -46,6 +46,15 @@ object mainfo: tmainfo
     bounds_cx = 622
     bounds_cy = 24
     anchors = [an_top]
+    object tbutton1: tbutton
+      bounds_x = 366
+      bounds_y = 3
+      bounds_cx = 54
+      bounds_cy = 18
+      state = [as_localcaption, as_localonexecute]
+      caption = 'refresh'
+      onexecute = formatchanged
+    end
   end
   object grid: twidgetgrid
     frame.sbvert.facebutton.localprops = []
@@ -313,7 +322,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 3
-    bounds_x = 153
+    bounds_x = 145
     bounds_y = 5
     bounds_cx = 51
     bounds_cy = 16
@@ -333,7 +342,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 4
-    bounds_x = 233
+    bounds_x = 209
     bounds_y = 5
     bounds_cx = 61
     bounds_cy = 16
@@ -353,7 +362,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 6
-    bounds_x = 321
+    bounds_x = 281
     bounds_y = 5
     bounds_cx = 83
     bounds_cy = 16

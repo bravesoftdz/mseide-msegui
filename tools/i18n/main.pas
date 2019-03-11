@@ -19,15 +19,13 @@ unit main;
 
 interface
 uses
-{$ifdef unix}
- unix,
-{$endif}
- mseforms,msefiledialog,msestat,msestatfile,msesimplewidgets,msegrids,
- msewidgetgrid,msegraphics,msegraphutils,mselistbrowser,msedataedits,typinfo,
- msedatanodes,msegraphedits,msestream,mseglob,msemenus,classes,mclasses,
- msetypes,msestrings,msethreadcomp,mseguiglob,msegui,mseresourceparser,
- msedialog,msememodialog,mseobjecttext,mseifiglob,msesysenv,msemacros,
- msestringcontainer,mseclasses,mseskin,msebitmap,msejson;
+ {$ifdef unix}unix,{$endif}mseforms,msefiledialog,msestat,msestatfile,
+ msesimplewidgets,msegrids,msewidgetgrid,msegraphics,msegraphutils,
+ mselistbrowser,msedataedits,typinfo,msedatanodes,msegraphedits,msestream,
+ mseglob,msemenus,classes,mclasses,msetypes,msestrings,msethreadcomp,mseguiglob,
+ msegui,mseresourceparser,msedialog,msememodialog,mseobjecttext,mseifiglob,
+ msesysenv,msemacros,msestringcontainer,mseclasses,mseskin,msebitmap,msejson,
+ msewidgets;
 
 const
  msei18nversiontext = mseguiversiontext;
@@ -66,6 +64,7 @@ type
    tskincontroller1: tskincontroller;
    iconbmp: tbitmapcomp;
    menuitemframe: tframecomp;
+   tbutton1: tbutton;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -132,6 +131,7 @@ type
    procedure doexport(stream: ttextdatastream; aencoding: charencodingty);
    function getcolumnheaders: msestringarty;
    function checksave(cancelonly: boolean = false): boolean;
+   procedure removenont(const sender: tobject);
   public
    procedure loadproject;
    procedure readprojectdata;
@@ -146,7 +146,7 @@ implementation
 uses
  main_mfm,msefileutils,msesystypes,msesys,sysutils,mselist,project,
  rtlconsts,mseprocutils,msestockobjects,
- msewidgets,mseparser,mseformdatatools,mseresourcetools,
+ mseparser,mseformdatatools,mseresourcetools,
  msearrayutils,msesettings,messagesform,mseeditglob,mseformatstr;
 type
  strinconsts = (
@@ -227,6 +227,8 @@ procedure tmainfo.tmainfoonloaded(const sender: tobject);
 begin
  mainstatfile.readstat;
  show;
+ if (stringonly.value = false) and (nont.value = true) then
+ formatchanged(sender);  
 end;
 
 procedure tmainfo.tmainfoondestroy(const sender: tobject);
@@ -593,9 +595,27 @@ begin
  datachanged;
 end;
 
+procedure tmainfo.removenont(const sender: tobject);
+var
+x : integer = 0;
+hasrem : boolean = true;
+begin
+  while hasrem do begin
+   hasrem := false;
+   for x:=0 to grid.rowcount - 1 do begin
+      if (donottranslate[x]) then begin
+        hasrem := true;
+        grid.deleterow(x);
+      end;   
+   end;
+  end;
+end;
+
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
  updatedata;
+ if (stringonly.value = false) and (nont.value = true) then
+ removenont(nil);  
 end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
@@ -1198,7 +1218,7 @@ var
 begin
  if coloron.value then begin
   with cellinfo.cell do begin
-   int1:= typedisp[row];
+    int1:= typedisp[row];
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
      then begin
@@ -1207,8 +1227,19 @@ begin
       or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
        then  cellinfo.color:= cl_ltred
       else cellinfo.color:= cl_ltgreen;
-      end;  
-    end;
+      end;
+   {    
+   // cellinfo.color:= cl_yellow; 
+   if (donottranslate[row]) and (stringonly.value = false) and (nont.value = true) 
+   then
+   begin
+  cellinfo.color:= cl_yellow;  
+ // grid.rowheight[row] := 0;
+  // grid.rowhidden[row] := true;
+  end;  
+  } 
+ end;
+    
  end;
 end;
 
