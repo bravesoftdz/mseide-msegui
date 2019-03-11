@@ -274,15 +274,21 @@ end;
 function tmainfo.filternode(const anode: ttreenode): boolean;
 begin
  result:= true;
- if result and stringonly.value then begin
+ if stringonly.value then begin
   result:= tpropinfonode(anode).info.valuetype in
            [vastring,valstring,vawstring,vautf8string,
                    vanull,valist,vacollection];
+ end else
+ begin
+ result:= tpropinfonode(anode).info.valuetype in
+           [vastring,valstring,vawstring,vautf8string,
+                   vanull,valist,vacollection, vafalse,vatrue];
  end;
+ 
  if result then begin
   if nont.value then begin
-   result:= (not tpropinfonode(anode).info.donottranslate) or
-   (tpropinfonode(anode).info.valuetype in [vanull,valist,vacollection]);
+   result:= (not tpropinfonode(anode).info.donottranslate)
+   or(tpropinfonode(anode).info.valuetype in [vanull,valist,vacollection]);
   end
   else begin
    if ntonly.value then begin
@@ -1188,6 +1194,7 @@ procedure tmainfo.beforelangdrawcell(const sender: tcol; const canvas: tcanvas;
                var cellinfo: cellinfoty; var processed: Boolean);
 var
  int1: integer;
+ str : string;
 begin
  if coloron.value then begin
   with cellinfo.cell do begin
@@ -1195,8 +1202,10 @@ begin
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
      then begin
+     str := trim(value[row]);
       if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
-      or (value[row] = '') then  cellinfo.color:= cl_ltred
+      or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
+       then  cellinfo.color:= cl_ltred
       else cellinfo.color:= cl_ltgreen;
       end;  
     end;

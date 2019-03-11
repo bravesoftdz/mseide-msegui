@@ -19,6 +19,48 @@ order16=0
 [projectoptions]
 projectdir=/home/fred/mseide-msegui/tools/i18n
 projectfilename=/home/fred/mseide-msegui/tools/i18n/msei18n.prj
+findinfiledialog=41
+ [findinfileadialogfo.subdirs]
+ value=0
+ [findinfileadialogfo.incurrentfile]
+ value=0
+ [findinfileadialogfo.inopenfiles]
+ value=0
+ [findinfileadialogfo.wholeword]
+ value=0
+ [findinfileadialogfo.inprojectdir]
+ value=1
+ [findinfileadialogfo.casesensitive]
+ value=0
+ [findinfileadialogfo.indirectories]
+ value=0
+ [findinfileadialogfo.mask]
+ value="*.pas" "*.pp" "*.inc"
+ history=1
+  "*.pas" "*.pp" "*.inc"
+ [findinfileadialogfo.dir]
+ filenames=1
+  /home/fred/mseide-msegui/tools/i18n/
+ filecolwidth=0
+ x=0
+ y=0
+ cx=0
+ cy=0
+ filehistory=0
+ filefilterindex=0
+ filefilter=
+ [findinfileadialogfo.findtext]
+ value=vacollection
+ history=3
+  vacollection
+  vautf8string
+  
+ [findinfileadialogfo]
+ stackedunder=
+ x=268
+ y=415
+ cx=339
+ cy=275
 finddialog=8
  [finddialogfo.selectedonly]
  value=0
@@ -703,22 +745,24 @@ envvarons=0
 [edit]
 hintwidth=0
 hintheight=0
-finddtext=not donottranslate[row]
-findhistory=5
+finddtext=color
+findhistory=6
+ color
+ filternode
  not donottranslate[row]
  grid.beginupdate;
- filternode
  try
  tmainfo.updatedata
 findoptions=1
-editpos=7
- 5,1202
+editpos=8
+ 0,1206
+ 0,0
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,-1073741823
- 0,-1073741823
+ 0,0
+ 0,41
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -726,7 +770,8 @@ bookmarks3=0
 bookmarks4=0
 bookmarks5=0
 bookmarks6=0
-sourcefiles=7
+bookmarks7=0
+sourcefiles=8
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/project.pas
  ${PROJECTDIR}/msei18n.pas
@@ -734,21 +779,24 @@ sourcefiles=7
  ${PROJECTDIR}/project.pas
  /home/fred/mseguinew/mseide-msegui/tools/i18n/project.mfm
  /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
-relpaths=7
+ ${PROJECTDIR}/mseresourceparser.pas
+relpaths=8
  main.pas
  project.pas
  msei18n.pas
  project.mfm
  project.pas
  mseguinew/mseide-msegui/tools/i18n/project.mfm
- mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
-ismoduletexts=7
+ ../../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+ mseresourceparser.pas
+ismoduletexts=8
  0
  0
  0
  -1
  0
  -1
+ 0
  0
 modules=2
  /home/fred/mseide-msegui/tools/i18n/main.mfm
@@ -763,18 +811,19 @@ nomenumodules=2
  0
  0
 [sourcefo.files_tab]
-order=7
+order=8
  0
- 3
- 4
+ 7
  5
  6
  1
  2
+ 3
+ 4
 firsttab=0
 index=0
 [layout]
-windowlayout=593
+windowlayout=594
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -882,7 +931,7 @@ windowlayout=593
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1226,8 +1275,8 @@ windowlayout=593
  mdistate=0
  nx=0
  ny=0
- ncx=1147
- ncy=54
+ ncx=1356
+ ncy=61
  x=0
  y=0
  cx=1356
@@ -1284,21 +1333,22 @@ windowlayout=593
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=7
+ order=8
   0
-  3
-  4
+  7
   5
   6
   1
   2
+  3
+  4
  firsttab=0
  index=0
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1333,7 +1383,7 @@ windowlayout=593
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_projectfo_mse_
+ stackedunder=targetconsolefo
  parent=
  mdistate=0
  nx=0
