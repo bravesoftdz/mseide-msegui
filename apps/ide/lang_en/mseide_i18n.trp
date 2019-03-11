@@ -320,11 +320,11 @@ active=0
 visible=0
 [mainfo]
 stackedunder=
-x=94
+x=4
 y=29
 cx=1272
 cy=736
-wsize=0
+wsize=6
 active=1
 visible=1
 [mainfo.flat]
