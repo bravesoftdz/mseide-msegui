@@ -1079,7 +1079,7 @@ begin
          {$ifdef mswindows}
          copyfile(mstr1,'../'+mstr1,true);
          {$else}
-         fpsystem('chmod 666 '+mstr1);
+         fpsystem('chmod 777 '+mstr1);
          fpsystem('cp -f '+mstr1+' '+'../'+mstr1);
          {$endif}
         end;
