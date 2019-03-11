@@ -66,6 +66,7 @@ type
    menuitemframe: tframecomp;
    tbutton1: tbutton;
    trowcount: tstringdisp;
+   statusdisp: tstringdisp;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -615,13 +616,35 @@ end;
 
 procedure tmainfo.numrow(const Sender: TObject);
 var
-x: integer;
+x, nt, tt, nc, rc: integer;
+str : string = '';
 begin
- grid.fixcols[-1].captions.count:= grid.rowCount;
- trowcount.value := inttostr(grid.rowCount);
+ rc := grid.rowCount;
+ nc := grid.datacols.count-1;
+ grid.fixcols[-1].captions.count:= rc;
+ statusdisp.value := 'Total rows: ' + inttostr(rc);
+ 
+ trowcount.value := inttostr(rc);
+ nt := 0;
+ tt := 0;
+ 
    for x := 0 to grid.rowCount - 1 do 
+   begin
       grid.fixcols[-1].captions[x] := inttostr(x+1);
-end;
+        if (donottranslate[x]) then inc(nt)
+       else
+      if (tstringedit(grid.datacols[4].editwidget)[x] =
+         tstringedit(grid.datacols[5].editwidget)[x])
+         or (tstringedit(grid.datacols[5].editwidget)[x] = '')
+       then inc(tt);
+   end;  
+   
+ statusdisp.value := '  Total rows: ' + inttostr(rc)+
+ '    To translate: ' + inttostr(rc-nt) +
+ '    To not translate: ' + inttostr(nt) +
+ '    Yet translated: ' + inttostr(rc-nt-tt) +
+ '    Not yet translated: ' + inttostr(tt);
+ end;
 
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
