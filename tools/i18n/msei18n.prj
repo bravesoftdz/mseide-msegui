@@ -703,15 +703,16 @@ envvarons=0
 [edit]
 hintwidth=0
 hintheight=0
-finddtext=grid.beginupdate;
-findhistory=4
+finddtext=not donottranslate[row]
+findhistory=5
+ not donottranslate[row]
  grid.beginupdate;
  filternode
  try
  tmainfo.updatedata
 findoptions=1
 editpos=7
- 8,374
+ 5,1202
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -764,12 +765,12 @@ nomenumodules=2
 [sourcefo.files_tab]
 order=7
  0
+ 3
+ 4
  5
  6
  1
  2
- 3
- 4
 firsttab=0
 index=0
 [layout]
@@ -787,13 +788,13 @@ windowlayout=593
  ny=0
  ncx=0
  ncy=0
- x=125
- y=46
- cx=1157
- cy=621
+ x=0
+ y=29
+ cx=1366
+ cy=706
  rcx=0
  rcy=0
- wsize=0
+ wsize=6
  active=1
  visible=1
  [targetconsolefo]
@@ -907,7 +908,7 @@ windowlayout=593
  x=0
  y=0
  cx=205
- cy=456
+ cy=521
  rcx=0
  rcy=0
  [projecttreefo.grid]
@@ -1112,9 +1113,9 @@ windowlayout=593
  ncx=0
  ncy=0
  x=0
- y=513
- cx=1147
- cy=92
+ y=585
+ cx=1356
+ cy=105
  rcx=0
  rcy=0
  [componentstorefo]
@@ -1213,8 +1214,8 @@ windowlayout=593
  ncy=0
  x=0
  y=0
- cx=1147
- cy=51
+ cx=1356
+ cy=58
  rcx=0
  rcy=0
  [debuggerfo.basedock]
@@ -1229,8 +1230,8 @@ windowlayout=593
  ncy=54
  x=0
  y=0
- cx=1147
- cy=54
+ cx=1356
+ cy=61
  rcx=0
  rcy=0
  [debuggerfo.edit_options]
@@ -1278,19 +1279,19 @@ windowlayout=593
  ncy=0
  x=208
  y=0
- cx=939
- cy=456
+ cx=1148
+ cy=521
  rcx=0
  rcy=0
  [sourcefo.files_tab]
  order=7
   0
+  3
+  4
   5
   6
   1
   2
-  3
-  4
  firsttab=0
  index=0
  [cpuc86_64fo]
@@ -1324,9 +1325,9 @@ windowlayout=593
  ncx=0
  ncy=0
  x=0
- y=54
- cx=1147
- cy=456
+ y=61
+ cx=1356
+ cy=521
  rcx=0
  rcy=0
  [_mse_mainfo_mse_]

@@ -1194,11 +1194,12 @@ begin
    int1:= typedisp[row];
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
-      //  and (tstringedit(grid.datacols[col].editwidget)[row] =  value[row])
-          and (value[row] <> '') then begin
-    cellinfo.color:= cl_ltred;
-   end;
-  end;
+     then begin
+      if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
+      or (value[row] = '') then  cellinfo.color:= cl_ltred
+      else cellinfo.color:= cl_ltgreen;
+      end;  
+    end;
  end;
 end;
 
