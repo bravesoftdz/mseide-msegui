@@ -369,6 +369,13 @@ begin
    onbeforedrawcell:= @beforelangdrawcell;
   end;
  end;
+ for int1 := grid.datacols.count - projectfo.grid2.rowcount -1 to 
+ grid.datacols.count - 1 do
+ begin
+ //grid.datacols[int1].width:= 200;
+ grid.datacols[int1].widthmax:= 400;
+ grid.datacols[int1].widthmin:= 60;
+ end;
  grid.beginupdate;
  try
   item:= rootnode.converttotreelistitem(flat.value,false,

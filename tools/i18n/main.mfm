@@ -68,7 +68,7 @@ object mainfo: tmainfo
     fixcols.count = 1
     fixcols.items = <    
       item
-        width = 39
+        width = 0
         numstart = 1
         numstep = 1
       end>
@@ -97,19 +97,21 @@ object mainfo: tmainfo
           end>
       end>
     datacols.count = 5
-    datacols.options = [co_proportional, co_savestate]
+    datacols.options = [co_savestate]
     datacols.options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
     datacols.items = <    
       item[tree]
         width = 195
-        options = [co_readonly, co_proportional, co_savestate]
+        options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 200
         widgetname = 'tree'
         dataclass = ttreeitemeditlist
       end    
       item[typedisp]
         options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 60
         widgetname = 'typedisp'
         dataclass = tgridenumdatalist
       end    
@@ -117,25 +119,28 @@ object mainfo: tmainfo
         width = 19
         options = [co_drawfocus, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 25
         widgetname = 'donottranslate'
         dataclass = tgridintegerdatalist
       end    
       item[comment]
-        width = 124
-        options = [co_proportional, co_savestate]
+        width = 66
+        options = [co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 200
         widgetname = 'comment'
         dataclass = tgridmsestringdatalist
       end    
       item[value]
-        width = 102
-        options = [co_readonly, co_proportional, co_savestate]
+        width = 249
+        options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
+        widthmax = 300
         widgetname = 'value'
         dataclass = tgridmsestringdatalist
       end>
     datarowheight = 16
-    statfile = projectfo.projectstat
+    statfile = mainstatfile
     reffontheight = 14
     object tree: ttreeitemedit
       optionswidget1 = [ow1_fontglyphheight]
@@ -220,7 +225,7 @@ object mainfo: tmainfo
       visible = False
       bounds_x = 267
       bounds_y = 0
-      bounds_cx = 124
+      bounds_cx = 66
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick, oe_hintclippedtext]
@@ -248,9 +253,9 @@ object mainfo: tmainfo
       frame.button.options = [fbo_invisible, fbo_disabled]
       taborder = 5
       visible = False
-      bounds_x = 392
+      bounds_x = 334
       bounds_y = 0
-      bounds_cx = 102
+      bounds_cx = 249
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_readonly, oe_undoonesc, oe_checkmrcancel, oe_exitoncursor, oe_hintclippedtext]

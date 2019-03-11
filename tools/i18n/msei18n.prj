@@ -703,14 +703,15 @@ envvarons=0
 [edit]
 hintwidth=0
 hintheight=0
-finddtext=filternode
-findhistory=3
+finddtext=grid.beginupdate;
+findhistory=4
+ grid.beginupdate;
  filternode
  try
  tmainfo.updatedata
 findoptions=1
 editpos=7
- 30,1187
+ 8,374
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -998,7 +999,7 @@ windowlayout=593
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1013,7 +1014,7 @@ windowlayout=593
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=426
  width0=188
@@ -1296,7 +1297,7 @@ windowlayout=593
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1331,7 +1332,7 @@ windowlayout=593
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
