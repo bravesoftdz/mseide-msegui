@@ -819,6 +819,7 @@ begin
  if projectfiledialog.execute = mr_ok then begin
   projectfo.projectstat.filename:= projectfiledialog.controller.filename;
   projectfo.projectstat.readstat;
+  formatchanged(sender);
  end;
 end; 
 
