@@ -25,7 +25,7 @@ uses
  mseglob,msemenus,classes,mclasses,msetypes,msestrings,msethreadcomp,mseguiglob,
  msegui,mseresourceparser,msedialog,msememodialog,mseobjecttext,mseifiglob,
  msesysenv,msemacros,msestringcontainer,mseclasses,mseskin,msebitmap,msejson,
- msewidgets;
+ msewidgets,msedispwidgets,mserichstring;
 
 const
  msei18nversiontext = mseguiversiontext;
@@ -65,6 +65,7 @@ type
    iconbmp: tbitmapcomp;
    menuitemframe: tframecomp;
    tbutton1: tbutton;
+   trowcount: tstringdisp;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -132,6 +133,7 @@ type
    function getcolumnheaders: msestringarty;
    function checksave(cancelonly: boolean = false): boolean;
    procedure removenont(const sender: tobject);
+   procedure numrow(const Sender: TObject);
   public
    procedure loadproject;
    procedure readprojectdata;
@@ -597,7 +599,7 @@ end;
 
 procedure tmainfo.removenont(const sender: tobject);
 var
-x : integer = 0;
+x : integer;
 hasrem : boolean = true;
 begin
   while hasrem do begin
@@ -611,11 +613,22 @@ begin
   end;
 end;
 
+procedure tmainfo.numrow(const Sender: TObject);
+var
+x: integer;
+begin
+ grid.fixcols[-1].captions.count:= grid.rowCount;
+ trowcount.value := inttostr(grid.rowCount);
+   for x := 0 to grid.rowCount - 1 do 
+      grid.fixcols[-1].captions[x] := inttostr(x+1);
+end;
+
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
  updatedata;
  if (stringonly.value = false) and (nont.value = true) then
- removenont(nil);  
+ removenont(sender);  
+ numrow(sender);
 end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
@@ -775,7 +788,7 @@ begin
   end;
   rootnode.initlang(projectfo.grid2.rowcount);
   readprojectdata;
-  updatedata;
+  formatchanged(nil);
  finally
   updatecaption;
  end;
@@ -1229,17 +1242,7 @@ begin
        then  cellinfo.color:= cl_ltred
       else cellinfo.color:= cl_ltgreen;
       end;
-   {    
-   // cellinfo.color:= cl_yellow; 
-   if (donottranslate[row]) and (stringonly.value = false) and (nont.value = true) 
-   then
-   begin
-  cellinfo.color:= cl_yellow;  
- // grid.rowheight[row] := 0;
-  // grid.rowhidden[row] := true;
-  end;  
-  } 
- end;
+   end;
     
  end;
 end;
