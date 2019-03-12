@@ -46,15 +46,6 @@ object mainfo: tmainfo
     bounds_cx = 643
     bounds_cy = 24
     anchors = [an_top]
-    object tbutton1: tbutton
-      bounds_x = 366
-      bounds_y = 3
-      bounds_cx = 54
-      bounds_cy = 18
-      state = [as_localcaption, as_localonexecute]
-      caption = 'refresh'
-      onexecute = formatchanged
-    end
   end
   object grid: twidgetgrid
     frame.sbvert.facebutton.localprops = []
@@ -317,7 +308,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 2
-    bounds_x = 57
+    bounds_x = 73
     bounds_y = 5
     bounds_cx = 80
     bounds_cy = 16
@@ -336,7 +327,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 3
-    bounds_x = 145
+    bounds_x = 185
     bounds_y = 5
     bounds_cx = 51
     bounds_cy = 16
@@ -356,7 +347,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 4
-    bounds_x = 209
+    bounds_x = 273
     bounds_y = 5
     bounds_cx = 61
     bounds_cy = 16
@@ -376,7 +367,7 @@ object mainfo: tmainfo
       2
     )
     taborder = 6
-    bounds_x = 281
+    bounds_x = 369
     bounds_y = 5
     bounds_cx = 83
     bounds_cy = 16
@@ -408,7 +399,7 @@ object mainfo: tmainfo
     facetemplate = convexx
     itemframetemplate = menuitemframe
     itemframetemplateactive = menuitemframe
-    menu.submenu.count = 10
+    menu.submenu.count = 11
     menu.submenu.items = <    
       item
         caption = '&Open'
@@ -474,6 +465,11 @@ object mainfo: tmainfo
         caption = 'Se&ttings'
         name = 'settings'
         state = [as_localcaption]
+      end    
+      item
+        caption = '&Refresh'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = formatchanged
       end    
       item
         caption = 'E&xit'

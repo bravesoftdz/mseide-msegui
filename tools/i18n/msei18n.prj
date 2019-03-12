@@ -766,19 +766,19 @@ findhistory=11
  tmainfo.updatedata
 findoptions=1
 editpos=13
- 0,631
- 0,-1073741823
- 0,-1073741823
+ 0,66
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,0
- 0,0
- 0,0
- 33,6
- 0,0
- 0,326
- 0,217
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -813,13 +813,13 @@ relpaths=13
  project.mfm
  project.pas
  mseguinew/mseide-msegui/tools/i18n/project.mfm
- ../../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+ ../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
  mseresourceparser.pas
- ../../mseguinew/mseide-msegui/lib/common/widgets/msegrids.pas
- ../../strumpract/src/filelistform.mfm
+ ../mseguinew/mseide-msegui/lib/common/widgets/msegrids.pas
+ ../strumpract/src/filelistform.mfm
  project.pas
- ../../strumpract/src/filelistform.pas
- ../../mseguinew/mseide-msegui/lib/common/editwidgets/msewidgetgrid.pas
+ ../strumpract/src/filelistform.pas
+ ../mseguinew/mseide-msegui/lib/common/editwidgets/msewidgetgrid.pas
 ismoduletexts=13
  0
  0
@@ -849,22 +849,22 @@ nomenumodules=2
 [sourcefo.files_tab]
 order=13
  0
+ 5
+ 2
+ 8
+ 9
+ 3
+ 4
+ 1
  12
+ 6
  10
  7
- 6
  11
- 9
- 8
- 1
- 4
- 2
- 3
- 5
 firsttab=0
-index=6
+index=0
 [layout]
-windowlayout=629
+windowlayout=599
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1107,10 +1107,10 @@ windowlayout=629
  active=0
  visible=1
  [objectinspectorfo.grid]
- propcolwidthref=426
- width0=188
+ propcolwidthref=411
+ width0=181
  sortdescend0=0
- width1=232
+ width1=224
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1274,7 +1274,7 @@ windowlayout=629
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=objectinspectorfo
+ stackedunder=
  parent=
  mdistate=3
  nx=0
@@ -1289,7 +1289,7 @@ windowlayout=629
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [componentpalettefo.componentpages]
  activetab=0
  [debuggerfo]
@@ -1316,7 +1316,7 @@ windowlayout=629
  mdistate=0
  nx=0
  ny=0
- ncx=1350
+ ncx=1356
  ncy=61
  x=0
  y=0
@@ -1331,8 +1331,9 @@ windowlayout=629
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/strumpract/src/filelistform.mfm
- history=50
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ history=20
+  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/strumpract/src/filelistform.pas
   /home/fred/Downloads/MSE/lang_ru/i18n.trd
   /home/fred/Downloads/MSE/lang_ru/i18n.trp
@@ -1352,37 +1353,6 @@ windowlayout=629
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
-  /home/fred/uos/examples/consoleplay.pas
-  /home/fred/mselangmoi/parser.pas
-  /home/fred/mselangmoi/interpreter/mli.pas
-  /home/fred/mselangmoi/compiler/compmodule.pas
-  /home/fred/mselangmoi/interpreter/mainmodule.pas
-  /home/fred/mselangmoi/main.pas
-  /home/fred/mlctestlast/hellomlc.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_libc.mla
-  /home/fred/mselang/src/compiler/compmodule.pas
-  /home/fred/mselangmoi/rtl/system/windows/rtl_sysintf.mla
-  /home/fred/mselangmoi/rtl/system/rtl_fpccompatibility.mla
-  /home/fred/mselangmoi/rtl/system/windows/rtl_libc.mla
-  /home/fred/mselangmoi/rtl/system/windows/rtl_stringconv.mla
-  /home/fred/mselangmoi/rtl/system/unix/rtl_stringconv.mla
-  /home/fred/mselangmoi/patheditform.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_sysintf.mla
-  /home/fred/msegui/lib/common/kernel/windows/msesysintf.pas
-  /home/fred/msegui/lib/common/kernel/linux/msesysintf.pas
-  /home/fred/msegui/lib/common/kernel/windows/msewinglob.pas
-  /home/fred/msegui/lib/common/fpccompatibility/dbf_idxfile.pas
-  /home/fred/mselangmoi/grammarglob.pas
-  /home/fred/mselangmoi/subhandler.pas
-  /home/fred/mselangmoi/syssubhandler.pas
-  /home/fred/mselangmoi/writeln.mla
-  /home/fred/mselangmoi/typex.mla
-  /home/fred/mselangmoi/classinh.mla
-  /home/fred/mselangmoi/compiler/mbc.pas
-  /home/fred/mselangmoi/compiler/__mla__compilerunit.mla
-  /home/fred/mselangmoi/compiler/__mla__system.mla
-  /home/fred/mselangmoi/compiler/__mla__personality.pas
-  /home/fred/mselangmoi/rtl/system/rtl_sysintf.mla
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1406,20 +1376,20 @@ windowlayout=629
  [sourcefo.files_tab]
  order=13
   0
+  5
+  2
+  8
+  9
+  3
+  4
+  1
   12
+  6
   10
   7
-  6
   11
-  9
-  8
-  1
-  4
-  2
-  3
-  5
  firsttab=0
- index=6
+ index=0
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1459,7 +1429,7 @@ windowlayout=629
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
@@ -1478,7 +1448,7 @@ windowlayout=629
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=componentpalettefo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0

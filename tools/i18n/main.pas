@@ -64,7 +64,6 @@ type
    tskincontroller1: tskincontroller;
    iconbmp: tbitmapcomp;
    menuitemframe: tframecomp;
-   tbutton1: tbutton;
    trowcount: tstringdisp;
    statusdisp: tstringdisp;
    procedure onprojectopen(const sender: tobject);
