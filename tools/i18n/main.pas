@@ -169,8 +169,14 @@ type
   sc_datahaschanged,     //14
   sc_doyouwishtosave,    //15
   sc_confirmation,       //16
-  sc_closeerror          //17
+  sc_closeerror,         //17
+  sc_totrows,            //18
+  sc_totranslate,        //19
+  sc_tonottranslate,     //20
+  sc_yettranslated,      //21
+  sc_notyettranslated    //22
   );
+  
 const
  translateext = 'trans';
  exportext = 'csv';
@@ -621,7 +627,6 @@ begin
  rc := grid.rowCount;
  nc := grid.datacols.count-1;
  grid.fixcols[-1].captions.count:= rc;
- statusdisp.value := 'Total rows: ' + inttostr(rc);
  
  trowcount.value := inttostr(rc);
  nt := 0;
@@ -638,12 +643,12 @@ begin
        then inc(tt);
    end;  
    
- statusdisp.value := '  Total rows: ' + inttostr(rc)+
- '    To translate: ' + inttostr(rc-nt) +
- '    To not translate: ' + inttostr(nt) +
- '    Yet translated: ' + inttostr(rc-nt-tt) +
- '    Not yet translated: ' + inttostr(tt);
- end;
+ statusdisp.value := '  ' + c[ord(sc_totrows)]+ ' ' + inttostr(rc) + '   ' +
+                     c[ord(sc_totranslate)]+ ' ' + inttostr(rc-nt) + '   ' +
+                     c[ord(sc_tonottranslate)]+ ' ' + inttostr(nt) + '   ' +
+                     c[ord(sc_yettranslated)]+ ' ' + inttostr(rc-nt-tt) + '   ' +
+                     c[ord(sc_notyettranslated)]+ ' ' + inttostr(tt);
+  end;
 
 procedure tmainfo.formatchanged(const sender: tobject);
 begin

@@ -19,7 +19,7 @@ order16=0
 [projectoptions]
 projectdir=/home/fred/mseide-msegui/tools/i18n
 projectfilename=/home/fred/mseide-msegui/tools/i18n/msei18n.prj
-findinfiledialog=41
+findinfiledialog=44
  [findinfileadialogfo.subdirs]
  value=0
  [findinfileadialogfo.incurrentfile]
@@ -35,8 +35,9 @@ findinfiledialog=41
  [findinfileadialogfo.indirectories]
  value=0
  [findinfileadialogfo.mask]
- value="*.pas" "*.pp" "*.inc"
- history=1
+ value="*.pas" "*.pp" "*.inc"  "*.*"
+ history=2
+  "*.pas" "*.pp" "*.inc"  "*.*"
   "*.pas" "*.pp" "*.inc"
  [findinfileadialogfo.dir]
  filenames=1
@@ -50,8 +51,10 @@ findinfiledialog=41
  filefilterindex=0
  filefilter=
  [findinfileadialogfo.findtext]
- value=vacollection
- history=3
+ value=sc_finishedok
+ history=5
+  sc_finishedok
+  tstringcontainer
   vacollection
   vautf8string
   
@@ -185,6 +188,12 @@ options=114
  y=66
  cx=839
  cy=634
+stringlisteditor=5
+ [stringlisteditor]
+ x=177
+ y=203
+ cx=275
+ cy=237
 colordialog=5
  [colordialogfo]
  x=140
@@ -751,11 +760,13 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=color
-findhistory=11
+finddtext=numrow
+findhistory=13
+ numrow
+ sc_finishedok
+ c.
  color
  removenont
- numrow
  formatchanged
  loadpr
  removenont(nil)
@@ -766,9 +777,7 @@ findhistory=11
  tmainfo.updatedata
 findoptions=1
 editpos=13
- 0,66
- 0,-1073741823
- 0,-1073741823
+ 40,641
  0,-1073741823
  0,0
  0,-1073741823
@@ -779,6 +788,8 @@ editpos=13
  0,-1073741823
  0,-1073741823
  0,-1073741823
+ 0,-1073741823
+ 0,13
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -813,13 +824,13 @@ relpaths=13
  project.mfm
  project.pas
  mseguinew/mseide-msegui/tools/i18n/project.mfm
- ../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+ mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
  mseresourceparser.pas
- ../mseguinew/mseide-msegui/lib/common/widgets/msegrids.pas
- ../strumpract/src/filelistform.mfm
+ mseguinew/mseide-msegui/lib/common/widgets/msegrids.pas
+ strumpract/src/filelistform.mfm
  project.pas
- ../strumpract/src/filelistform.pas
- ../mseguinew/mseide-msegui/lib/common/editwidgets/msewidgetgrid.pas
+ strumpract/src/filelistform.pas
+ ../../mseguinew/mseide-msegui/lib/common/editwidgets/msewidgetgrid.pas
 ismoduletexts=13
  0
  0
@@ -835,8 +846,8 @@ ismoduletexts=13
  0
  0
 modules=2
- /home/fred/mseide-msegui/tools/i18n/main.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
+ /home/fred/mseide-msegui/tools/i18n/main.mfm
 moduleoptions=2
  0
  0
@@ -849,18 +860,18 @@ nomenumodules=2
 [sourcefo.files_tab]
 order=13
  0
- 5
- 2
- 8
- 9
- 3
- 4
- 1
  12
+ 2
+ 7
+ 9
+ 11
+ 4
+ 8
+ 1
  6
  10
- 7
- 11
+ 3
+ 5
 firsttab=0
 index=0
 [layout]
@@ -972,7 +983,7 @@ windowlayout=599
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -998,7 +1009,7 @@ windowlayout=599
  x=0
  y=0
  cx=205
- cy=521
+ cy=509
  rcx=0
  rcy=0
  [projecttreefo.grid]
@@ -1090,15 +1101,15 @@ windowlayout=599
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=targetconsolefo
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=97
- y=162
+ x=68
+ y=134
  cx=436
  cy=484
  rcx=0
@@ -1107,10 +1118,10 @@ windowlayout=599
  active=0
  visible=1
  [objectinspectorfo.grid]
- propcolwidthref=411
- width0=181
+ propcolwidthref=426
+ width0=188
  sortdescend0=0
- width1=224
+ width1=232
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1203,9 +1214,9 @@ windowlayout=599
  ncx=0
  ncy=0
  x=0
- y=585
+ y=573
  cx=1356
- cy=105
+ cy=117
  rcx=0
  rcy=0
  [componentstorefo]
@@ -1333,6 +1344,7 @@ windowlayout=599
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/strumpract/src/filelistform.pas
   /home/fred/Downloads/MSE/lang_ru/i18n.trd
@@ -1352,7 +1364,6 @@ windowlayout=599
   /home/fred/uos/examples/conswebstream.pas
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1370,24 +1381,24 @@ windowlayout=599
  x=208
  y=0
  cx=1148
- cy=521
+ cy=509
  rcx=0
  rcy=0
  [sourcefo.files_tab]
  order=13
   0
-  5
-  2
-  8
-  9
-  3
-  4
-  1
   12
+  2
+  7
+  9
+  11
+  4
+  8
+  1
   6
   10
-  7
-  11
+  3
+  5
  firsttab=0
  index=0
  [cpuc86_64fo]
@@ -1423,32 +1434,13 @@ windowlayout=599
  x=0
  y=61
  cx=1356
- cy=521
+ cy=509
  rcx=0
  rcy=0
- [_mse_mainfo_mse_]
- splitdir=0
- useroptions=268451963
- stackedunder=mainfo
- parent=
- mdistate=3
- nx=0
- ny=0
- ncx=0
- ncy=0
- x=510
- y=161
- cx=655
- cy=395
- rcx=0
- rcy=0
- wsize=0
- active=0
- visible=1
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=findinfilefo
  parent=
  mdistate=3
  nx=0
@@ -1459,6 +1451,25 @@ windowlayout=599
  y=167
  cx=693
  cy=501
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_mainfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=objectinspectorfo
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=510
+ y=161
+ cx=655
+ cy=395
  rcx=0
  rcy=0
  wsize=0

@@ -583,6 +583,11 @@ object mainfo: tmainfo
       'Do you wish to save'
       'CONFIRMATION'
       'Close error:'
+      'Total rows:'
+      'To translate:'
+      'To not translate:'
+      'Yet translated:'
+      'Not yet translated:'
       ''
     )
     left = 64
