@@ -632,14 +632,14 @@ begin
  nt := 0;
  tt := 0;
  
-   for x := 0 to grid.rowCount - 1 do 
+ for x := 0 to grid.rowCount - 1 do 
    begin
       grid.fixcols[-1].captions[x] := inttostr(x+1);
         if (donottranslate[x]) then inc(nt)
        else
       if (tstringedit(grid.datacols[4].editwidget)[x] =
-         tstringedit(grid.datacols[5].editwidget)[x])
-         or (tstringedit(grid.datacols[5].editwidget)[x] = '')
+         tstringedit(grid.datacols[nc].editwidget)[x])
+         or (tstringedit(grid.datacols[nc].editwidget)[x] = '')
        then inc(tt);
    end;  
    
