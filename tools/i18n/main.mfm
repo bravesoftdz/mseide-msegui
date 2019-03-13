@@ -97,6 +97,13 @@ object mainfo: tmainfo
             caption = 'Value'
           end>
       end>
+    rowcolors.count = 4
+    rowcolors.items = (
+      -2147483642
+      -1610612716
+      -1610612712
+      -1610612717
+    )
     datacols.count = 5
     datacols.options = [co_savestate]
     datacols.options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]

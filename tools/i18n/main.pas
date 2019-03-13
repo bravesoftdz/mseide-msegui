@@ -609,6 +609,7 @@ var
 x : integer;
 hasrem : boolean = true;
 begin
+{
   for x:=0 to grid.rowcount - 1 do 
     begin
      //   donottranslate[x] := false;
@@ -616,8 +617,18 @@ begin
     tpropinfoitem(tree.items[x]).node.info.donottranslate:= false;
     end; 
   datachanged;
-  grid.invalidaterow(grid.row);          
-end;
+  grid.invalidaterow(grid.row);   
+ }
+  
+ for x:=0 to grid.rowcount - 1 do begin
+    if (stringonly.value = false) and (nont.value = true) then
+    begin
+      if (donottranslate[x]) then 
+       grid.rowcolorstate[x]:= 2 else
+        grid.rowcolorstate[x]:= 0;
+     end else grid.rowcolorstate[x]:= 0; 
+     end;  
+ end;
 
 procedure tmainfo.numrow(const Sender: TObject);
 var
@@ -653,7 +664,6 @@ begin
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
  updatedata;
- if (stringonly.value = false) and (nont.value = true) then
  removenont(sender); 
  numrow(sender);
 end;
