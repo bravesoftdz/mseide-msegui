@@ -20,6 +20,9 @@ msgstr ""
 msgid "&Refresh"
 msgstr ""
 
+msgid "Close error:"
+msgstr ""
+
 msgid "Total rows:"
 msgstr ""
 

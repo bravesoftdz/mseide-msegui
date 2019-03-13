@@ -24,6 +24,9 @@ msgstr ""
 msgid "&Refresh"
 msgstr "&Освежить"
 
+msgid "Close error:"
+msgstr "Ошибка закрытия:"
+
 msgid "Total rows:"
 msgstr "Всего строк:"
 
