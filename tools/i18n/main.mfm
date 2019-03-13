@@ -292,9 +292,10 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 35
     bounds_cy = 16
-    statfile = projectfo.projectstat
     optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
     ondataentered = formatchanged
+    value = True
+    valuedefault = True
   end
   object stringonly: tbooleanedit
     color = -2147483645
@@ -331,9 +332,10 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 51
     bounds_cy = 16
-    statfile = projectfo.projectstat
     ondataentered = formatchanged
     onsetvalue = nontonsetvalue
+    value = True
+    valuedefault = True
   end
   object ntonly: tbooleanedit
     color = -2147483645
@@ -357,19 +359,19 @@ object mainfo: tmainfo
   end
   object coloron: tbooleanedit
     color = -2147483645
-    frame.caption = 'Show Color'
+    frame.caption = 'show color'
     frame.localprops = []
     frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      70
+      67
       2
     )
     taborder = 6
     bounds_x = 369
     bounds_y = 5
-    bounds_cx = 83
+    bounds_cx = 80
     bounds_cy = 16
     statfile = projectfo.projectstat
     ondataentered = showcolordataentered

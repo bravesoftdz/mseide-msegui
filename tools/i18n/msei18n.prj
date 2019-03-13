@@ -779,14 +779,15 @@ findhistory=16
  try
  tmainfo.updatedata
 findoptions=1
-editpos=7
- 0,51
- 3,113
+editpos=8
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
  0,0
- 0,425
- 0,5
- 0,72
- 0,1232
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -794,7 +795,8 @@ bookmarks3=0
 bookmarks4=0
 bookmarks5=0
 bookmarks6=0
-sourcefiles=7
+bookmarks7=0
+sourcefiles=8
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/project.pas
@@ -802,19 +804,22 @@ sourcefiles=7
  /home/fred/strumpract/src/filelistform.mfm
  ${PROJECTDIR}/mseresourceparser.pas
  /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
-relpaths=7
+ ${PROJECTDIR}/main.pas
+relpaths=8
  msei18n.pas
  main.pas
  project.pas
- ../../strumpract/src/filelistform.pas
- ../../strumpract/src/filelistform.mfm
+ strumpract/src/filelistform.pas
+ strumpract/src/filelistform.mfm
  mseresourceparser.pas
- ../../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
-ismoduletexts=7
+ ../../../../../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+ main.pas
+ismoduletexts=8
  0
  0
  0
  0
+ -1
  0
  0
  0
@@ -831,18 +836,19 @@ nomenumodules=2
  0
  0
 [sourcefo.files_tab]
-order=7
+order=8
  0
  1
- 6
- 5
- 4
- 3
  2
+ 3
+ 4
+ 7
+ 5
+ 6
 firsttab=0
-index=1
+index=5
 [layout]
-windowlayout=623
+windowlayout=594
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -856,7 +862,7 @@ windowlayout=623
  ny=0
  ncx=0
  ncy=0
- x=-64
+ x=3
  y=42
  cx=1360
  cy=706
@@ -1085,10 +1091,10 @@ windowlayout=623
  active=0
  visible=1
  [objectinspectorfo.grid]
- propcolwidthref=411
- width0=240
+ propcolwidthref=426
+ width0=249
  sortdescend0=0
- width1=165
+ width1=171
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1252,7 +1258,7 @@ windowlayout=623
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=objectinspectorfo
+ stackedunder=
  parent=
  mdistate=3
  nx=0
@@ -1267,7 +1273,7 @@ windowlayout=623
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [componentpalettefo.componentpages]
  activetab=4
  [debuggerfo]
@@ -1309,8 +1315,11 @@ windowlayout=623
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/strumpract/src/filelistform.mfm
- history=50
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+  /home/fred/strumpract/src/filelistform.mfm
   /home/fred/mseide-msegui2/tools/i18n/main.pas
   /home/fred/mselang/src/main.pas
   /home/fred/strumpract/src/filelistform.pas
@@ -1328,39 +1337,6 @@ windowlayout=623
   /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
   /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
   /home/fred/uos/examples/uos_libsndfile.pas
-  /home/fred/uos/examples/conswebstream.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
-  /home/fred/uos/examples/consoleplay.pas
-  /home/fred/mselangmoi/parser.pas
-  /home/fred/mselangmoi/interpreter/mli.pas
-  /home/fred/mselangmoi/compiler/compmodule.pas
-  /home/fred/mselangmoi/interpreter/mainmodule.pas
-  /home/fred/mselangmoi/main.pas
-  /home/fred/mlctestlast/hellomlc.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_libc.mla
-  /home/fred/mselang/src/compiler/compmodule.pas
-  /home/fred/mselangmoi/rtl/system/windows/rtl_sysintf.mla
-  /home/fred/mselangmoi/rtl/system/rtl_fpccompatibility.mla
-  /home/fred/mselangmoi/rtl/system/windows/rtl_libc.mla
-  /home/fred/mselangmoi/rtl/system/windows/rtl_stringconv.mla
-  /home/fred/mselangmoi/rtl/system/unix/rtl_stringconv.mla
-  /home/fred/mselangmoi/patheditform.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_sysintf.mla
-  /home/fred/msegui/lib/common/kernel/windows/msesysintf.pas
-  /home/fred/msegui/lib/common/kernel/linux/msesysintf.pas
-  /home/fred/msegui/lib/common/kernel/windows/msewinglob.pas
-  /home/fred/msegui/lib/common/fpccompatibility/dbf_idxfile.pas
-  /home/fred/mselangmoi/grammarglob.pas
-  /home/fred/mselangmoi/subhandler.pas
-  /home/fred/mselangmoi/syssubhandler.pas
-  /home/fred/mselangmoi/writeln.mla
-  /home/fred/mselangmoi/typex.mla
-  /home/fred/mselangmoi/classinh.mla
-  /home/fred/mselangmoi/compiler/mbc.pas
-  /home/fred/mselangmoi/compiler/__mla__compilerunit.mla
-  /home/fred/mselangmoi/compiler/__mla__system.mla
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1382,16 +1358,17 @@ windowlayout=623
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=7
+ order=8
   0
   1
-  6
-  5
-  4
-  3
   2
+  3
+  4
+  7
+  5
+  6
  firsttab=0
- index=4
+ index=5
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1431,7 +1408,7 @@ windowlayout=623
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
@@ -1450,7 +1427,7 @@ windowlayout=623
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=componentpalettefo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
