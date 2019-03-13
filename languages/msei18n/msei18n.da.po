@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Danish (https://www.transifex.com/Magic/teams/44238/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 msgid "Type"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "Kommentar"
 
 msgid "Value"
-msgstr ""
+msgstr "Værdi"
 
 msgid "flat"
 msgstr ""
@@ -63,19 +67,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Åbn"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Gem"
 
 msgid "Save &as"
-msgstr ""
+msgstr "Gem &som"
 
 msgid "&New"
-msgstr ""
+msgstr "&Ny"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Redigér"
 
 msgid "&Import"
 msgstr ""
@@ -87,16 +91,16 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Om"
 
 msgid "&Configure MSEi18n"
-msgstr ""
+msgstr "&Konfigurer MSEi18n"
 
 msgid "Se&ttings"
 msgstr ""
 
 msgid "E&xit"
-msgstr ""
+msgstr "&Afslut"
 
 msgid "Translate project"
 msgstr ""
@@ -108,7 +112,7 @@ msgid "Save translate project"
 msgstr ""
 
 msgid "name"
-msgstr ""
+msgstr "navn"
 
 msgid "type"
 msgstr ""
@@ -117,10 +121,10 @@ msgid "notranslate"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "kommentar"
 
 msgid "value"
-msgstr ""
+msgstr "værdi"
 
 msgid "<no project>"
 msgstr ""
@@ -147,7 +151,7 @@ msgid "Finished OK"
 msgstr ""
 
 msgid "Configure MSEi18n"
-msgstr ""
+msgstr "Konfigurer MSEi18n"
 
 msgid "Data has changed"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Fil"
 
 msgid "Kind"
 msgstr ""
@@ -192,13 +196,13 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Alle filer"
 
 msgid "Language"
-msgstr ""
+msgstr "Sprog"
 
 msgid "Directory"
-msgstr ""
+msgstr "Mappe"
 
 msgid "Make command"
 msgstr ""
@@ -210,7 +214,7 @@ msgid "OK"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annullér"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,10 +238,10 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "A&nnullér"
 
 msgid "&Shortcuts"
-msgstr ""
+msgstr "&Genvejstaster"
 
 msgid "Print command"
 msgstr ""
@@ -258,7 +262,7 @@ msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Projektfiler"
 
 msgid "Directory for component stores"
 msgstr ""

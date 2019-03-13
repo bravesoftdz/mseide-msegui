@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Basque (https://www.transifex.com/Magic/teams/44238/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,7 +40,7 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Izena"
 
 msgid "Type"
 msgstr ""
@@ -45,7 +49,7 @@ msgid "Comment"
 msgstr ""
 
 msgid "Value"
-msgstr ""
+msgstr "Balioa"
 
 msgid "flat"
 msgstr ""
@@ -63,19 +67,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Ireki"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Gorde"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Berria"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Editatu"
 
 msgid "&Import"
 msgstr ""
@@ -87,7 +91,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "Honi &buruz"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -120,7 +124,7 @@ msgid "comment"
 msgstr ""
 
 msgid "value"
-msgstr ""
+msgstr "balioa"
 
 msgid "<no project>"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Fitxategia"
 
 msgid "Kind"
 msgstr ""
@@ -192,7 +196,7 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Fitxategi guztiak"
 
 msgid "Language"
 msgstr ""
@@ -234,7 +238,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Utzi"
 
 msgid "&Shortcuts"
 msgstr ""
@@ -258,7 +262,7 @@ msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Proiektuaren fitxategiak"
 
 msgid "Directory for component stores"
 msgstr ""

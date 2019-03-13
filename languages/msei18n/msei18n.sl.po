@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Slovenian (https://www.transifex.com/Magic/teams/44238/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sl\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Ime"
 
 msgid "Type"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "Komentar"
 
 msgid "Value"
-msgstr ""
+msgstr "Vrednost"
 
 msgid "flat"
 msgstr ""
@@ -63,19 +67,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Odpri"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Shrani"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Nova"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Uredi"
 
 msgid "&Import"
 msgstr ""
@@ -96,7 +100,7 @@ msgid "Se&ttings"
 msgstr ""
 
 msgid "E&xit"
-msgstr ""
+msgstr "Konča&j"
 
 msgid "Translate project"
 msgstr ""
@@ -108,7 +112,7 @@ msgid "Save translate project"
 msgstr ""
 
 msgid "name"
-msgstr ""
+msgstr "ime"
 
 msgid "type"
 msgstr ""
@@ -117,7 +121,7 @@ msgid "notranslate"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "komentar"
 
 msgid "value"
 msgstr ""
@@ -162,7 +166,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&V redu"
 
 msgid "Make Language Units"
 msgstr ""
@@ -177,10 +181,10 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Datoteka"
 
 msgid "Kind"
-msgstr ""
+msgstr "Vrsta"
 
 msgid "Select unit or form file"
 msgstr ""
@@ -192,10 +196,10 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Vse datoteke"
 
 msgid "Language"
-msgstr ""
+msgstr "Jezik"
 
 msgid "Directory"
 msgstr ""
@@ -207,10 +211,10 @@ msgid "on"
 msgstr ""
 
 msgid "OK"
-msgstr ""
+msgstr "V redu"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,7 +238,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Prekliči"
 
 msgid "&Shortcuts"
 msgstr ""
@@ -258,7 +262,7 @@ msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Projektne datoteke"
 
 msgid "Directory for component stores"
 msgstr ""

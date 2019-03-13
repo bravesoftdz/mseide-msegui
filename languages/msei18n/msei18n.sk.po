@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Slovak (https://www.transifex.com/Magic/teams/44238/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Meno"
 
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 msgid "Comment"
-msgstr ""
+msgstr "Komentár"
 
 msgid "Value"
-msgstr ""
+msgstr "Hodnota"
 
 msgid "flat"
 msgstr ""
@@ -63,10 +67,10 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Otvoriť"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Uložiť"
 
 msgid "Save &as"
 msgstr ""
@@ -75,7 +79,7 @@ msgid "&New"
 msgstr ""
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Upraviť"
 
 msgid "&Import"
 msgstr ""
@@ -96,7 +100,7 @@ msgid "Se&ttings"
 msgstr ""
 
 msgid "E&xit"
-msgstr ""
+msgstr "&Koniec"
 
 msgid "Translate project"
 msgstr ""
@@ -108,10 +112,10 @@ msgid "Save translate project"
 msgstr ""
 
 msgid "name"
-msgstr ""
+msgstr "názov"
 
 msgid "type"
-msgstr ""
+msgstr "typ"
 
 msgid "notranslate"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Súbor"
 
 msgid "Kind"
 msgstr ""
@@ -192,13 +196,13 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Všetky súbory"
 
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 msgid "Directory"
-msgstr ""
+msgstr "Adresár"
 
 msgid "Make command"
 msgstr ""
@@ -210,7 +214,7 @@ msgid "OK"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,7 +238,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Zrušiť"
 
 msgid "&Shortcuts"
 msgstr ""
@@ -252,13 +256,13 @@ msgid "Path to compiler (ppc386)."
 msgstr ""
 
 msgid "Compiler path"
-msgstr ""
+msgstr "cesta prekladača"
 
 msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Súbory projektu"
 
 msgid "Directory for component stores"
 msgstr ""

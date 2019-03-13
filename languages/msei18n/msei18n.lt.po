@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Lithuanian (https://www.transifex.com/Magic/teams/44238/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Pavadinimas"
 
 msgid "Type"
-msgstr ""
+msgstr "Tipas"
 
 msgid "Comment"
-msgstr ""
+msgstr "Komentaras"
 
 msgid "Value"
-msgstr ""
+msgstr "Reikšmė"
 
 msgid "flat"
 msgstr ""
@@ -63,22 +67,22 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Atverti"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Įrašyti"
 
 msgid "Save &as"
-msgstr ""
+msgstr "Įrašyti &kaip"
 
 msgid "&New"
 msgstr ""
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Redaguoti"
 
 msgid "&Import"
-msgstr ""
+msgstr "&Importuoti"
 
 msgid "Ex&port"
 msgstr ""
@@ -87,10 +91,10 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Apie"
 
 msgid "&Configure MSEi18n"
-msgstr ""
+msgstr "&Konfigūruoti MSEi18n"
 
 msgid "Se&ttings"
 msgstr ""
@@ -108,16 +112,16 @@ msgid "Save translate project"
 msgstr ""
 
 msgid "name"
-msgstr ""
+msgstr "pavadinimas"
 
 msgid "type"
-msgstr ""
+msgstr "tipas"
 
 msgid "notranslate"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "komentaras"
 
 msgid "value"
 msgstr ""
@@ -141,13 +145,13 @@ msgid "overwrites itself"
 msgstr ""
 
 msgid "ERROR"
-msgstr ""
+msgstr "KLAIDA"
 
 msgid "Finished OK"
 msgstr ""
 
 msgid "Configure MSEi18n"
-msgstr ""
+msgstr "Konfigūruoti MSEi18n"
 
 msgid "Data has changed"
 msgstr ""
@@ -162,7 +166,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Gerai"
 
 msgid "Make Language Units"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Failas"
 
 msgid "Kind"
 msgstr ""
@@ -192,25 +196,25 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Visi failai"
 
 msgid "Language"
 msgstr ""
 
 msgid "Directory"
-msgstr ""
+msgstr "Aplankas"
 
 msgid "Make command"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "įjungta"
 
 msgid "OK"
-msgstr ""
+msgstr "Gerai"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,10 +238,10 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Atsisakyti"
 
 msgid "&Shortcuts"
-msgstr ""
+msgstr "&Spartieji klavišai"
 
 msgid "Print command"
 msgstr ""
@@ -252,13 +256,13 @@ msgid "Path to compiler (ppc386)."
 msgstr ""
 
 msgid "Compiler path"
-msgstr ""
+msgstr "Kompiliatoriaus adresas"
 
 msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Projektų failai"
 
 msgid "Directory for component stores"
 msgstr ""

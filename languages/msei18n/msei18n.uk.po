@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# Андрій Лашкєєв <zombyg@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: msei18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: Андрій Лашкєєв <zombyg@gmail.com>, 2019\n"
+"Language-Team: Ukrainian (https://www.transifex.com/Magic/teams/44238/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Total rows:"
+msgstr ""
+
+msgid "To translate:"
+msgstr ""
+
+msgid "To not translate:"
+msgstr ""
+
+msgid "Yet translated:"
+msgstr ""
+
+msgid "Not yet translated:"
+msgstr ""
+
+msgid "Name"
+msgstr "Назва"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Comment"
+msgstr "Коментар"
+
+msgid "Value"
+msgstr "Значення"
+
+msgid "flat"
+msgstr "площ."
+
+msgid "string only"
+msgstr "лише рядки"
+
+msgid "no NT"
+msgstr "без NT"
+
+msgid "NT only"
+msgstr "лише NT"
+
+msgid "Show Color"
+msgstr "показати кольором"
+
+msgid "&Open"
+msgstr "&Відкрити"
+
+msgid "&Save"
+msgstr "&Зберегти"
+
+msgid "Save &as"
+msgstr "Зберегти &як"
+
+msgid "&New"
+msgstr "&Новий"
+
+msgid "&Edit"
+msgstr "&Редагувати"
+
+msgid "&Import"
+msgstr "&Імпорт"
+
+msgid "Ex&port"
+msgstr "Ек&спорт"
+
+msgid "&Make"
+msgstr "Зі&брати"
+
+msgid "&About"
+msgstr "&Інформація про MSEi18n"
+
+msgid "&Configure MSEi18n"
+msgstr "&Конфігурувати MSEi18n"
+
+msgid "Se&ttings"
+msgstr "Н&алаштування"
+
+msgid "E&xit"
+msgstr "Ви&хід"
+
+msgid "Translate project"
+msgstr "Проект перекладу"
+
+msgid "Open translate project"
+msgstr "Відкрити проект перекладу"
+
+msgid "Save translate project"
+msgstr "Зберегти проект перекладу"
+
+msgid "name"
+msgstr "ім'я"
+
+msgid "type"
+msgstr "тип"
+
+msgid "notranslate"
+msgstr "без перекладу"
+
+msgid "comment"
+msgstr "коментар"
+
+msgid "value"
+msgstr "значення"
+
+msgid "<no project>"
+msgstr "<без проекту>"
+
+msgid "Can not read module"
+msgstr "Неможливо прочитати модуль"
+
+msgid "New translate project"
+msgstr "Новий проект перекладу"
+
+msgid "Exec error"
+msgstr "Помилка виконання"
+
+msgid "Making"
+msgstr "Збирання"
+
+msgid "overwrites itself"
+msgstr "Переписати себе"
+
+msgid "ERROR"
+msgstr "ПОМИЛКА"
+
+msgid "Finished OK"
+msgstr "Завершено вдало"
+
+msgid "Configure MSEi18n"
+msgstr "Конфігурувати MSEi18n"
+
+msgid "Data has changed"
+msgstr "Дані було змінено"
+
+msgid "Do you wish to save"
+msgstr "Бажаєте зберегти"
+
+msgid "CONFIRMATION"
+msgstr "ПІДТВЕРДЖЕННЯ"
+
+msgid "Enter Memo Text"
+msgstr "Ввести Memo текст"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "Make Language Units"
+msgstr "Зібрати мовні модулі"
+
+msgid "Edit Translate Project"
+msgstr "Редагувати проект перекладу"
+
+msgid "Encoding for imp/exp files"
+msgstr "Кодування для файлів імпорту/экспорту"
+
+msgid "Rootname"
+msgstr "Назва"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "Kind"
+msgstr "Вид"
+
+msgid "Select unit or form file"
+msgstr "Вибір файла модуля чи форми"
+
+msgid "Datafile"
+msgstr "Файл даних .trd (наприклад, введіть i18n)"
+
+msgid "MSEi18n Data Files"
+msgstr "Файли даних MSEi18n"
+
+msgid "All files"
+msgstr "Всі файли"
+
+msgid "Language"
+msgstr "Мова"
+
+msgid "Directory"
+msgstr "Тека"
+
+msgid "Make command"
+msgstr "Команда збирання"
+
+msgid "on"
+msgstr "увімкнути"
+
+msgid "OK"
+msgstr "Гаразд"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Destination Basename (empty = Datafile name)"
+msgstr "Розташування базового імені (пусто = ім'я файла даних)"
+
+msgid "Before make"
+msgstr "Перед збиранням"
+
+msgid "After make"
+msgstr "після збирання"
+
+msgid "Data exchange files"
+msgstr "Файли обміну даними"
+
+msgid "Open import file"
+msgstr "Відкрити файл імпорту"
+
+msgid "Save export file"
+msgstr "Зберегти файл експорту"
+
+msgid "Configure MSE environment"
+msgstr "Налаштування оточення MSE"
+
+msgid "&Cancel"
+msgstr "Ві&дміна"
+
+msgid "&Shortcuts"
+msgstr "&Гар.клав."
+
+msgid "Print command"
+msgstr "Команда друку"
+
+msgid "Path to debugger (gdb)."
+msgstr "Шлях до налагоджувача (gdb)."
+
+msgid "Debugger path"
+msgstr "Шлях до налагоджувача"
+
+msgid "Path to compiler (ppc386)."
+msgstr "Шлях до компілятора (ppc386)."
+
+msgid "Compiler path"
+msgstr "Шлях до компілятора"
+
+msgid "Directory for component store files."
+msgstr "Директорія файлів с описами сховищ компонентів."
+
+msgid "Project files"
+msgstr "Файли проекту"
+
+msgid "Directory for component stores"
+msgstr "Директорія сховищ компонентів"
+
+msgid "Directory for project template files."
+msgstr "Директорія файлів шаблонів проектів"
+
+msgid "Project template directory"
+msgstr "Директорія шаблонів проектів"
+
+msgid "Directory for syntax definition files."
+msgstr "Директорія файлів визначення синтаксису."
+
+msgid "Syntax definitions"
+msgstr "Описи синтаксису"
+
+msgid "Directory for syntax definition files"
+msgstr "Директорія файлів визначення синтаксису."
+
+msgid "Root directory of MSEgui library."
+msgstr "Коренева директорія для бібліотеки MSEgui."
+
+msgid "MSEgui library directory"
+msgstr "Директорія бібліотеки MSEgui"
+
+msgid "Root directory of MSEgui."
+msgstr "Коренева директорія для MSEgui."
+
+msgid "MSEgui root directory"
+msgstr "Коренева директорія MSEgui"
+
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+"Коренева директорія для бібліотеки FPC (не використовується за замовчуванням"
+" шаблонами проекту)."
+
+msgid "FPC library directory"
+msgstr "Директорія бібліотеки FPC"
+
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+"Коренева директорія для компілятора Free Pascal (не використовується за "
+"замовчуванням шаблонами проекту)."
+
+msgid "FPC root directory"
+msgstr "Коренева директорія FPC"
+
+msgid "Global Macros"
+msgstr "Глобальні Макро-визначення"

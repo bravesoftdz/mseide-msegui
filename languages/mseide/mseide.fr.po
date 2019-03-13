@@ -1,0 +1,3194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Fred vs <fiens@hotmail.com>, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mseide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
+"PO-Revision-Date: 2019-03-05 00:06+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: French (https://www.transifex.com/Magic/teams/44238/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Watchpoints"
+msgstr "Points de surveillance"
+
+msgid "on"
+msgstr "Activé"
+
+msgid "Kind"
+msgstr "Type"
+
+msgid "Expression"
+msgstr "Expression"
+
+msgid "Count"
+msgstr "Compter"
+
+msgid "Ignore"
+msgstr "Ignorer"
+
+msgid "Condition"
+msgstr "Condition"
+
+msgid "Delete all"
+msgstr "Détruire tout"
+
+msgid "Watchpoint error."
+msgstr "Erreur au point de contrôle"
+
+msgid "WATCHPOINT ERROR"
+msgstr "Erreur au point de contrôle"
+
+msgid "Program not loaded."
+msgstr "Programme non chargé"
+
+msgid "Do you wish to delete all watchpoints?"
+msgstr "Souhaitez-vous supprimer tous les points de contrôle?"
+
+msgid "Confirmation"
+msgstr ""
+
+msgid "Watches"
+msgstr "Points de suivi"
+
+msgid "Active"
+msgstr "Actif"
+
+msgid "Expressions starting with # are treated as gdb commands"
+msgstr ""
+"Les expressions commençant par # seront traitées comme des commandes gdb.  "
+
+msgid "Result"
+msgstr "Résultat"
+
+msgid ""
+"Display format\n"
+"B = Binary\n"
+"D = Decimal signed\n"
+"U = Decimal unsigned\n"
+"H = Hex"
+msgstr ""
+
+msgid "Watches &on"
+msgstr "&Format par défaut"
+
+msgid "Add Watchpoint"
+msgstr "Ajouter un point de contrôle"
+
+msgid "Address Watchpoint 8"
+msgstr "Adresse du point de contrôle 8"
+
+msgid "Address Watchpoint 16"
+msgstr "Adresse du point de contrôle 16"
+
+msgid "Address Watchpoint 32"
+msgstr "Adresse du point de contrôle 32"
+
+msgid "Address Watchpoint 64"
+msgstr "Adresse du point de contrôle 64"
+
+msgid "&Format default"
+msgstr "&Format par défaut"
+
+msgid "&Binary"
+msgstr "&Binaire"
+
+msgid "D&ecimal signed"
+msgstr "D&écimal signé"
+
+msgid "Decimal &unsigned"
+msgstr "Décimal &non signé"
+
+msgid "&Hex"
+msgstr "&Hex"
+
+msgid "&Size default"
+msgstr "&Taille par défaut"
+
+msgid "&8 Bit"
+msgstr "&8 Bit"
+
+msgid "&16 Bit"
+msgstr "&16 Bit"
+
+msgid "&32 Bit"
+msgstr "&32 Bit"
+
+msgid "&64 Bit"
+msgstr "&64 Bit"
+
+msgid "&Reset Formats"
+msgstr "&Réinitialiser les formats"
+
+msgid "Do you wish to delete all watches?"
+msgstr "Voulez-vous supprimer tous les contrôles?"
+
+msgid "<disabled>"
+msgstr ""
+
+msgid "Threads"
+msgstr ""
+
+msgid "State"
+msgstr "État"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Copy to Clipboard"
+msgstr "Copier vers le presse-papier"
+
+msgid "*active*"
+msgstr "*actif*"
+
+msgid "unknown"
+msgstr "inconnu"
+
+msgid "Code Template Editor"
+msgstr "Éditeur de modèles de code"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "&Cancel"
+msgstr "An&nuler"
+
+msgid "&Name"
+msgstr "&Nom"
+
+msgid "C&omment"
+msgstr "C&ommentaire"
+
+msgid "&Parameter"
+msgstr "&Paramètre"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Default Value"
+msgstr "Valeur par défaut"
+
+msgid "Cursor"
+msgstr "Curseur"
+
+msgid "Col"
+msgstr "Colonne "
+
+msgid "Row"
+msgstr "Ligne"
+
+msgid "&Set Cursor"
+msgstr "&Définir le curseur"
+
+msgid "&select"
+msgstr "&sélectionner"
+
+msgid "&indent"
+msgstr ""
+
+msgid "Delete"
+msgstr "Supprimer "
+
+msgid "Filename"
+msgstr "Nom du fichier"
+
+msgid "Code Temlate Files"
+msgstr "Fichiers de modèle de code"
+
+msgid "Do you want to delete \""
+msgstr "Voulez-vous supprimer"
+
+msgid "has been added to 'Project'-'Options'-'Editor'-'Code Templates'."
+msgstr ""
+
+msgid "Target Console"
+msgstr "Console cible"
+
+msgid "&Clear"
+msgstr "&Effacer"
+
+msgid "Symbols"
+msgstr "Symboles"
+
+msgid "Symbol"
+msgstr "Symbole"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Info"
+msgstr "Infos"
+
+msgid "GDB not active."
+msgstr "GDB non actif"
+
+msgid "Do you wish to delete all symbols?"
+msgstr "Souhaitez-vous supprimer tous les symboles?"
+
+msgid "&File"
+msgstr "&Fichier"
+
+msgid "Component File"
+msgstr "Fichier de composant"
+
+msgid "All Files"
+msgstr "Tous les fichiers"
+
+msgid "&Description"
+msgstr "&Description"
+
+msgid "Stack"
+msgstr "Pile"
+
+msgid "Source"
+msgstr "Code source"
+
+msgid "<none>"
+msgstr "<aucun>"
+
+msgid "Step back in code navigation"
+msgstr "Reculer dans la navigation de code"
+
+msgid "Step forward in code navigation"
+msgstr "Avancer dans la navigation de code"
+
+msgid "Select Page"
+msgstr "Sélectionner une page"
+
+msgid "&Open File"
+msgstr "&Ouvrir un fichier"
+
+msgid "&Close File"
+msgstr "&Fermer le fichier"
+
+msgid "&Save File"
+msgstr "&Sauver le fichier"
+
+msgid "Show as Form"
+msgstr "Afficher sous Forme"
+
+msgid "Convert to &Pascal string"
+msgstr "Convertir en chaîne &Pascal"
+
+msgid "&Modify Selection"
+msgstr "&Modifier la Sélection"
+
+msgid "&Edit breakpoint"
+msgstr "&Modifier le point d'arrêt"
+
+msgid "Add &Watch at Cursor"
+msgstr "Ajouter &Contrôle au curseur"
+
+msgid "Set Bookmark"
+msgstr "Définir un signet"
+
+msgid "Find Bookmark"
+msgstr "Trouver un signet"
+
+msgid "Insert GUID"
+msgstr "Insérer GUID"
+
+msgid "Insert UID"
+msgstr "Insérer GUID"
+
+msgid "Insert Template"
+msgstr "Insérer un modèle"
+
+msgid "Complete Class at Cursor"
+msgstr "Compléter la Classe au Curseur"
+
+msgid "Complete class at cursor"
+msgstr "Compléter la classe au curseur"
+
+msgid "File \""
+msgstr "Fichier \""
+
+msgid "\" has changed."
+msgstr "a changé"
+
+msgid "There are modifications in edit buffer also."
+msgstr "Il y a aussi des modifications dans le tampon d'édition."
+
+msgid "Do you wish to reload from disk?"
+msgstr "Voulez-vous recharger à partir du disque?"
+
+msgid "Do you wish to replace:"
+msgstr "Voulez-vous remplacer:"
+
+msgid "with:"
+msgstr "avec:"
+
+msgid "<new>"
+msgstr ""
+
+msgid "Syntaxdeffile:"
+msgstr "Syntaxdeffile:"
+
+msgid "Text"
+msgstr "Texte"
+
+msgid "not found."
+msgstr "pas trouvé."
+
+msgid "Restart from begin of file?"
+msgstr "Redémarrer depuis le début du fichier?"
+
+msgid "Cancel?"
+msgstr "Annuler?"
+
+msgid "Do you wish to to replace this occurence?"
+msgstr "Souhaitez-vous remplacer cet événement?"
+
+msgid "Go to line number:"
+msgstr "Aller a la ligne numéro:"
+
+msgid "Find line"
+msgstr "Chercher ligne"
+
+msgid "Restart from end of file?"
+msgstr "Redémarrer à partir de la fin du fichier?"
+
+msgid "Set Tab Order"
+msgstr "Définir l'ordre de tabulation"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "&Start"
+msgstr "&Démarrer"
+
+msgid "St&op"
+msgstr "St&op"
+
+msgid "Mouse click"
+msgstr "Clic de souris"
+
+msgid "Class"
+msgstr "Classe"
+
+msgid "Order"
+msgstr "Ordre"
+
+msgid "Set Component create Order of"
+msgstr ""
+
+msgid "Select subform"
+msgstr "Sélectionner un sous-formulaire"
+
+msgid "Select edit page (Ctrl+E)"
+msgstr "Sélectionner la page d'édition (Ctrl+E)"
+
+msgid "&Open"
+msgstr "&Ouvrir"
+
+msgid "0.0mm"
+msgstr "0.0mm"
+
+msgid "Show objectinspector"
+msgstr "Montrer l'inspecteur d'objets"
+
+msgid "Show componentpalette"
+msgstr "Afficher la palette de composants"
+
+msgid "Show as Text"
+msgstr "Afficher sous forme de texte"
+
+msgid "Copy Component(s)"
+msgstr "Copier le(s) composant(s)"
+
+msgid "Cut Component(s)"
+msgstr "Couper le(s) composant(s)"
+
+msgid "Paste Component(s)"
+msgstr "Coller le(s) composant(s)"
+
+msgid "Delete Component(s)"
+msgstr "Détruire le(s) composant(s)"
+
+msgid "Undelete Component(s)"
+msgstr "Restituer le(s) composant(s)"
+
+msgid "Select Childwidget"
+msgstr ""
+
+msgid "Edit Component"
+msgstr ""
+
+msgid "Bring to Front"
+msgstr ""
+
+msgid "Send to Back"
+msgstr ""
+
+msgid "Iconify"
+msgstr ""
+
+msgid "Deiconify"
+msgstr ""
+
+msgid "Set Creation Order"
+msgstr ""
+
+msgid "Sync. to Font Height"
+msgstr ""
+
+msgid "Revert to inherited"
+msgstr "Restaurer vers \"inherited\""
+
+msgid "Touch Form"
+msgstr ""
+
+msgid "Add report page"
+msgstr ""
+
+msgid "Delete report page"
+msgstr ""
+
+msgid "Do you wish to delete"
+msgstr ""
+
+msgid "WARNING"
+msgstr "AVERTISSEMENT"
+
+msgid "Find and Replace Text"
+msgstr ""
+
+msgid "Text to &find"
+msgstr "&Texte à trouver"
+
+msgid "&Replace with"
+msgstr "&Remplacer par"
+
+msgid "&casesensitive"
+msgstr ""
+
+msgid "&whole word"
+msgstr ""
+
+msgid "&Replace"
+msgstr "&Remplacer"
+
+msgid "Replace &all"
+msgstr ""
+
+msgid "select&ed only"
+msgstr ""
+
+msgid "&prompt on rep."
+msgstr ""
+
+msgid "Project Tree"
+msgstr ""
+
+msgid "&Add Unit"
+msgstr ""
+
+msgid "&Remove Unit"
+msgstr ""
+
+msgid "Add Text File"
+msgstr ""
+
+msgid "Remove Text File"
+msgstr ""
+
+msgid "Remove C-File"
+msgstr ""
+
+msgid "Add C-File"
+msgstr ""
+
+msgid "C-Source (*.c)"
+msgstr ""
+
+msgid "Add Directory"
+msgstr ""
+
+msgid "Remove Directory"
+msgstr ""
+
+msgid "Edit Directory Caption"
+msgstr ""
+
+msgid "Pascal Units"
+msgstr ""
+
+msgid "C Modules"
+msgstr ""
+
+msgid "Text Files"
+msgstr ""
+
+msgid "Do you wish to remove \""
+msgstr ""
+
+msgid "Select Directory"
+msgstr "Sélectionner le dossier"
+
+msgid "Do you want to remove"
+msgstr ""
+
+msgid "with the sub-items from project?"
+msgstr ""
+
+msgid "Project Options"
+msgstr "Options du projet"
+
+msgid "Ok"
+msgstr "D'accord"
+
+msgid "&Editor"
+msgstr "&Éditeur"
+
+msgid "File filter"
+msgstr "Filtre de fichier"
+
+msgid "File mask"
+msgstr "Masque de fichier"
+
+msgid "Syntax definition files"
+msgstr ""
+
+msgid "Syntax definition file"
+msgstr ""
+
+msgid "Syntaxdef files"
+msgstr ""
+
+msgid "Code templates"
+msgstr ""
+
+msgid "Code template directories, file extension = .mct"
+msgstr ""
+
+msgid "Directory"
+msgstr "Répertoire"
+
+msgid "Add to object file search path"
+msgstr ""
+
+msgid "Add to library search path"
+msgstr ""
+
+msgid "Add to include file search path"
+msgstr ""
+
+msgid "Add to unit file search path"
+msgstr ""
+
+msgid "Use in Make 4"
+msgstr ""
+
+msgid "Use in Make 3"
+msgstr ""
+
+msgid "Use in Make 2"
+msgstr ""
+
+msgid "Use in Make 1"
+msgstr ""
+
+msgid "Use in Build"
+msgstr ""
+
+msgid "Use in Make"
+msgstr ""
+
+msgid "Select unit directory"
+msgstr ""
+
+msgid "Test"
+msgstr ""
+
+msgid "ExtSp"
+msgstr ""
+
+msgid "Extra space between lines"
+msgstr ""
+
+msgid "Width"
+msgstr "Largeur "
+
+msgid "Height"
+msgstr "Hauteur "
+
+msgid "Font"
+msgstr "Police"
+
+msgid "Color"
+msgstr "Couleur"
+
+msgid "Bk. Color"
+msgstr ""
+
+msgid "Anti aliased"
+msgstr "Echantillonnage"
+
+msgid "Right margin line"
+msgstr ""
+
+msgid "Line numbers"
+msgstr ""
+
+msgid "Mark brackets"
+msgstr ""
+
+msgid "Mark pairwords"
+msgstr ""
+
+msgid "Mark in syntax definition file defined word pairs."
+msgstr ""
+
+msgid ""
+"Mark\n"
+"color"
+msgstr ""
+
+msgid ""
+"Background color of marked brackets and word pairs.\n"
+"Will be overridden by setting in syntax definition file.\n"
+"cl_none -> force none."
+msgstr ""
+
+msgid ""
+"Statement\n"
+"color"
+msgstr ""
+
+msgid ""
+"Background color of the active row while debugging.\n"
+"Will be overridden by setting in syntax definition file.\n"
+"cl_none -> force none."
+msgstr ""
+
+msgid ""
+"Scroll\n"
+"height"
+msgstr ""
+
+msgid ""
+"0 -> accelerated,\n"
+"-1 -> paged"
+msgstr ""
+
+msgid "Characters"
+msgstr ""
+
+msgid ""
+"Mark max\n"
+"rowcount"
+msgstr ""
+
+msgid "Space"
+msgstr "Espace"
+
+msgid "Block Indent"
+msgstr ""
+
+msgid "Auto indent"
+msgstr "Indentation automatique"
+
+msgid "Tab"
+msgstr "Tabulation"
+
+msgid "Tabstops"
+msgstr ""
+
+msgid "Show tabs"
+msgstr ""
+
+msgid "Eolstyle"
+msgstr ""
+
+msgid "End of line style for writing. eol_default -> use original style."
+msgstr ""
+
+msgid ""
+"Trim trailing\n"
+"whitespace\n"
+"on save"
+msgstr ""
+
+msgid "Encoding"
+msgstr "Encodage"
+
+msgid "Locale"
+msgstr ""
+
+msgid "Backup file count"
+msgstr ""
+
+msgid "Form"
+msgstr "Formulaire"
+
+msgid "Component hints"
+msgstr ""
+
+msgid "Docking"
+msgstr "Amarrage"
+
+msgid "Move on first click"
+msgstr ""
+
+msgid "Grid size Y"
+msgstr "Taille de grille Y"
+
+msgid "Grid size X"
+msgstr "Taille de grille X"
+
+msgid "Snap to Grid"
+msgstr ""
+
+msgid ""
+"Hint:\n"
+"Use Ctrl + arrow keys to move selected components without grid snap,\n"
+"use Shift + arrow keys to resize selected components without grid snap."
+msgstr ""
+
+msgid "Show Grid"
+msgstr ""
+
+msgid "&Debugger"
+msgstr "&Débogueur"
+
+msgid "&Debug command"
+msgstr ""
+
+msgid "Debug &options"
+msgstr ""
+
+msgid "\"--tty DEVICE\" to set target terminal"
+msgstr ""
+
+msgid "Source &directories"
+msgstr ""
+
+msgid "Select source directory"
+msgstr ""
+
+msgid "Object &Base Directory (empty = Make Directory)"
+msgstr ""
+
+msgid "Select source base directory"
+msgstr ""
+
+msgid "Defi&nes"
+msgstr ""
+
+msgid "Space separated defines for {$ifdef}"
+msgstr ""
+
+msgid "&Signals"
+msgstr "&Signaux"
+
+msgid ".. to"
+msgstr ""
+
+msgid "&Exceptions"
+msgstr ""
+
+msgid "ignore"
+msgstr "ignorer"
+
+msgid "Exception class"
+msgstr ""
+
+msgid "&Target"
+msgstr "&Cible"
+
+msgid "Target connection"
+msgstr ""
+
+msgid "Before connect gdb script"
+msgstr ""
+
+msgid "gdb Scripts"
+msgstr ""
+
+msgid "Before load gdb script"
+msgstr ""
+
+msgid "Before run gdb script"
+msgstr ""
+
+msgid "After connect gdb script"
+msgstr ""
+
+msgid "After load gdb script"
+msgstr ""
+
+msgid "Processor"
+msgstr ""
+
+msgid "Simulator"
+msgstr ""
+
+msgid "gdb download"
+msgstr ""
+
+msgid ""
+"Always download\n"
+"before run"
+msgstr ""
+
+msgid "Startup BKPT"
+msgstr ""
+
+msgid ""
+"Restart gdb\n"
+"before load"
+msgstr ""
+
+msgid "Start gdb server command attach target"
+msgstr ""
+
+msgid "Start gdb server command run target"
+msgstr ""
+
+msgid "Download command"
+msgstr ""
+
+msgid "Load Timeout"
+msgstr ""
+
+msgid "0.#sec"
+msgstr ""
+
+msgid "Wait before connect"
+msgstr ""
+
+msgid "Start once"
+msgstr ""
+
+msgid "no wait for exit"
+msgstr ""
+
+msgid "TTY"
+msgstr ""
+
+msgid ""
+"&External\n"
+"Console"
+msgstr ""
+
+msgid ""
+"Show &Cons.\n"
+"on Run"
+msgstr ""
+
+msgid "Show console on run"
+msgstr ""
+
+msgid ""
+"&Stop\n"
+"on Excep."
+msgstr ""
+
+msgid "Stop on exceptions"
+msgstr ""
+
+msgid ""
+"&Activate\n"
+"on Break"
+msgstr ""
+
+msgid ""
+"&Value\n"
+"Hints"
+msgstr ""
+
+msgid ""
+"Call GUI_DEBUGBEGIN/\n"
+"GUI_DEBUGEND"
+msgstr ""
+
+msgid ""
+"Release mouse grab by target stop. gdb sometimes crashes with this option."
+msgstr ""
+
+msgid ""
+"Set\n"
+"TT&Y"
+msgstr ""
+
+msgid ""
+"&Raise\n"
+"on Break"
+msgstr ""
+
+msgid ""
+"&FPC\n"
+"bugs"
+msgstr ""
+
+msgid "Use workarounds for FPC/gdb bugs"
+msgstr ""
+
+msgid "Debug &target (empty = make targetfile)"
+msgstr ""
+
+msgid "xterm command"
+msgstr ""
+
+msgid "&Run command (empty = start debugger)"
+msgstr ""
+
+msgid "&Make"
+msgstr ""
+
+msgid "Default make col"
+msgstr ""
+
+msgid "M (Make)"
+msgstr ""
+
+msgid "B (Build)"
+msgstr ""
+
+msgid "1 (Make 1)"
+msgstr ""
+
+msgid "2 (Make 2)"
+msgstr ""
+
+msgid "3 (Make 3)"
+msgstr ""
+
+msgid "4 (Make 4)"
+msgstr ""
+
+msgid "&Mainfile"
+msgstr ""
+
+msgid "Select mainfile"
+msgstr ""
+
+msgid "&Targetfile"
+msgstr ""
+
+msgid "Select target file"
+msgstr ""
+
+msgid "Make &Program"
+msgstr ""
+
+msgid "Select make command"
+msgstr ""
+
+msgid "Show command line"
+msgstr ""
+
+msgid "Message &output file"
+msgstr ""
+
+msgid "Copy messages to &file"
+msgstr ""
+
+msgid "Close messages window after compile"
+msgstr ""
+
+msgid "Check method headers"
+msgstr ""
+
+msgid "Command before"
+msgstr ""
+
+msgid "Command"
+msgstr "Commande"
+
+msgid "Make options"
+msgstr ""
+
+msgid "After mainfile"
+msgstr ""
+
+msgid "Command line options"
+msgstr ""
+
+msgid "Directories"
+msgstr "Répertoires"
+
+msgid "Unit, include and library &directories"
+msgstr ""
+
+msgid "Obj pref. (-Fo)"
+msgstr ""
+
+msgid "Lib pref.(-Fl)"
+msgstr ""
+
+msgid "Inc pref.(-Fi)"
+msgstr ""
+
+msgid "Unit pref.(-Fu)"
+msgstr ""
+
+msgid "Reverse directory order"
+msgstr ""
+
+msgid "Command after"
+msgstr "Commande suivante"
+
+msgid "Targ. pref. (-o)"
+msgstr ""
+
+msgid "Make &Directory"
+msgstr ""
+
+msgid "Select make directory"
+msgstr ""
+
+msgid "Error Color"
+msgstr ""
+
+msgid "Warning Color"
+msgstr ""
+
+msgid "Note Color"
+msgstr ""
+
+msgid "Strip ESC sequences"
+msgstr ""
+
+msgid "M&acros"
+msgstr ""
+
+msgid "Value"
+msgstr "Valeur"
+
+msgid "Active group"
+msgstr ""
+
+msgid "&Font Alias"
+msgstr ""
+
+msgid "Alias"
+msgstr "Alias"
+
+msgid "Font name"
+msgstr "Nom de la police"
+
+msgid "Options"
+msgstr "Options"
+
+msgid "Xscale"
+msgstr ""
+
+msgid "Ancestor"
+msgstr ""
+
+msgid "User &Colors"
+msgstr ""
+
+msgid "Copy \"setcolormapvalue\" code to clipboard"
+msgstr ""
+
+msgid "Comment"
+msgstr "Commentaire"
+
+msgid "F&ormat Macros"
+msgstr ""
+
+msgid "Used by formatfloatmse() and formatdatetimemse()"
+msgstr ""
+
+msgid "&Templates"
+msgstr "&Modèles"
+
+msgid "New Project"
+msgstr "Nouveau projet"
+
+msgid "Load file in editor"
+msgstr ""
+
+msgid "Expand macros"
+msgstr ""
+
+msgid "Copied Files"
+msgstr ""
+
+msgid "Destination"
+msgstr "Destination"
+
+msgid "Script before copy"
+msgstr ""
+
+msgid "Script after copy"
+msgstr ""
+
+msgid "New File"
+msgstr "Nouveau fichier"
+
+msgid "Filter"
+msgstr "Filtre"
+
+msgid "Ext"
+msgstr ""
+
+msgid "New Form"
+msgstr "Nouvelle fiche"
+
+msgid "Inherited"
+msgstr ""
+
+msgid "Namebase"
+msgstr ""
+
+msgid "Formsuffix"
+msgstr ""
+
+msgid "Source File"
+msgstr ""
+
+msgid "Form File"
+msgstr ""
+
+msgid "Form Files"
+msgstr ""
+
+msgid "Too&ls"
+msgstr ""
+
+msgid "Save files"
+msgstr ""
+
+msgid "Parse source"
+msgstr ""
+
+msgid "Hide console (win32 only)"
+msgstr ""
+
+msgid "Show output in messages window"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Shortcut"
+msgstr "Raccourci"
+
+msgid ""
+"Select item from 'Settings'-'Configure MSEide'-'Shortcuts'\n"
+"'Tool 1'..'Tool 10'."
+msgstr ""
+
+msgid "Sc.Key"
+msgstr ""
+
+msgid "Shortcut key"
+msgstr ""
+
+msgid "Alt.Sc."
+msgstr ""
+
+msgid "Alternate shortcut key"
+msgstr ""
+
+msgid "File"
+msgstr "Fichier "
+
+msgid "Parameters"
+msgstr "Paramètres"
+
+msgid "Item"
+msgstr "Élément"
+
+msgid "Tool 1"
+msgstr "Outil 1"
+
+msgid "Tool 2"
+msgstr "Outil 2"
+
+msgid "Tool 3"
+msgstr "Outil 3"
+
+msgid "Tool 4"
+msgstr "Outil 4"
+
+msgid "Tool 5"
+msgstr "Outil 5"
+
+msgid "Tool 6"
+msgstr "Outil 6"
+
+msgid "Tool 7"
+msgstr "Outil 7"
+
+msgid "Tool 8"
+msgstr "Outil 8"
+
+msgid "Tool 9"
+msgstr "Outil 9"
+
+msgid "Tool 10"
+msgstr "Outil 10"
+
+msgid "Alternate"
+msgstr ""
+
+msgid "&Storage"
+msgstr ""
+
+msgid "Editor"
+msgstr "Éditeur"
+
+msgid "Auto load"
+msgstr ""
+
+msgid "Auto save"
+msgstr ""
+
+msgid "Save"
+msgstr "Enregistrer"
+
+msgid "Load"
+msgstr "Charge"
+
+msgid "Settings File"
+msgstr ""
+
+msgid "Project Files"
+msgstr "Fichiers du projet"
+
+msgid "Enter Settings File"
+msgstr ""
+
+msgid "Debugger"
+msgstr "Débogueur"
+
+msgid "Storage"
+msgstr ""
+
+msgid "Macros"
+msgstr "Macros"
+
+msgid "Tools"
+msgstr "Outils"
+
+msgid "Templates"
+msgstr "Modèles"
+
+msgid "Component Store"
+msgstr ""
+
+msgid "Window Layout"
+msgstr ""
+
+msgid "Load/save settings"
+msgstr ""
+
+msgid "Make"
+msgstr ""
+
+msgid "User Colors"
+msgstr ""
+
+msgid "Format Macros"
+msgstr ""
+
+msgid "Font Alias"
+msgstr ""
+
+msgid "Wrong encoding can damage your source files."
+msgstr ""
+
+msgid "Do you wish to set encoding to"
+msgstr ""
+
+msgid "*** WARNING ***"
+msgstr "*** AVERTISSEMENT ***"
+
+msgid "Hangup"
+msgstr ""
+
+msgid "Interrupt"
+msgstr "Interrompre"
+
+msgid "Quit"
+msgstr "Quitter"
+
+msgid "Illegal instruction"
+msgstr ""
+
+msgid "Trace trap"
+msgstr ""
+
+msgid "Abort"
+msgstr "Abandonner"
+
+msgid "BUS error"
+msgstr ""
+
+msgid "Floating-point exception"
+msgstr ""
+
+msgid "Kill"
+msgstr ""
+
+msgid "User-defined signal 1"
+msgstr ""
+
+msgid "Segmentation violation"
+msgstr ""
+
+msgid "User-defined signal 2"
+msgstr ""
+
+msgid "Broken pipe"
+msgstr ""
+
+msgid "Alarm clock"
+msgstr ""
+
+msgid "Termination"
+msgstr ""
+
+msgid "Stack fault"
+msgstr ""
+
+msgid "Child status has changed"
+msgstr ""
+
+msgid "Continue"
+msgstr "Continuer"
+
+msgid "Stop, unblockable"
+msgstr ""
+
+msgid "Keyboard stop"
+msgstr ""
+
+msgid "Background read from tty"
+msgstr ""
+
+msgid "Background write to tty"
+msgstr ""
+
+msgid "Urgent condition on socket"
+msgstr ""
+
+msgid "CPU limit exceeded"
+msgstr ""
+
+msgid "File size limit exceeded"
+msgstr ""
+
+msgid "Virtual alarm clock"
+msgstr ""
+
+msgid "Profiling alarm clock"
+msgstr ""
+
+msgid "Window size change"
+msgstr ""
+
+msgid "I/O now possible"
+msgstr ""
+
+msgid "Power failure restart"
+msgstr ""
+
+msgid "Target Environment"
+msgstr ""
+
+msgid "&Working directory"
+msgstr ""
+
+msgid "Select program working directory"
+msgstr ""
+
+msgid "&Parameters"
+msgstr "&Paramètres"
+
+msgid "Environment variables"
+msgstr ""
+
+msgid "Print File"
+msgstr ""
+
+msgid "&Ok"
+msgstr "&D'accord"
+
+msgid ""
+"Print line\n"
+"&numbers"
+msgstr ""
+
+msgid "Font &size (Pt)"
+msgstr ""
+
+msgid "&Title font"
+msgstr ""
+
+msgid "So&urce font"
+msgstr ""
+
+msgid "&Color"
+msgstr "&Couleur"
+
+msgid "Paper size"
+msgstr "Taille du papier"
+
+msgid "Paper orientation"
+msgstr ""
+
+msgid "Rotate CCW"
+msgstr ""
+
+msgid "Pages"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Do you wish to cancel printing?"
+msgstr ""
+
+msgid "Mainwindow"
+msgstr ""
+
+msgid "Objectinspector"
+msgstr "Inspecteur d'objets"
+
+msgid "Object Inspector"
+msgstr "Inspecteur d'objet"
+
+msgid "Show component editor."
+msgstr ""
+
+msgid "Collapse tree"
+msgstr ""
+
+msgid "Clear Selection"
+msgstr "Effacer la sélection"
+
+msgid "Select Code Template"
+msgstr ""
+
+msgid "Par1"
+msgstr ""
+
+msgid "Par2"
+msgstr ""
+
+msgid "Par3"
+msgstr ""
+
+msgid "Par4"
+msgstr ""
+
+msgid "Macro"
+msgstr "Macro"
+
+msgid "comment"
+msgstr "commentaire"
+
+msgid "Code Template \""
+msgstr ""
+
+msgid "Select Component"
+msgstr ""
+
+msgid "Messages"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "Copier vers le presse-papier"
+
+msgid "Memory"
+msgstr "Mémoire"
+
+msgid "Add"
+msgstr "Ajouter"
+
+msgid "Memory &on"
+msgstr ""
+
+msgid "&Mainform"
+msgstr ""
+
+msgid "&Simple Form"
+msgstr ""
+
+msgid "&Docking Form"
+msgstr ""
+
+msgid "D&atamodule"
+msgstr ""
+
+msgid "S&ubform"
+msgstr ""
+
+msgid "&Report"
+msgstr "&Rapport"
+
+msgid "S&criptform"
+msgstr ""
+
+msgid "&Inherited"
+msgstr ""
+
+msgid "&Form"
+msgstr ""
+
+msgid "&New"
+msgstr "&Nouveau"
+
+msgid "E&xit"
+msgstr "&Quitter"
+
+msgid "Find &Component"
+msgstr ""
+
+msgid "&Search"
+msgstr "&Rechercher"
+
+msgid "&Edit"
+msgstr "É&diter"
+
+msgid "En&vironment"
+msgstr ""
+
+msgid "Restart Debugger"
+msgstr ""
+
+msgid "&New Panel"
+msgstr ""
+
+msgid "Pan&els"
+msgstr ""
+
+msgid "Load Wi&ndow Layout"
+msgstr ""
+
+msgid "Component &Palette"
+msgstr ""
+
+msgid "Component Sto&re"
+msgstr ""
+
+msgid "Object &Inspector"
+msgstr "&Inspecteur d'objets"
+
+msgid "So&urce"
+msgstr ""
+
+msgid "&Messages"
+msgstr ""
+
+msgid "&Find Results"
+msgstr ""
+
+msgid "Symbo&ls"
+msgstr ""
+
+msgid "&Watches"
+msgstr "&Points de suivi"
+
+msgid "&Stack"
+msgstr "&Pile"
+
+msgid "T&hreads"
+msgstr ""
+
+msgid "&CPU"
+msgstr ""
+
+msgid "&Assembler"
+msgstr "&Assembleur"
+
+msgid "Memor&y"
+msgstr "M&émoire"
+
+msgid "&Target Console"
+msgstr ""
+
+msgid "&Breakpoints"
+msgstr ""
+
+msgid "Watchp&oints"
+msgstr ""
+
+msgid "Toggle Form/Unit"
+msgstr "Commuter Fiche/Unité"
+
+msgid "&View"
+msgstr "&Affichage"
+
+msgid "&Build"
+msgstr "&Compiler"
+
+msgid "Make &1"
+msgstr ""
+
+msgid "Make &2"
+msgstr ""
+
+msgid "Make &3"
+msgstr ""
+
+msgid "Make &4"
+msgstr ""
+
+msgid "&Abort Make"
+msgstr ""
+
+msgid "From &Template"
+msgstr ""
+
+msgid "From &Program"
+msgstr ""
+
+msgid "&Empty"
+msgstr "&Vide"
+
+msgid "Open copy"
+msgstr ""
+
+msgid "Save &as"
+msgstr "Sauver &sous"
+
+msgid "Save as copy"
+msgstr ""
+
+msgid "&Close"
+msgstr "Fermer le doc&ument "
+
+msgid "&Project"
+msgstr "&Projet"
+
+msgid "&About"
+msgstr "À &propos"
+
+msgid "&Configure MSEide"
+msgstr "&Configurer MSEide"
+
+msgid "Sett&ings"
+msgstr ""
+
+msgid "Open file"
+msgstr "Ouvrir un fichier"
+
+msgid "Save file as"
+msgstr "Enregistrer le fichier sous"
+
+msgid "Project files"
+msgstr "Fichiers de projet"
+
+msgid "Open Project"
+msgstr "Ouvrir un projet"
+
+msgid "Save Project"
+msgstr "Enregistrer le projet"
+
+msgid "Unresolved references in"
+msgstr ""
+
+msgid "to"
+msgstr "à"
+
+msgid "Do you wish to search the formfile?"
+msgstr ""
+
+msgid "Formfile for"
+msgstr ""
+
+msgid "Formfiles"
+msgstr ""
+
+msgid "Recursive form hierarchy for \""
+msgstr ""
+
+msgid "ERROR"
+msgstr "ERREUR"
+
+msgid "Classtype"
+msgstr ""
+
+msgid "Project"
+msgstr "Projet"
+
+msgid "is modified. Save?"
+msgstr ""
+
+msgid "Unable to open file \""
+msgstr ""
+
+msgid "*** Running ***"
+msgstr ""
+
+msgid "Downloading"
+msgstr ""
+
+msgid "Downloaded"
+msgstr "Téléchargé"
+
+msgid "Start gdb server command \""
+msgstr ""
+
+msgid "\" running."
+msgstr ""
+
+msgid "Start gdb Server"
+msgstr ""
+
+msgid "gdb server start error"
+msgstr ""
+
+msgid "gdb server start canceled."
+msgstr ""
+
+msgid "Can not run start gdb command."
+msgstr ""
+
+msgid "Uploadcommand \""
+msgstr ""
+
+msgid "Download ***ERROR***"
+msgstr ""
+
+msgid "Download finished."
+msgstr ""
+
+msgid "Download canceled."
+msgstr ""
+
+msgid "\" not found."
+msgstr ""
+
+msgid "\" exists."
+msgstr ""
+
+msgid "New"
+msgstr "Nouveau"
+
+msgid "Select ancestor"
+msgstr ""
+
+msgid "New form"
+msgstr "Nouvelle fiche"
+
+msgid "Pascal Files"
+msgstr ""
+
+msgid "new"
+msgstr "nouveau"
+
+msgid "Can not load Project \""
+msgstr ""
+
+msgid "Select project template"
+msgstr ""
+
+msgid "All files"
+msgstr "Tous les fichiers"
+
+msgid "Select program file"
+msgstr ""
+
+msgid "Pascal program files"
+msgstr ""
+
+msgid "C program files"
+msgstr ""
+
+msgid "Can not start process"
+msgstr ""
+
+msgid "Process"
+msgstr "Processus"
+
+msgid "running"
+msgstr ""
+
+msgid "Process terminated. Exitcode: "
+msgstr ""
+
+msgid "Process terminated normally."
+msgstr ""
+
+msgid "Make ***ERROR***"
+msgstr ""
+
+msgid "Make OK."
+msgstr ""
+
+msgid "Source has changed, do you wish to remake project?"
+msgstr ""
+
+msgid "Load Window Layout"
+msgstr ""
+
+msgid "Docking Area"
+msgstr ""
+
+msgid "Open Form File"
+msgstr ""
+
+msgid ""
+"MSEide Copyright 1999-2015 by Martin Schreiber\n"
+"Usage: mseide [OPTION]... [PROJECTFILE]\n"
+"\n"
+"Options:"
+msgstr ""
+
+msgid ""
+"\n"
+"Environment variables\n"
+"FPCDIR, FPCLIBDIR, MSEDIR, MSELIBDIR\n"
+"SYNTAXDEFDIR, TEMPLATEDIR, COMPSTOREDIR\n"
+"COMPILER, DEBUGGER, EXEEXT,TARGET,TARGETOSDIR\n"
+"can be used to override the settings macros.\n"
+"\n"
+"Have a lot of fun!\n"
+"\n"
+"Martin"
+msgstr ""
+
+msgid "Set path to global status file."
+msgstr ""
+
+msgid ""
+"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.\n"
+" Example:\n"
+" --macrodef=MAC1,abc,MAC2,def"
+msgstr ""
+
+msgid "Store --macrodef values as global macros and terminate MSEide. "
+msgstr ""
+
+msgid ""
+"Use 'Project'-'Options'-'Macros'-'Active group' number <n>,\n"
+"<n> = 1..6."
+msgstr ""
+
+msgid "Do not load a project."
+msgstr ""
+
+msgid "Do not touch Z-order of the windows."
+msgstr ""
+
+msgid "Do not use the NET_RESTACK_WINDOW protocol."
+msgstr ""
+
+msgid "Use the NET_RESTACK_WINDOW protocol."
+msgstr ""
+
+msgid "Do not use xreconfigurewmwindow() for window stacking operation."
+msgstr ""
+
+msgid "Use xreconfigurewmwindow() for window stacking operation."
+msgstr ""
+
+msgid ""
+"Necessarry for windowmanagers with buggy xreconfigurewmwindow() handling."
+msgstr ""
+
+msgid "No workaround."
+msgstr ""
+
+msgid ""
+"Use the top level frame window id instead of the application client window id\n"
+"for window raise operation. Implies --NORESTACKWINDOW and\n"
+" --NORECONFIGUREWMWINDOW."
+msgstr ""
+
+msgid "Find Component"
+msgstr ""
+
+msgid "&Iconify"
+msgstr ""
+
+msgid "&Deiconify"
+msgstr ""
+
+msgid "&Edit Component"
+msgstr ""
+
+msgid "Set Widget Order"
+msgstr ""
+
+msgid "Touch all Forms"
+msgstr ""
+
+msgid "Insert Submodule"
+msgstr ""
+
+msgid "Insert Component"
+msgstr ""
+
+msgid "Hide &Components"
+msgstr ""
+
+msgid "Hide &Widgets"
+msgstr ""
+
+msgid "&Hide Widgets<>Components"
+msgstr ""
+
+msgid "&Show all"
+msgstr "&Montrer tout"
+
+msgid "Do you wish to revert to inherited"
+msgstr ""
+
+msgid "the selected component?"
+msgstr ""
+
+msgid "Do you want to touch all loaded forms?"
+msgstr ""
+
+msgid "&again"
+msgstr ""
+
+msgid "*** CANCELED ***"
+msgstr ""
+
+msgid "FINISHED"
+msgstr ""
+
+msgid "Findresults"
+msgstr ""
+
+msgid "Find in file results"
+msgstr ""
+
+msgid "Find Text in Files"
+msgstr ""
+
+msgid "&Text to find"
+msgstr "&Texte à trouver"
+
+msgid "&Directory"
+msgstr "&Répertoire"
+
+msgid "&File Mask"
+msgstr "&Masque de fichier"
+
+msgid "Search in &directories"
+msgstr ""
+
+msgid "C&asesensitive"
+msgstr ""
+
+msgid "Search in &project dir"
+msgstr ""
+
+msgid "&Whole word"
+msgstr ""
+
+msgid "Search in &open files"
+msgstr ""
+
+msgid "Search in &current file"
+msgstr ""
+
+msgid "&Include subdirectories"
+msgstr ""
+
+msgid "Find Text"
+msgstr "Chercher le texte"
+
+msgid "&backward"
+msgstr ""
+
+msgid "c&asesensitive"
+msgstr ""
+
+msgid "&selected only"
+msgstr ""
+
+msgid "Assembler"
+msgstr "Assembleur"
+
+msgid "Show &Breakpoint"
+msgstr ""
+
+msgid "Next instruction"
+msgstr ""
+
+msgid "Step instruction"
+msgstr ""
+
+msgid "MEM"
+msgstr ""
+
+msgid "CPU &on"
+msgstr ""
+
+msgid "yy-mm-dd hh:mm:ss"
+msgstr ""
+
+msgid "Set global interrupt mask while stepping"
+msgstr ""
+
+msgid "Check Exceptstack"
+msgstr ""
+
+msgid "Return address:"
+msgstr ""
+
+msgid "Exception return"
+msgstr ""
+
+msgid "Sel"
+msgstr ""
+
+msgid "Select item for inserting"
+msgstr ""
+
+msgid "Description"
+msgstr "Description"
+
+msgid "&Copy Component"
+msgstr ""
+
+msgid "&Paste Component(s)"
+msgstr ""
+
+msgid "&Copy Component(s)"
+msgstr ""
+
+msgid "Update Component(s)"
+msgstr ""
+
+msgid "Remove Component(s)"
+msgstr ""
+
+msgid "New  Node"
+msgstr ""
+
+msgid "Remove Node"
+msgstr ""
+
+msgid "Copy Node"
+msgstr ""
+
+msgid "Paste Node"
+msgstr ""
+
+msgid "New Store"
+msgstr ""
+
+msgid "Add Store"
+msgstr ""
+
+msgid "Remove Store"
+msgstr ""
+
+msgid "Open Store Group"
+msgstr ""
+
+msgid "Save Store Group"
+msgstr ""
+
+msgid "Save Store Group as"
+msgstr ""
+
+msgid "Component Stores"
+msgstr ""
+
+msgid "Load Component Store"
+msgstr ""
+
+msgid "New Component Store"
+msgstr ""
+
+msgid "Store Groups"
+msgstr ""
+
+msgid "Add Componentfile"
+msgstr ""
+
+msgid "Select Component File"
+msgstr ""
+
+msgid "Component read error."
+msgstr ""
+
+msgid "Do you want to overwrite \""
+msgstr ""
+
+msgid "\" with current clipboard content?"
+msgstr ""
+
+msgid "No component(s) in clipboard."
+msgstr ""
+
+msgid "Error while writing the storegroup."
+msgstr ""
+
+msgid "Do you want to remove \""
+msgstr ""
+
+msgid "\" branch?"
+msgstr ""
+
+msgid "\" does not exist, do you want to create it?"
+msgstr ""
+
+msgid "Save Component Store Group"
+msgstr ""
+
+msgid "Component Palette"
+msgstr "Palette des composants"
+
+msgid "Command Line"
+msgstr "Ligne de commande"
+
+msgid "Make disabled by Default make col!"
+msgstr ""
+
+msgid "Breakpoints"
+msgstr "Points d'arrêt"
+
+msgid "Line Nr."
+msgstr ""
+
+msgid "Breakpoints &on"
+msgstr ""
+
+msgid "Breakpoint error."
+msgstr ""
+
+msgid "BREAKPOINT ERROR"
+msgstr ""
+
+msgid "Do you wish to delete all breakpoints?"
+msgstr ""
+
+msgid "&Run"
+msgstr "&Lancer"
+
+msgid "Run"
+msgstr "Exécuter"
+
+msgid "&Step"
+msgstr ""
+
+msgid "Step"
+msgstr ""
+
+msgid "&Next"
+msgstr "&Suivant"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "&Continue"
+msgstr "&Continuer"
+
+msgid "&Interrupt"
+msgstr ""
+
+msgid "&Reset"
+msgstr "&Normal"
+
+msgid "Reset"
+msgstr "Remettre à zéro"
+
+msgid "&Finish"
+msgstr "&Terminer"
+
+msgid "Finish"
+msgstr "Achever"
+
+msgid "&Save"
+msgstr "&Enregistrer"
+
+msgid "&Undo"
+msgstr "&Annuler"
+
+msgid "&Redo"
+msgstr "&Rétablir"
+
+msgid "Cu&t"
+msgstr "Co&uper"
+
+msgid "&Copy"
+msgstr "&Copier"
+
+msgid "&Paste"
+msgstr "Co&ller"
+
+msgid "&Delete"
+msgstr "&Supprimer "
+
+msgid "Sa&ve all"
+msgstr ""
+
+msgid "&Find"
+msgstr "Rec&hercher"
+
+msgid "&Search again"
+msgstr ""
+
+msgid "Find in F&iles"
+msgstr ""
+
+msgid "C&lose all"
+msgstr ""
+
+msgid "&Breakpoints on"
+msgstr ""
+
+msgid "Breakpoints on/off"
+msgstr ""
+
+msgid "&Watches on"
+msgstr ""
+
+msgid "Watches on/off"
+msgstr ""
+
+msgid "&Line"
+msgstr ""
+
+msgid "&Toggle Breakpoint"
+msgstr ""
+
+msgid "Toggle Bkpt. &enabled"
+msgstr ""
+
+msgid "Select &Edit Page"
+msgstr ""
+
+msgid "&Indent"
+msgstr "Au&gmenter le retrait"
+
+msgid "U&nindent"
+msgstr ""
+
+msgid "Toggle Form/&Unit"
+msgstr ""
+
+msgid "Next Instruction"
+msgstr ""
+
+msgid "Step Instruction"
+msgstr ""
+
+msgid "Exec Line Hint on"
+msgstr ""
+
+msgid "Executable lines hint on/off"
+msgstr ""
+
+msgid "Find && &Replace"
+msgstr ""
+
+msgid "&Print"
+msgstr "&Imprimer"
+
+msgid "Detach"
+msgstr ""
+
+msgid "Attach Process"
+msgstr ""
+
+msgid "&Lowercase"
+msgstr ""
+
+msgid "&Uppercase"
+msgstr ""
+
+msgid "Open"
+msgstr "Ouvrir"
+
+msgid "Save all"
+msgstr "Tout enregistrer"
+
+msgid "Save as"
+msgstr "Enregistrer sous"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Close all"
+msgstr "Tout fermer"
+
+msgid "Print"
+msgstr "Imprimer"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "Line"
+msgstr "Ligne"
+
+msgid "Find"
+msgstr "Recherche"
+
+msgid "Search again"
+msgstr "Rechercher encore"
+
+msgid "Search back"
+msgstr ""
+
+msgid "Find and replace"
+msgstr ""
+
+msgid "Find in File"
+msgstr ""
+
+msgid "Edit"
+msgstr "Éditer"
+
+msgid "Select Editpage"
+msgstr ""
+
+msgid "Copy Word at Cursor"
+msgstr ""
+
+msgid "Indent"
+msgstr "Augmenter le retrait"
+
+msgid "Unindent"
+msgstr "Diminuer le retrait"
+
+msgid "Comment Selection"
+msgstr "Commenter la sélection"
+
+msgid "Uncomment Selection"
+msgstr "Décommenter la sélection"
+
+msgid "Lowercase"
+msgstr "Mettre en minuscules"
+
+msgid "Uppercase"
+msgstr "Mettre en majuscules"
+
+msgid "Copy LaTeX"
+msgstr ""
+
+msgid "Complete Class"
+msgstr ""
+
+msgid "Navigate Back"
+msgstr ""
+
+msgid "Navigate Forward"
+msgstr ""
+
+msgid "Set Bookmark 0"
+msgstr ""
+
+msgid "Set Bookmark 1"
+msgstr ""
+
+msgid "Set Bookmark 2"
+msgstr ""
+
+msgid "Set Bookmark 3"
+msgstr ""
+
+msgid "Set Bookmark 4"
+msgstr ""
+
+msgid "Set Bookmark 5"
+msgstr ""
+
+msgid "Set Bookmark 6"
+msgstr ""
+
+msgid "Set Bookmark 7"
+msgstr ""
+
+msgid "Set Bookmark 8"
+msgstr ""
+
+msgid "Set Bookmark 9"
+msgstr ""
+
+msgid "Clear Bookmark"
+msgstr ""
+
+msgid "Find Bookmark 0"
+msgstr ""
+
+msgid "Find Bookmark 1"
+msgstr ""
+
+msgid "Find Bookmark 2"
+msgstr ""
+
+msgid "Find Bookmark 3"
+msgstr ""
+
+msgid "Find Bookmark 4"
+msgstr ""
+
+msgid "Find Bookmark 5"
+msgstr ""
+
+msgid "Find Bookmark 6"
+msgstr ""
+
+msgid "Find Bookmark 7"
+msgstr ""
+
+msgid "Find Bookmark 8"
+msgstr ""
+
+msgid "Find Bookmark 9"
+msgstr ""
+
+msgid "Target"
+msgstr "Cible"
+
+msgid "Detach Target"
+msgstr ""
+
+msgid "Toggle Breakpoint"
+msgstr "Basculer le point d'arrêt"
+
+msgid "Toggle Breakpoint enabled"
+msgstr ""
+
+msgid "Exec Line Hints on/off"
+msgstr ""
+
+msgid "View"
+msgstr "Affichage"
+
+msgid "Toggle Form/Object Inspector"
+msgstr ""
+
+msgid "Build"
+msgstr "Construire"
+
+msgid "Make 1"
+msgstr ""
+
+msgid "Make 2"
+msgstr ""
+
+msgid "Make 3"
+msgstr ""
+
+msgid "Make 4"
+msgstr ""
+
+msgid "Abort Make"
+msgstr ""
+
+msgid "Tree"
+msgstr "Arborescent"
+
+msgid "Help"
+msgstr "Aide"
+
+msgid "Toggle Form/Inspector"
+msgstr ""
+
+msgid "Download"
+msgstr "Télécharger"
+
+msgid "Attach Target"
+msgstr ""
+
+msgid "Bookmark &0"
+msgstr ""
+
+msgid "Bookmark &1"
+msgstr ""
+
+msgid "Bookmark &2"
+msgstr ""
+
+msgid "Bookmark &3"
+msgstr ""
+
+msgid "Bookmark &4"
+msgstr ""
+
+msgid "Bookmark &5"
+msgstr ""
+
+msgid "Bookmark &6"
+msgstr ""
+
+msgid "Bookmark &7"
+msgstr ""
+
+msgid "Bookmark &8"
+msgstr ""
+
+msgid "Bookmark &9"
+msgstr ""
+
+msgid "none"
+msgstr "aucun"
+
+msgid "O&pen"
+msgstr ""
+
+msgid "&Options"
+msgstr ""
+
+msgid "&Tree"
+msgstr "&Arborescence"
+
+msgid "Configure MSEide"
+msgstr "Configurer MSEide"
+
+msgid "Process ID"
+msgstr "ID du processus"
+
+msgid "Attach to process"
+msgstr ""
+
+msgid "Unknown moduleclass for \""
+msgstr ""
+
+msgid "Inherited component \""
+msgstr ""
+
+msgid "\" can not be deleted."
+msgstr ""
+
+msgid "Make aborted."
+msgstr ""
+
+msgid "Download aborted."
+msgstr ""
+
+msgid "Runerror with \""
+msgstr ""
+
+msgid "Error: Timeout."
+msgstr ""
+
+msgid "Making."
+msgstr ""
+
+msgid "Make not running."
+msgstr ""
+
+msgid "Downloading."
+msgstr ""
+
+msgid "Download not running."
+msgstr ""
+
+msgid "Script"
+msgstr "Script"
+
+msgid "Recursive form inheritance of \""
+msgstr ""
+
+msgid "Component \""
+msgstr ""
+
+msgid "Ancestor for \""
+msgstr ""
+
+msgid "Module \""
+msgstr ""
+
+msgid "Invalid name \""
+msgstr ""
+
+msgid "Invalid methodname"
+msgstr ""
+
+msgid "Module not found"
+msgstr ""
+
+msgid "Method not found"
+msgstr ""
+
+msgid "Published (managed) method"
+msgstr ""
+
+msgid "does not exist."
+msgstr ""
+
+msgid "Do you wish to delete the event?"
+msgstr ""
+
+msgid "Method"
+msgstr "Méthode"
+
+msgid "has different parameters."
+msgstr ""
+
+msgid "A module \""
+msgstr ""
+
+msgid "\" is already open."
+msgstr ""
+
+msgid "Unresolved reference(s) to"
+msgstr ""
+
+msgid "Module(s):"
+msgstr ""
+
+msgid "Can not read formfile \""
+msgstr ""
+
+msgid "Invalid component name."
+msgstr ""
+
+msgid "Invalid exception"
+msgstr ""
+
+msgid "T&ools"
+msgstr ""
+
+msgid "Forms"
+msgstr "Formulaires"
+
+msgid "Program"
+msgstr "Programme"
+
+msgid "Unit"
+msgstr "Unité"
+
+msgid "Textfile"
+msgstr ""
+
+msgid "Mainform"
+msgstr ""
+
+msgid "Simple Form"
+msgstr ""
+
+msgid "Docking Form"
+msgstr ""
+
+msgid "Datamodule"
+msgstr ""
+
+msgid "Subform"
+msgstr ""
+
+msgid "Scrollboxform"
+msgstr ""
+
+msgid "Tabform"
+msgstr ""
+
+msgid "Dockpanel"
+msgstr ""
+
+msgid "Report"
+msgstr "Rapport"
+
+msgid "Scriptform"
+msgstr ""
+
+msgid "Inherited Form"
+msgstr ""
+
+msgid "Do you want to replace the settings by"
+msgstr ""
+
+msgid "Do you want to overwrite?"
+msgstr ""
+
+msgid "Unknown"
+msgstr "Inconnu"
+
+msgid "Error"
+msgstr "Erreur"
+
+msgid "Startup"
+msgstr "Démarrage"
+
+msgid "Exception"
+msgstr ""
+
+msgid "GDB died"
+msgstr ""
+
+msgid "Breakpoint hit"
+msgstr ""
+
+msgid "Watchpoint triggered"
+msgstr ""
+
+msgid "Read Watchpoint triggered"
+msgstr ""
+
+msgid "Access Watchpoint triggered"
+msgstr ""
+
+msgid "End stepping range"
+msgstr ""
+
+msgid "Function finished"
+msgstr ""
+
+msgid "Exited normally"
+msgstr ""
+
+msgid "Exited"
+msgstr ""
+
+msgid "Detached"
+msgstr ""
+
+msgid "Signal received"
+msgstr "Signal reçu"
+
+msgid "Stop error"
+msgstr ""
+
+msgid "Can not read project"
+msgstr ""
+
+msgid "About"
+msgstr "À propos"
+
+msgid "Store Component"
+msgstr ""
+
+msgid "Attaching Process"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Sizing Form"
+msgstr ""
+
+msgid "Copy &LaTeX"
+msgstr ""
+
+msgid "&Find Component"
+msgstr ""
+
+msgid "Force &Z-Order"
+msgstr ""
+
+msgid "&Comment"
+msgstr "&Commentaire"
+
+msgid "Unc&omment"
+msgstr ""
+
+msgid "Copy &Word at Cursor"
+msgstr ""
+
+msgid "Select &all"
+msgstr "Tout &sélectionner"
+
+msgid "&Tabs to space"
+msgstr ""
+
+msgid "Search &back"
+msgstr ""
+
+msgid "Texteditor"
+msgstr ""
+
+msgid "&Test"
+msgstr ""
+
+msgid "&Load file"
+msgstr ""
+
+msgid "&Save file"
+msgstr ""
+
+msgid "Load file"
+msgstr ""
+
+msgid "Save file"
+msgstr "Enregistrer le fichier"
+
+msgid "Test OK"
+msgstr ""
+
+msgid "Taborder override"
+msgstr ""
+
+msgid "Edit tsysenvmanager"
+msgstr ""
+
+msgid "Initvalue"
+msgstr ""
+
+msgid "Argument"
+msgstr ""
+
+msgid "Before"
+msgstr "Avant"
+
+msgid "After"
+msgstr ""
+
+msgid "Rowcount"
+msgstr ""
+
+msgid "Configure MSE environment"
+msgstr ""
+
+msgid "&Shortcuts"
+msgstr "&Raccourcis"
+
+msgid "Print command"
+msgstr "Commande d'impression"
+
+msgid "Path to debugger (gdb)."
+msgstr ""
+
+msgid "Debugger path"
+msgstr ""
+
+msgid "Path to compiler (ppc386)."
+msgstr ""
+
+msgid "Compiler path"
+msgstr "Chemin du compilateur"
+
+msgid "Directory for component store files."
+msgstr ""
+
+msgid "Directory for component stores"
+msgstr ""
+
+msgid "Directory for project template files."
+msgstr ""
+
+msgid "Project template directory"
+msgstr ""
+
+msgid "Directory for syntax definition files."
+msgstr ""
+
+msgid "Syntax definitions"
+msgstr ""
+
+msgid "Directory for syntax definition files"
+msgstr ""
+
+msgid "Root directory of MSEgui library."
+msgstr ""
+
+msgid "MSEgui library directory"
+msgstr ""
+
+msgid "Root directory of MSEgui."
+msgstr ""
+
+msgid "MSEgui root directory"
+msgstr ""
+
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+
+msgid "FPC library directory"
+msgstr ""
+
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+
+msgid "FPC root directory"
+msgstr ""
+
+msgid "Global Macros"
+msgstr ""
+
+msgid "Enter Memo Text"
+msgstr ""
+
+msgid "&Font Format"
+msgstr ""
+
+msgid "Open image file"
+msgstr "Ouvrir un fichier image"
+
+msgid "Invalid set item"
+msgstr ""
+
+msgid "Wrong property value"
+msgstr ""
+
+msgid "Invalid method name"
+msgstr ""
+
+msgid "Method name"
+msgstr ""
+
+msgid "exists"
+msgstr ""
+
+msgid "Do you wish to destroy"
+msgstr ""
+
+msgid "Do you wish to delete items"
+msgstr ""
+
+msgid "Empty date"
+msgstr ""
+
+msgid "Empty time"
+msgstr ""
+
+msgid "Do you wish to clear"
+msgstr ""
+
+msgid "Invalid component name"
+msgstr "Nom de composant invalide"
+
+msgid "Indexlookup Editor"
+msgstr ""
+
+msgid "Index"
+msgstr ""
+
+msgid "Image Selector"
+msgstr ""
+
+msgid "Imagelist Editor"
+msgstr ""
+
+msgid "C&lear"
+msgstr "&Effacer"
+
+msgid "&Add"
+msgstr "&Ajouter"
+
+msgid "&stretch"
+msgstr ""
+
+msgid ""
+"&Transp.\n"
+"color"
+msgstr ""
+
+msgid "Transparent color"
+msgstr ""
+
+msgid "&masked"
+msgstr ""
+
+msgid ""
+"Vers.\n"
+"Nr."
+msgstr ""
+
+msgid "Current imagelist version number"
+msgstr ""
+
+msgid "Copy Items"
+msgstr ""
+
+msgid "Paste Items"
+msgstr ""
+
+msgid "IIR Filter Coefficients"
+msgstr ""
+
+msgid "Numerator"
+msgstr ""
+
+msgid "Denominator"
+msgstr ""
+
+msgid "Internal Num."
+msgstr ""
+
+msgid "Internal Den."
+msgstr ""
+
+msgid "Fielddefs"
+msgstr ""
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Fields"
+msgstr ""
+
+msgid "fieldname"
+msgstr ""
+
+msgid "sourcefieldname"
+msgstr ""
+
+msgid "datatype"
+msgstr ""
+
+msgid "Connection"
+msgstr "Connexion"
+
+msgid "ifi Client Editor"
+msgstr ""
+
+msgid "Coefficient"
+msgstr ""
+
+msgid "Fade Edit"
+msgstr ""
+
+msgid "Opacity"
+msgstr ""
+
+msgid "Pos"
+msgstr ""
+
+msgid ""
+"Separate\n"
+"Opacity"
+msgstr ""
+
+msgid "&reverse"
+msgstr ""
+
+msgid "&Load"
+msgstr "&Charger"
+
+msgid "Clear opacity gradient"
+msgstr ""
+
+msgid "ClearOpa"
+msgstr ""
+
+msgid "Fade Files"
+msgstr ""
+
+msgid "Load Fade File"
+msgstr ""
+
+msgid "Save Fade File"
+msgstr ""
+
+msgid "Do you want to synchronize opacity gradient"
+msgstr ""
+
+msgid "with color gradient?"
+msgstr ""
+
+msgid "Do you want to remove opacity gradient?"
+msgstr ""
+
+msgid "Face Selector"
+msgstr ""
+
+msgid "Class type"
+msgstr ""
+
+msgid "Field kind"
+msgstr ""
+
+msgid "Dataset"
+msgstr ""
+
+msgid "Cornermask Editor"
+msgstr ""
+
+msgid "Select Color"
+msgstr ""
+
+msgid "Color &Picker"
+msgstr ""
+
+msgid "old"
+msgstr ""
+
+msgid "&blue"
+msgstr "&bleu"
+
+msgid "&green"
+msgstr "&vert"
+
+msgid "&red"
+msgstr ""
+
+msgid "&BRI"
+msgstr ""
+
+msgid "&SAT"
+msgstr ""
+
+msgid "&HUE"
+msgstr ""
+
+msgid "&Show hidden files"
+msgstr "&Montrer les fichiers cachés"
+
+msgid "&Filter"
+msgstr ""
+
+msgid "&New dir"
+msgstr ""
+
+msgid "&Home"
+msgstr "&Début"
+
+msgid "&Dir"
+msgstr ""
+
+msgid "Edit Font Format"
+msgstr ""
+
+msgid "B&old"
+msgstr ""
+
+msgid "&Italic"
+msgstr "&Italique"
+
+msgid "&Underline"
+msgstr "&Souligné"
+
+msgid "&Strikeout"
+msgstr "&Barré"
+
+msgid "Bl&ank"
+msgstr ""
+
+msgid "&Backgroundcolor"
+msgstr ""
+
+msgid "&Fontcolor"
+msgstr ""
+
+msgid "lab"
+msgstr ""
+
+msgid "Shortcuts"
+msgstr "Raccourcis"
+
+msgid "&Alternate"
+msgstr ""
+
+msgid "Press the desired key combination."
+msgstr ""
+
+msgid "&Shortcut"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "&Default"
+msgstr "&Défaut"
+
+msgid "Expand all"
+msgstr "Tout Déplier"
+
+msgid "Collapse all"
+msgstr "Tout replier"

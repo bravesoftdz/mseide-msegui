@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Turkish (https://www.transifex.com/Magic/teams/44238/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "İsim"
 
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 msgid "Comment"
-msgstr ""
+msgstr "Yorum"
 
 msgid "Value"
-msgstr ""
+msgstr "Değer"
 
 msgid "flat"
 msgstr ""
@@ -63,19 +67,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Aç"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Kaydet"
 
 msgid "Save &as"
-msgstr ""
+msgstr "Farklı &kaydet"
 
 msgid "&New"
-msgstr ""
+msgstr "&Yeni"
 
 msgid "&Edit"
-msgstr ""
+msgstr "Dü&zenle"
 
 msgid "&Import"
 msgstr ""
@@ -87,10 +91,10 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Hakkında"
 
 msgid "&Configure MSEi18n"
-msgstr ""
+msgstr "MSEi18n &yapılandırması"
 
 msgid "Se&ttings"
 msgstr ""
@@ -108,10 +112,10 @@ msgid "Save translate project"
 msgstr ""
 
 msgid "name"
-msgstr ""
+msgstr "ad"
 
 msgid "type"
-msgstr ""
+msgstr "tip"
 
 msgid "notranslate"
 msgstr ""
@@ -120,7 +124,7 @@ msgid "comment"
 msgstr ""
 
 msgid "value"
-msgstr ""
+msgstr "değer"
 
 msgid "<no project>"
 msgstr ""
@@ -147,7 +151,7 @@ msgid "Finished OK"
 msgstr ""
 
 msgid "Configure MSEi18n"
-msgstr ""
+msgstr "MSEi18n yapılandırması"
 
 msgid "Data has changed"
 msgstr ""
@@ -162,7 +166,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Tamam"
 
 msgid "Make Language Units"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Dosya"
 
 msgid "Kind"
 msgstr ""
@@ -192,25 +196,25 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Tüm dosyalar"
 
 msgid "Language"
-msgstr ""
+msgstr "Diller"
 
 msgid "Directory"
-msgstr ""
+msgstr "Dizin"
 
 msgid "Make command"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "Açık"
 
 msgid "OK"
-msgstr ""
+msgstr "Tamam"
 
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,7 +238,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&İptal"
 
 msgid "&Shortcuts"
 msgstr ""
@@ -252,13 +256,13 @@ msgid "Path to compiler (ppc386)."
 msgstr ""
 
 msgid "Compiler path"
-msgstr ""
+msgstr "Derleyici yolu"
 
 msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Proje dosyaları"
 
 msgid "Directory for component stores"
 msgstr ""

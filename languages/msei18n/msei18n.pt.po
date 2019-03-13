@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Portuguese (https://www.transifex.com/Magic/teams/44238/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 msgid "Comment"
-msgstr ""
+msgstr "Comentário"
 
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 msgid "flat"
 msgstr ""
@@ -63,22 +67,22 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Abrir"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Gravar"
 
 msgid "Save &as"
-msgstr ""
+msgstr "Gravar &como"
 
 msgid "&New"
-msgstr ""
+msgstr "&Novo"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Editar"
 
 msgid "&Import"
-msgstr ""
+msgstr "&Importar"
 
 msgid "Ex&port"
 msgstr ""
@@ -87,10 +91,10 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Sobre"
 
 msgid "&Configure MSEi18n"
-msgstr ""
+msgstr "&Configurar MSEi18n"
 
 msgid "Se&ttings"
 msgstr ""
@@ -108,19 +112,19 @@ msgid "Save translate project"
 msgstr ""
 
 msgid "name"
-msgstr ""
+msgstr "nome"
 
 msgid "type"
-msgstr ""
+msgstr "tipo"
 
 msgid "notranslate"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "comentário"
 
 msgid "value"
-msgstr ""
+msgstr "valor"
 
 msgid "<no project>"
 msgstr ""
@@ -147,7 +151,7 @@ msgid "Finished OK"
 msgstr ""
 
 msgid "Configure MSEi18n"
-msgstr ""
+msgstr "Configurar MSEi18n"
 
 msgid "Data has changed"
 msgstr ""
@@ -162,7 +166,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "Make Language Units"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Ficheiro"
 
 msgid "Kind"
 msgstr ""
@@ -192,13 +196,13 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Todos os ficheiros"
 
 msgid "Language"
-msgstr ""
+msgstr "Linguagem"
 
 msgid "Directory"
-msgstr ""
+msgstr "Diretório"
 
 msgid "Make command"
 msgstr ""
@@ -207,10 +211,10 @@ msgid "on"
 msgstr ""
 
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,7 +238,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Cancelar"
 
 msgid "&Shortcuts"
 msgstr ""
@@ -258,7 +262,7 @@ msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Ficheiros de projecto"
 
 msgid "Directory for component stores"
 msgstr ""

@@ -2,20 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: German (https://www.transifex.com/Magic/teams/44238/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Refresh"
 msgstr ""
@@ -36,16 +40,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 msgid "Comment"
-msgstr ""
+msgstr "Kommentar"
 
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 msgid "flat"
 msgstr ""
@@ -63,22 +67,22 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "Ö&ffnen"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Speichern"
 
 msgid "Save &as"
-msgstr ""
+msgstr "Speichern &unter"
 
 msgid "&New"
-msgstr ""
+msgstr "&Neu"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Bearbeiten"
 
 msgid "&Import"
-msgstr ""
+msgstr "&Import"
 
 msgid "Ex&port"
 msgstr ""
@@ -87,16 +91,16 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Über"
 
 msgid "&Configure MSEi18n"
-msgstr ""
+msgstr "MSEi18n &konfigurieren"
 
 msgid "Se&ttings"
 msgstr ""
 
 msgid "E&xit"
-msgstr ""
+msgstr "B&eenden"
 
 msgid "Translate project"
 msgstr ""
@@ -111,16 +115,16 @@ msgid "name"
 msgstr ""
 
 msgid "type"
-msgstr ""
+msgstr "Typ"
 
 msgid "notranslate"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "kommentar"
 
 msgid "value"
-msgstr ""
+msgstr "Wert"
 
 msgid "<no project>"
 msgstr ""
@@ -141,13 +145,13 @@ msgid "overwrites itself"
 msgstr ""
 
 msgid "ERROR"
-msgstr ""
+msgstr "FEHLER"
 
 msgid "Finished OK"
 msgstr ""
 
 msgid "Configure MSEi18n"
-msgstr ""
+msgstr "MSEi18n konfigurieren"
 
 msgid "Data has changed"
 msgstr ""
@@ -162,7 +166,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Ja"
 
 msgid "Make Language Units"
 msgstr ""
@@ -177,7 +181,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Datei"
 
 msgid "Kind"
 msgstr ""
@@ -192,25 +196,25 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Alle Dateien"
 
 msgid "Language"
-msgstr ""
+msgstr "Sprache"
 
 msgid "Directory"
-msgstr ""
+msgstr "Verzeichnis"
 
 msgid "Make command"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "an"
 
 msgid "OK"
-msgstr ""
+msgstr "Ok"
 
 msgid "Cancel"
-msgstr ""
+msgstr "&Abbrechen"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -234,10 +238,10 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Abbrechen"
 
 msgid "&Shortcuts"
-msgstr ""
+msgstr "&Tastaturbefehle"
 
 msgid "Print command"
 msgstr ""
@@ -252,13 +256,13 @@ msgid "Path to compiler (ppc386)."
 msgstr ""
 
 msgid "Compiler path"
-msgstr ""
+msgstr "Compilerpfad"
 
 msgid "Directory for component store files."
 msgstr ""
 
 msgid "Project files"
-msgstr ""
+msgstr "Projektdateien"
 
 msgid "Directory for component stores"
 msgstr ""

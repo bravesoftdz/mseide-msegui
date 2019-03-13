@@ -299,7 +299,7 @@ msgid "Set Bookmark"
 msgstr "Установить закладку"
 
 msgid "Find Bookmark"
-msgstr "Найти закладку"
+msgstr "Перейти к закладке"
 
 msgid "Insert GUID"
 msgstr "Вставить GUID"
@@ -2272,7 +2272,7 @@ msgid "Next"
 msgstr "Шаг без захода"
 
 msgid "&Continue"
-msgstr "&Продолжить запуск"
+msgstr "&Продолжить"
 
 msgid "&Interrupt"
 msgstr "&Прервать"
