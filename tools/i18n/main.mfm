@@ -118,7 +118,7 @@ object mainfo: tmainfo
       end    
       item[donottranslate]
         width = 19
-        options = [co_drawfocus, co_savestate]
+        options = [co_drawfocus, co_savevalue, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
         widthmax = 25
         widgetname = 'donottranslate'
@@ -216,7 +216,7 @@ object mainfo: tmainfo
       bounds_cx = 19
       bounds_cy = 16
       optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
-      optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
+      optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savevalue, oe1_savestate]
       visible = False
       onsetvalue = donottranslateonsetvalue
     end
@@ -681,5 +681,12 @@ object mainfo: tmainfo
     template.leveli = 1
     left = 256
     top = 192
+  end
+  object ttimer1: ttimer
+    options = [to_single]
+    ontimer = formatchanged
+    enabled = True
+    left = 152
+    top = 96
   end
 end

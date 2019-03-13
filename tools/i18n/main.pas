@@ -25,7 +25,7 @@ uses
  mseglob,msemenus,classes,mclasses,msetypes,msestrings,msethreadcomp,mseguiglob,
  msegui,mseresourceparser,msedialog,msememodialog,mseobjecttext,mseifiglob,
  msesysenv,msemacros,msestringcontainer,mseclasses,mseskin,msebitmap,msejson,
- msewidgets,msedispwidgets,mserichstring;
+ msewidgets,msedispwidgets,mserichstring,msetimer;
 
 const
  msei18nversiontext = mseguiversiontext;
@@ -66,6 +66,7 @@ type
    menuitemframe: tframecomp;
    trowcount: tstringdisp;
    statusdisp: tstringdisp;
+   ttimer1: ttimer;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -110,7 +111,7 @@ type
                    var cellinfo: cellinfoty; var processed: Boolean);
    procedure showcolordataentered(const sender: TObject);
    procedure loadedexe(const sender: TObject);
-  private
+   private
    datastream: ttextdatastream;
 //   alang: integer;
    fdatachanged: boolean;
@@ -608,15 +609,14 @@ var
 x : integer;
 hasrem : boolean = true;
 begin
-  while hasrem do begin
-   hasrem := false;
-   for x:=0 to grid.rowcount - 1 do begin
-      if (donottranslate[x]) then begin
-        hasrem := true;
-        grid.deleterow(x);
-      end;   
-   end;
-  end;
+  for x:=0 to grid.rowcount - 1 do 
+    begin
+     //   donottranslate[x] := false;
+    tbooleanedit(grid.datacols[2].editwidget).gridvalue[x]:= false;
+    tpropinfoitem(tree.items[x]).node.info.donottranslate:= false;
+    end; 
+  datachanged;
+  grid.invalidaterow(grid.row);          
 end;
 
 procedure tmainfo.numrow(const Sender: TObject);
@@ -654,7 +654,7 @@ procedure tmainfo.formatchanged(const sender: tobject);
 begin
  updatedata;
  if (stringonly.value = false) and (nont.value = true) then
- removenont(sender);  
+ removenont(sender); 
  numrow(sender);
 end;
 
@@ -1283,5 +1283,6 @@ procedure tmainfo.loadedexe(const sender: TObject);
 begin
  iconbmp.free;
 end;
+
 
 end.
