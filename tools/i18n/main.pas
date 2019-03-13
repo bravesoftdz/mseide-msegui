@@ -291,9 +291,11 @@ begin
                    vanull,valist,vacollection];
  end else
  begin
+ {
  result:= tpropinfonode(anode).info.valuetype in
            [vastring,valstring,vawstring,vautf8string,
-                   vanull,valist,vacollection, vafalse,vatrue];
+                    vanull,valist,vacollection, vafalse,vatrue];
+ }
  end;
  
  if result then begin

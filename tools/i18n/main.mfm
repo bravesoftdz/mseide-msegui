@@ -299,6 +299,7 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 35
     bounds_cy = 16
+    statfile = projectfo.projectstat
     optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
     ondataentered = formatchanged
     value = True
@@ -339,6 +340,7 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 51
     bounds_cy = 16
+    statfile = projectfo.projectstat
     ondataentered = formatchanged
     onsetvalue = nontonsetvalue
     value = True
