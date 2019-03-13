@@ -13,3 +13,7 @@ Keywords=fpc;ide;mse;pascal;
 # Translations
 Comment[ru]=Кроссплатформенная система разработки ПО на Free Pascal
 GenericName[ru]=IDE для Free Pascal
+Comment[uk]=Розробка мовою Free Pascal для багатьох платформ
+GenericName[uk]=IDE для Free Pascal
+Comment[pl]=Bezpłatny system programowania GUI platformy Pascal Cross
+GenericName[pl]=IDE dla Free Pascal
