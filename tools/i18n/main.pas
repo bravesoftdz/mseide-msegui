@@ -301,7 +301,8 @@ begin
  if result then begin
   if nont.value then begin
    result:= (not tpropinfonode(anode).info.donottranslate)
-   or(tpropinfonode(anode).info.valuetype in [vanull,valist,vacollection]);
+  or(tpropinfonode(anode).info.valuetype in [vanull,valist,vacollection])
+   ;
   end
   else begin
    if ntonly.value then begin
@@ -585,6 +586,7 @@ begin
  tpropinfoitem(tree.item).node.info.donottranslate:= avalue;
  datachanged;
  grid.invalidaterow(grid.row);
+ formatchanged(sender);
 end;
 
 procedure tmainfo.commentonsetvalue(const sender: tobject;

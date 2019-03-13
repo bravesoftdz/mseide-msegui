@@ -181,7 +181,7 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=1
+ index=2
  [projectoptionsfo]
  stackedunder=
  x=275
@@ -787,11 +787,11 @@ findhistory=16
 findoptions=1
 editpos=10
  0,-1073741823
- 0,297
+ 0,586
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,3
+ 0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -824,10 +824,10 @@ relpaths=10
  strumpract/src/filelistform.pas
  strumpract/src/filelistform.mfm
  mseresourceparser.pas
- ../mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
+ mseguinew/mseide-msegui/lib/common/editwidgets/mselistbrowser.pas
  main.pas
- ../mseide-msegui2/tools/i18n/main.pas
- ../mseide-msegui2/tools/i18n/main.mfm
+ mseide-msegui2/tools/i18n/main.pas
+ mseide-msegui2/tools/i18n/main.mfm
 ismoduletexts=10
  0
  0
@@ -855,14 +855,14 @@ nomenumodules=2
 order=10
  0
  1
- 7
- 5
- 8
- 9
- 2
  4
+ 9
  6
  3
+ 7
+ 8
+ 2
+ 5
 firsttab=0
 index=1
 [layout]
@@ -1335,6 +1335,7 @@ windowlayout=596
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
   /home/fred/strumpract/src/filelistform.pas
   /home/fred/mseide-msegui2/tools/i18n/main.pas
@@ -1354,7 +1355,6 @@ windowlayout=596
   /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
   /home/fred/uos/examples/uos_libsndfile.pas
   /home/fred/uos/examples/conswebstream.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1379,14 +1379,14 @@ windowlayout=596
  order=10
   0
   1
-  7
-  5
-  8
-  9
-  2
   4
+  9
   6
   3
+  7
+  8
+  2
+  5
  firsttab=0
  index=1
  [cpuc86_64fo]
