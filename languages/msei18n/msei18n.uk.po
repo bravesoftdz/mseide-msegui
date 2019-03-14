@@ -6,6 +6,7 @@
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
 # Андрій Лашкєєв <zombyg@gmail.com>, 2019
+# Yuri Chornoivan <yurchor@ukr.net>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-05 00:07+0000\n"
-"Last-Translator: Андрій Лашкєєв <zombyg@gmail.com>, 2019\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/Magic/teams/44238/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,23 +23,26 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-msgid "Refresh"
-msgstr ""
+msgid "&Refresh"
+msgstr "&Освіжити"
+
+msgid "Close error:"
+msgstr "Помилка закриття:"
 
 msgid "Total rows:"
-msgstr ""
+msgstr "Загалом рядків:"
 
 msgid "To translate:"
-msgstr ""
+msgstr "Для перекладу:"
 
 msgid "To not translate:"
-msgstr ""
+msgstr "Не для перекладу:"
 
 msgid "Yet translated:"
-msgstr ""
+msgstr "Перекладено:"
 
 msgid "Not yet translated:"
-msgstr ""
+msgstr "Ще не перекладено:"
 
 msgid "Name"
 msgstr "Назва"
@@ -152,7 +156,7 @@ msgid "Finished OK"
 msgstr "Завершено вдало"
 
 msgid "Configure MSEi18n"
-msgstr "Конфігурувати MSEi18n"
+msgstr "Налаштувати MSEi18n"
 
 msgid "Data has changed"
 msgstr "Дані було змінено"
@@ -260,59 +264,59 @@ msgid "Compiler path"
 msgstr "Шлях до компілятора"
 
 msgid "Directory for component store files."
-msgstr "Директорія файлів с описами сховищ компонентів."
+msgstr "Каталог файлів з описами сховищ компонентів."
 
 msgid "Project files"
 msgstr "Файли проекту"
 
 msgid "Directory for component stores"
-msgstr "Директорія сховищ компонентів"
+msgstr "Каталог сховищ компонентів"
 
 msgid "Directory for project template files."
-msgstr "Директорія файлів шаблонів проектів"
+msgstr "Каталог файлів шаблонів проектів"
 
 msgid "Project template directory"
-msgstr "Директорія шаблонів проектів"
+msgstr "Каталог шаблонів проектів"
 
 msgid "Directory for syntax definition files."
-msgstr "Директорія файлів визначення синтаксису."
+msgstr "Каталог файлів визначення синтаксису."
 
 msgid "Syntax definitions"
 msgstr "Описи синтаксису"
 
 msgid "Directory for syntax definition files"
-msgstr "Директорія файлів визначення синтаксису."
+msgstr "Каталог файлів визначення синтаксису."
 
 msgid "Root directory of MSEgui library."
-msgstr "Коренева директорія для бібліотеки MSEgui."
+msgstr "Кореневий каталог для бібліотеки MSEgui."
 
 msgid "MSEgui library directory"
-msgstr "Директорія бібліотеки MSEgui"
+msgstr "Каталог бібліотеки MSEgui"
 
 msgid "Root directory of MSEgui."
-msgstr "Коренева директорія для MSEgui."
+msgstr "Кореневий каталог для MSEgui."
 
 msgid "MSEgui root directory"
-msgstr "Коренева директорія MSEgui"
+msgstr "Кореневий каталог MSEgui"
 
 msgid ""
 "Root directory of FPC library (not used by the default project templates)."
 msgstr ""
-"Коренева директорія для бібліотеки FPC (не використовується за замовчуванням"
-" шаблонами проекту)."
+"Кореневий каталог для бібліотеки FPC (не використовується шаблонами типових "
+"проектів)."
 
 msgid "FPC library directory"
-msgstr "Директорія бібліотеки FPC"
+msgstr "Каталог бібліотеки FPC"
 
 msgid ""
 "Root directory of Free Pascal system (not used by the default project "
 "templates)."
 msgstr ""
-"Коренева директорія для компілятора Free Pascal (не використовується за "
-"замовчуванням шаблонами проекту)."
+"Кореневий каталог для компілятора Free Pascal (не використовується шаблонами"
+" типових проектів)."
 
 msgid "FPC root directory"
-msgstr "Коренева директорія FPC"
+msgstr "Кореневий каталог FPC"
 
 msgid "Global Macros"
 msgstr "Глобальні Макро-визначення"

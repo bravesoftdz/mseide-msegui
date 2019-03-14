@@ -13,7 +13,9 @@ Keywords=fpc;mse;pascal;i18n;l10n;
 # Translations
 Comment[ru]=Утилита для локализации приложений, написанных в MSEide+MSEgui
 GenericName[ru]=i18n для MSEide+MSEgui
-Comment[uk]=Утиліта для локалізації додатків, написаних в MSEide+MSEgui
-GenericName[uk]=i18n для MSEide+MSEgui
+Comment[sq]=Mjet për lokalizimin e aplikacioneve të shkruara në MSEide + MSEgui
+GenericName[sq]=i18n për MSEide+MSEgui
 Comment[pl]=Narzędzie do lokalizacji aplikacji napisanych w MSEide + MSEgui
 GenericName[pl]=i18n dla MSEide + MSEgui
+Comment[uk]=Утиліта для локалізації програм, які написано у MSEide+MSEgui
+GenericName[uk]=i18n для MSEide+MSEgui
