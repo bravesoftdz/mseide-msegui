@@ -164,7 +164,7 @@ msgid "&OK"
 msgstr "&OK"
 
 msgid "&Cancel"
-msgstr "An&nuler"
+msgstr "A&nnuler"
 
 msgid "&Name"
 msgstr "&Nom"
@@ -482,7 +482,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "&Remplacer"
+msgstr "R&emplacer"
 
 msgid "Replace &all"
 msgstr ""
@@ -1560,7 +1560,7 @@ msgid "&Search"
 msgstr "&Rechercher"
 
 msgid "&Edit"
-msgstr "É&diter"
+msgstr "É&dition"
 
 msgid "En&vironment"
 msgstr ""
@@ -1668,7 +1668,7 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "Fermer le doc&ument "
+msgstr "&Fermer"
 
 msgid "&Project"
 msgstr "&Projet"
@@ -2198,7 +2198,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "&Normal"
+msgstr "&Réinitialiser"
 
 msgid "Reset"
 msgstr "Remettre à zéro"
@@ -2213,7 +2213,7 @@ msgid "&Save"
 msgstr "&Enregistrer"
 
 msgid "&Undo"
-msgstr "&Annuler"
+msgstr "Ann&uler"
 
 msgid "&Redo"
 msgstr "&Rétablir"
@@ -2222,13 +2222,13 @@ msgid "Cu&t"
 msgstr "Co&uper"
 
 msgid "&Copy"
-msgstr "&Copier"
+msgstr "Co&pier"
 
 msgid "&Paste"
-msgstr "Co&ller"
+msgstr "C&oller"
 
 msgid "&Delete"
-msgstr "&Supprimer "
+msgstr "&Supprimer"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2741,7 +2741,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Sortie"
 
 msgid "Detached"
 msgstr ""
@@ -3131,7 +3131,7 @@ msgid "&Show hidden files"
 msgstr "&Montrer les fichiers cachés"
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Filtrer"
 
 msgid "&New dir"
 msgstr ""
@@ -3182,7 +3182,7 @@ msgid "&Shortcut"
 msgstr ""
 
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 msgid "&Default"
 msgstr "&Défaut"

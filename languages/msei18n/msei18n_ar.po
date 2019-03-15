@@ -21,7 +21,10 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -46,7 +49,7 @@ msgid "Type"
 msgstr "النوع"
 
 msgid "Comment"
-msgstr "تعليق"
+msgstr "التعليق"
 
 msgid "Value"
 msgstr "القيمة"
@@ -67,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "فتح"
+msgstr "ا&فتح"
 
 msgid "&Save"
-msgstr "حفظ"
+msgstr "ا&حفظ"
 
 msgid "Save &as"
 msgstr "حفظ باسم"
 
 msgid "&New"
-msgstr "جديد"
+msgstr "&جديد"
 
 msgid "&Edit"
-msgstr "تغيير"
+msgstr "ت&حرير"
 
 msgid "&Import"
 msgstr "استيراد"
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "حول"
+msgstr "&عن"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr "موافق"
+msgstr "&موافق"
 
 msgid "Make Language Units"
 msgstr ""
@@ -196,7 +199,7 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr "جميع الملفات"
+msgstr "جميع الملفات "
 
 msgid "Language"
 msgstr "اللغة"
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "إلغاء"
+msgstr "أ&لغِ"
 
 msgid "&Shortcuts"
 msgstr ""

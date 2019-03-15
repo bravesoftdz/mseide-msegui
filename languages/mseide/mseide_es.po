@@ -144,7 +144,7 @@ msgid "State"
 msgstr "Estado"
 
 msgid "Location"
-msgstr "Localización"
+msgstr "Ubicación"
 
 msgid "Copy to Clipboard"
 msgstr "Copiar al Portapapeles"
@@ -243,7 +243,7 @@ msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr "Todos los Archivos"
+msgstr "Todos los archivos"
 
 msgid "&Description"
 msgstr "&Descripción"
@@ -252,7 +252,7 @@ msgid "Stack"
 msgstr "Pila"
 
 msgid "Source"
-msgstr ""
+msgstr "Fuente"
 
 msgid "<none>"
 msgstr "<ninguno>"
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Altura"
 
 msgid "Font"
-msgstr "Fuente"
+msgstr "Tipografía"
 
 msgid "Color"
 msgstr ""
@@ -642,7 +642,7 @@ msgid "Right margin line"
 msgstr ""
 
 msgid "Line numbers"
-msgstr ""
+msgstr "Números de línea"
 
 msgid "Mark brackets"
 msgstr ""
@@ -703,7 +703,7 @@ msgid "Auto indent"
 msgstr "Auto-sangrado"
 
 msgid "Tab"
-msgstr ""
+msgstr "Tabulación"
 
 msgid "Tabstops"
 msgstr ""
@@ -1205,7 +1205,7 @@ msgid "Parameters"
 msgstr "Parámetros"
 
 msgid "Item"
-msgstr "Elem."
+msgstr "Elemento"
 
 msgid "Tool 1"
 msgstr "Heramienta 1"
@@ -1441,7 +1441,7 @@ msgid "&Color"
 msgstr ""
 
 msgid "Paper size"
-msgstr "Tamao del papel"
+msgstr "Tamaño del papel"
 
 msgid "Paper orientation"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "&Reiniciar"
+msgstr "&Restablecer"
 
 msgid "Reset"
 msgstr "Reiniciar"
@@ -2211,22 +2211,22 @@ msgid "&Save"
 msgstr "&Guardar"
 
 msgid "&Undo"
-msgstr "&Deshacer"
+msgstr "Des&hacer"
 
 msgid "&Redo"
-msgstr "&Re-hacer"
+msgstr "&Rehacer"
 
 msgid "Cu&t"
 msgstr "Cor&tar"
 
 msgid "&Copy"
-msgstr "&Copiar"
+msgstr "C&opiar"
 
 msgid "&Paste"
 msgstr "&Pegar"
 
 msgid "&Delete"
-msgstr "&Borrar"
+msgstr "&Eliminar"
 
 msgid "Sa&ve all"
 msgstr "&Guardar todo"
@@ -2268,10 +2268,10 @@ msgid "Select &Edit Page"
 msgstr ""
 
 msgid "&Indent"
-msgstr "&Sangrado"
+msgstr "Sangr&ía"
 
 msgid "U&nindent"
-msgstr ""
+msgstr "Quitar sa&ngría"
 
 msgid "Toggle Form/&Unit"
 msgstr ""
@@ -2703,7 +2703,7 @@ msgid "Do you want to overwrite?"
 msgstr ""
 
 msgid "Unknown"
-msgstr "Desconocido"
+msgstr "Desconocida"
 
 msgid "Error"
 msgstr "Error"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Salió"
 
 msgid "Detached"
 msgstr ""

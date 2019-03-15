@@ -21,7 +21,10 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "Make Language Units"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Todos os arquivos"
 
 msgid "Language"
-msgstr "Linguagem"
+msgstr "Idioma"
 
 msgid "Directory"
 msgstr "Diretório"

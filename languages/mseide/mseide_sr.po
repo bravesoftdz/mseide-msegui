@@ -159,10 +159,10 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "У &реду"
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Откажи"
 
 msgid "&Name"
 msgstr ""
@@ -237,16 +237,16 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&Датотека"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Све датотеке"
 
 msgid "&Description"
-msgstr ""
+msgstr "&Опис"
 
 msgid "Stack"
 msgstr ""
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Отвори"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr ""
+msgstr "&Замени"
 
 msgid "Replace &all"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr ""
 
 msgid "Font"
-msgstr ""
+msgstr "Фонт"
 
 msgid "Color"
 msgstr ""
@@ -1199,7 +1199,7 @@ msgid "Alternate shortcut key"
 msgstr ""
 
 msgid "File"
-msgstr "Фајл"
+msgstr "Датотека"
 
 msgid "Parameters"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Додај"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Нови"
 
 msgid "E&xit"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "Пре&трага"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Уређивање"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr ""
+msgstr "Пре&глед"
 
 msgid "&Build"
 msgstr ""
@@ -1666,13 +1666,13 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr ""
+msgstr "&Затвори"
 
 msgid "&Project"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&О програму"
 
 msgid "&Configure MSEide"
 msgstr ""
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "Ново"
+msgstr "Нови"
 
 msgid "Select ancestor"
 msgstr ""
@@ -1795,7 +1795,7 @@ msgid "Select project template"
 msgstr ""
 
 msgid "All files"
-msgstr "Сви фајлови"
+msgstr "Све датотеке"
 
 msgid "Select program file"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "&Поништи"
 
 msgid "Reset"
 msgstr "Ресетуј"
@@ -2208,25 +2208,25 @@ msgid "Finish"
 msgstr ""
 
 msgid "&Save"
-msgstr ""
+msgstr "&Сачувај"
 
 msgid "&Undo"
-msgstr ""
+msgstr "&Опозови"
 
 msgid "&Redo"
-msgstr ""
+msgstr "&Понови"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr ""
+msgstr "У&множи"
 
 msgid "&Paste"
-msgstr ""
+msgstr "У&баци"
 
 msgid "&Delete"
-msgstr ""
+msgstr "&Обриши"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2346,7 +2346,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr ""
+msgstr "Уређивање"
 
 msgid "Select Editpage"
 msgstr ""
@@ -2463,7 +2463,7 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Поглед"
+msgstr "Преглед"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
@@ -2703,7 +2703,7 @@ msgid "Do you want to overwrite?"
 msgstr ""
 
 msgid "Unknown"
-msgstr ""
+msgstr "Непознато"
 
 msgid "Error"
 msgstr "Грешка"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Изашао"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr ""
 
 msgid "&Add"
-msgstr ""
+msgstr "&Додај"
 
 msgid "&stretch"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Филтер"
 
 msgid "&New dir"
 msgstr ""

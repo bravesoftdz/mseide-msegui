@@ -21,7 +21,10 @@ msgstr ""
 "Language: be\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Адкрыць"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Захаваць"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Новы"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Рэдагаваць"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Аб праграме"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Добра"
 
 msgid "Make Language Units"
 msgstr ""
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Скасаваць"
 
 msgid "&Shortcuts"
 msgstr ""

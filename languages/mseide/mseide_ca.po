@@ -144,7 +144,7 @@ msgid "State"
 msgstr "Estat"
 
 msgid "Location"
-msgstr ""
+msgstr "Ubicació"
 
 msgid "Copy to Clipboard"
 msgstr "Copia al porta-retalls"
@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr "&Accepta"
+msgstr "D'ac&ord"
 
 msgid "&Cancel"
 msgstr "&Cancel·la"
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr "&Obre"
+msgstr "&Obri"
 
 msgid "0.0mm"
 msgstr ""
@@ -642,7 +642,7 @@ msgid "Right margin line"
 msgstr ""
 
 msgid "Line numbers"
-msgstr ""
+msgstr "Números de línia"
 
 msgid "Mark brackets"
 msgstr ""
@@ -1190,7 +1190,7 @@ msgid "Sc.Key"
 msgstr ""
 
 msgid "Shortcut key"
-msgstr ""
+msgstr "Tecla de drecera"
 
 msgid "Alt.Sc."
 msgstr ""
@@ -1253,7 +1253,7 @@ msgid "Auto save"
 msgstr ""
 
 msgid "Save"
-msgstr "Desa"
+msgstr "Guarda"
 
 msgid "Load"
 msgstr "Carrega"
@@ -1441,7 +1441,7 @@ msgid "&Color"
 msgstr ""
 
 msgid "Paper size"
-msgstr "Dimensions del paper"
+msgstr "Mida del paper"
 
 msgid "Paper orientation"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr "Memòria"
 
 msgid "Add"
-msgstr "Afegeix"
+msgstr "Afig"
 
 msgid "Memory &on"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr "Canvia forma/unitat"
 
 msgid "&View"
-msgstr "&Visualitza"
+msgstr "&Visualització"
 
 msgid "&Build"
 msgstr ""
@@ -1666,7 +1666,7 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "Tan&ca"
+msgstr "&Tanca"
 
 msgid "&Project"
 msgstr "&Projecte"
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "&Reinicia"
+msgstr "&Restableix"
 
 msgid "Reset"
 msgstr "Restableix"
@@ -2208,7 +2208,7 @@ msgid "Finish"
 msgstr "Final"
 
 msgid "&Save"
-msgstr "De&sa"
+msgstr "Al&ça"
 
 msgid "&Undo"
 msgstr "&Desfés"
@@ -2223,7 +2223,7 @@ msgid "&Copy"
 msgstr "&Copia"
 
 msgid "&Paste"
-msgstr "Engan&xa"
+msgstr "&Enganxa"
 
 msgid "&Delete"
 msgstr "&Suprimeix"
@@ -2307,7 +2307,7 @@ msgid "&Uppercase"
 msgstr "Majúsc&ules"
 
 msgid "Open"
-msgstr "Obre"
+msgstr "Obri"
 
 msgid "Save all"
 msgstr "Desa-ho tot"
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Visualitza"
+msgstr "Visualització"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Construcció"
+msgstr "Munta"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Ha eixit"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Filtre"
 
 msgid "&New dir"
 msgstr "&Carpeta nova"

@@ -141,7 +141,7 @@ msgid "Threads"
 msgstr "线程"
 
 msgid "State"
-msgstr ""
+msgstr "状态"
 
 msgid "Location"
 msgstr "位置"
@@ -246,7 +246,7 @@ msgid "All Files"
 msgstr "所有文件"
 
 msgid "&Description"
-msgstr "说明"
+msgstr "描述"
 
 msgid "Stack"
 msgstr "栈"
@@ -621,10 +621,10 @@ msgid "Extra space between lines"
 msgstr ""
 
 msgid "Width"
-msgstr "宽度"
+msgstr "纸张宽度"
 
 msgid "Height"
-msgstr "高度"
+msgstr "纸张高度"
 
 msgid "Font"
 msgstr "字体"
@@ -642,7 +642,7 @@ msgid "Right margin line"
 msgstr ""
 
 msgid "Line numbers"
-msgstr ""
+msgstr "行号"
 
 msgid "Mark brackets"
 msgstr ""
@@ -703,7 +703,7 @@ msgid "Auto indent"
 msgstr "自动缩进"
 
 msgid "Tab"
-msgstr ""
+msgstr "制表符"
 
 msgid "Tabstops"
 msgstr ""
@@ -1441,7 +1441,7 @@ msgid "&Color"
 msgstr ""
 
 msgid "Paper size"
-msgstr "大小"
+msgstr "纸张大小"
 
 msgid "Paper orientation"
 msgstr ""
@@ -2052,7 +2052,7 @@ msgid "Select item for inserting"
 msgstr ""
 
 msgid "Description"
-msgstr "描述"
+msgstr "说明"
 
 msgid "&Copy Component"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "恢复"
+msgstr "重置"
 
 msgid "Reset"
 msgstr "重置"
@@ -2211,7 +2211,7 @@ msgid "&Save"
 msgstr "保存"
 
 msgid "&Undo"
-msgstr "撤消"
+msgstr "撤销"
 
 msgid "&Redo"
 msgstr "重做"
@@ -2463,7 +2463,7 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "视图"
+msgstr "查看"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "已退出"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "过滤器"
 
 msgid "&New dir"
 msgstr ""
@@ -3180,7 +3180,7 @@ msgid "&Shortcut"
 msgstr ""
 
 msgid "Action"
-msgstr "动作"
+msgstr "操作"
 
 msgid "&Default"
 msgstr ""

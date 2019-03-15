@@ -21,7 +21,10 @@ msgstr ""
 "Language: lb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"

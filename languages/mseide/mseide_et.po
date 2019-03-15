@@ -246,7 +246,7 @@ msgid "All Files"
 msgstr "Kõik failid"
 
 msgid "&Description"
-msgstr "&Kirjeldus"
+msgstr "K&irjeldus"
 
 msgid "Stack"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Kõrgus"
 
 msgid "Font"
-msgstr ""
+msgstr "Kirjatüüp"
 
 msgid "Color"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Otsi"
+msgstr "&Otsing"
 
 msgid "&Edit"
-msgstr "&Muuda"
+msgstr "&Redaktor"
 
 msgid "En&vironment"
 msgstr ""
@@ -1672,7 +1672,7 @@ msgid "&Project"
 msgstr "&Projekt"
 
 msgid "&About"
-msgstr "&Teave"
+msgstr "&Lähemalt"
 
 msgid "&Configure MSEide"
 msgstr "&Häälesta MSEide"
@@ -2322,7 +2322,7 @@ msgid "Close all"
 msgstr "Sulge kõik"
 
 msgid "Print"
-msgstr "Trüki"
+msgstr "Prindi"
 
 msgid "Search"
 msgstr "Otsimine"
@@ -2703,7 +2703,7 @@ msgid "Do you want to overwrite?"
 msgstr ""
 
 msgid "Unknown"
-msgstr ""
+msgstr "Tundmatu"
 
 msgid "Error"
 msgstr "Viga"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Lõpetas"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr ""
 
 msgid "&Add"
-msgstr ""
+msgstr "&Lisa"
 
 msgid "&stretch"
 msgstr ""

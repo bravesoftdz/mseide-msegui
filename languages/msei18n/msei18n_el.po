@@ -21,7 +21,10 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "Ά&νοιγμα"
 
 msgid "&Save"
-msgstr ""
+msgstr "Απο&θήκευση"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Νέο"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Επεξεργασία"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Περί"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Εντάξει"
 
 msgid "Make Language Units"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Όλα τα αρχεία"
 
 msgid "Language"
-msgstr ""
+msgstr "Γλώσσα"
 
 msgid "Directory"
 msgstr ""
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Ακύρωση"
 
 msgid "&Shortcuts"
 msgstr ""

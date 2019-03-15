@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: msei18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
+"PO-Revision-Date: 2019-03-05 00:07+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Marathi (https://www.transifex.com/Magic/teams/44238/mr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: mr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
+msgstr ""
+
+msgid "Total rows:"
+msgstr ""
+
+msgid "To translate:"
+msgstr ""
+
+msgid "To not translate:"
+msgstr ""
+
+msgid "Yet translated:"
+msgstr ""
+
+msgid "Not yet translated:"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "flat"
+msgstr ""
+
+msgid "string only"
+msgstr ""
+
+msgid "no NT"
+msgstr ""
+
+msgid "NT only"
+msgstr ""
+
+msgid "Show Color"
+msgstr ""
+
+msgid "&Open"
+msgstr "उघडा"
+
+msgid "&Save"
+msgstr "साठवा"
+
+msgid "Save &as"
+msgstr ""
+
+msgid "&New"
+msgstr "नवीन"
+
+msgid "&Edit"
+msgstr ""
+
+msgid "&Import"
+msgstr ""
+
+msgid "Ex&port"
+msgstr ""
+
+msgid "&Make"
+msgstr ""
+
+msgid "&About"
+msgstr "विषयी"
+
+msgid "&Configure MSEi18n"
+msgstr ""
+
+msgid "Se&ttings"
+msgstr ""
+
+msgid "E&xit"
+msgstr ""
+
+msgid "Translate project"
+msgstr ""
+
+msgid "Open translate project"
+msgstr ""
+
+msgid "Save translate project"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "notranslate"
+msgstr ""
+
+msgid "comment"
+msgstr ""
+
+msgid "value"
+msgstr ""
+
+msgid "<no project>"
+msgstr ""
+
+msgid "Can not read module"
+msgstr ""
+
+msgid "New translate project"
+msgstr ""
+
+msgid "Exec error"
+msgstr ""
+
+msgid "Making"
+msgstr ""
+
+msgid "overwrites itself"
+msgstr ""
+
+msgid "ERROR"
+msgstr ""
+
+msgid "Finished OK"
+msgstr ""
+
+msgid "Configure MSEi18n"
+msgstr ""
+
+msgid "Data has changed"
+msgstr ""
+
+msgid "Do you wish to save"
+msgstr ""
+
+msgid "CONFIRMATION"
+msgstr ""
+
+msgid "Enter Memo Text"
+msgstr ""
+
+msgid "&OK"
+msgstr "ठीक आहे"
+
+msgid "Make Language Units"
+msgstr ""
+
+msgid "Edit Translate Project"
+msgstr ""
+
+msgid "Encoding for imp/exp files"
+msgstr ""
+
+msgid "Rootname"
+msgstr ""
+
+msgid "File"
+msgstr "फाइल"
+
+msgid "Kind"
+msgstr ""
+
+msgid "Select unit or form file"
+msgstr ""
+
+msgid "Datafile"
+msgstr ""
+
+msgid "MSEi18n Data Files"
+msgstr ""
+
+msgid "All files"
+msgstr "सर्व फाइलं"
+
+msgid "Language"
+msgstr "भाषा"
+
+msgid "Directory"
+msgstr ""
+
+msgid "Make command"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Destination Basename (empty = Datafile name)"
+msgstr ""
+
+msgid "Before make"
+msgstr ""
+
+msgid "After make"
+msgstr ""
+
+msgid "Data exchange files"
+msgstr ""
+
+msgid "Open import file"
+msgstr ""
+
+msgid "Save export file"
+msgstr ""
+
+msgid "Configure MSE environment"
+msgstr ""
+
+msgid "&Cancel"
+msgstr "रद्द करा"
+
+msgid "&Shortcuts"
+msgstr ""
+
+msgid "Print command"
+msgstr ""
+
+msgid "Path to debugger (gdb)."
+msgstr ""
+
+msgid "Debugger path"
+msgstr ""
+
+msgid "Path to compiler (ppc386)."
+msgstr ""
+
+msgid "Compiler path"
+msgstr ""
+
+msgid "Directory for component store files."
+msgstr ""
+
+msgid "Project files"
+msgstr ""
+
+msgid "Directory for component stores"
+msgstr ""
+
+msgid "Directory for project template files."
+msgstr ""
+
+msgid "Project template directory"
+msgstr ""
+
+msgid "Directory for syntax definition files."
+msgstr ""
+
+msgid "Syntax definitions"
+msgstr ""
+
+msgid "Directory for syntax definition files"
+msgstr ""
+
+msgid "Root directory of MSEgui library."
+msgstr ""
+
+msgid "MSEgui library directory"
+msgstr ""
+
+msgid "Root directory of MSEgui."
+msgstr ""
+
+msgid "MSEgui root directory"
+msgstr ""
+
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+
+msgid "FPC library directory"
+msgstr ""
+
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+
+msgid "FPC root directory"
+msgstr ""
+
+msgid "Global Macros"
+msgstr ""

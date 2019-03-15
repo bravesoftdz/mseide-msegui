@@ -21,7 +21,10 @@ msgstr ""
 "Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -79,7 +82,7 @@ msgid "&New"
 msgstr "&Ny"
 
 msgid "&Edit"
-msgstr "&Rediger"
+msgstr "R&ediger"
 
 msgid "&Import"
 msgstr ""
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&Avbryt"
+msgstr "A&vbryt"
 
 msgid "&Shortcuts"
 msgstr ""

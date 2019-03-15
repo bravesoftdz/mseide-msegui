@@ -174,7 +174,7 @@ msgid "&Parameter"
 msgstr ""
 
 msgid "Name"
-msgstr "שם"
+msgstr ""
 
 msgid "Default Value"
 msgstr "ערך ברירת מחדל"
@@ -237,7 +237,7 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr "קובץ&"
+msgstr "קובץ"
 
 msgid "Component File"
 msgstr ""
@@ -246,7 +246,7 @@ msgid "All Files"
 msgstr "כל הקבצים"
 
 msgid "&Description"
-msgstr ""
+msgstr "תיאור"
 
 msgid "Stack"
 msgstr "מחסנית"
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr "פתח"
+msgstr "פתיחה"
 
 msgid "0.0mm"
 msgstr ""
@@ -471,7 +471,7 @@ msgid "Text to &find"
 msgstr ""
 
 msgid "&Replace with"
-msgstr "&החלף עם"
+msgstr "החלף עם"
 
 msgid "&casesensitive"
 msgstr ""
@@ -621,13 +621,13 @@ msgid "Extra space between lines"
 msgstr ""
 
 msgid "Width"
-msgstr "רוחב"
+msgstr ""
 
 msgid "Height"
 msgstr ""
 
 msgid "Font"
-msgstr ""
+msgstr "גופן"
 
 msgid "Color"
 msgstr "צבע"
@@ -733,7 +733,7 @@ msgid "Backup file count"
 msgstr ""
 
 msgid "Form"
-msgstr ""
+msgstr "טופס"
 
 msgid "Component hints"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr "הוסף"
+msgstr "הוספה"
 
 msgid "Memory &on"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "חפש&"
+msgstr "חיפוש"
 
 msgid "&Edit"
-msgstr "ערוך"
+msgstr "עריכה"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr "החלף טופס/יחידה"
 
 msgid "&View"
-msgstr "הצגה&"
+msgstr "תצוגה"
 
 msgid "&Build"
 msgstr ""
@@ -1666,10 +1666,10 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "סגור"
+msgstr "סגירה"
 
 msgid "&Project"
-msgstr "פרויקט&"
+msgstr "פרויקט"
 
 msgid "&About"
 msgstr "על אודות"
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "איפוס"
 
 msgid "Reset"
 msgstr "איפוס"
@@ -2208,25 +2208,25 @@ msgid "Finish"
 msgstr "סיום"
 
 msgid "&Save"
-msgstr ""
+msgstr "שמירה"
 
 msgid "&Undo"
-msgstr "בטל פעולה"
+msgstr "ביטול"
 
 msgid "&Redo"
-msgstr ""
+msgstr "ביצוע שוב"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr ""
+msgstr "העתקה"
 
 msgid "&Paste"
 msgstr "הדבקה"
 
 msgid "&Delete"
-msgstr ""
+msgstr "מחיקה"
 
 msgid "Sa&ve all"
 msgstr "שמור הכל"
@@ -2268,10 +2268,10 @@ msgid "Select &Edit Page"
 msgstr ""
 
 msgid "&Indent"
-msgstr ""
+msgstr "הזח פנימה"
 
 msgid "U&nindent"
-msgstr ""
+msgstr "הזח החוצה"
 
 msgid "Toggle Form/&Unit"
 msgstr ""
@@ -2346,7 +2346,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr "ערוך"
+msgstr "עריכה"
 
 msgid "Select Editpage"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "נסגר"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr "נקה"
 
 msgid "&Add"
-msgstr "הוסף"
+msgstr "הוספה"
 
 msgid "&stretch"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "מסנן"
 
 msgid "&New dir"
 msgstr ""

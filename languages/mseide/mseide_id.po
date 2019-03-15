@@ -237,16 +237,16 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&Berkas"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Semua Berkas"
 
 msgid "&Description"
-msgstr "&Gambaran"
+msgstr "&Deskripsi"
 
 msgid "Stack"
 msgstr "Tumpukan"
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Buka"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr ""
+msgstr "&Ganti"
 
 msgid "Replace &all"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr ""
 
 msgid "Font"
-msgstr "Font"
+msgstr "Fonta"
 
 msgid "Color"
 msgstr "Warna"
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr ""
+msgstr "Penyunting"
 
 msgid "Auto load"
 msgstr ""
@@ -1277,7 +1277,7 @@ msgid "Macros"
 msgstr "Makro"
 
 msgid "Tools"
-msgstr ""
+msgstr "Perkakas"
 
 msgid "Templates"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Baru"
 
 msgid "E&xit"
 msgstr ""
@@ -1558,7 +1558,7 @@ msgid "&Search"
 msgstr "&Cari"
 
 msgid "&Edit"
-msgstr "&Ubah"
+msgstr "&Sunting"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr "&Lihat"
+msgstr "&Tilikan"
 
 msgid "&Build"
 msgstr ""
@@ -1672,7 +1672,7 @@ msgid "&Project"
 msgstr "&Proyek"
 
 msgid "&About"
-msgstr "&Tentang"
+msgstr "Ihw&al"
 
 msgid "&Configure MSEide"
 msgstr "&Konfigurasi MSEide"
@@ -2211,19 +2211,19 @@ msgid "&Save"
 msgstr "&Simpan"
 
 msgid "&Undo"
-msgstr ""
+msgstr "&Tidak Jadi"
 
 msgid "&Redo"
-msgstr ""
+msgstr "Jadi &Lagi"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr "&Duplikat"
+msgstr "&Salin"
 
 msgid "&Paste"
-msgstr ""
+msgstr "Tem&pel"
 
 msgid "&Delete"
 msgstr "&Hapus"
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Lihat"
+msgstr "Tilik"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr ""
+msgstr "Bangun"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Keluar"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Penyaring"
 
 msgid "&New dir"
 msgstr ""

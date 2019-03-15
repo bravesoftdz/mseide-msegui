@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "&Cancel"
 msgstr "&Cancelar"
@@ -246,7 +246,7 @@ msgid "All Files"
 msgstr "Todos os arquivos"
 
 msgid "&Description"
-msgstr "&Descrição"
+msgstr "D&escrição"
 
 msgid "Stack"
 msgstr "Pilha (Stack)"
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "Substitui&r"
+msgstr "&Substituir"
 
 msgid "Replace &all"
 msgstr ""
@@ -1555,7 +1555,7 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Localizar"
+msgstr "&Pesquisar"
 
 msgid "&Edit"
 msgstr "&Editar"
@@ -1666,7 +1666,7 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "Fe&char"
+msgstr "&Fechar"
 
 msgid "&Project"
 msgstr "&Projeto"
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "Nova"
+msgstr "Novo"
 
 msgid "Select ancestor"
 msgstr ""
@@ -2223,10 +2223,10 @@ msgid "&Copy"
 msgstr "&Copiar"
 
 msgid "&Paste"
-msgstr "Co&lar"
+msgstr "C&olar"
 
 msgid "&Delete"
-msgstr "&Deletar"
+msgstr "E&xcluir"
 
 msgid "Sa&ve all"
 msgstr "Sal&var tudo"
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Exibir"
+msgstr "Visão"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Construir"
+msgstr "Compilar"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Saiu"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr "&Mostrar arquivos ocultos"
 
 msgid "&Filter"
-msgstr "&Filtro"
+msgstr "&Filtrar"
 
 msgid "&New dir"
 msgstr ""

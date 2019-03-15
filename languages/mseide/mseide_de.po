@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr "Ö&ffnen"
+msgstr "&Öffnen"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "E&rsetzen"
+msgstr "&Ersetzen"
 
 msgid "Replace &all"
 msgstr "&Alle ersetzen"
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Höhe"
 
 msgid "Font"
-msgstr "Schriftart"
+msgstr "Schrift"
 
 msgid "Color"
 msgstr "Farbe"
@@ -703,7 +703,7 @@ msgid "Auto indent"
 msgstr "(Cleveres) Automatisches Einrücken"
 
 msgid "Tab"
-msgstr "Tab"
+msgstr "Tabulator"
 
 msgid "Tabstops"
 msgstr ""
@@ -1666,13 +1666,13 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "S&chliessen"
+msgstr "&Schließen"
 
 msgid "&Project"
 msgstr "&Projekt"
 
 msgid "&About"
-msgstr "&Über"
+msgstr "&Info"
 
 msgid "&Configure MSEide"
 msgstr "MSEide &konfigurieren"
@@ -2211,10 +2211,10 @@ msgid "&Save"
 msgstr "&Speichern"
 
 msgid "&Undo"
-msgstr "Rück&gängig"
+msgstr "&Rückgängig"
 
 msgid "&Redo"
-msgstr "Wiederherste&llen"
+msgstr "&Wiederherstellen"
 
 msgid "Cu&t"
 msgstr "Ausschnei&den"
@@ -2223,10 +2223,10 @@ msgid "&Copy"
 msgstr "&Kopieren"
 
 msgid "&Paste"
-msgstr "Ein&fügen"
+msgstr "E&infügen"
 
 msgid "&Delete"
-msgstr "&Löschen "
+msgstr "&Löschen"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Erstellen"
+msgstr "Alles kompilieren"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Beendet"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr "&Zeige versteckte Dateien"
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Filter"
 
 msgid "&New dir"
 msgstr ""

@@ -21,7 +21,10 @@ msgstr ""
 "Language: he\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -40,13 +43,13 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr "שם"
+msgstr ""
 
 msgid "Type"
 msgstr "סוג"
 
 msgid "Comment"
-msgstr "הערה"
+msgstr ""
 
 msgid "Value"
 msgstr "ערך"
@@ -67,10 +70,10 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "פתח"
+msgstr "פתיחה"
 
 msgid "&Save"
-msgstr ""
+msgstr "שמירה"
 
 msgid "Save &as"
 msgstr ""
@@ -79,7 +82,7 @@ msgid "&New"
 msgstr "חדש"
 
 msgid "&Edit"
-msgstr "ערוך"
+msgstr "עריכה"
 
 msgid "&Import"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "כל הקבצים"
 
 msgid "Language"
-msgstr ""
+msgstr "שפה"
 
 msgid "Directory"
 msgstr "תיקייה"

@@ -21,7 +21,10 @@ msgstr ""
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -43,10 +46,10 @@ msgid "Name"
 msgstr "Navn"
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgid "Comment"
-msgstr "Kommentar"
+msgstr "Kommentér"
 
 msgid "Value"
 msgstr "Værdi"
@@ -76,7 +79,7 @@ msgid "Save &as"
 msgstr "Gem &som"
 
 msgid "&New"
-msgstr "&Ny"
+msgstr "&Nyt"
 
 msgid "&Edit"
 msgstr "&Redigér"
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "A&nnullér"
+msgstr "&Annullér"
 
 msgid "&Shortcuts"
 msgstr "&Genvejstaster"

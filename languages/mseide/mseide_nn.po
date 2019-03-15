@@ -243,10 +243,10 @@ msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Alle filer"
 
 msgid "&Description"
-msgstr ""
+msgstr "Skil&dring"
 
 msgid "Stack"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "Byt &ut"
+msgstr "&Byt ut"
 
 msgid "Replace &all"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Høgd"
 
 msgid "Font"
-msgstr "Skrifttype"
+msgstr "Skrifttypar"
 
 msgid "Color"
 msgstr "Farge"
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr ""
+msgstr "Skriveprogram"
 
 msgid "Auto load"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "&Søk"
 
 msgid "&Edit"
-msgstr "&Endra"
+msgstr "R&ediger"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr "V&is"
+msgstr "&Vis"
 
 msgid "&Build"
 msgstr ""
@@ -2331,7 +2331,7 @@ msgid "Line"
 msgstr "Linje"
 
 msgid "Find"
-msgstr "Søk"
+msgstr "Finn"
 
 msgid "Search again"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Avslutta"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr ""
 
 msgid "&Add"
-msgstr ""
+msgstr "&Legg til"
 
 msgid "&stretch"
 msgstr ""

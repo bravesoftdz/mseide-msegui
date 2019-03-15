@@ -21,7 +21,10 @@ msgstr ""
 "Language: ast\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -40,16 +43,16 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgid "Type"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "Comentariu"
 
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 msgid "flat"
 msgstr ""
@@ -79,7 +82,7 @@ msgid "&New"
 msgstr ""
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Editar"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "Tocante &a"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Tolos ficheros"
 
 msgid "Language"
-msgstr ""
+msgstr "Llingua"
 
 msgid "Directory"
 msgstr ""

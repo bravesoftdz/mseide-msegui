@@ -21,7 +21,10 @@ msgstr ""
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,16 +70,16 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Avaa"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Tallenna"
 
 msgid "Save &as"
 msgstr "Tallenna &nimellä"
 
 msgid "&New"
-msgstr ""
+msgstr "&Uusi"
 
 msgid "&Edit"
 msgstr "&Muokkaa"
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&Peruuta"
+msgstr "&Peru"
 
 msgid "&Shortcuts"
 msgstr "&Pikanäppäimet"

@@ -21,7 +21,10 @@ msgstr ""
 "Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -43,10 +46,10 @@ msgid "Name"
 msgstr "Izena"
 
 msgid "Type"
-msgstr ""
+msgstr "Mota"
 
 msgid "Comment"
-msgstr ""
+msgstr "Iruzkina"
 
 msgid "Value"
 msgstr "Balioa"
@@ -196,7 +199,7 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr "Fitxategi guztiak"
+msgstr "Fitxategi denak"
 
 msgid "Language"
 msgstr ""

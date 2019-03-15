@@ -19,3 +19,5 @@ Comment[pl]=Narzędzie do lokalizacji aplikacji napisanych w MSEide + MSEgui
 GenericName[pl]=i18n dla MSEide + MSEgui
 Comment[uk]=Утиліта для локалізації програм, які написано у MSEide+MSEgui
 GenericName[uk]=i18n для MSEide+MSEgui
+Comment[fr]=Outil pour la localisation d'applications écrites avec MSEide + MSEgui
+GenericName[fr]=i18n pour MSEide+MSEgui

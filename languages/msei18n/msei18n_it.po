@@ -21,7 +21,10 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,7 +70,7 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "&Apri file "
+msgstr "&Apri"
 
 msgid "&Save"
 msgstr "&Salva"
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&Annulla"
+msgstr "A&nnulla"
 
 msgid "&Shortcuts"
 msgstr ""

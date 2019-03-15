@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "&Cancel"
 msgstr "&Zrušiť"
@@ -246,7 +246,7 @@ msgid "All Files"
 msgstr "Všetky súbory"
 
 msgid "&Description"
-msgstr "&Opis"
+msgstr "&Popis"
 
 msgid "Stack"
 msgstr "Zásobník"
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "&Nahradiť"
+msgstr "Na&hradiť"
 
 msgid "Replace &all"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Výška"
 
 msgid "Font"
-msgstr ""
+msgstr "Písmo"
 
 msgid "Color"
 msgstr ""
@@ -1199,7 +1199,7 @@ msgid "Alternate shortcut key"
 msgstr ""
 
 msgid "File"
-msgstr "Súbor"
+msgstr "&Súbor"
 
 msgid "Parameters"
 msgstr ""
@@ -1277,7 +1277,7 @@ msgid "Macros"
 msgstr "Makrá"
 
 msgid "Tools"
-msgstr "Nástroje"
+msgstr "&Nástroje"
 
 msgid "Templates"
 msgstr "Šablóny"
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr "Pridať"
+msgstr "Pridá"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr "&Formulár"
 
 msgid "&New"
-msgstr ""
+msgstr "&Nový"
 
 msgid "E&xit"
 msgstr "&Koniec"
@@ -1666,13 +1666,13 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "&Zavrieť"
+msgstr "Za&vrieť"
 
 msgid "&Project"
 msgstr "&Projekt"
 
 msgid "&About"
-msgstr ""
+msgstr "&O programe"
 
 msgid "&Configure MSEide"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "O&bnoviť"
 
 msgid "Reset"
 msgstr "Obnoviť"
@@ -2211,22 +2211,22 @@ msgid "&Save"
 msgstr "&Uložiť"
 
 msgid "&Undo"
-msgstr "&Vrátiť"
+msgstr "&Vrátiť späť"
 
 msgid "&Redo"
-msgstr ""
+msgstr "&Znovu vykonať"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr ""
+msgstr "&Kopírovať"
 
 msgid "&Paste"
-msgstr ""
+msgstr "&Vložiť"
 
 msgid "&Delete"
-msgstr "&Zmazať"
+msgstr "O&dstrániť"
 
 msgid "Sa&ve all"
 msgstr "&Uložiť všetko"
@@ -2325,7 +2325,7 @@ msgid "Print"
 msgstr "Tlačiť"
 
 msgid "Search"
-msgstr "Hľadať"
+msgstr "&Hľadať"
 
 msgid "Line"
 msgstr "Čiara"
@@ -2346,7 +2346,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr "Editovat"
+msgstr "&Upraviť"
 
 msgid "Select Editpage"
 msgstr ""
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Zostaviť"
+msgstr "Zostavenie"
 
 msgid "Make 1"
 msgstr ""
@@ -2490,7 +2490,7 @@ msgid "Tree"
 msgstr ""
 
 msgid "Help"
-msgstr "Pomoc"
+msgstr "&Pomocník"
 
 msgid "Toggle Form/Inspector"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Ukončené"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr "&Vyčistiť"
 
 msgid "&Add"
-msgstr "&Pridať"
+msgstr "Pri&dať"
 
 msgid "&stretch"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Filter"
 
 msgid "&New dir"
 msgstr ""

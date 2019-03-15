@@ -146,7 +146,7 @@ msgid "State"
 msgstr "Стан"
 
 msgid "Location"
-msgstr "Розташування"
+msgstr ""
 
 msgid "Copy to Clipboard"
 msgstr "Копіювати в буфер"
@@ -254,7 +254,7 @@ msgid "Stack"
 msgstr "Стек"
 
 msgid "Source"
-msgstr "Сирцевий код"
+msgstr ""
 
 msgid "<none>"
 msgstr "<немає>"
@@ -482,7 +482,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "&Замінити"
+msgstr "За&мінити"
 
 msgid "Replace &all"
 msgstr ""
@@ -644,7 +644,7 @@ msgid "Right margin line"
 msgstr ""
 
 msgid "Line numbers"
-msgstr ""
+msgstr "Номери рядків"
 
 msgid "Mark brackets"
 msgstr ""
@@ -705,7 +705,7 @@ msgid "Auto indent"
 msgstr "Автоматичний відступ"
 
 msgid "Tab"
-msgstr "ТАБ"
+msgstr ""
 
 msgid "Tabstops"
 msgstr ""
@@ -1207,7 +1207,7 @@ msgid "Parameters"
 msgstr "Параметри"
 
 msgid "Item"
-msgstr "Елемент"
+msgstr "елемент"
 
 msgid "Tool 1"
 msgstr "Інструмент 1"
@@ -1279,7 +1279,7 @@ msgid "Macros"
 msgstr "Макроси"
 
 msgid "Tools"
-msgstr "Інструменти"
+msgstr "Засоби"
 
 msgid "Templates"
 msgstr "Шаблони"
@@ -1443,7 +1443,7 @@ msgid "&Color"
 msgstr "&Колір"
 
 msgid "Paper size"
-msgstr "Розмір паперу"
+msgstr "Розмір аркуша"
 
 msgid "Paper orientation"
 msgstr ""
@@ -1674,7 +1674,7 @@ msgid "&Project"
 msgstr "Пр&оект"
 
 msgid "&About"
-msgstr "&Про програму"
+msgstr ""
 
 msgid "&Configure MSEide"
 msgstr "&Конфігурувати MSEide"
@@ -1776,7 +1776,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "Нове"
+msgstr "Створити"
 
 msgid "Select ancestor"
 msgstr ""
@@ -2198,7 +2198,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "В&ідновити"
+msgstr "&Скинути"
 
 msgid "Reset"
 msgstr "Скинути"
@@ -2213,10 +2213,10 @@ msgid "&Save"
 msgstr "З&берегти"
 
 msgid "&Undo"
-msgstr "В&ернути"
+msgstr "&Повернути"
 
 msgid "&Redo"
-msgstr "П&овторити"
+msgstr "По&вторити"
 
 msgid "Cu&t"
 msgstr "&Вирізати"
@@ -2225,7 +2225,7 @@ msgid "&Copy"
 msgstr "&Копіювати"
 
 msgid "&Paste"
-msgstr "Вст&авити"
+msgstr "В&ставити"
 
 msgid "&Delete"
 msgstr "В&илучити"
@@ -2348,7 +2348,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr "Змінити"
+msgstr "Правка"
 
 msgid "Select Editpage"
 msgstr ""
@@ -2465,13 +2465,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Перегляд"
+msgstr "Вигляд"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Побудувати"
+msgstr "Збірка"
 
 msgid "Make 1"
 msgstr "Зібрати 1"
@@ -2492,7 +2492,7 @@ msgid "Tree"
 msgstr "Дерево"
 
 msgid "Help"
-msgstr "Допомога"
+msgstr "Довідка"
 
 msgid "Toggle Form/Inspector"
 msgstr ""

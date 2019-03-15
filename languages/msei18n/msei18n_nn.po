@@ -21,7 +21,10 @@ msgstr ""
 "Language: nn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -79,7 +82,7 @@ msgid "&New"
 msgstr "&Ny"
 
 msgid "&Edit"
-msgstr "&Endra"
+msgstr "R&ediger"
 
 msgid "&Import"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Alle filer"
 
 msgid "Language"
-msgstr ""
+msgstr "Språk"
 
 msgid "Directory"
 msgstr ""

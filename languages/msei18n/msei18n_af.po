@@ -21,7 +21,10 @@ msgstr ""
 "Language: af\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -46,10 +49,10 @@ msgid "Type"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "Kommentaar"
 
 msgid "Value"
-msgstr ""
+msgstr "Waarde"
 
 msgid "flat"
 msgstr ""
@@ -76,10 +79,10 @@ msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Nuwe"
 
 msgid "&Edit"
-msgstr "&Redigeer"
+msgstr "R&edigeer"
 
 msgid "&Import"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Alle lêers"
 
 msgid "Language"
-msgstr ""
+msgstr "Taal"
 
 msgid "Directory"
 msgstr "Lêergids"
@@ -208,7 +211,7 @@ msgid "Make command"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "aan"
 
 msgid "OK"
 msgstr "Goed"

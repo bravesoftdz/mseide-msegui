@@ -21,7 +21,10 @@ msgstr ""
 "Language: lv\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Atvērt"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Saglabāt"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "Jau&ns"
 
 msgid "&Edit"
-msgstr ""
+msgstr "R&ediģēt"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "P&ar"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "At&celt"
 
 msgid "&Shortcuts"
 msgstr ""

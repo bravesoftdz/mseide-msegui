@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr "ＯＫ"
+msgstr ""
 
 msgid "&Cancel"
 msgstr "キャンセル"
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr "エディタ"
+msgstr "エディター"
 
 msgid "Auto load"
 msgstr ""
@@ -1672,7 +1672,7 @@ msgid "&Project"
 msgstr "プロジェクト"
 
 msgid "&About"
-msgstr "バージョン情報"
+msgstr "について"
 
 msgid "&Configure MSEide"
 msgstr ""
@@ -2211,10 +2211,10 @@ msgid "&Save"
 msgstr "保存"
 
 msgid "&Undo"
-msgstr "やり直す"
+msgstr "元に戻す"
 
 msgid "&Redo"
-msgstr "元に戻す"
+msgstr "やり直す"
 
 msgid "Cu&t"
 msgstr "切り取り"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "終了コード:"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "フィルター"
 
 msgid "&New dir"
 msgstr ""

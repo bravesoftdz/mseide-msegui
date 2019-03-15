@@ -21,7 +21,10 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -76,7 +79,7 @@ msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Nový"
 
 msgid "&Edit"
 msgstr "&Upraviť"
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&O programe"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "Make Language Units"
 msgstr ""
@@ -181,7 +184,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr "Súbor"
+msgstr "&Súbor"
 
 msgid "Kind"
 msgstr ""

@@ -25,7 +25,7 @@ msgid "Watchpoints"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "aan"
 
 msgid "Kind"
 msgstr ""
@@ -243,16 +243,16 @@ msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr "Alle Lêers"
+msgstr "Alle lêers"
 
 msgid "&Description"
-msgstr ""
+msgstr "&Beskrywing"
 
 msgid "Stack"
 msgstr ""
 
 msgid "Source"
-msgstr ""
+msgstr "Bron"
 
 msgid "<none>"
 msgstr ""
@@ -336,7 +336,7 @@ msgid "Syntaxdeffile:"
 msgstr ""
 
 msgid "Text"
-msgstr ""
+msgstr "Teks"
 
 msgid "not found."
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr ""
 
 msgid "Font"
-msgstr ""
+msgstr "Lettertipe"
 
 msgid "Color"
 msgstr ""
@@ -700,7 +700,7 @@ msgid "Block Indent"
 msgstr ""
 
 msgid "Auto indent"
-msgstr ""
+msgstr "Outokeep"
 
 msgid "Tab"
 msgstr "Keep"
@@ -1068,7 +1068,7 @@ msgid "M&acros"
 msgstr ""
 
 msgid "Value"
-msgstr ""
+msgstr "Waarde"
 
 msgid "Active group"
 msgstr ""
@@ -1098,7 +1098,7 @@ msgid "Copy \"setcolormapvalue\" code to clipboard"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "Kommentaar"
 
 msgid "F&ormat Macros"
 msgstr ""
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr ""
+msgstr "Redigeerder"
 
 msgid "Auto load"
 msgstr ""
@@ -1319,7 +1319,7 @@ msgid "Interrupt"
 msgstr ""
 
 msgid "Quit"
-msgstr ""
+msgstr "Afsluit"
 
 msgid "Illegal instruction"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Voeg by"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr "&Vorm"
 
 msgid "&New"
-msgstr ""
+msgstr "&Nuwe"
 
 msgid "E&xit"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Deursoek"
+msgstr "Deur&soek"
 
 msgid "&Edit"
-msgstr "&Redigeer"
+msgstr "R&edigeer"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr "&Aansig"
+msgstr "&Bekyk"
 
 msgid "&Build"
 msgstr ""
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr ""
+msgstr "Nuwe"
 
 msgid "Select ancestor"
 msgstr ""
@@ -2172,7 +2172,7 @@ msgid "Do you wish to delete all breakpoints?"
 msgstr ""
 
 msgid "&Run"
-msgstr ""
+msgstr "&Loop"
 
 msgid "Run"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "Stel te&rug"
 
 msgid "Reset"
 msgstr ""
@@ -2211,13 +2211,13 @@ msgid "&Save"
 msgstr "&Stoor"
 
 msgid "&Undo"
-msgstr ""
+msgstr "&Ontdoen"
 
 msgid "&Redo"
-msgstr ""
+msgstr "&Herdoen"
 
 msgid "Cu&t"
-msgstr ""
+msgstr "Kn&ip"
 
 msgid "&Copy"
 msgstr "&Kopieer"
@@ -2268,10 +2268,10 @@ msgid "Select &Edit Page"
 msgstr ""
 
 msgid "&Indent"
-msgstr ""
+msgstr "&Keep"
 
 msgid "U&nindent"
-msgstr ""
+msgstr "Ont&keep"
 
 msgid "Toggle Form/&Unit"
 msgstr ""
@@ -2316,7 +2316,7 @@ msgid "Save as"
 msgstr ""
 
 msgid "Close"
-msgstr "Sluit"
+msgstr "Afsluit"
 
 msgid "Close all"
 msgstr ""
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Aansig"
+msgstr "Bekyk"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr ""
+msgstr "Bou"
 
 msgid "Make 1"
 msgstr ""
@@ -2703,7 +2703,7 @@ msgid "Do you want to overwrite?"
 msgstr ""
 
 msgid "Unknown"
-msgstr ""
+msgstr "Onbekend"
 
 msgid "Error"
 msgstr "Fout"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Uitgegaan"
 
 msgid "Detached"
 msgstr ""

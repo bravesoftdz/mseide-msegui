@@ -21,7 +21,10 @@ msgstr ""
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,10 +70,10 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "&Obre"
+msgstr "&Obri"
 
 msgid "&Save"
-msgstr "De&sa"
+msgstr "Al&ça"
 
 msgid "Save &as"
 msgstr "Desa &com"
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr "&Accepta"
+msgstr "D'ac&ord"
 
 msgid "Make Language Units"
 msgstr ""

@@ -21,7 +21,10 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -76,10 +79,10 @@ msgid "Save &as"
 msgstr "Farklı &kaydet"
 
 msgid "&New"
-msgstr "&Yeni"
+msgstr "&Yeni Belge"
 
 msgid "&Edit"
-msgstr "Dü&zenle"
+msgstr "Düz&en"
 
 msgid "&Import"
 msgstr ""

@@ -159,10 +159,10 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "تایید"
 
 msgid "&Cancel"
-msgstr "& لغو کردن"
+msgstr "لغو"
 
 msgid "&Name"
 msgstr ""
@@ -198,7 +198,7 @@ msgid "&indent"
 msgstr ""
 
 msgid "Delete"
-msgstr "پاک کردن"
+msgstr "حذف"
 
 msgid "Filename"
 msgstr "نام پرونده"
@@ -237,22 +237,22 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr "پرونده پروژه ‬"
+msgstr "پرونده"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "همه‌ی پرونده‌ها"
 
 msgid "&Description"
-msgstr ""
+msgstr "شرح"
 
 msgid "Stack"
 msgstr ""
 
 msgid "Source"
-msgstr ""
+msgstr "مبدأ"
 
 msgid "<none>"
 msgstr ""
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr "باز کن اخیر"
+msgstr "باز کردن"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "جایگزین"
+msgstr "جای‌گزین شود"
 
 msgid "Replace &all"
 msgstr ""
@@ -621,13 +621,13 @@ msgid "Extra space between lines"
 msgstr ""
 
 msgid "Width"
-msgstr "پهنا"
+msgstr "عرض"
 
 msgid "Height"
 msgstr "ارتفاع"
 
 msgid "Font"
-msgstr "فونت"
+msgstr "قلم"
 
 msgid "Color"
 msgstr "رنگ"
@@ -694,7 +694,7 @@ msgid ""
 msgstr ""
 
 msgid "Space"
-msgstr ""
+msgstr "فاصله"
 
 msgid "Block Indent"
 msgstr ""
@@ -1098,7 +1098,7 @@ msgid "Copy \"setcolormapvalue\" code to clipboard"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "توضیح"
 
 msgid "F&ormat Macros"
 msgstr ""
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr ""
+msgstr "ویرایش‌گر"
 
 msgid "Auto load"
 msgstr ""
@@ -1277,7 +1277,7 @@ msgid "Macros"
 msgstr ""
 
 msgid "Tools"
-msgstr ""
+msgstr "ابزارها"
 
 msgid "Templates"
 msgstr "الگوها"
@@ -1319,7 +1319,7 @@ msgid "Interrupt"
 msgstr ""
 
 msgid "Quit"
-msgstr ""
+msgstr "ترک"
 
 msgid "Illegal instruction"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "اضافه کردن"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr "جدید‬‬"
+msgstr "جدید"
 
 msgid "E&xit"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "جست‌وجو"
 
 msgid "&Edit"
-msgstr "تغییر دادن یا تصحیح کردن‬"
+msgstr "ویرایش"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr "نما‬"
+msgstr "نمایش"
 
 msgid "&Build"
 msgstr ""
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "جدید‬‬"
+msgstr "جدید"
 
 msgid "Select ancestor"
 msgstr ""
@@ -1795,7 +1795,7 @@ msgid "Select project template"
 msgstr ""
 
 msgid "All files"
-msgstr "همه فایل ها"
+msgstr "همه‌ی پرونده‌ها"
 
 msgid "Select program file"
 msgstr ""
@@ -2172,7 +2172,7 @@ msgid "Do you wish to delete all breakpoints?"
 msgstr ""
 
 msgid "&Run"
-msgstr ""
+msgstr "اجرا"
 
 msgid "Run"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "تنظیم مجدد‬"
+msgstr "تنظیم مجدد"
 
 msgid "Reset"
 msgstr ""
@@ -2208,25 +2208,25 @@ msgid "Finish"
 msgstr ""
 
 msgid "&Save"
-msgstr "جمع اوری "
+msgstr "ذخیره"
 
 msgid "&Undo"
-msgstr ""
+msgstr "برگردان"
 
 msgid "&Redo"
-msgstr ""
+msgstr "دوباره"
 
 msgid "Cu&t"
-msgstr ""
+msgstr "بریدن"
 
 msgid "&Copy"
-msgstr ""
+msgstr "رونوشت"
 
 msgid "&Paste"
-msgstr ""
+msgstr "جای‌گذاری"
 
 msgid "&Delete"
-msgstr "حذف خط کنونی"
+msgstr "حذف"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2268,10 +2268,10 @@ msgid "Select &Edit Page"
 msgstr ""
 
 msgid "&Indent"
-msgstr "تورفتگی"
+msgstr "تو بردن"
 
 msgid "U&nindent"
-msgstr ""
+msgstr "بیرون آوردن"
 
 msgid "Toggle Form/&Unit"
 msgstr ""
@@ -2307,7 +2307,7 @@ msgid "&Uppercase"
 msgstr ""
 
 msgid "Open"
-msgstr "باز"
+msgstr "باز کردن"
 
 msgid "Save all"
 msgstr ""
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "نما‬"
+msgstr "نما"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr ""
+msgstr "ساختن"
 
 msgid "Make 1"
 msgstr ""
@@ -2490,7 +2490,7 @@ msgid "Tree"
 msgstr "درخت"
 
 msgid "Help"
-msgstr ""
+msgstr "راهنما"
 
 msgid "Toggle Form/Inspector"
 msgstr ""
@@ -2703,7 +2703,7 @@ msgid "Do you want to overwrite?"
 msgstr ""
 
 msgid "Unknown"
-msgstr "ناشناس"
+msgstr "نامعلوم"
 
 msgid "Error"
 msgstr "خطا"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "خارج شد"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr ""
 
 msgid "&Add"
-msgstr ""
+msgstr "اضافه کردن"
 
 msgid "&stretch"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "فیلتر"
 
 msgid "&New dir"
 msgstr ""

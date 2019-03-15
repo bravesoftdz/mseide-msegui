@@ -162,7 +162,7 @@ msgid "&OK"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&Avbryt"
+msgstr "A&vbryt"
 
 msgid "&Name"
 msgstr ""
@@ -243,10 +243,10 @@ msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Alle filer"
 
 msgid "&Description"
-msgstr ""
+msgstr "&Beskrivelse"
 
 msgid "Stack"
 msgstr ""
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr ""
+msgstr "Behandler"
 
 msgid "Auto load"
 msgstr ""
@@ -1277,7 +1277,7 @@ msgid "Macros"
 msgstr ""
 
 msgid "Tools"
-msgstr ""
+msgstr "Verktøy"
 
 msgid "Templates"
 msgstr "Maler"
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Legg til"
 
 msgid "Memory &on"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "&Søk"
 
 msgid "&Edit"
-msgstr "&Rediger"
+msgstr "R&ediger"
 
 msgid "En&vironment"
 msgstr ""
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr ""
+msgstr "Nytt"
 
 msgid "Select ancestor"
 msgstr ""
@@ -2223,7 +2223,7 @@ msgid "&Copy"
 msgstr "&Kopier"
 
 msgid "&Paste"
-msgstr "&Sett inn"
+msgstr "&Lim inn"
 
 msgid "&Delete"
 msgstr "&Slett"
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr ""
+msgstr "Vis"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr ""
+msgstr "Bygg"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Avsluttet"
 
 msgid "Detached"
 msgstr ""

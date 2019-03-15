@@ -21,7 +21,10 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,10 +70,10 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Openen"
 
 msgid "&Save"
-msgstr "&Opslaan"
+msgstr "Op&slaan"
 
 msgid "Save &as"
 msgstr "Opslaan &als"
@@ -79,7 +82,7 @@ msgid "&New"
 msgstr "&Nieuw"
 
 msgid "&Edit"
-msgstr "Be&werken"
+msgstr "&Bewerken"
 
 msgid "&Import"
 msgstr "&Importeren"

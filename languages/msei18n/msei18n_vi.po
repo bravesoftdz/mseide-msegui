@@ -21,7 +21,10 @@ msgstr ""
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Mở"
 
 msgid "&Save"
-msgstr ""
+msgstr "&Lưu"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Mới"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Sửa"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Giới thiệu"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "Đồn&g ý"
 
 msgid "Make Language Units"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Mọi tập tin"
 
 msgid "Language"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 msgid "Directory"
 msgstr ""
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "Thô&i"
 
 msgid "&Shortcuts"
 msgstr ""

@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Výška"
 
 msgid "Font"
-msgstr "Písmo"
+msgstr ""
 
 msgid "Color"
 msgstr "Barva"
@@ -703,7 +703,7 @@ msgid "Auto indent"
 msgstr "Automatické odsazování"
 
 msgid "Tab"
-msgstr ""
+msgstr "Tabulátor"
 
 msgid "Tabstops"
 msgstr ""
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr "Okno editoru"
+msgstr ""
 
 msgid "Auto load"
 msgstr ""
@@ -1253,7 +1253,7 @@ msgid "Auto save"
 msgstr ""
 
 msgid "Save"
-msgstr "Ukládání"
+msgstr "Uložit"
 
 msgid "Load"
 msgstr "Načíst"
@@ -1555,7 +1555,7 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Vyhledat"
+msgstr "&Hledat"
 
 msgid "&Edit"
 msgstr "&Upravit"
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "Vých&ozí"
+msgstr "V&rátit výchozí"
 
 msgid "Reset"
 msgstr "Resetovat"
@@ -2214,7 +2214,7 @@ msgid "&Undo"
 msgstr "&Zpět"
 
 msgid "&Redo"
-msgstr "Zn&ovu"
+msgstr "Zno&vu"
 
 msgid "Cu&t"
 msgstr "Vyjmou&t"
@@ -2463,7 +2463,7 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Pohled"
+msgstr "Zobrazit"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Skončil"
 
 msgid "Detached"
 msgstr ""
@@ -3180,7 +3180,7 @@ msgid "&Shortcut"
 msgstr "&Zkratka"
 
 msgid "Action"
-msgstr "Akce"
+msgstr "Činnost"
 
 msgid "&Default"
 msgstr ""

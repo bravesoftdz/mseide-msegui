@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr "&Oké"
+msgstr "&Ok"
 
 msgid "&Cancel"
 msgstr "&Annuleren"
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr "&Open"
+msgstr "&Openen"
 
 msgid "0.0mm"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Hoogte"
 
 msgid "Font"
-msgstr "Lettertype::"
+msgstr "Lettertype"
 
 msgid "Color"
 msgstr "Kleur"
@@ -1277,7 +1277,7 @@ msgid "Macros"
 msgstr "Macro's"
 
 msgid "Tools"
-msgstr "Hulpprogramma's"
+msgstr "Extra"
 
 msgid "Templates"
 msgstr "Sjablonen"
@@ -1558,7 +1558,7 @@ msgid "&Search"
 msgstr "&Zoeken"
 
 msgid "&Edit"
-msgstr "Be&werken"
+msgstr "&Bewerken"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr "Schakel tussen Form/Unit"
 
 msgid "&View"
-msgstr "B&eeld"
+msgstr "&Beeld"
 
 msgid "&Build"
 msgstr ""
@@ -1666,7 +1666,7 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "&Sluiten"
+msgstr "Slui&ten"
 
 msgid "&Project"
 msgstr "&Project"
@@ -2208,13 +2208,13 @@ msgid "Finish"
 msgstr "Klaar"
 
 msgid "&Save"
-msgstr "&Opslaan"
+msgstr "Op&slaan"
 
 msgid "&Undo"
 msgstr "&Ongedaan maken"
 
 msgid "&Redo"
-msgstr "Op&nieuw"
+msgstr "Op&nieuw uitvoeren"
 
 msgid "Cu&t"
 msgstr "K&nippen"
@@ -2226,7 +2226,7 @@ msgid "&Paste"
 msgstr "&Plakken"
 
 msgid "&Delete"
-msgstr "&Verwĳderen"
+msgstr "&Verwijderen"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2307,7 +2307,7 @@ msgid "&Uppercase"
 msgstr "&Hoofdletters"
 
 msgid "Open"
-msgstr "Open"
+msgstr "Openen"
 
 msgid "Save all"
 msgstr "Alles opslaan"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Afgesloten"
 
 msgid "Detached"
 msgstr ""

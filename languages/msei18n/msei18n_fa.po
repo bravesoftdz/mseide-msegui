@@ -21,7 +21,10 @@ msgstr ""
 "Language: fa\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -46,7 +49,7 @@ msgid "Type"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "توضیح"
 
 msgid "Value"
 msgstr "مقدار"
@@ -67,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "باز کن اخیر"
+msgstr "باز کردن"
 
 msgid "&Save"
-msgstr "&جمع اوری "
+msgstr "&ذخیره"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr "جدید‬‬"
+msgstr "&جدید"
 
 msgid "&Edit"
-msgstr "تغییر دادن یا تصحیح کردن‬"
+msgstr "&ویرایش"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "درباره"
+msgstr "&درباره"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&تایید"
 
 msgid "Make Language Units"
 msgstr ""
@@ -196,10 +199,10 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr "همه فایل ها"
+msgstr "همه‌ی پرونده‌ها"
 
 msgid "Language"
-msgstr ""
+msgstr "زبان"
 
 msgid "Directory"
 msgstr ""
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "& لغو کردن"
+msgstr "&لغو"
 
 msgid "&Shortcuts"
 msgstr ""

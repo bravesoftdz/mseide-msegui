@@ -642,7 +642,7 @@ msgid "Right margin line"
 msgstr ""
 
 msgid "Line numbers"
-msgstr ""
+msgstr "行號"
 
 msgid "Mark brackets"
 msgstr ""
@@ -1176,7 +1176,7 @@ msgid "Show output in messages window"
 msgstr ""
 
 msgid "Menu"
-msgstr "選單"
+msgstr "功能表"
 
 msgid "Shortcut"
 msgstr "快速鍵"
@@ -1441,7 +1441,7 @@ msgid "&Color"
 msgstr "顏色"
 
 msgid "Paper size"
-msgstr ""
+msgstr "紙張大小"
 
 msgid "Paper orientation"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr "新增"
+msgstr "加入"
 
 msgid "Memory &on"
 msgstr ""
@@ -2052,7 +2052,7 @@ msgid "Select item for inserting"
 msgstr ""
 
 msgid "Description"
-msgstr "描述"
+msgstr "說明"
 
 msgid "&Copy Component"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "重置"
+msgstr "重設"
 
 msgid "Reset"
 msgstr "重置"
@@ -2214,7 +2214,7 @@ msgid "&Undo"
 msgstr "復原"
 
 msgid "&Redo"
-msgstr "重做"
+msgstr "取消復原"
 
 msgid "Cu&t"
 msgstr ""
@@ -2355,10 +2355,10 @@ msgid "Copy Word at Cursor"
 msgstr ""
 
 msgid "Indent"
-msgstr "右移"
+msgstr "縮排"
 
 msgid "Unindent"
-msgstr "左移"
+msgstr "減少縮排"
 
 msgid "Comment Selection"
 msgstr ""
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "組建"
+msgstr "建立"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "已離開"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "過濾條件"
 
 msgid "&New dir"
 msgstr ""

@@ -21,7 +21,10 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,7 +70,7 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "Ö&ffnen"
+msgstr "&Öffnen"
 
 msgid "&Save"
 msgstr "&Speichern"
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "&Über"
+msgstr "&Info"
 
 msgid "&Configure MSEi18n"
 msgstr "MSEi18n &konfigurieren"

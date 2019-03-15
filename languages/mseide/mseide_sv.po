@@ -159,10 +159,10 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "&Cancel"
-msgstr ""
+msgstr "A&vbryt"
 
 msgid "&Name"
 msgstr ""
@@ -237,16 +237,16 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&Arkiv"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Alla filer"
 
 msgid "&Description"
-msgstr ""
+msgstr "&Beskrivning"
 
 msgid "Stack"
 msgstr ""
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "Ö&ppna"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr ""
+msgstr "&Ersätt"
 
 msgid "Replace &all"
 msgstr "Ersätt &alla"
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr ""
 
 msgid "Font"
-msgstr ""
+msgstr "Typsnitt"
 
 msgid "Color"
 msgstr ""
@@ -703,7 +703,7 @@ msgid "Auto indent"
 msgstr ""
 
 msgid "Tab"
-msgstr ""
+msgstr "Tabb"
 
 msgid "Tabstops"
 msgstr ""
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr "Editor"
+msgstr "Redigerare"
 
 msgid "Auto load"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Lägg till"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Ny"
 
 msgid "E&xit"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "&Sök"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Redigera"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr ""
+msgstr "&Visa"
 
 msgid "&Build"
 msgstr ""
@@ -1666,13 +1666,13 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr ""
+msgstr "S&täng"
 
 msgid "&Project"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Om"
 
 msgid "&Configure MSEide"
 msgstr ""
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "Ny"
+msgstr "Nytt"
 
 msgid "Select ancestor"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "Åte&rställ"
 
 msgid "Reset"
 msgstr "Återställ"
@@ -2208,25 +2208,25 @@ msgid "Finish"
 msgstr ""
 
 msgid "&Save"
-msgstr ""
+msgstr "&Spara"
 
 msgid "&Undo"
-msgstr ""
+msgstr "&Ångra"
 
 msgid "&Redo"
-msgstr ""
+msgstr "&Gör om"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr ""
+msgstr "&Kopiera"
 
 msgid "&Paste"
-msgstr ""
+msgstr "Klistra &in"
 
 msgid "&Delete"
-msgstr ""
+msgstr "&Ta bort"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Avslutade"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr ""
 
 msgid "&Add"
-msgstr ""
+msgstr "&Lägg till"
 
 msgid "&stretch"
 msgstr ""
@@ -3180,7 +3180,7 @@ msgid "&Shortcut"
 msgstr ""
 
 msgid "Action"
-msgstr "Händelse"
+msgstr "Åtgärd"
 
 msgid "&Default"
 msgstr ""

@@ -21,7 +21,10 @@ msgstr ""
 "Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -46,7 +49,7 @@ msgid "Type"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "Comentario"
 
 msgid "Value"
 msgstr "Valor"
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "&A cerca de"
+msgstr "&Sobre"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -166,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Aceptar"
 
 msgid "Make Language Units"
 msgstr ""
@@ -199,7 +202,7 @@ msgid "All files"
 msgstr "Todos os ficheiros"
 
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 msgid "Directory"
 msgstr ""

@@ -159,10 +159,10 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "&Cancel"
-msgstr "&Peruuta"
+msgstr "&Peru"
 
 msgid "&Name"
 msgstr "&Nimi"
@@ -237,13 +237,13 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&Tiedosto"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Kaikki tiedostot"
 
 msgid "&Description"
 msgstr "&Kuvaus"
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Avaa"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr ""
+msgstr "Ko&rvaa"
 
 msgid "Replace &all"
 msgstr "Korvaa k&aikki"
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Korkeus"
 
 msgid "Font"
-msgstr "Kirjasin"
+msgstr "Fontti"
 
 msgid "Color"
 msgstr "Väri"
@@ -1244,7 +1244,7 @@ msgid "&Storage"
 msgstr ""
 
 msgid "Editor"
-msgstr "Editori"
+msgstr "Muokkain"
 
 msgid "Auto load"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Uusi"
 
 msgid "E&xit"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr "Vaihda lomake/käännösyksikkö"
 
 msgid "&View"
-msgstr ""
+msgstr "&Näytä"
 
 msgid "&Build"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "&Nollaa"
+msgstr "&Palauta"
 
 msgid "Reset"
 msgstr "Nollaa"
@@ -2211,16 +2211,16 @@ msgid "&Save"
 msgstr "&Tallenna"
 
 msgid "&Undo"
-msgstr "&Kumoa"
+msgstr "K&umoa"
 
 msgid "&Redo"
-msgstr ""
+msgstr "&Tee uudelleen"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr "&Kopio"
+msgstr "&Kopioi"
 
 msgid "&Paste"
 msgstr "&Liitä"
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Koosta"
+msgstr "Käännös"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Päättyi"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Suodata"
 
 msgid "&New dir"
 msgstr ""

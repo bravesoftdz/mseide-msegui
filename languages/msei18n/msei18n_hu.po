@@ -21,7 +21,10 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -70,7 +73,7 @@ msgid "&Open"
 msgstr "&Megnyitás"
 
 msgid "&Save"
-msgstr "&Mentés"
+msgstr "M&entés"
 
 msgid "Save &as"
 msgstr ""
@@ -79,7 +82,7 @@ msgid "&New"
 msgstr "Ú&j"
 
 msgid "&Edit"
-msgstr "Szer&kesztés"
+msgstr "S&zerkesztés"
 
 msgid "&Import"
 msgstr "&Importálás"
@@ -238,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&Mégsem"
+msgstr "Mé&gse"
 
 msgid "&Shortcuts"
 msgstr "&Gyorsbillentyűk"

@@ -162,7 +162,7 @@ msgid "&OK"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&Mégsem"
+msgstr "Mé&gse"
 
 msgid "&Name"
 msgstr "&Név"
@@ -237,13 +237,13 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr "&Fájl"
+msgstr "Fáj&l"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Minden fájl"
 
 msgid "&Description"
 msgstr "&Leírás"
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr "Cse&re"
+msgstr "&Csere"
 
 msgid "Replace &all"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Magasság"
 
 msgid "Font"
-msgstr "Betű"
+msgstr "Betűkészlet"
 
 msgid "Color"
 msgstr "Szín"
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Hozzáadás"
 
 msgid "Memory &on"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Keresés"
+msgstr "K&eresés"
 
 msgid "&Edit"
-msgstr "Szer&kesztés"
+msgstr "S&zerkesztés"
 
 msgid "En&vironment"
 msgstr ""
@@ -1666,7 +1666,7 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "Be&zárás"
+msgstr "&Bezárás"
 
 msgid "&Project"
 msgstr "&Projekt"
@@ -2208,13 +2208,13 @@ msgid "Finish"
 msgstr "Befejezés"
 
 msgid "&Save"
-msgstr "&Mentés"
+msgstr "M&entés"
 
 msgid "&Undo"
 msgstr "&Visszavonás"
 
 msgid "&Redo"
-msgstr "&Ismétlés"
+msgstr "Új&ra"
 
 msgid "Cu&t"
 msgstr "Kivá&gás"
@@ -2226,7 +2226,7 @@ msgid "&Paste"
 msgstr "&Beillesztés"
 
 msgid "&Delete"
-msgstr "&Töröl"
+msgstr "&Törlés"
 
 msgid "Sa&ve all"
 msgstr "&Minden mentése"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Kilépett"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Szűrés"
 
 msgid "&New dir"
 msgstr ""

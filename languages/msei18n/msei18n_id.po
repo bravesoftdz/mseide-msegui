@@ -21,7 +21,10 @@ msgstr ""
 "Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -67,7 +70,7 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Buka"
 
 msgid "&Save"
 msgstr "&Simpan"
@@ -76,10 +79,10 @@ msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Baru"
 
 msgid "&Edit"
-msgstr "&Ubah"
+msgstr "&Sunting"
 
 msgid "&Import"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "&Tentang"
+msgstr "Ihw&al"
 
 msgid "&Configure MSEi18n"
 msgstr "&Konfigurasi MSEi18n"

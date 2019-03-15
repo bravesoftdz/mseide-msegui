@@ -25,7 +25,7 @@ msgid "Watchpoints"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "em"
 
 msgid "Kind"
 msgstr ""
@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Aceitar"
 
 msgid "&Cancel"
 msgstr "&Cancelar"
@@ -252,7 +252,7 @@ msgid "Stack"
 msgstr ""
 
 msgid "Source"
-msgstr ""
+msgstr "Código Fonte"
 
 msgid "<none>"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Altura"
 
 msgid "Font"
-msgstr "Fonte"
+msgstr "Letra"
 
 msgid "Color"
 msgstr "Cor"
@@ -1555,7 +1555,7 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Pesquisar"
+msgstr "&Procurar"
 
 msgid "&Edit"
 msgstr "&Editar"
@@ -1666,7 +1666,7 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr "&Fechar"
+msgstr "Fe&char"
 
 msgid "&Project"
 msgstr "&Projecto"
@@ -2172,7 +2172,7 @@ msgid "Do you wish to delete all breakpoints?"
 msgstr ""
 
 msgid "&Run"
-msgstr "&Executar"
+msgstr "Executa&r"
 
 msgid "Run"
 msgstr "Executar"
@@ -2223,10 +2223,10 @@ msgid "&Copy"
 msgstr "&Copiar"
 
 msgid "&Paste"
-msgstr "C&olar"
+msgstr "Co&lar"
 
 msgid "&Delete"
-msgstr "&Apagar"
+msgstr "&Eliminar"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2271,7 +2271,7 @@ msgid "&Indent"
 msgstr "&Indentar"
 
 msgid "U&nindent"
-msgstr ""
+msgstr "Remover I&ndentação"
 
 msgid "Toggle Form/&Unit"
 msgstr ""
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Gerar"
+msgstr "Compilação"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Saíu"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr "&Mostrar ficheiros ocultos"
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Filtro"
 
 msgid "&New dir"
 msgstr "&Nova pasta"

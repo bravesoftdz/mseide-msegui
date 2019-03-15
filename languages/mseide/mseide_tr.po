@@ -243,10 +243,10 @@ msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Tüm Dosyalar"
 
 msgid "&Description"
-msgstr "&Tanım"
+msgstr "&Açıklama"
 
 msgid "Stack"
 msgstr "Yığın"
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Yükseklik"
 
 msgid "Font"
-msgstr ""
+msgstr "Yazı Tipi"
 
 msgid "Color"
 msgstr "Renk"
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Ekle"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr "&Yeni"
+msgstr "&Yeni Belge"
 
 msgid "E&xit"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr "&Arama"
+msgstr "&Ara"
 
 msgid "&Edit"
-msgstr "Dü&zenle"
+msgstr "Düz&en"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr "Form / Birim Değiştir"
 
 msgid "&View"
-msgstr "&Görünüm"
+msgstr "G&örünüm"
 
 msgid "&Build"
 msgstr ""
@@ -2220,10 +2220,10 @@ msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr ""
+msgstr "&Kopyala"
 
 msgid "&Paste"
-msgstr ""
+msgstr "&Yapıştır"
 
 msgid "&Delete"
 msgstr "&Sil"
@@ -2463,13 +2463,13 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Bak"
+msgstr "Görünüm"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "İnşa et"
+msgstr "Derle"
 
 msgid "Make 1"
 msgstr ""
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Çıkıldı"
 
 msgid "Detached"
 msgstr ""
@@ -2967,7 +2967,7 @@ msgid "C&lear"
 msgstr ""
 
 msgid "&Add"
-msgstr ""
+msgstr "&Ekle"
 
 msgid "&stretch"
 msgstr ""

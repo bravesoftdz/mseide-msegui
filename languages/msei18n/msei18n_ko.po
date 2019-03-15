@@ -21,7 +21,10 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Refresh"
+msgid "&Refresh"
+msgstr ""
+
+msgid "Close error:"
 msgstr ""
 
 msgid "Total rows:"
@@ -43,10 +46,10 @@ msgid "Name"
 msgstr "이름"
 
 msgid "Type"
-msgstr ""
+msgstr "형식"
 
 msgid "Comment"
-msgstr ""
+msgstr "설명"
 
 msgid "Value"
 msgstr "값"
@@ -70,7 +73,7 @@ msgid "&Open"
 msgstr "열기"
 
 msgid "&Save"
-msgstr "저장하기"
+msgstr "저장"
 
 msgid "Save &as"
 msgstr ""
@@ -91,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "정보"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -196,7 +199,7 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr "전체 파일"
+msgstr "모든 파일"
 
 msgid "Language"
 msgstr ""

@@ -159,10 +159,10 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&Добра"
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Скасаваць"
 
 msgid "&Name"
 msgstr ""
@@ -237,16 +237,16 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&Файл"
 
 msgid "Component File"
 msgstr ""
 
 msgid "All Files"
-msgstr ""
+msgstr "Усе файлы"
 
 msgid "&Description"
-msgstr ""
+msgstr "&Апісанне"
 
 msgid "Stack"
 msgstr ""
@@ -393,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "&Адкрыць"
 
 msgid "0.0mm"
 msgstr ""
@@ -480,7 +480,7 @@ msgid "&whole word"
 msgstr ""
 
 msgid "&Replace"
-msgstr ""
+msgstr "&Замяніць"
 
 msgid "Replace &all"
 msgstr ""
@@ -627,7 +627,7 @@ msgid "Height"
 msgstr ""
 
 msgid "Font"
-msgstr ""
+msgstr "Шрыфт"
 
 msgid "Color"
 msgstr ""
@@ -1513,7 +1513,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Дадаць"
 
 msgid "Memory &on"
 msgstr ""
@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr ""
+msgstr "&Новы"
 
 msgid "E&xit"
 msgstr ""
@@ -1555,10 +1555,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "&Шукаць"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Рэдагаваць"
 
 msgid "En&vironment"
 msgstr ""
@@ -1627,7 +1627,7 @@ msgid "Toggle Form/Unit"
 msgstr ""
 
 msgid "&View"
-msgstr ""
+msgstr "&Від"
 
 msgid "&Build"
 msgstr ""
@@ -1666,13 +1666,13 @@ msgid "Save as copy"
 msgstr ""
 
 msgid "&Close"
-msgstr ""
+msgstr "За&крыць"
 
 msgid "&Project"
 msgstr ""
 
 msgid "&About"
-msgstr ""
+msgstr "&Аб праграме"
 
 msgid "&Configure MSEide"
 msgstr ""
@@ -2196,7 +2196,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "Скінуць"
 
 msgid "Reset"
 msgstr "Пераўсталяваць"
@@ -2208,25 +2208,25 @@ msgid "Finish"
 msgstr ""
 
 msgid "&Save"
-msgstr ""
+msgstr "&Захаваць"
 
 msgid "&Undo"
-msgstr ""
+msgstr "&Вярнуць"
 
 msgid "&Redo"
-msgstr ""
+msgstr "&Паўтарыць"
 
 msgid "Cu&t"
 msgstr ""
 
 msgid "&Copy"
-msgstr ""
+msgstr "&Капіраваць"
 
 msgid "&Paste"
-msgstr ""
+msgstr "&Уставіць"
 
 msgid "&Delete"
-msgstr ""
+msgstr "&Выдаліць"
 
 msgid "Sa&ve all"
 msgstr ""
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Зборка"
+msgstr "Пабудова"
 
 msgid "Make 1"
 msgstr ""
@@ -2703,7 +2703,7 @@ msgid "Do you want to overwrite?"
 msgstr ""
 
 msgid "Unknown"
-msgstr ""
+msgstr "Невядомае"
 
 msgid "Error"
 msgstr "Памылка"
@@ -2739,7 +2739,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Выхад"
 
 msgid "Detached"
 msgstr ""
@@ -3129,7 +3129,7 @@ msgid "&Show hidden files"
 msgstr ""
 
 msgid "&Filter"
-msgstr ""
+msgstr "&Фільтр"
 
 msgid "&New dir"
 msgstr ""
