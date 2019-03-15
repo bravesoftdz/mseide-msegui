@@ -1199,7 +1199,7 @@ msgid "Alternate shortcut key"
 msgstr ""
 
 msgid "File"
-msgstr "&Súbor"
+msgstr "Súbor"
 
 msgid "Parameters"
 msgstr ""
@@ -2211,7 +2211,7 @@ msgid "&Save"
 msgstr "&Uložiť"
 
 msgid "&Undo"
-msgstr "&Vrátiť späť"
+msgstr "&Vrátiť"
 
 msgid "&Redo"
 msgstr "&Znovu vykonať"
@@ -2490,7 +2490,7 @@ msgid "Tree"
 msgstr ""
 
 msgid "Help"
-msgstr "&Pomocník"
+msgstr "Pomoc"
 
 msgid "Toggle Form/Inspector"
 msgstr ""

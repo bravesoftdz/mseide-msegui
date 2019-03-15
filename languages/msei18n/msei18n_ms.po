@@ -82,7 +82,7 @@ msgid "&New"
 msgstr "Ba&ru"
 
 msgid "&Edit"
-msgstr "&Edit"
+msgstr "&Sunting"
 
 msgid "&Import"
 msgstr ""

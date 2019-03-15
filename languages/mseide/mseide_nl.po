@@ -159,7 +159,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr "&Ok"
+msgstr "&Oké"
 
 msgid "&Cancel"
 msgstr "&Annuleren"

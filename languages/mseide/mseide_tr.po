@@ -1546,7 +1546,7 @@ msgid "&Form"
 msgstr ""
 
 msgid "&New"
-msgstr "&Yeni Belge"
+msgstr "&Yeni"
 
 msgid "E&xit"
 msgstr ""

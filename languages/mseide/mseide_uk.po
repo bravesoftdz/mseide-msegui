@@ -146,7 +146,7 @@ msgid "State"
 msgstr "Стан"
 
 msgid "Location"
-msgstr ""
+msgstr "Розташування"
 
 msgid "Copy to Clipboard"
 msgstr "Копіювати в буфер"
@@ -254,7 +254,7 @@ msgid "Stack"
 msgstr "Стек"
 
 msgid "Source"
-msgstr ""
+msgstr "Сирцевий код"
 
 msgid "<none>"
 msgstr "<немає>"
@@ -332,7 +332,7 @@ msgid "with:"
 msgstr ""
 
 msgid "<new>"
-msgstr ""
+msgstr "<нова>"
 
 msgid "Syntaxdeffile:"
 msgstr ""
@@ -1207,7 +1207,7 @@ msgid "Parameters"
 msgstr "Параметри"
 
 msgid "Item"
-msgstr "елемент"
+msgstr "Елемент"
 
 msgid "Tool 1"
 msgstr "Інструмент 1"
@@ -1443,7 +1443,7 @@ msgid "&Color"
 msgstr "&Колір"
 
 msgid "Paper size"
-msgstr "Розмір аркуша"
+msgstr "Розмір паперу"
 
 msgid "Paper orientation"
 msgstr ""
@@ -1548,7 +1548,7 @@ msgid "&Form"
 msgstr "&Форма"
 
 msgid "&New"
-msgstr "&Створити"
+msgstr "&Нова"
 
 msgid "E&xit"
 msgstr "Ви&хід"
@@ -1674,7 +1674,7 @@ msgid "&Project"
 msgstr "Пр&оект"
 
 msgid "&About"
-msgstr ""
+msgstr "&Про програму"
 
 msgid "&Configure MSEide"
 msgstr "&Конфігурувати MSEide"
@@ -1776,7 +1776,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "Створити"
+msgstr "Нова"
 
 msgid "Select ancestor"
 msgstr ""
@@ -2213,7 +2213,7 @@ msgid "&Save"
 msgstr "З&берегти"
 
 msgid "&Undo"
-msgstr "&Повернути"
+msgstr "В&ернути"
 
 msgid "&Redo"
 msgstr "По&вторити"
@@ -2348,7 +2348,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr "Правка"
+msgstr "Змінити"
 
 msgid "Select Editpage"
 msgstr ""

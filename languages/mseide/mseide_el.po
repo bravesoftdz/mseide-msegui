@@ -1630,7 +1630,7 @@ msgid "&View"
 msgstr "&Προβολή"
 
 msgid "&Build"
-msgstr ""
+msgstr "&Κατασκευή"
 
 msgid "Make &1"
 msgstr ""
@@ -2469,7 +2469,7 @@ msgid "Toggle Form/Object Inspector"
 msgstr ""
 
 msgid "Build"
-msgstr "Δόμηση"
+msgstr "Κατασκευή"
 
 msgid "Make 1"
 msgstr ""
@@ -3180,7 +3180,7 @@ msgid "&Shortcut"
 msgstr ""
 
 msgid "Action"
-msgstr "Ενέργεια"
+msgstr "Δράση"
 
 msgid "&Default"
 msgstr ""

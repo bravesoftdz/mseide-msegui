@@ -73,16 +73,16 @@ msgid "&Open"
 msgstr "باز کردن"
 
 msgid "&Save"
-msgstr "&ذخیره"
+msgstr "ذخیره"
 
 msgid "Save &as"
 msgstr ""
 
 msgid "&New"
-msgstr "&جدید"
+msgstr "جدید"
 
 msgid "&Edit"
-msgstr "&ویرایش"
+msgstr "ویرایش"
 
 msgid "&Import"
 msgstr ""
@@ -94,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "&درباره"
+msgstr "درباره"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -169,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr "&تایید"
+msgstr "تایید"
 
 msgid "Make Language Units"
 msgstr ""
@@ -241,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&لغو"
+msgstr "لغو"
 
 msgid "&Shortcuts"
 msgstr ""

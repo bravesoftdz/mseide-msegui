@@ -330,7 +330,7 @@ msgid "with:"
 msgstr ""
 
 msgid "<new>"
-msgstr ""
+msgstr "<mới>"
 
 msgid "Syntaxdeffile:"
 msgstr ""
@@ -1774,7 +1774,7 @@ msgid "\" exists."
 msgstr ""
 
 msgid "New"
-msgstr "Tạo mới"
+msgstr "Mới"
 
 msgid "Select ancestor"
 msgstr ""
@@ -1786,7 +1786,7 @@ msgid "Pascal Files"
 msgstr ""
 
 msgid "new"
-msgstr ""
+msgstr "mới"
 
 msgid "Can not load Project \""
 msgstr ""
@@ -2463,7 +2463,7 @@ msgid "Exec Line Hints on/off"
 msgstr ""
 
 msgid "View"
-msgstr "Trình bày"
+msgstr "Xem"
 
 msgid "Toggle Form/Object Inspector"
 msgstr ""

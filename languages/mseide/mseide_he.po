@@ -174,7 +174,7 @@ msgid "&Parameter"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "שם"
 
 msgid "Default Value"
 msgstr "ערך ברירת מחדל"
@@ -621,7 +621,7 @@ msgid "Extra space between lines"
 msgstr ""
 
 msgid "Width"
-msgstr ""
+msgstr "רוחב"
 
 msgid "Height"
 msgstr ""

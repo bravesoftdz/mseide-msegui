@@ -124,7 +124,7 @@ msgid "notranslate"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "टिप्पणी"
 
 msgid "value"
 msgstr ""

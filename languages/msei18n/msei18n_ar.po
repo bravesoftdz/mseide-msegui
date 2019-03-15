@@ -49,7 +49,7 @@ msgid "Type"
 msgstr "النوع"
 
 msgid "Comment"
-msgstr "التعليق"
+msgstr "تعليق"
 
 msgid "Value"
 msgstr "القيمة"
@@ -70,19 +70,19 @@ msgid "Show Color"
 msgstr ""
 
 msgid "&Open"
-msgstr "ا&فتح"
+msgstr "فتح"
 
 msgid "&Save"
-msgstr "ا&حفظ"
+msgstr "حفظ"
 
 msgid "Save &as"
 msgstr "حفظ باسم"
 
 msgid "&New"
-msgstr "&جديد"
+msgstr "جديد"
 
 msgid "&Edit"
-msgstr "ت&حرير"
+msgstr "تغيير"
 
 msgid "&Import"
 msgstr "استيراد"
@@ -94,7 +94,7 @@ msgid "&Make"
 msgstr ""
 
 msgid "&About"
-msgstr "&عن"
+msgstr "حول"
 
 msgid "&Configure MSEi18n"
 msgstr ""
@@ -169,7 +169,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr "&موافق"
+msgstr "موفق"
 
 msgid "Make Language Units"
 msgstr ""
@@ -199,7 +199,7 @@ msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
-msgstr "جميع الملفات "
+msgstr "جميع الملفات"
 
 msgid "Language"
 msgstr "اللغة"
@@ -214,10 +214,10 @@ msgid "on"
 msgstr ""
 
 msgid "OK"
-msgstr "موافق"
+msgstr "موفق"
 
 msgid "Cancel"
-msgstr "إلغاء"
+msgstr "ألغِ"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -241,7 +241,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "أ&لغِ"
+msgstr "ألغِ"
 
 msgid "&Shortcuts"
 msgstr ""

@@ -627,7 +627,7 @@ msgid "Height"
 msgstr "Výška"
 
 msgid "Font"
-msgstr ""
+msgstr "Písmo"
 
 msgid "Color"
 msgstr "Barva"
