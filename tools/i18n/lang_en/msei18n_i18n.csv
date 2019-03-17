@@ -1,5 +1,5 @@
 name,type,notranslate,comment,value,en
-"mainfo,tgroupbox1,tbutton1,caption",vaString,F,,refresh,refresh
+"mainfo,grid,fixcols.items,0:,fixwidgetnames,0:",vaString,F,,trowcount,trowcount
 "mainfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
 "mainfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type,Type
 "mainfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Comment,Comment
@@ -8,7 +8,7 @@ name,type,notranslate,comment,value,en
 "mainfo,stringonly,frame.caption",vaString,F,,string only,string only
 "mainfo,nont,frame.caption",vaString,F,,no NT,no NT
 "mainfo,ntonly,frame.caption",vaString,F,,NT only,NT only
-"mainfo,coloron,frame.caption",vaString,F,,Show Color,Show Color
+"mainfo,coloron,frame.caption",vaString,F,,show color,Show Color
 "mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open,&Open
 "mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Save,&Save
 "mainfo,mainmenu1,menu.submenu.items,2:,caption",vaString,F,,Save &as,Save &as
@@ -20,8 +20,10 @@ name,type,notranslate,comment,value,en
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
-"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,&Refresh,E&xit
+"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,E&xit,E&xit
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
+"mainfo,projectfiledialog,controller.filterlist.data,0:,1:",vaString,F,,*.trp,*.trp
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
 "mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project,Save translate project
 "mainfo,c,strings.data,0:",vaString,F,,name,name
@@ -41,6 +43,13 @@ name,type,notranslate,comment,value,en
 "mainfo,c,strings.data,14:",vaString,F,,Data has changed,Data has changed
 "mainfo,c,strings.data,15:",vaString,F,,Do you wish to save,Do you wish to save
 "mainfo,c,strings.data,16:",vaString,F,,CONFIRMATION,CONFIRMATION
+"mainfo,c,strings.data,17:",vaString,F,,Close error:,Close error:
+"mainfo,c,strings.data,18:",vaString,F,,Total rows:,Total rows:
+"mainfo,c,strings.data,19:",vaString,F,,To translate:,To translate:
+"mainfo,c,strings.data,20:",vaString,F,,To not translate:,To not translate:
+"mainfo,c,strings.data,21:",vaString,F,,Yet translated:,Yet translated:
+"mainfo,c,strings.data,22:",vaString,F,,Not yet translated:,Not yet translated:
+"mainfo,c,strings.data,23:",vaString,F,,,
 "msememodialogfo,caption",vaString,F,,Enter Memo Text,Enter Memo Text
 "msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
 "msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK,&OK
@@ -53,7 +62,9 @@ name,type,notranslate,comment,value,en
 "projectfo,grid,filename,controller.captionopen",vaString,F,,Select unit or form file,Select unit or form file
 "projectfo,datafilename,frame.caption",vaString,F,,Datafile,Datafile
 "projectfo,datafilename,controller.filterlist.data,0:,0:",vaString,F,,MSEi18n Data Files,MSEi18n Data Files
+"projectfo,datafilename,controller.filterlist.data,0:,1:",vaString,F,,*.trd ,*.trd 
 "projectfo,datafilename,controller.filterlist.data,1:,0:",vaString,F,,All files,All files
+"projectfo,datafilename,controller.filterlist.data,1:,1:",vaString,F,,"""*""","""*"""
 "projectfo,grid2,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Language,Language
 "projectfo,grid2,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Directory,Directory
 "projectfo,makecommand,frame.caption",vaString,F,,Make command,Make command
@@ -64,6 +75,7 @@ name,type,notranslate,comment,value,en
 "projectfo,beforemake,frame.caption",vaString,F,,Before make,Before make
 "projectfo,aftermake,frame.caption",vaString,F,,After make,After make
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
+"projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,F,,*.csv,*.csv
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment
@@ -77,12 +89,15 @@ name,type,notranslate,comment,value,en
 "settingsfo,tlayouter1,compiler,controller.captionopen",vaString,F,,Compiler path,Compiler path
 "settingsfo,tlayouter1,compstoredir,hint",vaString,F,,Directory for component store files.,Directory for component store files.
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
+"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,1:",vaString,F,,*.prj,*.prj
 "settingsfo,tlayouter1,compstoredir,controller.captionopen",vaString,F,,Directory for component stores,Directory for component stores
 "settingsfo,tlayouter1,templatedir,hint",vaString,F,,Directory for project template files.,Directory for project template files.
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
+"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,1:",vaString,F,,*.prj,*.prj
 "settingsfo,tlayouter1,templatedir,controller.captionopen",vaString,F,,Project template directory,Project template directory
 "settingsfo,tlayouter1,syntaxdefdir,hint",vaString,F,,Directory for syntax definition files.,Directory for syntax definition files.
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:",vaString,F,,Syntax definitions,Syntax definitions
+"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,1:",vaString,F,,*.sdef,*.sdef
 "settingsfo,tlayouter1,syntaxdefdir,controller.captionopen",vaString,F,,Directory for syntax definition files,Directory for syntax definition files
 "settingsfo,tlayouter1,mselibdir,hint",vaString,F,,Root directory of MSEgui library.,Root directory of MSEgui library.
 "settingsfo,tlayouter1,mselibdir,controller.captionopen",vaString,F,,MSEgui library directory,MSEgui library directory

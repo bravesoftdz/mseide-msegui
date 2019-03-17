@@ -271,6 +271,12 @@ begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
        gridvalue[aindex]:= info.variants[int1];
+     if gridvalue[aindex]= '%ntf$'  // for items missing.
+     then
+     begin
+       gridvalue[aindex]:= valuetext;
+       info.variants[int1] := gridvalue[aindex];
+     end; 
       end
       else begin
        gridvalue[aindex]:= '';
@@ -676,13 +682,12 @@ procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
 var
  aname: string;
  notranslate: boolean;
- acomment: msestring;
- node: tpropinfonode;
+ acomment: msestring;  node: tpropinfonode;
  str1: string;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
- int1: integer;
+ int1, int2: integer;
 begin
  try
   stream.encoding:= aencoding;
@@ -698,6 +703,7 @@ begin
   pointers[0]:= @aname;
   pointers[2]:= @notranslate;
   pointers[3]:= @acomment;
+  
   while not stream.eof do begin
    aname:= '';
    notranslate:= false;
@@ -710,10 +716,21 @@ begin
     node:= rootnode.findsubnode(','+aname);
     if node <> nil then begin
      with node.info do begin
-      donottranslate:= notranslate;
       comment:= acomment;
-      variants:= avariants;
-     end;
+      variants:= avariants; 
+  
+     if (system.pos(':',name) > 0) // for items missing.
+     and  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
+     or (valuetype =vawstring))
+       then 
+       begin
+      if length(variants) > 0 then if trim(variants[0]) = '' then
+         variants[0] := '%ntf$';
+         donottranslate:= false; 
+       end
+        else
+        donottranslate:= notranslate;
+        end;
     end
     else begin
      //todo: errorlist
