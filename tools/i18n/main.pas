@@ -111,6 +111,7 @@ type
                    var cellinfo: cellinfoty; var processed: Boolean);
    procedure showcolordataentered(const sender: TObject);
    procedure loadedexe(const sender: TObject);
+   procedure ondonot(const sender: TObject);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -276,7 +277,10 @@ begin
      begin
        gridvalue[aindex]:= valuetext;
        info.variants[int1] := gridvalue[aindex];
-     end; 
+     //  grid.rowcolorstate[int1]:= 2;
+      end; 
+      //else grid.rowcolorstate[int1]:= 0; 
+     
       end
       else begin
        gridvalue[aindex]:= '';
@@ -589,10 +593,11 @@ end;
 procedure tmainfo.donottranslateonsetvalue(const sender: tobject;
   var avalue, accept: boolean);
 begin
- tpropinfoitem(tree.item).node.info.donottranslate:= avalue;
- datachanged;
- grid.invalidaterow(grid.row);
- formatchanged(sender);
+tpropinfoitem(tree.item).node.info.donottranslate:= avalue;
+datachanged;
+ // updatedata;
+grid.invalidaterow(grid.row);
+
 end;
 
 procedure tmainfo.commentonsetvalue(const sender: tobject;
@@ -724,7 +729,7 @@ begin
      or (valuetype =vawstring))
        then 
        begin
-      if length(variants) > 0 then if trim(variants[0]) = '' then
+     // if length(variants) > 0 then if trim(variants[0]) = '' then
          variants[0] := '%ntf$';
          donottranslate:= false; 
        end
@@ -1313,6 +1318,11 @@ end;
 procedure tmainfo.loadedexe(const sender: TObject);
 begin
  iconbmp.free;
+end;
+
+procedure tmainfo.ondonot(const sender: TObject);
+begin
+removenont(sender); 
 end;
 
 
