@@ -331,6 +331,7 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,frame.caption",vaString,F,,After load gdb script,After load gdb script
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts,gdb Scripts
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,frame.caption",vaString,F,,Processor,Processor
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,0:",vaString,F,,auto,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbsimulator,frame.caption",vaString,F,,Simulator,Simulator
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbdownload,frame.caption",vaString,F,,gdb download,gdb download
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,downloadalways,frame.caption",vaString,F,,"Always download
@@ -392,6 +393,7 @@ bugs"
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,3:",vaString,F,,2 (Make 2),2 (Make 2)
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,4:",vaString,F,,3 (Make 3),3 (Make 3)
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,5:",vaString,F,,4 (Make 4),4 (Make 4)
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,6:",vaString,F,,None,
 "projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile,frame.caption",vaString,F,,&Mainfile,&Mainfile
 "projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile,controller.captionopen",vaString,F,,Select mainfile,Select mainfile
 "projectoptionsfo,tlayouter9,tabwidget,makepage,targetfile,frame.caption",vaString,F,,&Targetfile,&Targetfile
@@ -796,6 +798,8 @@ Martin"
 <n> = 1..6.","Use 'Project'-'Options'-'Macros'-'Active group' number <n>,
 <n> = 1..6."
 "guitemplatesmo,sysenv,defs,4:,6:",vaString,F,,Do not load a project.,Do not load a project.
+"guitemplatesmo,sysenv,defs,5:,6:",vaString,F,,"Do not use a skin, no fades.",
+"guitemplatesmo,sysenv,defs,6:,6:",vaString,F,,Display this help and exit.,
 "guitemplatesmo,sysenv,defs,20:,6:",vaString,F,,Do not touch Z-order of the windows.,Do not touch Z-order of the windows.
 "guitemplatesmo,sysenv,defs,21:,6:",vaString,F,,Do not use the NET_RESTACK_WINDOW protocol.,Do not use the NET_RESTACK_WINDOW protocol.
 "guitemplatesmo,sysenv,defs,22:,6:",vaString,F,,Use the NET_RESTACK_WINDOW protocol.,Use the NET_RESTACK_WINDOW protocol.
@@ -1298,6 +1302,7 @@ for window raise operation. Implies --NORESTACKWINDOW and
 "msepropertyeditorsmo,c,strings.data,10:",vaString,F,,Empty date,Empty date
 "msepropertyeditorsmo,c,strings.data,11:",vaString,F,,Empty time,Empty time
 "msepropertyeditorsmo,c,strings.data,12:",vaString,F,,Do you wish to clear,Do you wish to clear
+"msepropertyeditorsmo,c,strings.data,13:",vaString,F,,Texteditor,
 "msepropertyeditorsmo,c,strings.data,14:",vaString,F,,Invalid component name,Invalid component name
 "integerlisteditor,ok,caption",vaString,F,,&OK,&OK
 "integerlisteditor,cancel,caption",vaString,F,,&Cancel,&Cancel

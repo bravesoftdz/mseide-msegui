@@ -62,7 +62,7 @@ msgstr ""
 msgid "NT only"
 msgstr ""
 
-msgid "Show Color"
+msgid "show color"
 msgstr ""
 
 msgid "&Open"
