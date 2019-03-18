@@ -787,7 +787,9 @@ can be used to override the settings macros.
 Have a lot of fun!
 
 Martin"
+"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,<filepath>,
 "guitemplatesmo,sysenv,defs,0:,6:",vaString,F,,Set path to global status file.,Set path to global status file.
+"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"<name>,<value>{,<name>,<value>}",
 "guitemplatesmo,sysenv,defs,1:,6:",vaString,F,,"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
  Example:
  --macrodef=MAC1,abc,MAC2,def","Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
