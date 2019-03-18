@@ -272,6 +272,7 @@ begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
        gridvalue[aindex]:= info.variants[int1];
+     {
      if gridvalue[aindex]= '%ntf$'  // for items missing.
      then
      begin
@@ -280,7 +281,8 @@ begin
      //  grid.rowcolorstate[int1]:= 2;
       end; 
       //else grid.rowcolorstate[int1]:= 0; 
-     
+      }
+      
       end
       else begin
        gridvalue[aindex]:= '';
@@ -726,22 +728,16 @@ begin
   
      if (system.pos(':',name) > 0) // for items missing.
      and  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
-     or (valuetype =vawstring))
-       then 
-       begin
-     if  notranslate then
-     begin
-      if length(variants) > 0 then if trim(variants[0]) = '' then
-         variants[0] := '%ntf$';
-         donottranslate:= false; 
-      end;   
-       end
-        else
-        donottranslate:= notranslate;
-        end;
-    end
-    else begin
-     //todo: errorlist
+     or (valuetype =vawstring))  then  begin
+           donottranslate:= false; 
+         if (trim(msestringvalue) <> '') then  begin
+            if length(variants) > 0 then if trim(variants[0]) = '' then
+            variants[0] := msestringvalue;
+            end
+            else donottranslate:= true; 
+          end else donottranslate:= notranslate;
+     end;
+        //todo: errorlist
     end;
    end
    else begin

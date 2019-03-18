@@ -601,8 +601,7 @@ object mainfo: tmainfo
       'To not translate:'
       'Yet translated:'
       'Not yet translated:'
-      ''
-    )
+     )
     left = 64
     top = 200
   end
