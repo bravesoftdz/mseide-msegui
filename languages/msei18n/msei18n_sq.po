@@ -67,8 +67,8 @@ msgstr "Jo NT"
 msgid "NT only"
 msgstr "Vetëm NT"
 
-msgid "Show Color"
-msgstr "Shfaq Ngjyrat"
+msgid "show color"
+msgstr "shfaq ngjyrat"
 
 msgid "&Open"
 msgstr "&Hapur"

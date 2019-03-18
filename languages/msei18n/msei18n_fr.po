@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# AlexL <loginov.alex.valer@gmail.com>, 2019
 # Fred vs <fiens@hotmail.com>, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-05 00:07+0000\n"
-"Last-Translator: Fred vs <fiens@hotmail.com>, 2019\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/Magic/teams/44238/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,8 +67,8 @@ msgstr "non NT"
 msgid "NT only"
 msgstr "NT seul"
 
-msgid "Show Color"
-msgstr "Couleur"
+msgid "show color"
+msgstr "couleur"
 
 msgid "&Open"
 msgstr "&Ouvrir"
