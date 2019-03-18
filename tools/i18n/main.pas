@@ -729,9 +729,12 @@ begin
      or (valuetype =vawstring))
        then 
        begin
-     // if length(variants) > 0 then if trim(variants[0]) = '' then
+     if  notranslate then
+     begin
+      if length(variants) > 0 then if trim(variants[0]) = '' then
          variants[0] := '%ntf$';
          donottranslate:= false; 
+      end;   
        end
         else
         donottranslate:= notranslate;
