@@ -25,7 +25,8 @@ uses
  mseglob,msemenus,classes,mclasses,msetypes,msestrings,msethreadcomp,mseguiglob,
  msegui,mseresourceparser,msedialog,msememodialog,mseobjecttext,mseifiglob,
  msesysenv,msemacros,msestringcontainer,mseclasses,mseskin,msebitmap,msejson,
- msewidgets,msedispwidgets,mserichstring,msetimer;
+ msewidgets,msedispwidgets,mserichstring,msetimer,mseificomp,mseificompglob,
+ msescrollbar;
 
 const
  msei18nversiontext = mseguiversiontext;
@@ -67,6 +68,7 @@ type
    trowcount: tstringdisp;
    statusdisp: tstringdisp;
    ttimer1: ttimer;
+   nostring: tbooleanedit;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -112,6 +114,10 @@ type
    procedure showcolordataentered(const sender: TObject);
    procedure loadedexe(const sender: TObject);
    procedure ondonot(const sender: TObject);
+   procedure onsetstringonly(const sender: TObject; var avalue: Boolean;
+                   var accept: Boolean);
+   procedure onsetnosting(const sender: TObject; var avalue: Boolean;
+                   var accept: Boolean);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -319,17 +325,17 @@ end;
 function tmainfo.filternode(const anode: ttreenode): boolean;
 begin
  result:= true;
+ 
  if stringonly.value then begin
   result:= tpropinfonode(anode).info.valuetype in
            [vastring,valstring,vawstring,vautf8string,
                    vanull,valist,vacollection];
- end else
- begin
- {
- result:= tpropinfonode(anode).info.valuetype in
-           [vastring,valstring,vawstring,vautf8string,
-                    vanull,valist,vacollection, vafalse,vatrue];
- }
+ end;
+ 
+ if nostring.value then begin
+  result:= tpropinfonode(anode).info.valuetype in
+           [vanull,valist,vacollection, vafalse,vatrue, vaInt8,vaint16,vaint32,
+            vasingle,vacurrency, vadate, vaIdent, vaSet, vaExtended];
  end;
  
  if result then begin
@@ -818,12 +824,17 @@ begin
              [vastring,valstring,vawstring,vautf8string]);
    if bo1 and bo2 then begin
     writerecord(sender);
+    writeln('writerecord');
    end;
   end;
+  
+  
+   // if nostring.value then bo2 := false;
   if bo2 then begin
    for int1:= 0 to fcount -1 do begin
     writeexprecord(fitems[int1]);
    end;
+   writeln('writeexprecord');
   end;
  end;
 end;
@@ -845,10 +856,14 @@ var
  stream: ttextdatastream;
  str1: filenamety;
 begin
- if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
-  stream:= ttextdatastream.create(str1,fm_create);
-  doexport(stream,charencodingty(projectfo.impexpencoding.value));
- end;
+if nostring.value then
+showmessage('Exportation with -no string- is not allowed.') else
+    begin     
+    if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
+    stream:= ttextdatastream.create(str1,fm_create);
+    doexport(stream,charencodingty(projectfo.impexpencoding.value));
+    end;
+ end;   
 end;
 
 procedure tmainfo.clearonexecute(const sender: tobject);
@@ -1358,6 +1373,22 @@ end;
 procedure tmainfo.ondonot(const sender: TObject);
 begin
 removenont(sender); 
+end;
+
+procedure tmainfo.onsetstringonly(const sender: TObject; var avalue: Boolean;
+               var accept: Boolean);
+begin
+ if avalue then begin
+  nostring.value:= false;
+ end;
+end;
+
+procedure tmainfo.onsetnosting(const sender: TObject; var avalue: Boolean;
+               var accept: Boolean);
+begin
+ if avalue then begin
+  stringonly.value:= false;
+ end;
 end;
 
 
