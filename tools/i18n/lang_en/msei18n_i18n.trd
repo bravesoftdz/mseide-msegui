@@ -532,7 +532,6 @@ mainfo,vaNull,F,,,
 "mainfo,c,strings.data,20:",vaString,F,,To not translate:,To not translate:
 "mainfo,c,strings.data,21:",vaString,F,,Yet translated:,Yet translated:
 "mainfo,c,strings.data,22:",vaString,F,,Not yet translated:,Not yet translated:
-"mainfo,c,strings.data,23:",vaString,T,,,
 "mainfo,c,left",vaInt8,F,,64,
 "mainfo,c,top",vaInt16,F,,200,
 "mainfo,tskincontroller1",vaNull,F,,,

@@ -143,9 +143,9 @@ watchpointsfo,vaNull,F,,,
 "watchpointsfo,grid,wptkind,dropdown.cols.items",vaCollection,F,,,
 "watchpointsfo,grid,wptkind,dropdown.cols.items,0:",vaList,F,,,
 "watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data",vaList,F,,,
-"watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data,0:",vaString,T,,W,
-"watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data,1:",vaString,T,,R/W,
-"watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data,2:",vaString,T,,R,
+"watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data,0:",vaString,T,,W,W
+"watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data,1:",vaString,T,,R/W,R/W
+"watchpointsfo,grid,wptkind,dropdown.cols.items,0:,data,2:",vaString,T,,R,R
 "watchpointsfo,grid,wptkind,value",vaInt8,F,,0,
 "watchpointsfo,grid,wptkind,valuedefault",vaInt8,F,,0,
 "watchpointsfo,grid,wptkind,valuemin",vaInt8,F,,0,
@@ -1025,7 +1025,7 @@ templateeditorfo,vaNull,F,,,
 "templateeditorfo,savefiledialog,controller.filterlist.data",vaList,F,,,
 "templateeditorfo,savefiledialog,controller.filterlist.data,0:",vaList,F,,,
 "templateeditorfo,savefiledialog,controller.filterlist.data,0:,0:",vaString,F,,Code Temlate Files,Code Temlate Files
-"templateeditorfo,savefiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.mct,
+"templateeditorfo,savefiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.mct,*.mct
 "templateeditorfo,savefiledialog,controller.defaultext",vaString,T,,mct,
 "templateeditorfo,savefiledialog,controller.options",vaSet,F,,"[fdo_save,fdo_checkexist,fdo_savelastdir]",
 "templateeditorfo,savefiledialog,left",vaInt16,F,,200,
@@ -1346,10 +1346,10 @@ storedcomponentinfodialogfo,vaNull,F,,,
 "storedcomponentinfodialogfo,filepath,controller.filterlist.data",vaList,F,,,
 "storedcomponentinfodialogfo,filepath,controller.filterlist.data,0:",vaList,F,,,
 "storedcomponentinfodialogfo,filepath,controller.filterlist.data,0:,0:",vaString,F,,Component File,Component File
-"storedcomponentinfodialogfo,filepath,controller.filterlist.data,0:,1:",vaString,T,,*.cmp,
+"storedcomponentinfodialogfo,filepath,controller.filterlist.data,0:,1:",vaString,T,,*.cmp,*.cmp
 "storedcomponentinfodialogfo,filepath,controller.filterlist.data,1:",vaList,F,,,
 "storedcomponentinfodialogfo,filepath,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"storedcomponentinfodialogfo,filepath,controller.filterlist.data,1:,1:",vaString,T,,*,
+"storedcomponentinfodialogfo,filepath,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "storedcomponentinfodialogfo,filepath,controller.defaultext",vaString,T,,cmp,
 "storedcomponentinfodialogfo,filepath,controller.options",vaSet,F,,"[fdo_save,fdo_checkexist,fdo_savelastdir]",
 "storedcomponentinfodialogfo,filepath,controller.captionsave",vaString,F,,Component File,Component File
@@ -1767,8 +1767,8 @@ sourcefo,vaNull,F,,,
 "sourcefo,syntaxpainter",vaNull,F,,,
 "sourcefo,syntaxpainter,defdefs.data",vaList,F,,,
 "sourcefo,syntaxpainter,defdefs.data,0:",vaList,F,,,
-"sourcefo,syntaxpainter,defdefs.data,0:,0:",vaString,T,,*.pas,
-"sourcefo,syntaxpainter,defdefs.data,0:,1:",vaString,T,,pas.sdef,
+"sourcefo,syntaxpainter,defdefs.data,0:,0:",vaString,T,,*.pas,*.pas
+"sourcefo,syntaxpainter,defdefs.data,0:,1:",vaString,T,,pas.sdef,pas.sdef
 "sourcefo,syntaxpainter,left",vaInt8,F,,32,
 "sourcefo,syntaxpainter,top",vaInt8,F,,64,
 "sourcefo,imagelist",vaNull,F,,,
@@ -3075,7 +3075,7 @@ projecttreefo,vaNull,F,,,
 "projecttreefo,cmoduledialog,controller.filterlist.data",vaList,F,,,
 "projecttreefo,cmoduledialog,controller.filterlist.data,0:",vaList,F,,,
 "projecttreefo,cmoduledialog,controller.filterlist.data,0:,0:",vaString,F,,C-Source (*.c),C-Source (*.c)
-"projecttreefo,cmoduledialog,controller.filterlist.data,0:,1:",vaString,T,,"""*.c""",
+"projecttreefo,cmoduledialog,controller.filterlist.data,0:,1:",vaString,T,,"""*.c""","""*.c"""
 "projecttreefo,cmoduledialog,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "projecttreefo,cmoduledialog,controller.historymaxcount",vaInt8,F,,0,
 "projecttreefo,cmoduledialog,left",vaInt8,F,,96,
@@ -3406,7 +3406,7 @@ projectoptionsfo,vaNull,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data,0:,0:",vaString,F,,Syntaxdef files,Syntaxdef files
-"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data,0:,1:",vaString,T,,*.sdef,
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data,0:,1:",vaString,T,,*.sdef,*.sdef
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.ongetfilename",vaIdent,F,,expandfilename,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffilemask",vaNull,F,,,
@@ -4211,8 +4211,8 @@ on save"
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,0:",vaString,F,,Locale,Locale
-"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,1:",vaString,T,,utf8,
-"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,2:",vaString,T,,iso8859-1,
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,1:",vaString,T,,utf8,utf8
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,2:",vaString,T,,iso8859-1,iso8859-1
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,value",vaInt8,F,,0,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,onsetvalue",vaIdent,F,,encodingsetvalue,
 "projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,reffontheight",vaInt8,F,,14,
@@ -4893,16 +4893,16 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,bounds_cy",vaInt16,F,,307,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,anchors",vaSet,F,,"[an_left,an_top,an_right,an_bottom]",
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items",vaList,F,,,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,0:",vaString,T,,uploadcommand,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,1:",vaString,T,,gdbloadtimeout,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,2:",vaString,T,,gdbloadtimeout,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,3:",vaString,T,,gdbservercommand,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,4:",vaString,T,,gdbservercommand,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,5:",vaString,T,,gdbserverwait,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,6:",vaString,T,,gdbserverstartonce,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,7:",vaString,T,,gdbservercommandattach,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,8:",vaString,T,,gdbservercommandattach,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,9:",vaString,T,,nogdbserverexit,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,0:",vaString,T,,uploadcommand,uploadcommand
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,1:",vaString,T,,gdbloadtimeout,gdbloadtimeout
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,2:",vaString,T,,gdbloadtimeout,gdbloadtimeout
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,3:",vaString,T,,gdbservercommand,gdbservercommand
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,4:",vaString,T,,gdbservercommand,gdbservercommand
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,5:",vaString,T,,gdbserverwait,gdbserverwait
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,6:",vaString,T,,gdbserverstartonce,gdbserverstartonce
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,7:",vaString,T,,gdbservercommandattach,gdbservercommandattach
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,8:",vaString,T,,gdbservercommandattach,gdbservercommandattach
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,taborderoverride.items,9:",vaString,T,,nogdbserverexit,nogdbserverexit
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,caption",vaString,F,,&Target,&Target
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,onlayout",vaIdent,F,,debugtargetlayoutev,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,reffontheight",vaInt8,F,,14,
@@ -4965,7 +4965,7 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts,gdb Scripts
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,*.gdb
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,tsplitter7",vaNull,F,,,
@@ -5006,7 +5006,7 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts,gdb Scripts
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,*.gdb
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,tsplitter9",vaNull,F,,,
@@ -5048,7 +5048,7 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts,gdb Scripts
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,*.gdb
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5",vaNull,F,,,
@@ -5090,7 +5090,7 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts,gdb Scripts
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,*.gdb
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,tsplitter8",vaNull,F,,,
@@ -5131,7 +5131,7 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:,0:",vaString,F,,gdb Scripts,gdb Scripts
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:,1:",vaString,T,,*.gdb,*.gdb
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,tsplitter10",vaNull,F,,,
@@ -5189,14 +5189,14 @@ use Shift + arrow keys to resize selected components without grid snap."
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items",vaCollection,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data",vaList,F,,,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,0:",vaString,F,,auto,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,1:",vaString,T,,i386,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,2:",vaString,T,,x86_64,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,3:",vaString,T,,arm,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,4:",vaString,T,,armm3,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,5:",vaString,T,,cpu32,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,6:",vaString,T,,avr32,
-"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,7:",vaString,T,,rl78,
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,0:",vaString,F,,auto,auto
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,1:",vaString,T,,i386,i386
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,2:",vaString,T,,x86_64,x86_64
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,3:",vaString,T,,arm,arm
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,4:",vaString,T,,armm3,armm3
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,5:",vaString,T,,cpu32,cpu32
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,6:",vaString,T,,avr32,avr32
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,7:",vaString,T,,rl78,rl78
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbsimulator",vaNull,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbsimulator,frame.caption",vaString,F,,Simulator,Simulator
@@ -5878,7 +5878,7 @@ bugs"
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,3:",vaString,F,,2 (Make 2),2 (Make 2)
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,4:",vaString,F,,3 (Make 3),3 (Make 3)
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,5:",vaString,F,,4 (Make 4),4 (Make 4)
-"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,6:",vaString,F,,None,
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,6:",vaString,F,,None,None
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,value",vaInt8,F,,0,
 "projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile",vaNull,F,,,
@@ -8467,10 +8467,10 @@ bugs"
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,0:,0:",vaString,F,,Source,Source
-"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,0:,1:",vaString,T,,"""*.pas"" ""*.pp""",
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,0:,1:",vaString,T,,"""*.pas"" ""*.pp""","""*.pas"" ""*.pp"""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,1:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,1:,1:",vaString,T,,*,
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.ongetfilename",vaIdent,F,,expandfilename,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms",vaNull,F,,,
@@ -8499,10 +8499,10 @@ bugs"
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,0:,0:",vaString,F,,Form Files,Form Files
-"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,0:,1:",vaString,T,,*.mfm,
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,0:,1:",vaString,T,,*.mfm,*.mfm
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,1:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,1:,1:",vaString,T,,*,
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.ongetfilename",vaIdent,F,,expandfilename,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,reffontheight",vaInt8,F,,14,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage15",vaNull,F,,,
@@ -8971,10 +8971,10 @@ bugs"
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,0:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,0:,0:",vaString,F,,Project Files,Project Files
-"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,0:,1:",vaString,T,,*.prj,
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,0:,1:",vaString,T,,*.prj,*.prj
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,1:",vaList,F,,,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,1:,1:",vaString,T,,*,
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.defaultext",vaString,T,,prj,
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.captionopen",vaString,F,,Enter Settings File,Enter Settings File
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,reffontheight",vaInt8,F,,14,
@@ -10798,10 +10798,10 @@ memoryfo,vaNull,F,,,
 "memoryfo,tlayouter1,bitwidth,dropdown.cols.items",vaCollection,F,,,
 "memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:",vaList,F,,,
 "memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data",vaList,F,,,
-"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,0:",vaString,T,,8,
-"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,1:",vaString,T,,16,
-"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,2:",vaString,T,,32,
-"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,3:",vaString,T,,64,
+"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,0:",vaString,T,,8,8
+"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,1:",vaString,T,,16,16
+"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,2:",vaString,T,,32,32
+"memoryfo,tlayouter1,bitwidth,dropdown.cols.items,0:,data,3:",vaString,T,,64,64
 "memoryfo,tlayouter1,bitwidth,value",vaInt8,F,,0,
 "memoryfo,tlayouter1,bitwidth,reffontheight",vaInt8,F,,16,
 "memoryfo,tlayouter1,cnt",vaNull,F,,,
@@ -11436,10 +11436,10 @@ mainfo,vaNull,F,,,
 "mainfo,projectfiledia,controller.filterlist.data",vaList,F,,,
 "mainfo,projectfiledia,controller.filterlist.data,0:",vaList,F,,,
 "mainfo,projectfiledia,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
-"mainfo,projectfiledia,controller.filterlist.data,0:,1:",vaString,T,,*.prj,
+"mainfo,projectfiledia,controller.filterlist.data,0:,1:",vaString,T,,*.prj,*.prj
 "mainfo,projectfiledia,controller.filterlist.data,1:",vaList,F,,,
 "mainfo,projectfiledia,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"mainfo,projectfiledia,controller.filterlist.data,1:,1:",vaString,T,,*,
+"mainfo,projectfiledia,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "mainfo,projectfiledia,controller.defaultext",vaString,T,,prj,
 "mainfo,projectfiledia,controller.captionopen",vaString,F,,Open Project,Open Project
 "mainfo,projectfiledia,controller.captionsave",vaString,F,,Save Project,Save Project
@@ -11512,7 +11512,7 @@ mainfo,vaNull,F,,,
 "mainfo,openform,controller.filterlist.data",vaList,F,,,
 "mainfo,openform,controller.filterlist.data,0:",vaList,F,,,
 "mainfo,openform,controller.filterlist.data,0:,0:",vaString,F,,Form Files,Form Files
-"mainfo,openform,controller.filterlist.data,0:,1:",vaString,T,,*.mfm,
+"mainfo,openform,controller.filterlist.data,0:,1:",vaString,T,,*.mfm,*.mfm
 "mainfo,openform,controller.defaultext",vaString,T,,mfm,
 "mainfo,openform,controller.options",vaSet,F,,[fdo_checkexist],
 "mainfo,openform,controller.captionopen",vaString,F,,Open Form File,Open Form File
@@ -11648,21 +11648,21 @@ Martin"
 "guitemplatesmo,sysenv,defs",vaList,F,,,
 "guitemplatesmo,sysenv,defs,0:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,0:,0:",vaIdent,F,,ak_pararg,
-"guitemplatesmo,sysenv,defs,0:,1:",vaString,T,,-globstatfile,
+"guitemplatesmo,sysenv,defs,0:,1:",vaString,T,,-globstatfile,-globstatfile
 "guitemplatesmo,sysenv,defs,0:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,0:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,0:,4:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,<filepath>,
+"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,<filepath>,<filepath>
 "guitemplatesmo,sysenv,defs,0:,6:",vaString,F,,Set path to global status file.,Set path to global status file.
 "guitemplatesmo,sysenv,defs,0:,7:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,0:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,1:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,1:,0:",vaIdent,F,,ak_pararg,
-"guitemplatesmo,sysenv,defs,1:,1:",vaString,T,,-macrodef,
+"guitemplatesmo,sysenv,defs,1:,1:",vaString,T,,-macrodef,-macrodef
 "guitemplatesmo,sysenv,defs,1:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,1:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,1:,4:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"<name>,<value>{,<name>,<value>}",
+"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"<name>,<value>{,<name>,<value>}","<name>,<value>{,<name>,<value>}"
 "guitemplatesmo,sysenv,defs,1:,6:",vaString,F,,"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
  Example:
  --macrodef=MAC1,abc,MAC2,def","Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
@@ -11672,7 +11672,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,1:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,2:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,2:,1:",vaString,T,,-storeglobalmacros,
+"guitemplatesmo,sysenv,defs,2:,1:",vaString,T,,-storeglobalmacros,-storeglobalmacros
 "guitemplatesmo,sysenv,defs,2:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,2:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,2:,4:",vaString,T,,,
@@ -11682,11 +11682,11 @@ Martin"
 "guitemplatesmo,sysenv,defs,2:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,3:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,3:,0:",vaIdent,F,,ak_pararg,
-"guitemplatesmo,sysenv,defs,3:,1:",vaString,T,,-macrogroup,
+"guitemplatesmo,sysenv,defs,3:,1:",vaString,T,,-macrogroup,-macrogroup
 "guitemplatesmo,sysenv,defs,3:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,3:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,3:,4:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,3:,5:",vaString,T,,<n>,
+"guitemplatesmo,sysenv,defs,3:,5:",vaString,T,,<n>,<n>
 "guitemplatesmo,sysenv,defs,3:,6:",vaString,F,,"Use 'Project'-'Options'-'Macros'-'Active group' number <n>,
 <n> = 1..6.","Use 'Project'-'Options'-'Macros'-'Active group' number <n>,
 <n> = 1..6."
@@ -11694,7 +11694,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,3:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,4:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,4:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,4:,1:",vaString,T,,np,
+"guitemplatesmo,sysenv,defs,4:,1:",vaString,T,,np,np
 "guitemplatesmo,sysenv,defs,4:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,4:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,4:,4:",vaString,T,,,
@@ -11704,27 +11704,27 @@ Martin"
 "guitemplatesmo,sysenv,defs,4:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,5:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,5:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,5:,1:",vaString,T,,ns,
+"guitemplatesmo,sysenv,defs,5:,1:",vaString,T,,ns,ns
 "guitemplatesmo,sysenv,defs,5:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,5:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,5:,4:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,5:,5:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,5:,6:",vaString,F,,"Do not use a skin, no fades.",
+"guitemplatesmo,sysenv,defs,5:,6:",vaString,F,,"Do not use a skin, no fades.","Do not use a skin, no fades."
 "guitemplatesmo,sysenv,defs,5:,7:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,5:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,6:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,6:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,6:,1:",vaString,T,,-help,
+"guitemplatesmo,sysenv,defs,6:,1:",vaString,T,,-help,-help
 "guitemplatesmo,sysenv,defs,6:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,6:,3:",vaSet,F,,[arf_help],
 "guitemplatesmo,sysenv,defs,6:,4:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,6:,5:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,6:,6:",vaString,F,,Display this help and exit.,
+"guitemplatesmo,sysenv,defs,6:,6:",vaString,F,,Display this help and exit.,Display this help and exit.
 "guitemplatesmo,sysenv,defs,6:,7:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,6:,8:",vaString,T,, ,
 "guitemplatesmo,sysenv,defs,7:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,7:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,7:,1:",vaString,T,,FPCDIR,
+"guitemplatesmo,sysenv,defs,7:,1:",vaString,T,,FPCDIR,FPCDIR
 "guitemplatesmo,sysenv,defs,7:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,7:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,7:,4:",vaString,T,,,
@@ -11734,7 +11734,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,7:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,8:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,8:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,8:,1:",vaString,T,,FPCLIBDIR,
+"guitemplatesmo,sysenv,defs,8:,1:",vaString,T,,FPCLIBDIR,FPCLIBDIR
 "guitemplatesmo,sysenv,defs,8:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,8:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,8:,4:",vaString,T,,,
@@ -11744,7 +11744,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,8:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,9:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,9:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,9:,1:",vaString,T,,MSEDIR,
+"guitemplatesmo,sysenv,defs,9:,1:",vaString,T,,MSEDIR,MSEDIR
 "guitemplatesmo,sysenv,defs,9:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,9:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,9:,4:",vaString,T,,,
@@ -11754,7 +11754,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,9:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,10:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,10:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,10:,1:",vaString,T,,MSELIBDIR,
+"guitemplatesmo,sysenv,defs,10:,1:",vaString,T,,MSELIBDIR,MSELIBDIR
 "guitemplatesmo,sysenv,defs,10:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,10:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,10:,4:",vaString,T,,,
@@ -11764,7 +11764,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,10:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,11:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,11:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,11:,1:",vaString,T,,SYNTAXDEFDIR,
+"guitemplatesmo,sysenv,defs,11:,1:",vaString,T,,SYNTAXDEFDIR,SYNTAXDEFDIR
 "guitemplatesmo,sysenv,defs,11:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,11:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,11:,4:",vaString,T,,,
@@ -11774,7 +11774,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,11:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,12:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,12:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,12:,1:",vaString,T,,TEMPLATEDIR,
+"guitemplatesmo,sysenv,defs,12:,1:",vaString,T,,TEMPLATEDIR,TEMPLATEDIR
 "guitemplatesmo,sysenv,defs,12:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,12:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,12:,4:",vaString,T,,,
@@ -11784,7 +11784,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,12:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,13:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,13:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,13:,1:",vaString,T,,COMPSTOREDIR,
+"guitemplatesmo,sysenv,defs,13:,1:",vaString,T,,COMPSTOREDIR,COMPSTOREDIR
 "guitemplatesmo,sysenv,defs,13:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,13:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,13:,4:",vaString,T,,,
@@ -11794,7 +11794,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,13:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,14:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,14:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,14:,1:",vaString,T,,COMPILER,
+"guitemplatesmo,sysenv,defs,14:,1:",vaString,T,,COMPILER,COMPILER
 "guitemplatesmo,sysenv,defs,14:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,14:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,14:,4:",vaString,T,,,
@@ -11804,7 +11804,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,14:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,15:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,15:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,15:,1:",vaString,T,,DEBUGGER,
+"guitemplatesmo,sysenv,defs,15:,1:",vaString,T,,DEBUGGER,DEBUGGER
 "guitemplatesmo,sysenv,defs,15:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,15:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,15:,4:",vaString,T,,,
@@ -11814,7 +11814,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,15:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,16:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,16:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,16:,1:",vaString,T,,EXEEXT,
+"guitemplatesmo,sysenv,defs,16:,1:",vaString,T,,EXEEXT,EXEEXT
 "guitemplatesmo,sysenv,defs,16:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,16:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,16:,4:",vaString,T,,,
@@ -11824,7 +11824,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,16:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,17:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,17:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,17:,1:",vaString,T,,TARGET,
+"guitemplatesmo,sysenv,defs,17:,1:",vaString,T,,TARGET,TARGET
 "guitemplatesmo,sysenv,defs,17:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,17:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,17:,4:",vaString,T,,,
@@ -11834,7 +11834,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,17:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,18:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,18:,0:",vaIdent,F,,ak_envvar,
-"guitemplatesmo,sysenv,defs,18:,1:",vaString,T,,TARGETOSDIR,
+"guitemplatesmo,sysenv,defs,18:,1:",vaString,T,,TARGETOSDIR,TARGETOSDIR
 "guitemplatesmo,sysenv,defs,18:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,18:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,18:,4:",vaString,T,,,
@@ -11854,7 +11854,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,19:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,20:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,20:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,20:,1:",vaString,T,,-NOZORDERHANDLING,
+"guitemplatesmo,sysenv,defs,20:,1:",vaString,T,,-NOZORDERHANDLING,-NOZORDERHANDLING
 "guitemplatesmo,sysenv,defs,20:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,20:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,20:,4:",vaString,T,,,
@@ -11864,7 +11864,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,20:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,21:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,21:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,21:,1:",vaString,T,,-NORESTACKWINDOW,
+"guitemplatesmo,sysenv,defs,21:,1:",vaString,T,,-NORESTACKWINDOW,-NORESTACKWINDOW
 "guitemplatesmo,sysenv,defs,21:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,21:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,21:,4:",vaString,T,,,
@@ -11874,7 +11874,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,21:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,22:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,22:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,22:,1:",vaString,T,,-RESTACKWINDOW,
+"guitemplatesmo,sysenv,defs,22:,1:",vaString,T,,-RESTACKWINDOW,-RESTACKWINDOW
 "guitemplatesmo,sysenv,defs,22:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,22:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,22:,4:",vaString,T,,,
@@ -11884,7 +11884,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,22:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,23:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,23:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,23:,1:",vaString,T,,-NORECONFIGUREWMWINDOW,
+"guitemplatesmo,sysenv,defs,23:,1:",vaString,T,,-NORECONFIGUREWMWINDOW,-NORECONFIGUREWMWINDOW
 "guitemplatesmo,sysenv,defs,23:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,23:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,23:,4:",vaString,T,,,
@@ -11894,7 +11894,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,23:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,24:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,24:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,24:,1:",vaString,T,,-RECONFIGUREWMWINDOW,
+"guitemplatesmo,sysenv,defs,24:,1:",vaString,T,,-RECONFIGUREWMWINDOW,-RECONFIGUREWMWINDOW
 "guitemplatesmo,sysenv,defs,24:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,24:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,24:,4:",vaString,T,,,
@@ -11904,7 +11904,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,24:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,25:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,25:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,25:,1:",vaString,T,,-STACKMODEBELOWWORKAROUND,
+"guitemplatesmo,sysenv,defs,25:,1:",vaString,T,,-STACKMODEBELOWWORKAROUND,-STACKMODEBELOWWORKAROUND
 "guitemplatesmo,sysenv,defs,25:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,25:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,25:,4:",vaString,T,,,
@@ -11914,7 +11914,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,25:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,26:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,26:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,26:,1:",vaString,T,,-NOSTACKMODEBELOWWORKAROUND,
+"guitemplatesmo,sysenv,defs,26:,1:",vaString,T,,-NOSTACKMODEBELOWWORKAROUND,-NOSTACKMODEBELOWWORKAROUND
 "guitemplatesmo,sysenv,defs,26:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,26:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,26:,4:",vaString,T,,,
@@ -11924,7 +11924,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,26:,8:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,27:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,27:,0:",vaIdent,F,,ak_par,
-"guitemplatesmo,sysenv,defs,27:,1:",vaString,T,,-TOPLEVELRAISE,
+"guitemplatesmo,sysenv,defs,27:,1:",vaString,T,,-TOPLEVELRAISE,-TOPLEVELRAISE
 "guitemplatesmo,sysenv,defs,27:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,27:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,27:,4:",vaString,T,,,
@@ -19203,10 +19203,10 @@ componentstorefo,vaNull,F,,,
 "componentstorefo,grid,filepath,controller.filterlist.data",vaList,F,,,
 "componentstorefo,grid,filepath,controller.filterlist.data,0:",vaList,F,,,
 "componentstorefo,grid,filepath,controller.filterlist.data,0:,0:",vaString,F,,Component File,Component File
-"componentstorefo,grid,filepath,controller.filterlist.data,0:,1:",vaString,T,,*.cmp,
+"componentstorefo,grid,filepath,controller.filterlist.data,0:,1:",vaString,T,,*.cmp,*.cmp
 "componentstorefo,grid,filepath,controller.filterlist.data,1:",vaList,F,,,
 "componentstorefo,grid,filepath,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"componentstorefo,grid,filepath,controller.filterlist.data,1:,1:",vaString,T,,*,
+"componentstorefo,grid,filepath,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "componentstorefo,grid,filepath,controller.defaultext",vaString,T,,cmp,
 "componentstorefo,grid,filepath,reffontheight",vaInt8,F,,14,
 "componentstorefo,copycompact",vaNull,F,,,
@@ -19309,7 +19309,7 @@ componentstorefo,vaNull,F,,,
 "componentstorefo,storefiledialog,controller.filterlist.data",vaList,F,,,
 "componentstorefo,storefiledialog,controller.filterlist.data,0:",vaList,F,,,
 "componentstorefo,storefiledialog,controller.filterlist.data,0:,0:",vaString,F,,Component Stores,Component Stores
-"componentstorefo,storefiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.sto,
+"componentstorefo,storefiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.sto,*.sto
 "componentstorefo,storefiledialog,controller.defaultext",vaString,T,,sto,
 "componentstorefo,storefiledialog,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "componentstorefo,storefiledialog,controller.captionopen",vaString,F,,Load Component Store,Load Component Store
@@ -19321,7 +19321,7 @@ componentstorefo,vaNull,F,,,
 "componentstorefo,groupfiledialog,controller.filterlist.data",vaList,F,,,
 "componentstorefo,groupfiledialog,controller.filterlist.data,0:",vaList,F,,,
 "componentstorefo,groupfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Store Groups,Store Groups
-"componentstorefo,groupfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.stg,
+"componentstorefo,groupfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.stg,*.stg
 "componentstorefo,groupfiledialog,controller.defaultext",vaString,T,,stg,
 "componentstorefo,groupfiledialog,controller.captionopen",vaString,F,,Open Store Group,Open Store Group
 "componentstorefo,groupfiledialog,controller.captionsave",vaString,F,,Save Store Group,Save Store Group
@@ -19338,10 +19338,10 @@ componentstorefo,vaNull,F,,,
 "componentstorefo,compfiledialog,controller.filterlist.data",vaList,F,,,
 "componentstorefo,compfiledialog,controller.filterlist.data,0:",vaList,F,,,
 "componentstorefo,compfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Component File,Component File
-"componentstorefo,compfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.cmp,
+"componentstorefo,compfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.cmp,*.cmp
 "componentstorefo,compfiledialog,controller.filterlist.data,1:",vaList,F,,,
 "componentstorefo,compfiledialog,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"componentstorefo,compfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*,
+"componentstorefo,compfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "componentstorefo,compfiledialog,controller.defaultext",vaString,T,,cmp,
 "componentstorefo,compfiledialog,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "componentstorefo,compfiledialog,controller.captionopen",vaString,F,,Select Component File,Select Component File
@@ -19358,7 +19358,7 @@ componentstorefo,vaNull,F,,,
 "componentstorefo,c,strings.data,6:",vaString,F,,Error while writing the storegroup.,Error while writing the storegroup.
 "componentstorefo,c,strings.data,7:",vaString,F,,ERROR,ERROR
 "componentstorefo,c,strings.data,8:",vaString,F,,"Do you want to remove ""","Do you want to remove """
-"componentstorefo,c,strings.data,9:",vaString,T,,"""?",
+"componentstorefo,c,strings.data,9:",vaString,T,,"""?","""?"
 "componentstorefo,c,strings.data,10:",vaString,F,,""" branch?",""" branch?"
 "componentstorefo,c,strings.data,11:",vaString,F,,"File ""","File """
 "componentstorefo,c,strings.data,12:",vaString,F,,""" does not exist, do you want to create it?",""" does not exist, do you want to create it?"
@@ -22461,7 +22461,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:",vaList,F,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
-"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,1:",vaString,T,,*.prj,
+"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,1:",vaString,T,,*.prj,*.prj
 "settingsfo,tlayouter1,compstoredir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,compstoredir,controller.captionopen",vaString,F,,Directory for component stores,Directory for component stores
 "settingsfo,tlayouter1,compstoredir,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -22492,7 +22492,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:",vaList,F,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
-"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,1:",vaString,T,,*.prj,
+"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,1:",vaString,T,,*.prj,*.prj
 "settingsfo,tlayouter1,templatedir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,templatedir,controller.captionopen",vaString,F,,Project template directory,Project template directory
 "settingsfo,tlayouter1,templatedir,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -22523,7 +22523,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:",vaList,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:",vaString,F,,Syntax definitions,Syntax definitions
-"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,1:",vaString,T,,*.sdef,
+"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,1:",vaString,T,,*.sdef,*.sdef
 "settingsfo,tlayouter1,syntaxdefdir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,syntaxdefdir,controller.captionopen",vaString,F,,Directory for syntax definition files,Directory for syntax definition files
 "settingsfo,tlayouter1,syntaxdefdir,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -22945,7 +22945,7 @@ msepropertyeditorsmo,vaNull,F,,,
 "msepropertyeditorsmo,c,strings.data,10:",vaString,F,,Empty date,Empty date
 "msepropertyeditorsmo,c,strings.data,11:",vaString,F,,Empty time,Empty time
 "msepropertyeditorsmo,c,strings.data,12:",vaString,F,,Do you wish to clear,Do you wish to clear
-"msepropertyeditorsmo,c,strings.data,13:",vaString,F,,Texteditor,
+"msepropertyeditorsmo,c,strings.data,13:",vaString,F,,Texteditor,Texteditor
 "msepropertyeditorsmo,c,strings.data,14:",vaString,F,,Invalid component name,Invalid component name
 "msepropertyeditorsmo,c,left",vaInt8,F,,32,
 "msepropertyeditorsmo,c,top",vaInt8,F,,40,
@@ -24704,10 +24704,10 @@ Opacity"
 "fadeeditfo,filedialog,controller.filterlist.data",vaList,F,,,
 "fadeeditfo,filedialog,controller.filterlist.data,0:",vaList,F,,,
 "fadeeditfo,filedialog,controller.filterlist.data,0:,0:",vaString,F,,Fade Files,Fade Files
-"fadeeditfo,filedialog,controller.filterlist.data,0:,1:",vaString,T,,*.fad,
+"fadeeditfo,filedialog,controller.filterlist.data,0:,1:",vaString,T,,*.fad,*.fad
 "fadeeditfo,filedialog,controller.filterlist.data,1:",vaList,F,,,
 "fadeeditfo,filedialog,controller.filterlist.data,1:,0:",vaString,F,,All Files,All Files
-"fadeeditfo,filedialog,controller.filterlist.data,1:,1:",vaString,T,,*,
+"fadeeditfo,filedialog,controller.filterlist.data,1:,1:",vaString,T,,*,*
 "fadeeditfo,filedialog,controller.defaultext",vaString,T,,fad,
 "fadeeditfo,filedialog,controller.options",vaSet,F,,"[fdo_checkexist,fdo_savelastdir]",
 "fadeeditfo,filedialog,controller.captionopen",vaString,F,,Load Fade File,Load Fade File
