@@ -145,6 +145,7 @@ type
 var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
+ nontarray : Array of string;
 
 implementation
 uses
@@ -260,18 +261,39 @@ procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
   const aindex: integer; const aitem: tlistitem);
 var
  int1: integer;
+ isnont : boolean = false;
 begin
  with tpropinfoitem(aitem) do begin
   if node <> nil then begin
-   with node do begin
+   with node do begin   
+  
+   for int1 := 0 to length(nontarray)-1 do
+   begin
+   if (system.pos(aitem.caption,nontarray[int1]) > 0) 
+    then
+    begin
+    isnont := true;
+    nontarray[int1] := '';
+    end; 
+    end;
+     
+    if isnont then
+     begin
+     info.donottranslate := true;
+     donottranslate[aindex]:= true;
+     // writeln(aitem.caption); 
+     end 
+    else
+     donottranslate[aindex]:= info.donottranslate;
+   
     typedisp[aindex]:= ord(info.valuetype);
-    donottranslate[aindex]:= info.donottranslate;
     comment[aindex]:= info.comment;
     value[aindex]:= valuetext;
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
        gridvalue[aindex]:= info.variants[int1];
+   
      {
      if gridvalue[aindex]= '%ntf$'  // for items missing.
      then
@@ -687,7 +709,7 @@ end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
 var
- aname: string;
+ aname, aname2: string;
  notranslate: boolean;
  acomment: msestring;  node: tpropinfonode;
  str1: string;
@@ -711,6 +733,9 @@ begin
   pointers[2]:= @notranslate;
   pointers[3]:= @acomment;
   
+  setlength(nontarray,0);
+  
+  
   while not stream.eof do begin
    aname:= '';
    notranslate:= false;
@@ -721,6 +746,7 @@ begin
    end;
    if stream.readrecord(pointers,str1) then begin
     node:= rootnode.findsubnode(','+aname);
+   
     if node <> nil then begin
      with node.info do begin
       comment:= acomment;
@@ -729,7 +755,16 @@ begin
      if (system.pos(':',name) > 0) // for items missing.
      and  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
      or (valuetype =vawstring))  then  begin
-           donottranslate:= false; 
+   
+      if notranslate then
+        begin
+        setlength(nontarray,length(nontarray)+1);
+        aname2 := aname;
+        aname2 := StringReplace(aname2, ',' , '.', [rfReplaceAll]);
+        nontarray[length(nontarray)-1] := aname2;
+        //writeln(nontarray[length(nontarray)-1]);
+        end;
+              donottranslate:= false; 
          if (trim(msestringvalue) <> '') then  begin
             if length(variants) > 0 then if trim(variants[0]) = '' then
             variants[0] := msestringvalue;
