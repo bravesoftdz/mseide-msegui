@@ -46,23 +46,6 @@ mainfo,vaNull,F,,,
 "mainfo,tgroupbox1,bounds_cx",vaInt16,F,,656,
 "mainfo,tgroupbox1,bounds_cy",vaInt8,F,,24,
 "mainfo,tgroupbox1,anchors",vaSet,F,,[an_top],
-"mainfo,tgroupbox1,nostring",vaNull,F,,
-"mainfo,tgroupbox1,nostring,color",vaInt32,F,,-2147483645
-"mainfo,tgroupbox1,nostring,frame.caption",vaString,F,,no string,no string
-"mainfo,tgroupbox1,nostring,frame.localprops",vaSet,F,,[]
-"mainfo,tgroupbox1,nostring,frame.localprops1",vaSet,F,,[]
-"mainfo,tgroupbox1,nostring,frame.outerframe",vaList,F,,
-"mainfo,tgroupbox1,nostring,frame.outerframe,0:",vaInt8,F,,0
-"mainfo,tgroupbox1,nostring,frame.outerframe,1:",vaInt8,F,,1
-"mainfo,tgroupbox1,nostring,frame.outerframe,2:",vaInt8,F,,57
-"mainfo,tgroupbox1,nostring,frame.outerframe,3:",vaInt8,F,,2
-"mainfo,tgroupbox1,nostring,bounds_x",vaInt8,F,,70
-"mainfo,tgroupbox1,nostring,bounds_y",vaInt8,F,,5
-"mainfo,tgroupbox1,nostring,bounds_cx",vaInt8,F,,70
-"mainfo,tgroupbox1,nostring,bounds_cy",vaInt8,F,,16
-"mainfo,tgroupbox1,nostring,statfile",vaIdent,F,,projectfo.projectstat
-"mainfo,tgroupbox1,nostring,ondataentered",vaIdent,F,,formatchanged
-"mainfo,tgroupbox1,nostring,onsetvalue",vaIdent,F,,onsetnosting
 "mainfo,grid",vaNull,F,,,
 "mainfo,grid,frame.sbvert.facebutton.localprops",vaSet,F,,[],
 "mainfo,grid,frame.sbvert.facebutton.template",vaIdent,F,,concavey,
@@ -86,7 +69,7 @@ mainfo,vaNull,F,,,
 "mainfo,grid,fixcols.items,0:",vaList,F,,,
 "mainfo,grid,fixcols.items,0:,width",vaInt8,F,,45,
 "mainfo,grid,fixcols.items,0:,fixwidgetnames",vaList,F,,,
-"mainfo,grid,fixcols.items,0:,fixwidgetnames,0:",vaString,F,,trowcount,trowcount
+"mainfo,grid,fixcols.items,0:,fixwidgetnames,0:",vaString,T,,trowcount,trowcount
 "mainfo,grid,fixrows.count",vaInt8,F,,1,
 "mainfo,grid,fixrows.items",vaCollection,F,,,
 "mainfo,grid,fixrows.items,0:",vaList,F,,,
@@ -307,13 +290,12 @@ mainfo,vaNull,F,,,
 "mainfo,stringonly,frame.outerframe,2:",vaInt8,F,,67,
 "mainfo,stringonly,frame.outerframe,3:",vaInt8,F,,2,
 "mainfo,stringonly,taborder",vaInt8,F,,2,
-"mainfo,stringonly,bounds_x",vaInt16,F,,177,
+"mainfo,stringonly,bounds_x",vaInt8,F,,73,
 "mainfo,stringonly,bounds_y",vaInt8,F,,5,
 "mainfo,stringonly,bounds_cx",vaInt8,F,,80,
 "mainfo,stringonly,bounds_cy",vaInt8,F,,16,
 "mainfo,stringonly,statfile",vaIdent,F,,projectfo.projectstat,
 "mainfo,stringonly,ondataentered",vaIdent,F,,formatchanged,
-"mainfo,stringonly,onsetvalue",vaIdent,F,,onsetstringonly
 "mainfo,nont",vaNull,F,,,
 "mainfo,nont,color",vaInt32,F,,-2147483645,
 "mainfo,nont,frame.caption",vaString,F,,no NT,no NT
@@ -325,7 +307,7 @@ mainfo,vaNull,F,,,
 "mainfo,nont,frame.outerframe,2:",vaInt8,F,,38,
 "mainfo,nont,frame.outerframe,3:",vaInt8,F,,2,
 "mainfo,nont,taborder",vaInt8,F,,3,
-"mainfo,nont,bounds_x",vaInt16,F,,289,
+"mainfo,nont,bounds_x",vaInt16,F,,185,
 "mainfo,nont,bounds_y",vaInt8,F,,5,
 "mainfo,nont,bounds_cx",vaInt8,F,,51,
 "mainfo,nont,bounds_cy",vaInt8,F,,16,
@@ -345,7 +327,7 @@ mainfo,vaNull,F,,,
 "mainfo,ntonly,frame.outerframe,2:",vaInt8,F,,48,
 "mainfo,ntonly,frame.outerframe,3:",vaInt8,F,,2,
 "mainfo,ntonly,taborder",vaInt8,F,,4,
-"mainfo,ntonly,bounds_x",vaInt16,F,,377,
+"mainfo,ntonly,bounds_x",vaInt16,F,,273,
 "mainfo,ntonly,bounds_y",vaInt8,F,,5,
 "mainfo,ntonly,bounds_cx",vaInt8,F,,61,
 "mainfo,ntonly,bounds_cy",vaInt8,F,,16,
@@ -363,7 +345,7 @@ mainfo,vaNull,F,,,
 "mainfo,coloron,frame.outerframe,2:",vaInt8,F,,67,
 "mainfo,coloron,frame.outerframe,3:",vaInt8,F,,2,
 "mainfo,coloron,taborder",vaInt8,F,,6,
-"mainfo,coloron,bounds_x",vaInt16,F,,473,
+"mainfo,coloron,bounds_x",vaInt16,F,,369,
 "mainfo,coloron,bounds_y",vaInt8,F,,5,
 "mainfo,coloron,bounds_cx",vaInt8,F,,80,
 "mainfo,coloron,bounds_cy",vaInt8,F,,16,
@@ -463,7 +445,7 @@ mainfo,vaNull,F,,,
 "mainfo,projectfiledialog,controller.filterlist.data",vaList,F,,,
 "mainfo,projectfiledialog,controller.filterlist.data,0:",vaList,F,,,
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
-"mainfo,projectfiledialog,controller.filterlist.data,0:,1:",vaString,F,,*.trp,*.trp
+"mainfo,projectfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.trp,*.trp
 "mainfo,projectfiledialog,controller.defaultext",vaString,T,,trp,
 "mainfo,projectfiledialog,controller.options",vaSet,F,,"[fdo_checkexist,fdo_chdir]",
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
@@ -695,7 +677,7 @@ messagesfo,vaNull,F,,,
 "messagesfo,twidgetgrid1,messages,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate,oe1_checkvalueafterstatread]",
 "messagesfo,twidgetgrid1,messages,options",vaSet,F,,[teo_readonly],
 "messagesfo,twidgetgrid1,messages,reffontheight",vaInt8,F,,14,
-projectfo,vaNull,T,,,
+projectfo,vaNull,F,,,
 "projectfo,optionswidget",vaSet,F,,"[ow_arrowfocus,ow_subfocus,ow_destroywidgets,ow_hinton]",
 "projectfo,visible",vaFalse,F,,,
 "projectfo,bounds_x",vaInt16,F,,149,
@@ -877,10 +859,10 @@ projectfo,vaNull,T,,,
 "projectfo,datafilename,controller.filterlist.data",vaList,F,,,
 "projectfo,datafilename,controller.filterlist.data,0:",vaList,F,,,
 "projectfo,datafilename,controller.filterlist.data,0:,0:",vaString,F,,MSEi18n Data Files,MSEi18n Data Files
-"projectfo,datafilename,controller.filterlist.data,0:,1:",vaString,F,,*.trd,*.trd
+"projectfo,datafilename,controller.filterlist.data,0:,1:",vaString,T,,*.trd,*.trd
 "projectfo,datafilename,controller.filterlist.data,1:",vaList,F,,,
 "projectfo,datafilename,controller.filterlist.data,1:,0:",vaString,F,,All files,All files
-"projectfo,datafilename,controller.filterlist.data,1:,1:",vaString,F,,"""*""","""*"""
+"projectfo,datafilename,controller.filterlist.data,1:,1:",vaString,T,,"""*""","""*"""
 "projectfo,datafilename,controller.defaultext",vaString,T,,trd,
 "projectfo,datafilename,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,datafilename,reffontheight",vaInt8,F,,14,
@@ -1100,14 +1082,14 @@ projectfo,vaNull,T,,,
 "projectfo,impexpfiledialog,controller.filterlist.data",vaList,F,,,
 "projectfo,impexpfiledialog,controller.filterlist.data,0:",vaList,F,,,
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,F,,*.csv,*.csv
+"projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.csv,*.csv
 "projectfo,impexpfiledialog,controller.defaultext",vaString,T,,csv,
 "projectfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "projectfo,impexpfiledialog,left",vaInt16,F,,240,
 "projectfo,impexpfiledialog,top",vaInt8,F,,56,
-settingsfo,vaNull,T,,,
+settingsfo,vaNull,F,,,
 "settingsfo,optionswidget",vaSet,F,,"[ow_arrowfocus,ow_subfocus,ow_mousewheel,ow_destroywidgets,ow_hinton]",
 "settingsfo,visible",vaFalse,F,,,
 "settingsfo,bounds_x",vaInt8,F,,100,
@@ -1353,7 +1335,7 @@ settingsfo,vaNull,T,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:",vaList,F,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
-"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,1:",vaString,F,,*.prj,*.prj
+"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,1:",vaString,T,,*.prj,*.prj
 "settingsfo,tlayouter1,compstoredir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,compstoredir,controller.captionopen",vaString,F,,Directory for component stores,Directory for component stores
 "settingsfo,tlayouter1,compstoredir,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -1384,7 +1366,7 @@ settingsfo,vaNull,T,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:",vaList,F,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
-"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,1:",vaString,F,,*.prj,*.prj
+"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,1:",vaString,T,,*.prj,*.prj
 "settingsfo,tlayouter1,templatedir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,templatedir,controller.captionopen",vaString,F,,Project template directory,Project template directory
 "settingsfo,tlayouter1,templatedir,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -1415,7 +1397,7 @@ settingsfo,vaNull,T,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:",vaList,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:",vaString,F,,Syntax definitions,Syntax definitions
-"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,1:",vaString,F,,*.sdef,*.sdef
+"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,1:",vaString,T,,*.sdef,*.sdef
 "settingsfo,tlayouter1,syntaxdefdir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,syntaxdefdir,controller.captionopen",vaString,F,,Directory for syntax definition files,Directory for syntax definition files
 "settingsfo,tlayouter1,syntaxdefdir,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
