@@ -271,14 +271,17 @@ var
 begin
  with tpropinfoitem(aitem) do begin
   if node <> nil then begin
-   with node do begin   
+   with node do begin  
+  // writeln('ROOT '+ rootstring); 
   
    for int1 := 0 to length(nontarray)-1 do
    begin
-   if (system.pos(aitem.caption,nontarray[int1]) > 0) 
+   // writeln('ARRAY '+ nontarray[int1]);
+   if (trim(rootstring) = trim(nontarray[int1])) 
     then
     begin
     isnont := true;
+  //   writeln(nontarray[int1]); 
     nontarray[int1] := '';
     end; 
     end;
@@ -287,7 +290,7 @@ begin
      begin
      info.donottranslate := true;
      donottranslate[aindex]:= true;
-     // writeln(aitem.caption); 
+     // writeln(rootstring); 
      end 
     else
      donottranslate[aindex]:= info.donottranslate;
@@ -335,7 +338,7 @@ begin
  if nostring.value then begin
   result:= tpropinfonode(anode).info.valuetype in
            [vanull,valist,vacollection, vafalse,vatrue, vaInt8,vaint16,vaint32,
-            vasingle,vacurrency, vadate, vaIdent, vaSet, vaExtended];
+            vasingle,vacurrency, vadate, vaIdent, vaSet, vaExtended,vabinary];
  end;
  
  if result then begin
