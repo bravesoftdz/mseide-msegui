@@ -475,12 +475,15 @@ settingsstorage=0
 settingsprojecttree=0
 settingsautoload=0
 settingsautosave=0
-modulenames=1
+modulenames=2
  MAINFO
-moduletypes=1
+ PROJECTFO
+moduletypes=2
  TMAINFO
-modulefiles=1
+ TPROJECTFO
+modulefiles=2
  /home/fred/mseide-msegui/tools/i18n/main.mfm
+ /home/fred/mseide-msegui/tools/i18n/project.mfm
 befcommandon=0
 makeoptionson=6
  127
@@ -785,8 +788,9 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=/usr/share/
+finddtext=formatchanged
 findhistory=20
+ formatchanged
  /usr/share/
  writeln
  isdoread
@@ -798,7 +802,6 @@ findhistory=20
  Not yet translated:
  valuetext
  color
- formatchanged
  setntfalse
  updatenont
  filternode
@@ -808,30 +811,35 @@ findhistory=20
  donottranslate
  numrow
 findoptions=1
-editpos=5
+editpos=6
  0,-1073741823
- 7,1190
+ 34,861
  0,-1073741823
- 0,13
  0,-1073741823
+ 0,-1073741823
+ 0,158
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
 bookmarks3=0
 bookmarks4=0
-sourcefiles=5
+bookmarks5=0
+sourcefiles=6
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
  /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/msedatanodes.pas
  ${PROJECTDIR}/mseresourceparser.pas
  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
-relpaths=5
+ ${PROJECTDIR}/project.pas
+relpaths=6
  msei18n.pas
  main.pas
  mseguinew/mseide-msegui/lib/common/editwidgets/msedatanodes.pas
  mseresourceparser.pas
  apps/ide/lang_ru/i18n.trp
-ismoduletexts=5
+ project.pas
+ismoduletexts=6
+ 0
  0
  0
  0
@@ -847,19 +855,20 @@ visiblemodules=2
  -1
  -1
 nomenumodules=2
- -1
+ 0
  0
 [sourcefo.files_tab]
-order=5
+order=6
  0
  1
- 3
+ 5
  4
  2
+ 3
 firsttab=0
 index=1
 [layout]
-windowlayout=591
+windowlayout=622
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -899,7 +908,7 @@ windowlayout=591
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1085,7 +1094,7 @@ windowlayout=591
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=mainfo
  parent=
  mdistate=0
  nx=0
@@ -1327,8 +1336,8 @@ windowlayout=591
  value=Pascal
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
- history=20
-  /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
+ history=50
+  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
   /home/fred/ideu/src/languages/lang_ru/i18n.trp
@@ -1348,6 +1357,36 @@ windowlayout=591
   /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trp
   /home/fred/mseguinew/mseide-msegui/apps/ide/lang/fr/i18n.trp
   /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
+  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
+  /home/fred/uos/examples/uos_libsndfile.pas
+  /home/fred/uos/examples/conswebstream.pas
+  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
+  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
+  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
+  /home/fred/uos/examples/consoleplay.pas
+  /home/fred/mselangmoi/parser.pas
+  /home/fred/mselangmoi/interpreter/mli.pas
+  /home/fred/mselangmoi/compiler/compmodule.pas
+  /home/fred/mselangmoi/interpreter/mainmodule.pas
+  /home/fred/mselangmoi/main.pas
+  /home/fred/mlctestlast/hellomlc.pas
+  /home/fred/mselangmoi/rtl/system/unix/rtl_libc.mla
+  /home/fred/mselang/src/compiler/compmodule.pas
+  /home/fred/mselangmoi/rtl/system/windows/rtl_sysintf.mla
+  /home/fred/mselangmoi/rtl/system/rtl_fpccompatibility.mla
+  /home/fred/mselangmoi/rtl/system/windows/rtl_libc.mla
+  /home/fred/mselangmoi/rtl/system/windows/rtl_stringconv.mla
+  /home/fred/mselangmoi/rtl/system/unix/rtl_stringconv.mla
+  /home/fred/mselangmoi/patheditform.pas
+  /home/fred/mselangmoi/rtl/system/unix/rtl_sysintf.mla
+  /home/fred/msegui/lib/common/kernel/windows/msesysintf.pas
+  /home/fred/msegui/lib/common/kernel/linux/msesysintf.pas
+  /home/fred/msegui/lib/common/kernel/windows/msewinglob.pas
+  /home/fred/msegui/lib/common/fpccompatibility/dbf_idxfile.pas
+  /home/fred/mselangmoi/grammarglob.pas
+  /home/fred/mselangmoi/subhandler.pas
+  /home/fred/mselangmoi/syssubhandler.pas
+  /home/fred/mselangmoi/writeln.mla
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1369,12 +1408,13 @@ windowlayout=591
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=5
+ order=6
   0
   1
-  3
+  5
   4
   2
+  3
  firsttab=0
  index=1
  [cpuc86_64fo]

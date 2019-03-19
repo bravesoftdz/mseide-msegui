@@ -808,7 +808,8 @@ begin
        projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
   stream:= ttextdatastream.create(str1,fm_read);
   doimport(stream,charencodingty(projectfo.impexpencoding.value));
-  updatedata;
+ // updatedata;
+  formatchanged(sender);
  end;
 end;
 
@@ -824,18 +825,15 @@ begin
              [vastring,valstring,vawstring,vautf8string]);
    if bo1 and bo2 then begin
     writerecord(sender);
-    writeln('writerecord');
-   end;
+    end;
   end;
-  
-  
+    
    // if nostring.value then bo2 := false;
   if bo2 then begin
    for int1:= 0 to fcount -1 do begin
     writeexprecord(fitems[int1]);
    end;
-   writeln('writeexprecord');
-  end;
+   end;
  end;
 end;
 
@@ -862,6 +860,7 @@ showmessage('Exportation with -no string- is not allowed.') else
     if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     stream:= ttextdatastream.create(str1,fm_create);
     doexport(stream,charencodingty(projectfo.impexpencoding.value));
+    formatchanged(sender);
     end;
  end;   
 end;
@@ -990,6 +989,7 @@ begin
  projectfo.show(true);
  projectfo.projectstat.writestat;
  projectfo.projectstat.readstat;
+ formatchanged(sender);
 end;
 
 procedure tmainfo.makeexecute(const sender: tthreadcomp);
