@@ -1194,6 +1194,7 @@ begin
   threadcomp.run; 
   messagesfo.show(true);
   loadproject;
+  formatchanged(sender);
  end;
 end;
 
