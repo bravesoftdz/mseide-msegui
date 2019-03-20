@@ -822,7 +822,7 @@ begin
             end
             else donottranslate:= true; 
           end else donottranslate:= notranslate;
-     end;
+     end else donottranslate:= notranslate;
    end;  
         //todo: errorlist
     end;

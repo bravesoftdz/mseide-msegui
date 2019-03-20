@@ -810,8 +810,8 @@ findhistory=20
  tpropinfoitem
 findoptions=1
 editpos=2
- 0,46
- 0,154
+ 0,-1073741823
+ 25,809
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2
@@ -1308,9 +1308,9 @@ windowlayout=585
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/msedatanodes.pas
   /home/fred/mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
-  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
