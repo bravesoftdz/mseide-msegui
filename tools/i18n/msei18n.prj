@@ -786,10 +786,10 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=utf
+finddtext=doread
 findhistory=20
- utf
  doread
+ utf
  isdoread
  writeln
  ':'
@@ -811,7 +811,7 @@ findhistory=20
 findoptions=1
 editpos=2
  0,-1073741823
- 22,985
+ 0,841
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2

@@ -151,8 +151,8 @@ type
 var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
- nontarray : Array of string;
- valuearray : Array of string;
+ nontarray : Array of UTF8String;
+ valuearray : Array of UTF8String;
 
 implementation
 uses
@@ -722,7 +722,8 @@ var
  aname, aname2: string;
  notranslate: boolean;
  acomment: msestring;  node: tpropinfonode;
- str1, str2, anont, acom, astro,astrt : msestring;
+ str1 : string;
+ str2,  anont, acom, astro,astrt : UTF8String;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
