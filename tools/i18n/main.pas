@@ -804,7 +804,8 @@ begin
      if hasfound then begin 
       if anont = 'F' then notranslate:= false else notranslate:= true;
       comment := acom; 
-      variants[0] := astrt;      end else variants[0] := msestringvalue;
+      variants[0] := astrt; 
+      end else variants[0] := msestringvalue;
    
     if (system.pos(':',name) > 0) then begin
       if notranslate then
@@ -816,13 +817,16 @@ begin
         //writeln(nontarray[length(nontarray)-1]);
         end;
           donottranslate:= false; 
-         if (trim(msestringvalue) <> '') then  begin
+        
+          end else donottranslate:= notranslate;
+     end else donottranslate:= notranslate;
+     
+      if (trim(msestringvalue) <> '') then  begin
             if length(variants) > 0 then if trim(variants[0]) = '' then
             variants[0] := msestringvalue;
             end
             else donottranslate:= true; 
-          end else donottranslate:= notranslate;
-     end else donottranslate:= notranslate;
+     
    end;  
         //todo: errorlist
     end;
