@@ -152,6 +152,7 @@ var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
  nontarray : Array of string;
+ valuearray : Array of string;
 
 implementation
 uses
@@ -721,14 +722,34 @@ var
  aname, aname2: string;
  notranslate: boolean;
  acomment: msestring;  node: tpropinfonode;
- str1: string;
+ str1, str2, anont, acom, astro,astrt : string;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
- int1, int2: integer;
+ int1, int2, x, y: integer;
+ hasfound : boolean = false;
 begin
  try
   stream.encoding:= aencoding;
+   
+   setlength(valuearray,0); 
+   stream.readln(str1);
+ 
+   while not stream.eof do begin
+    stream.readln(str1); 
+  //  if (system.pos(':',str1) > 0)
+    // and (system.pos('caption',str1) > 0)
+    
+   if (system.pos('vaString',str1) > 0) then begin
+         setlength(valuearray,length(valuearray)+1);  
+         valuearray[length(valuearray)-1] :=
+         copy(str1,system.pos('vaString',str1)+9,length(str1)-system.pos('vaString',str1)-8) ;
+        // writeln(valuearray[length(valuearray)-1]);
+        end;
+    end;
+ 
+   Stream.Seek(0,soFromBeginning); 
+ 
   stream.readln(str1); //header
   splitstringquoted(str1,ar1,'"',',');
   int1:= length(ar1);
@@ -743,8 +764,10 @@ begin
   pointers[3]:= @acomment;
   
   setlength(nontarray,0);
-  
-  
+  //{
+    // }
+   y := 0;
+   
   while not stream.eof do begin
    aname:= '';
    notranslate:= false;
@@ -760,11 +783,30 @@ begin
      with node.info do begin
       comment:= acomment;
       variants:= avariants; 
-  
-     if (system.pos(':',name) > 0) // for items missing.
-     and  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
-     or (valuetype =vawstring))  then  begin
+  //if 1=1
+ //  if (system.pos(':',name) > 0)  and// for items missing.
+   if  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
+      or (valuetype =vawstring))  
+     then
+       begin       x := 0;   
+       hasfound := false;    
+       while (x < length(valuearray)) and (hasfound = false) do
+       begin
+         str2 := valuearray[x];
+         anont := copy(str2,1,1);
+         str2 := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;
+         acom := copy(str2,1,system.pos(',',str2)-1);
+         str2 := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;
+         astro := copy(str2,1,system.pos(',',str2)-1);
+         astrt := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;         if ( msestringvalue = astro ) then  hasfound := true;         inc(x);   
+       end;
+           
+     if hasfound then begin 
+      if anont = 'F' then notranslate:= false else notranslate:= true;
+      comment := acom; 
+      variants[0] := astrt;      end else variants[0] := msestringvalue;
    
+    if (system.pos(':',name) > 0) then begin
       if notranslate then
         begin
         setlength(nontarray,length(nontarray)+1);
@@ -773,7 +815,7 @@ begin
         nontarray[length(nontarray)-1] := aname2;
         //writeln(nontarray[length(nontarray)-1]);
         end;
-              donottranslate:= false; 
+          donottranslate:= false; 
          if (trim(msestringvalue) <> '') then  begin
             if length(variants) > 0 then if trim(variants[0]) = '' then
             variants[0] := msestringvalue;
@@ -781,6 +823,7 @@ begin
             else donottranslate:= true; 
           end else donottranslate:= notranslate;
      end;
+   end;  
         //todo: errorlist
     end;
    end

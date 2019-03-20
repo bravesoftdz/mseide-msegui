@@ -476,15 +476,12 @@ settingsstorage=0
 settingsprojecttree=0
 settingsautoload=0
 settingsautosave=0
-modulenames=2
+modulenames=1
  MAINFO
- PROJECTFO
-moduletypes=2
+moduletypes=1
  TMAINFO
- TPROJECTFO
-modulefiles=2
+modulefiles=1
  /home/fred/mseide-msegui/tools/i18n/main.mfm
- /home/fred/mseide-msegui/tools/i18n/project.mfm
 befcommandon=0
 makeoptionson=6
  127
@@ -789,16 +786,17 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=writeln
+finddtext=doread
 findhistory=20
+ doread
+ isdoread
  writeln
+ ':'
  vaset
  formatchanged
  /usr/share/
- isdoread
  nontarray
  treeonupdaterowvalues
- doread
  %ntf$
  /home/fred/mseide-msegui/apps/ide/
  Not yet translated:
@@ -810,40 +808,19 @@ findhistory=20
  removenont
  loadpro
  tpropinfoitem
- donottranslate
 findoptions=1
-editpos=6
- 0,-1073741823
- 0,330
- 0,0
- 0,63
- 0,-1073741823
- 0,0
+editpos=2
+ 0,46
+ 0,154
 bookmarks0=0
 bookmarks1=0
-bookmarks2=0
-bookmarks3=0
-bookmarks4=0
-bookmarks5=0
-sourcefiles=6
+sourcefiles=2
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
- /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/msedatanodes.pas
- ${PROJECTDIR}/mseresourceparser.pas
- /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
- ${PROJECTDIR}/project.pas
-relpaths=6
+relpaths=2
  msei18n.pas
  main.pas
- ../../mseguinew/mseide-msegui/lib/common/editwidgets/msedatanodes.pas
- mseresourceparser.pas
- apps/ide/lang_ru/i18n.trp
- project.pas
-ismoduletexts=6
- 0
- 0
- 0
- 0
+ismoduletexts=2
  0
  0
 modules=2
@@ -856,7 +833,7 @@ visiblemodules=2
  0
  -1
 nomenumodules=2
- 0
+ -1
  0
 [sourcefo.files_tab]
 firsttab=0
@@ -894,8 +871,8 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=417
- y=137
+ x=218
+ y=292
  cx=946
  cy=392
  rcx=0
@@ -970,7 +947,7 @@ windowlayout=585
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1088,7 +1065,7 @@ windowlayout=585
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1103,12 +1080,12 @@ windowlayout=585
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=426
- width0=249
+ propcolwidthref=411
+ width0=240
  sortdescend0=0
- width1=171
+ width1=165
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1331,7 +1308,10 @@ windowlayout=585
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseguinew/mseide-msegui/lib/common/editwidgets/msedatanodes.pas
+  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
   /home/fred/ideu/src/languages/lang_ru/i18n.trp
@@ -1348,9 +1328,6 @@ windowlayout=585
   /home/fred/mseguinew/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseguinew/mseide-mseguitest/tools/i18n/project.pas
   /home/fred/main.pas
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/fr/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1413,7 +1390,7 @@ windowlayout=585
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1432,7 +1409,7 @@ windowlayout=585
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=findinfilefo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
