@@ -722,7 +722,7 @@ var
  aname, aname2: string;
  notranslate: boolean;
  acomment: msestring;  node: tpropinfonode;
- str1, str2, anont, acom, astro,astrt : string;
+ str1, str2, anont, acom, astro,astrt : msestring;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
