@@ -800,8 +800,8 @@ begin
          str2 := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
          astro := UTF8Decode(copy(str2,1,system.pos(',',str2)-1));
          astrt := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
-         if ( msestringvalue = astro ) then  hasfound := true;  
-         inc(x);   
+         if (trim(uppercase(msestringvalue)) = trim(uppercase(astro)) ) then  hasfound := true;  
+          inc(x);   
        end;
            
      if hasfound then begin 
