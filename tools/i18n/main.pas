@@ -151,8 +151,8 @@ type
 var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
- nontarray : Array of UTF8String;
- valuearray : Array of UTF8String;
+ nontarray : Array of mseString;
+ valuearray : Array of mseString;
 
 implementation
 uses
@@ -723,7 +723,7 @@ var
  notranslate: boolean;
  acomment: msestring;  node: tpropinfonode;
  str1 : string;
- str2,  anont, acom, astro,astrt : UTF8String;
+ str2,  anont, acom, astro,astrt : mseString;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
@@ -744,7 +744,7 @@ begin
    if (system.pos('vaString',str1) > 0) then begin
          setlength(valuearray,length(valuearray)+1);  
          valuearray[length(valuearray)-1] :=
-         copy(str1,system.pos('vaString',str1)+9,length(str1)-system.pos('vaString',str1)-8) ;
+         UTF8Decode(copy(str1,system.pos('vaString',str1)+9,length(str1)-system.pos('vaString',str1)-8)) ;
         // writeln(valuearray[length(valuearray)-1]);
         end;
     end;
@@ -793,13 +793,13 @@ begin
        hasfound := false;    
        while (x < length(valuearray)) and (hasfound = false) do
        begin
-         str2 := valuearray[x];
-         anont := copy(str2,1,1);
-         str2 := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;
-         acom := copy(str2,1,system.pos(',',str2)-1);
-         str2 := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;
-         astro := copy(str2,1,system.pos(',',str2)-1);
-         astrt := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;   
+         str2 := UTF8Decode(valuearray[x]);
+         anont := UTF8Decode(copy(str2,1,1));
+         str2 := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         acom := UTF8Decode(copy(str2,1,system.pos(',',str2)-1));
+         str2 := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         astro := UTF8Decode(copy(str2,1,system.pos(',',str2)-1));
+         astrt := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
          if ( msestringvalue = astro ) then  hasfound := true;  
          inc(x);   
        end;
