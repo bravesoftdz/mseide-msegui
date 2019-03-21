@@ -799,7 +799,9 @@ begin
          acom := copy(str2,1,system.pos(',',str2)-1);
          str2 := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;
          astro := copy(str2,1,system.pos(',',str2)-1);
-         astrt := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;         if ( msestringvalue = astro ) then  hasfound := true;         inc(x);   
+         astrt := copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2)) ;   
+         if ( msestringvalue = astro ) then  hasfound := true;  
+         inc(x);   
        end;
            
      if hasfound then begin 
@@ -818,15 +820,16 @@ begin
         //writeln(nontarray[length(nontarray)-1]);
         end;
           donottranslate:= false; 
-        
-          end else donottranslate:= notranslate;
-     end else donottranslate:= notranslate;
-     
-      if (trim(msestringvalue) <> '') then  begin
+          
+        end else donottranslate:= notranslate;
+          
+             if (trim(msestringvalue) <> '') then  begin
             if length(variants) > 0 then if trim(variants[0]) = '' then
             variants[0] := msestringvalue;
             end
-            else donottranslate:= true; 
+            else donottranslate:= true;   
+          
+     end else donottranslate:= notranslate;
      
    end;  
         //todo: errorlist

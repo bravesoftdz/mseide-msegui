@@ -91,8 +91,8 @@ value=1
 [mainfo.stringonly]
 value=1
 [mainfo.nont]
-value=1
-[mainfo.ntonly]
 value=0
+[mainfo.ntonly]
+value=1
 [mainfo.coloron]
 value=1
