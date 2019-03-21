@@ -246,14 +246,16 @@ objpref=-Fo
 targpref=-o
 befcommand=0
 aftcommand=0
-makeoptions=6
+makeoptions=7
  -l -Mobjfpc -Sh -Fcutf8
  -gl -O-
  -B
  -O2 -XX -Xs -CX
  -dmse_i18n
+ -FcUTF8
  -FUunits
-makeoptpurpose=6
+makeoptpurpose=7
+ 
  
  
  
@@ -483,12 +485,13 @@ moduletypes=1
 modulefiles=1
  /home/fred/mseide-msegui/tools/i18n/main.mfm
 befcommandon=0
-makeoptionson=6
+makeoptionson=7
  127
  27
  98
  100
  127
+ 4095
  4
 compilerusedon=29
  4031
@@ -809,18 +812,23 @@ findhistory=20
  removenont
  loadpro
 findoptions=1
-editpos=2
- 0,-1073741823
- 0,792
+editpos=3
+ 0,0
+ 0,809
+ 0,210
 bookmarks0=0
 bookmarks1=0
-sourcefiles=2
+bookmarks2=0
+sourcefiles=3
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
-relpaths=2
+ /home/fred/mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
+relpaths=3
  msei18n.pas
  main.pas
-ismoduletexts=2
+ ../../mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
+ismoduletexts=3
+ 0
  0
  0
 modules=2
@@ -1065,7 +1073,7 @@ windowlayout=585
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=targetconsolefo
  parent=
  mdistate=0
  nx=0
@@ -1080,7 +1088,7 @@ windowlayout=585
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [objectinspectorfo.grid]
  propcolwidthref=411
  width0=240
@@ -1409,7 +1417,7 @@ windowlayout=585
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0

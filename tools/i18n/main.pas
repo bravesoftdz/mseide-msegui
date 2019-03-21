@@ -151,8 +151,8 @@ type
 var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
- nontarray : Array of mseString;
- valuearray : Array of mseString;
+ nontarray : Array of String;
+ valuearray : Array of wideString;
 
 implementation
 uses
@@ -722,8 +722,7 @@ var
  aname, aname2: string;
  notranslate: boolean;
  acomment: msestring;  node: tpropinfonode;
- str1 : string;
- str2,  anont, acom, astro,astrt : mseString;
+ str1, str2,  anont, acom, astro,astrt : mseString;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
@@ -732,7 +731,7 @@ var
 begin
  try
   stream.encoding:= aencoding;
-   
+ 
    setlength(valuearray,0); 
    stream.readln(str1);
  
@@ -744,8 +743,8 @@ begin
    if (system.pos('vaString',str1) > 0) then begin
          setlength(valuearray,length(valuearray)+1);  
          valuearray[length(valuearray)-1] :=
-         UTF8Decode(copy(str1,system.pos('vaString',str1)+9,length(str1)-system.pos('vaString',str1)-8)) ;
-        // writeln(valuearray[length(valuearray)-1]);
+         (copy(str1,system.pos('vaString',str1)+9,length(str1)-system.pos('vaString',str1)-8)) ;
+      //   writeln(utf8decode(valuearray[length(valuearray)-1]));
         end;
     end;
  
@@ -793,13 +792,13 @@ begin
        hasfound := false;    
        while (x < length(valuearray)) and (hasfound = false) do
        begin
-         str2 := UTF8Decode(valuearray[x]);
-         anont := UTF8Decode(copy(str2,1,1));
-         str2 := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         acom := UTF8Decode(copy(str2,1,system.pos(',',str2)-1));
-         str2 := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         astro := UTF8Decode(copy(str2,1,system.pos(',',str2)-1));
-         astrt := UTF8Decode(copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
+         str2 := (valuearray[x]);
+         anont := (copy(str2,1,1));
+         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         acom := (copy(str2,1,system.pos(',',str2)-1));
+         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         astro := (copy(str2,1,system.pos(',',str2)-1));
+         astrt := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
          if (trim(uppercase(msestringvalue)) = trim(uppercase(astro)) ) then  hasfound := true;  
           inc(x);   
        end;
@@ -807,7 +806,8 @@ begin
      if hasfound then begin 
       if anont = 'F' then notranslate:= false else notranslate:= true;
       comment := acom; 
-      variants[0] := astrt; 
+      variants[0] := (astrt); 
+        
       end else variants[0] := msestringvalue;
    
     if (system.pos(':',name) > 0) then begin
