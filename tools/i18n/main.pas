@@ -774,8 +774,8 @@ var
  hasfound : boolean = false;
 begin
 
-stringonly.value := true;
-nont.value := true;
+//stringonly.value := true;
+//nont.value := true;
 
  try
   stream.encoding:= aencoding;
@@ -886,7 +886,9 @@ nont.value := true;
  //  {
 
   // }     //todo: errorlist
+  isloaded := false;
   ttimer2.enabled := true;
+  
     end;
    end
    else begin

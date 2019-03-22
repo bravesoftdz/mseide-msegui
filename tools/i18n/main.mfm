@@ -719,6 +719,7 @@ object mainfo: tmainfo
     top = 96
   end
   object ttimer2: ttimer
+    interval = 5000000
     options = [to_single]
     ontimer = ontimerup
     enabled = True
