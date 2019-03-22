@@ -304,8 +304,7 @@ begin
          nodo := StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
          nodo := StringReplace(nodo, ' ', '', [rfReplaceAll]);
          nodo := StringReplace(nodo, '"', '', [rfReplaceAll]);
-         
-        
+                 
          asdo := StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
          asdo := StringReplace(asdo, ' ', '', [rfReplaceAll]);
          asdo := StringReplace(asdo, '"', '', [rfReplaceAll]);
@@ -351,16 +350,27 @@ begin
     if isloaded = false then begin
      if hasfound then
      begin
+       if trim(astrt) <> '' then
+       begin
        gridvalue[aindex]:=astrt;
        info.variants[int1] := astrt;
+       end else
+       begin
+       gridvalue[aindex]:=valuetext;
+       info.variants[int1] := valuetext;
+       end;
+     
       end else
       begin
        gridvalue[aindex]:=valuetext;
        info.variants[int1] := valuetext;
-      end 
-     end else gridvalue[aindex]:= info.variants[int1];
+      end; 
+     end else 
+     if info.variants[int1] <> '' then     
+     gridvalue[aindex]:= info.variants[int1] else
+     gridvalue[aindex]:= valuetext;
     
-  {
+    {
      if gridvalue[aindex]= '%ntf$'  // for items missing.
      then
      begin
@@ -812,9 +822,9 @@ begin
    isstring := true;
    str2 := str1;
    end;
-  
-    end;
+  end;
  
+  // {
    Stream.Seek(0,soFromBeginning); 
  
   stream.readln(str1); //header
@@ -848,20 +858,20 @@ begin
       donottranslate:= notranslate;
     end;  
  
-  isloaded := false;
-  ttimer2.enabled := true;
-  
-    end;
+     end;
    end
    else begin
     //todo: errormesage
    end;
   end;
+ // }
  finally
   stream.Free;
  end;
 // refreshnodedata;
 // updatedata;
+ isloaded := false;
+ ttimer2.enabled := true;
 end;
 
 procedure tmainfo.doimport(stream: ttextdatastream; aencoding: charencodingty);

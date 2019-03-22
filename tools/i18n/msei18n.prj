@@ -789,12 +789,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=filename
+finddtext=treeonupdaterowvalues
 findhistory=20
- filename
  treeonupdaterowvalues
- writeln
  doread
+ filename
+ writeln
  /usr/share/
  utf
  isdoread
@@ -812,14 +812,16 @@ findhistory=20
  filternode
  removenont
 findoptions=1
-editpos=7
+editpos=9
  0,-1073741823
- 0,453
- 0,-1073741823
- 0,-1073741823
+ 0,372
  0,-1073741823
  0,-1073741823
  0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,255
+ 0,0
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -827,7 +829,9 @@ bookmarks3=0
 bookmarks4=0
 bookmarks5=0
 bookmarks6=0
-sourcefiles=7
+bookmarks7=0
+bookmarks8=0
+sourcefiles=9
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
@@ -835,7 +839,9 @@ sourcefiles=7
  /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
  /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
  /home/fred/mseide-mseguitimer2/tools/i18n/main.mfm
-relpaths=7
+ /home/fred/msegui/tools/i18n/main.pas
+ /home/fred/msegui/tools/i18n/main.mfm
+relpaths=9
  msei18n.pas
  main.pas
  mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
@@ -843,10 +849,14 @@ relpaths=7
  apps/ide/lang_ru/actionsmodule.mfm
  mseide-mseguitimer2/tools/i18n/main.pas
  mseide-mseguitimer2/tools/i18n/main.mfm
-ismoduletexts=7
+ ../../msegui/tools/i18n/main.pas
+ ../../msegui/tools/i18n/main.mfm
+ismoduletexts=9
  0
  0
  0
+ 0
+ -1
  0
  -1
  0
@@ -864,10 +874,20 @@ nomenumodules=2
  -1
  0
 [sourcefo.files_tab]
+order=9
+ 0
+ 1
+ 7
+ 8
+ 2
+ 3
+ 4
+ 5
+ 6
 firsttab=0
 index=1
 [layout]
-windowlayout=585
+windowlayout=625
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -899,15 +919,15 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=3
- y=29
- cx=1360
- cy=706
+ x=223
+ y=261
+ cx=832
+ cy=271
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1334,13 +1354,13 @@ windowlayout=585
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/main.pas
- history=20
-  /home/fred/mseide-msegui/tools/i18n/main.pas
+ value=/home/fred/msegui/tools/i18n/main.mfm
+ history=50
   /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
   /home/fred/mseide-mseguiru/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
   /home/fred/ideu/src/languages/lang_ru/i18n.trp
@@ -1356,6 +1376,36 @@ windowlayout=585
   /home/fred/ideu/src/languages/i18n.trp
   /home/fred/mseguinew/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseguinew/mseide-mseguitest/tools/i18n/project.pas
+  /home/fred/main.pas
+  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trp
+  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/fr/i18n.trp
+  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
+  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
+  /home/fred/uos/examples/uos_libsndfile.pas
+  /home/fred/uos/examples/conswebstream.pas
+  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
+  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
+  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
+  /home/fred/uos/examples/consoleplay.pas
+  /home/fred/mselangmoi/parser.pas
+  /home/fred/mselangmoi/interpreter/mli.pas
+  /home/fred/mselangmoi/compiler/compmodule.pas
+  /home/fred/mselangmoi/interpreter/mainmodule.pas
+  /home/fred/mselangmoi/main.pas
+  /home/fred/mlctestlast/hellomlc.pas
+  /home/fred/mselangmoi/rtl/system/unix/rtl_libc.mla
+  /home/fred/mselang/src/compiler/compmodule.pas
+  /home/fred/mselangmoi/rtl/system/windows/rtl_sysintf.mla
+  /home/fred/mselangmoi/rtl/system/rtl_fpccompatibility.mla
+  /home/fred/mselangmoi/rtl/system/windows/rtl_libc.mla
+  /home/fred/mselangmoi/rtl/system/windows/rtl_stringconv.mla
+  /home/fred/mselangmoi/rtl/system/unix/rtl_stringconv.mla
+  /home/fred/mselangmoi/patheditform.pas
+  /home/fred/mselangmoi/rtl/system/unix/rtl_sysintf.mla
+  /home/fred/msegui/lib/common/kernel/windows/msesysintf.pas
+  /home/fred/msegui/lib/common/kernel/linux/msesysintf.pas
+  /home/fred/msegui/lib/common/kernel/windows/msewinglob.pas
+  /home/fred/msegui/lib/common/fpccompatibility/dbf_idxfile.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1377,8 +1427,18 @@ windowlayout=585
  rcx=0
  rcy=0
  [sourcefo.files_tab]
+ order=9
+  0
+  1
+  7
+  8
+  2
+  3
+  4
+  5
+  6
  firsttab=0
- index=1
+ index=3
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1437,7 +1497,7 @@ windowlayout=585
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
