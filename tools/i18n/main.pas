@@ -153,7 +153,6 @@ type
 var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
- nontarray : Array of String;
  valuearray : Array of wideString;
  isloaded : boolean = false;
 
@@ -271,45 +270,20 @@ procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
   const aindex: integer; const aitem: tlistitem);
 var
  hasfound : boolean;
-int1, int2, int3, int4, int5, x : integer;
-acomment: msestring; 
- node, node2, node3: tpropinfonode;
- str1, str2,  anont, acom, astro,astrt : mseString;
- ar1: stringarty;
- isnont : boolean = false;
+int1, x : integer;
+str2,  anont, acom, astro,astrt, nodo, asdo : mseString;
 
 begin
  with tpropinfoitem(aitem) do begin
   if node <> nil then begin
    with node do begin  
-  // writeln('ROOT '+ rootstring); 
   
-   for int1 := 0 to length(nontarray)-1 do
-   begin
-   // writeln('ARRAY '+ nontarray[int1]);
-   if (trim(rootstring) = trim(nontarray[int1])) 
-    then
-    begin
-    isnont := true;
-  //   writeln(nontarray[int1]); 
-    nontarray[int1] := '';
-    end; 
-    end;
-     
-    if isnont then
-     begin
-     info.donottranslate := true;
-     donottranslate[aindex]:= true;
-     // writeln(rootstring); 
-     end 
-    else
-     donottranslate[aindex]:= info.donottranslate;
-   
     typedisp[aindex]:= ord(info.valuetype);
-    comment[aindex]:= info.comment;
     value[aindex]:= valuetext;
-    
-    // writeln(valuetext);
+   
+    //writeln(typedisp[aindex]);   
+    //writeln(valuetext);
+  
     if isloaded = false then begin
        x := 0;   
        hasfound := false;
@@ -322,12 +296,54 @@ begin
          str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
          astro := (copy(str2,1,system.pos(',',str2)-1));
          astrt := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
-         if (trim(valuetext) <> '') and (trim(uppercase(valuetext)) = trim(uppercase(astro))) then 
+    
+         if copy(astro,1,1) = '"' then
+         begin
+        
+         //if length(valuetext) > 20 then  writeln(valuetext);
+         nodo := StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+         nodo := StringReplace(nodo, ' ', '', [rfReplaceAll]);
+         nodo := StringReplace(nodo, '"', '', [rfReplaceAll]);
+         
+        
+         asdo := StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+         asdo := StringReplace(asdo, ' ', '', [rfReplaceAll]);
+         asdo := StringReplace(asdo, '"', '', [rfReplaceAll]);
+         
+          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
+          begin
+           hasfound := true; 
+           astrt := copy(astrt,2,length(astrt)-2) ; 
+           //  writeln(nodo);
+           //  writeln(asdo);
+           end; 
+      
+         end else 
+         if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then 
                hasfound := true; 
          inc(x);   
        end; 
-       end;
        
+       if hasfound then
+       begin
+         if anont = 'T' then
+         begin
+         info.donottranslate := true;
+         donottranslate[aindex]:= true;
+         end else donottranslate[aindex]:= info.donottranslate;     
+         comment[aindex]:= acom;
+          end else
+        begin
+        donottranslate[aindex]:= info.donottranslate;
+        comment[aindex]:= info.comment;
+        end;
+  
+       end else
+       begin
+        donottranslate[aindex]:= info.donottranslate;
+        comment[aindex]:= info.comment;
+       end;
+           
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
@@ -335,8 +351,8 @@ begin
     if isloaded = false then begin
      if hasfound then
      begin
-      gridvalue[aindex]:=astrt;
-      info.variants[int1] := astrt;
+       gridvalue[aindex]:=astrt;
+       info.variants[int1] := astrt;
       end else
       begin
        gridvalue[aindex]:=valuetext;
@@ -697,7 +713,6 @@ end;
 procedure tmainfo.removenont(const sender: tobject);
 var
 x : integer;
-hasrem : boolean = true;
 begin
 {
   for x:=0 to grid.rowcount - 1 do 
@@ -723,7 +738,6 @@ begin
 procedure tmainfo.numrow(const Sender: TObject);
 var
 x, nt, tt, nc, rc: integer;
-str : string = '';
 begin
  rc := grid.rowCount;
  nc := grid.datacols.count-1;
@@ -763,37 +777,43 @@ end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
 var
- aname, aname2: string;
+ aname: string;
  notranslate: boolean;
- acomment: msestring;  node: tpropinfonode;
- str1, str2,  anont, acom, astro,astrt : mseString;
+ acomment: msestring; 
+ node: tpropinfonode;
+ str1, str2 : mseString;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
- int1, int2, x, y: integer;
- hasfound : boolean = false;
+ int1 : integer;
+ isstring : boolean = false;
 begin
-
-//stringonly.value := true;
-//nont.value := true;
 
  try
   stream.encoding:= aencoding;
  
    setlength(valuearray,0); 
-   stream.readln(str1);
- 
+   //stream.readln(str1);
+   //str2 := str1;
    while not stream.eof do begin
     stream.readln(str1); 
-  //  if (system.pos(':',str1) > 0)
-    // and (system.pos('caption',str1) > 0)
-    
-   if (system.pos('vaString',str1) > 0) then begin
+   
+    if (copy(str1,1,1) = '"') and (isstring = true) then
+       begin
          setlength(valuearray,length(valuearray)+1);  
-         valuearray[length(valuearray)-1] :=
-         (copy(str1,system.pos('vaString',str1)+9,length(str1)-system.pos('vaString',str1)-8)) ;
-      //   writeln(utf8decode(valuearray[length(valuearray)-1]));
-        end;
+        valuearray[length(valuearray)-1] :=
+        (copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+       str2 := str1;    
+    //  writeln((valuearray[length(valuearray)-1]));
+      isstring := false;
+     end else if isstring = true then str2 := str2 +sLineBreak+ str1;
+ 
+  if (system.pos('vaString',str1) > 0) then 
+   begin
+   isstring := true;
+   str2 := str1;
+   end;
+  
     end;
  
    Stream.Seek(0,soFromBeginning); 
@@ -810,9 +830,6 @@ begin
   pointers[0]:= @aname;
   pointers[2]:= @notranslate;
   pointers[3]:= @acomment;
-  
-  setlength(nontarray,0);
-   y := 0;
    
   while not stream.eof do begin
    aname:= '';
@@ -829,63 +846,9 @@ begin
      with node.info do begin
       comment:= acomment;
       variants:= avariants; 
- //  if 1 = 1  
- //  if (system.pos(':',name) > 0)  and// for items missing.
-   if  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
-      or (valuetype =vawstring))  
-     then
-       begin   
-       x := 0;   
-       hasfound := false;    
-       while (x < length(valuearray)) and (hasfound = false) do
-       begin
-         str2 := (valuearray[x]);
-         anont := (copy(str2,1,1));
-         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         acom := (copy(str2,1,system.pos(',',str2)-1));
-         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         astro := (copy(str2,1,system.pos(',',str2)-1));
-         astrt := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
-         if (trim((msestringvalue)) = trim((astro)) ) then  hasfound := true;  
-          inc(x);   
-       end;
-           
-     if hasfound then begin 
-      if anont = 'F' then notranslate:= false else notranslate:= true;
-      comment := acom; 
-      variants[0] := (astrt); 
-       //writeln(msestringvalue + ' = ' + variants[0]); 
-      end else begin
-      variants[0] := msestringvalue;
-       //writeln('NOT FOUND +++++++++++' + msestringvalue + ' = ' + variants[0]); 
-      end;
-   
-    if (system.pos(':',name) > 0) then begin
-      if notranslate then
-        begin
-        setlength(nontarray,length(nontarray)+1);
-        aname2 := aname;
-        aname2 := StringReplace(aname2, ',' , '.', [rfReplaceAll]);
-        nontarray[length(nontarray)-1] := aname2;
-        //writeln(nontarray[length(nontarray)-1]);
-        end;
-        donottranslate:= false; 
-          
-        end else donottranslate:= notranslate;
-          
-             if (trim(msestringvalue) <> '') then  begin
-            if length(variants) > 0 then if trim(variants[0]) = '' then
-            variants[0] := msestringvalue;
-            end
-            else donottranslate:= true;   
-          
-     end else donottranslate:= notranslate;
-       
-   end;  
-   
- //  {
-
-  // }     //todo: errorlist
+      donottranslate:= notranslate;
+    end;  
+ 
   isloaded := false;
   ttimer2.enabled := true;
   
@@ -1451,7 +1414,7 @@ procedure tmainfo.beforelangdrawcell(const sender: tcol; const canvas: tcanvas;
                var cellinfo: cellinfoty; var processed: Boolean);
 var
  int1: integer;
- str : string;
+ 
 begin
  if coloron.value then begin
   with cellinfo.cell do begin
@@ -1459,7 +1422,6 @@ begin
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
      then begin
-     str := trim(value[row]);
       if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
       or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
        then  cellinfo.color:= cl_ltred

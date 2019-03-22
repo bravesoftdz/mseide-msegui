@@ -789,18 +789,18 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=doread
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
+ writeln
  doread
  /usr/share/
  utf
  isdoread
- writeln
  ':'
  vaset
  formatchanged
  nontarray
- treeonupdaterowvalues
  %ntf$
  /home/fred/mseide-msegui/apps/ide/
  Not yet translated:
@@ -812,40 +812,45 @@ findhistory=20
  removenont
  loadpro
 findoptions=1
-editpos=6
- 0,0
- 19,888
+editpos=7
+ 0,-1073741823
+ 4,319
  0,-1073741823
  0,-1073741823
- 0,5
- 0,4
+ 0,-1073741823
+ 0,807
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
 bookmarks3=0
 bookmarks4=0
 bookmarks5=0
-sourcefiles=6
+bookmarks6=0
+sourcefiles=7
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
  ${PROJECTDIR}/mseresourceparser.pas
  /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
- /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
-relpaths=6
+ /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
+ /home/fred/mseide-mseguitimer2/tools/i18n/main.mfm
+relpaths=7
  msei18n.pas
  main.pas
  ../mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
  mseresourceparser.pas
- ../apps/ide/lang_ru/actionsmodule.mfm
- ../apps/ide/lang_ru/i18n.trp
-ismoduletexts=6
+ apps/ide/lang_ru/actionsmodule.mfm
+ ../../mseide-mseguitimer2/tools/i18n/main.pas
+ ../mseide-mseguitimer2/tools/i18n/main.mfm
+ismoduletexts=7
  0
  0
  0
  0
  -1
  0
+ -1
 modules=2
  /home/fred/mseide-msegui/tools/i18n/project.mfm
  /home/fred/mseide-msegui/tools/i18n/main.mfm
@@ -859,17 +864,18 @@ nomenumodules=2
  -1
  0
 [sourcefo.files_tab]
-order=6
+order=7
  0
  1
  4
- 5
+ 6
+ 7
  2
  3
 firsttab=0
 index=1
 [layout]
-windowlayout=622
+windowlayout=593
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -901,15 +907,15 @@ windowlayout=622
  ny=0
  ncx=0
  ncy=0
- x=218
- y=292
- cx=946
- cy=392
+ x=3
+ y=29
+ cx=1360
+ cy=706
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1095,7 +1101,7 @@ windowlayout=622
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1110,7 +1116,7 @@ windowlayout=622
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=426
  width0=249
@@ -1336,13 +1342,14 @@ windowlayout=622
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
- history=50
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ history=20
+  /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
+  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
   /home/fred/mseide-mseguiru/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
-  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
   /home/fred/ideu/src/languages/lang_ru/i18n.trp
   /home/fred/ideu/src/languages/lang_ru/actionsmodule_mfm.pas
@@ -1357,37 +1364,6 @@ windowlayout=622
   /home/fred/ideu/src/languages/i18n.trp
   /home/fred/mseguinew/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseguinew/mseide-mseguitest/tools/i18n/project.pas
-  /home/fred/main.pas
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/fr/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
-  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
-  /home/fred/uos/examples/uos_libsndfile.pas
-  /home/fred/uos/examples/conswebstream.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
-  /home/fred/uos/examples/consoleplay.pas
-  /home/fred/mselangmoi/parser.pas
-  /home/fred/mselangmoi/interpreter/mli.pas
-  /home/fred/mselangmoi/compiler/compmodule.pas
-  /home/fred/mselangmoi/interpreter/mainmodule.pas
-  /home/fred/mselangmoi/main.pas
-  /home/fred/mlctestlast/hellomlc.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_libc.mla
-  /home/fred/mselang/src/compiler/compmodule.pas
-  /home/fred/mselangmoi/rtl/system/windows/rtl_sysintf.mla
-  /home/fred/mselangmoi/rtl/system/rtl_fpccompatibility.mla
-  /home/fred/mselangmoi/rtl/system/windows/rtl_libc.mla
-  /home/fred/mselangmoi/rtl/system/windows/rtl_stringconv.mla
-  /home/fred/mselangmoi/rtl/system/unix/rtl_stringconv.mla
-  /home/fred/mselangmoi/patheditform.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_sysintf.mla
-  /home/fred/msegui/lib/common/kernel/windows/msesysintf.pas
-  /home/fred/msegui/lib/common/kernel/linux/msesysintf.pas
-  /home/fred/msegui/lib/common/kernel/windows/msewinglob.pas
-  /home/fred/msegui/lib/common/fpccompatibility/dbf_idxfile.pas
-  /home/fred/mselangmoi/grammarglob.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1409,15 +1385,16 @@ windowlayout=622
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=6
+ order=7
   0
   1
   4
-  5
+  6
+  7
   2
   3
  firsttab=0
- index=2
+ index=1
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1476,7 +1453,7 @@ windowlayout=622
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
