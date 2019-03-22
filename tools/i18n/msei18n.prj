@@ -789,8 +789,9 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=filename
 findhistory=20
+ filename
  treeonupdaterowvalues
  writeln
  doread
@@ -810,15 +811,14 @@ findhistory=20
  updatenont
  filternode
  removenont
- loadpro
 findoptions=1
 editpos=7
  0,-1073741823
- 4,319
+ 0,453
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,807
+ 0,-1073741823
  0,-1073741823
 bookmarks0=0
 bookmarks1=0
@@ -838,11 +838,11 @@ sourcefiles=7
 relpaths=7
  msei18n.pas
  main.pas
- ../mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
+ mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
  mseresourceparser.pas
  apps/ide/lang_ru/actionsmodule.mfm
- ../../mseide-mseguitimer2/tools/i18n/main.pas
- ../mseide-mseguitimer2/tools/i18n/main.mfm
+ mseide-mseguitimer2/tools/i18n/main.pas
+ mseide-mseguitimer2/tools/i18n/main.mfm
 ismoduletexts=7
  0
  0
@@ -864,18 +864,10 @@ nomenumodules=2
  -1
  0
 [sourcefo.files_tab]
-order=7
- 0
- 1
- 4
- 6
- 7
- 2
- 3
 firsttab=0
 index=1
 [layout]
-windowlayout=593
+windowlayout=585
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1344,11 +1336,11 @@ windowlayout=593
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
   /home/fred/mseide-mseguiru/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
   /home/fred/ideu/src/languages/lang_ru/i18n.trp
@@ -1385,14 +1377,6 @@ windowlayout=593
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=7
-  0
-  1
-  4
-  6
-  7
-  2
-  3
  firsttab=0
  index=1
  [cpuc86_64fo]

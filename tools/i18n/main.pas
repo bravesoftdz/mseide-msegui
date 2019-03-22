@@ -451,8 +451,7 @@ begin
   mstr1:= mstr1+c[ord(sc_noproject)];
  end
  else begin
-  mstr1:= mstr1+msefileutils.filepath(projectfo.projectstat.filename)+ 
-  filename(projectfo.projectstat.filename);
+  mstr1:= mstr1+msefileutils.filepath(projectfo.projectstat.filename);
  end;
  caption:= mstr1 + ')';
 end;
