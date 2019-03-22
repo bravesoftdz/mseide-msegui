@@ -19,7 +19,7 @@ order16=0
 [projectoptions]
 projectdir=/home/fred/mseide-msegui/tools/i18n
 projectfilename=/home/fred/mseide-msegui/tools/i18n/msei18n.prj
-findinfiledialog=50
+findinfiledialog=52
  [findinfileadialogfo.subdirs]
  value=1
  [findinfileadialogfo.incurrentfile]
@@ -29,30 +29,32 @@ findinfiledialog=50
  [findinfileadialogfo.wholeword]
  value=0
  [findinfileadialogfo.inprojectdir]
- value=1
+ value=0
  [findinfileadialogfo.casesensitive]
  value=0
  [findinfileadialogfo.indirectories]
- value=0
+ value=1
  [findinfileadialogfo.mask]
- value="*.pas" "*.pp" "*.inc"  "*.*"
+ value="*.pas" "*.pp" "*.inc"
  history=2
-  "*.pas" "*.pp" "*.inc"  "*.*"
   "*.pas" "*.pp" "*.inc"
+  "*.pas" "*.pp" "*.inc"  "*.*"
  [findinfileadialogfo.dir]
  filenames=1
-  /home/fred/mseide-msegui/tools/i18n/
- filecolwidth=0
+  /home/fred/strumpract/
+ filecolwidth=174
  x=0
  y=0
  cx=0
  cy=0
- filehistory=0
+ filehistory=1
+  /home/fred/strumpract/
  filefilterindex=0
- filefilter=
+ filefilter="*.pas" "*.pp" "*.inc" "*.*"
  [findinfileadialogfo.findtext]
- value=donottranslate
- history=11
+ value=ttimer
+ history=12
+  ttimer
   donottranslate
   info.
   Not yet translated:
@@ -792,6 +794,7 @@ hintheight=214
 finddtext=treeonupdaterowvalues
 findhistory=20
  treeonupdaterowvalues
+ timer
  doread
  filename
  writeln
@@ -810,18 +813,21 @@ findhistory=20
  setntfalse
  updatenont
  filternode
- removenont
 findoptions=1
-editpos=9
+editpos=13
  0,-1073741823
- 0,372
+ 0,314
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,255
+ 0,3
+ 0,1107
  0,0
+ 0,87
+ 21,3
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -831,7 +837,11 @@ bookmarks5=0
 bookmarks6=0
 bookmarks7=0
 bookmarks8=0
-sourcefiles=9
+bookmarks9=0
+bookmarks10=0
+bookmarks11=0
+bookmarks12=0
+sourcefiles=13
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
@@ -841,7 +851,11 @@ sourcefiles=9
  /home/fred/mseide-mseguitimer2/tools/i18n/main.mfm
  /home/fred/msegui/tools/i18n/main.pas
  /home/fred/msegui/tools/i18n/main.mfm
-relpaths=9
+ /home/fred/strumpract/src/songplayer.pas
+ /home/fred/strumpract/src/songplayer.mfm
+ /home/fred/strumpract/src/waveform.pas
+ /home/fred/strumpract/src/waveform.mfm
+relpaths=13
  msei18n.pas
  main.pas
  mseguinew/mseide-msegui/lib/common/kernel/msestream.pas
@@ -851,10 +865,18 @@ relpaths=9
  mseide-mseguitimer2/tools/i18n/main.mfm
  ../../msegui/tools/i18n/main.pas
  ../../msegui/tools/i18n/main.mfm
-ismoduletexts=9
+ ../../strumpract/src/songplayer.pas
+ ../../strumpract/src/songplayer.mfm
+ ../../strumpract/src/waveform.pas
+ ../../strumpract/src/waveform.mfm
+ismoduletexts=13
  0
  0
  0
+ 0
+ -1
+ 0
+ -1
  0
  -1
  0
@@ -874,9 +896,13 @@ nomenumodules=2
  -1
  0
 [sourcefo.files_tab]
-order=9
+order=13
  0
  1
+ 9
+ 11
+ 12
+ 10
  7
  8
  2
@@ -885,9 +911,9 @@ order=9
  5
  6
 firsttab=0
-index=1
+index=4
 [layout]
-windowlayout=625
+windowlayout=629
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1354,7 +1380,7 @@ windowlayout=625
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/msegui/tools/i18n/main.mfm
+ value=/home/fred/strumpract/src/waveform.mfm
  history=50
   /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
@@ -1427,9 +1453,13 @@ windowlayout=625
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=9
+ order=13
   0
   1
+  9
+  11
+  12
+  10
   7
   8
   2
@@ -1438,7 +1468,7 @@ windowlayout=625
   5
   6
  firsttab=0
- index=3
+ index=4
  [cpuc86_64fo]
  irqoff=0
  splitdir=0

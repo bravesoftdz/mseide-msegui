@@ -299,22 +299,20 @@ begin
     
          if copy(astro,1,1) = '"' then
          begin
-        
-         //if length(valuetext) > 20 then  writeln(valuetext);
-         nodo := StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
-         nodo := StringReplace(nodo, ' ', '', [rfReplaceAll]);
-         nodo := StringReplace(nodo, '"', '', [rfReplaceAll]);
+         nodo := wideStringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+         nodo := wideStringReplace(nodo, ' ', '', [rfReplaceAll]);
+         nodo := wideStringReplace(nodo, '"', '', [rfReplaceAll]);
                  
-         asdo := StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
-         asdo := StringReplace(asdo, ' ', '', [rfReplaceAll]);
-         asdo := StringReplace(asdo, '"', '', [rfReplaceAll]);
+         asdo := wideStringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+         asdo := wideStringReplace(asdo, ' ', '', [rfReplaceAll]);
+         asdo := wideStringReplace(asdo, '"', '', [rfReplaceAll]);
          
-          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
+         if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
            astrt := copy(astrt,2,length(astrt)-2) ; 
-           //  writeln(nodo);
-           //  writeln(asdo);
+           if copy(astrt,length(astrt),1) = '"' then
+             astrt := copy(astrt,1,length(astrt)-1) ;
            end; 
       
          end else 
@@ -325,22 +323,21 @@ begin
        
        if hasfound then
        begin
-         if anont = 'T' then
-         begin
+         if anont = 'T' then begin
          info.donottranslate := true;
          donottranslate[aindex]:= true;
          end else donottranslate[aindex]:= info.donottranslate;     
          comment[aindex]:= acom;
-          end else
-        begin
-        donottranslate[aindex]:= info.donottranslate;
-        comment[aindex]:= info.comment;
-        end;
+        end else
+          begin
+          donottranslate[aindex]:= info.donottranslate;
+          comment[aindex]:= info.comment;
+          end;
   
        end else
        begin
-        donottranslate[aindex]:= info.donottranslate;
-        comment[aindex]:= info.comment;
+       donottranslate[aindex]:= info.donottranslate;
+       comment[aindex]:= info.comment;
        end;
            
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
@@ -369,18 +366,7 @@ begin
      if info.variants[int1] <> '' then     
      gridvalue[aindex]:= info.variants[int1] else
      gridvalue[aindex]:= valuetext;
-    
-    {
-     if gridvalue[aindex]= '%ntf$'  // for items missing.
-     then
-     begin
-       gridvalue[aindex]:= valuetext;
-       info.variants[int1] := gridvalue[aindex];
-     //  grid.rowcolorstate[int1]:= 2;
-      end; 
-      //else grid.rowcolorstate[int1]:= 0; 
-      }
-      
+       
       end
       else begin
        gridvalue[aindex]:= '';
@@ -779,9 +765,6 @@ begin
  updatedata;
  removenont(sender); 
  numrow(sender);
-// ontimerup(sender);
-//if stringonly.value then
-// ttimer2.enabled := true;
 end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
@@ -797,13 +780,12 @@ var
  int1 : integer;
  isstring : boolean = false;
 begin
-
+ isloaded := false;
  try
   stream.encoding:= aencoding;
  
    setlength(valuearray,0); 
-   //stream.readln(str1);
-   //str2 := str1;
+   
    while not stream.eof do begin
     stream.readln(str1); 
    
@@ -871,7 +853,10 @@ begin
 // refreshnodedata;
 // updatedata;
  isloaded := false;
- ttimer2.enabled := true;
+ if ttimer2.Enabled then
+ ttimer2.restart // to reset
+ else ttimer2.Enabled := True;
+
 end;
 
 procedure tmainfo.doimport(stream: ttextdatastream; aencoding: charencodingty);
