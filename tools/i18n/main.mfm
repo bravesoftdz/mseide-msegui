@@ -1,7 +1,7 @@
 object mainfo: tmainfo
   visible = False
-  bounds_x = 510
-  bounds_y = 161
+  bounds_x = 606
+  bounds_y = 148
   bounds_cx = 658
   bounds_cy = 395
   container.frame.levelo = 1
@@ -61,7 +61,6 @@ object mainfo: tmainfo
       bounds_y = 5
       bounds_cx = 70
       bounds_cy = 16
-      statfile = projectfo.projectstat
       ondataentered = formatchanged
       onsetvalue = onsetnosting
     end
@@ -320,7 +319,6 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 35
     bounds_cy = 16
-    statfile = projectfo.projectstat
     optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
     ondataentered = formatchanged
     value = True
@@ -342,9 +340,10 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 80
     bounds_cy = 16
-    statfile = projectfo.projectstat
     ondataentered = formatchanged
     onsetvalue = onsetstringonly
+    value = True
+    valuedefault = True
   end
   object nont: tbooleanedit
     color = -2147483645
@@ -362,7 +361,6 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 51
     bounds_cy = 16
-    statfile = projectfo.projectstat
     ondataentered = formatchanged
     onsetvalue = nontonsetvalue
     value = True
@@ -384,7 +382,6 @@ object mainfo: tmainfo
     bounds_y = 5
     bounds_cx = 61
     bounds_cy = 16
-    statfile = projectfo.projectstat
     ondataentered = formatchanged
     onsetvalue = ntonlyonsetvalue
   end
@@ -705,7 +702,7 @@ object mainfo: tmainfo
       E2E2E201E4D4CF01E3CBC001E4C7B901E2C5B701E0C8BD01DECEC901CDD5CD01
       CCD4CC01D8D8D801D6D6D601D5D5D501D4D4D401D3D3D301D2D2D201D1D1D101
     }
-    left = 296
+    left = 400
     top = 224
   end
   object menuitemframe: tframecomp
@@ -720,5 +717,12 @@ object mainfo: tmainfo
     enabled = True
     left = 152
     top = 96
+  end
+  object ttimer2: ttimer
+    options = [to_single]
+    ontimer = ontimerup
+    enabled = True
+    left = 72
+    top = 256
   end
 end

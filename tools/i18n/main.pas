@@ -69,6 +69,7 @@ type
    statusdisp: tstringdisp;
    ttimer1: ttimer;
    nostring: tbooleanedit;
+   ttimer2: ttimer;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -118,6 +119,7 @@ type
                    var accept: Boolean);
    procedure onsetnosting(const sender: TObject; var avalue: Boolean;
                    var accept: Boolean);
+   procedure ontimerup(const sender: TObject);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -153,6 +155,7 @@ var
  rootnode: tpropinfonode;
  nontarray : Array of String;
  valuearray : Array of wideString;
+ isloaded : boolean = false;
 
 implementation
 uses
@@ -267,8 +270,14 @@ end;
 procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
   const aindex: integer; const aitem: tlistitem);
 var
- int1: integer;
+ hasfound : boolean;
+int1, int2, int3, int4, int5, x : integer;
+acomment: msestring; 
+ node, node2, node3: tpropinfonode;
+ str1, str2,  anont, acom, astro,astrt : mseString;
+ ar1: stringarty;
  isnont : boolean = false;
+
 begin
  with tpropinfoitem(aitem) do begin
   if node <> nil then begin
@@ -299,12 +308,43 @@ begin
     typedisp[aindex]:= ord(info.valuetype);
     comment[aindex]:= info.comment;
     value[aindex]:= valuetext;
+    
+    // writeln(valuetext);
+    if isloaded = false then begin
+       x := 0;   
+       hasfound := false;
+        while (x < length(valuearray)) and (hasfound = false) do
+         begin
+         str2 := (valuearray[x]);
+         anont := (copy(str2,1,1));
+         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         acom := (copy(str2,1,system.pos(',',str2)-1));
+         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         astro := (copy(str2,1,system.pos(',',str2)-1));
+         astrt := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
+         if (trim(valuetext) <> '') and (trim(uppercase(valuetext)) = trim(uppercase(astro))) then 
+               hasfound := true; 
+         inc(x);   
+       end; 
+       end;
+       
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
-       gridvalue[aindex]:= info.variants[int1];
-   
-     {
+     
+    if isloaded = false then begin
+     if hasfound then
+     begin
+      gridvalue[aindex]:=astrt;
+      info.variants[int1] := astrt;
+      end else
+      begin
+       gridvalue[aindex]:=valuetext;
+       info.variants[int1] := valuetext;
+      end 
+     end else gridvalue[aindex]:= info.variants[int1];
+    
+  {
      if gridvalue[aindex]= '%ntf$'  // for items missing.
      then
      begin
@@ -395,7 +435,8 @@ begin
   mstr1:= mstr1+c[ord(sc_noproject)];
  end
  else begin
-  mstr1:= mstr1+msefileutils.filename(projectfo.projectstat.filename);
+  mstr1:= mstr1+msefileutils.filepath(projectfo.projectstat.filename)+ 
+  filename(projectfo.projectstat.filename);
  end;
  caption:= mstr1 + ')';
 end;
@@ -437,8 +478,8 @@ begin
  grid.datacols.count - 1 do
  begin
  //grid.datacols[int1].width:= 200;
- grid.datacols[int1].widthmax:= 400;
- grid.datacols[int1].widthmin:= 60;
+ grid.datacols[int1].widthmax:= 500;
+ grid.datacols[int1].widthmin:= 100;
  end;
  grid.beginupdate;
  try
@@ -715,6 +756,9 @@ begin
  updatedata;
  removenont(sender); 
  numrow(sender);
+// ontimerup(sender);
+//if stringonly.value then
+// ttimer2.enabled := true;
 end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
@@ -729,6 +773,10 @@ var
  int1, int2, x, y: integer;
  hasfound : boolean = false;
 begin
+
+stringonly.value := true;
+nont.value := true;
+
  try
   stream.encoding:= aencoding;
  
@@ -764,8 +812,6 @@ begin
   pointers[3]:= @acomment;
   
   setlength(nontarray,0);
-  //{
-    // }
    y := 0;
    
   while not stream.eof do begin
@@ -783,12 +829,13 @@ begin
      with node.info do begin
       comment:= acomment;
       variants:= avariants; 
-  //if 1=1
+ //  if 1 = 1  
  //  if (system.pos(':',name) > 0)  and// for items missing.
    if  ((valuetype =vastring) or (valuetype =valstring) or (valuetype =vautf8string) 
       or (valuetype =vawstring))  
      then
-       begin       x := 0;   
+       begin   
+       x := 0;   
        hasfound := false;    
        while (x < length(valuearray)) and (hasfound = false) do
        begin
@@ -799,7 +846,7 @@ begin
          str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
          astro := (copy(str2,1,system.pos(',',str2)-1));
          astrt := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
-         if (trim(uppercase(msestringvalue)) = trim(uppercase(astro)) ) then  hasfound := true;  
+         if (trim((msestringvalue)) = trim((astro)) ) then  hasfound := true;  
           inc(x);   
        end;
            
@@ -807,8 +854,11 @@ begin
       if anont = 'F' then notranslate:= false else notranslate:= true;
       comment := acom; 
       variants[0] := (astrt); 
-        
-      end else variants[0] := msestringvalue;
+       //writeln(msestringvalue + ' = ' + variants[0]); 
+      end else begin
+      variants[0] := msestringvalue;
+       //writeln('NOT FOUND +++++++++++' + msestringvalue + ' = ' + variants[0]); 
+      end;
    
     if (system.pos(':',name) > 0) then begin
       if notranslate then
@@ -819,7 +869,7 @@ begin
         nontarray[length(nontarray)-1] := aname2;
         //writeln(nontarray[length(nontarray)-1]);
         end;
-          donottranslate:= false; 
+        donottranslate:= false; 
           
         end else donottranslate:= notranslate;
           
@@ -830,9 +880,13 @@ begin
             else donottranslate:= true;   
           
      end else donottranslate:= notranslate;
-     
+       
    end;  
-        //todo: errorlist
+   
+ //  {
+
+  // }     //todo: errorlist
+  ttimer2.enabled := true;
     end;
    end
    else begin
@@ -1445,5 +1499,9 @@ begin
  end;
 end;
 
+procedure tmainfo.ontimerup(const sender: TObject);
+begin
+ isloaded := true;
+end;
 
 end.
