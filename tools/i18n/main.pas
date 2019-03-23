@@ -815,8 +815,7 @@ workpan.left := 0;
 workpan.top := 0;
 workpan.width := width-4;
 workpan.height := height-statusdisp.height-10;
-
-
+workpan.font.color := cl_white;
 workpan.visible := true;
 grid.datacols[0].color := cl_white;
 grid.clear;
@@ -846,6 +845,9 @@ application.processmessages;
    str2 := str1;
    end;
   end;
+  
+ // workpan.font.color := cl_black;
+ // application.processmessages;
  
   // {
    Stream.Seek(0,soFromBeginning); 
@@ -893,6 +895,8 @@ application.processmessages;
  end;
 // refreshnodedata;
 // updatedata;
+// workpan.font.color := cl_white;
+// application.processmessages;
  isloaded := false;
  if ttimer2.Enabled then
  ttimer2.restart // to reset

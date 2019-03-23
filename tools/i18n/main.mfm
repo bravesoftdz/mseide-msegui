@@ -422,7 +422,7 @@ object mainfo: tmainfo
   end
   object workpan: tstringdisp
     frame.hiddenedges = [edg_right, edg_top, edg_left, edg_bottom]
-    frame.colorclient = 13477846
+    frame.colorclient = 948325
     frame.localprops = [frl_levelo, frl_hiddenedges, frl_colorclient]
     frame.localprops1 = []
     taborder = 8
