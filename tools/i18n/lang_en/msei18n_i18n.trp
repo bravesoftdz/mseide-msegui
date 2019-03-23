@@ -24,20 +24,20 @@ value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
 propcolwidthref=687
 values0=1
- ru
+ en
 width0=94
 sortdescend0=0
 values1=1
- /home/fred/mseide-msegui/tools/i18n/lang_ru
+ /home/fred/mseide-msegui/tools/i18n/lang_en/
 [projectfo.datafilename]
 filenames=1
- /home/fred/mseide-msegui/tools/i18n/lang_ru/i18n.trd
+ /home/fred/mseide-msegui/tools/i18n/lang_en/msei18n_i18n.trd
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=/home/fred/mseide-msegui/tools/i18n/lang_ru/
+lastdir=/home/fred/mseide-msegui/tools/i18n/lang_en/
 filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]
@@ -77,9 +77,9 @@ active=0
 visible=0
 [mainfo]
 stackedunder=
-x=77
-y=101
-cx=1175
+x=120
+y=81
+cx=917
 cy=586
 wsize=0
 active=1

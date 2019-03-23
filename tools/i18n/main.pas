@@ -241,14 +241,17 @@ begin
  rootnode:= tpropinfonode.Create;
  application.createform(tprojectfo, projectfo);
  updatecaption;
+  
 end;
 
 procedure tmainfo.tmainfoonloaded(const sender: tobject);
 begin
  mainstatfile.readstat;
- show;
  if (stringonly.value = false) and (nont.value = true) then
- formatchanged(sender);  
+ formatchanged(sender); 
+  application.processmessages;
+  show; 
+  application.processmessages;
 end;
 
 procedure tmainfo.tmainfoondestroy(const sender: tobject);
@@ -489,8 +492,8 @@ begin
  grid.datacols.count - 1 do
  begin
  //grid.datacols[int1].width:= 200;
- grid.datacols[int1].widthmax:= 500;
- grid.datacols[int1].widthmin:= 100;
+ grid.datacols[int1].widthmax:= 600;
+ grid.datacols[int1].widthmin:= 150;
  end;
  grid.beginupdate;
  try

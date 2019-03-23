@@ -1,8 +1,8 @@
 object mainfo: tmainfo
   visible = False
-  bounds_x = 606
-  bounds_y = 148
-  bounds_cx = 658
+  bounds_x = 342
+  bounds_y = 218
+  bounds_cx = 687
   bounds_cy = 395
   container.frame.levelo = 1
   container.frame.localprops = [frl_levelo]
@@ -17,9 +17,9 @@ object mainfo: tmainfo
   container.frame.sbvert.faceendbutton.template = concavey
   container.bounds = (
     0
-    20
-    658
-    375
+    24
+    687
+    371
   )
   optionswindow = [wo_groupleader]
   mainmenu = mainmenu1
@@ -43,7 +43,7 @@ object mainfo: tmainfo
     face.template = concavex
     bounds_x = 1
     bounds_y = 1
-    bounds_cx = 656
+    bounds_cx = 685
     bounds_cy = 24
     anchors = [an_top]
     object nostring: tbooleanedit
@@ -79,8 +79,8 @@ object mainfo: tmainfo
     taborder = 5
     bounds_x = 1
     bounds_y = 25
-    bounds_cx = 655
-    bounds_cy = 330
+    bounds_cx = 684
+    bounds_cy = 326
     anchors = [an_left, an_top, an_right, an_bottom]
     optionsgrid = [og_colsizing, og_focuscellonenter, og_rowheight, og_colchangeontabkey, og_wrapcol, og_autopopup]
     fixcols.count = 1
@@ -123,46 +123,52 @@ object mainfo: tmainfo
       -1610612717
     )
     datacols.count = 5
+    datacols.width = 200
     datacols.options = [co_savestate]
     datacols.options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
     datacols.items = <    
       item[tree]
-        width = 195
+        width = 200
         options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
-        widthmax = 400
+        widthmin = 10
+        widthmax = 600
         widgetname = 'tree'
         dataclass = ttreeitemeditlist
       end    
       item[typedisp]
-        width = 60
+        width = 100
         options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
-        widthmax = 80
+        widthmin = 10
+        widthmax = 300
         widgetname = 'typedisp'
         dataclass = tgridenumdatalist
       end    
       item[donottranslate]
-        width = 19
+        width = 40
         options = [co_drawfocus, co_savevalue, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
-        widthmax = 30
+        widthmin = 10
+        widthmax = 50
         widgetname = 'donottranslate'
         dataclass = tgridintegerdatalist
       end    
       item[comment]
-        width = 66
+        width = 70
         options = [co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
-        widthmax = 300
+        widthmin = 10
+        widthmax = 400
         widgetname = 'comment'
         dataclass = tgridmsestringdatalist
       end    
       item[value]
-        width = 249
+        width = 200
         options = [co_readonly, co_savestate]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autorowheight]
-        widthmax = 400
+        widthmin = 10
+        widthmax = 600
         widgetname = 'value'
         dataclass = tgridmsestringdatalist
       end>
@@ -193,7 +199,7 @@ object mainfo: tmainfo
       visible = False
       bounds_x = 0
       bounds_y = 0
-      bounds_cx = 195
+      bounds_cx = 200
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_readonly, oe_undoonesc, oe_checkmrcancel, oe_exitoncursor, oe_hintclippedtext]
@@ -217,9 +223,8 @@ object mainfo: tmainfo
         end>
       taborder = 2
       visible = False
-      bounds_x = 196
+      bounds_x = 201
       bounds_y = 0
-      bounds_cx = 60
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_readonly, oe_undoonesc, oe_checkmrcancel, oe_exitoncursor]
@@ -237,9 +242,9 @@ object mainfo: tmainfo
       frame.localprops = [frl_levelo]
       frame.localprops1 = []
       taborder = 3
-      bounds_x = 257
+      bounds_x = 302
       bounds_y = 0
-      bounds_cx = 19
+      bounds_cx = 40
       bounds_cy = 16
       optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savevalue, oe1_savestate]
@@ -264,9 +269,9 @@ object mainfo: tmainfo
       frame.button.imagenr = 17
       taborder = 4
       visible = False
-      bounds_x = 277
+      bounds_x = 343
       bounds_y = 0
-      bounds_cx = 66
+      bounds_cx = 70
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick, oe_hintclippedtext]
@@ -294,9 +299,9 @@ object mainfo: tmainfo
       frame.button.options = [fbo_invisible, fbo_disabled]
       taborder = 5
       visible = False
-      bounds_x = 344
+      bounds_x = 414
       bounds_y = 0
-      bounds_cx = 249
+      bounds_cx = 200
       bounds_cy = 16
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savestate]
       optionsedit = [oe_readonly, oe_undoonesc, oe_checkmrcancel, oe_exitoncursor, oe_hintclippedtext]
@@ -410,8 +415,8 @@ object mainfo: tmainfo
     frame.localprops1 = []
     taborder = 7
     bounds_x = 1
-    bounds_y = 356
-    bounds_cx = 655
+    bounds_y = 352
+    bounds_cx = 684
     bounds_cy = 18
     anchors = [an_left, an_right, an_bottom]
     reffontheight = 14
@@ -426,8 +431,10 @@ object mainfo: tmainfo
   end
   object mainmenu1: tmainmenu
     onupdate = mainmenuupdate
-    facetemplate = convexx
+    frametemplate = menuitemframe
+    facetemplate = concavex
     itemframetemplate = menuitemframe
+    itemfacetemplate = concavey
     itemframetemplateactive = menuitemframe
     menu.submenu.count = 11
     menu.submenu.items = <    
@@ -435,6 +442,8 @@ object mainfo: tmainfo
         caption = '&Open'
         name = 'open'
         state = [as_localcaption, as_localonexecute]
+        font.name = 'stf_menu'
+        font.localprops = [flp_extraspace]
         onexecute = onprojectopen
       end    
       item
@@ -708,6 +717,7 @@ object mainfo: tmainfo
   object menuitemframe: tframecomp
     template.levelo = -1
     template.leveli = 1
+    template.extraspace = 4
     left = 256
     top = 192
   end
