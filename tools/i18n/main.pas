@@ -284,8 +284,8 @@ begin
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
    
-    //writeln(typedisp[aindex]);   
-    //writeln(valuetext);
+    writeln(typedisp[aindex]);   
+    writeln(info.valuetype);
   
     if isloaded = false then begin
        x := 0;   
@@ -342,13 +342,13 @@ begin
        donottranslate[aindex]:= info.donottranslate;
        comment[aindex]:= info.comment;
        end;
-    
-      if trim(valuetext) = '' then
+  
+      if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
       begin    
        info.donottranslate := true;
        donottranslate[aindex]:= true;
       end; 
-           
+          
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin

@@ -206,7 +206,7 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=2
+ index=1
  [projectoptionsfo]
  stackedunder=
  x=275
@@ -489,7 +489,7 @@ modulefiles=1
 befcommandon=0
 makeoptionson=7
  127
- 27
+ 31
  98
  100
  127
@@ -526,12 +526,12 @@ compilerusedon=29
  0
  0
 debuggerusedon=6
- 4091
+ 4095
  0
  0
  0
  0
- 4
+ 0
 exeusedon=15
  4095
  0
@@ -816,7 +816,7 @@ findhistory=20
 findoptions=1
 editpos=2
  0,-1073741823
- 15,346
+ 0,345
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2
@@ -894,10 +894,10 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=444
- y=431
- cx=418
- cy=126
+ x=0
+ y=29
+ cx=1366
+ cy=706
  rcx=0
  rcy=0
  wsize=0
@@ -1008,7 +1008,7 @@ windowlayout=585
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [watchpointsfo]
  splitdir=0
  useroptions=268451945
@@ -1070,27 +1070,27 @@ windowlayout=585
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=targetconsolefo
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=159
- y=368
+ x=213
+ y=174
  cx=902
  cy=349
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [objectinspectorfo.grid]
- propcolwidthref=892
- width0=521
+ propcolwidthref=877
+ width0=512
  sortdescend0=0
- width1=365
+ width1=359
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1254,7 +1254,7 @@ windowlayout=585
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=objectinspectorfo
+ stackedunder=
  parent=
  mdistate=3
  nx=0
@@ -1297,7 +1297,7 @@ windowlayout=585
  nx=0
  ny=0
  ncx=1356
- ncy=62
+ ncy=61
  x=0
  y=0
  cx=1356
@@ -1360,7 +1360,7 @@ windowlayout=585
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=componentpalettefo
+ stackedunder=threadsfo
  parent=
  mdistate=0
  nx=0
@@ -1395,7 +1395,7 @@ windowlayout=585
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_mainfo_mse_
+ stackedunder=stackfo
  parent=
  mdistate=3
  nx=0
@@ -1414,7 +1414,7 @@ windowlayout=585
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0
