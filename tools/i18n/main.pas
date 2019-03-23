@@ -342,6 +342,12 @@ begin
        donottranslate[aindex]:= info.donottranslate;
        comment[aindex]:= info.comment;
        end;
+    
+      if trim(valuetext) = '' then
+      begin    
+       info.donottranslate := true;
+       donottranslate[aindex]:= true;
+      end; 
            
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin

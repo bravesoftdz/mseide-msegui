@@ -791,11 +791,11 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=widthmax
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
  widthmax
  timer
- treeonupdaterowvalues
  doread
  filename
  writeln
@@ -816,7 +816,7 @@ findhistory=20
 findoptions=1
 editpos=2
  0,-1073741823
- 38,471
+ 15,346
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2
@@ -978,7 +978,7 @@ windowlayout=585
  x=0
  y=0
  cx=205
- cy=508
+ cy=502
  rcx=0
  rcy=0
  [projecttreefo.grid]
@@ -1183,9 +1183,9 @@ windowlayout=585
  ncx=0
  ncy=0
  x=0
- y=573
+ y=566
  cx=1356
- cy=117
+ cy=116
  rcx=0
  rcy=0
  [componentstorefo]
@@ -1254,7 +1254,7 @@ windowlayout=585
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0
@@ -1285,7 +1285,7 @@ windowlayout=585
  x=0
  y=0
  cx=1356
- cy=59
+ cy=58
  rcx=0
  rcy=0
  [debuggerfo.basedock]
@@ -1297,11 +1297,11 @@ windowlayout=585
  nx=0
  ny=0
  ncx=1356
- ncy=61
+ ncy=62
  x=0
  y=0
  cx=1356
- cy=62
+ cy=61
  rcx=0
  rcy=0
  [debuggerfo.edit_options]
@@ -1350,7 +1350,7 @@ windowlayout=585
  x=208
  y=0
  cx=1148
- cy=508
+ cy=502
  rcx=0
  rcy=0
  [sourcefo.files_tab]
@@ -1360,7 +1360,7 @@ windowlayout=585
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=objectinspectorfo
+ stackedunder=componentpalettefo
  parent=
  mdistate=0
  nx=0
@@ -1387,9 +1387,9 @@ windowlayout=585
  ncx=0
  ncy=0
  x=0
- y=62
+ y=61
  cx=1356
- cy=508
+ cy=502
  rcx=0
  rcy=0
  [_mse_projectfo_mse_]
