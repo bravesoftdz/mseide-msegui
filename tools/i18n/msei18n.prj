@@ -206,7 +206,7 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=1
+ index=2
  [projectoptionsfo]
  stackedunder=
  x=275
@@ -489,7 +489,7 @@ modulefiles=1
 befcommandon=0
 makeoptionson=7
  127
- 31
+ 27
  98
  100
  127
@@ -526,12 +526,12 @@ compilerusedon=29
  0
  0
 debuggerusedon=6
- 4095
+ 4091
  0
  0
  0
  0
- 0
+ 4
 exeusedon=15
  4095
  0
@@ -794,9 +794,9 @@ hintheight=214
 finddtext=treeonupdaterowvalues
 findhistory=20
  treeonupdaterowvalues
+ doread
  widthmax
  timer
- doread
  filename
  writeln
  /usr/share/
@@ -816,7 +816,7 @@ findhistory=20
 findoptions=1
 editpos=2
  0,-1073741823
- 0,345
+ 0,319
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2
@@ -1070,7 +1070,7 @@ windowlayout=585
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1085,12 +1085,12 @@ windowlayout=585
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=877
- width0=512
+ propcolwidthref=892
+ width0=521
  sortdescend0=0
- width1=359
+ width1=365
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1360,7 +1360,7 @@ windowlayout=585
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=threadsfo
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -1395,7 +1395,7 @@ windowlayout=585
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=stackfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1414,7 +1414,7 @@ windowlayout=585
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=stackfo
  parent=
  mdistate=3
  nx=0

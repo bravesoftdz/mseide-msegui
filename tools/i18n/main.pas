@@ -284,8 +284,8 @@ begin
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
    
-    writeln(typedisp[aindex]);   
-    writeln(info.valuetype);
+   // writeln(typedisp[aindex]);   
+   //  writeln(info.valuetype);
   
     if isloaded = false then begin
        x := 0;   
@@ -302,25 +302,30 @@ begin
     
          if copy(astro,1,1) = '"' then
          begin
-         nodo := wideStringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
-         nodo := wideStringReplace(nodo, ' ', '', [rfReplaceAll]);
-         nodo := wideStringReplace(nodo, '"', '', [rfReplaceAll]);
-                 
-         asdo := wideStringReplace(astro, sLineBreak, '', [rfReplaceAll]);
-         asdo := wideStringReplace(asdo, ' ', '', [rfReplaceAll]);
-         asdo := wideStringReplace(asdo, '"', '', [rfReplaceAll]);
+          nodo := wideStringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+          nodo := wideStringReplace(nodo, ' ', '', [rfReplaceAll]);
+          nodo := wideStringReplace(nodo, '"', '', [rfReplaceAll]);
+                   
+          asdo := wideStringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+          asdo := wideStringReplace(asdo, ' ', '', [rfReplaceAll]);
+          asdo := wideStringReplace(asdo, '"', '', [rfReplaceAll]);
          
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
            astrt := copy(astrt,2,length(astrt)-2) ; 
-           if copy(astrt,length(astrt),1) = '"' then
-             astrt := copy(astrt,1,length(astrt)-1) ;
+           astrt := wideStringReplace(astrt, '""""', '"""', [rfReplaceAll]);
+           astrt := wideStringReplace(astrt, '"""', '""', [rfReplaceAll]); 
+           astrt := wideStringReplace(astrt, '""', '"', [rfReplaceAll]); 
            end; 
       
          end else 
-         if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then 
-               hasfound := true; 
+         begin
+          if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then
+         begin 
+          hasfound := true; 
+         end;      
+         end;
          inc(x);   
        end; 
        
@@ -345,8 +350,8 @@ begin
   
       if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
       begin    
-       info.donottranslate := true;
-       donottranslate[aindex]:= true;
+      info.donottranslate := true;
+      donottranslate[aindex]:= true;
       end; 
           
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
@@ -374,11 +379,19 @@ begin
      end else 
      if info.variants[int1] <> '' then     
      gridvalue[aindex]:= info.variants[int1] else
+     begin
      gridvalue[aindex]:= valuetext;
-       
+     info.variants[int1] := valuetext;
+     end;  
+     
+     // gridvalue[aindex]:=valuetext;
+     // info.variants[int1] := valuetext;
+     
       end
       else begin
-       gridvalue[aindex]:= '';
+      gridvalue[aindex]:= '';
+    // gridvalue[aindex]:= valuetext;
+    // info.variants[int1] := valuetext;
       end;
      end;
     end;
