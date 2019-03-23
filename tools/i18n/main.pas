@@ -120,6 +120,7 @@ type
    procedure onsetnosting(const sender: TObject; var avalue: Boolean;
                    var accept: Boolean);
    procedure ontimerup(const sender: TObject);
+   procedure onreset(const sender: TObject);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -155,6 +156,7 @@ var
  rootnode: tpropinfonode;
  valuearray : Array of wideString;
  isloaded : boolean = false;
+ doreset : boolean = false;
 
 implementation
 uses
@@ -186,8 +188,9 @@ type
   sc_totranslate,        //19
   sc_tonottranslate,     //20
   sc_yettranslated,      //21
-  sc_notyettranslated    //22
-  );
+  sc_notyettranslated,    //22
+  sc_doyouwanttoreset    //23
+    );
   
 const
  translateext = 'trans';
@@ -286,7 +289,9 @@ begin
    
    // writeln(typedisp[aindex]);   
    //  writeln(info.valuetype);
-  
+   
+   if doreset = false then begin 
+       
     if isloaded = false then begin
        x := 0;   
        hasfound := false;
@@ -353,11 +358,13 @@ begin
       info.donottranslate := true;
       donottranslate[aindex]:= true;
       end; 
+      end;
           
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
-     
+    
+    if doreset = false then begin  
     if isloaded = false then begin
      if hasfound then
      begin
@@ -383,10 +390,10 @@ begin
      gridvalue[aindex]:= valuetext;
      info.variants[int1] := valuetext;
      end;  
-     
-     // gridvalue[aindex]:=valuetext;
-     // info.variants[int1] := valuetext;
-     
+     end else begin 
+      gridvalue[aindex]:=valuetext;
+      info.variants[int1] := valuetext;
+     end;
       end
       else begin
       gridvalue[aindex]:= '';
@@ -1482,6 +1489,21 @@ end;
 procedure tmainfo.ontimerup(const sender: TObject);
 begin
  isloaded := true;
+end;
+
+procedure tmainfo.onreset(const sender: TObject);
+var
+mstr1 : string;
+begin
+mstr1 := c[ord(sc_doyouwanttoreset)];
+
+if askconfirmation(mstr1) then begin
+     doreset := true;
+     fdatachanged:= true;
+     datachanged;
+     updatedata;
+     doreset := false;
+    end;
 end;
 
 end.
