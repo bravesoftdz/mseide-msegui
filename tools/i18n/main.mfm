@@ -420,6 +420,25 @@ object mainfo: tmainfo
     anchors = [an_left, an_right, an_bottom]
     reffontheight = 14
   end
+  object workpan: tstringdisp
+    frame.hiddenedges = [edg_right, edg_top, edg_left, edg_bottom]
+    frame.colorclient = 13477846
+    frame.localprops = [frl_levelo, frl_hiddenedges, frl_colorclient]
+    frame.localprops1 = []
+    taborder = 8
+    visible = False
+    bounds_x = 161
+    bounds_y = 129
+    bounds_cx = 404
+    bounds_cy = 158
+    font.height = 20
+    font.style = [fs_bold, fs_italic]
+    font.name = 'stf_default'
+    font.localprops = [flp_style, flp_height]
+    textflags = [tf_xcentered, tf_ycentered]
+    value = 'Working...'
+    reffontheight = 24
+  end
   object mainstatfile: tstatfile
     filename = 'msei18n.sta'
     filedir = '"^/.mseide"'
@@ -540,8 +559,8 @@ object mainfo: tmainfo
   object threadcomp: tthreadcomp
     onexecute = makeexecute
     onterminate = maketerminate
-    left = 209
-    top = 115
+    left = 137
+    top = 75
   end
   object convexx: tfacecomp
     template.fade_pos.count = 2

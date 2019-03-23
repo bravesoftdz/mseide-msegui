@@ -70,6 +70,7 @@ type
    ttimer1: ttimer;
    nostring: tbooleanedit;
    ttimer2: ttimer;
+   workpan: tstringdisp;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -810,6 +811,17 @@ var
  isstring : boolean = false;
 begin
  isloaded := false;
+workpan.left := 0;
+workpan.top := 0;
+workpan.width := width-4;
+workpan.height := height-statusdisp.height-10;
+
+
+workpan.visible := true;
+grid.datacols[0].color := cl_white;
+grid.clear;
+application.processmessages;
+ 
  try
   stream.encoding:= aencoding;
  
@@ -1488,6 +1500,7 @@ end;
 
 procedure tmainfo.ontimerup(const sender: TObject);
 begin
+ workpan.visible := false;
  isloaded := true;
 end;
 
