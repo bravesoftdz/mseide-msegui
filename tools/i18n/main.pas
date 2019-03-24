@@ -122,6 +122,7 @@ type
                    var accept: Boolean);
    procedure ontimerup(const sender: TObject);
    procedure onreset(const sender: TObject);
+   procedure showworkpan;
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -288,10 +289,7 @@ begin
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
    
-   // writeln(typedisp[aindex]);   
-   //  writeln(info.valuetype);
-   
-   if doreset = false then begin 
+    if doreset = false then begin 
        
     if isloaded = false then begin
        x := 0;   
@@ -319,10 +317,7 @@ begin
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := copy(astrt,2,length(astrt)-2) ; 
-           astrt := wideStringReplace(astrt, '""""', '"""', [rfReplaceAll]);
-           astrt := wideStringReplace(astrt, '"""', '""', [rfReplaceAll]); 
-           astrt := wideStringReplace(astrt, '""', '"', [rfReplaceAll]); 
+           astrt := StringReplace(astrt, '"', '', [rfReplaceAll]); 
            end; 
       
          end else 
@@ -330,6 +325,7 @@ begin
           if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then
          begin 
           hasfound := true; 
+          astrt := StringReplace(astrt, '"', '', [rfReplaceAll]); 
          end;      
          end;
          inc(x);   
@@ -337,6 +333,9 @@ begin
        
        if hasfound then
        begin
+         if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
+         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+    
          if anont = 'T' then begin
          info.donottranslate := true;
          donottranslate[aindex]:= true;
@@ -792,9 +791,13 @@ begin
 
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
+ showworkpan;
+ application.processmessages;
  updatedata;
  removenont(sender); 
  numrow(sender);
+ application.processmessages;
+ workpan.visible := false;
 end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
@@ -811,12 +814,7 @@ var
  isstring : boolean = false;
 begin
  isloaded := false;
-workpan.left := 0;
-workpan.top := 0;
-workpan.width := width-4;
-workpan.height := height-statusdisp.height-10;
-workpan.font.color := cl_white;
-workpan.visible := true;
+showworkpan;
 grid.datacols[0].color := cl_white;
 grid.clear;
 application.processmessages;
@@ -845,9 +843,6 @@ application.processmessages;
    str2 := str1;
    end;
   end;
-  
- // workpan.font.color := cl_black;
- // application.processmessages;
  
   // {
    Stream.Seek(0,soFromBeginning); 
@@ -895,8 +890,6 @@ application.processmessages;
  end;
 // refreshnodedata;
 // updatedata;
-// workpan.font.color := cl_white;
-// application.processmessages;
  isloaded := false;
  if ttimer2.Enabled then
  ttimer2.restart // to reset
@@ -970,9 +963,12 @@ if nostring.value then
 showmessage('Exportation with -no string- is not allowed.') else
     begin     
     if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
+    showworkpan;
+    application.processmessages;
     stream:= ttextdatastream.create(str1,fm_create);
     doexport(stream,charencodingty(projectfo.impexpencoding.value));
     formatchanged(sender);
+    workpan.visible := false;
     end;
  end;   
 end;
@@ -1061,7 +1057,11 @@ end;
 
 procedure tmainfo.onprojectsave(const sender: tobject);
 begin
+ showworkpan;
+ application.processmessages;
  writeprojectdata;
+ application.processmessages;
+ workpan.visible := false;
 end;
  
 procedure tmainfo.newprojectexe(const sender: TObject);
@@ -1089,10 +1089,15 @@ end;
 
 procedure tmainfo.saveasexecute(const sender: TObject);
 begin
+
  if projectfiledialog.controller.execute(fdk_save) = mr_ok then begin
+  showworkpan;
+  application.processmessages;
   projectfo.projectstat.filename:= projectfiledialog.controller.filename;
   projectfo.projectstat.writestat;
   writeprojectdata;
+  application.processmessages;
+  workpan.visible := false;
  end;
 end;
 
@@ -1312,6 +1317,16 @@ begin
  application.unlock;
 end;
 
+procedure tmainfo.showworkpan;
+begin
+    workpan.left := 0;
+    workpan.top := 0;
+    workpan.width := width-4;
+    workpan.height := height-statusdisp.height-10;
+    workpan.font.color := cl_white;
+    workpan.visible := true;
+end;
+
 procedure tmainfo.makeonexecute(const sender: tobject);
 begin
  if checksave(true) then begin
@@ -1322,6 +1337,7 @@ begin
   messagesfo.show(true);
   loadproject;
   formatchanged(sender);
+  // workpan.visible := false;
  end;
 end;
 
