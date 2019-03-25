@@ -484,18 +484,12 @@ settingsstorage=0
 settingsprojecttree=0
 settingsautoload=0
 settingsautosave=0
-modulenames=3
- DATATYPEFO
- MESSAGESFO
- PROJECTFO
-moduletypes=3
- TDATATYPEFO
- TMESSAGESFO
- TPROJECTFO
-modulefiles=3
- /home/fred/mseide-msegui/tools/i18n/datatypeform.mfm
- /home/fred/mseide-msegui/tools/i18n/messagesform.mfm
- /home/fred/mseide-msegui/tools/i18n/project.mfm
+modulenames=1
+ MAINFO
+moduletypes=1
+ TMAINFO
+modulefiles=1
+ /home/fred/mseide-msegui/tools/i18n/main.mfm
 befcommandon=0
 makeoptionson=7
  127
@@ -801,11 +795,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=writeln
 findhistory=20
- treeonupdaterowvalues
  writeln
+ treeonupdaterowvalues
  doread
+ copyu
  Data exchange files
  importtype
  Yes you did it!
@@ -822,93 +817,43 @@ findhistory=20
  filename
  /usr/share/
  utf
- isdoread
 findoptions=1
-editpos=12
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,0
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,363
- 0,-1073741823
- 0,15
+editpos=3
+ 0,46
+ 21,325
+ 0,233
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
-bookmarks3=0
-bookmarks4=0
-bookmarks5=0
-bookmarks6=0
-bookmarks7=0
-bookmarks8=0
-bookmarks9=0
-bookmarks10=0
-bookmarks11=0
-sourcefiles=12
+sourcefiles=3
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/main.pas
- /home/fred/mseguinew/mseide-msegui/lib/common/widgets/msewidgets.pas
- ${PROJECTDIR}/project.pas
- ${PROJECTDIR}/project.pas
- ${PROJECTDIR}/messagesform.pas
- /home/fred/mseide-mseguiimport/tools/i18n/main.mfm
- ${PROJECTDIR}/datatypeform.pas
- ${PROJECTDIR}/datatypeform.pas
- ${PROJECTDIR}/main.pas
- ${PROJECTDIR}/msei18n.pas
- ${PROJECTDIR}/main.mfm
-relpaths=12
+ ${PROJECTDIR}/lazutf8.pas
+relpaths=3
  msei18n.pas
  main.pas
- ../mseguinew/mseide-msegui/lib/common/widgets/msewidgets.pas
- project.pas
- project.pas
- messagesform.pas
- mseide-mseguiimport/tools/i18n/main.mfm
- datatypeform.pas
- datatypeform.pas
- main.pas
- msei18n.pas
- main.mfm
-ismoduletexts=12
+ lazutf8.pas
+ismoduletexts=3
  0
  0
  0
- 0
- 0
- 0
- -1
- 0
- 0
- 0
- 0
- -1
-modules=3
- /home/fred/mseide-msegui/tools/i18n/messagesform.mfm
- /home/fred/mseide-msegui/tools/i18n/datatypeform.mfm
+modules=2
+ /home/fred/mseide-msegui/tools/i18n/main.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
-moduleoptions=3
+moduleoptions=2
  0
  0
- 0
-visiblemodules=3
+visiblemodules=2
  -1
+ 0
+nomenumodules=2
+ 0
  -1
- -1
-nomenumodules=3
- 0
- 0
- 0
 [sourcefo.files_tab]
-firsttab=2
-index=9
+firsttab=0
+index=1
 [layout]
-windowlayout=604
+windowlayout=585
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -948,7 +893,7 @@ windowlayout=604
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1377,11 +1322,11 @@ windowlayout=604
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/main.mfm
   /home/fred/mseguinew/mseide-msegui/lib/common/widgets/msewidgets.pas
   /home/fred/mseide-mseguiimport/tools/i18n/main.mfm
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
-  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/ideu/src/msefiledialogres.mfm
   /home/fred/ideu/src/msefiledialog.mfm
   /home/fred/ideu/src/dialogfiles.mfm
@@ -1418,13 +1363,13 @@ windowlayout=604
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- firsttab=2
- index=9
+ firsttab=0
+ index=1
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_messagesfo_mse_
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1456,39 +1401,20 @@ windowlayout=604
  cy=502
  rcx=0
  rcy=0
- [_mse_messagesfo_mse_]
+ [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_datatypefo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=298
- y=263
- cx=431
- cy=234
- rcx=0
- rcy=0
- wsize=0
- active=0
- visible=1
- [_mse_datatypefo_mse_]
- splitdir=0
- useroptions=268451963
- stackedunder=_mse_projectfo_mse_
- parent=
- mdistate=3
- nx=0
- ny=0
- ncx=0
- ncy=0
- x=406
- y=275
- cx=347
- cy=105
+ x=342
+ y=218
+ cx=697
+ cy=395
  rcx=0
  rcy=0
  wsize=0
@@ -1497,7 +1423,7 @@ windowlayout=604
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1512,7 +1438,7 @@ windowlayout=604
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
 [targetconsole]
 finddtext=
 findhistory=0

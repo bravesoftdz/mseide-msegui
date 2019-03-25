@@ -19,7 +19,7 @@ unit main;
 
 interface
 uses
- {$ifdef unix}unix,{$endif}mseforms,msefiledialog,msestat,msestatfile,
+ {$ifdef unix}unix,{$endif}mseforms,msefiledialog,msestat,msestatfile, LazUTF8,
  msesimplewidgets,msegrids,msewidgetgrid,msegraphics,msegraphutils,
  mselistbrowser,msedataedits,typinfo,msedatanodes,msegraphedits,msestream,
  mseglob,msemenus,classes,mclasses,msetypes,msestrings,msethreadcomp,mseguiglob,
@@ -282,6 +282,7 @@ var
  hasfound : boolean;
 int1, x : integer;
 str2,  anont, acom, astro,astrt, nodo, asdo : wideString;
+astrtraw : RawByteString;
 
 begin
  with tpropinfoitem(aitem) do begin
@@ -322,6 +323,7 @@ begin
           begin
            hasfound := true; 
            astrt := wideStringReplace(astrt, '"', '', [rfReplaceAll]); 
+           // writeln(astrt);
            end; 
       
          end else 
@@ -330,6 +332,7 @@ begin
          begin 
           hasfound := true; 
           astrt := wideStringReplace(astrt, '"', '', [rfReplaceAll]); 
+          //  writeln(astrt);
          end;      
          end;
          inc(x);   
@@ -363,8 +366,8 @@ begin
         begin
          str2 := widestring(valuearray[x]);
          str2 := widestring(wideStringReplace(str2, '\n', '', [rfReplaceAll]));
-         astro := (copy(str2,1,system.pos(';',str2)-1));
-         astrt := widestring((copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)))) ;  
+         astro := (utf8copy(str2,1,system.pos(';',str2)-1));
+         astrt := widestring((utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)))) ;  
                   
          if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
          begin
@@ -390,15 +393,16 @@ begin
          end; 
         inc(x);   
        end;    
-           comment[aindex]:= info.comment; 
+       
+       comment[aindex]:= info.comment; 
+       
          if hasfound then
        begin
-         if copy(valuetext,1,2) = '" ' then astrt := widestring('" ' + astrt);
-         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := widestring(astrt + ' "');
+         if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
+         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
         end;   
         
-       astrt := wideString(astrt);
-           
+                
           if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
           begin    
           info.donottranslate := true;
@@ -413,6 +417,10 @@ begin
        end;
   
      end;
+     
+       astrtraw := UTF8Encode(astrt);
+         SetCodePage(astrtraw, 0, False);
+          astrt := UnicodeString(astrtraw);  
           
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
@@ -860,7 +868,7 @@ var
  notranslate: boolean;
  acomment: msestring; 
  node: tpropinfonode;
- str1, str2, str3, strtemp : wideString;
+ str1, str2, str3, strtemp : mseString;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
@@ -875,7 +883,7 @@ grid.clear;
 application.processmessages;
  
  try
-  stream.encoding:= aencoding;
+   stream.encoding:= aencoding;
  
    setlength(valuearray,0); 
    
@@ -894,7 +902,7 @@ application.processmessages;
         valuearray[length(valuearray)-1] :=
         (copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
        str2 := str1;    
-       //  writeln((valuearray[length(valuearray)-1]));
+        // writeln(widestring((valuearray[length(valuearray)-1])));
         isstring := false;
        end else if isstring = true then str2 := str2 +sLineBreak+ str1;
  
@@ -915,8 +923,8 @@ application.processmessages;
          str2 := wideStringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := wideStringReplace(str2, '"', '', [rfReplaceAll]);
          valuearray[length(valuearray)-1] := widestring(str2);
-         // writeln((valuearray[length(valuearray)-1]));
-         str2 := widestring(copy(str1,8,length(str1)-8)) ;
+         // writeln(utf8encode((valuearray[length(valuearray)-1])));
+         str2 := utf8copy(str1,8,length(str1)-8) ;
          str3 := '';
          isid := true;
          isstring := false;
@@ -931,7 +939,7 @@ application.processmessages;
          else 
        if isid then
        begin
-        strtemp := copy(str1,2,length(str1)-2);
+        strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin
         strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]);
         str2 := str2 + strtemp  + sLineBreak ;
@@ -941,7 +949,7 @@ application.processmessages;
         else 
        if isstring then 
        begin
-        strtemp := copy(str1,2,length(str1)-2);
+        strtemp := utf8copy(str1,2,length(str1)-2);
         strtemp := widestring(strtemp);
        if  (system.pos('\n',strtemp) > 0) then begin   
         strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]); 
