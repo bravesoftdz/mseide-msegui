@@ -1,0 +1,90 @@
+object datatypefo: tdatatypefo
+  visible = False
+  bounds_x = 406
+  bounds_y = 275
+  bounds_cx = 337
+  bounds_cy = 105
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    337
+    105
+  )
+  options = [fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  caption = 'Importation'
+  windowopacity = -Inf
+  moduleclassname = 'tmseform'
+  object tgroupbox1: tgroupbox
+    frame.caption = 'Data type'
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.outerframe = (
+      0
+      7
+      0
+      0
+    )
+    bounds_x = 24
+    bounds_y = 9
+    bounds_cx = 290
+    bounds_cy = 57
+    object trdbo: tbooleaneditradio
+      frame.caption = 'trd/csv'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        45
+        2
+      )
+      bounds_x = 48
+      bounds_y = 26
+      bounds_cx = 58
+      bounds_cy = 16
+      options = [bo_executeonclick, bo_executeonkey, bo_executeonshortcut, bo_executedefaultonenterkey, bo_radioitem]
+      value = True
+    end
+    object pobo: tbooleaneditradio
+      frame.caption = 'PO/POT'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        46
+        2
+      )
+      taborder = 1
+      bounds_x = 168
+      bounds_y = 26
+      bounds_cx = 59
+      bounds_cy = 16
+      options = [bo_executeonclick, bo_executeonkey, bo_executeonshortcut, bo_executedefaultonenterkey, bo_radioitem]
+    end
+  end
+  object tbutton1: tbutton
+    taborder = 1
+    bounds_x = 112
+    bounds_y = 75
+    bounds_cx = 50
+    bounds_cy = 25
+    state = [as_localcaption, as_localonexecute]
+    caption = '&Ok'
+    onexecute = onexecdatatype
+  end
+  object tbutton2: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    taborder = 2
+    bounds_x = 176
+    bounds_y = 75
+    bounds_cx = 50
+    bounds_cy = 25
+    state = [as_localcaption, as_localonexecute]
+    caption = '&Cancel'
+    onexecute = oncanceldatatype
+  end
+end

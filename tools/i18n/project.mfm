@@ -456,12 +456,24 @@ object projectfo: tprojectfo
         'Data exchange files'
         '*.csv'
       )
+      (
+        'MSE trd files'
+        '*.trd'
+      )
+      (
+        'PO translation files'
+        '*.po'
+      )
+      (
+        'All'
+        '*.*'
+      )
     )
     controller.defaultext = 'csv'
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'
     controller.captionsave = 'Save export file'
     left = 240
-    top = 56
+    top = 24
   end
 end

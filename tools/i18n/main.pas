@@ -159,12 +159,13 @@ var
  valuearray : Array of wideString;
  isloaded : boolean = false;
  doreset : boolean = false;
-
-implementation
+ importtype: integer = -1;
+ 
+ implementation
 uses
  main_mfm,msefileutils,msesystypes,msesys,sysutils,mselist,project,
  rtlconsts,mseprocutils,msestockobjects,
- mseparser,mseformdatatools,mseresourcetools,
+ mseparser,mseformdatatools,mseresourcetools, 
  msearrayutils,msesettings,messagesform,mseeditglob,mseformatstr;
 type
  strinconsts = (
@@ -194,9 +195,10 @@ type
   sc_doyouwanttoreset    //23
     );
   
-const
- translateext = 'trans';
- exportext = 'csv';
+//const
+// translateext = 'trans';
+// exportext = 'csv';
+
 type
  envvarty = (env_macrodef);
 const
@@ -294,6 +296,8 @@ begin
     if isloaded = false then begin
        x := 0;   
        hasfound := false;
+       
+      if importtype < 1 then begin 
         while (x < length(valuearray)) and (hasfound = false) do
          begin
          str2 := (valuearray[x]);
@@ -329,9 +333,9 @@ begin
          end;      
          end;
          inc(x);   
-       end; 
-       
-       if hasfound then
+        end; 
+   
+        if hasfound then
        begin
          if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
@@ -346,19 +350,67 @@ begin
           donottranslate[aindex]:= info.donottranslate;
           comment[aindex]:= info.comment;
           end;
-  
-       end else
+      if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
+      begin    
+      info.donottranslate := true;
+      donottranslate[aindex]:= true;
+      end;  
+       end; 
+        
+        ////////////////
+      if importtype = 1 then begin 
+       while (x < length(valuearray)) and (hasfound = false) do
+        begin
+         str2 := (valuearray[x]);
+         str2 := wideStringReplace(str2, '\n', '', [rfReplaceAll]);
+         astro := (copy(str2,1,system.pos(';',str2)-1));
+         astrt := (copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2))) ;  
+                  
+         if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
+         begin
+          nodo := wideStringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+          nodo := wideStringReplace(nodo, ' ', '', [rfReplaceAll]);
+          nodo := wideStringReplace(nodo, '"', '', [rfReplaceAll]);
+          nodo := wideStringReplace(nodo, '\', '', [rfReplaceAll]);
+                   
+          asdo := wideStringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+          asdo := wideStringReplace(asdo, ' ', '', [rfReplaceAll]);
+          asdo := wideStringReplace(asdo, '"', '', [rfReplaceAll]);
+          nodo := wideStringReplace(nodo, '\', '', [rfReplaceAll]);
+         
+         if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
+          begin
+           hasfound := true; 
+           astrt := StringReplace(astrt, '"', '', [rfReplaceAll]); 
+           astrt := StringReplace(astrt, '\n', '', [rfReplaceAll]); 
+           astrt := StringReplace(astrt, '\', '', [rfReplaceAll]); 
+          // writeln(astro);
+          // writeln(astrt);
+          end; 
+         end; 
+        inc(x);   
+       end;    
+           comment[aindex]:= info.comment; 
+         if hasfound then
+       begin
+         if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
+         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+        end;   
+           
+          if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
+          begin    
+          info.donottranslate := true;
+          donottranslate[aindex]:= true;
+          end else donottranslate[aindex]:= info.donottranslate;   
+           
+      end; 
+     end else
        begin
        donottranslate[aindex]:= info.donottranslate;
        comment[aindex]:= info.comment;
        end;
   
-      if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
-      begin    
-      info.donottranslate := true;
-      donottranslate[aindex]:= true;
-      end; 
-      end;
+     end;
           
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
@@ -806,14 +858,15 @@ var
  notranslate: boolean;
  acomment: msestring; 
  node: tpropinfonode;
- str1, str2 : mseString;
+ str1, str2, str3, strtemp : mseString;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
  int1 : integer;
  isstring : boolean = false;
+ isid : boolean = false;
 begin
- isloaded := false;
+isloaded := false;
 showworkpan;
 grid.datacols[0].color := cl_white;
 grid.clear;
@@ -824,25 +877,78 @@ application.processmessages;
  
    setlength(valuearray,0); 
    
+    stream.readln(str1); 
+    
+    if (system.pos('name,type,notranslate,comment,value',str1) > 0) then
+    importtype := 0 else importtype := 1;
+
    while not stream.eof do begin
     stream.readln(str1); 
-   
-    if (copy(str1,1,1) = '"') and (isstring = true) then
+     
+  if  importtype < 1 then begin
+     if (copy(str1,1,1) = '"') and (isstring = true) then
        begin
          setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] :=
         (copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
        str2 := str1;    
-    //  writeln((valuearray[length(valuearray)-1]));
-      isstring := false;
-     end else if isstring = true then str2 := str2 +sLineBreak+ str1;
+       //  writeln((valuearray[length(valuearray)-1]));
+        isstring := false;
+       end else if isstring = true then str2 := str2 +sLineBreak+ str1;
  
-  if (system.pos('vaString',str1) > 0) then 
-   begin
-   isstring := true;
-   str2 := str1;
+     if (system.pos('vaString',str1) > 0) then 
+     begin
+     isstring := true;
+     str2 := str1;
+     end;
    end;
-  end;
+   
+   if importtype = 1 then begin
+    if trim(str1) <> '' then begin
+      if (copy(str1,1,5) = 'msgid') then
+        begin
+         setlength(valuearray,length(valuearray)+1);  
+         str2 :=str2 + ';' + str3 ; 
+         str2 := wideStringReplace(str2, '\n', '', [rfReplaceAll]); 
+         str2 := wideStringReplace(str2, '\', '', [rfReplaceAll]);
+         str2 := wideStringReplace(str2, '"', '', [rfReplaceAll]);
+         valuearray[length(valuearray)-1] := str2;
+         // writeln((valuearray[length(valuearray)-1]));
+         str2 := copy(str1,8,length(str1)-8) ;
+         str3 := '';
+         isid := true;
+         isstring := false;
+         end
+         else
+       if (copy(str1,1,6) = 'msgstr') then begin 
+         str3 := copy(str1,9,length(str1)-9) ;
+         // str3 := wideStringReplace(str3, '\n', '', [rfReplaceAll]);
+          isid := false;
+          isstring := true;
+         end
+         else 
+       if isid then
+       begin
+        strtemp := copy(str1,2,length(str1)-2);
+        if  (system.pos('\n',strtemp) > 0) then begin
+        strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]);
+        str2 := str2 + strtemp  + sLineBreak ;
+        end else str2 := str2 + strtemp;
+        
+        end
+        else 
+       if isstring then 
+       begin
+        strtemp := copy(str1,2,length(str1)-2);
+        strtemp := str1;
+       if  (system.pos('\n',strtemp) > 0) then begin   
+        strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]); 
+        str3 := str3 + strtemp  + sLineBreak ;
+        end else str3 := str3 + strtemp;
+        end;
+     end;   
+    end;
+ end;
  
   // {
    Stream.Seek(0,soFromBeginning); 
@@ -909,13 +1015,22 @@ var
  stream: ttextdatastream;
  str1: filenamety;
 begin
- if checksave and 
-       projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
-  stream:= ttextdatastream.create(str1,fm_read);
-  doimport(stream,charencodingty(projectfo.impexpencoding.value));
- // updatedata;
-  formatchanged(sender);
- end;
+if isloaded = true then begin
+ if checksave then
+ begin
+ isloaded := false;
+ //if importtype = 0 then projectfo.impexpfiledialog.controller.defaultext := 'csv' else
+  //  projectfo.impexpfiledialog.controller.defaultext := 'po' ;
+    if  projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
+    stream:= ttextdatastream.create(str1,fm_read);
+    doimport(stream,charencodingty(projectfo.impexpencoding.value));
+    // updatedata;
+    formatchanged(sender);
+    importtype:=-1;
+// end;
+ end;  
+ end; 
+ end; 
 end;
 
 procedure tmainfo.writeexprecord(const sender: ttreenode);
@@ -1522,6 +1637,7 @@ procedure tmainfo.ontimerup(const sender: TObject);
 begin
  workpan.visible := false;
  isloaded := true;
+ importtype := -1;
 end;
 
 procedure tmainfo.onreset(const sender: TObject);
