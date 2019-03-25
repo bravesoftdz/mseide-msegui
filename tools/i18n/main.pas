@@ -156,7 +156,7 @@ type
 var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
- valuearray : Array of wideString;
+ valuearray : Array of utf8String;
  isloaded : boolean = false;
  doreset : boolean = false;
  importtype: integer = -1;
@@ -281,7 +281,7 @@ procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
 var
  hasfound : boolean;
 int1, x : integer;
-str2,  anont, acom, astro,astrt, nodo, asdo : wideString;
+str2,  anont, acom, astro,astrt, nodo, asdo : utf8String;
 astrtraw : RawByteString;
 
 begin
@@ -311,13 +311,13 @@ begin
     
          if copy(astro,1,1) = '"' then
          begin
-          nodo := wideStringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
-          nodo := wideStringReplace(nodo, ' ', '', [rfReplaceAll]);
-          nodo := wideStringReplace(nodo, '"', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
                    
-          asdo := wideStringReplace(astro, sLineBreak, '', [rfReplaceAll]);
-          asdo := wideStringReplace(asdo, ' ', '', [rfReplaceAll]);
-          asdo := wideStringReplace(asdo, '"', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
          
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
@@ -371,15 +371,15 @@ begin
                   
          if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
          begin
-          nodo := wideStringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
-          nodo := wideStringReplace(nodo, ' ', '', [rfReplaceAll]);
-          nodo := wideStringReplace(nodo, '"', '', [rfReplaceAll]);
-          nodo := wideStringReplace(nodo, '\', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
                    
-          asdo := wideStringReplace(astro, sLineBreak, '', [rfReplaceAll]);
-          asdo := wideStringReplace(asdo, ' ', '', [rfReplaceAll]);
-          asdo := wideStringReplace(asdo, '"', '', [rfReplaceAll]);
-          nodo := wideStringReplace(nodo, '\', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
          
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
@@ -864,7 +864,8 @@ var
  notranslate: boolean;
  acomment: msestring; 
  node: tpropinfonode;
- str1, str2, str3, strtemp : mseString;
+ str1 : msestring;
+ str2, str3, strtemp : utf8String;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
@@ -884,6 +885,9 @@ application.processmessages;
    setlength(valuearray,0); 
    
     stream.readln(str1); 
+    
+    str3 := '';
+    str2 := '';
     
     if (system.pos('name,type,notranslate,comment,value',str1) > 0) then
     importtype := 0 else importtype := 1;
@@ -915,10 +919,10 @@ application.processmessages;
         begin
          setlength(valuearray,length(valuearray)+1);  
          str2 :=str2 + ';' + str3 ; 
-         str2 := wideStringReplace(str2, '\n', '', [rfReplaceAll]); 
-         str2 := wideStringReplace(str2, '\', '', [rfReplaceAll]);
-         str2 := wideStringReplace(str2, '"', '', [rfReplaceAll]);
-         valuearray[length(valuearray)-1] := widestring(str2);
+         str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
+         str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
+         str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
+         valuearray[length(valuearray)-1] := str2;
          // writeln(((valuearray[length(valuearray)-1])));
          str2 := utf8copy(str1,8,length(str1)-8) ;
          str3 := '';
@@ -926,8 +930,8 @@ application.processmessages;
          isstring := false;
          end
          else
-       if (copy(str1,1,6) = 'msgstr') then begin 
-         str3 := (copy(str1,9,length(str1)-9)) ;
+       if (utf8copy(str1,1,6) = 'msgstr') then begin 
+         str3 := (utf8copy(str1,9,length(str1)-9)) ;
          // str3 := wideStringReplace(str3, '\n', '', [rfReplaceAll]);
           isid := false;
           isstring := true;
@@ -937,7 +941,7 @@ application.processmessages;
        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin
-        strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]);
+        strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]);
         str2 := str2 + strtemp  + sLineBreak ;
         end else str2 := str2 + strtemp;
         
@@ -947,8 +951,8 @@ application.processmessages;
        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin   
-        strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]); 
-        str3 := widestring(str3 + strtemp  + sLineBreak) ;
+        strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]); 
+        str3 := (str3 + strtemp  + sLineBreak) ;
         end else str3 := str3 + strtemp;
         end;
      end;   
@@ -1266,7 +1270,7 @@ var
  node: tpropinfonode;
  afilename: filenamety;
  modulenames,resourcenames: stringarty;
- str1: string;
+ str1: msestring;
  commandstring: msestring;
  mstr1: msestring;
 // actdir: filenamety;

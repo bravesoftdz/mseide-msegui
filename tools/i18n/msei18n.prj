@@ -798,12 +798,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=doread
 findhistory=20
+ doread
  treeonupdaterowvalues
  importonexecute
  importtype
- doread
  writeln
  copyu
  Data exchange files
@@ -823,9 +823,9 @@ findhistory=20
 findoptions=1
 editpos=6
  0,-1073741823
- 0,461
+ 0,843
  0,-1073741823
- 0,0
+ 0,-1073741823
  0,-1073741823
  0,-1073741823
 bookmarks0=0
@@ -909,7 +909,7 @@ windowlayout=585
  cy=706
  rcx=0
  rcy=0
- wsize=0
+ wsize=5
  active=0
  visible=0
  [threadsfo]
@@ -1340,9 +1340,9 @@ windowlayout=585
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-mseguiimport/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
   /home/fred/ideu/src/msefiledialogres.mfm
   /home/fred/ideu/src/msefiledialog.mfm
