@@ -281,7 +281,7 @@ procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
 var
  hasfound : boolean;
 int1, x : integer;
-str2,  anont, acom, astro,astrt, nodo, asdo : mseString;
+str2,  anont, acom, astro,astrt, nodo, asdo : wideString;
 
 begin
  with tpropinfoitem(aitem) do begin
@@ -321,7 +321,7 @@ begin
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := StringReplace(astrt, '"', '', [rfReplaceAll]); 
+           astrt := wideStringReplace(astrt, '"', '', [rfReplaceAll]); 
            end; 
       
          end else 
@@ -329,7 +329,7 @@ begin
           if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then
          begin 
           hasfound := true; 
-          astrt := StringReplace(astrt, '"', '', [rfReplaceAll]); 
+          astrt := wideStringReplace(astrt, '"', '', [rfReplaceAll]); 
          end;      
          end;
          inc(x);   
@@ -361,10 +361,10 @@ begin
       if importtype = 1 then begin 
        while (x < length(valuearray)) and (hasfound = false) do
         begin
-         str2 := (valuearray[x]);
-         str2 := wideStringReplace(str2, '\n', '', [rfReplaceAll]);
+         str2 := widestring(valuearray[x]);
+         str2 := widestring(wideStringReplace(str2, '\n', '', [rfReplaceAll]));
          astro := (copy(str2,1,system.pos(';',str2)-1));
-         astrt := (copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2))) ;  
+         astrt := widestring((copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)))) ;  
                   
          if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
          begin
@@ -381,9 +381,9 @@ begin
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := StringReplace(astrt, '"', '', [rfReplaceAll]); 
-           astrt := StringReplace(astrt, '\n', '', [rfReplaceAll]); 
-           astrt := StringReplace(astrt, '\', '', [rfReplaceAll]); 
+           astrt := widestring(StringReplace(astrt, '"', '', [rfReplaceAll])); 
+           astrt := widestring(StringReplace(astrt, '\n', '', [rfReplaceAll])); 
+           astrt := widestring(StringReplace(astrt, '\', '', [rfReplaceAll])); 
           // writeln(astro);
           // writeln(astrt);
           end; 
@@ -393,9 +393,11 @@ begin
            comment[aindex]:= info.comment; 
          if hasfound then
        begin
-         if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
-         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         if copy(valuetext,1,2) = '" ' then astrt := widestring('" ' + astrt);
+         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := widestring(astrt + ' "');
         end;   
+        
+       astrt := wideString(astrt);
            
           if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
           begin    
@@ -422,8 +424,8 @@ begin
      begin
        if trim(astrt) <> '' then
        begin
-       gridvalue[aindex]:=astrt;
-       info.variants[int1] := astrt;
+       gridvalue[aindex]:=wideString(astrt);
+       info.variants[int1] := wideString(astrt);
        end else
        begin
        gridvalue[aindex]:=valuetext;
@@ -437,7 +439,7 @@ begin
       end; 
      end else 
      if info.variants[int1] <> '' then     
-     gridvalue[aindex]:= info.variants[int1] else
+     gridvalue[aindex]:= wideString(info.variants[int1]) else
      begin
      gridvalue[aindex]:= valuetext;
      info.variants[int1] := valuetext;
@@ -858,7 +860,7 @@ var
  notranslate: boolean;
  acomment: msestring; 
  node: tpropinfonode;
- str1, str2, str3, strtemp : mseString;
+ str1, str2, str3, strtemp : wideString;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
@@ -884,7 +886,7 @@ application.processmessages;
 
    while not stream.eof do begin
     stream.readln(str1); 
-     
+        
   if  importtype < 1 then begin
      if (copy(str1,1,1) = '"') and (isstring = true) then
        begin
@@ -912,16 +914,16 @@ application.processmessages;
          str2 := wideStringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := wideStringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := wideStringReplace(str2, '"', '', [rfReplaceAll]);
-         valuearray[length(valuearray)-1] := str2;
+         valuearray[length(valuearray)-1] := widestring(str2);
          // writeln((valuearray[length(valuearray)-1]));
-         str2 := copy(str1,8,length(str1)-8) ;
+         str2 := widestring(copy(str1,8,length(str1)-8)) ;
          str3 := '';
          isid := true;
          isstring := false;
          end
          else
        if (copy(str1,1,6) = 'msgstr') then begin 
-         str3 := copy(str1,9,length(str1)-9) ;
+         str3 := widestring(copy(str1,9,length(str1)-9)) ;
          // str3 := wideStringReplace(str3, '\n', '', [rfReplaceAll]);
           isid := false;
           isstring := true;
@@ -940,11 +942,11 @@ application.processmessages;
        if isstring then 
        begin
         strtemp := copy(str1,2,length(str1)-2);
-        strtemp := str1;
+        strtemp := widestring(strtemp);
        if  (system.pos('\n',strtemp) > 0) then begin   
         strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]); 
-        str3 := str3 + strtemp  + sLineBreak ;
-        end else str3 := str3 + strtemp;
+        str3 := widestring(str3 + strtemp  + sLineBreak) ;
+        end else str3 := widestring(str3 + strtemp);
         end;
      end;   
     end;
