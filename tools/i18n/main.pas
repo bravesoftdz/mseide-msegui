@@ -364,10 +364,10 @@ begin
       if importtype = 1 then begin 
        while (x < length(valuearray)) and (hasfound = false) do
         begin
-         str2 := widestring(valuearray[x]);
-         str2 := widestring(wideStringReplace(str2, '\n', '', [rfReplaceAll]));
+         str2 := (valuearray[x]);
+         str2 := (wideStringReplace(str2, '\n', '', [rfReplaceAll]));
          astro := (utf8copy(str2,1,system.pos(';',str2)-1));
-         astrt := widestring((utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)))) ;  
+         astrt := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2))) ;  
                   
          if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
          begin
@@ -384,9 +384,9 @@ begin
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := widestring(StringReplace(astrt, '"', '', [rfReplaceAll])); 
-           astrt := widestring(StringReplace(astrt, '\n', '', [rfReplaceAll])); 
-           astrt := widestring(StringReplace(astrt, '\', '', [rfReplaceAll])); 
+           astrt := (StringReplace(astrt, '"', '', [rfReplaceAll])); 
+           astrt := (StringReplace(astrt, '\n', '', [rfReplaceAll])); 
+           astrt := (StringReplace(astrt, '\', '', [rfReplaceAll])); 
           // writeln(astro);
           // writeln(astrt);
           end; 
@@ -417,10 +417,6 @@ begin
        end;
   
      end;
-     
-       astrtraw := UTF8Encode(astrt);
-         SetCodePage(astrtraw, 0, False);
-          astrt := UnicodeString(astrtraw);  
           
     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
@@ -432,8 +428,8 @@ begin
      begin
        if trim(astrt) <> '' then
        begin
-       gridvalue[aindex]:=wideString(astrt);
-       info.variants[int1] := wideString(astrt);
+       gridvalue[aindex]:= (astrt);
+       info.variants[int1] := (astrt);
        end else
        begin
        gridvalue[aindex]:=valuetext;
@@ -900,7 +896,7 @@ application.processmessages;
        begin
          setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] :=
-        (copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+        (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
        str2 := str1;    
         // writeln(widestring((valuearray[length(valuearray)-1])));
         isstring := false;
@@ -923,7 +919,7 @@ application.processmessages;
          str2 := wideStringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := wideStringReplace(str2, '"', '', [rfReplaceAll]);
          valuearray[length(valuearray)-1] := widestring(str2);
-         // writeln(utf8encode((valuearray[length(valuearray)-1])));
+         // writeln(((valuearray[length(valuearray)-1])));
          str2 := utf8copy(str1,8,length(str1)-8) ;
          str3 := '';
          isid := true;
@@ -931,7 +927,7 @@ application.processmessages;
          end
          else
        if (copy(str1,1,6) = 'msgstr') then begin 
-         str3 := widestring(copy(str1,9,length(str1)-9)) ;
+         str3 := (copy(str1,9,length(str1)-9)) ;
          // str3 := wideStringReplace(str3, '\n', '', [rfReplaceAll]);
           isid := false;
           isstring := true;
@@ -950,11 +946,10 @@ application.processmessages;
        if isstring then 
        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
-        strtemp := widestring(strtemp);
-       if  (system.pos('\n',strtemp) > 0) then begin   
+        if  (system.pos('\n',strtemp) > 0) then begin   
         strtemp := wideStringReplace(strtemp, '\n', '', [rfReplaceAll]); 
         str3 := widestring(str3 + strtemp  + sLineBreak) ;
-        end else str3 := widestring(str3 + strtemp);
+        end else str3 := str3 + strtemp;
         end;
      end;   
     end;
@@ -1026,19 +1021,13 @@ var
  str1: filenamety;
 begin
 if isloaded = true then begin
- if checksave then
- begin
- isloaded := false;
- //if importtype = 0 then projectfo.impexpfiledialog.controller.defaultext := 'csv' else
-  //  projectfo.impexpfiledialog.controller.defaultext := 'po' ;
-    if  projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
+  if checksave and 
+       projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
     stream:= ttextdatastream.create(str1,fm_read);
     doimport(stream,charencodingty(projectfo.impexpencoding.value));
     // updatedata;
     formatchanged(sender);
     importtype:=-1;
-// end;
- end;  
  end; 
  end; 
 end;
