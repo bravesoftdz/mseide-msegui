@@ -302,12 +302,12 @@ begin
         while (x < length(valuearray)) and (hasfound = false) do
          begin
          str2 := (valuearray[x]);
-         anont := (copy(str2,1,1));
-         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         acom := (copy(str2,1,system.pos(',',str2)-1));
-         str2 := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         astro := (copy(str2,1,system.pos(',',str2)-1));
-         astrt := (copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
+         anont := (utf8copy(str2,1,1));
+         str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         acom := (utf8copy(str2,1,system.pos(',',str2)-1));
+         str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         astro := (utf8copy(str2,1,system.pos(',',str2)-1));
+         astrt := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
     
          if copy(astro,1,1) = '"' then
          begin
@@ -322,7 +322,7 @@ begin
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := wideStringReplace(astrt, '"', '', [rfReplaceAll]); 
+           astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
            // writeln(astrt);
            end; 
       
@@ -331,7 +331,7 @@ begin
           if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then
          begin 
           hasfound := true; 
-          astrt := wideStringReplace(astrt, '"', '', [rfReplaceAll]); 
+          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
           //  writeln(astrt);
          end;      
          end;
@@ -340,8 +340,8 @@ begin
    
         if hasfound then
        begin
-         if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
-         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
+         if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
     
          if anont = 'T' then begin
          info.donottranslate := true;
@@ -365,7 +365,7 @@ begin
        while (x < length(valuearray)) and (hasfound = false) do
         begin
          str2 := (valuearray[x]);
-         str2 := (wideStringReplace(str2, '\n', '', [rfReplaceAll]));
+         str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
          astro := (utf8copy(str2,1,system.pos(';',str2)-1));
          astrt := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2))) ;  
                   
@@ -384,9 +384,9 @@ begin
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := (StringReplace(astrt, '"', '', [rfReplaceAll])); 
-           astrt := (StringReplace(astrt, '\n', '', [rfReplaceAll])); 
-           astrt := (StringReplace(astrt, '\', '', [rfReplaceAll])); 
+           astrt := (utf8StringReplace(astrt, '"', '', [rfReplaceAll])); 
+           astrt := (utf8StringReplace(astrt, '\n', '', [rfReplaceAll])); 
+           astrt := (utf8StringReplace(astrt, '\', '', [rfReplaceAll])); 
           // writeln(astro);
           // writeln(astrt);
           end; 
@@ -398,8 +398,8 @@ begin
        
          if hasfound then
        begin
-         if copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
-         if copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
+         if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
         end;   
         
                 

@@ -798,13 +798,13 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=importonexecute
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
  importonexecute
  importtype
  doread
  writeln
- treeonupdaterowvalues
  copyu
  Data exchange files
  Yes you did it!
@@ -823,11 +823,11 @@ findhistory=20
 findoptions=1
 editpos=6
  0,-1073741823
- 0,1030
+ 0,461
  0,-1073741823
- 0,-1073741823
- 0,857
  0,0
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -846,8 +846,8 @@ relpaths=6
  main.pas
  lazutf8.pas
  project.pas
- ../../mseide-mseguiok/tools/i18n/main.pas
- ../../mseide-mseguiok/tools/i18n/main.mfm
+ mseide-mseguiok/tools/i18n/main.pas
+ mseide-mseguiok/tools/i18n/main.mfm
 ismoduletexts=6
  0
  0
@@ -868,17 +868,10 @@ nomenumodules=2
  0
  0
 [sourcefo.files_tab]
-order=6
- 0
- 1
- 4
- 5
- 2
- 3
 firsttab=0
-index=3
+index=1
 [layout]
-windowlayout=622
+windowlayout=585
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1104,27 +1097,27 @@ windowlayout=622
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=0
+ x=3
  y=29
- cx=1366
+ cx=1360
  cy=706
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=1356
- width0=792
+ propcolwidthref=1350
+ width0=788
  sortdescend0=0
- width1=558
+ width1=556
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1288,7 +1281,7 @@ windowlayout=622
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=_mse_projectfo_mse_
+ stackedunder=
  parent=
  mdistate=3
  nx=0
@@ -1345,8 +1338,9 @@ windowlayout=622
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-mseguiok/tools/i18n/main.mfm
- history=50
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ history=20
+  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-mseguiimport/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
@@ -1364,39 +1358,8 @@ windowlayout=622
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
   /home/fred/mseide-mseguiru/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/ideu/src/languages/lang_ru/i18n.trd
   /home/fred/ideu/src/languages/lang_ru/i18n.trp
-  /home/fred/ideu/src/languages/lang_ru/actionsmodule_mfm.pas
-  /home/fred/mseide-msegui2/tools/i18n/main.pas
-  /home/fred/strumpract/src/filelistform.pas
-  /home/fred/mselang/src/main.pas
-  /home/fred/Downloads/MSE/lang_ru/i18n.trd
-  /home/fred/Downloads/MSE/lang_ru/i18n.trp
-  /home/fred/Downloads/MSE/msei18n
-  /home/fred/mseguinew/mseide-msegui/tools/i18n/main.pas
-  /home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
-  /home/fred/ideu/src/languages/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/tools/i18n/project.pas
-  /home/fred/mseguinew/mseide-mseguitest/tools/i18n/project.pas
-  /home/fred/main.pas
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/fr/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
-  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
-  /home/fred/uos/examples/uos_libsndfile.pas
-  /home/fred/uos/examples/conswebstream.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
-  /home/fred/uos/examples/consoleplay.pas
-  /home/fred/mselangmoi/parser.pas
-  /home/fred/mselangmoi/interpreter/mli.pas
-  /home/fred/mselangmoi/compiler/compmodule.pas
-  /home/fred/mselangmoi/interpreter/mainmodule.pas
-  /home/fred/mselangmoi/main.pas
-  /home/fred/mlctestlast/hellomlc.pas
-  /home/fred/mselangmoi/rtl/system/unix/rtl_libc.mla
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1418,20 +1381,13 @@ windowlayout=622
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=6
-  0
-  1
-  4
-  5
-  2
-  3
  firsttab=0
- index=3
+ index=1
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=componentpalettefo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1466,7 +1422,7 @@ windowlayout=622
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1485,7 +1441,7 @@ windowlayout=622
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_mainfo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
