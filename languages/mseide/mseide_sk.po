@@ -240,7 +240,7 @@ msgid "Symbols"
 msgstr "Symboly"
 
 msgid "Symbol"
-msgstr ""
+msgstr "Symbol"
 
 msgid "Address"
 msgstr "Adresa"
@@ -354,7 +354,7 @@ msgid "Syntaxdeffile:"
 msgstr ""
 
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 msgid "not found."
 msgstr ""
@@ -567,7 +567,7 @@ msgid "Project Options"
 msgstr "Voľby projektu"
 
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 msgid "&Editor"
 msgstr ""
@@ -2673,7 +2673,7 @@ msgid "Forms"
 msgstr "Formuláre"
 
 msgid "Program"
-msgstr ""
+msgstr "Program"
 
 msgid "Unit"
 msgstr "Jednotka"

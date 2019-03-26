@@ -1513,7 +1513,7 @@ msgid "Macro"
 msgstr ""
 
 msgid "comment"
-msgstr ""
+msgstr "टिप्पणी"
 
 msgid "Code Template \""
 msgstr ""

@@ -567,7 +567,7 @@ msgid "Project Options"
 msgstr "プロジェクトオプション"
 
 msgid "Ok"
-msgstr ""
+msgstr "ＯＫ"
 
 msgid "&Editor"
 msgstr "エディタ"

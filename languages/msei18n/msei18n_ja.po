@@ -21,6 +21,9 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "no string"
+msgstr ""
+
 msgid "Working..."
 msgstr ""
 
@@ -187,7 +190,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "ＯＫ"
 
 msgid "Make Language Units"
 msgstr ""

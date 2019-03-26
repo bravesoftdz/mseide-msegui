@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "За&нуляване"
 
 msgid "Reset"
-msgstr ""
+msgstr "Нулиране"
 
 msgid "&Finish"
 msgstr ""
@@ -2757,7 +2757,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Завърши работа."
 
 msgid "Detached"
 msgstr ""

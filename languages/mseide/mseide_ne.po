@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "&पुनः मिलाउ"
 
 msgid "Reset"
-msgstr ""
+msgstr "पुनः मिलाउ"
 
 msgid "&Finish"
 msgstr ""

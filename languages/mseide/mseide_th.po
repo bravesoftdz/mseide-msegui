@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "&ล้างค่า"
 
 msgid "Reset"
-msgstr ""
+msgstr "ล้างค่า"
 
 msgid "&Finish"
 msgstr ""

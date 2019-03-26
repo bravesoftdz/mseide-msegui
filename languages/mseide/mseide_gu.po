@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "ફરી ચાલુ"
 
 msgid "Reset"
-msgstr ""
+msgstr "ફરી ચાલુ"
 
 msgid "&Finish"
 msgstr ""

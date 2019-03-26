@@ -159,10 +159,10 @@ msgid "Threads"
 msgstr ""
 
 msgid "State"
-msgstr ""
+msgstr "Estat"
 
 msgid "Location"
-msgstr ""
+msgstr "Emplaçament"
 
 msgid "Copy to Clipboard"
 msgstr ""
@@ -192,7 +192,7 @@ msgid "&Parameter"
 msgstr ""
 
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgid "Default Value"
 msgstr ""
@@ -255,7 +255,7 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&Fichièr"
 
 msgid "Component File"
 msgstr ""
@@ -1026,7 +1026,7 @@ msgid "Command before"
 msgstr ""
 
 msgid "Command"
-msgstr ""
+msgstr "Comanda"
 
 msgid "Make options"
 msgstr ""
@@ -1459,7 +1459,7 @@ msgid "&Color"
 msgstr ""
 
 msgid "Paper size"
-msgstr ""
+msgstr "Talha de papièr"
 
 msgid "Paper orientation"
 msgstr ""
@@ -1531,7 +1531,7 @@ msgid "Memory"
 msgstr ""
 
 msgid "Add"
-msgstr ""
+msgstr "Apondre"
 
 msgid "Memory &on"
 msgstr ""
@@ -1573,10 +1573,10 @@ msgid "Find &Component"
 msgstr ""
 
 msgid "&Search"
-msgstr ""
+msgstr "&Recercar"
 
 msgid "&Edit"
-msgstr ""
+msgstr "&Edicion"
 
 msgid "En&vironment"
 msgstr ""
@@ -2070,7 +2070,7 @@ msgid "Select item for inserting"
 msgstr ""
 
 msgid "Description"
-msgstr ""
+msgstr "Descripcion"
 
 msgid "&Copy Component"
 msgstr ""
@@ -2214,10 +2214,10 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr ""
+msgstr "&Reïnicializar"
 
 msgid "Reset"
-msgstr ""
+msgstr "Reïnicializar"
 
 msgid "&Finish"
 msgstr ""
@@ -2340,7 +2340,7 @@ msgid "Close all"
 msgstr ""
 
 msgid "Print"
-msgstr ""
+msgstr "Imprimir"
 
 msgid "Search"
 msgstr "ଖୋଜନ୍ତୁ"
@@ -3034,7 +3034,7 @@ msgid "Fielddefs"
 msgstr ""
 
 msgid "Type"
-msgstr ""
+msgstr "Tipe"
 
 msgid "Fields"
 msgstr ""
@@ -3198,7 +3198,7 @@ msgid "&Shortcut"
 msgstr ""
 
 msgid "Action"
-msgstr ""
+msgstr "Accion"
 
 msgid "&Default"
 msgstr ""

@@ -1038,7 +1038,7 @@ msgid "Command line options"
 msgstr ""
 
 msgid "Directories"
-msgstr ""
+msgstr "Map"
 
 msgid "Unit, include and library &directories"
 msgstr ""
@@ -2730,7 +2730,7 @@ msgid "Startup"
 msgstr "Opstarten"
 
 msgid "Exception"
-msgstr ""
+msgstr "Fout"
 
 msgid "GDB died"
 msgstr ""

@@ -973,7 +973,7 @@ msgid "&Run command (empty = start debugger)"
 msgstr ""
 
 msgid "&Make"
-msgstr ""
+msgstr "&Créer"
 
 msgid "Default make col"
 msgstr ""
@@ -1162,7 +1162,7 @@ msgid "Filter"
 msgstr "Filtre"
 
 msgid "Ext"
-msgstr ""
+msgstr "Ext"
 
 msgid "New Form"
 msgstr "Nouvelle fiche"
@@ -1478,7 +1478,7 @@ msgid "Pages"
 msgstr ""
 
 msgid "Page"
-msgstr ""
+msgstr "Page"
 
 msgid "Do you wish to cancel printing?"
 msgstr ""
@@ -2863,7 +2863,7 @@ msgid "Rowcount"
 msgstr ""
 
 msgid "Configure MSE environment"
-msgstr ""
+msgstr "Configurer l'environnement MSE"
 
 msgid "&Shortcuts"
 msgstr "&Raccourcis"
@@ -2872,70 +2872,74 @@ msgid "Print command"
 msgstr "Commande d'impression"
 
 msgid "Path to debugger (gdb)."
-msgstr ""
+msgstr "Chemin du débogueur (gdb)."
 
 msgid "Debugger path"
-msgstr ""
+msgstr "Chemin du débogueur"
 
 msgid "Path to compiler (ppc386)."
-msgstr ""
+msgstr "Chemin du compilateur (ppc386)."
 
 msgid "Compiler path"
 msgstr "Chemin du compilateur"
 
 msgid "Directory for component store files."
-msgstr ""
+msgstr "Répertoire pour les fichiers de magasin de composants."
 
 msgid "Directory for component stores"
-msgstr ""
+msgstr "Répertoire du magasin de composants."
 
 msgid "Directory for project template files."
-msgstr ""
+msgstr "Répertoire pour les fichiers de modèle de projet."
 
 msgid "Project template directory"
-msgstr ""
+msgstr "Répertoire de modèle de projet."
 
 msgid "Directory for syntax definition files."
-msgstr ""
+msgstr "Répertoire des fichiers de définition de syntaxe."
 
 msgid "Syntax definitions"
-msgstr ""
+msgstr "Définition de syntaxe."
 
 msgid "Directory for syntax definition files"
-msgstr ""
+msgstr "Répertoire des fichiers de définition de syntaxe."
 
 msgid "Root directory of MSEgui library."
-msgstr ""
+msgstr "Répertoire racine de la bibliothèque MSEgui."
 
 msgid "MSEgui library directory"
-msgstr ""
+msgstr "Répertoir de la bibliothèque MSEgui."
 
 msgid "Root directory of MSEgui."
-msgstr ""
+msgstr "Répertoire racine de MSEgui."
 
 msgid "MSEgui root directory"
-msgstr ""
+msgstr "Répertoire racine de MSEgui."
 
 msgid ""
 "Root directory of FPC library (not used by the default project templates)."
 msgstr ""
+"Répertoire racine de la bibliothèque FPC (non utilisé par les modèles de "
+"projet par défaut)."
 
 msgid "FPC library directory"
-msgstr ""
+msgstr "Répertoire de FPC "
 
 msgid ""
 "Root directory of Free Pascal system (not used by the default project "
 "templates)."
 msgstr ""
+"Répertoire racine du système Free Pascal (non utilisé par les modèles de "
+"projet par défaut)."
 
 msgid "FPC root directory"
-msgstr ""
+msgstr "Répertoire racine de FPC "
 
 msgid "Global Macros"
-msgstr ""
+msgstr "Macros globales"
 
 msgid "Enter Memo Text"
-msgstr ""
+msgstr "Entrer le texte du mémo"
 
 msgid "&Font Format"
 msgstr ""

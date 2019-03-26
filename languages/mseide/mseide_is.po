@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "F&rumstilla"
 
 msgid "Reset"
-msgstr ""
+msgstr "Endurræsa"
 
 msgid "&Finish"
 msgstr ""

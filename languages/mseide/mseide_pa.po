@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
 msgid "Reset"
-msgstr ""
+msgstr "ਮੁੜ-ਸੈੱਟ ਕਰੋ"
 
 msgid "&Finish"
 msgstr ""

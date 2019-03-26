@@ -21,6 +21,9 @@ msgstr ""
 "Language: mk\n"
 "Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
 
+msgid "no string"
+msgstr ""
+
 msgid "Working..."
 msgstr ""
 

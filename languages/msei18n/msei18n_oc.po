@@ -21,6 +21,9 @@ msgstr ""
 "Language: oc\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgid "no string"
+msgstr ""
+
 msgid "Working..."
 msgstr ""
 
@@ -70,7 +73,7 @@ msgid "Comment"
 msgstr "Comentari"
 
 msgid "Value"
-msgstr ""
+msgstr "ମୂଲ୍ଯ"
 
 msgid "flat"
 msgstr ""
@@ -187,7 +190,7 @@ msgid "Enter Memo Text"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "ଠିକ ଅଛି"
 
 msgid "Make Language Units"
 msgstr ""

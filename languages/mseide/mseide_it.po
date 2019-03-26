@@ -2676,7 +2676,7 @@ msgid "Program"
 msgstr "Programma"
 
 msgid "Unit"
-msgstr ""
+msgstr "Unit"
 
 msgid "Textfile"
 msgstr ""

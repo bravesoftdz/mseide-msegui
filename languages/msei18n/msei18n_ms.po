@@ -21,6 +21,9 @@ msgstr ""
 "Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "no string"
+msgstr ""
+
 msgid "Working..."
 msgstr "Bekerja..."
 
@@ -232,7 +235,7 @@ msgid "on"
 msgstr ""
 
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 msgid "Cancel"
 msgstr "Batal"

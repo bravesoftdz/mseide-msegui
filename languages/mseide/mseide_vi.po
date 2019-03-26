@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "Đặt &lại"
 
 msgid "Reset"
-msgstr ""
+msgstr "Đặt lại"
 
 msgid "&Finish"
 msgstr ""

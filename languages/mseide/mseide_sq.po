@@ -181,7 +181,7 @@ msgid "&OK"
 msgstr "&OK"
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Anulo"
 
 msgid "&Name"
 msgstr ""
@@ -256,7 +256,7 @@ msgid "Do you wish to delete all symbols?"
 msgstr ""
 
 msgid "&File"
-msgstr ""
+msgstr "&File"
 
 msgid "Component File"
 msgstr ""
@@ -382,10 +382,10 @@ msgid "Set Tab Order"
 msgstr ""
 
 msgid "OK"
-msgstr ""
+msgstr "Dakord"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 msgid "&Start"
 msgstr ""
@@ -595,7 +595,7 @@ msgid "Code template directories, file extension = .mct"
 msgstr ""
 
 msgid "Directory"
-msgstr ""
+msgstr "Dosje"
 
 msgid "Add to object file search path"
 msgstr ""
@@ -1218,7 +1218,7 @@ msgid "Alternate shortcut key"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Skedarë"
 
 msgid "Parameters"
 msgstr ""

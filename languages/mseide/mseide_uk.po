@@ -723,7 +723,7 @@ msgid "Auto indent"
 msgstr "Автоматичний відступ"
 
 msgid "Tab"
-msgstr ""
+msgstr "Символ табуляції"
 
 msgid "Tabstops"
 msgstr ""
@@ -2759,7 +2759,7 @@ msgid "Exited normally"
 msgstr ""
 
 msgid "Exited"
-msgstr ""
+msgstr "Вихід"
 
 msgid "Detached"
 msgstr ""
@@ -2798,7 +2798,7 @@ msgid "Force &Z-Order"
 msgstr ""
 
 msgid "&Comment"
-msgstr ""
+msgstr "&Коментар"
 
 msgid "Unc&omment"
 msgstr ""

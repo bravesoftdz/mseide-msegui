@@ -2193,7 +2193,7 @@ msgid "&Run"
 msgstr "اجرا"
 
 msgid "Run"
-msgstr ""
+msgstr "اجرا"
 
 msgid "&Step"
 msgstr ""
@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr "تنظیم مجدد"
 
 msgid "Reset"
-msgstr ""
+msgstr "تنظیم مجدد"
 
 msgid "&Finish"
 msgstr ""

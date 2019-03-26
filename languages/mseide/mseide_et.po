@@ -246,7 +246,7 @@ msgid "Address"
 msgstr ""
 
 msgid "Info"
-msgstr ""
+msgstr "Teave"
 
 msgid "GDB not active."
 msgstr ""

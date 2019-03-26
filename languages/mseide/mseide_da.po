@@ -381,7 +381,7 @@ msgid "Set Tab Order"
 msgstr ""
 
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 msgid "Cancel"
 msgstr "Annullér"

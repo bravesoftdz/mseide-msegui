@@ -751,7 +751,7 @@ msgid "Backup file count"
 msgstr ""
 
 msgid "Form"
-msgstr ""
+msgstr "Form"
 
 msgid "Component hints"
 msgstr ""

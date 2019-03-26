@@ -5,6 +5,7 @@
 # 
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
+# Waldemar Stoczkowski, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-05 00:06+0000\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Last-Translator: Waldemar Stoczkowski, 2019\n"
 "Language-Team: Polish (https://www.transifex.com/Magic/teams/44238/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +47,7 @@ msgid "on"
 msgstr ""
 
 msgid "Kind"
-msgstr ""
+msgstr "Rodzaj"
 
 msgid "Expression"
 msgstr "Wyrażenie"
@@ -177,7 +178,7 @@ msgid "Code Template Editor"
 msgstr ""
 
 msgid "&OK"
-msgstr ""
+msgstr "&OK"
 
 msgid "&Cancel"
 msgstr "&Anuluj"
@@ -381,7 +382,7 @@ msgid "Set Tab Order"
 msgstr ""
 
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "Cancel"
 msgstr "Anuluj"
@@ -1732,7 +1733,7 @@ msgid "Recursive form hierarchy for \""
 msgstr ""
 
 msgid "ERROR"
-msgstr ""
+msgstr "BŁĄD"
 
 msgid "Classtype"
 msgstr ""
@@ -2859,10 +2860,10 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Shortcuts"
-msgstr ""
+msgstr "&Skróty"
 
 msgid "Print command"
-msgstr ""
+msgstr "Polecenie drukowania"
 
 msgid "Path to debugger (gdb)."
 msgstr ""
@@ -2925,7 +2926,7 @@ msgid "FPC root directory"
 msgstr ""
 
 msgid "Global Macros"
-msgstr ""
+msgstr "Globalne makra"
 
 msgid "Enter Memo Text"
 msgstr ""

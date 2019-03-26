@@ -21,6 +21,9 @@ msgstr ""
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "no string"
+msgstr ""
+
 msgid "Working..."
 msgstr ""
 
@@ -232,7 +235,7 @@ msgid "on"
 msgstr ""
 
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 msgid "Cancel"
 msgstr "Loobu"

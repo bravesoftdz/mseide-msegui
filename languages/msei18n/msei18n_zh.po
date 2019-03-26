@@ -21,6 +21,9 @@ msgstr ""
 "Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "no string"
+msgstr ""
+
 msgid "Working..."
 msgstr ""
 
@@ -277,7 +280,7 @@ msgid "Path to compiler (ppc386)."
 msgstr ""
 
 msgid "Compiler path"
-msgstr ""
+msgstr "Compiler路径"
 
 msgid "Directory for component store files."
 msgstr ""

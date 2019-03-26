@@ -2217,7 +2217,7 @@ msgid "&Reset"
 msgstr ""
 
 msgid "Reset"
-msgstr ""
+msgstr "Reaniciar"
 
 msgid "&Finish"
 msgstr ""
