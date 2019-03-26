@@ -1,4 +1,5 @@
 name,type,notranslate,comment,value,en
+"mainfo,tgroupbox1,nostring,frame.caption",vaString,F,,no string,no string
 "mainfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
 "mainfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type,Type
 "mainfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Comment,Comment
@@ -8,6 +9,7 @@ name,type,notranslate,comment,value,en
 "mainfo,nont,frame.caption",vaString,F,,no NT,no NT
 "mainfo,ntonly,frame.caption",vaString,F,,NT only,NT only
 "mainfo,coloron,frame.caption",vaString,F,,show color,show color
+"mainfo,workpan,value",vaString,F,,Working...,Working...
 "mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open,&Open
 "mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Save,&Save
 "mainfo,mainmenu1,menu.submenu.items,2:,caption",vaString,F,,Save &as,Save &as
@@ -20,7 +22,8 @@ name,type,notranslate,comment,value,en
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
 "mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,&Refresh,&Refresh
-"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,Reset,Reset
+"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
 "mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project,Save translate project
@@ -47,6 +50,7 @@ name,type,notranslate,comment,value,en
 "mainfo,c,strings.data,20:",vaString,F,,To not translate:,To not translate:
 "mainfo,c,strings.data,21:",vaString,F,,Yet translated:,Yet translated:
 "mainfo,c,strings.data,22:",vaString,F,,Not yet translated:,Not yet translated:
+"mainfo,c,strings.data,23:",vaString,F,,Do you want to reset to root value?,Do you want to reset to root value?
 "msememodialogfo,caption",vaString,F,,Enter Memo Text,Enter Memo Text
 "msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
 "msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK,&OK
@@ -70,6 +74,9 @@ name,type,notranslate,comment,value,en
 "projectfo,beforemake,frame.caption",vaString,F,,Before make,Before make
 "projectfo,aftermake,frame.caption",vaString,F,,After make,After make
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,MSE trd files,MSE trd files
+"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,PO translation files,PO translation files
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,All,All
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment
