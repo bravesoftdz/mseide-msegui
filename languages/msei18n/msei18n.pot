@@ -32,9 +32,6 @@ msgstr ""
 msgid "PO translation files"
 msgstr ""
 
-msgid "All"
-msgstr ""
-
 msgid "Do you want to reset to root value?"
 msgstr ""
 

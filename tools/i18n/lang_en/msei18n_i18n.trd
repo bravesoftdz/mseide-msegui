@@ -1144,7 +1144,7 @@ projectfo,vaNull,F,,,
 "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,PO translation files,PO translation files
 "projectfo,impexpfiledialog,controller.filterlist.data,2:,1:",vaString,T,,*.po,*.po
 "projectfo,impexpfiledialog,controller.filterlist.data,3:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,All,All
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,All files,All files
 "projectfo,impexpfiledialog,controller.filterlist.data,3:,1:",vaString,T,,*.*,*.*
 "projectfo,impexpfiledialog,controller.defaultext",vaString,T,,csv,csv
 "projectfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0,

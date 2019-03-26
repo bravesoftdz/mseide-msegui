@@ -76,7 +76,7 @@ name,type,notranslate,comment,value,en
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
 "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,MSE trd files,MSE trd files
 "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,PO translation files,PO translation files
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,All,All
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,All files,All files
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment

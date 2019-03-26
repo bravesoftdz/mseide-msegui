@@ -465,7 +465,7 @@ object projectfo: tprojectfo
         '*.po'
       )
       (
-        'All'
+        'All files'
         '*.*'
       )
     )
