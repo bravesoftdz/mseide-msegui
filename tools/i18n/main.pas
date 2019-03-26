@@ -970,7 +970,7 @@ application.processmessages;
       setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] :=
         (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
-      writeln(((valuearray[length(valuearray)-1])));
+     // writeln(((valuearray[length(valuearray)-1])));
     end else begin  
         setlength(valuearray,length(valuearray)+1);  
          str2 :=str2 + ';' + str3 ; 
@@ -978,7 +978,7 @@ application.processmessages;
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
          valuearray[length(valuearray)-1] := str2;
-        writeln(((valuearray[length(valuearray)-1])));
+      //  writeln(((valuearray[length(valuearray)-1])));
         end;
  
   // {
@@ -1617,6 +1617,9 @@ begin
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
      then begin
+     if (system.pos(',',value[row]) > 1) or
+       (system.pos(',',tstringedit(grid.datacols[col].editwidget)[row]) > 1) then
+        cellinfo.color:= cl_ltyellow else
       if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
       or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
        then  cellinfo.color:= cl_ltred

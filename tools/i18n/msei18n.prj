@@ -801,13 +801,14 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=color
 findhistory=20
+ color
+ writeln
  treeonupdaterowvalues
  doread
  importonexecute
  importtype
- writeln
  copyu
  Data exchange files
  Yes you did it!
@@ -822,11 +823,10 @@ findhistory=20
  timer
  filename
  /usr/share/
- utf
 findoptions=1
 editpos=5
  0,-1073741823
- 0,323
+ 0,1619
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -846,7 +846,7 @@ relpaths=5
  main.pas
  lazutf8.pas
  project.pas
- ../mseide-mseguiok/tools/i18n/main.mfm
+ mseide-mseguiok/tools/i18n/main.mfm
 ismoduletexts=5
  0
  0
@@ -909,7 +909,7 @@ windowlayout=585
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1095,7 +1095,7 @@ windowlayout=585
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1279,7 +1279,7 @@ windowlayout=585
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=objectinspectorfo
+ stackedunder=
  parent=
  mdistate=3
  nx=0
@@ -1385,7 +1385,7 @@ windowlayout=585
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=componentpalettefo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1439,7 +1439,7 @@ windowlayout=585
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
