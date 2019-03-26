@@ -426,7 +426,7 @@ object watchfo: twatchfo
     strings.data = (
       'Do you wish to delete all watches?'
       'Confirmation'
-      '<disabled>'
+      '[disabled]'
     )
     left = 96
     top = 80

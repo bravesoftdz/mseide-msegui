@@ -315,7 +315,7 @@ object formdesignerfo: tformdesignerfo
     top = 56
   end
   object togglehideact: taction
-    caption = '&Hide Widgets<>Components'
+    caption = '&Hide Widgets/Components'
     onexecute = togglehideexe
     left = 144
     top = 72

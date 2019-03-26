@@ -1,7 +1,7 @@
 object mainfo: tmainfo
   visible = False
-  bounds_x = 342
-  bounds_y = 218
+  bounds_x = 506
+  bounds_y = 204
   bounds_cx = 687
   bounds_cy = 395
   container.frame.levelo = 1
@@ -632,7 +632,7 @@ object mainfo: tmainfo
       'notranslate'
       'comment'
       'value'
-      '<no project>'
+      '[no project]'
       'Can not read module'
       'New translate project'
       'Exec error'

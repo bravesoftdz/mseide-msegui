@@ -24,10 +24,10 @@ object sourcefo: tsourcefo
   )
   dragdock.splitter_size = 0
   dragdock.caption = 'Source'
-  dragdock.optionsdock = [od_savepos, od_canmove, od_canfloat, od_candock, od_propsize, od_captionhint, od_childicons]
+  dragdock.optionsdock = [od_savepos, od_canmove, od_canfloat, od_candock, od_propsize, od_captionhint]
   options = [fo_savepos, fo_savestate]
   statfile = mainfo.projectstatfile
-  caption = '<none>'
+  caption = '[none]'
   icon.transparentcolor = -2147483642
   icon.options = [bmo_masked]
   icon.image = {
@@ -547,10 +547,10 @@ object sourcefo: tsourcefo
       'There are modifications in edit buffer also.'
       'Do you wish to reload from disk?'
       'Confirmation'
-      '<none>'
+      '[none]'
       'Do you wish to replace:'
       'with:'
-      '<new>'
+      '[new]'
       'Syntaxdeffile:'
       'Text'
       'not found.'
