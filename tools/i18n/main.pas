@@ -314,10 +314,14 @@ begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
-                   
+          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, ',', '', [rfReplaceAll]);
+                        
           asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, '\', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, ',', '', [rfReplaceAll]);
          
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
@@ -353,6 +357,7 @@ begin
           donottranslate[aindex]:= info.donottranslate;
           comment[aindex]:= info.comment;
           end;
+      
       if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
       begin    
       info.donottranslate := true;
@@ -911,7 +916,8 @@ application.processmessages;
      isstring := true;
      str2 := str1;
      end;
-   end;
+     
+     end;
    
    if importtype = 1 then begin
     if trim(str1) <> '' then begin
@@ -955,9 +961,25 @@ application.processmessages;
         str3 := (str3 + strtemp  + sLineBreak) ;
         end else str3 := str3 + strtemp;
         end;
-     end;   
+      end;  
+    
     end;
  end;
+ 
+  if importtype = 0 then begin
+      setlength(valuearray,length(valuearray)+1);  
+        valuearray[length(valuearray)-1] :=
+        (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+      writeln(((valuearray[length(valuearray)-1])));
+    end else begin  
+        setlength(valuearray,length(valuearray)+1);  
+         str2 :=str2 + ';' + str3 ; 
+         str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
+         str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
+         str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
+         valuearray[length(valuearray)-1] := str2;
+        writeln(((valuearray[length(valuearray)-1])));
+        end;
  
   // {
    Stream.Seek(0,soFromBeginning); 
