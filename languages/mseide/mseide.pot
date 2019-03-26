@@ -17,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "<filepath>"
+msgid "[filepath]"
 msgstr ""
 
-msgid "<name>,<value>{,<name>,<value>}"
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid "auto"
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Do you wish to delete all watches?"
 msgstr ""
 
-msgid "<disabled>"
+msgid "[disabled]"
 msgstr ""
 
 msgid "Threads"
@@ -268,7 +268,7 @@ msgstr ""
 msgid "Source"
 msgstr ""
 
-msgid "<none>"
+msgid "[none]"
 msgstr ""
 
 msgid "Step back in code navigation"
@@ -343,7 +343,7 @@ msgstr ""
 msgid "with:"
 msgstr ""
 
-msgid "<new>"
+msgid "[new]"
 msgstr ""
 
 msgid "Syntaxdeffile:"
@@ -1952,7 +1952,7 @@ msgstr ""
 msgid "Hide &Widgets"
 msgstr ""
 
-msgid "&Hide Widgets<>Components"
+msgid "&Hide Widgets/Components"
 msgstr ""
 
 msgid "&Show all"

@@ -595,7 +595,7 @@ H = Hex"
 "watchfo,c,strings.data",vaList,F,,,
 "watchfo,c,strings.data,0:",vaString,F,,Do you wish to delete all watches?,Do you wish to delete all watches?
 "watchfo,c,strings.data,1:",vaString,F,,Confirmation,Confirmation
-"watchfo,c,strings.data,2:",vaString,F,,<disabled>,<disabled>
+"watchfo,c,strings.data,2:",vaString,F,,[disabled],[disabled]
 "watchfo,c,left",vaInt8,F,,96,
 "watchfo,c,top",vaInt8,F,,80,
 toolhandlermo,vaNull,F,,,
@@ -1709,7 +1709,7 @@ sourcefo,vaNull,F,,,
 "sourcefo,dragdock.optionsdock",vaSet,F,,"[od_savepos,od_canmove,od_canfloat,od_candock,od_propsize,od_captionhint,od_childicons]",
 "sourcefo,options",vaSet,F,,"[fo_savepos,fo_savestate]",
 "sourcefo,statfile",vaIdent,F,,mainfo.projectstatfile,
-"sourcefo,caption",vaString,F,,<none>,<none>
+"sourcefo,caption",vaString,F,,[none],[none]
 "sourcefo,icon.transparentcolor",vaInt32,F,,-2147483642,
 "sourcefo,icon.options",vaSet,F,,[bmo_masked],
 "sourcefo,icon.image",vaBinary,F,,,
@@ -1980,10 +1980,10 @@ sourcefo,vaNull,F,,,
 "sourcefo,c,strings.data,2:",vaString,F,,There are modifications in edit buffer also.,There are modifications in edit buffer also.
 "sourcefo,c,strings.data,3:",vaString,F,,Do you wish to reload from disk?,Do you wish to reload from disk?
 "sourcefo,c,strings.data,4:",vaString,F,,Confirmation,Confirmation
-"sourcefo,c,strings.data,5:",vaString,F,,<none>,<none>
+"sourcefo,c,strings.data,5:",vaString,F,,[none],[none]
 "sourcefo,c,strings.data,6:",vaString,F,,Do you wish to replace:,Do you wish to replace:
 "sourcefo,c,strings.data,7:",vaString,F,,with:,with:
-"sourcefo,c,strings.data,8:",vaString,F,,<new>,<new>
+"sourcefo,c,strings.data,8:",vaString,F,,[new],[new]
 "sourcefo,c,strings.data,9:",vaString,F,,Syntaxdeffile:,Syntaxdeffile:
 "sourcefo,c,strings.data,10:",vaString,F,,Text,Text
 "sourcefo,c,strings.data,11:",vaString,F,,not found.,not found.
@@ -11652,7 +11652,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,0:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,0:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,0:,4:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,<filepath>,<filepath>
+"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,[filepath],[filepath]
 "guitemplatesmo,sysenv,defs,0:,6:",vaString,F,,Set path to global status file.,Set path to global status file.
 "guitemplatesmo,sysenv,defs,0:,7:",vaString,T,,,
 "guitemplatesmo,sysenv,defs,0:,8:",vaString,T,,,
@@ -11662,7 +11662,7 @@ Martin"
 "guitemplatesmo,sysenv,defs,1:,2:",vaList,F,,,
 "guitemplatesmo,sysenv,defs,1:,3:",vaSet,F,,[],
 "guitemplatesmo,sysenv,defs,1:,4:",vaString,T,,,
-"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"<name>,<value>{,<name>,<value>}","<name>,<value>{,<name>,<value>}"
+"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"[name],[value]{,[name],[value]}","[name],[value]{,[name],[value]}"
 "guitemplatesmo,sysenv,defs,1:,6:",vaString,F,,"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
  Example:
  --macrodef=MAC1,abc,MAC2,def","Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
@@ -12146,7 +12146,7 @@ formdesignerfo,vaNull,F,,,
 "formdesignerfo,hidewidgetact,left",vaInt16,F,,144,
 "formdesignerfo,hidewidgetact,top",vaInt8,F,,56,
 "formdesignerfo,togglehideact",vaNull,F,,,
-"formdesignerfo,togglehideact,caption",vaString,F,,&Hide Widgets<>Components,&Hide Widgets<>Components
+"formdesignerfo,togglehideact,caption",vaString,F,,&Hide Widgets/Components,&Hide Widgets/Components
 "formdesignerfo,togglehideact,onexecute",vaIdent,F,,togglehideexe,
 "formdesignerfo,togglehideact,left",vaInt16,F,,144,
 "formdesignerfo,togglehideact,top",vaInt8,F,,72,

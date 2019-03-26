@@ -21,6 +21,24 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
+msgid "[filepath]"
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
+msgstr ""
+
+msgid "auto"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
+msgstr ""
+
 msgid "Watchpoints"
 msgstr ""
 
@@ -134,8 +152,8 @@ msgstr ""
 msgid "Do you wish to delete all watches?"
 msgstr ""
 
-msgid "<disabled>"
-msgstr "<wyłączony>"
+msgid "[disabled]"
+msgstr "[wyłączony]"
 
 msgid "Threads"
 msgstr "Wątki"
@@ -254,8 +272,8 @@ msgstr "Stos"
 msgid "Source"
 msgstr "Źródło"
 
-msgid "<none>"
-msgstr "<brak>"
+msgid "[none]"
+msgstr "[żaden]"
 
 msgid "Step back in code navigation"
 msgstr ""
@@ -329,8 +347,8 @@ msgstr ""
 msgid "with:"
 msgstr ""
 
-msgid "<new>"
-msgstr "<nowy>"
+msgid "[new]"
+msgstr "[nowy]"
 
 msgid "Syntaxdeffile:"
 msgstr ""
@@ -1937,7 +1955,7 @@ msgstr ""
 msgid "Hide &Widgets"
 msgstr ""
 
-msgid "&Hide Widgets<>Components"
+msgid "&Hide Widgets/Components"
 msgstr ""
 
 msgid "&Show all"
@@ -2199,7 +2217,7 @@ msgid "&Reset"
 msgstr "&Przywróć"
 
 msgid "Reset"
-msgstr "Przywróć wyjściowe (reset)"
+msgstr "Przywróć"
 
 msgid "&Finish"
 msgstr "&Zakończ"

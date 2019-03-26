@@ -21,6 +21,24 @@ msgstr ""
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "[filepath]"
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
+msgstr ""
+
+msgid "auto"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
+msgstr ""
+
 msgid "Watchpoints"
 msgstr ""
 
@@ -134,8 +152,8 @@ msgstr ""
 msgid "Do you wish to delete all watches?"
 msgstr ""
 
-msgid "<disabled>"
-msgstr "<deaktiveret>"
+msgid "[disabled]"
+msgstr "[deaktiveret]"
 
 msgid "Threads"
 msgstr "Tråde"
@@ -254,8 +272,8 @@ msgstr "Stak"
 msgid "Source"
 msgstr ""
 
-msgid "<none>"
-msgstr "<intet>"
+msgid "[none]"
+msgstr "[ingen]"
 
 msgid "Step back in code navigation"
 msgstr ""
@@ -329,8 +347,8 @@ msgstr ""
 msgid "with:"
 msgstr ""
 
-msgid "<new>"
-msgstr ""
+msgid "[new]"
+msgstr "[ny]"
 
 msgid "Syntaxdeffile:"
 msgstr ""
@@ -1937,7 +1955,7 @@ msgstr ""
 msgid "Hide &Widgets"
 msgstr ""
 
-msgid "&Hide Widgets<>Components"
+msgid "&Hide Widgets/Components"
 msgstr ""
 
 msgid "&Show all"

@@ -21,6 +21,24 @@ msgstr ""
 "Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "[filepath]"
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
+msgstr ""
+
+msgid "auto"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
+msgstr ""
+
 msgid "Watchpoints"
 msgstr ""
 
@@ -134,7 +152,7 @@ msgstr ""
 msgid "Do you wish to delete all watches?"
 msgstr ""
 
-msgid "<disabled>"
+msgid "[disabled]"
 msgstr ""
 
 msgid "Threads"
@@ -254,8 +272,8 @@ msgstr "栈"
 msgid "Source"
 msgstr "源文件"
 
-msgid "<none>"
-msgstr "<无>"
+msgid "[none]"
+msgstr "[无]"
 
 msgid "Step back in code navigation"
 msgstr ""
@@ -329,8 +347,8 @@ msgstr ""
 msgid "with:"
 msgstr ""
 
-msgid "<new>"
-msgstr ""
+msgid "[new]"
+msgstr "[新建]"
 
 msgid "Syntaxdeffile:"
 msgstr ""
@@ -1937,7 +1955,7 @@ msgstr ""
 msgid "Hide &Widgets"
 msgstr ""
 
-msgid "&Hide Widgets<>Components"
+msgid "&Hide Widgets/Components"
 msgstr ""
 
 msgid "&Show all"

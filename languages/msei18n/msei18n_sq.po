@@ -22,6 +22,24 @@ msgstr ""
 "Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Working..."
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "MSE trd files"
+msgstr ""
+
+msgid "PO translation files"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Do you want to reset to root value?"
+msgstr ""
+
 msgid "&Refresh"
 msgstr "&Fresko"
 
@@ -130,8 +148,8 @@ msgstr "koment"
 msgid "value"
 msgstr "vlerë"
 
-msgid "<no project>"
-msgstr "<no project>"
+msgid "[no project]"
+msgstr ""
 
 msgid "Can not read module"
 msgstr "Nuk mund të lexoje modulin"
@@ -185,10 +203,10 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Skedarë"
 
 msgid "Kind"
-msgstr ""
+msgstr "Lloj"
 
 msgid "Select unit or form file"
 msgstr ""
@@ -203,10 +221,10 @@ msgid "All files"
 msgstr "Të gjithë file"
 
 msgid "Language"
-msgstr ""
+msgstr "Gjuhë"
 
 msgid "Directory"
-msgstr ""
+msgstr "Dosje"
 
 msgid "Make command"
 msgstr ""
@@ -215,10 +233,10 @@ msgid "on"
 msgstr ""
 
 msgid "OK"
-msgstr ""
+msgstr "Dakord"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -242,7 +260,7 @@ msgid "Configure MSE environment"
 msgstr ""
 
 msgid "&Cancel"
-msgstr ""
+msgstr "&Anulo"
 
 msgid "&Shortcuts"
 msgstr ""

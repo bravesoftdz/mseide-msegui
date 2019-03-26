@@ -48,7 +48,7 @@ H = Hex"
 "watchfo,gripopup,menu.submenu.items,20:,caption",vaString,F,,&Reset Formats,&Reset Formats
 "watchfo,c,strings.data,0:",vaString,F,,Do you wish to delete all watches?,Do you wish to delete all watches?
 "watchfo,c,strings.data,1:",vaString,F,,Confirmation,Confirmation
-"watchfo,c,strings.data,2:",vaString,F,,<disabled>,<disabled>
+"watchfo,c,strings.data,2:",vaString,F,,[disabled],[disabled]
 "threadsfo,dragdock.caption",vaString,F,,Threads,Threads
 "threadsfo,caption",vaString,F,,Threads,Threads
 "threadsfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,State,State
@@ -97,7 +97,7 @@ H = Hex"
 "stackfo,caption",vaString,F,,Stack,Stack
 "stackfo,tpopupmenu1,menu.submenu.items,0:,caption",vaString,F,,Copy to Clipboard,Copy to Clipboard
 "sourcefo,dragdock.caption",vaString,F,,Source,Source
-"sourcefo,caption",vaString,F,,<none>,<none>
+"sourcefo,caption",vaString,F,,[none],[none]
 "sourcefo,tabwidget,tstockglyphbutton1,hint",vaString,F,,Step back in code navigation,Step back in code navigation
 "sourcefo,tabwidget,tstockglyphbutton2,hint",vaString,F,,Step forward in code navigation,Step forward in code navigation
 "sourcefo,formpopup,menu.submenu.items,0:,caption",vaString,F,,Select Page,Select Page
@@ -121,10 +121,10 @@ H = Hex"
 "sourcefo,c,strings.data,2:",vaString,F,,There are modifications in edit buffer also.,There are modifications in edit buffer also.
 "sourcefo,c,strings.data,3:",vaString,F,,Do you wish to reload from disk?,Do you wish to reload from disk?
 "sourcefo,c,strings.data,4:",vaString,F,,Confirmation,Confirmation
-"sourcefo,c,strings.data,5:",vaString,F,,<none>,<none>
+"sourcefo,c,strings.data,5:",vaString,F,,[none],[none]
 "sourcefo,c,strings.data,6:",vaString,F,,Do you wish to replace:,Do you wish to replace:
 "sourcefo,c,strings.data,7:",vaString,F,,with:,with:
-"sourcefo,c,strings.data,8:",vaString,F,,<new>,<new>
+"sourcefo,c,strings.data,8:",vaString,F,,[new],[new]
 "sourcefo,c,strings.data,9:",vaString,F,,Syntaxdeffile:,Syntaxdeffile:
 "sourcefo,c,strings.data,10:",vaString,F,,Text,Text
 "sourcefo,c,strings.data,11:",vaString,F,,not found.,not found.
@@ -787,9 +787,9 @@ can be used to override the settings macros.
 Have a lot of fun!
 
 Martin"
-"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,<filepath>,<filepath>
+"guitemplatesmo,sysenv,defs,0:,5:",vaString,F,,[filepath],[filepath]
 "guitemplatesmo,sysenv,defs,0:,6:",vaString,F,,Set path to global status file.,Set path to global status file.
-"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"<name>,<value>{,<name>,<value>}","<name>,<value>{,<name>,<value>}"
+"guitemplatesmo,sysenv,defs,1:,5:",vaString,F,,"[name],[value]{,[name],[value]}","[name],[value]{,[name],[value]}"
 "guitemplatesmo,sysenv,defs,1:,6:",vaString,F,,"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
  Example:
  --macrodef=MAC1,abc,MAC2,def","Macro definition, will be overridden by 'Project'-'Options'-'Macros'.
@@ -840,7 +840,7 @@ for window raise operation. Implies --NORESTACKWINDOW and
 "formdesignerfo,popupme,menu.submenu.items,32:,caption",vaString,F,,Insert Component,Insert Component
 "formdesignerfo,hidecompact,caption",vaString,F,,Hide &Components,Hide &Components
 "formdesignerfo,hidewidgetact,caption",vaString,F,,Hide &Widgets,Hide &Widgets
-"formdesignerfo,togglehideact,caption",vaString,F,,&Hide Widgets<>Components,&Hide Widgets<>Components
+"formdesignerfo,togglehideact,caption",vaString,F,,&Hide Widgets/Components,&Hide Widgets/Components
 "formdesignerfo,showallact,caption",vaString,F,,&Show all,&Show all
 "formdesignerfo,c,strings.data,0:",vaString,F,,Do you wish to revert to inherited,Do you wish to revert to inherited
 "formdesignerfo,c,strings.data,1:",vaString,F,,the selected component?,the selected component?

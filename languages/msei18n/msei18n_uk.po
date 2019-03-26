@@ -23,6 +23,24 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
+msgid "Working..."
+msgstr "Працює..."
+
+msgid "Reset"
+msgstr "Скинути"
+
+msgid "MSE trd files"
+msgstr ""
+
+msgid "PO translation files"
+msgstr ""
+
+msgid "All"
+msgstr "Усі"
+
+msgid "Do you want to reset to root value?"
+msgstr ""
+
 msgid "&Refresh"
 msgstr "&Освіжити"
 
@@ -131,8 +149,8 @@ msgstr "коментар"
 msgid "value"
 msgstr "значення"
 
-msgid "<no project>"
-msgstr "<без проекту>"
+msgid "[no project]"
+msgstr "[без проекту]"
 
 msgid "Can not read module"
 msgstr "Неможливо прочитати модуль"

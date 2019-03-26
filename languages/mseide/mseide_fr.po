@@ -22,6 +22,24 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgid "[filepath]"
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
+msgstr ""
+
+msgid "auto"
+msgstr "auto"
+
+msgid "None"
+msgstr "Aucun"
+
+msgid "Do not use a skin, no fades."
+msgstr "Ne pas utiliser une peau, pas de fondus."
+
+msgid "Display this help and exit."
+msgstr "Affiche cette aide et quitter."
+
 msgid "Watchpoints"
 msgstr "Points de surveillance"
 
@@ -59,7 +77,7 @@ msgid "Do you wish to delete all watchpoints?"
 msgstr "Souhaitez-vous supprimer tous les points de contrôle?"
 
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 msgid "Watches"
 msgstr "Points de suivi"
@@ -81,6 +99,11 @@ msgid ""
 "U = Decimal unsigned\n"
 "H = Hex"
 msgstr ""
+"Format d'affichage\n"
+"B = Binaire\n"
+"D = Décimal signé\n"
+"U = Décimal non signé\n"
+"H = Hexadécimal"
 
 msgid "Watches &on"
 msgstr "&Format par défaut"
@@ -136,11 +159,11 @@ msgstr "&Réinitialiser les formats"
 msgid "Do you wish to delete all watches?"
 msgstr "Voulez-vous supprimer tous les contrôles?"
 
-msgid "<disabled>"
-msgstr ""
+msgid "[disabled]"
+msgstr "[désactivé]"
 
 msgid "Threads"
-msgstr ""
+msgstr "Fils"
 
 msgid "State"
 msgstr "État"
@@ -197,7 +220,7 @@ msgid "&select"
 msgstr "&sélectionner"
 
 msgid "&indent"
-msgstr ""
+msgstr "&Marquer"
 
 msgid "Delete"
 msgstr "Supprimer "
@@ -212,7 +235,7 @@ msgid "Do you want to delete \""
 msgstr "Voulez-vous supprimer"
 
 msgid "has been added to 'Project'-'Options'-'Editor'-'Code Templates'."
-msgstr ""
+msgstr "a été ajouté à 'Projet' - 'Options' - 'Éditeur' - 'Modèles de code'."
 
 msgid "Target Console"
 msgstr "Console cible"
@@ -256,8 +279,8 @@ msgstr "Pile"
 msgid "Source"
 msgstr "Code source"
 
-msgid "<none>"
-msgstr "<aucun>"
+msgid "[none]"
+msgstr "[aucun]"
 
 msgid "Step back in code navigation"
 msgstr "Reculer dans la navigation de code"
@@ -331,8 +354,8 @@ msgstr "Voulez-vous remplacer:"
 msgid "with:"
 msgstr "avec:"
 
-msgid "<new>"
-msgstr ""
+msgid "[new]"
+msgstr "[nouveau]"
 
 msgid "Syntaxdeffile:"
 msgstr "Syntaxdeffile:"
@@ -386,7 +409,7 @@ msgid "Order"
 msgstr "Ordre"
 
 msgid "Set Component create Order of"
-msgstr ""
+msgstr "Définir l'ordre de création de composant de"
 
 msgid "Select subform"
 msgstr "Sélectionner un sous-formulaire"
@@ -425,49 +448,49 @@ msgid "Undelete Component(s)"
 msgstr "Restituer le(s) composant(s)"
 
 msgid "Select Childwidget"
-msgstr ""
+msgstr "Sélectionner un widget enfant"
 
 msgid "Edit Component"
-msgstr ""
+msgstr "Éditer le composant"
 
 msgid "Bring to Front"
-msgstr ""
+msgstr "Mettre au premier plan"
 
 msgid "Send to Back"
-msgstr ""
+msgstr "Envoyer au fond"
 
 msgid "Iconify"
-msgstr ""
+msgstr "Iconifier"
 
 msgid "Deiconify"
-msgstr ""
+msgstr "Déiconifier"
 
 msgid "Set Creation Order"
-msgstr ""
+msgstr "Définir l'ordre de création"
 
 msgid "Sync. to Font Height"
-msgstr ""
+msgstr "Sync. à hauteur de police"
 
 msgid "Revert to inherited"
 msgstr "Restaurer vers \"inherited\""
 
 msgid "Touch Form"
-msgstr ""
+msgstr "Retoucher le formulaire"
 
 msgid "Add report page"
-msgstr ""
+msgstr "Ajouter une page de rapport"
 
 msgid "Delete report page"
-msgstr ""
+msgstr "Supprimer la page du rapport"
 
 msgid "Do you wish to delete"
-msgstr ""
+msgstr "Voulez-vous supprimer"
 
 msgid "WARNING"
 msgstr "AVERTISSEMENT"
 
 msgid "Find and Replace Text"
-msgstr ""
+msgstr "Rechercher et remplacer du texte"
 
 msgid "Text to &find"
 msgstr "&Texte à trouver"
@@ -485,28 +508,28 @@ msgid "&Replace"
 msgstr "R&emplacer"
 
 msgid "Replace &all"
-msgstr ""
+msgstr "Remplacer &tout"
 
 msgid "select&ed only"
-msgstr ""
+msgstr "sélectionnés seuls"
 
 msgid "&prompt on rep."
-msgstr ""
+msgstr "&invite sur rep."
 
 msgid "Project Tree"
-msgstr ""
+msgstr "Arbre de projet"
 
 msgid "&Add Unit"
-msgstr ""
+msgstr "&Ajouter une unité"
 
 msgid "&Remove Unit"
-msgstr ""
+msgstr "& Supprimer l'unité"
 
 msgid "Add Text File"
-msgstr ""
+msgstr "Ajouter un fichier texte"
 
 msgid "Remove Text File"
-msgstr ""
+msgstr "Supprimer le fichier texte"
 
 msgid "Remove C-File"
 msgstr ""
@@ -1939,7 +1962,7 @@ msgstr ""
 msgid "Hide &Widgets"
 msgstr ""
 
-msgid "&Hide Widgets<>Components"
+msgid "&Hide Widgets/Components"
 msgstr ""
 
 msgid "&Show all"

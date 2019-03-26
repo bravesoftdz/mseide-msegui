@@ -21,6 +21,24 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Working..."
+msgstr ""
+
+msgid "Reset"
+msgstr "Herstellen"
+
+msgid "MSE trd files"
+msgstr ""
+
+msgid "PO translation files"
+msgstr ""
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Do you want to reset to root value?"
+msgstr ""
+
 msgid "&Refresh"
 msgstr ""
 
@@ -66,7 +84,7 @@ msgstr ""
 msgid "NT only"
 msgstr ""
 
-msgid "Show Color"
+msgid "show color"
 msgstr ""
 
 msgid "&Open"
@@ -129,7 +147,7 @@ msgstr "opmerking"
 msgid "value"
 msgstr "waarde"
 
-msgid "<no project>"
+msgid "[no project]"
 msgstr ""
 
 msgid "Can not read module"

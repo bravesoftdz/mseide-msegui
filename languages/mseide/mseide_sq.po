@@ -4,6 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Ardit Dani <ardit.dani@gmail.com>, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
@@ -21,6 +22,24 @@ msgstr ""
 "Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "[filepath]"
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
+msgstr ""
+
+msgid "auto"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
+msgstr ""
+
 msgid "Watchpoints"
 msgstr ""
 
@@ -28,7 +47,7 @@ msgid "on"
 msgstr ""
 
 msgid "Kind"
-msgstr ""
+msgstr "Lloj"
 
 msgid "Expression"
 msgstr ""
@@ -134,7 +153,7 @@ msgstr ""
 msgid "Do you wish to delete all watches?"
 msgstr ""
 
-msgid "<disabled>"
+msgid "[disabled]"
 msgstr ""
 
 msgid "Threads"
@@ -153,7 +172,7 @@ msgid "*active*"
 msgstr ""
 
 msgid "unknown"
-msgstr ""
+msgstr "panjohur"
 
 msgid "Code Template Editor"
 msgstr ""
@@ -180,7 +199,7 @@ msgid "Default Value"
 msgstr ""
 
 msgid "Cursor"
-msgstr ""
+msgstr "Kursori"
 
 msgid "Col"
 msgstr ""
@@ -198,7 +217,7 @@ msgid "&indent"
 msgstr ""
 
 msgid "Delete"
-msgstr ""
+msgstr "Fshij"
 
 msgid "Filename"
 msgstr ""
@@ -254,7 +273,7 @@ msgstr ""
 msgid "Source"
 msgstr "Burimi"
 
-msgid "<none>"
+msgid "[none]"
 msgstr ""
 
 msgid "Step back in code navigation"
@@ -312,7 +331,7 @@ msgid "Complete class at cursor"
 msgstr ""
 
 msgid "File \""
-msgstr ""
+msgstr "Skedarë \""
 
 msgid "\" has changed."
 msgstr ""
@@ -329,8 +348,8 @@ msgstr ""
 msgid "with:"
 msgstr ""
 
-msgid "<new>"
-msgstr ""
+msgid "[new]"
+msgstr "[I'ri]"
 
 msgid "Syntaxdeffile:"
 msgstr ""
@@ -471,7 +490,7 @@ msgid "Text to &find"
 msgstr ""
 
 msgid "&Replace with"
-msgstr ""
+msgstr "&Zëvendësoni me"
 
 msgid "&casesensitive"
 msgstr ""
@@ -504,7 +523,7 @@ msgid "Add Text File"
 msgstr ""
 
 msgid "Remove Text File"
-msgstr ""
+msgstr "Hiq Skedarin Tekst"
 
 msgid "Remove C-File"
 msgstr ""
@@ -835,7 +854,7 @@ msgid "Processor"
 msgstr ""
 
 msgid "Simulator"
-msgstr ""
+msgstr "Imitues"
 
 msgid "gdb download"
 msgstr ""
@@ -1113,7 +1132,7 @@ msgid "New Project"
 msgstr ""
 
 msgid "Load file in editor"
-msgstr ""
+msgstr "Ngarko skedarë në redaktor"
 
 msgid "Expand macros"
 msgstr ""
@@ -1131,7 +1150,7 @@ msgid "Script after copy"
 msgstr ""
 
 msgid "New File"
-msgstr ""
+msgstr "Skedarë Ri"
 
 msgid "Filter"
 msgstr ""
@@ -1232,7 +1251,7 @@ msgid "Tool 8"
 msgstr ""
 
 msgid "Tool 9"
-msgstr ""
+msgstr "Vegla 9"
 
 msgid "Tool 10"
 msgstr ""
@@ -1292,7 +1311,7 @@ msgid "Load/save settings"
 msgstr ""
 
 msgid "Make"
-msgstr ""
+msgstr "Ndërto"
 
 msgid "User Colors"
 msgstr ""
@@ -1504,7 +1523,7 @@ msgid "Select Component"
 msgstr ""
 
 msgid "Messages"
-msgstr ""
+msgstr "mesazhet"
 
 msgid "Copy to clipboard"
 msgstr ""
@@ -1765,7 +1784,7 @@ msgid "Download finished."
 msgstr ""
 
 msgid "Download canceled."
-msgstr ""
+msgstr "Shkarkimi anuluar."
 
 msgid "\" not found."
 msgstr ""
@@ -1786,7 +1805,7 @@ msgid "Pascal Files"
 msgstr ""
 
 msgid "new"
-msgstr ""
+msgstr "I'ri"
 
 msgid "Can not load Project \""
 msgstr ""
@@ -1825,7 +1844,7 @@ msgid "Make ***ERROR***"
 msgstr ""
 
 msgid "Make OK."
-msgstr ""
+msgstr "Ndërto OK"
 
 msgid "Source has changed, do you wish to remake project?"
 msgstr ""
@@ -1937,7 +1956,7 @@ msgstr ""
 msgid "Hide &Widgets"
 msgstr ""
 
-msgid "&Hide Widgets<>Components"
+msgid "&Hide Widgets/Components"
 msgstr ""
 
 msgid "&Show all"
@@ -1974,7 +1993,7 @@ msgid "&Text to find"
 msgstr ""
 
 msgid "&Directory"
-msgstr ""
+msgstr "&Dosje"
 
 msgid "&File Mask"
 msgstr ""
@@ -2133,7 +2152,7 @@ msgid "Error while writing the storegroup."
 msgstr ""
 
 msgid "Do you want to remove \""
-msgstr ""
+msgstr "Dëshiron te hiqni \""
 
 msgid "\" branch?"
 msgstr ""
@@ -2652,7 +2671,7 @@ msgid "T&ools"
 msgstr ""
 
 msgid "Forms"
-msgstr ""
+msgstr "Formularë"
 
 msgid "Program"
 msgstr ""
@@ -3054,7 +3073,7 @@ msgid ""
 msgstr ""
 
 msgid "&reverse"
-msgstr ""
+msgstr "&rikthe"
 
 msgid "&Load"
 msgstr ""

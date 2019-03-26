@@ -29,7 +29,7 @@ name,type,notranslate,comment,value,en
 "mainfo,c,strings.data,2:",vaString,F,,notranslate,notranslate
 "mainfo,c,strings.data,3:",vaString,F,,comment,comment
 "mainfo,c,strings.data,4:",vaString,F,,value,value
-"mainfo,c,strings.data,5:",vaString,F,,<no project>,<no project>
+"mainfo,c,strings.data,5:",vaString,F,,[no project],[no project]
 "mainfo,c,strings.data,6:",vaString,F,,Can not read module,Can not read module
 "mainfo,c,strings.data,7:",vaString,F,,New translate project,New translate project
 "mainfo,c,strings.data,8:",vaString,F,,Exec error,Exec error
