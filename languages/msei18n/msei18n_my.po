@@ -21,6 +21,12 @@ msgstr ""
 "Language: my\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Importation"
+msgstr ""
+
+msgid "Data type"
+msgstr ""
+
 msgid "no string"
 msgstr ""
 
@@ -34,9 +40,6 @@ msgid "MSE trd files"
 msgstr ""
 
 msgid "PO translation files"
-msgstr ""
-
-msgid "All"
 msgstr ""
 
 msgid "Do you want to reset to root value?"

@@ -5,8 +5,8 @@
 # 
 # Translators:
 # Yuri Chornoivan <yurchor@ukr.net>, 2019
-# AlexL <loginov.alex.valer@gmail.com>, 2019
 # Андрій Лашкєєв <zombyg@gmail.com>, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-27 01:03+0300\n"
 "PO-Revision-Date: 2019-03-27 01:10+0000\n"
-"Last-Translator: Андрій Лашкєєв <zombyg@gmail.com>, 2019\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/Magic/teams/44238/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1899,7 +1899,7 @@ msgstr ""
 
 msgctxt "projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,caption"
 msgid "&Font Alias"
-msgstr ""
+msgstr "&Інші назви шрифту"
 
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,0:,caption"
@@ -2104,7 +2104,7 @@ msgstr ""
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,0:,hint"
 msgid "Save files"
-msgstr ""
+msgstr "Зберегти файли"
 
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,1:,hint"
@@ -3083,7 +3083,7 @@ msgstr "\" не зайдений."
 
 msgctxt "mainfo,c,strings.data,29:"
 msgid "\" exists."
-msgstr ""
+msgstr "\" вже існує."
 
 msgctxt "mainfo,c,strings.data,30:"
 msgid "New"
@@ -3099,7 +3099,7 @@ msgstr "Нова форма"
 
 msgctxt "mainfo,c,strings.data,33:"
 msgid "Pascal Files"
-msgstr ""
+msgstr "Файли Pascal"
 
 msgctxt "mainfo,c,strings.data,34:"
 msgid "new"
@@ -3442,7 +3442,7 @@ msgstr "&Текст для пошуку"
 
 msgctxt "findinfileadialogfo,dir,frame.caption"
 msgid "&Directory"
-msgstr ""
+msgstr "&Тека"
 
 msgctxt "findinfileadialogfo,mask,frame.caption"
 msgid "&File Mask"
@@ -3858,7 +3858,7 @@ msgstr "Продовжити"
 
 msgctxt "actionsmo,interrupt,caption"
 msgid "&Interrupt"
-msgstr ""
+msgstr "&Перервати"
 
 msgctxt "actionsmo,interrupt,hint"
 msgid "Interrupt"
@@ -3922,7 +3922,7 @@ msgstr "В&илучити"
 
 msgctxt "actionsmo,saveall,caption"
 msgid "Sa&ve all"
-msgstr ""
+msgstr "Зберегти &усе"
 
 msgctxt "actionsmo,find,caption"
 msgid "&Find"
@@ -3962,11 +3962,11 @@ msgstr ""
 
 msgctxt "actionsmo,line,caption"
 msgid "&Line"
-msgstr ""
+msgstr "&Рядок"
 
 msgctxt "actionsmo,togglebkpt,caption"
 msgid "&Toggle Breakpoint"
-msgstr ""
+msgstr "&Встановити/прибрати точку перепину"
 
 msgctxt "actionsmo,togglebkptenable,caption"
 msgid "Toggle Bkpt. &enabled"
@@ -4026,7 +4026,7 @@ msgstr ""
 
 msgctxt "actionsmo,uppercase,caption"
 msgid "&Uppercase"
-msgstr ""
+msgstr "&Верхній регістр"
 
 msgctxt "actionsmo,shortcuts,actions.items,0:,dispname"
 msgid "File"
@@ -4618,7 +4618,7 @@ msgstr "Компонент \""
 
 msgctxt "actionsmo,c,strings.data,19:"
 msgid "\" exists."
-msgstr ""
+msgstr "\" вже існує."
 
 msgctxt "actionsmo,c,strings.data,20:"
 msgid "Ancestor for \""
@@ -4634,7 +4634,7 @@ msgstr "Модуль \""
 
 msgctxt "actionsmo,c,strings.data,23:"
 msgid "Invalid name \""
-msgstr ""
+msgstr "Неправильна назва \""
 
 msgctxt "actionsmo,c,strings.data,24:"
 msgid "Invalid methodname"

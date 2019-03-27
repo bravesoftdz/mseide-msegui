@@ -21,6 +21,12 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
+msgid "Importation"
+msgstr ""
+
+msgid "Data type"
+msgstr ""
+
 msgid "no string"
 msgstr ""
 
@@ -35,9 +41,6 @@ msgstr ""
 
 msgid "PO translation files"
 msgstr ""
-
-msgid "All"
-msgstr "Všechny"
 
 msgid "Do you want to reset to root value?"
 msgstr ""
@@ -106,7 +109,7 @@ msgid "&Edit"
 msgstr "&Upravit"
 
 msgid "&Import"
-msgstr ""
+msgstr "&Import"
 
 msgid "Ex&port"
 msgstr ""

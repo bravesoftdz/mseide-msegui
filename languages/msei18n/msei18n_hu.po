@@ -21,6 +21,12 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Importation"
+msgstr ""
+
+msgid "Data type"
+msgstr ""
+
 msgid "no string"
 msgstr ""
 
@@ -35,9 +41,6 @@ msgstr ""
 
 msgid "PO translation files"
 msgstr ""
-
-msgid "All"
-msgstr "Összes"
 
 msgid "Do you want to reset to root value?"
 msgstr ""
