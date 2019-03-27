@@ -1,0 +1,5858 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mseide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-27 01:03+0300\n"
+"PO-Revision-Date: 2019-03-27 01:10+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Breton (https://www.transifex.com/Magic/teams/44238/br/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: br\n"
+"Plural-Forms: nplurals=5; plural=((n%10 == 1) && (n%100 != 11) && (n%100 !=71) && (n%100 !=91) ? 0 :(n%10 == 2) && (n%100 != 12) && (n%100 !=72) && (n%100 !=92) ? 1 :(n%10 ==3 || n%10==4 || n%10==9) && (n%100 < 10 || n% 100 > 19) && (n%100 < 70 || n%100 > 79) && (n%100 < 90 || n%100 > 99) ? 2 :(n != 0 && n % 1000000 == 0) ? 3 : 4);\n"
+"X-Generator: Poedit 2.0.9\n"
+
+msgctxt "watchpointsfo,dragdock.caption"
+msgid "Watchpoints"
+msgstr ""
+
+msgctxt "watchpointsfo,caption"
+msgid "Watchpoints"
+msgstr ""
+
+msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "on"
+msgstr ""
+
+msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Kind"
+msgstr ""
+
+msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Expression"
+msgstr ""
+
+msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Count"
+msgstr ""
+
+msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,5:,caption"
+msgid "Ignore"
+msgstr ""
+
+msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,6:,caption"
+msgid "Condition"
+msgstr ""
+
+msgctxt "watchpointsfo,gripopup,menu.submenu.items,0:,caption"
+msgid "Delete all"
+msgstr ""
+
+msgctxt "watchpointsfo,c,strings.data,0:"
+msgid "Watchpoint error."
+msgstr ""
+
+msgctxt "watchpointsfo,c,strings.data,1:"
+msgid "WATCHPOINT ERROR"
+msgstr ""
+
+msgctxt "watchpointsfo,c,strings.data,2:"
+msgid "Program not loaded."
+msgstr ""
+
+msgctxt "watchpointsfo,c,strings.data,3:"
+msgid "Do you wish to delete all watchpoints?"
+msgstr ""
+
+msgctxt "watchpointsfo,c,strings.data,4:"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "watchfo,dragdock.caption"
+msgid "Watches"
+msgstr ""
+
+msgctxt "watchfo,caption"
+msgid "Watches"
+msgstr ""
+
+msgctxt "watchfo,grid,fixrows.items,0:,captions.items,0:,hint"
+msgid "Active"
+msgstr ""
+
+msgctxt "watchfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Expression"
+msgstr ""
+
+msgctxt "watchfo,grid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Expressions starting with # are treated as gdb commands"
+msgstr ""
+
+msgctxt "watchfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Result"
+msgstr ""
+
+msgctxt "watchfo,grid,fixrows.items,0:,captions.items,3:,hint"
+msgid ""
+"Display format\n"
+"B = Binary\n"
+"D = Decimal signed\n"
+"U = Decimal unsigned\n"
+"H = Hex"
+msgstr ""
+
+msgctxt "watchfo,watcheson,frame.caption"
+msgid "Watches &on"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,0:,caption"
+msgid "Delete all"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,2:,caption"
+msgid "Add Watchpoint"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,3:,caption"
+msgid "Address Watchpoint 8"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,4:,caption"
+msgid "Address Watchpoint 16"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,5:,caption"
+msgid "Address Watchpoint 32"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,6:,caption"
+msgid "Address Watchpoint 64"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,8:,caption"
+msgid "&Format default"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,9:,caption"
+msgid "&Binary"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,10:,caption"
+msgid "D&ecimal signed"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,11:,caption"
+msgid "Decimal &unsigned"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,12:,caption"
+msgid "&Hex"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,14:,caption"
+msgid "&Size default"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,15:,caption"
+msgid "&8 Bit"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,16:,caption"
+msgid "&16 Bit"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,17:,caption"
+msgid "&32 Bit"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,18:,caption"
+msgid "&64 Bit"
+msgstr ""
+
+msgctxt "watchfo,gripopup,menu.submenu.items,20:,caption"
+msgid "&Reset Formats"
+msgstr ""
+
+msgctxt "watchfo,c,strings.data,0:"
+msgid "Do you wish to delete all watches?"
+msgstr ""
+
+msgctxt "watchfo,c,strings.data,1:"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "watchfo,c,strings.data,2:"
+msgid "[disabled]"
+msgstr ""
+
+msgctxt "threadsfo,dragdock.caption"
+msgid "Threads"
+msgstr ""
+
+msgctxt "threadsfo,caption"
+msgid "Threads"
+msgstr ""
+
+msgctxt "threadsfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "State"
+msgstr ""
+
+msgctxt "threadsfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Location"
+msgstr ""
+
+msgctxt "threadsfo,tpopupmenu1,menu.submenu.items,0:,caption"
+msgid "Copy to Clipboard"
+msgstr ""
+
+msgctxt "threadsfo,c,strings.data,0:"
+msgid "*active*"
+msgstr ""
+
+msgctxt "threadsfo,c,strings.data,1:"
+msgid "unknown"
+msgstr ""
+
+msgctxt "templateeditorfo,caption"
+msgid "Code Template Editor"
+msgstr ""
+
+msgctxt "templateeditorfo,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "templateeditorfo,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "templateeditorfo,nameed,frame.caption"
+msgid "&Name"
+msgstr ""
+
+msgctxt "templateeditorfo,commented,frame.caption"
+msgid "C&omment"
+msgstr ""
+
+msgctxt "templateeditorfo,paramgrid,frame.caption"
+msgid "&Parameter"
+msgstr ""
+
+msgctxt ""
+"templateeditorfo,paramgrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"templateeditorfo,paramgrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Default Value"
+msgstr ""
+
+msgctxt "templateeditorfo,cursordisp,frame.caption"
+msgid "Cursor"
+msgstr ""
+
+msgctxt "templateeditorfo,coled,frame.caption"
+msgid "Col"
+msgstr ""
+
+msgctxt "templateeditorfo,rowed,frame.caption"
+msgid "Row"
+msgstr ""
+
+msgctxt "templateeditorfo,tbutton3,caption"
+msgid "&Set Cursor"
+msgstr ""
+
+msgctxt "templateeditorfo,selected,frame.caption"
+msgid "&select"
+msgstr ""
+
+msgctxt "templateeditorfo,indented,frame.caption"
+msgid "&indent"
+msgstr ""
+
+msgctxt "templateeditorfo,deletebu,caption"
+msgid "Delete"
+msgstr ""
+
+msgctxt "templateeditorfo,saveasbu,caption"
+msgid "Filename"
+msgstr ""
+
+msgctxt "templateeditorfo,savefiledialog,controller.filterlist.data,0:,0:"
+msgid "Code Temlate Files"
+msgstr ""
+
+msgctxt "templateeditorfo,c,strings.data,0:"
+msgid "Do you want to delete \""
+msgstr ""
+
+msgctxt "templateeditorfo,c,strings.data,1:"
+msgid "Code Template Editor"
+msgstr ""
+
+msgctxt "templateeditorfo,c,strings.data,2:"
+msgid "has been added to 'Project'-'Options'-'Editor'-'Code Templates'."
+msgstr ""
+
+msgctxt "targetconsolefo,caption"
+msgid "Target Console"
+msgstr ""
+
+msgctxt "targetconsolefo,popupmen,menu.submenu.items,4:,caption"
+msgid "&Clear"
+msgstr ""
+
+msgctxt "symbolfo,caption"
+msgid "Symbols"
+msgstr ""
+
+msgctxt "symbolfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Symbol"
+msgstr ""
+
+msgctxt "symbolfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Address"
+msgstr ""
+
+msgctxt "symbolfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Info"
+msgstr ""
+
+msgctxt "symbolfo,tpopupmenu1,menu.submenu.items,0:,caption"
+msgid "Delete all"
+msgstr ""
+
+msgctxt "symbolfo,c,strings.data,0:"
+msgid "GDB not active."
+msgstr ""
+
+msgctxt "symbolfo,c,strings.data,1:"
+msgid "Do you wish to delete all symbols?"
+msgstr ""
+
+msgctxt "storedcomponentinfodialogfo,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "storedcomponentinfodialogfo,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "storedcomponentinfodialogfo,filepath,frame.caption"
+msgid "&File"
+msgstr "&Restr"
+
+msgctxt ""
+"storedcomponentinfodialogfo,filepath,controller.filterlist.data,0:,0:"
+msgid "Component File"
+msgstr ""
+
+msgctxt ""
+"storedcomponentinfodialogfo,filepath,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "storedcomponentinfodialogfo,filepath,controller.captionsave"
+msgid "Component File"
+msgstr ""
+
+msgctxt "storedcomponentinfodialogfo,compname,frame.caption"
+msgid "&Name"
+msgstr ""
+
+msgctxt "storedcomponentinfodialogfo,compdesc,frame.caption"
+msgid "&Description"
+msgstr "&Deskrivadur"
+
+msgctxt "stackfo,dragdock.caption"
+msgid "Stack"
+msgstr ""
+
+msgctxt "stackfo,caption"
+msgid "Stack"
+msgstr ""
+
+msgctxt "stackfo,tpopupmenu1,menu.submenu.items,0:,caption"
+msgid "Copy to Clipboard"
+msgstr ""
+
+msgctxt "sourcefo,dragdock.caption"
+msgid "Source"
+msgstr "Tarzh"
+
+msgctxt "sourcefo,caption"
+msgid "[none]"
+msgstr ""
+
+msgctxt "sourcefo,tabwidget,tstockglyphbutton1,hint"
+msgid "Step back in code navigation"
+msgstr ""
+
+msgctxt "sourcefo,tabwidget,tstockglyphbutton2,hint"
+msgid "Step forward in code navigation"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,0:,caption"
+msgid "Select Page"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,1:,caption"
+msgid "&Open File"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,2:,caption"
+msgid "&Close File"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,3:,caption"
+msgid "&Save File"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,5:,caption"
+msgid "Show as Form"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,17:,submenu.items,7:,caption"
+msgid "Convert to &Pascal string"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,17:,caption"
+msgid "&Modify Selection"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,21:,caption"
+msgid "&Edit breakpoint"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,22:,caption"
+msgid "Add &Watch at Cursor"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,23:,caption"
+msgid "Set Bookmark"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,24:,caption"
+msgid "Find Bookmark"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,26:,caption"
+msgid "Insert GUID"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,27:,caption"
+msgid "Insert UID"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,28:,caption"
+msgid "Insert Template"
+msgstr ""
+
+msgctxt "sourcefo,formpopup,menu.submenu.items,29:,caption"
+msgid "Complete Class at Cursor"
+msgstr ""
+
+msgctxt "sourcefo,completeclassact,caption"
+msgid "Complete class at cursor"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,0:"
+msgid "File \""
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,1:"
+msgid "\" has changed."
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,2:"
+msgid "There are modifications in edit buffer also."
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,3:"
+msgid "Do you wish to reload from disk?"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,4:"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,5:"
+msgid "[none]"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,6:"
+msgid "Do you wish to replace:"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,7:"
+msgid "with:"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,8:"
+msgid "[new]"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,9:"
+msgid "Syntaxdeffile:"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,10:"
+msgid "Text"
+msgstr "Testenn"
+
+msgctxt "sourcefo,c,strings.data,11:"
+msgid "not found."
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,12:"
+msgid "Restart from begin of file?"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,13:"
+msgid "Cancel?"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,14:"
+msgid "Do you wish to to replace this occurence?"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,15:"
+msgid "Go to line number:"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,16:"
+msgid "Find line"
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,17:"
+msgid "There are modifications in edit buffer also."
+msgstr ""
+
+msgctxt "sourcefo,c,strings.data,18:"
+msgid "Restart from end of file?"
+msgstr ""
+
+msgctxt "settaborderfo,caption"
+msgid "Set Tab Order"
+msgstr ""
+
+msgctxt "settaborderfo,ok,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "settaborderfo,cancel,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "settaborderfo,start,caption"
+msgid "&Start"
+msgstr ""
+
+msgctxt "settaborderfo,stop,caption"
+msgid "St&op"
+msgstr ""
+
+msgctxt "settaborderfo,tlabel1,caption"
+msgid "Mouse click"
+msgstr ""
+
+msgctxt "setcreateorderfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "setcreateorderfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Class"
+msgstr ""
+
+msgctxt "setcreateorderfo,grid,fixrows.items,0:,captionsfix.items,0:,caption"
+msgid "Order"
+msgstr ""
+
+msgctxt "setcreateorderfo,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "setcreateorderfo,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "setcreateorderfo,c,strings.data,0:"
+msgid "Set Component create Order of"
+msgstr ""
+
+msgctxt "selectsubmoduledialogfo,caption"
+msgid "Select subform"
+msgstr ""
+
+msgctxt "selectsubmoduledialogfo,ok,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "selectsubmoduledialogfo,cancel,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "selecteditpagefo,caption"
+msgid "Select edit page (Ctrl+E)"
+msgstr ""
+
+msgctxt "selecteditpagefo,openfilebutton,caption"
+msgid "&Open"
+msgstr ""
+
+msgctxt "reportdesignerfo,xdisp,format"
+msgid "0.0mm"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,0:,caption"
+msgid "Show objectinspector"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,1:,caption"
+msgid "Show componentpalette"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,2:,caption"
+msgid "Show as Text"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,9:,caption"
+msgid "Copy Component(s)"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,10:,caption"
+msgid "Cut Component(s)"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,11:,caption"
+msgid "Paste Component(s)"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,12:,caption"
+msgid "Delete Component(s)"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,13:,caption"
+msgid "Undelete Component(s)"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,15:,caption"
+msgid "Select Childwidget"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,16:,caption"
+msgid "Edit Component"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,17:,caption"
+msgid "Bring to Front"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,18:,caption"
+msgid "Send to Back"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,19:,caption"
+msgid "Iconify"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,20:,caption"
+msgid "Deiconify"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,21:,caption"
+msgid "Set Tab Order"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,22:,caption"
+msgid "Set Creation Order"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,23:,caption"
+msgid "Sync. to Font Height"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,24:,caption"
+msgid "Revert to inherited"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,26:,caption"
+msgid "Touch Form"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,27:,caption"
+msgid "Add report page"
+msgstr ""
+
+msgctxt "reportdesignerfo,tpopupmenu3,menu.submenu.items,28:,caption"
+msgid "Delete report page"
+msgstr ""
+
+msgctxt "reportdesignerfo,sc,strings.data,0:"
+msgid "Do you wish to delete"
+msgstr ""
+
+msgctxt "reportdesignerfo,sc,strings.data,1:"
+msgid "WARNING"
+msgstr ""
+
+msgctxt "replacedialogfo,caption"
+msgid "Find and Replace Text"
+msgstr ""
+
+msgctxt "replacedialogfo,findtext,frame.caption"
+msgid "Text to &find"
+msgstr ""
+
+msgctxt "replacedialogfo,replacetext,frame.caption"
+msgid "&Replace with"
+msgstr ""
+
+msgctxt "replacedialogfo,casesensitive,frame.caption"
+msgid "&casesensitive"
+msgstr ""
+
+msgctxt "replacedialogfo,wholeword,frame.caption"
+msgid "&whole word"
+msgstr ""
+
+msgctxt "replacedialogfo,tintegerbutton1,caption"
+msgid "&Replace"
+msgstr "&Erlec'hiañ"
+
+msgctxt "replacedialogfo,tintegerbutton2,caption"
+msgid "Replace &all"
+msgstr ""
+
+msgctxt "replacedialogfo,selectedonly,frame.caption"
+msgid "select&ed only"
+msgstr ""
+
+msgctxt "replacedialogfo,tintegerbutton3,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "replacedialogfo,promptonreplace,frame.caption"
+msgid "&prompt on rep."
+msgstr ""
+
+msgctxt "projecttreefo,caption"
+msgid "Project Tree"
+msgstr ""
+
+msgctxt "projecttreefo,addunitfileact,caption"
+msgid "&Add Unit"
+msgstr ""
+
+msgctxt "projecttreefo,removeunitfileact,caption"
+msgid "&Remove Unit"
+msgstr ""
+
+msgctxt "projecttreefo,addfileact,caption"
+msgid "Add Text File"
+msgstr ""
+
+msgctxt "projecttreefo,removefileact,caption"
+msgid "Remove Text File"
+msgstr ""
+
+msgctxt "projecttreefo,removecmoduleact,caption"
+msgid "Remove C-File"
+msgstr ""
+
+msgctxt "projecttreefo,addcmoduleact,caption"
+msgid "Add C-File"
+msgstr ""
+
+msgctxt "projecttreefo,cmoduledialog,controller.filterlist.data,0:,0:"
+msgid "C-Source (*.c)"
+msgstr ""
+
+msgctxt "projecttreefo,adddiract,caption"
+msgid "Add Directory"
+msgstr ""
+
+msgctxt "projecttreefo,removediract,caption"
+msgid "Remove Directory"
+msgstr ""
+
+msgctxt "projecttreefo,editdiract,caption"
+msgid "Edit Directory Caption"
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,0:"
+msgid "Pascal Units"
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,1:"
+msgid "C Modules"
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,2:"
+msgid "Text Files"
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,3:"
+msgid "Do you wish to remove \""
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,4:"
+msgid "Select Directory"
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,5:"
+msgid "Do you want to remove"
+msgstr ""
+
+msgctxt "projecttreefo,c,strings.data,6:"
+msgid "with the sub-items from project?"
+msgstr ""
+
+msgctxt "projectoptionsfo,caption"
+msgid "Project Options"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tlayouter8,cancel,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tlayouter8,ok,caption"
+msgid "Ok"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,editorpage,caption"
+msgid "&Editor"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,caption"
+msgid "Source"
+msgstr "Tarzh"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage13,caption"
+msgid "File filter"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage13,filefiltergrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage13,filefiltergrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "File mask"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,caption"
+msgid "Syntax definition files"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,fixrows.items,0:,captions.items,0:,caption"
+msgid "Syntax definition file"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,fixrows.items,0:,captions.items,1:,caption"
+msgid "File mask"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage14,twidgetgrid6,syntaxdeffile,controller.filterlist.data,0:,0:"
+msgid "Syntaxdef files"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,caption"
+msgid "Code templates"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,frame.caption"
+msgid "Code template directories, file extension = .mct"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,0:,caption"
+msgid "Directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,1:,hint"
+msgid "Add to object file search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,2:,hint"
+msgid "Add to library search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,3:,hint"
+msgid "Add to include file search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,4:,hint"
+msgid "Add to unit file search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,5:,hint"
+msgid "Use in Make 4"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,6:,hint"
+msgid "Use in Make 3"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,7:,hint"
+msgid "Use in Make 2"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,8:,hint"
+msgid "Use in Make 1"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,9:,hint"
+msgid "Use in Build"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,fixrows.items,0:,captions.items,10:,hint"
+msgid "Use in Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,ttabwidget2,ttabpage19,twidgetgrid5,codetemplatedirs,controller.captionopen"
+msgid "Select unit directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,dispgrid,frame.caption"
+msgid "Test"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontextraspace,frame.caption"
+msgid "ExtSp"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontextraspace,hint"
+msgid "Extra space between lines"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontwidth,frame.caption"
+msgid "Width"
+msgstr "Ledander"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontheight,frame.caption"
+msgid "Height"
+msgstr "Uhelder"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontname,frame.caption"
+msgid "Font"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontcolor,frame.caption"
+msgid "Color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editbkcolor,frame.caption"
+msgid "Bk. Color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter12,editfontantialiased,frame.caption"
+msgid "Anti aliased"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,rightmarginon,frame.caption"
+msgid "Right margin line"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,linenumberson,frame.caption"
+msgid "Line numbers"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,editmarkbrackets,frame.caption"
+msgid "Mark brackets"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,editmarkpairwords,frame.caption"
+msgid "Mark pairwords"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter14,editmarkpairwords,hint"
+msgid "Mark in syntax definition file defined word pairs."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,pairmarkcolor,frame.caption"
+msgid ""
+"Mark\n"
+"color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,pairmarkcolor,hint"
+msgid ""
+"Background color of marked brackets and word pairs.\n"
+"Will be overridden by setting in syntax definition file.\n"
+"cl_none -> force none."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,statementcolor,frame.caption"
+msgid ""
+"Statement\n"
+"color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,statementcolor,hint"
+msgid ""
+"Background color of the active row while debugging.\n"
+"Will be overridden by setting in syntax definition file.\n"
+"cl_none -> force none."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,scrollheight,frame.caption"
+msgid ""
+"Scroll\n"
+"height"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,scrollheight,hint"
+msgid ""
+"0 -> accelerated,\n"
+"-1 -> paged"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,rightmarginchars,frame.caption"
+msgid "Characters"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter11,tlayouter15,pairmaxrowcount,frame.caption"
+msgid ""
+"Mark max\n"
+"rowcount"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,spacetabs,frame.caption"
+msgid "Space"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,blockindent,frame.caption"
+msgid "Block Indent"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,autoindent,frame.caption"
+msgid "Auto indent"
+msgstr "Emgefoskañ"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,tabindent,frame.caption"
+msgid "Tab"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,tabstops,frame.caption"
+msgid "Tabstops"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter10,showtabs,frame.caption"
+msgid "Show tabs"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,eolstyle,frame.caption"
+msgid "Eolstyle"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,eolstyle,hint"
+msgid "End of line style for writing. eol_default -> use original style."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,trimtrailingwhitespace,frame.caption"
+msgid ""
+"Trim trailing\n"
+"whitespace\n"
+"on save"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,frame.caption"
+msgid "Encoding"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,encoding,dropdown.cols.items,0:,data,0:"
+msgid "Locale"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage23,tlayouter13,tlayouter16,backupfilecount,frame.caption"
+msgid "Backup file count"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,caption"
+msgid "Form"
+msgstr "Frammenn"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,componenthints,frame.caption"
+msgid "Component hints"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,noformdesignerdocking,frame.caption"
+msgid "Docking"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,moveonfirstclick,frame.caption"
+msgid "Move on first click"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,gridsizey,frame.caption"
+msgid "Grid size Y"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,gridsizex,frame.caption"
+msgid "Grid size X"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,gridsizex,tintegeredit2,frame.caption"
+msgid "Grid size X"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,snaptogrid,frame.caption"
+msgid "Snap to Grid"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,snaptogrid,hint"
+msgid ""
+"Hint:\n"
+"Use Ctrl + arrow keys to move selected components without grid snap,\n"
+"use Shift + arrow keys to resize selected components without grid snap."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,editorpage,ttabwidget3,ttabpage22,showgrid,frame.caption"
+msgid "Show Grid"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,caption"
+msgid "&Debugger"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugcommand,frame.caption"
+msgid "&Debug command"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugoptions,frame.caption"
+msgid "Debug &options"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugoptions,hint"
+msgid "\"--tty DEVICE\" to set target terminal"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,caption"
+msgid "Source &directories"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,sourcedirgrid,sourcedirs,controller.captionopen"
+msgid "Select source directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,sourcebase,frame.caption"
+msgid "Object &Base Directory (empty = Make Directory)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage6,sourcebase,controller.captionopen"
+msgid "Select source base directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,caption"
+msgid "Defi&nes"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,twidgetgrid2,fixrows.items,0:,captions.items,0:,caption"
+msgid "on"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,twidgetgrid2,fixrows.items,0:,captions.items,1:,caption"
+msgid "Space separated defines for {$ifdef}"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage7,caption"
+msgid "&Signals"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage7,signalgrid,fixrows.items,0:,captions.items,3:,caption"
+msgid ".. to"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage7,signalgrid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage8,caption"
+msgid "&Exceptions"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage8,exceptionsgrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "ignore"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage8,exceptionsgrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Exception class"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,caption"
+msgid "&Target"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,remoteconnection,frame.caption"
+msgid "Target connection"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,remoteconnection,hint"
+msgid "\"--tty DEVICE\" to set target terminal"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,frame.caption"
+msgid "Before connect gdb script"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeconnect,controller.filterlist.data,0:,0:"
+msgid "gdb Scripts"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,frame.caption"
+msgid "Before load gdb script"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforeload,controller.filterlist.data,0:,0:"
+msgid "gdb Scripts"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,frame.caption"
+msgid "Before run gdb script"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter4,beforerun,controller.filterlist.data,0:,0:"
+msgid "gdb Scripts"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,frame.caption"
+msgid "After connect gdb script"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterconnect,controller.filterlist.data,0:,0:"
+msgid "gdb Scripts"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,frame.caption"
+msgid "After load gdb script"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter5,afterload,controller.filterlist.data,0:,0:"
+msgid "gdb Scripts"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,frame.caption"
+msgid "Processor"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbprocessor,dropdown.cols.items,0:,data,0:"
+msgid "auto"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbsimulator,frame.caption"
+msgid "Simulator"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,gdbdownload,frame.caption"
+msgid "gdb download"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,downloadalways,frame.caption"
+msgid ""
+"Always download\n"
+"before run"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,startupbkpt,frame.caption"
+msgid "Startup BKPT"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,tlayouter3,restartgdbbeforeload,frame.caption"
+msgid ""
+"Restart gdb\n"
+"before load"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,downloadlayouter,gdbservercommandattach,frame.caption"
+msgid "Start gdb server command attach target"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,downloadlayouter,gdbservercommand,frame.caption"
+msgid "Start gdb server command run target"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,downloadlayouter,uploadcommand,frame.caption"
+msgid "Download command"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,gdbloadtimeout,frame.caption"
+msgid "Load Timeout"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,gdbloadtimeout,formatdisp"
+msgid "0.#sec"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,serverla,gdbserverwait,frame.caption"
+msgid "Wait before connect"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,serverla,gdbserverwait,formatdisp"
+msgid "0.#sec"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,serverla,gdbserverstartonce,frame.caption"
+msgid "Start once"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,tlayouter2,nogdbserverexit,frame.caption"
+msgid "no wait for exit"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage16,texpandingwidget1,tlayouter2,gdbservertty,frame.caption"
+msgid "TTY"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,externalconsole,frame.caption"
+msgid ""
+"&External\n"
+"Console"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,showconsole,frame.caption"
+msgid ""
+"Show &Cons.\n"
+"on Run"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,showconsole,hint"
+msgid "Show console on run"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,stoponexception,frame.caption"
+msgid ""
+"&Stop\n"
+"on Excep."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,stoponexception,hint"
+msgid "Stop on exceptions"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,activateonbreak,frame.caption"
+msgid ""
+"&Activate\n"
+"on Break"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,valuehints,frame.caption"
+msgid ""
+"&Value\n"
+"Hints"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,nodebugbeginend,frame.caption"
+msgid ""
+"Call GUI_DEBUGBEGIN/\n"
+"GUI_DEBUGEND"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,nodebugbeginend,hint"
+msgid ""
+"Release mouse grab by target stop. gdb sometimes crashes with this option."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,settty,frame.caption"
+msgid ""
+"Set\n"
+"TT&Y"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,raiseonbreak,frame.caption"
+msgid ""
+"&Raise\n"
+"on Break"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,fpcgdbworkaround,frame.caption"
+msgid ""
+"&FPC\n"
+"bugs"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,tlayouter1,fpcgdbworkaround,hint"
+msgid "Use workarounds for FPC/gdb bugs"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,debugtarget,frame.caption"
+msgid "Debug &target (empty = make targetfile)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,xtermcommand,frame.caption"
+msgid "xterm command"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,debuggerpage,runcommand,frame.caption"
+msgid "&Run command (empty = start debugger)"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,makepage,caption"
+msgid "&Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,frame.caption"
+msgid "Default make col"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,0:"
+msgid "M (Make)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,1:"
+msgid "B (Build)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,2:"
+msgid "1 (Make 1)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,3:"
+msgid "2 (Make 2)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,4:"
+msgid "3 (Make 3)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,5:"
+msgid "4 (Make 4)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,defaultmake,dropdown.cols.items,0:,data,6:"
+msgid "None"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile,frame.caption"
+msgid "&Mainfile"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,mainfile,controller.captionopen"
+msgid "Select mainfile"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,targetfile,frame.caption"
+msgid "&Targetfile"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,targetfile,controller.captionopen"
+msgid "Select target file"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makecommand,frame.caption"
+msgid "Make &Program"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makecommand,controller.captionopen"
+msgid "Select make command"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,showcommandline,caption"
+msgid "Show command line"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,messageoutputfile,frame.caption"
+msgid "Message &output file"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,copymessages,frame.caption"
+msgid "Copy messages to &file"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,closemessages,frame.caption"
+msgid "Close messages window after compile"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,checkmethods,frame.caption"
+msgid "Check method headers"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,caption"
+msgid "Command before"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,0:,hint"
+msgid "Use in Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Use in Build"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,2:,hint"
+msgid "Use in Make 1"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,3:,hint"
+msgid "Use in Make 2"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,4:,hint"
+msgid "Use in Make 3"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,5:,hint"
+msgid "Use in Make 4"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage17,befcommandgrid,fixrows.items,0:,captions.items,6:,caption"
+msgid "Command"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,caption"
+msgid "Make options"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Use in Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,2:,hint"
+msgid "Use in Build"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,3:,hint"
+msgid "Use in Make 1"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,4:,hint"
+msgid "Use in Make 2"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,5:,hint"
+msgid "Use in Make 3"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,6:,hint"
+msgid "Use in Make 4"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,7:,hint"
+msgid "After mainfile"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage12,makeoptionsgrid,fixrows.items,0:,captions.items,8:,caption"
+msgid "Command line options"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,caption"
+msgid "Directories"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,frame.caption"
+msgid "Unit, include and library &directories"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,0:,hint"
+msgid "Use in Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Use in Build"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,2:,hint"
+msgid "Use in Make 1"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,3:,hint"
+msgid "Use in Make 2"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,4:,hint"
+msgid "Use in Make 3"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,5:,hint"
+msgid "Use in Make 4"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,6:,hint"
+msgid "Add to unit file search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,7:,hint"
+msgid "Add to include file search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,8:,hint"
+msgid "Add to library search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,9:,hint"
+msgid "Add to object file search path"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,fixrows.items,0:,captions.items,10:,caption"
+msgid "Directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,unitdirgrid,unitdirs,controller.captionopen"
+msgid "Select unit directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,objpref,frame.caption"
+msgid "Obj pref. (-Fo)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,libpref,frame.caption"
+msgid "Lib pref.(-Fl)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,incpref,frame.caption"
+msgid "Inc pref.(-Fi)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,unitpref,frame.caption"
+msgid "Unit pref.(-Fu)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage11,tlayouter17,reversepathorder,frame.caption"
+msgid "Reverse directory order"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,caption"
+msgid "Command after"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,0:,hint"
+msgid "Use in Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Use in Build"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,2:,hint"
+msgid "Use in Make 1"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,3:,hint"
+msgid "Use in Make 2"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,4:,hint"
+msgid "Use in Make 3"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,5:,hint"
+msgid "Use in Make 4"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makegroupbox,ttabpage18,aftcommandgrid,fixrows.items,0:,captions.items,6:,caption"
+msgid "Command"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,targpref,frame.caption"
+msgid "Targ. pref. (-o)"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,makepage,makedir,frame.caption"
+msgid "Make &Directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,makedir,controller.captionopen"
+msgid "Select make directory"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,colorerror,frame.caption"
+msgid "Error Color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,colorwarning,frame.caption"
+msgid "Warning Color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,colornote,frame.caption"
+msgid "Note Color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,makepage,stripmessageesc,frame.caption"
+msgid "Strip ESC sequences"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage1,caption"
+msgid "M&acros"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,macrogrid,fixrows.items,0:,captions.items,6:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,macrogrid,fixrows.items,0:,captions.items,7:,caption"
+msgid "Value"
+msgstr "Gwerzh"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage1,selectactivegroupgrid,frame.caption"
+msgid "Active group"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,caption"
+msgid "&Font Alias"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Alias"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Font name"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Height"
+msgstr "Uhelder"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Width"
+msgstr "Ledander"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Options"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,5:,caption"
+msgid "Xscale"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,fontaliaspage,fontaliasgrid,fixrows.items,0:,captions.items,6:,caption"
+msgid "Ancestor"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage10,caption"
+msgid "User &Colors"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,tlayouter7,tbutton1,caption"
+msgid "Copy \"setcolormapvalue\" code to clipboard"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,colgrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Color"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,colgrid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Comment"
+msgstr "Evezhiadenn"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage10,colgrid,fixrows.items,0:,captionsfix.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage21,caption"
+msgid "F&ormat Macros"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage21,tabhint"
+msgid "Used by formatfloatmse() and formatdatetimemse()"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage21,formatmacrogrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage21,formatmacrogrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Value"
+msgstr "Gwerzh"
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,caption"
+msgid "&Templates"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,caption"
+msgid "New Project"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,0:,hint"
+msgid "Load file in editor"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Expand macros"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Copied Files"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,copygrid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Destination"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,scriptbeforecopy,frame.caption"
+msgid "Script before copy"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage3,scriptaftercopy,frame.caption"
+msgid "Script after copy"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,caption"
+msgid "New File"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,0:,caption"
+msgid "Kind"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,1:,caption"
+msgid "Filter"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,2:,caption"
+msgid "Ext"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,3:,caption"
+msgid "Source"
+msgstr "Tarzh"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,caption"
+msgid "New Form"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,0:,caption"
+msgid "Kind"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,1:,hint"
+msgid "Inherited"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,2:,caption"
+msgid "Namebase"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,3:,caption"
+msgid "Formsuffix"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,4:,caption"
+msgid "Source File"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,fixrows.items,0:,captions.items,5:,caption"
+msgid "Form File"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,0:,0:"
+msgid "Source"
+msgstr "Tarzh"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfosources,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,0:,0:"
+msgid "Form Files"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage5,twidgetgrid4,newfoforms,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage15,caption"
+msgid "Too&ls"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,0:,hint"
+msgid "Save files"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,1:,hint"
+msgid "Parse source"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,2:,hint"
+msgid "Hide console (win32 only)"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,3:,hint"
+msgid "Show output in messages window"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,4:,caption"
+msgid "Menu"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,5:,caption"
+msgid "Shortcut"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,5:,hint"
+msgid ""
+"Select item from 'Settings'-'Configure MSEide'-'Shortcuts'\n"
+"'Tool 1'..'Tool 10'."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,6:,caption"
+msgid "Sc.Key"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,6:,hint"
+msgid "Shortcut key"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,7:,caption"
+msgid "Alt.Sc."
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,7:,hint"
+msgid "Alternate shortcut key"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,8:,caption"
+msgid "File"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,fixrows.items,0:,captions.items,9:,caption"
+msgid "Parameters"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,caption"
+msgid "Item"
+msgstr "Ergorenn"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,0:"
+msgid "Tool 1"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,1:"
+msgid "Tool 2"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,2:"
+msgid "Tool 3"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,3:"
+msgid "Tool 4"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,4:"
+msgid "Tool 5"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,5:"
+msgid "Tool 6"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,6:"
+msgid "Tool 7"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,7:"
+msgid "Tool 8"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,8:"
+msgid "Tool 9"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,0:,data,9:"
+msgid "Tool 10"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,1:,caption"
+msgid "Shortcut"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage15,twidgetgrid3,toolshortcuts,dropdown.cols.items,2:,caption"
+msgid "Alternate"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,caption"
+msgid "&Storage"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingseditor,frame.caption"
+msgid "Editor"
+msgstr "Embanner"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsautoload,frame.caption"
+msgid "Auto load"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsautosave,frame.caption"
+msgid "Auto save"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,savebu,caption"
+msgid "Save"
+msgstr "Enrollañ"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,loadbu,caption"
+msgid "Load"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,frame.caption"
+msgid "Settings File"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,0:,0:"
+msgid "Project Files"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlayouter6,settingsfile,controller.captionopen"
+msgid "Enter Settings File"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsdebugger,frame.caption"
+msgid "Debugger"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsstorage,frame.caption"
+msgid "Storage"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsprojecttree,frame.caption"
+msgid "Project Tree"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsmacros,frame.caption"
+msgid "Macros"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingstools,frame.caption"
+msgid "Tools"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingstemplates,frame.caption"
+msgid "Templates"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingscomponentstore,frame.caption"
+msgid "Component Store"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingslayout,frame.caption"
+msgid "Window Layout"
+msgstr ""
+
+msgctxt "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,tlabel1,caption"
+msgid "Load/save settings"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsmake,frame.caption"
+msgid "Make"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsusercolors,frame.caption"
+msgid "User Colors"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsformatmacros,frame.caption"
+msgid "Format Macros"
+msgstr ""
+
+msgctxt ""
+"projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingsfontalias,frame.caption"
+msgid "Font Alias"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,0:"
+msgid "Wrong encoding can damage your source files."
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,1:"
+msgid "Do you wish to set encoding to"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,2:"
+msgid "*** WARNING ***"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,3:"
+msgid "Hangup"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,4:"
+msgid "Interrupt"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,5:"
+msgid "Quit"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,6:"
+msgid "Illegal instruction"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,7:"
+msgid "Trace trap"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,8:"
+msgid "Abort"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,9:"
+msgid "BUS error"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,10:"
+msgid "Floating-point exception"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,11:"
+msgid "Kill"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,12:"
+msgid "User-defined signal 1"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,13:"
+msgid "Segmentation violation"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,14:"
+msgid "User-defined signal 2"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,15:"
+msgid "Broken pipe"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,16:"
+msgid "Alarm clock"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,17:"
+msgid "Termination"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,18:"
+msgid "Stack fault"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,19:"
+msgid "Child status has changed"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,20:"
+msgid "Continue"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,21:"
+msgid "Stop, unblockable"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,22:"
+msgid "Keyboard stop"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,23:"
+msgid "Background read from tty"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,24:"
+msgid "Background write to tty"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,25:"
+msgid "Urgent condition on socket"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,26:"
+msgid "CPU limit exceeded"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,27:"
+msgid "File size limit exceeded"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,28:"
+msgid "Virtual alarm clock"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,29:"
+msgid "Profiling alarm clock"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,30:"
+msgid "Window size change"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,31:"
+msgid "I/O now possible"
+msgstr ""
+
+msgctxt "projectoptionsfo,c,strings.data,32:"
+msgid "Power failure restart"
+msgstr ""
+
+msgctxt "programparametersfo,caption"
+msgid "Target Environment"
+msgstr ""
+
+msgctxt "programparametersfo,workingdirectory,frame.caption"
+msgid "&Working directory"
+msgstr ""
+
+msgctxt "programparametersfo,workingdirectory,controller.captionopen"
+msgid "Select program working directory"
+msgstr ""
+
+msgctxt "programparametersfo,ok,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "programparametersfo,tbutton2,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "programparametersfo,parameters,frame.caption"
+msgid "&Parameters"
+msgstr ""
+
+msgctxt "programparametersfo,grid,frame.caption"
+msgid "Environment variables"
+msgstr ""
+
+msgctxt "programparametersfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "on"
+msgstr ""
+
+msgctxt "programparametersfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "programparametersfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Value"
+msgstr "Gwerzh"
+
+msgctxt "printfo,caption"
+msgid "Print File"
+msgstr ""
+
+msgctxt "printfo,ok,caption"
+msgid "&Ok"
+msgstr ""
+
+msgctxt "printfo,cancel,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "printfo,linenum,frame.caption"
+msgid ""
+"Print line\n"
+"&numbers"
+msgstr ""
+
+msgctxt "printfo,fontsize,frame.caption"
+msgid "Font &size (Pt)"
+msgstr ""
+
+msgctxt "printfo,titlefont,frame.caption"
+msgid "&Title font"
+msgstr ""
+
+msgctxt "printfo,sourcefont,frame.caption"
+msgid "So&urce font"
+msgstr ""
+
+msgctxt "printfo,colorset,frame.caption"
+msgid "&Color"
+msgstr ""
+
+msgctxt "printfo,tpagesizeselector1,frame.caption"
+msgid "Paper size"
+msgstr ""
+
+msgctxt "printfo,tpageorientationselector1,frame.caption"
+msgid "Paper orientation"
+msgstr ""
+
+msgctxt "printfo,rotate,frame.caption"
+msgid "Rotate CCW"
+msgstr ""
+
+msgctxt "printfo,pages,frame.caption"
+msgid "Pages"
+msgstr ""
+
+msgctxt "printfo,c,strings.data,0:"
+msgid "Page"
+msgstr ""
+
+msgctxt "printfo,c,strings.data,1:"
+msgid "Do you wish to cancel printing?"
+msgstr ""
+
+msgctxt "panelfo,dragdock.caption"
+msgid "Mainwindow"
+msgstr ""
+
+msgctxt "objectinspectorfo,dragdock.caption"
+msgid "Objectinspector"
+msgstr ""
+
+msgctxt "objectinspectorfo,caption"
+msgid "Object Inspector"
+msgstr ""
+
+msgctxt "objectinspectorfo,compedit,hint"
+msgid "Show component editor."
+msgstr ""
+
+msgctxt "objectinspectorfo,gridpopup,menu.submenu.items,0:,caption"
+msgid "Collapse tree"
+msgstr ""
+
+msgctxt "objectinspectorfo,gridpopup,menu.submenu.items,1:,caption"
+msgid "Revert to inherited"
+msgstr ""
+
+msgctxt "objectinspectorfo,gridpopup,menu.submenu.items,2:,caption"
+msgid "Clear Selection"
+msgstr ""
+
+msgctxt "msetemplateselectfo,caption"
+msgid "Select Code Template"
+msgstr ""
+
+msgctxt "msetemplateselectfo,tbutton1,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "msetemplateselectfo,tbutton2,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "msetemplateselectfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "msetemplateselectfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Comment"
+msgstr "Evezhiadenn"
+
+msgctxt "msetemplateselectfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Par1"
+msgstr ""
+
+msgctxt "msetemplateselectfo,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Par2"
+msgstr ""
+
+msgctxt "msetemplateselectfo,grid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Par3"
+msgstr ""
+
+msgctxt "msetemplateselectfo,grid,fixrows.items,0:,captions.items,5:,caption"
+msgid "Par4"
+msgstr ""
+
+msgctxt "mseparamentryfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Macro"
+msgstr ""
+
+msgctxt "mseparamentryfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Value"
+msgstr "Gwerzh"
+
+msgctxt "mseparamentryfo,tsplitter1,tbutton2,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "mseparamentryfo,tsplitter1,tbutton1,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "mseparamentryfo,tsplitter1,comment,caption"
+msgid "comment"
+msgstr ""
+
+msgctxt "mseparamentryfo,c,strings.data,0:"
+msgid "Code Template \""
+msgstr ""
+
+msgctxt "compnametreefo,caption"
+msgid "Select Component"
+msgstr ""
+
+msgctxt "messagefo,dragdock.caption"
+msgid "Messages"
+msgstr ""
+
+msgctxt "messagefo,tpopupmenu1,menu.submenu.items,0:,caption"
+msgid "Copy to clipboard"
+msgstr ""
+
+msgctxt "memoryfo,caption"
+msgid "Memory"
+msgstr ""
+
+msgctxt "memoryfo,tlayouter1,add,frame.caption"
+msgid "Add"
+msgstr ""
+
+msgctxt "memoryfo,tlayouter1,memon,frame.caption"
+msgid "Memory &on"
+msgstr ""
+
+msgctxt "memoryfo,tlayouter1,bitwidth,frame.caption"
+msgid "Width"
+msgstr "Ledander"
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,0:,caption"
+msgid "&Mainform"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,1:,caption"
+msgid "&Simple Form"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,2:,caption"
+msgid "&Docking Form"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,3:,caption"
+msgid "D&atamodule"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,4:,caption"
+msgid "S&ubform"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,5:,caption"
+msgid "&Report"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,6:,caption"
+msgid "S&criptform"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,submenu.items,8:,caption"
+msgid "&Inherited"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,submenu.items,0:,caption"
+msgid "&Form"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,0:,caption"
+msgid "&New"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,submenu.items,9:,caption"
+msgid "E&xit"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,caption"
+msgid "&File"
+msgstr "&Restr"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,submenu.items,6:,caption"
+msgid "Find &Component"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,caption"
+msgid "&Search"
+msgstr "&Klask"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,caption"
+msgid "&Edit"
+msgstr "&Embann"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,submenu.items,0:,caption"
+msgid "En&vironment"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,submenu.items,1:,caption"
+msgid "Restart Debugger"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,caption"
+msgid "&Target"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,0:,submenu.items,1:,caption"
+msgid "&New Panel"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,0:,caption"
+msgid "Pan&els"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,2:,caption"
+msgid "Load Wi&ndow Layout"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,4:,caption"
+msgid "Component &Palette"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,5:,caption"
+msgid "Component Sto&re"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,6:,caption"
+msgid "Object &Inspector"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,8:,caption"
+msgid "So&urce"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,9:,caption"
+msgid "&Messages"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,10:,caption"
+msgid "&Find Results"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,12:,caption"
+msgid "&Debugger"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,13:,caption"
+msgid "Symbo&ls"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,14:,caption"
+msgid "&Watches"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,15:,caption"
+msgid "&Stack"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,16:,caption"
+msgid "T&hreads"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,17:,caption"
+msgid "&CPU"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,18:,caption"
+msgid "&Assembler"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,19:,caption"
+msgid "Memor&y"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,20:,caption"
+msgid "&Target Console"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,22:,caption"
+msgid "&Breakpoints"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,23:,caption"
+msgid "Watchp&oints"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,submenu.items,26:,caption"
+msgid "Toggle Form/Unit"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
+msgid "&View"
+msgstr "G&welout"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,0:,caption"
+msgid "&Make"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,1:,caption"
+msgid "&Build"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,2:,caption"
+msgid "Make &1"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,3:,caption"
+msgid "Make &2"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,4:,caption"
+msgid "Make &3"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,5:,caption"
+msgid "Make &4"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,6:,caption"
+msgid "&Abort Make"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,submenu.items,0:,caption"
+msgid "From &Template"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,submenu.items,1:,caption"
+msgid "From &Program"
+msgstr ""
+
+msgctxt ""
+"mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,submenu.items,2:,caption"
+msgid "&Empty"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,12:,caption"
+msgid "&New"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,14:,caption"
+msgid "Open copy"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,16:,caption"
+msgid "Save &as"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,17:,caption"
+msgid "Save as copy"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,submenu.items,18:,caption"
+msgid "&Close"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
+msgid "&Project"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,submenu.items,0:,caption"
+msgid "&About"
+msgstr "&Diwar-benn"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,submenu.items,1:,caption"
+msgid "&Configure MSEide"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,caption"
+msgid "Sett&ings"
+msgstr ""
+
+msgctxt "mainfo,openfile,controller.captionopen"
+msgid "Open file"
+msgstr ""
+
+msgctxt "mainfo,openfile,controller.captionsave"
+msgid "Save file as"
+msgstr ""
+
+msgctxt "mainfo,projectfiledia,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr ""
+
+msgctxt "mainfo,projectfiledia,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "mainfo,projectfiledia,controller.captionopen"
+msgid "Open Project"
+msgstr ""
+
+msgctxt "mainfo,projectfiledia,controller.captionsave"
+msgid "Save Project"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,0:"
+msgid "Unresolved references in"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,1:"
+msgid "to"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,2:"
+msgid "Do you wish to search the formfile?"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,3:"
+msgid "WARNING"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,4:"
+msgid "Formfile for"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,5:"
+msgid "Formfiles"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,6:"
+msgid "Recursive form hierarchy for \""
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,7:"
+msgid "ERROR"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,8:"
+msgid "Classtype"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,9:"
+msgid "not found."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,10:"
+msgid "Project"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,11:"
+msgid "is modified. Save?"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,12:"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,13:"
+msgid "Unable to open file \""
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,14:"
+msgid "*** Running ***"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,15:"
+msgid "Downloading"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,16:"
+msgid "Downloaded"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,17:"
+msgid "Start gdb server command \""
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,18:"
+msgid "\" running."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,19:"
+msgid "Start gdb Server"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,20:"
+msgid "gdb server start error"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,21:"
+msgid "gdb server start canceled."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,22:"
+msgid "Can not run start gdb command."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,23:"
+msgid "Uploadcommand \""
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,24:"
+msgid "Download ***ERROR***"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,25:"
+msgid "Download finished."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,26:"
+msgid "Download canceled."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,27:"
+msgid "File \""
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,28:"
+msgid "\" not found."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,29:"
+msgid "\" exists."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,30:"
+msgid "New"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,31:"
+msgid "Select ancestor"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,32:"
+msgid "New form"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,33:"
+msgid "Pascal Files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,34:"
+msgid "new"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,35:"
+msgid "Can not load Project \""
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,36:"
+msgid "Select project template"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,37:"
+msgid "Project files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,38:"
+msgid "All files"
+msgstr "An holl restroù"
+
+msgctxt "mainfo,c,strings.data,39:"
+msgid "Select program file"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,40:"
+msgid "Pascal program files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,41:"
+msgid "C program files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,42:"
+msgid "New Project"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,43:"
+msgid "Can not start process"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,44:"
+msgid "Process"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,45:"
+msgid "running"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,46:"
+msgid "Process terminated. Exitcode: "
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,47:"
+msgid "Process terminated normally."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,48:"
+msgid "Make ***ERROR***"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,49:"
+msgid "Make OK."
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,50:"
+msgid "Source has changed, do you wish to remake project?"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,51:"
+msgid "Load Window Layout"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,52:"
+msgid "Docking Area"
+msgstr ""
+
+msgctxt "mainfo,openform,controller.filterlist.data,0:,0:"
+msgid "Form Files"
+msgstr ""
+
+msgctxt "mainfo,openform,controller.captionopen"
+msgid "Open Form File"
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,helpheader"
+msgid ""
+"MSEide Copyright 1999-2015 by Martin Schreiber\n"
+"Usage: mseide [OPTION]... [PROJECTFILE]\n"
+"\n"
+"Options:"
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,helpfooter"
+msgid ""
+"\n"
+"Environment variables\n"
+"FPCDIR, FPCLIBDIR, MSEDIR, MSELIBDIR\n"
+"SYNTAXDEFDIR, TEMPLATEDIR, COMPSTOREDIR\n"
+"COMPILER, DEBUGGER, EXEEXT,TARGET,TARGETOSDIR\n"
+"can be used to override the settings macros.\n"
+"\n"
+"Have a lot of fun!\n"
+"\n"
+"Martin"
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,0:,5:"
+msgid "[filepath]"
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,0:,6:"
+msgid "Set path to global status file."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,1:,5:"
+msgid "[name],[value]{,[name],[value]}"
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,1:,6:"
+msgid ""
+"Macro definition, will be overridden by 'Project'-'Options'-'Macros'.\n"
+" Example:\n"
+" --macrodef=MAC1,abc,MAC2,def"
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,2:,6:"
+msgid "Store --macrodef values as global macros and terminate MSEide. "
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,3:,6:"
+msgid ""
+"Use 'Project'-'Options'-'Macros'-'Active group' number <n>,\n"
+"<n> = 1..6."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,4:,6:"
+msgid "Do not load a project."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,5:,6:"
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,6:,6:"
+msgid "Display this help and exit."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,20:,6:"
+msgid "Do not touch Z-order of the windows."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,21:,6:"
+msgid "Do not use the NET_RESTACK_WINDOW protocol."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,22:,6:"
+msgid "Use the NET_RESTACK_WINDOW protocol."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,23:,6:"
+msgid "Do not use xreconfigurewmwindow() for window stacking operation."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,24:,6:"
+msgid "Use xreconfigurewmwindow() for window stacking operation."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,25:,6:"
+msgid ""
+"Necessarry for windowmanagers with buggy xreconfigurewmwindow() handling."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,26:,6:"
+msgid "No workaround."
+msgstr ""
+
+msgctxt "guitemplatesmo,sysenv,defs,27:,6:"
+msgid ""
+"Use the top level frame window id instead of the application client window id\n"
+"for window raise operation. Implies --NORESTACKWINDOW and\n"
+" --NORECONFIGUREWMWINDOW."
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,0:,caption"
+msgid "Show objectinspector"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,1:,caption"
+msgid "Show componentpalette"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,2:,caption"
+msgid "Show as Text"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,9:,caption"
+msgid "Copy Component(s)"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,10:,caption"
+msgid "Cut Component(s)"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,11:,caption"
+msgid "Paste Component(s)"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,12:,caption"
+msgid "Delete Component(s)"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,13:,caption"
+msgid "Undelete Component(s)"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,15:,caption"
+msgid "Find Component"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,16:,caption"
+msgid "Select Childwidget"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,17:,caption"
+msgid "&Iconify"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,18:,caption"
+msgid "&Deiconify"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,20:,caption"
+msgid "&Edit Component"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,21:,caption"
+msgid "Sync. to Font Height"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,22:,caption"
+msgid "Bring to Front"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,23:,caption"
+msgid "Send to Back"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,24:,caption"
+msgid "Set Widget Order"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,25:,caption"
+msgid "Set Tab Order"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,26:,caption"
+msgid "Set Creation Order"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,27:,caption"
+msgid "Revert to inherited"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,29:,caption"
+msgid "Touch Form"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,30:,caption"
+msgid "Touch all Forms"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,31:,caption"
+msgid "Insert Submodule"
+msgstr ""
+
+msgctxt "formdesignerfo,popupme,menu.submenu.items,32:,caption"
+msgid "Insert Component"
+msgstr ""
+
+msgctxt "formdesignerfo,hidecompact,caption"
+msgid "Hide &Components"
+msgstr ""
+
+msgctxt "formdesignerfo,hidewidgetact,caption"
+msgid "Hide &Widgets"
+msgstr ""
+
+msgctxt "formdesignerfo,togglehideact,caption"
+msgid "&Hide Widgets/Components"
+msgstr ""
+
+msgctxt "formdesignerfo,showallact,caption"
+msgid "&Show all"
+msgstr ""
+
+msgctxt "formdesignerfo,c,strings.data,0:"
+msgid "Do you wish to revert to inherited"
+msgstr ""
+
+msgctxt "formdesignerfo,c,strings.data,1:"
+msgid "the selected component?"
+msgstr ""
+
+msgctxt "formdesignerfo,c,strings.data,2:"
+msgid "Do you want to touch all loaded forms?"
+msgstr ""
+
+msgctxt "findinfilepagefo,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "findinfilepagefo,again,caption"
+msgid "&again"
+msgstr ""
+
+msgctxt "findinfilepagefo,c,strings.data,0:"
+msgid "*** CANCELED ***"
+msgstr ""
+
+msgctxt "findinfilepagefo,c,strings.data,1:"
+msgid "FINISHED"
+msgstr ""
+
+msgctxt "findinfilefo,dragdock.caption"
+msgid "Findresults"
+msgstr ""
+
+msgctxt "findinfilefo,caption"
+msgid "Find in file results"
+msgstr ""
+
+msgctxt "findinfileadialogfo,caption"
+msgid "Find Text in Files"
+msgstr ""
+
+msgctxt "findinfileadialogfo,findtext,frame.caption"
+msgid "&Text to find"
+msgstr ""
+
+msgctxt "findinfileadialogfo,dir,frame.caption"
+msgid "&Directory"
+msgstr ""
+
+msgctxt "findinfileadialogfo,mask,frame.caption"
+msgid "&File Mask"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter1,indirectories,frame.caption"
+msgid "Search in &directories"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter1,casesensitive,frame.caption"
+msgid "C&asesensitive"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter1,inprojectdir,frame.caption"
+msgid "Search in &project dir"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter2,wholeword,frame.caption"
+msgid "&Whole word"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter2,inopenfiles,frame.caption"
+msgid "Search in &open files"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter2,incurrentfile,frame.caption"
+msgid "Search in &current file"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter4,tlayouter3,ok,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter4,tlayouter3,cancel,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "findinfileadialogfo,tlayouter4,subdirs,frame.caption"
+msgid "&Include subdirectories"
+msgstr ""
+
+msgctxt "finddialogfo,caption"
+msgid "Find Text"
+msgstr ""
+
+msgctxt "finddialogfo,findtext,frame.caption"
+msgid "&Text to find"
+msgstr ""
+
+msgctxt "finddialogfo,tlayouter4,tlayouter3,wholeword,frame.caption"
+msgid "&whole word"
+msgstr ""
+
+msgctxt "finddialogfo,tlayouter4,tlayouter3,backward,frame.caption"
+msgid "&backward"
+msgstr ""
+
+msgctxt "finddialogfo,tlayouter4,tlayouter2,casesensitive,frame.caption"
+msgid "c&asesensitive"
+msgstr ""
+
+msgctxt "finddialogfo,tlayouter4,tlayouter2,selectedonly,frame.caption"
+msgid "&selected only"
+msgstr ""
+
+msgctxt "finddialogfo,tlayouter4,tlayouter1,tlayouter5,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "finddialogfo,tlayouter4,tlayouter1,tlayouter5,tbutton2,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "disassfo,dragdock.caption"
+msgid "Assembler"
+msgstr ""
+
+msgctxt "disassfo,caption"
+msgid "Assembler"
+msgstr ""
+
+msgctxt "disassfo,popupmen,menu.submenu.items,0:,caption"
+msgid "Show &Breakpoint"
+msgstr ""
+
+msgctxt "debuggerfo,dragdock.caption"
+msgid "Debugger"
+msgstr ""
+
+msgctxt "debuggerfo,gdbtoolbar,buttons.items,7:,hint"
+msgid "Next instruction"
+msgstr ""
+
+msgctxt "debuggerfo,gdbtoolbar,buttons.items,8:,hint"
+msgid "Step instruction"
+msgstr ""
+
+msgctxt "cpurl78fo,mem,frame.caption"
+msgid "MEM"
+msgstr ""
+
+msgctxt "cpufo,on,frame.caption"
+msgid "CPU &on"
+msgstr ""
+
+msgctxt "cpufo,stoptime,format"
+msgid "yy-mm-dd hh:mm:ss"
+msgstr ""
+
+msgctxt "cpuavr32fo,tspacer1,irqoff,hint"
+msgid "Set global interrupt mask while stepping"
+msgstr ""
+
+msgctxt "cpuavr32fo,tspacer1,exceptstack,caption"
+msgid "Check Exceptstack"
+msgstr ""
+
+msgctxt "cpuavr32fo,cs,strings.data,0:"
+msgid "Return address:"
+msgstr ""
+
+msgctxt "cpuavr32fo,cs,strings.data,1:"
+msgid "Exception return"
+msgstr ""
+
+msgctxt "componentstorefo,dragdock.caption"
+msgid "Component Store"
+msgstr ""
+
+msgctxt "componentstorefo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "componentstorefo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Sel"
+msgstr ""
+
+msgctxt "componentstorefo,grid,fixrows.items,0:,captions.items,1:,hint"
+msgid "Select item for inserting"
+msgstr ""
+
+msgctxt "componentstorefo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Description"
+msgstr ""
+
+msgctxt "componentstorefo,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "File"
+msgstr ""
+
+msgctxt "componentstorefo,grid,filepath,controller.filterlist.data,0:,0:"
+msgid "Component File"
+msgstr ""
+
+msgctxt "componentstorefo,grid,filepath,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "componentstorefo,copycompact,caption"
+msgid "&Copy Component"
+msgstr ""
+
+msgctxt "componentstorefo,pastecompact,caption"
+msgid "&Paste Component(s)"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,0:,caption"
+msgid "&Copy Component(s)"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,3:,caption"
+msgid "Update Component(s)"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,4:,caption"
+msgid "Remove Component(s)"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,6:,caption"
+msgid "New  Node"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,7:,caption"
+msgid "Remove Node"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,8:,caption"
+msgid "Copy Node"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,9:,caption"
+msgid "Paste Node"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,11:,caption"
+msgid "New Store"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,12:,caption"
+msgid "Add Store"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,13:,caption"
+msgid "Remove Store"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,15:,caption"
+msgid "Open Store Group"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,16:,caption"
+msgid "Save Store Group"
+msgstr ""
+
+msgctxt "componentstorefo,tpopupmenu1,menu.submenu.items,17:,caption"
+msgid "Save Store Group as"
+msgstr ""
+
+msgctxt "componentstorefo,storefiledialog,controller.filterlist.data,0:,0:"
+msgid "Component Stores"
+msgstr ""
+
+msgctxt "componentstorefo,storefiledialog,controller.captionopen"
+msgid "Load Component Store"
+msgstr ""
+
+msgctxt "componentstorefo,storefiledialog,controller.captionsave"
+msgid "New Component Store"
+msgstr ""
+
+msgctxt "componentstorefo,groupfiledialog,controller.filterlist.data,0:,0:"
+msgid "Store Groups"
+msgstr ""
+
+msgctxt "componentstorefo,groupfiledialog,controller.captionopen"
+msgid "Open Store Group"
+msgstr ""
+
+msgctxt "componentstorefo,groupfiledialog,controller.captionsave"
+msgid "Save Store Group"
+msgstr ""
+
+msgctxt "componentstorefo,addfileact,caption"
+msgid "Add Componentfile"
+msgstr ""
+
+msgctxt "componentstorefo,compfiledialog,controller.filterlist.data,0:,0:"
+msgid "Component File"
+msgstr ""
+
+msgctxt "componentstorefo,compfiledialog,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "componentstorefo,compfiledialog,controller.captionopen"
+msgid "Select Component File"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,0:"
+msgid "Component Store"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,1:"
+msgid "Component read error."
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,2:"
+msgid "Do you want to overwrite \""
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,3:"
+msgid "\" with current clipboard content?"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,4:"
+msgid "WARNING"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,5:"
+msgid "No component(s) in clipboard."
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,6:"
+msgid "Error while writing the storegroup."
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,7:"
+msgid "ERROR"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,8:"
+msgid "Do you want to remove \""
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,10:"
+msgid "\" branch?"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,11:"
+msgid "File \""
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,12:"
+msgid "\" does not exist, do you want to create it?"
+msgstr ""
+
+msgctxt "componentstorefo,c,strings.data,13:"
+msgid "Save Component Store Group"
+msgstr ""
+
+msgctxt "componentpalettefo,dragdock.caption"
+msgid "Component Palette"
+msgstr ""
+
+msgctxt "commandlinefo,caption"
+msgid "Command Line"
+msgstr ""
+
+msgctxt "commandlinefo,c,strings.data,0:"
+msgid "Make disabled by Default make col!"
+msgstr ""
+
+msgctxt "breakpointsfo,caption"
+msgid "Breakpoints"
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "on"
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "File"
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Line Nr."
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Address"
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,7:,caption"
+msgid "Count"
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,8:,caption"
+msgid "Ignore"
+msgstr ""
+
+msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,10:,caption"
+msgid "Condition"
+msgstr ""
+
+msgctxt "breakpointsfo,bkptson,frame.caption"
+msgid "Breakpoints &on"
+msgstr ""
+
+msgctxt "breakpointsfo,gripopup,menu.submenu.items,0:,caption"
+msgid "Delete all"
+msgstr ""
+
+msgctxt "breakpointsfo,c,strings.data,0:"
+msgid "Breakpoint error."
+msgstr ""
+
+msgctxt "breakpointsfo,c,strings.data,1:"
+msgid "BREAKPOINT ERROR"
+msgstr ""
+
+msgctxt "breakpointsfo,c,strings.data,2:"
+msgid "Do you wish to delete all breakpoints?"
+msgstr ""
+
+msgctxt "breakpointsfo,c,strings.data,3:"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "actionsmo,makeact,caption"
+msgid "&Make"
+msgstr ""
+
+msgctxt "actionsmo,run,caption"
+msgid "&Run"
+msgstr ""
+
+msgctxt "actionsmo,run,hint"
+msgid "Run"
+msgstr ""
+
+msgctxt "actionsmo,step,caption"
+msgid "&Step"
+msgstr ""
+
+msgctxt "actionsmo,step,hint"
+msgid "Step"
+msgstr ""
+
+msgctxt "actionsmo,next,caption"
+msgid "&Next"
+msgstr ""
+
+msgctxt "actionsmo,next,hint"
+msgid "Next"
+msgstr ""
+
+msgctxt "actionsmo,continue,caption"
+msgid "&Continue"
+msgstr ""
+
+msgctxt "actionsmo,continue,hint"
+msgid "Continue"
+msgstr ""
+
+msgctxt "actionsmo,interrupt,caption"
+msgid "&Interrupt"
+msgstr ""
+
+msgctxt "actionsmo,interrupt,hint"
+msgid "Interrupt"
+msgstr ""
+
+msgctxt "actionsmo,reset,caption"
+msgid "&Reset"
+msgstr ""
+
+msgctxt "actionsmo,reset,hint"
+msgid "Reset"
+msgstr ""
+
+msgctxt "actionsmo,opensource,caption"
+msgid "&Open"
+msgstr ""
+
+msgctxt "actionsmo,finish,caption"
+msgid "&Finish"
+msgstr ""
+
+msgctxt "actionsmo,finish,hint"
+msgid "Finish"
+msgstr ""
+
+msgctxt "actionsmo,save,caption"
+msgid "&Save"
+msgstr ""
+
+msgctxt "actionsmo,close,caption"
+msgid "&Close"
+msgstr ""
+
+msgctxt "actionsmo,abortmakeact,caption"
+msgid "&Abort Make"
+msgstr ""
+
+msgctxt "actionsmo,undo,caption"
+msgid "&Undo"
+msgstr ""
+
+msgctxt "actionsmo,redo,caption"
+msgid "&Redo"
+msgstr ""
+
+msgctxt "actionsmo,cut,caption"
+msgid "Cu&t"
+msgstr ""
+
+msgctxt "actionsmo,copy,caption"
+msgid "&Copy"
+msgstr ""
+
+msgctxt "actionsmo,paste,caption"
+msgid "&Paste"
+msgstr ""
+
+msgctxt "actionsmo,delete,caption"
+msgid "&Delete"
+msgstr "&Dilemel"
+
+msgctxt "actionsmo,saveall,caption"
+msgid "Sa&ve all"
+msgstr ""
+
+msgctxt "actionsmo,find,caption"
+msgid "&Find"
+msgstr ""
+
+msgctxt "actionsmo,repeatfind,caption"
+msgid "&Search again"
+msgstr ""
+
+msgctxt "actionsmo,findinfile,caption"
+msgid "Find in F&iles"
+msgstr ""
+
+msgctxt "actionsmo,closeall,caption"
+msgid "C&lose all"
+msgstr ""
+
+msgctxt "actionsmo,saveas,caption"
+msgid "Save &as"
+msgstr ""
+
+msgctxt "actionsmo,bkptsonact,caption"
+msgid "&Breakpoints on"
+msgstr ""
+
+msgctxt "actionsmo,bkptsonact,hint"
+msgid "Breakpoints on/off"
+msgstr ""
+
+msgctxt "actionsmo,watchesonact,caption"
+msgid "&Watches on"
+msgstr ""
+
+msgctxt "actionsmo,watchesonact,hint"
+msgid "Watches on/off"
+msgstr ""
+
+msgctxt "actionsmo,line,caption"
+msgid "&Line"
+msgstr ""
+
+msgctxt "actionsmo,togglebkpt,caption"
+msgid "&Toggle Breakpoint"
+msgstr ""
+
+msgctxt "actionsmo,togglebkptenable,caption"
+msgid "Toggle Bkpt. &enabled"
+msgstr ""
+
+msgctxt "actionsmo,selecteditpage,caption"
+msgid "Select &Edit Page"
+msgstr ""
+
+msgctxt "actionsmo,indent,caption"
+msgid "&Indent"
+msgstr "&Kefoskañ"
+
+msgctxt "actionsmo,unindent,caption"
+msgid "U&nindent"
+msgstr "Di&gefoskañ"
+
+msgctxt "actionsmo,toggleformunit,caption"
+msgid "Toggle Form/&Unit"
+msgstr ""
+
+msgctxt "actionsmo,nexti,caption"
+msgid "Next Instruction"
+msgstr ""
+
+msgctxt "actionsmo,stepi,caption"
+msgid "Step Instruction"
+msgstr ""
+
+msgctxt "actionsmo,bluedotsonact,caption"
+msgid "Exec Line Hint on"
+msgstr ""
+
+msgctxt "actionsmo,bluedotsonact,hint"
+msgid "Executable lines hint on/off"
+msgstr ""
+
+msgctxt "actionsmo,replace,caption"
+msgid "Find && &Replace"
+msgstr ""
+
+msgctxt "actionsmo,print,caption"
+msgid "&Print"
+msgstr ""
+
+msgctxt "actionsmo,detachtarget,caption"
+msgid "Detach"
+msgstr ""
+
+msgctxt "actionsmo,attachprocess,caption"
+msgid "Attach Process"
+msgstr ""
+
+msgctxt "actionsmo,lowercase,caption"
+msgid "&Lowercase"
+msgstr ""
+
+msgctxt "actionsmo,uppercase,caption"
+msgid "&Uppercase"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,0:,dispname"
+msgid "File"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,1:,dispname"
+msgid "Open"
+msgstr "Digeriñ"
+
+msgctxt "actionsmo,shortcuts,actions.items,2:,dispname"
+msgid "Save"
+msgstr "Enrollañ"
+
+msgctxt "actionsmo,shortcuts,actions.items,3:,dispname"
+msgid "Save all"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,4:,dispname"
+msgid "Save as"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,5:,dispname"
+msgid "Close"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,6:,dispname"
+msgid "Close all"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,7:,dispname"
+msgid "Print"
+msgstr "Moullañ"
+
+msgctxt "actionsmo,shortcuts,actions.items,8:,dispname"
+msgid "Search"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,9:,dispname"
+msgid "Line"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,10:,dispname"
+msgid "Find"
+msgstr "Klask"
+
+msgctxt "actionsmo,shortcuts,actions.items,11:,dispname"
+msgid "Search again"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,12:,dispname"
+msgid "Search back"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,13:,dispname"
+msgid "Find and replace"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,14:,dispname"
+msgid "Find in File"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,15:,dispname"
+msgid "Edit"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,16:,dispname"
+msgid "Select Editpage"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,17:,dispname"
+msgid "Copy Word at Cursor"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,18:,dispname"
+msgid "Indent"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,19:,dispname"
+msgid "Unindent"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,20:,dispname"
+msgid "Comment Selection"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,21:,dispname"
+msgid "Uncomment Selection"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,22:,dispname"
+msgid "Lowercase"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,23:,dispname"
+msgid "Uppercase"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,24:,dispname"
+msgid "Copy LaTeX"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,25:,dispname"
+msgid "Complete Class"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,26:,dispname"
+msgid "Insert Template"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,27:,dispname"
+msgid "Navigate Back"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,28:,dispname"
+msgid "Navigate Forward"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,29:,dispname"
+msgid "Set Bookmark"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,30:,dispname"
+msgid "Set Bookmark 0"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,31:,dispname"
+msgid "Set Bookmark 1"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,32:,dispname"
+msgid "Set Bookmark 2"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,33:,dispname"
+msgid "Set Bookmark 3"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,34:,dispname"
+msgid "Set Bookmark 4"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,35:,dispname"
+msgid "Set Bookmark 5"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,36:,dispname"
+msgid "Set Bookmark 6"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,37:,dispname"
+msgid "Set Bookmark 7"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,38:,dispname"
+msgid "Set Bookmark 8"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,39:,dispname"
+msgid "Set Bookmark 9"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,40:,dispname"
+msgid "Clear Bookmark"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,41:,dispname"
+msgid "Find Bookmark"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,42:,dispname"
+msgid "Find Bookmark 0"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,43:,dispname"
+msgid "Find Bookmark 1"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,44:,dispname"
+msgid "Find Bookmark 2"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,45:,dispname"
+msgid "Find Bookmark 3"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,46:,dispname"
+msgid "Find Bookmark 4"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,47:,dispname"
+msgid "Find Bookmark 5"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,48:,dispname"
+msgid "Find Bookmark 6"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,49:,dispname"
+msgid "Find Bookmark 7"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,50:,dispname"
+msgid "Find Bookmark 8"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,51:,dispname"
+msgid "Find Bookmark 9"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,52:,dispname"
+msgid "Target"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,53:,dispname"
+msgid "Attach Process"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,54:,dispname"
+msgid "Detach Target"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,55:,dispname"
+msgid "Continue"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,56:,dispname"
+msgid "Reset"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,57:,dispname"
+msgid "Interrupt"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,58:,dispname"
+msgid "Next"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,59:,dispname"
+msgid "Next Instruction"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,60:,dispname"
+msgid "Step"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,61:,dispname"
+msgid "Step Instruction"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,62:,dispname"
+msgid "Finish"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,63:,dispname"
+msgid "Breakpoints on/off"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,64:,dispname"
+msgid "Toggle Breakpoint"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,65:,dispname"
+msgid "Toggle Breakpoint enabled"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,66:,dispname"
+msgid "Watches on/off"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,67:,dispname"
+msgid "Exec Line Hints on/off"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,68:,dispname"
+msgid "View"
+msgstr "Gwelout"
+
+msgctxt "actionsmo,shortcuts,actions.items,69:,dispname"
+msgid "Toggle Form/Object Inspector"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,70:,dispname"
+msgid "Toggle Form/Unit"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,71:,dispname"
+msgid "Project"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,72:,dispname"
+msgid "Make"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,73:,dispname"
+msgid "Build"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,74:,dispname"
+msgid "Make 1"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,75:,dispname"
+msgid "Make 2"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,76:,dispname"
+msgid "Make 3"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,77:,dispname"
+msgid "Make 4"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,78:,dispname"
+msgid "Abort Make"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,79:,dispname"
+msgid "Options"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,80:,dispname"
+msgid "Open"
+msgstr "Digeriñ"
+
+msgctxt "actionsmo,shortcuts,actions.items,81:,dispname"
+msgid "Save"
+msgstr "Enrollañ"
+
+msgctxt "actionsmo,shortcuts,actions.items,82:,dispname"
+msgid "Tree"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,83:,dispname"
+msgid "Source"
+msgstr "Tarzh"
+
+msgctxt "actionsmo,shortcuts,actions.items,84:,dispname"
+msgid "Close"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,85:,dispname"
+msgid "Help"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,86:,dispname"
+msgid "Help"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,87:,dispname"
+msgid "Tools"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,88:,dispname"
+msgid "Tool 1"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,89:,dispname"
+msgid "Tool 2"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,90:,dispname"
+msgid "Tool 3"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,91:,dispname"
+msgid "Tool 4"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,92:,dispname"
+msgid "Tool 5"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,93:,dispname"
+msgid "Tool 6"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,94:,dispname"
+msgid "Tool 7"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,95:,dispname"
+msgid "Tool 8"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,96:,dispname"
+msgid "Tool 9"
+msgstr ""
+
+msgctxt "actionsmo,shortcuts,actions.items,97:,dispname"
+msgid "Tool 10"
+msgstr ""
+
+msgctxt "actionsmo,toggleinspector,caption"
+msgid "Toggle Form/Inspector"
+msgstr ""
+
+msgctxt "actionsmo,download,caption"
+msgid "Download"
+msgstr ""
+
+msgctxt "actionsmo,attachtarget,caption"
+msgid "Attach Target"
+msgstr ""
+
+msgctxt "actionsmo,setbm0,caption"
+msgid "Bookmark &0"
+msgstr ""
+
+msgctxt "actionsmo,findbm0,caption"
+msgid "Bookmark &0"
+msgstr ""
+
+msgctxt "actionsmo,findbm1,caption"
+msgid "Bookmark &1"
+msgstr ""
+
+msgctxt "actionsmo,setbm1,caption"
+msgid "Bookmark &1"
+msgstr ""
+
+msgctxt "actionsmo,findbm2,caption"
+msgid "Bookmark &2"
+msgstr ""
+
+msgctxt "actionsmo,setbm2,caption"
+msgid "Bookmark &2"
+msgstr ""
+
+msgctxt "actionsmo,findbm3,caption"
+msgid "Bookmark &3"
+msgstr ""
+
+msgctxt "actionsmo,setbm3,caption"
+msgid "Bookmark &3"
+msgstr ""
+
+msgctxt "actionsmo,findbm4,caption"
+msgid "Bookmark &4"
+msgstr ""
+
+msgctxt "actionsmo,setbm4,caption"
+msgid "Bookmark &4"
+msgstr ""
+
+msgctxt "actionsmo,findbm5,caption"
+msgid "Bookmark &5"
+msgstr ""
+
+msgctxt "actionsmo,setbm5,caption"
+msgid "Bookmark &5"
+msgstr ""
+
+msgctxt "actionsmo,findbm6,caption"
+msgid "Bookmark &6"
+msgstr ""
+
+msgctxt "actionsmo,setbm6,caption"
+msgid "Bookmark &6"
+msgstr ""
+
+msgctxt "actionsmo,findbm7,caption"
+msgid "Bookmark &7"
+msgstr ""
+
+msgctxt "actionsmo,setbm7,caption"
+msgid "Bookmark &7"
+msgstr ""
+
+msgctxt "actionsmo,findbm8,caption"
+msgid "Bookmark &8"
+msgstr ""
+
+msgctxt "actionsmo,setbm8,caption"
+msgid "Bookmark &8"
+msgstr ""
+
+msgctxt "actionsmo,findbm9,caption"
+msgid "Bookmark &9"
+msgstr ""
+
+msgctxt "actionsmo,setbm9,caption"
+msgid "Bookmark &9"
+msgstr ""
+
+msgctxt "actionsmo,setbmnone,caption"
+msgid "none"
+msgstr ""
+
+msgctxt "actionsmo,projectopenact,caption"
+msgid "O&pen"
+msgstr ""
+
+msgctxt "actionsmo,projectoptionsact,caption"
+msgid "&Options"
+msgstr ""
+
+msgctxt "actionsmo,projecttreeact,caption"
+msgid "&Tree"
+msgstr ""
+
+msgctxt "actionsmo,projectsourceact,caption"
+msgid "So&urce"
+msgstr ""
+
+msgctxt "actionsmo,projectsaveact,caption"
+msgid "&Save"
+msgstr ""
+
+msgctxt "actionsmo,projectcloseact,caption"
+msgid "&Close"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,0:"
+msgid "Configure MSEide"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,1:"
+msgid "Process ID"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,2:"
+msgid "Attach to process"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,3:"
+msgid "Unknown moduleclass for \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,4:"
+msgid "Inherited component \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,5:"
+msgid "\" can not be deleted."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,6:"
+msgid "ERROR"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,7:"
+msgid "Make aborted."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,8:"
+msgid "Download aborted."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,9:"
+msgid "Runerror with \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,10:"
+msgid "Error: Timeout."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,11:"
+msgid "Making."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,12:"
+msgid "Make not running."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,13:"
+msgid "Downloading."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,14:"
+msgid "Download not running."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,15:"
+msgid "\" running."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,16:"
+msgid "Script"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,17:"
+msgid "Recursive form inheritance of \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,18:"
+msgid "Component \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,19:"
+msgid "\" exists."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,20:"
+msgid "Ancestor for \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,21:"
+msgid "\" not found."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,22:"
+msgid "Module \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,23:"
+msgid "Invalid name \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,24:"
+msgid "Invalid methodname"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,25:"
+msgid "Module not found"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,26:"
+msgid "Method not found"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,27:"
+msgid "Published (managed) method"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,28:"
+msgid "does not exist."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,29:"
+msgid "Do you wish to delete the event?"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,30:"
+msgid "WARNING"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,31:"
+msgid "Method"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,32:"
+msgid "has different parameters."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,33:"
+msgid "A module \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,34:"
+msgid "\" is already open."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,35:"
+msgid "Unresolved reference(s) to"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,36:"
+msgid "Module(s):"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,37:"
+msgid "Can not read formfile \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,38:"
+msgid "Invalid component name."
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,39:"
+msgid "Invalid exception"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,40:"
+msgid "T&ools"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,41:"
+msgid "Forms"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,42:"
+msgid "Source"
+msgstr "Tarzh"
+
+msgctxt "actionsmo,c,strings.data,43:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "actionsmo,c,strings.data,44:"
+msgid "Program"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,45:"
+msgid "Unit"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,46:"
+msgid "Textfile"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,47:"
+msgid "Mainform"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,48:"
+msgid "Simple Form"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,49:"
+msgid "Docking Form"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,50:"
+msgid "Datamodule"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,51:"
+msgid "Subform"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,52:"
+msgid "Scrollboxform"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,53:"
+msgid "Tabform"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,54:"
+msgid "Dockpanel"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,55:"
+msgid "Report"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,56:"
+msgid "Scriptform"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,57:"
+msgid "Inherited Form"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,58:"
+msgid "Do you want to replace the settings by"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,59:"
+msgid "File \""
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,60:"
+msgid "Do you want to overwrite?"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,61:"
+msgid "Unknown"
+msgstr "Dianav"
+
+msgctxt "actionsmo,c,strings.data,62:"
+msgid "Error"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,63:"
+msgid "Startup"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,64:"
+msgid "Exception"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,65:"
+msgid "GDB died"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,66:"
+msgid "Breakpoint hit"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,67:"
+msgid "Watchpoint triggered"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,68:"
+msgid "Read Watchpoint triggered"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,69:"
+msgid "Access Watchpoint triggered"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,70:"
+msgid "End stepping range"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,71:"
+msgid "Function finished"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,72:"
+msgid "Exited normally"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,73:"
+msgid "Exited"
+msgstr "Kuitaet"
+
+msgctxt "actionsmo,c,strings.data,74:"
+msgid "Detached"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,75:"
+msgid "Signal received"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,76:"
+msgid "Stop error"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,77:"
+msgid "Can not read project"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,78:"
+msgid "About"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,79:"
+msgid "Object Inspector"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,80:"
+msgid "Store Component"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,81:"
+msgid "Attaching Process"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,82:"
+msgid "Loading"
+msgstr ""
+
+msgctxt "actionsmo,c,strings.data,83:"
+msgid "Sizing Form"
+msgstr ""
+
+msgctxt "actionsmo,copylatexact,caption"
+msgid "Copy &LaTeX"
+msgstr ""
+
+msgctxt "actionsmo,findcompallact,caption"
+msgid "&Find Component"
+msgstr ""
+
+msgctxt "actionsmo,forcezorderact,caption"
+msgid "Force &Z-Order"
+msgstr ""
+
+msgctxt "actionsmo,comment,caption"
+msgid "&Comment"
+msgstr ""
+
+msgctxt "actionsmo,uncomment,caption"
+msgid "Unc&omment"
+msgstr ""
+
+msgctxt "actionsmo,copyword,caption"
+msgid "Copy &Word at Cursor"
+msgstr ""
+
+msgctxt "actionsmo,selectall,caption"
+msgid "Select &all"
+msgstr ""
+
+msgctxt "actionsmo,tabtospace,caption"
+msgid "&Tabs to space"
+msgstr ""
+
+msgctxt "actionsmo,findback,caption"
+msgid "Search &back"
+msgstr ""
+
+msgctxt "msetexteditorfo,caption"
+msgid "Texteditor"
+msgstr ""
+
+msgctxt "msetexteditorfo,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "msetexteditorfo,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msetexteditorfo,test,caption"
+msgid "&Test"
+msgstr ""
+
+msgctxt "msetexteditorfo,tpopupmenu1,menu.submenu.items,2:,caption"
+msgid "&Copy"
+msgstr ""
+
+msgctxt "msetexteditorfo,tpopupmenu1,menu.submenu.items,3:,caption"
+msgid "Cu&t"
+msgstr ""
+
+msgctxt "msetexteditorfo,tpopupmenu1,menu.submenu.items,4:,caption"
+msgid "&Paste"
+msgstr ""
+
+msgctxt "msetexteditorfo,tpopupmenu1,menu.submenu.items,6:,caption"
+msgid "&Load file"
+msgstr ""
+
+msgctxt "msetexteditorfo,tpopupmenu1,menu.submenu.items,7:,caption"
+msgid "&Save file"
+msgstr ""
+
+msgctxt "msetexteditorfo,filedialog,controller.captionopen"
+msgid "Load file"
+msgstr ""
+
+msgctxt "msetexteditorfo,filedialog,controller.captionsave"
+msgid "Save file"
+msgstr ""
+
+msgctxt "msetexteditorfo,undoact,caption"
+msgid "&Undo"
+msgstr ""
+
+msgctxt "msetexteditorfo,redoact,caption"
+msgid "&Redo"
+msgstr ""
+
+msgctxt "msetexteditorfo,c,strings.data,0:"
+msgid "Test OK"
+msgstr ""
+
+msgctxt "msetaborderoverrideeditorfo,caption"
+msgid "Taborder override"
+msgstr ""
+
+msgctxt "msetaborderoverrideeditorfo,tsplitter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msetaborderoverrideeditorfo,tsplitter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "msesysenvmanagereditorfo,caption"
+msgid "Edit tsysenvmanager"
+msgstr ""
+
+msgctxt "msesysenvmanagereditorfo,tlayouter2,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "msesysenvmanagereditorfo,tlayouter2,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Kind"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Alias"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,11:,caption"
+msgid "Initvalue"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,12:,caption"
+msgid "Argument"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,13:,caption"
+msgid "Help"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,14:,caption"
+msgid "Before"
+msgstr ""
+
+msgctxt ""
+"msesysenvmanagereditorfo,grid,fixrows.items,0:,captions.items,15:,caption"
+msgid "After"
+msgstr ""
+
+msgctxt "stringlisteditor,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "stringlisteditor,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "stringlisteditor,rowcount,frame.caption"
+msgid "Rowcount"
+msgstr ""
+
+msgctxt "msestringintlisteditor,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "msestringintlisteditor,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msestringintlisteditor,rowcount,frame.caption"
+msgid "Rowcount"
+msgstr ""
+
+msgctxt "settingsfo,caption"
+msgid "Configure MSE environment"
+msgstr ""
+
+msgctxt "settingsfo,tsplitter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "settingsfo,tsplitter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "settingsfo,tsplitter1,shortcutbu,caption"
+msgid "&Shortcuts"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,printcomm,frame.caption"
+msgid "Print command"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,debugger,hint"
+msgid "Path to debugger (gdb)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,debugger,controller.captionopen"
+msgid "Debugger path"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compiler,hint"
+msgid "Path to compiler (ppc386)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compiler,controller.captionopen"
+msgid "Compiler path"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compstoredir,hint"
+msgid "Directory for component store files."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compstoredir,controller.captionopen"
+msgid "Directory for component stores"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,templatedir,hint"
+msgid "Directory for project template files."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,templatedir,controller.captionopen"
+msgid "Project template directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,hint"
+msgid "Directory for syntax definition files."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:"
+msgid "Syntax definitions"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,controller.captionopen"
+msgid "Directory for syntax definition files"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,mselibdir,hint"
+msgid "Root directory of MSEgui library."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,mselibdir,controller.captionopen"
+msgid "MSEgui library directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,msedir,hint"
+msgid "Root directory of MSEgui."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,msedir,controller.captionopen"
+msgid "MSEgui root directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpclibdir,hint"
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpclibdir,controller.captionopen"
+msgid "FPC library directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpcdir,hint"
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpcdir,controller.captionopen"
+msgid "FPC root directory"
+msgstr ""
+
+msgctxt "settingsfo,macrogrid,frame.caption"
+msgid "Global Macros"
+msgstr ""
+
+msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Value"
+msgstr "Gwerzh"
+
+msgctxt "richstringeditorfo,caption"
+msgid "Enter Memo Text"
+msgstr ""
+
+msgctxt "richstringeditorfo,tlayouter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "richstringeditorfo,tlayouter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "richstringeditorfo,formatedact,caption"
+msgid "&Font Format"
+msgstr ""
+
+msgctxt "reallisteditor,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "reallisteditor,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "reallisteditor,rowcount,frame.caption"
+msgid "Rowcount"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,0:"
+msgid "Open image file"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,1:"
+msgid "Invalid set item"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,2:"
+msgid "Unknown"
+msgstr "Dianav"
+
+msgctxt "msepropertyeditorsmo,c,strings.data,3:"
+msgid "Wrong property value"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,4:"
+msgid "Invalid method name"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,5:"
+msgid "Method name"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,6:"
+msgid "exists"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,7:"
+msgid "Do you wish to destroy"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,8:"
+msgid "Do you wish to delete items"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,9:"
+msgid "to"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,10:"
+msgid "Empty date"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,11:"
+msgid "Empty time"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,12:"
+msgid "Do you wish to clear"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,13:"
+msgid "Texteditor"
+msgstr ""
+
+msgctxt "msepropertyeditorsmo,c,strings.data,14:"
+msgid "Invalid component name"
+msgstr ""
+
+msgctxt "integerlisteditor,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "integerlisteditor,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "integerlisteditor,rowcount,frame.caption"
+msgid "Rowcount"
+msgstr ""
+
+msgctxt "mseindexlookupeditorfo,caption"
+msgid "Indexlookup Editor"
+msgstr ""
+
+msgctxt "mseindexlookupeditorfo,tsplitter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "mseindexlookupeditorfo,tsplitter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt ""
+"mseindexlookupeditorfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Index"
+msgstr ""
+
+msgctxt "imageselectorfo,caption"
+msgid "Image Selector"
+msgstr ""
+
+msgctxt "imagelisteditorfo,caption"
+msgid "Imagelist Editor"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la2,tlayouter2,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la2,tlayouter2,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la2,tlayouter2,clear,caption"
+msgid "C&lear"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la2,tlayouter2,add,caption"
+msgid "&Add"
+msgstr "&Ouzhpennañ"
+
+msgctxt "imagelisteditorfo,tlayouter1,la2,stretch,frame.caption"
+msgid "&stretch"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la1,transparentcolor,frame.caption"
+msgid ""
+"&Transp.\n"
+"color"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la1,transparentcolor,hint"
+msgid "Transparent color"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la1,masked,frame.caption"
+msgid "&masked"
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la1,versionnum,frame.caption"
+msgid ""
+"Vers.\n"
+"Nr."
+msgstr ""
+
+msgctxt "imagelisteditorfo,tlayouter1,la1,versionnum,hint"
+msgid "Current imagelist version number"
+msgstr ""
+
+msgctxt "imagelisteditorfo,popup,menu.submenu.items,0:,caption"
+msgid "Copy Items"
+msgstr ""
+
+msgctxt "imagelisteditorfo,popup,menu.submenu.items,1:,caption"
+msgid "Paste Items"
+msgstr ""
+
+msgctxt "iircoeffeditorfo,caption"
+msgid "IIR Filter Coefficients"
+msgstr ""
+
+msgctxt "iircoeffeditorfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Numerator"
+msgstr ""
+
+msgctxt "iircoeffeditorfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Denominator"
+msgstr ""
+
+msgctxt "iircoeffeditorfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Internal Num."
+msgstr ""
+
+msgctxt "iircoeffeditorfo,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Internal Den."
+msgstr ""
+
+msgctxt "iircoeffeditorfo,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "iircoeffeditorfo,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "mseififieldeditorfo,tbutton1,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "mseififieldeditorfo,tbutton2,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "mseififieldeditorfo,fielddefli,frame.caption"
+msgid "Fielddefs"
+msgstr ""
+
+msgctxt ""
+"mseififieldeditorfo,fielddefli,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"mseififieldeditorfo,fielddefli,fixrows.items,0:,captions.items,1:,caption"
+msgid "Type"
+msgstr ""
+
+msgctxt "mseififieldeditorfo,fields,frame.caption"
+msgid "Fields"
+msgstr ""
+
+msgctxt ""
+"mseififieldeditorfo,fields,fixrows.items,0:,captions.items,2:,caption"
+msgid "fieldname"
+msgstr ""
+
+msgctxt ""
+"mseififieldeditorfo,fields,fixrows.items,0:,captions.items,3:,caption"
+msgid "sourcefieldname"
+msgstr ""
+
+msgctxt ""
+"mseififieldeditorfo,fields,fixrows.items,0:,captions.items,4:,caption"
+msgid "datatype"
+msgstr ""
+
+msgctxt "mseififieldeditorfo,c,strings.data,0:"
+msgid "Connection"
+msgstr ""
+
+msgctxt "mseificlienteditorfo,caption"
+msgid "ifi Client Editor"
+msgstr ""
+
+msgctxt "mseificlienteditorfo,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "mseificlienteditorfo,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "fircoeffeditorfo,caption"
+msgid "IIR Filter Coefficients"
+msgstr ""
+
+msgctxt "fircoeffeditorfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Coefficient"
+msgstr ""
+
+msgctxt "fircoeffeditorfo,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "fircoeffeditorfo,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "fadeeditfo,caption"
+msgid "Fade Edit"
+msgstr ""
+
+msgctxt "fadeeditfo,cont2,cont1,gridlayout,opagrid,frame.caption"
+msgid "Opacity"
+msgstr ""
+
+msgctxt ""
+"fadeeditfo,cont2,cont1,gridlayout,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Pos"
+msgstr ""
+
+msgctxt ""
+"fadeeditfo,cont2,cont1,gridlayout,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Color"
+msgstr ""
+
+msgctxt ""
+"fadeeditfo,cont2,cont1,gridlayout,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Opacity"
+msgstr ""
+
+msgctxt "fadeeditfo,cont2,opaedit,frame.caption"
+msgid "Opacity"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,switchlayout,splitopa,frame.caption"
+msgid ""
+"Separate\n"
+"Opacity"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,switchlayout,reverse,frame.caption"
+msgid "&reverse"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,buttonlayout,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,buttonlayout,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,buttonlayout,tbutton3,caption"
+msgid "&Save"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,buttonlayout,tbutton4,caption"
+msgid "&Load"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,buttonlayout,clearbu,hint"
+msgid "Clear opacity gradient"
+msgstr ""
+
+msgctxt "fadeeditfo,bottomlayout,buttonlayout,clearbu,caption"
+msgid "ClearOpa"
+msgstr ""
+
+msgctxt "fadeeditfo,filedialog,controller.filterlist.data,0:,0:"
+msgid "Fade Files"
+msgstr ""
+
+msgctxt "fadeeditfo,filedialog,controller.filterlist.data,1:,0:"
+msgid "All Files"
+msgstr "An holl restroù"
+
+msgctxt "fadeeditfo,filedialog,controller.captionopen"
+msgid "Load Fade File"
+msgstr ""
+
+msgctxt "fadeeditfo,filedialog,controller.captionsave"
+msgid "Save Fade File"
+msgstr ""
+
+msgctxt "fadeeditfo,c,strings.data,0:"
+msgid "Do you want to synchronize opacity gradient"
+msgstr ""
+
+msgctxt "fadeeditfo,c,strings.data,1:"
+msgid "with color gradient?"
+msgstr ""
+
+msgctxt "fadeeditfo,c,strings.data,2:"
+msgid "Do you want to remove opacity gradient?"
+msgstr ""
+
+msgctxt "faceselectorfo,caption"
+msgid "Face Selector"
+msgstr ""
+
+msgctxt "doublestringlisteditor,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "doublestringlisteditor,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "doublestringlisteditor,rowcount,frame.caption"
+msgid "Rowcount"
+msgstr ""
+
+msgctxt "doublereallisteditor,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "doublereallisteditor,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "doublereallisteditor,rowcount,frame.caption"
+msgid "Rowcount"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,tbutton1,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,tbutton2,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,fielddefli,frame.caption"
+msgid "Fielddefs"
+msgstr ""
+
+msgctxt ""
+"msedbfieldeditorfo,fielddefli,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt ""
+"msedbfieldeditorfo,fielddefli,fixrows.items,0:,captions.items,1:,caption"
+msgid "Type"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,fields,frame.caption"
+msgid "Fields"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,fields,fixrows.items,0:,captions.items,2:,caption"
+msgid "Name"
+msgstr "Anv"
+
+msgctxt "msedbfieldeditorfo,fields,fixrows.items,0:,captions.items,3:,caption"
+msgid "Class type"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,fields,fixrows.items,0:,captions.items,4:,caption"
+msgid "Field kind"
+msgstr ""
+
+msgctxt "msedbfieldeditorfo,c,strings.data,0:"
+msgid "Dataset"
+msgstr ""
+
+msgctxt "msecornermaskeditorfo,caption"
+msgid "Cornermask Editor"
+msgstr ""
+
+msgctxt "msecornermaskeditorfo,tsplitter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msecornermaskeditorfo,tsplitter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt ""
+"msecornermaskeditorfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Width"
+msgstr "Ledander"
+
+msgctxt ""
+"msecornermaskeditorfo,grid,fixrows.items,0:,captionsfix.items,0:,caption"
+msgid "Row"
+msgstr ""
+
+msgctxt "colordialogfo,caption"
+msgid "Select Color"
+msgstr ""
+
+msgctxt "colordialogfo,colorpibu,caption"
+msgid "Color &Picker"
+msgstr ""
+
+msgctxt "colordialogfo,colorarea,frame.caption"
+msgid "new"
+msgstr ""
+
+msgctxt "colordialogfo,colorareabefore,frame.caption"
+msgid "old"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter1,blue,frame.caption"
+msgid "&blue"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter1,green,frame.caption"
+msgid "&green"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter1,red,frame.caption"
+msgid "&red"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter1,bright,frame.caption"
+msgid "&BRI"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter1,sat,frame.caption"
+msgid "&SAT"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter1,hue,frame.caption"
+msgid "&HUE"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter2,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter2,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "colordialogfo,tlayouter2,colored,frame.caption"
+msgid "Color"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter2,bucont,showhidden,frame.caption"
+msgid "&Show hidden files"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter2,bucont,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter2,bucont,ok,caption"
+msgid "&Ok"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter2,tlayouter1,filter,frame.caption"
+msgid "&Filter"
+msgstr "&Sil"
+
+msgctxt "filedialogfo,tlayouter2,tlayouter1,filename,frame.caption"
+msgid "&Name"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter3,createdir,caption"
+msgid "&New dir"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter3,home,caption"
+msgid "&Home"
+msgstr ""
+
+msgctxt "filedialogfo,tlayouter3,dir,frame.caption"
+msgid "&Dir"
+msgstr ""
+
+msgctxt "fontformatdialogfo,caption"
+msgid "Edit Font Format"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter2,tlayouter3,bolded,frame.caption"
+msgid "B&old"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter2,tlayouter3,italiced,frame.caption"
+msgid "&Italic"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter2,tlayouter3,underlineed,frame.caption"
+msgid "&Underline"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter2,tlayouter3,strikeouted,frame.caption"
+msgid "&Strikeout"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter2,tlayouter3,blanked,frame.caption"
+msgid "Bl&ank"
+msgstr ""
+
+msgctxt ""
+"fontformatdialogfo,tlayouter2,tlayouter4,backgroundcolored,frame.caption"
+msgid "&Backgroundcolor"
+msgstr ""
+
+msgctxt "fontformatdialogfo,tlayouter2,tlayouter4,fontcolored,frame.caption"
+msgid "&Fontcolor"
+msgstr ""
+
+msgctxt "integerenterfo,lab,caption"
+msgid "lab"
+msgstr ""
+
+msgctxt "integerenterfo,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "integerenterfo,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msememodialogfo,caption"
+msgid "Enter Memo Text"
+msgstr ""
+
+msgctxt "msememodialogfo,tlayouter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msememodialogfo,tlayouter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "realenterfo,lab,caption"
+msgid "lab"
+msgstr ""
+
+msgctxt "realenterfo,ok,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "realenterfo,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,caption"
+msgid "Shortcuts"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,tsimplewidget1,sc1ed,frame.caption"
+msgid "&Alternate"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,tsimplewidget1,sc1ed,hint"
+msgid "Press the desired key combination."
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,tsimplewidget1,sced,frame.caption"
+msgid "&Shortcut"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,tsimplewidget1,sced,hint"
+msgid "Press the desired key combination."
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Action"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Shortcut"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Alternate"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,okbu,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,cancelbu,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,defaultbu,caption"
+msgid "&Default"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,tpopupmenu1,menu.submenu.items,0:,caption"
+msgid "Expand all"
+msgstr ""
+
+msgctxt "mseshortcutdialogfo,tpopupmenu1,menu.submenu.items,1:,caption"
+msgid "Collapse all"
+msgstr ""
+
+msgctxt "stringenterfo,lab,caption"
+msgid "lab"
+msgstr ""
+
+msgctxt "stringenterfo,tlayouter1,cancel,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "stringenterfo,tlayouter1,ok,caption"
+msgid "&OK"
+msgstr ""

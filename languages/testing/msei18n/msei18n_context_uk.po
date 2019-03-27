@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Yuri Chornoivan <yurchor@ukr.net>, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# Андрій Лашкєєв <zombyg@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: msei18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-27 01:03+0300\n"
+"PO-Revision-Date: 2019-03-27 01:09+0000\n"
+"Last-Translator: Андрій Лашкєєв <zombyg@gmail.com>, 2019\n"
+"Language-Team: Ukrainian (https://www.transifex.com/Magic/teams/44238/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Generator: Poedit 2.0.9\n"
+
+msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
+msgid "no string"
+msgstr ""
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Назва"
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Type"
+msgstr "Тип"
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Comment"
+msgstr "Коментар"
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Value"
+msgstr "Значення"
+
+msgctxt "mainfo,flat,frame.caption"
+msgid "flat"
+msgstr "площ."
+
+msgctxt "mainfo,stringonly,frame.caption"
+msgid "string only"
+msgstr "лише рядки"
+
+msgctxt "mainfo,nont,frame.caption"
+msgid "no NT"
+msgstr "без NT"
+
+msgctxt "mainfo,ntonly,frame.caption"
+msgid "NT only"
+msgstr "лише NT"
+
+msgctxt "mainfo,coloron,frame.caption"
+msgid "show color"
+msgstr "показати кольором"
+
+msgctxt "mainfo,workpan,value"
+msgid "Working..."
+msgstr "Працює..."
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,caption"
+msgid "&Open"
+msgstr "&Відкрити"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,caption"
+msgid "&Save"
+msgstr "З&берегти"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,caption"
+msgid "Save &as"
+msgstr "Зберегти &як"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,caption"
+msgid "&New"
+msgstr "&Нова"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
+msgid "&Edit"
+msgstr "З&міни"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
+msgid "&Import"
+msgstr "&Імпорт"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,caption"
+msgid "Ex&port"
+msgstr "Ек&спорт"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,7:,caption"
+msgid "&Make"
+msgstr "Зі&брати"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption"
+msgid "&About"
+msgstr "&Про програму"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
+msgid "&Configure MSEi18n"
+msgstr "&Конфігурувати MSEi18n"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
+msgid "Se&ttings"
+msgstr "Н&алаштування"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,caption"
+msgid "&Refresh"
+msgstr "&Освіжити"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
+msgid "Reset"
+msgstr "Скинути"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
+msgid "E&xit"
+msgstr "Ви&хід"
+
+msgctxt "mainfo,projectfiledialog,controller.filterlist.data,0:,0:"
+msgid "Translate project"
+msgstr "Проект перекладу"
+
+msgctxt "mainfo,projectfiledialog,controller.captionopen"
+msgid "Open translate project"
+msgstr "Відкрити проект перекладу"
+
+msgctxt "mainfo,projectfiledialog,controller.captionsave"
+msgid "Save translate project"
+msgstr "Зберегти проект перекладу"
+
+msgctxt "mainfo,c,strings.data,0:"
+msgid "name"
+msgstr "ім'я"
+
+msgctxt "mainfo,c,strings.data,1:"
+msgid "type"
+msgstr "тип"
+
+msgctxt "mainfo,c,strings.data,2:"
+msgid "notranslate"
+msgstr "без перекладу"
+
+msgctxt "mainfo,c,strings.data,3:"
+msgid "comment"
+msgstr "коментар"
+
+msgctxt "mainfo,c,strings.data,4:"
+msgid "value"
+msgstr "значення"
+
+msgctxt "mainfo,c,strings.data,5:"
+msgid "[no project]"
+msgstr "[без проекту]"
+
+msgctxt "mainfo,c,strings.data,6:"
+msgid "Can not read module"
+msgstr "Неможливо прочитати модуль"
+
+msgctxt "mainfo,c,strings.data,7:"
+msgid "New translate project"
+msgstr "Новий проект перекладу"
+
+msgctxt "mainfo,c,strings.data,8:"
+msgid "Exec error"
+msgstr "Помилка виконання"
+
+msgctxt "mainfo,c,strings.data,9:"
+msgid "Making"
+msgstr "Збирання"
+
+msgctxt "mainfo,c,strings.data,10:"
+msgid "overwrites itself"
+msgstr "Переписати себе"
+
+msgctxt "mainfo,c,strings.data,11:"
+msgid "ERROR"
+msgstr "ПОМИЛКА"
+
+msgctxt "mainfo,c,strings.data,12:"
+msgid "Finished OK"
+msgstr "Завершено вдало"
+
+msgctxt "mainfo,c,strings.data,13:"
+msgid "Configure MSEi18n"
+msgstr "Налаштувати MSEi18n"
+
+msgctxt "mainfo,c,strings.data,14:"
+msgid "Data has changed"
+msgstr "Дані було змінено"
+
+msgctxt "mainfo,c,strings.data,15:"
+msgid "Do you wish to save"
+msgstr "Бажаєте зберегти"
+
+msgctxt "mainfo,c,strings.data,16:"
+msgid "CONFIRMATION"
+msgstr "ПІДТВЕРДЖЕННЯ"
+
+msgctxt "mainfo,c,strings.data,17:"
+msgid "Close error:"
+msgstr "Помилка закриття:"
+
+msgctxt "mainfo,c,strings.data,18:"
+msgid "Total rows:"
+msgstr "Загалом рядків:"
+
+msgctxt "mainfo,c,strings.data,19:"
+msgid "To translate:"
+msgstr "Для перекладу:"
+
+msgctxt "mainfo,c,strings.data,20:"
+msgid "To not translate:"
+msgstr "Не для перекладу:"
+
+msgctxt "mainfo,c,strings.data,21:"
+msgid "Yet translated:"
+msgstr "Перекладено:"
+
+msgctxt "mainfo,c,strings.data,22:"
+msgid "Not yet translated:"
+msgstr "Ще не перекладено:"
+
+msgctxt "mainfo,c,strings.data,23:"
+msgid "Do you want to reset to root value?"
+msgstr ""
+
+msgctxt "msememodialogfo,caption"
+msgid "Enter Memo Text"
+msgstr "Ввести Memo текст"
+
+msgctxt "msememodialogfo,tlayouter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr "&Скасувати"
+
+msgctxt "msememodialogfo,tlayouter1,tbutton1,caption"
+msgid "&OK"
+msgstr "&Гаразд"
+
+msgctxt "messagesfo,caption"
+msgid "Make Language Units"
+msgstr "Зібрати мовні модулі"
+
+msgctxt "projectfo,caption"
+msgid "Edit Translate Project"
+msgstr "Редагувати проект перекладу"
+
+msgctxt "projectfo,impexpencoding,frame.caption"
+msgid "Encoding for imp/exp files"
+msgstr "Кодування для файлів імпорту/экспорту"
+
+msgctxt "projectfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Rootname"
+msgstr "Назва"
+
+msgctxt "projectfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "File"
+msgstr "Файл"
+
+msgctxt "projectfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Kind"
+msgstr "Тип"
+
+msgctxt "projectfo,grid,filename,controller.captionopen"
+msgid "Select unit or form file"
+msgstr "Вибір файла модуля чи форми"
+
+msgctxt "projectfo,datafilename,frame.caption"
+msgid "Datafile"
+msgstr "Файл даних .trd (наприклад, введіть i18n)"
+
+msgctxt "projectfo,datafilename,controller.filterlist.data,0:,0:"
+msgid "MSEi18n Data Files"
+msgstr "Файли даних MSEi18n"
+
+msgctxt "projectfo,datafilename,controller.filterlist.data,1:,0:"
+msgid "All files"
+msgstr "Всі файли"
+
+msgctxt "projectfo,grid2,fixrows.items,0:,captions.items,0:,caption"
+msgid "Language"
+msgstr "Мова"
+
+msgctxt "projectfo,grid2,fixrows.items,0:,captions.items,1:,caption"
+msgid "Directory"
+msgstr "Тека"
+
+msgctxt "projectfo,makecommand,frame.caption"
+msgid "Make command"
+msgstr "Команда збирання"
+
+msgctxt "projectfo,makeon,frame.caption"
+msgid "on"
+msgstr "увімкнути"
+
+msgctxt "projectfo,ok,caption"
+msgid "OK"
+msgstr "Гаразд"
+
+msgctxt "projectfo,cancel,caption"
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgctxt "projectfo,destname,frame.caption"
+msgid "Destination Basename (empty = Datafile name)"
+msgstr "Розташування базового імені (пусто = ім'я файла даних)"
+
+msgctxt "projectfo,beforemake,frame.caption"
+msgid "Before make"
+msgstr "Перед збиранням"
+
+msgctxt "projectfo,aftermake,frame.caption"
+msgid "After make"
+msgstr "після збирання"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:"
+msgid "Data exchange files"
+msgstr "Файли обміну даними"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
+msgid "MSE trd files"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
+msgid "PO translation files"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
+msgid "All files"
+msgstr "Всі файли"
+
+msgctxt "projectfo,impexpfiledialog,controller.captionopen"
+msgid "Open import file"
+msgstr "Відкрити файл імпорту"
+
+msgctxt "projectfo,impexpfiledialog,controller.captionsave"
+msgid "Save export file"
+msgstr "Зберегти файл експорту"
+
+msgctxt "settingsfo,caption"
+msgid "Configure MSE environment"
+msgstr "Налаштування оточення MSE"
+
+msgctxt "settingsfo,tsplitter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr "&Скасувати"
+
+msgctxt "settingsfo,tsplitter1,tbutton1,caption"
+msgid "&OK"
+msgstr "&Гаразд"
+
+msgctxt "settingsfo,tsplitter1,shortcutbu,caption"
+msgid "&Shortcuts"
+msgstr "&Гар.клав."
+
+msgctxt "settingsfo,tlayouter1,printcomm,frame.caption"
+msgid "Print command"
+msgstr "Команда друку"
+
+msgctxt "settingsfo,tlayouter1,debugger,hint"
+msgid "Path to debugger (gdb)."
+msgstr "Шлях до налагоджувача (gdb)."
+
+msgctxt "settingsfo,tlayouter1,debugger,controller.captionopen"
+msgid "Debugger path"
+msgstr "Шлях до налагоджувача"
+
+msgctxt "settingsfo,tlayouter1,compiler,hint"
+msgid "Path to compiler (ppc386)."
+msgstr "Шлях до компілятора (ppc386)."
+
+msgctxt "settingsfo,tlayouter1,compiler,controller.captionopen"
+msgid "Compiler path"
+msgstr "Шлях до компілятора"
+
+msgctxt "settingsfo,tlayouter1,compstoredir,hint"
+msgid "Directory for component store files."
+msgstr "Каталог файлів з описами сховищ компонентів."
+
+msgctxt "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr "Файли проекту"
+
+msgctxt "settingsfo,tlayouter1,compstoredir,controller.captionopen"
+msgid "Directory for component stores"
+msgstr "Каталог сховищ компонентів"
+
+msgctxt "settingsfo,tlayouter1,templatedir,hint"
+msgid "Directory for project template files."
+msgstr "Каталог файлів шаблонів проектів"
+
+msgctxt "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr "Файли проекту"
+
+msgctxt "settingsfo,tlayouter1,templatedir,controller.captionopen"
+msgid "Project template directory"
+msgstr "Каталог шаблонів проектів"
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,hint"
+msgid "Directory for syntax definition files."
+msgstr "Каталог файлів визначення синтаксису."
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:"
+msgid "Syntax definitions"
+msgstr "Описи синтаксису"
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,controller.captionopen"
+msgid "Directory for syntax definition files"
+msgstr "Каталог файлів визначення синтаксису."
+
+msgctxt "settingsfo,tlayouter1,mselibdir,hint"
+msgid "Root directory of MSEgui library."
+msgstr "Кореневий каталог для бібліотеки MSEgui."
+
+msgctxt "settingsfo,tlayouter1,mselibdir,controller.captionopen"
+msgid "MSEgui library directory"
+msgstr "Каталог бібліотеки MSEgui"
+
+msgctxt "settingsfo,tlayouter1,msedir,hint"
+msgid "Root directory of MSEgui."
+msgstr "Кореневий каталог для MSEgui."
+
+msgctxt "settingsfo,tlayouter1,msedir,controller.captionopen"
+msgid "MSEgui root directory"
+msgstr "Кореневий каталог MSEgui"
+
+msgctxt "settingsfo,tlayouter1,fpclibdir,hint"
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+"Кореневий каталог для бібліотеки FPC (не використовується шаблонами типових "
+"проектів)."
+
+msgctxt "settingsfo,tlayouter1,fpclibdir,controller.captionopen"
+msgid "FPC library directory"
+msgstr "Каталог бібліотеки FPC"
+
+msgctxt "settingsfo,tlayouter1,fpcdir,hint"
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+"Кореневий каталог для компілятора Free Pascal (не використовується шаблонами"
+" типових проектів)."
+
+msgctxt "settingsfo,tlayouter1,fpcdir,controller.captionopen"
+msgid "FPC root directory"
+msgstr "Кореневий каталог FPC"
+
+msgctxt "settingsfo,macrogrid,frame.caption"
+msgid "Global Macros"
+msgstr "Глобальні Макро-визначення"
+
+msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Назва"
+
+msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Value"
+msgstr "Значення"

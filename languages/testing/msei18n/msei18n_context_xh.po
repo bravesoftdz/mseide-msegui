@@ -1,0 +1,462 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: msei18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-27 01:03+0300\n"
+"PO-Revision-Date: 2019-03-27 01:09+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Xhosa (https://www.transifex.com/Magic/teams/44238/xh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: xh\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.9\n"
+
+msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
+msgid "no string"
+msgstr ""
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Igama"
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Type"
+msgstr ""
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,3:,caption"
+msgid "Comment"
+msgstr "Yenza izwi"
+
+msgctxt "mainfo,grid,fixrows.items,0:,captions.items,4:,caption"
+msgid "Value"
+msgstr "Ixabiso"
+
+msgctxt "mainfo,flat,frame.caption"
+msgid "flat"
+msgstr ""
+
+msgctxt "mainfo,stringonly,frame.caption"
+msgid "string only"
+msgstr ""
+
+msgctxt "mainfo,nont,frame.caption"
+msgid "no NT"
+msgstr ""
+
+msgctxt "mainfo,ntonly,frame.caption"
+msgid "NT only"
+msgstr ""
+
+msgctxt "mainfo,coloron,frame.caption"
+msgid "show color"
+msgstr ""
+
+msgctxt "mainfo,workpan,value"
+msgid "Working..."
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,caption"
+msgid "&Open"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,caption"
+msgid "&Save"
+msgstr "&Gcina"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,caption"
+msgid "Save &as"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,caption"
+msgid "&New"
+msgstr "i&Entsha"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
+msgid "&Edit"
+msgstr "&Hlela"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
+msgid "&Import"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,caption"
+msgid "Ex&port"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,7:,caption"
+msgid "&Make"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption"
+msgid "&About"
+msgstr "&Malunga"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
+msgid "&Configure MSEi18n"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
+msgid "Se&ttings"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,caption"
+msgid "&Refresh"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
+msgid "Reset"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
+msgid "E&xit"
+msgstr ""
+
+msgctxt "mainfo,projectfiledialog,controller.filterlist.data,0:,0:"
+msgid "Translate project"
+msgstr ""
+
+msgctxt "mainfo,projectfiledialog,controller.captionopen"
+msgid "Open translate project"
+msgstr ""
+
+msgctxt "mainfo,projectfiledialog,controller.captionsave"
+msgid "Save translate project"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,0:"
+msgid "name"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,1:"
+msgid "type"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,2:"
+msgid "notranslate"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,3:"
+msgid "comment"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,4:"
+msgid "value"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,5:"
+msgid "[no project]"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,6:"
+msgid "Can not read module"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,7:"
+msgid "New translate project"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,8:"
+msgid "Exec error"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,9:"
+msgid "Making"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,10:"
+msgid "overwrites itself"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,11:"
+msgid "ERROR"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,12:"
+msgid "Finished OK"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,13:"
+msgid "Configure MSEi18n"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,14:"
+msgid "Data has changed"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,15:"
+msgid "Do you wish to save"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,16:"
+msgid "CONFIRMATION"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,17:"
+msgid "Close error:"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,18:"
+msgid "Total rows:"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,19:"
+msgid "To translate:"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,20:"
+msgid "To not translate:"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,21:"
+msgid "Yet translated:"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,22:"
+msgid "Not yet translated:"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,23:"
+msgid "Do you want to reset to root value?"
+msgstr ""
+
+msgctxt "msememodialogfo,caption"
+msgid "Enter Memo Text"
+msgstr ""
+
+msgctxt "msememodialogfo,tlayouter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "msememodialogfo,tlayouter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "messagesfo,caption"
+msgid "Make Language Units"
+msgstr ""
+
+msgctxt "projectfo,caption"
+msgid "Edit Translate Project"
+msgstr ""
+
+msgctxt "projectfo,impexpencoding,frame.caption"
+msgid "Encoding for imp/exp files"
+msgstr ""
+
+msgctxt "projectfo,grid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Rootname"
+msgstr ""
+
+msgctxt "projectfo,grid,fixrows.items,0:,captions.items,1:,caption"
+msgid "File"
+msgstr ""
+
+msgctxt "projectfo,grid,fixrows.items,0:,captions.items,2:,caption"
+msgid "Kind"
+msgstr ""
+
+msgctxt "projectfo,grid,filename,controller.captionopen"
+msgid "Select unit or form file"
+msgstr ""
+
+msgctxt "projectfo,datafilename,frame.caption"
+msgid "Datafile"
+msgstr ""
+
+msgctxt "projectfo,datafilename,controller.filterlist.data,0:,0:"
+msgid "MSEi18n Data Files"
+msgstr ""
+
+msgctxt "projectfo,datafilename,controller.filterlist.data,1:,0:"
+msgid "All files"
+msgstr ""
+
+msgctxt "projectfo,grid2,fixrows.items,0:,captions.items,0:,caption"
+msgid "Language"
+msgstr ""
+
+msgctxt "projectfo,grid2,fixrows.items,0:,captions.items,1:,caption"
+msgid "Directory"
+msgstr ""
+
+msgctxt "projectfo,makecommand,frame.caption"
+msgid "Make command"
+msgstr ""
+
+msgctxt "projectfo,makeon,frame.caption"
+msgid "on"
+msgstr ""
+
+msgctxt "projectfo,ok,caption"
+msgid "OK"
+msgstr ""
+
+msgctxt "projectfo,cancel,caption"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "projectfo,destname,frame.caption"
+msgid "Destination Basename (empty = Datafile name)"
+msgstr ""
+
+msgctxt "projectfo,beforemake,frame.caption"
+msgid "Before make"
+msgstr ""
+
+msgctxt "projectfo,aftermake,frame.caption"
+msgid "After make"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:"
+msgid "Data exchange files"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
+msgid "MSE trd files"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
+msgid "PO translation files"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
+msgid "All files"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.captionopen"
+msgid "Open import file"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.captionsave"
+msgid "Save export file"
+msgstr ""
+
+msgctxt "settingsfo,caption"
+msgid "Configure MSE environment"
+msgstr ""
+
+msgctxt "settingsfo,tsplitter1,tbutton2,caption"
+msgid "&Cancel"
+msgstr ""
+
+msgctxt "settingsfo,tsplitter1,tbutton1,caption"
+msgid "&OK"
+msgstr ""
+
+msgctxt "settingsfo,tsplitter1,shortcutbu,caption"
+msgid "&Shortcuts"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,printcomm,frame.caption"
+msgid "Print command"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,debugger,hint"
+msgid "Path to debugger (gdb)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,debugger,controller.captionopen"
+msgid "Debugger path"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compiler,hint"
+msgid "Path to compiler (ppc386)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compiler,controller.captionopen"
+msgid "Compiler path"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compstoredir,hint"
+msgid "Directory for component store files."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,compstoredir,controller.captionopen"
+msgid "Directory for component stores"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,templatedir,hint"
+msgid "Directory for project template files."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:"
+msgid "Project files"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,templatedir,controller.captionopen"
+msgid "Project template directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,hint"
+msgid "Directory for syntax definition files."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:"
+msgid "Syntax definitions"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,syntaxdefdir,controller.captionopen"
+msgid "Directory for syntax definition files"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,mselibdir,hint"
+msgid "Root directory of MSEgui library."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,mselibdir,controller.captionopen"
+msgid "MSEgui library directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,msedir,hint"
+msgid "Root directory of MSEgui."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,msedir,controller.captionopen"
+msgid "MSEgui root directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpclibdir,hint"
+msgid ""
+"Root directory of FPC library (not used by the default project templates)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpclibdir,controller.captionopen"
+msgid "FPC library directory"
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpcdir,hint"
+msgid ""
+"Root directory of Free Pascal system (not used by the default project "
+"templates)."
+msgstr ""
+
+msgctxt "settingsfo,tlayouter1,fpcdir,controller.captionopen"
+msgid "FPC root directory"
+msgstr ""
+
+msgctxt "settingsfo,macrogrid,frame.caption"
+msgid "Global Macros"
+msgstr ""
+
+msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption"
+msgid "Name"
+msgstr "Igama"
+
+msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption"
+msgid "Value"
+msgstr "Ixabiso"
