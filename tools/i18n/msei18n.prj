@@ -833,10 +833,10 @@ findoptions=1
 editpos=9
  0,-1073741823
  0,0
- 0,329
- 0,0
+ 0,447
  0,-1073741823
- 0,0
+ 0,-1073741823
+ 0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -896,20 +896,10 @@ nomenumodules=3
  0
  0
 [sourcefo.files_tab]
-order=9
- 0
- 1
- 2
- 3
- 5
- 4
- 6
- 8
- 7
 firsttab=0
 index=2
 [layout]
-windowlayout=614
+windowlayout=604
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1017,7 +1007,7 @@ windowlayout=614
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=confideufo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1378,11 +1368,11 @@ windowlayout=614
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
   /home/fred/mseide-msegui/tools/i18n/synregexpr.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
-  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
   /home/fred/mseide-mseguiok/tools/i18n/main.pas
   /home/fred/mseide-mseguiimport/tools/i18n/main.pas
   /home/fred/ideu/src/msefiledialogres.mfm
@@ -1419,16 +1409,6 @@ windowlayout=614
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=9
-  0
-  1
-  2
-  3
-  5
-  4
-  6
-  8
-  7
  firsttab=0
  index=2
  [cpuc86_64fo]

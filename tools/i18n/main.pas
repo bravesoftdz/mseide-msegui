@@ -337,7 +337,7 @@ begin
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
            
-         if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
+         if trim((nodo)) = trim((asdo))   then 
           begin
            hasfoundtext := true;
            astrtemp := astrt;
@@ -359,7 +359,7 @@ begin
         end; 
        
    
-        if (hasfoundtext = true) and (hasfound = false) then
+      if (hasfoundtext = true) and (hasfound = false) then
        begin
          astrt := astrtemp;
          astrt := trim(astrt);
@@ -405,7 +405,7 @@ begin
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
          
-         if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
+         if trim((nodo)) = trim((asdo))   then 
           begin
            hasfound := true; 
            astrt := (utf8StringReplace(astrt, '"', '', [rfReplaceAll])); 
@@ -939,10 +939,7 @@ application.processmessages;
        begin
          setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] := str2;
-      //  (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
-          (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
- 
-       str2 := str1;    
+        str2 := str1;    
         // writeln(widestring((valuearray[length(valuearray)-1])));
         isstring := false;
        end else if isstring = true then str2 := str2 +sLineBreak+ str1;
