@@ -29,17 +29,17 @@ findinfiledialog=62
  [findinfileadialogfo.wholeword]
  value=0
  [findinfileadialogfo.inprojectdir]
- value=0
+ value=1
  [findinfileadialogfo.casesensitive]
  value=0
  [findinfileadialogfo.indirectories]
- value=1
+ value=0
  [findinfileadialogfo.mask]
- value= "*.mfm"
+ value="*.pas" "*.pp" "*.inc"
  history=3
-   "*.mfm"
   "*.pas" "*.pp" "*.inc"
   "*.pas" "*.pp" "*.inc"  "*.*"
+   "*.mfm"
  [findinfileadialogfo.dir]
  filenames=1
   /home/fred/mseide-msegui/apps/ide/
@@ -54,8 +54,10 @@ findinfiledialog=62
  filefilterindex=0
  filefilter=*.mfm
  [findinfileadialogfo.findtext]
- value=<
+ value=parent
  history=20
+  parent
+  info.
   <
   ->
   -> page
@@ -74,8 +76,6 @@ findinfiledialog=62
   Stop, unblockable
   Unit, includ
   Use Ctrl + arrow key
-  accelerated
-  Code template directories
  [findinfileadialogfo]
  stackedunder=
  x=407
@@ -807,12 +807,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=doread
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
  doread
  allbo
  yellow
- treeonupdaterowvalues
  ,
  ','
  doexport
@@ -832,14 +832,14 @@ findhistory=20
 findoptions=1
 editpos=9
  0,-1073741823
+ 0,0
+ 0,329
+ 0,0
  0,-1073741823
- 0,1119
+ 0,0
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,1133
- 0,1969
- 0,179
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -866,9 +866,9 @@ relpaths=9
  mseresourceparser.pas
  apps/ide/lang_ru_mseidenew/i18n.trd
  synregexpr.pas
- ../apps/ide/projectoptionsform.mfm
- ../apps/ide/actionsmodule.mfm
- ../apps/ide/guitemplates.mfm
+ apps/ide/projectoptionsform.mfm
+ apps/ide/actionsmodule.mfm
+ apps/ide/guitemplates.mfm
 ismoduletexts=9
  0
  0
@@ -900,14 +900,14 @@ order=9
  0
  1
  2
+ 3
+ 5
+ 4
  6
  8
  7
- 3
- 4
- 5
 firsttab=0
-index=4
+index=2
 [layout]
 windowlayout=614
  [mainfo.basedock]
@@ -941,8 +941,8 @@ windowlayout=614
  ny=0
  ncx=0
  ncy=0
- x=407
- y=258
+ x=701
+ y=210
  cx=608
  cy=409
  rcx=0
@@ -1017,15 +1017,15 @@ windowlayout=614
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=confideufo
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=-91
- y=102
+ x=0
+ y=62
  cx=1366
  cy=706
  rcx=0
@@ -1376,8 +1376,9 @@ windowlayout=614
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/apps/ide/guitemplates.mfm
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/synregexpr.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
@@ -1397,7 +1398,6 @@ windowlayout=614
   /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
-  /home/fred/mseide-mseguiru/tools/i18n/main.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1423,14 +1423,14 @@ windowlayout=614
   0
   1
   2
+  3
+  5
+  4
   6
   8
   7
-  3
-  4
-  5
  firsttab=0
- index=4
+ index=2
  [cpuc86_64fo]
  irqoff=0
  splitdir=0

@@ -279,9 +279,9 @@ end;
 procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
   const aindex: integer; const aitem: tlistitem);
 var
- hasfound, hasvirg : boolean;
+ hasfound, hasfoundtext, hasvirg : boolean;
 int1, x : integer;
-str2,  anont, acom, astro,astrt, nodo, asdo : utf8String;
+str2, acomp, anont, acom, astro,astrt, astrtemp, nodo, asdo : utf8String;
 astrtraw : RawByteString;
 
 begin
@@ -299,11 +299,18 @@ begin
     if isloaded = false then begin
        x := 0;   
        hasfound := false;
+       hasfoundtext := false;
        
       if importtype < 1 then begin 
         while (x < length(valuearray)) and (hasfound = false) do
          begin
          str2 := (valuearray[x]);
+         acomp :=    
+           (utf8copy(str2,1,length(str2)-system.pos('vaString',str2)+1)) ;
+        
+         str2 :=   
+     (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+         
          anont := (utf8copy(str2,1,1));
          str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
          acom := (utf8copy(str2,1,system.pos(',',str2)-1));
@@ -314,24 +321,13 @@ begin
          astro := (utf8copy(str2,2,system.pos('",',str2)-1)) ;
          astrt := (utf8copy(str2,system.pos('",',str2)+2,length(str2)-system.pos('",',str2)-2)) ; 
          hasvirg := true;
-         if trim(valuetext) = trim(astro) then begin
-          hasfound := true; 
-          {writeln('--------------');
-          writeln('++1++');
-          writeln(valuetext);
-          writeln('++2++');
-          writeln(astro);
-          writeln('++3++');
-          writeln(astrt);}
-          exit;
-          end;
          end else
          begin 
          astro := (utf8copy(str2,1,system.pos(',',str2)-1));
          astrt := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;       
-          end;
+         end;
           
-        if (hasfound = false) and (hasvirg = true)  then
+         if  (hasvirg = true)  then
          begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
@@ -343,24 +339,29 @@ begin
            
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
-           hasfound := true; 
-          end; 
+           hasfoundtext := true;
+           astrtemp := astrt;
+           if system.pos(rootstring(','),acomp) > 0 then hasfound := true; 
+           end; 
       
          end else 
          begin
           if (hasfound = false) and (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) then
          begin 
-          hasfound := true; 
-          //  writeln(astrt);
+           hasfoundtext := true;
+           astrtemp := astrt;
+           if system.pos(rootstring(','),acomp) > 0 then hasfound := true; 
+           //  writeln(astrt);
          end;      
          end;
          inc(x);   
         end; 
        
    
-        if hasfound then
+        if (hasfoundtext = true) and (hasfound = false) then
        begin
+         astrt := astrtemp;
          astrt := trim(astrt);
          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
                 
@@ -444,7 +445,7 @@ begin
     
     if doreset = false then begin  
     if isloaded = false then begin
-     if hasfound then
+     if (hasfoundtext = true) and (hasfound = false) then
      begin
        if trim(astrt) <> '' then
        begin
@@ -458,12 +459,19 @@ begin
      
       end else
       begin
-       gridvalue[aindex]:=valuetext;
-       info.variants[int1] := valuetext;
+      if hasfound then
+      begin
+       if info.variants[int1] <> '' then     
+      gridvalue[aindex]:= (info.variants[int1]);
+      end else
+      begin
+      gridvalue[aindex]:=valuetext;
+      info.variants[int1] := valuetext;
+      end; 
       end; 
      end else 
      if info.variants[int1] <> '' then     
-     gridvalue[aindex]:= wideString(info.variants[int1]) else
+     gridvalue[aindex]:= (info.variants[int1]) else
      begin
      gridvalue[aindex]:= valuetext;
      info.variants[int1] := valuetext;
@@ -930,8 +938,10 @@ application.processmessages;
      if (copy(str1,1,1) = '"') and (isstring = true) then
        begin
          setlength(valuearray,length(valuearray)+1);  
-        valuearray[length(valuearray)-1] :=
-        (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+        valuearray[length(valuearray)-1] := str2;
+      //  (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+          (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
+ 
        str2 := str1;    
         // writeln(widestring((valuearray[length(valuearray)-1])));
         isstring := false;
