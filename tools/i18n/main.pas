@@ -777,9 +777,15 @@ begin
   
   if datatypefo.allbo.value then  
   rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[])
-  else rec:= mergevarrec([mstr3],[]);
+  else 
+  if datatypefo.allntbo.value then  
+  rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[])
+  else 
+  if datatypefo.txtbo.value then  
+  rec:= mergevarrec([mstr3],[]);
  
- if (datatypefo.allbo.value) or (datatypefo.txttrbo.value) then
+ if (datatypefo.allbo.value) or (datatypefo.txttrbo.value)
+  or (datatypefo.trabo.value) then
    for int1:= 0 to high(variants) do begin
     rec:= mergevarrec(rec,[variants[int1]]);
    end;
@@ -1120,8 +1126,16 @@ setlength(str1,1);
  else if datatypefo.txtbo.value then begin
   str1[0] := 'value';
   datastream.writerecord(str1)
+  end
+  else if datatypefo.allntbo.value then begin
+  str1[0] := 'name,type,notranslate,comment,value';
+  datastream.writerecord(str1)
+  end
+  else if datatypefo.trabo.value then begin
+  str1[0] := 'translation';
+  datastream.writerecord(str1)
   end;
-    
+      
   writeexprecord(rootnode);
  finally
   datastream.Free;

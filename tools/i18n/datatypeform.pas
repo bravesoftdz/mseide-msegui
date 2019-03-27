@@ -14,6 +14,8 @@ type
    allbo: tbooleaneditradio;
    txtbo: tbooleaneditradio;
    txttrbo: tbooleaneditradio;
+   allntbo: tbooleaneditradio;
+   trabo: tbooleaneditradio;
    procedure onexecdatatype(const sender: TObject);
    procedure oncanceldatatype(const sender: TObject);
  end;
