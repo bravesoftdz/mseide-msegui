@@ -41,22 +41,25 @@ lastdir=/home/fred/mseide-msegui/tools/i18n/lang_en/
 filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]
-propcolwidthref=584
-values0=5
+propcolwidthref=569
+values0=6
  mainfo
  msememodialogfo
  messagesfo
  projectfo
+ datatypefo
  settingsfo
 width0=71
 sortdescend0=0
-values1=5
+values1=6
  /home/fred/mseide-msegui/tools/i18n/main.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msememodialog.mfm
  /home/fred/mseide-msegui/tools/i18n/messagesform.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
+ /home/fred/mseide-msegui/tools/i18n/datatypeform.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msesettings.mfm
-values2=5
+values2=6
+ 0
  0
  0
  0

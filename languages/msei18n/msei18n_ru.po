@@ -21,6 +21,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
+msgid "Importation"
+msgstr "Импортирование"
+
+msgid "Data type"
+msgstr "Тип данных"
+
 msgid "no string"
 msgstr "без строк"
 
@@ -35,9 +41,6 @@ msgstr "Файлы MSE trd"
 
 msgid "PO translation files"
 msgstr "Файлы переводов PO"
-
-msgid "All"
-msgstr "Все"
 
 msgid "Do you want to reset to root value?"
 msgstr "Вы хотите сбросить к корневому значению?"
