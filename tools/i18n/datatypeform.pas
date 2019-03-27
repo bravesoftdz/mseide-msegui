@@ -11,8 +11,9 @@ type
    tgroupbox1: tgroupbox;
    tbutton1: tbutton;
    tbutton2: tbutton;
-   trdbo: tbooleaneditradio;
-   pobo: tbooleaneditradio;
+   allbo: tbooleaneditradio;
+   txtbo: tbooleaneditradio;
+   txttrbo: tbooleaneditradio;
    procedure onexecdatatype(const sender: TObject);
    procedure oncanceldatatype(const sender: TObject);
  end;
@@ -25,15 +26,15 @@ uses
  
 procedure tdatatypefo.onexecdatatype(const sender: TObject);
 begin
-if trdbo.value then importtype:=0 else
-if pobo.value then importtype:=1;
-datatypefo.visible := false;
+//if trdbo.value then importtype:=0 else
+//if pobo.value then importtype:=1;
+visible := false;
 end;
 
 procedure tdatatypefo.oncanceldatatype(const sender: TObject);
 begin
-importtype:=-1;
-datatypefo.visible := false;
+//importtype:=-1;
+visible := false;
 end;
 
 end.

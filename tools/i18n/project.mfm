@@ -465,6 +465,10 @@ object projectfo: tprojectfo
         '*.po'
       )
       (
+        'TXT text files'
+        '*.txt'
+      )
+      (
         'All files'
         '*.*'
       )

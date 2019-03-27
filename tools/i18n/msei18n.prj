@@ -19,7 +19,7 @@ order16=0
 [projectoptions]
 projectdir=/home/fred/mseide-msegui/tools/i18n
 projectfilename=/home/fred/mseide-msegui/tools/i18n/msei18n.prj
-findinfiledialog=59
+findinfiledialog=62
  [findinfileadialogfo.subdirs]
  value=1
  [findinfileadialogfo.incurrentfile]
@@ -35,44 +35,47 @@ findinfiledialog=59
  [findinfileadialogfo.indirectories]
  value=0
  [findinfileadialogfo.mask]
- value="*.pas" "*.pp" "*.inc"  "*.*"
- history=2
-  "*.pas" "*.pp" "*.inc"  "*.*"
+ value="*.pas" "*.pp" "*.inc"
+ history=3
   "*.pas" "*.pp" "*.inc"
+   "*.mfm"
+  "*.pas" "*.pp" "*.inc"  "*.*"
  [findinfileadialogfo.dir]
  filenames=1
-  /home/fred/strumpract/
+  /home/fred/mseide-msegui/apps/ide/
  filecolwidth=174
  x=0
  y=0
  cx=0
  cy=0
- filehistory=1
+ filehistory=2
+  /home/fred/mseide-msegui/apps/ide/
   /home/fred/strumpract/
  filefilterindex=0
- filefilter="*.pas" "*.pp" "*.inc" "*.*"
+ filefilter=*.mfm
  [findinfileadialogfo.findtext]
- value='<
- history=19
+ value=';'
+ history=20
+  ';'
+  ','
+  ource has changed,
+  does not exis
+  Use
+  Use 'Project'
+  t'-'Options
+  ue]{,[name],[val
+  Stop, unblockable
+  Unit, includ
+  Use Ctrl + arrow key
+  accelerated
+  Code template directories
+  martin
+  , 
+  "
+  ,
+   "
   '<
   >'
-  >
-  datatypefo
-  Data exchange files
-  Yes you did it!
-  importtype
-  ttimer
-  donottranslate
-  info.
-  Not yet translated:
-  valuetext
-  doread
-  treeonupdaterowvalues
-  sc_finishedok
-  tstringcontainer
-  vacollection
-  vautf8string
-  
  [findinfileadialogfo]
  stackedunder=
  x=268
@@ -84,18 +87,21 @@ finddialog=8
  value=0
  [finddialogfo]
  stackedunder=
- x=644
- y=277
+ x=609
+ y=365
  cx=312
  cy=114
-replacedialog=16
+replacedialog=19
  [replacedialogfo.promptonreplace]
  value=1
  [replacedialogfo.selectedonly]
  value=0
  [replacedialogfo.replacetext]
- value=/home/fred/
- history=3
+ value=;
+ history=6
+  ;
+  ';'
+  ','
   /home/fred/
   /home/fred/ideu/src/
   
@@ -213,7 +219,7 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=2
+ index=1
  [projectoptionsfo]
  stackedunder=
  x=275
@@ -488,14 +494,14 @@ settingsprojecttree=0
 settingsautoload=0
 settingsautosave=0
 modulenames=2
+ DATATYPEFO
  MAINFO
- PROJECTFO
 moduletypes=2
+ TDATATYPEFO
  TMAINFO
- TPROJECTFO
 modulefiles=2
+ /home/fred/mseide-msegui/tools/i18n/datatypeform.mfm
  /home/fred/mseide-msegui/tools/i18n/main.mfm
- /home/fred/mseide-msegui/tools/i18n/project.mfm
 befcommandon=0
 makeoptionson=7
  127
@@ -536,12 +542,12 @@ compilerusedon=29
  0
  0
 debuggerusedon=6
- 4095
+ 4091
  0
  0
  0
  0
- 0
+ 4
 exeusedon=15
  4095
  0
@@ -801,12 +807,18 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=color
+finddtext=yellow
 findhistory=20
+ yellow
+ treeonupdaterowvalues
+ ,
+ ','
+ doexport
+ writerecord
+ writeexprecord
+ doread
  color
  writeln
- treeonupdaterowvalues
- doread
  importonexecute
  importtype
  copyu
@@ -817,16 +829,11 @@ findhistory=20
  workpan
  ttimer
  save
- datachanged
- updatedata
- widthmax
- timer
- filename
- /usr/share/
 findoptions=1
-editpos=5
+editpos=6
  0,-1073741823
- 0,1619
+ 0,-1073741823
+ 5,1647
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -835,41 +842,49 @@ bookmarks1=0
 bookmarks2=0
 bookmarks3=0
 bookmarks4=0
-sourcefiles=5
+bookmarks5=0
+sourcefiles=6
  ${PROJECTDIR}/msei18n.pas
+ ${PROJECTDIR}/datatypeform.pas
  ${PROJECTDIR}/main.pas
- ${PROJECTDIR}/lazutf8.pas
- ${PROJECTDIR}/project.pas
- /home/fred/mseide-mseguiok/tools/i18n/main.mfm
-relpaths=5
+ ${PROJECTDIR}/mseresourceparser.pas
+ /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
+ ${PROJECTDIR}/synregexpr.pas
+relpaths=6
  msei18n.pas
+ datatypeform.pas
  main.pas
- lazutf8.pas
- project.pas
- mseide-mseguiok/tools/i18n/main.mfm
-ismoduletexts=5
+ mseresourceparser.pas
+ apps/ide/lang_ru_mseidenew/i18n.trd
+ synregexpr.pas
+ismoduletexts=6
  0
  0
  0
  0
- -1
-modules=2
+ 0
+ 0
+modules=3
  /home/fred/mseide-msegui/tools/i18n/project.mfm
+ /home/fred/mseide-msegui/tools/i18n/datatypeform.mfm
  /home/fred/mseide-msegui/tools/i18n/main.mfm
-moduleoptions=2
+moduleoptions=3
  0
  0
-visiblemodules=2
+ 0
+visiblemodules=3
+ 0
  -1
  -1
-nomenumodules=2
+nomenumodules=3
+ -1
  0
  0
 [sourcefo.files_tab]
 firsttab=0
-index=1
+index=2
 [layout]
-windowlayout=585
+windowlayout=604
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -883,10 +898,10 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=0
- y=44
- cx=1360
- cy=555
+ x=81
+ y=53
+ cx=1156
+ cy=619
  rcx=0
  rcy=0
  wsize=6
@@ -901,15 +916,15 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=3
- y=29
- cx=1360
- cy=706
+ x=407
+ y=258
+ cx=608
+ cy=409
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -919,10 +934,10 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=0
- y=29
- cx=1366
- cy=706
+ x=444
+ y=431
+ cx=418
+ cy=126
  rcx=0
  rcy=0
  wsize=0
@@ -1003,7 +1018,7 @@ windowlayout=585
  x=0
  y=0
  cx=205
- cy=502
+ cy=515
  rcx=0
  rcy=0
  [projecttreefo.grid]
@@ -1014,7 +1029,7 @@ windowlayout=585
  sortdescend1=0
  sorted=0
  col=1
- row=2
+ row=0
  rowheight=16
  [stackfo]
  splitdir=0
@@ -1025,10 +1040,10 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=3
- y=29
- cx=796
- cy=180
+ x=423
+ y=321
+ cx=344
+ cy=155
  rcx=0
  rcy=0
  wsize=0
@@ -1102,20 +1117,20 @@ windowlayout=585
  ny=0
  ncx=0
  ncy=0
- x=3
- y=29
- cx=1360
- cy=706
+ x=308
+ y=115
+ cx=316
+ cy=484
  rcx=0
  rcy=0
  wsize=0
  active=0
  visible=0
  [objectinspectorfo.grid]
- propcolwidthref=1335
- width0=779
+ propcolwidthref=306
+ width0=136
  sortdescend0=0
- width1=550
+ width1=164
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1208,9 +1223,9 @@ windowlayout=585
  ncx=0
  ncy=0
  x=0
- y=566
+ y=578
  cx=1356
- cy=116
+ cy=104
  rcx=0
  rcy=0
  [componentstorefo]
@@ -1296,7 +1311,7 @@ windowlayout=585
  active=0
  visible=0
  [componentpalettefo.componentpages]
- activetab=4
+ activetab=0
  [debuggerfo]
  splitdir=0
  useroptions=24683
@@ -1310,7 +1325,7 @@ windowlayout=585
  x=0
  y=0
  cx=1356
- cy=58
+ cy=57
  rcx=0
  rcy=0
  [debuggerfo.basedock]
@@ -1322,11 +1337,11 @@ windowlayout=585
  nx=0
  ny=0
  ncx=1356
- ncy=61
+ ncy=60
  x=0
  y=0
  cx=1356
- cy=61
+ cy=60
  rcx=0
  rcy=0
  [debuggerfo.edit_options]
@@ -1339,9 +1354,11 @@ windowlayout=585
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
   /home/fred/mseide-msegui/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/project.pas
-  /home/fred/mseide-mseguiimport/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
+  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
+  /home/fred/mseide-mseguiok/tools/i18n/main.pas
+  /home/fred/mseide-mseguiimport/tools/i18n/main.pas
   /home/fred/ideu/src/msefiledialogres.mfm
   /home/fred/ideu/src/msefiledialog.mfm
   /home/fred/ideu/src/dialogfiles.mfm
@@ -1356,8 +1373,6 @@ windowlayout=585
   /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
   /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
   /home/fred/mseide-mseguiru/tools/i18n/main.pas
-  /home/fred/ideu/src/languages/lang_ru/i18n.trd
-  /home/fred/ideu/src/languages/lang_ru/i18n.trp
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1375,12 +1390,12 @@ windowlayout=585
  x=208
  y=0
  cx=1148
- cy=502
+ cy=515
  rcx=0
  rcy=0
  [sourcefo.files_tab]
  firsttab=0
- index=1
+ index=2
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1412,15 +1427,15 @@ windowlayout=585
  ncx=0
  ncy=0
  x=0
- y=61
+ y=60
  cx=1356
- cy=502
+ cy=515
  rcx=0
  rcy=0
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_mainfo_mse_
+ stackedunder=_mse_datatypefo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1435,11 +1450,30 @@ windowlayout=585
  rcy=0
  wsize=0
  active=0
+ visible=0
+ [_mse_datatypefo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_mainfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=406
+ y=275
+ cx=501
+ cy=105
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
  visible=1
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0

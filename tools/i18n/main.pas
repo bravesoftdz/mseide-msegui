@@ -164,7 +164,7 @@ var
  implementation
 uses
  main_mfm,msefileutils,msesystypes,msesys,sysutils,mselist,project,
- rtlconsts,mseprocutils,msestockobjects,
+ rtlconsts,mseprocutils,msestockobjects, datatypeform,
  mseparser,mseformdatatools,mseresourcetools, 
  msearrayutils,msesettings,messagesform,mseeditglob,mseformatstr;
 type
@@ -279,7 +279,7 @@ end;
 procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
   const aindex: integer; const aitem: tlistitem);
 var
- hasfound : boolean;
+ hasfound, hasvirg : boolean;
 int1, x : integer;
 str2,  anont, acom, astro,astrt, nodo, asdo : utf8String;
 astrtraw : RawByteString;
@@ -291,6 +291,8 @@ begin
   
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
+    
+    hasvirg := false;
    
     if doreset = false then begin 
        
@@ -306,47 +308,65 @@ begin
          str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
          acom := (utf8copy(str2,1,system.pos(',',str2)-1));
          str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+       
+         if copy(str2,1,1) = '"' then 
+         begin
+         astro := (utf8copy(str2,2,system.pos('",',str2)-1)) ;
+         astrt := (utf8copy(str2,system.pos('",',str2)+2,length(str2)-system.pos('",',str2)-2)) ; 
+         hasvirg := true;
+         if trim(valuetext) = trim(astro) then begin
+          hasfound := true; 
+          {writeln('--------------');
+          writeln('++1++');
+          writeln(valuetext);
+          writeln('++2++');
+          writeln(astro);
+          writeln('++3++');
+          writeln(astrt);}
+          exit;
+          end;
+         end else
+         begin 
          astro := (utf8copy(str2,1,system.pos(',',str2)-1));
-         astrt := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;   
-    
-         if copy(astro,1,1) = '"' then
+         astrt := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;       
+          end;
+          
+        if (hasfound = false) and (hasvirg = true)  then
          begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, ',', '', [rfReplaceAll]);
-                        
+                           
           asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
-          asdo := utf8StringReplace(asdo, '\', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, ',', '', [rfReplaceAll]);
-         
+           
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
-           astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
-           // writeln(astrt);
-           end; 
+          end; 
       
          end else 
          begin
-          if (trim(valuetext) <> '') and (trim((valuetext)) = trim((astro))) then
+          if (hasfound = false) and (trim(valuetext) <> '') and 
+          (trim((valuetext)) = trim((astro))) then
          begin 
           hasfound := true; 
-          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
           //  writeln(astrt);
          end;      
          end;
          inc(x);   
         end; 
+       
    
         if hasfound then
        begin
+         astrt := trim(astrt);
+         astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
+                
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
-    
+      
          if anont = 'T' then begin
          info.donottranslate := true;
          donottranslate[aindex]:= true;
@@ -379,20 +399,16 @@ begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
-                   
+          
           asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
          
          if trim(uppercase(nodo)) = trim(uppercase(asdo))   then 
           begin
            hasfound := true; 
            astrt := (utf8StringReplace(astrt, '"', '', [rfReplaceAll])); 
-           astrt := (utf8StringReplace(astrt, '\n', '', [rfReplaceAll])); 
-           astrt := (utf8StringReplace(astrt, '\', '', [rfReplaceAll])); 
-          // writeln(astro);
+           // writeln(astro);
           // writeln(astrt);
           end; 
          end; 
@@ -406,8 +422,7 @@ begin
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
         end;   
-        
-                
+                       
           if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
           begin    
           info.donottranslate := true;
@@ -759,7 +774,12 @@ begin
    str1:= rootstring(',');
    str2:= ansistring(typedisp.enumname(ord(valuetype)));
    mstr3:= valuetext;
-   rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  
+  if datatypefo.allbo.value then  
+  rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[])
+  else rec:= mergevarrec([mstr3],[]);
+ 
+ if (datatypefo.allbo.value) or (datatypefo.txttrbo.value) then
    for int1:= 0 to high(variants) do begin
     rec:= mergevarrec(rec,[variants[int1]]);
    end;
@@ -1065,6 +1085,7 @@ var
 begin
  with tpropinfonode1(sender) do begin
   bo2:= not nont.value or not info.donottranslate;
+ //  bo2:= true;
   if fparent <> nil then begin
    bo1:= not stringonly.value or (info.valuetype in
              [vastring,valstring,vawstring,vautf8string]);
@@ -1083,11 +1104,24 @@ begin
 end;
 
 procedure tmainfo.doexport(stream: ttextdatastream; aencoding: charencodingty);
+var
+str1 : msestringarty;
 begin
+setlength(str1,1);
  stream.encoding:= aencoding;
  datastream:= stream;
  try
-  datastream.writerecord(getcolumnheaders);
+ 
+ if datatypefo.allbo.value then
+  datastream.writerecord(getcolumnheaders) else
+ if datatypefo.txttrbo.value then begin
+  str1[0] := 'value,translation';
+  datastream.writerecord(str1) end
+ else if datatypefo.txtbo.value then begin
+  str1[0] := 'value';
+  datastream.writerecord(str1)
+  end;
+    
   writeexprecord(rootnode);
  finally
   datastream.Free;
@@ -1101,7 +1135,8 @@ var
 begin
 if nostring.value then
 showmessage('Exportation with -no string- is not allowed.') else
-    begin     
+    begin  
+    datatypefo.show(true);   
     if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     showworkpan;
     application.processmessages;
@@ -1617,8 +1652,10 @@ begin
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
      then begin
-     if (system.pos(',',value[row]) > 1) or
-       (system.pos(',',tstringedit(grid.datacols[col].editwidget)[row]) > 1) then
+     if (system.pos('>',value[row]) > 1) or
+       (system.pos('>',tstringedit(grid.datacols[col].editwidget)[row]) > 1) or
+     (system.pos('<',value[row]) > 1) or
+       (system.pos('<',tstringedit(grid.datacols[col].editwidget)[row]) > 1) then
         cellinfo.color:= cl_ltyellow else
       if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
       or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
