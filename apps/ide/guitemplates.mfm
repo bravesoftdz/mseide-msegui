@@ -152,8 +152,8 @@ object guitemplatesmo: tguitemplatesmo
         (        )
         []
         ''
-        '<n>'
-        'Use ''Project''-''Options''-''Macros''-''Active group'' number <n>,'#10'<n> = 1..6.'
+        '[n]'
+        'Use ''Project''-''Options''-''Macros''-''Active group'' number [n],'#10'[n] = 1..6.'
         ''
         ''
       )

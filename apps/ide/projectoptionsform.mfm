@@ -869,7 +869,7 @@ object projectoptionsfo: tprojectoptionsfo
                       0
                     )
                     taborder = 3
-                    hint = 'Background color of marked brackets and word pairs.'#10'Will be overridden by setting in syntax definition file.'#10'cl_none -> force none.'
+                    hint = 'Background color of marked brackets and word pairs.'#10'Will be overridden by setting in syntax definition file.'#10'cl_none = force none.'
                     onshowhint = colorhint
                     bounds_x = 264
                     bounds_y = 0
@@ -907,7 +907,7 @@ object projectoptionsfo: tprojectoptionsfo
                       0
                     )
                     taborder = 2
-                    hint = 'Background color of the active row while debugging.'#10'Will be overridden by setting in syntax definition file.'#10'cl_none -> force none.'
+                    hint = 'Background color of the active row while debugging.'#10'Will be overridden by setting in syntax definition file.'#10'cl_none = force none.'
                     onshowhint = colorhint
                     bounds_x = 160
                     bounds_y = 0
@@ -931,7 +931,7 @@ object projectoptionsfo: tprojectoptionsfo
                       0
                     )
                     taborder = 1
-                    hint = '0 -> accelerated,'#10'-1 -> paged'
+                    hint = '0 = accelerated,'#10'-1 = paged'
                     bounds_x = 104
                     bounds_y = 0
                     bounds_cx = 42
@@ -1131,7 +1131,7 @@ object projectoptionsfo: tprojectoptionsfo
                     0
                   )
                   taborder = 2
-                  hint = 'End of line style for writing. eol_default -> use original style.'
+                  hint = 'End of line style for writing. eol_default = use original style.'
                   bounds_x = 247
                   bounds_y = 0
                   bounds_cx = 116

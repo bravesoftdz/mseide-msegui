@@ -29,16 +29,16 @@ findinfiledialog=62
  [findinfileadialogfo.wholeword]
  value=0
  [findinfileadialogfo.inprojectdir]
- value=1
+ value=0
  [findinfileadialogfo.casesensitive]
  value=0
  [findinfileadialogfo.indirectories]
- value=0
+ value=1
  [findinfileadialogfo.mask]
- value="*.pas" "*.pp" "*.inc"
+ value= "*.mfm"
  history=3
-  "*.pas" "*.pp" "*.inc"
    "*.mfm"
+  "*.pas" "*.pp" "*.inc"
   "*.pas" "*.pp" "*.inc"  "*.*"
  [findinfileadialogfo.dir]
  filenames=1
@@ -54,8 +54,15 @@ findinfiledialog=62
  filefilterindex=0
  filefilter=*.mfm
  [findinfileadialogfo.findtext]
- value=';'
+ value=<
  history=20
+  <
+  ->
+  -> page
+  > accelerat
+  >
+  > accelerate
+  cl_none -> force none
   ';'
   ','
   ource has changed,
@@ -69,17 +76,10 @@ findinfiledialog=62
   Use Ctrl + arrow key
   accelerated
   Code template directories
-  martin
-  , 
-  "
-  ,
-   "
-  '<
-  >'
  [findinfileadialogfo]
  stackedunder=
- x=268
- y=415
+ x=407
+ y=256
  cx=339
  cy=275
 finddialog=8
@@ -219,7 +219,7 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=1
+ index=2
  [projectoptionsfo]
  stackedunder=
  x=275
@@ -510,7 +510,7 @@ makeoptionson=7
  100
  127
  4095
- 4
+ 127
 compilerusedon=29
  4031
  0
@@ -830,34 +830,49 @@ findhistory=20
  workpan
  ttimer
 findoptions=1
-editpos=6
- 0,-1073741823
- 0,2
- 0,1137
+editpos=9
  0,-1073741823
  0,-1073741823
+ 0,1119
  0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,1133
+ 0,1969
+ 0,179
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
 bookmarks3=0
 bookmarks4=0
 bookmarks5=0
-sourcefiles=6
+bookmarks6=0
+bookmarks7=0
+bookmarks8=0
+sourcefiles=9
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/datatypeform.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/mseresourceparser.pas
  /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
  ${PROJECTDIR}/synregexpr.pas
-relpaths=6
+ /home/fred/mseide-msegui/apps/ide/projectoptionsform.mfm
+ /home/fred/mseide-msegui/apps/ide/actionsmodule.mfm
+ /home/fred/mseide-msegui/apps/ide/guitemplates.mfm
+relpaths=9
  msei18n.pas
  datatypeform.pas
  main.pas
  mseresourceparser.pas
  apps/ide/lang_ru_mseidenew/i18n.trd
  synregexpr.pas
-ismoduletexts=6
+ ../apps/ide/projectoptionsform.mfm
+ ../apps/ide/actionsmodule.mfm
+ ../apps/ide/guitemplates.mfm
+ismoduletexts=9
+ 0
+ 0
+ 0
  0
  0
  0
@@ -881,10 +896,20 @@ nomenumodules=3
  0
  0
 [sourcefo.files_tab]
+order=9
+ 0
+ 1
+ 2
+ 6
+ 8
+ 7
+ 3
+ 4
+ 5
 firsttab=0
-index=2
+index=4
 [layout]
-windowlayout=604
+windowlayout=614
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -924,7 +949,7 @@ windowlayout=604
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -999,8 +1024,8 @@ windowlayout=604
  ny=0
  ncx=0
  ncy=0
- x=0
- y=29
+ x=-91
+ y=102
  cx=1366
  cy=706
  rcx=0
@@ -1110,7 +1135,7 @@ windowlayout=604
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1125,12 +1150,12 @@ windowlayout=604
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=291
- width0=129
+ propcolwidthref=306
+ width0=136
  sortdescend0=0
- width1=156
+ width1=164
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1351,7 +1376,7 @@ windowlayout=604
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ value=/home/fred/mseide-msegui/apps/ide/guitemplates.mfm
  history=20
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
@@ -1394,8 +1419,18 @@ windowlayout=604
  rcx=0
  rcy=0
  [sourcefo.files_tab]
+ order=9
+  0
+  1
+  2
+  6
+  8
+  7
+  3
+  4
+  5
  firsttab=0
- index=2
+ index=4
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1435,7 +1470,7 @@ windowlayout=604
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_mainfo_mse_
+ stackedunder=_mse_datatypefo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1454,7 +1489,7 @@ windowlayout=604
  [_mse_datatypefo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1473,7 +1508,7 @@ windowlayout=604
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_datatypefo_mse_
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
