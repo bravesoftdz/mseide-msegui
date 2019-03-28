@@ -801,12 +801,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=doread
 findhistory=20
+ doread
  treeonupdaterowvalues
  datacols
  color
- doread
  acomp
  allbo
  yellow
@@ -824,28 +824,33 @@ findhistory=20
  datatypefo
  "
 findoptions=1
-editpos=4
- 2,264
+editpos=5
+ 0,1131
  0,0
- 0,0
+ 0,-1073741823
+ 0,-1073741823
  0,0
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
 bookmarks3=0
-sourcefiles=4
+bookmarks4=0
+sourcefiles=5
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/project.pas
  ${PROJECTDIR}/main.mfm
  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
-relpaths=4
+ /home/fred/mseide-mseguicontext3/tools/i18n/main.mfm
+relpaths=5
  main.pas
  project.pas
  main.mfm
- ../../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
-ismoduletexts=4
+ ../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ ../../mseide-mseguicontext3/tools/i18n/main.mfm
+ismoduletexts=5
  0
  0
+ -1
  -1
  -1
 modules=0
@@ -853,15 +858,16 @@ moduleoptions=0
 visiblemodules=0
 nomenumodules=0
 [sourcefo.files_tab]
-order=4
+order=5
  0
- 4
- 2
+ 5
  1
+ 2
+ 3
 firsttab=0
-index=0
+index=1
 [layout]
-windowlayout=582
+windowlayout=583
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1328,9 +1334,11 @@ windowlayout=582
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ value=/home/fred/mseide-mseguicontext3/tools/i18n/main.mfm
  history=50
   /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/main2.pas
+  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
   /home/fred/mseide-mseguipocontext/tools/i18n/main.pas
   /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
@@ -1378,8 +1386,6 @@ windowlayout=582
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
   /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
   /home/fred/uos/examples/consoleplay.pas
-  /home/fred/mselangmoi/parser.pas
-  /home/fred/mselangmoi/interpreter/mli.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1401,11 +1407,12 @@ windowlayout=582
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=4
+ order=5
   0
-  4
-  2
+  5
   1
+  2
+  3
  firsttab=0
  index=1
  [cpuc86_64fo]

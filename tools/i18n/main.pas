@@ -281,17 +281,18 @@ procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
 var
  hasfound, hasfoundtext, hasvirg : boolean;
 int1, x : integer;
-str2, acomp, anont, acom, astro,astrt, astrtemp, nodo, asdo : utf8String;
+str2, acomp, anont, anonttemp, acom, acomtmp, astro,astrt, astrtemp, nodo, asdo : utf8String;
 astrtraw : RawByteString;
 
 begin
  with tpropinfoitem(aitem) do begin
   if node <> nil then begin
    with node do begin  
-  
+    comment[aindex]:= info.comment;
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
-    
+    donottranslate[aindex]:= info.donottranslate;
+     
     hasvirg := false;
    
     if doreset = false then begin 
@@ -301,6 +302,8 @@ begin
        hasfound := false;
        hasfoundtext := false;
        astrtemp := '';
+       anonttemp := '';
+       acomtmp := '';
        
       if importtype < 1 then begin 
         while (x < length(valuearray)) and (hasfound = false) do
@@ -342,6 +345,8 @@ begin
           begin
            hasfoundtext := true;
            astrtemp := astrt;
+           anonttemp := anont;
+           acomtmp := acom;
            if system.pos(rootstring(','),acomp) > 0 then hasfound := true; 
            end; 
       
@@ -350,45 +355,52 @@ begin
           if (hasfound = false) and (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) then
          begin 
-           hasfoundtext := true;
+           if (trim(valuetext)) <> trim((astrt)) then hasfoundtext := true;
            astrtemp := astrt;
+           anonttemp := anont;
+           acomtmp := acom;
            if system.pos(rootstring(','),acomp) > 0 then hasfound := true; 
            //  writeln(astrt);
+           //exit;
          end;      
          end;
          inc(x);   
         end; 
   
-     if (hasfoundtext = true) and (hasfound = false) then
+     if (hasfoundtext = true) or (hasfound = true) then
        begin
          astrt := astrtemp;
+         anont := anonttemp;
+         acom := acomtmp;
          astrt := trim(astrt);
+         
          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
                 
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         
+         info.comment := acom;  
+         comment[aindex]:= acom; 
       
          if anont = 'T' then begin
          info.donottranslate := true;
          donottranslate[aindex]:= true;
-         end else donottranslate[aindex]:= info.donottranslate;     
-         comment[aindex]:= acom;
-        end else
-          begin
-          donottranslate[aindex]:= info.donottranslate;
-          comment[aindex]:= info.comment;
-          end;
-      
+         end else
+         begin
+         info.donottranslate := false;
+         donottranslate[aindex]:= false;
+         end;
+                 
       if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
       begin    
       info.donottranslate := true;
       donottranslate[aindex]:= true;
       end;  
      end; 
-        
+    end;    
         ////////////////
      if importtype = 1 then begin 
-       astrtemp := '';
+      
        while (x < length(valuearray)) and (hasfound = false) do
         begin
          str2 := (valuearray[x]);
@@ -414,7 +426,7 @@ begin
          
          if trim((nodo)) = trim((asdo))   then 
           begin
-           hasfoundtext := true;
+          if (trim(valuetext)) <> trim((astrt)) then hasfoundtext := true;
            astrtemp := astrt;
           
            if system.pos(acomp,rootstring(',')) > 0 then 
@@ -423,18 +435,17 @@ begin
          // writeln('------------------');
          // writeln(acomp);
          // writeln(astrt);
-            exit;
+           // exit;
           end; 
+        
           end;
          end; 
         inc(x);   
        end;    
-       
-       comment[aindex]:= info.comment; 
-            
+  
           if hasfoundtext or hasfound then
        begin
-          astrt := astrtemp;
+         astrt := astrtemp;
          astrt := trim(astrt);
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
@@ -443,24 +454,15 @@ begin
           begin    
           info.donottranslate := true;
           donottranslate[aindex]:= true;
-          end else donottranslate[aindex]:= info.donottranslate;   
+          end;  
            
-       end else
-       begin
-       donottranslate[aindex]:= info.donottranslate;
-       comment[aindex]:= info.comment;
        end;
       end;
    
    //////////////////////////////
-     end else
-       begin
-       donottranslate[aindex]:= info.donottranslate;
-       comment[aindex]:= info.comment;
-       end;
-  
-     end;
-          
+    end;
+    end;
+    
      for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
@@ -469,39 +471,38 @@ begin
     if isloaded = false then begin
      if hasfound or hasfoundtext then
      begin
-       if trim(astrt) <> '' then
+       if (trim(astrt) <> '') and  (astrt <> valuetext) then
        begin
        gridvalue[aindex]:= (astrt);
        info.variants[int1] := (astrt);
        end else
        begin
-       gridvalue[aindex]:=valuetext;
+       if  (info.variants[int1] <> '') then
+       gridvalue[aindex]:= (info.variants[int1])
+       else begin
+       gridvalue[aindex]:=   valuetext;
        info.variants[int1] := valuetext;
        end;
-     
-      end else
+      end;
+      end else begin // not found
       begin
-       gridvalue[aindex]:=valuetext;
+       if (info.variants[int1] <> valuetext) and (info.variants[int1] <> '') then
+       gridvalue[aindex]:= (info.variants[int1])
+       else begin
+       gridvalue[aindex]:=   valuetext;
        info.variants[int1] := valuetext;
-      end; 
-     end else 
-     if info.variants[int1] <> '' then     
-     gridvalue[aindex]:= (info.variants[int1]) else
-     begin
-     gridvalue[aindex]:= valuetext;
-     info.variants[int1] := valuetext;
-     end;  
-     end else begin 
-      gridvalue[aindex]:=valuetext;
-      info.variants[int1] := valuetext;
+     end;
+     end;
+     end;
+     end;
      end;
       end
       else begin
      // gridvalue[aindex]:= '';
-     gridvalue[aindex]:= valuetext;
+      gridvalue[aindex]:= valuetext;
       end;
      end;
-    end;
+     end; 
    end;
   end;
  end;
@@ -974,14 +975,11 @@ application.processmessages;
    
    if importtype = 1 then begin
     if trim(str1) <> '' then begin
-   //  str4 := 'BoooooooM'; 
    if (utf8copy(str1,1,7) = 'msgctxt') then 
-  //    if  (system.pos('msgctxt',str1) > 0) then 
      begin
-          str4 := (utf8copy(str1,10,length(str1)-10)) ;
+        str4 := (utf8copy(str1,10,length(str1)-10)) ;
        // writeln('------------------');
        //   writeln(str4);
-          // str4 := ''
       end     
        else   
        if (copy(str1,1,5) = 'msgid') then
@@ -1036,12 +1034,12 @@ application.processmessages;
     end;
  end;
  
-  if importtype = 0 then begin
-      setlength(valuearray,length(valuearray)+1);  
+     if importtype = 0 then begin
+        setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] :=
         (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
      // writeln(((valuearray[length(valuearray)-1])));
-    end else begin  
+       end else begin  
         setlength(valuearray,length(valuearray)+1);  
          str2 :=str2 + ';' + str3 ; 
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
@@ -1086,12 +1084,10 @@ application.processmessages;
       variants:= avariants; 
       donottranslate:= notranslate;
     end;  
- 
-     end;
-   end
-   else begin
-    //todo: errormesage
    end;
+  end else begin
+    //todo: errormesage
+  end;
   end;
  // }
  finally
@@ -1103,7 +1099,6 @@ application.processmessages;
  if ttimer2.Enabled then
  ttimer2.restart // to reset
  else ttimer2.Enabled := True;
-
 end;
 
 procedure tmainfo.doimport(stream: ttextdatastream; aencoding: charencodingty);
