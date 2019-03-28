@@ -1712,11 +1712,11 @@ begin
    if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
           not donottranslate[row]
      then begin
-     if (system.pos('>',value[row]) > 1) or
-       (system.pos('>',tstringedit(grid.datacols[col].editwidget)[row]) > 1) or
-     (system.pos('<',value[row]) > 1) or
-       (system.pos('<',tstringedit(grid.datacols[col].editwidget)[row]) > 1) then
-        cellinfo.color:= cl_ltyellow else
+//     if (system.pos('>',value[row]) > 1) or
+//       (system.pos('>',tstringedit(grid.datacols[col].editwidget)[row]) > 1) or
+//     (system.pos('<',value[row]) > 1) or
+//       (system.pos('<',tstringedit(grid.datacols[col].editwidget)[row]) > 1) then
+//        cellinfo.color:= cl_ltyellow else
       if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
       or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
        then  cellinfo.color:= cl_ltred
