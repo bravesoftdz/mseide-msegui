@@ -31,7 +31,7 @@ object datatypefo: tdatatypefo
     bounds_cx = 450
     bounds_cy = 97
     object allbo: tbooleaneditradio
-      frame.caption = 'All '
+      frame.caption = 'All'
       frame.localprops = []
       frame.localprops1 = []
       frame.outerframe = (
