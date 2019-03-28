@@ -341,25 +341,45 @@ begin
            
          if trim((nodo)) = trim((asdo))   then 
           begin
+           if (trim(valuetext)) <> trim((astrt)) then begin
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
-           if system.pos(rootstring(','),acomp) > 0 then hasfound := true; 
+           end;
+              
+           if system.pos(rootstring(','),acomp) > 0 then begin
+           astrtemp := astrt;
+           anonttemp := anont;
+           acomtmp := acom;
+           hasfound := true; 
+             //exit;
+            end; 
            end; 
       
          end else 
          begin
-          if (hasfound = false) and (trim(valuetext) <> '') and 
+          if (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) then
          begin 
-           if (trim(valuetext)) <> trim((astrt)) then hasfoundtext := true;
+           if (trim(valuetext)) <> trim((astrt)) then
+           begin
+           hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
-           if system.pos(rootstring(','),acomp) > 0 then hasfound := true; 
-           //  writeln(astrt);
-           //exit;
+           end;
+           
+           if system.pos(rootstring(','),acomp) > 0 then
+           begin
+           anonttemp := anont;
+           acomtmp := acom;
+           astrtemp := astrt;
+           hasfound := true; 
+            //writeln(rootstring(',') + ' name ' + info.name);
+             //exit;
+            end;
+       
          end;      
          end;
          inc(x);   
@@ -424,11 +444,15 @@ begin
          
          if trim((nodo)) = trim((asdo))   then 
           begin
-          if (trim(valuetext)) <> trim((astrt)) then hasfoundtext := true;
+          if (trim(valuetext)) <> trim((astrt)) then
+          begin
+           hasfoundtext := true;
            astrtemp := astrt;
+           end;
           
            if system.pos(acomp,rootstring(',')) > 0 then 
            begin
+           astrtemp := astrt;
            hasfound := true; 
          // writeln('------------------');
          // writeln(acomp);

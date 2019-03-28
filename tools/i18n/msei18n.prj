@@ -834,12 +834,12 @@ findhistory=20
  "
 findoptions=1
 editpos=6
- 0,468
- 0,0
+ 0,436
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,26
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -858,7 +858,7 @@ relpaths=6
  project.pas
  main.mfm
  mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
- ../mseide-mseguicontext3/tools/i18n/main.mfm
+ mseide-mseguicontext3/tools/i18n/main.mfm
  msei18n.pas
 ismoduletexts=6
  0
@@ -875,10 +875,10 @@ nomenumodules=0
 order=6
  0
  1
+ 4
  5
  2
  3
- 4
 firsttab=0
 index=0
 [layout]
@@ -1351,8 +1351,8 @@ windowlayout=554
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
-  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/main2.pas
   /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
   /home/fred/mseide-mseguipocontext/tools/i18n/main.pas
@@ -1395,10 +1395,10 @@ windowlayout=554
  order=6
   0
   1
+  4
   5
   2
   3
-  4
  firsttab=0
  index=0
  [cpuc86_64fo]
