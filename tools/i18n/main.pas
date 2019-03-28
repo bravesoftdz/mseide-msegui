@@ -1073,7 +1073,7 @@ application.processmessages;
      // writeln(((valuearray[length(valuearray)-1])));
        end else begin  
         setlength(valuearray,length(valuearray)+1);  
-         str2 :=str2 + ';' + str3 ; 
+         str2 := str4 + ';' + str2 + ';' + str3 ; 
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);

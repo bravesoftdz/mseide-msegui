@@ -810,12 +810,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=doread
 findhistory=20
+ doread
  treeonupdaterowvalues
  yellow
  color
- doread
  datacols
  acomp
  allbo
@@ -834,7 +834,7 @@ findhistory=20
  "
 findoptions=1
 editpos=6
- 0,436
+ 0,1075
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -872,17 +872,10 @@ moduleoptions=0
 visiblemodules=0
 nomenumodules=0
 [sourcefo.files_tab]
-order=6
- 0
- 1
- 4
- 5
- 2
- 3
 firsttab=0
 index=0
 [layout]
-windowlayout=554
+windowlayout=547
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1392,13 +1385,6 @@ windowlayout=554
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=6
-  0
-  1
-  4
-  5
-  2
-  3
  firsttab=0
  index=0
  [cpuc86_64fo]
