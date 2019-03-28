@@ -300,6 +300,7 @@ begin
        x := 0;   
        hasfound := false;
        hasfoundtext := false;
+       astrtemp := '';
        
       if importtype < 1 then begin 
         while (x < length(valuearray)) and (hasfound = false) do
@@ -357,9 +358,8 @@ begin
          end;
          inc(x);   
         end; 
-       
-   
-      if (hasfoundtext = true) and (hasfound = false) then
+  
+     if (hasfoundtext = true) and (hasfound = false) then
        begin
          astrt := astrtemp;
          astrt := trim(astrt);
@@ -384,17 +384,24 @@ begin
       info.donottranslate := true;
       donottranslate[aindex]:= true;
       end;  
-       end; 
+     end; 
         
         ////////////////
-      if importtype = 1 then begin 
+     if importtype = 1 then begin 
+       astrtemp := '';
        while (x < length(valuearray)) and (hasfound = false) do
         begin
          str2 := (valuearray[x]);
+           
          str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
-         astro := (utf8copy(str2,1,system.pos(';',str2)-1));
-         astrt := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2))) ;  
-                  
+         acomp := (utf8copy(str2,1,system.pos(';',str2)-1));
+         
+         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)-1)) ;
+         astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
+         
+         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)-1)) ;
+         astrt := utf8copy(str2,1,length(str2)) ;  
+                        
          if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
          begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
@@ -407,30 +414,45 @@ begin
          
          if trim((nodo)) = trim((asdo))   then 
           begin
+           hasfoundtext := true;
+           astrtemp := astrt;
+          
+           if system.pos(acomp,rootstring(',')) > 0 then 
+           begin
            hasfound := true; 
-           astrt := (utf8StringReplace(astrt, '"', '', [rfReplaceAll])); 
-           // writeln(astro);
-          // writeln(astrt);
+         // writeln('------------------');
+         // writeln(acomp);
+         // writeln(astrt);
+            exit;
           end; 
+          end;
          end; 
         inc(x);   
        end;    
        
        comment[aindex]:= info.comment; 
-       
-         if hasfound then
+            
+          if hasfoundtext or hasfound then
        begin
+          astrt := astrtemp;
+         astrt := trim(astrt);
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
-        end;   
-                       
+                          
           if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
           begin    
           info.donottranslate := true;
           donottranslate[aindex]:= true;
           end else donottranslate[aindex]:= info.donottranslate;   
            
-      end; 
+       end else
+       begin
+       donottranslate[aindex]:= info.donottranslate;
+       comment[aindex]:= info.comment;
+       end;
+      end;
+   
+   //////////////////////////////
      end else
        begin
        donottranslate[aindex]:= info.donottranslate;
@@ -439,13 +461,13 @@ begin
   
      end;
           
-    for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
+     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
     
     if doreset = false then begin  
     if isloaded = false then begin
-     if (hasfoundtext = true) and (hasfound = false) then
+     if hasfound or hasfoundtext then
      begin
        if trim(astrt) <> '' then
        begin
@@ -459,15 +481,8 @@ begin
      
       end else
       begin
-      if hasfound then
-      begin
-       if info.variants[int1] <> '' then     
-      gridvalue[aindex]:= (info.variants[int1]);
-      end else
-      begin
-      gridvalue[aindex]:=valuetext;
-      info.variants[int1] := valuetext;
-      end; 
+       gridvalue[aindex]:=valuetext;
+       info.variants[int1] := valuetext;
       end; 
      end else 
      if info.variants[int1] <> '' then     
@@ -482,9 +497,8 @@ begin
      end;
       end
       else begin
-      gridvalue[aindex]:= '';
-    // gridvalue[aindex]:= valuetext;
-    // info.variants[int1] := valuetext;
+     // gridvalue[aindex]:= '';
+     gridvalue[aindex]:= valuetext;
       end;
      end;
     end;
@@ -847,6 +861,11 @@ begin
  }
   
  for x:=0 to grid.rowcount - 1 do begin
+ 
+  if tstringedit(grid.datacols[grid.datacols.count-1].editwidget)[x] = ''
+      then   tstringedit(grid.datacols[grid.datacols.count-1].editwidget)[x] :=
+  tstringedit(grid.datacols[4].editwidget)[x];    
+ 
     if (stringonly.value = false) and (nont.value = true) then
     begin
       if (donottranslate[x]) then 
@@ -904,7 +923,7 @@ var
  acomment: msestring; 
  node: tpropinfonode;
  str1 : msestring;
- str2, str3, strtemp : utf8String;
+ str2, str3, str4, strtemp : utf8String;
  ar1: stringarty;
  avariants: msestringarty;
  pointers: pointerarty;
@@ -927,6 +946,7 @@ application.processmessages;
     
     str3 := '';
     str2 := '';
+    str4 := '';
     
     if (system.pos('name,type,notranslate,comment,value',str1) > 0) then
     importtype := 0 else importtype := 1;
@@ -954,10 +974,21 @@ application.processmessages;
    
    if importtype = 1 then begin
     if trim(str1) <> '' then begin
-      if (copy(str1,1,5) = 'msgid') then
+   //  str4 := 'BoooooooM'; 
+   if (utf8copy(str1,1,7) = 'msgctxt') then 
+  //    if  (system.pos('msgctxt',str1) > 0) then 
+     begin
+          str4 := (utf8copy(str1,10,length(str1)-10)) ;
+       // writeln('------------------');
+       //   writeln(str4);
+          // str4 := ''
+      end     
+       else   
+       if (copy(str1,1,5) = 'msgid') then
         begin
          setlength(valuearray,length(valuearray)+1);  
-         str2 :=str2 + ';' + str3 ; 
+         str2 := str4 + ';' + str2 + ';' + str3  ; 
+         // writeln(str2);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
@@ -965,34 +996,40 @@ application.processmessages;
          // writeln(((valuearray[length(valuearray)-1])));
          str2 := utf8copy(str1,8,length(str1)-8) ;
          str3 := '';
+         // str4 := '';
          isid := true;
          isstring := false;
          end
          else
-       if (utf8copy(str1,1,6) = 'msgstr') then begin 
+          if (utf8copy(str1,1,6) = 'msgstr') then begin 
          str3 := (utf8copy(str1,9,length(str1)-9)) ;
-         // str3 := wideStringReplace(str3, '\n', '', [rfReplaceAll]);
+         str3 := wideStringReplace(str3, '\n', '', [rfReplaceAll]);
           isid := false;
           isstring := true;
-         end
+         end 
          else 
        if isid then
        begin
+        if  (system.pos('msgctxt',str1) > 0) then else
+        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin
         strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]);
         str2 := str2 + strtemp  + sLineBreak ;
         end else str2 := str2 + strtemp;
-        
+        end;
         end
         else 
        if isstring then 
        begin
+        if  (system.pos('msgctxt',str1) > 0) then else
+        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin   
-        strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]); 
+         strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]); 
         str3 := (str3 + strtemp  + sLineBreak) ;
         end else str3 := str3 + strtemp;
+        end;
         end;
       end;  
     
@@ -1039,7 +1076,9 @@ application.processmessages;
     pointers[int1 + variantshift]:= @avariants[int1];
    end;
    if stream.readrecord(pointers,str1) then begin
-    node:= rootnode.findsubnode(','+aname);
+   if importtype = 0 then
+    node:= rootnode.findsubnode(','+aname)
+    else  node := nil;
    
     if node <> nil then begin
      with node.info do begin
