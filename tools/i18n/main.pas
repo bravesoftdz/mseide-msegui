@@ -294,10 +294,8 @@ begin
     donottranslate[aindex]:= info.donottranslate;
      
     hasvirg := false;
-   
-    if doreset = false then begin 
-       
-    if isloaded = false then begin
+ 
+    if (doreset = false) and (isloaded = false) then begin
        x := 0;   
        hasfound := false;
        hasfoundtext := false;
@@ -458,10 +456,8 @@ begin
            
        end;
       end;
-   
-   //////////////////////////////
     end;
-    end;
+    
     
      for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
@@ -493,8 +489,20 @@ begin
        info.variants[int1] := valuetext;
      end;
      end;
+     
+     if donottranslate[aindex] then
+     begin
+     gridvalue[aindex]:=    '';
+     info.variants[int1] := '';
      end;
+     
      end;
+     end else begin
+     gridvalue[aindex]:= (info.variants[int1])
+     end;
+     end else begin
+     gridvalue[aindex]:=   valuetext;
+     info.variants[int1] := valuetext;
      end;
       end
       else begin
@@ -1717,6 +1725,9 @@ begin
        then  cellinfo.color:= cl_ltred
       else cellinfo.color:= cl_ltgreen;
       end;
+     //  else 
+     // if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
+       //    donottranslate[row] then value[row] := '';
    end;
     
  end;

@@ -226,6 +226,15 @@ options=114
  y=66
  cx=839
  cy=634
+settings=8
+ [settings_form]
+ x=448
+ y=98
+ cx=469
+ cy=539
+ wsize=0
+ active=1
+ visible=1
 stringlisteditor=5
  [stringlisteditor]
  x=177
@@ -785,7 +794,7 @@ files=
  a=0,8228,6,Text Files
  )
 [componentstore]
-storedir=/home/fred/mseguinew/mseide-msegui/apps/ide/compstore/
+storedir=/home/fred/mseide-msegui/apps/ide/compstore/
 filename=
 [components]
 [selecteditpage]
@@ -801,15 +810,15 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=doread
+finddtext=treeonupdaterowvalues
 findhistory=20
- doread
  treeonupdaterowvalues
- datacols
+ yellow
  color
+ doread
+ datacols
  acomp
  allbo
- yellow
  ,
  ','
  doexport
@@ -824,50 +833,56 @@ findhistory=20
  datatypefo
  "
 findoptions=1
-editpos=5
- 0,1131
+editpos=6
+ 0,468
  0,0
  0,-1073741823
  0,-1073741823
- 0,0
+ 0,-1073741823
+ 0,26
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
 bookmarks3=0
 bookmarks4=0
-sourcefiles=5
+bookmarks5=0
+sourcefiles=6
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/project.pas
  ${PROJECTDIR}/main.mfm
  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
  /home/fred/mseide-mseguicontext3/tools/i18n/main.mfm
-relpaths=5
+ ${PROJECTDIR}/msei18n.pas
+relpaths=6
  main.pas
  project.pas
  main.mfm
- ../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
- ../../mseide-mseguicontext3/tools/i18n/main.mfm
-ismoduletexts=5
+ mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ ../mseide-mseguicontext3/tools/i18n/main.mfm
+ msei18n.pas
+ismoduletexts=6
  0
  0
  -1
  -1
  -1
+ 0
 modules=0
 moduleoptions=0
 visiblemodules=0
 nomenumodules=0
 [sourcefo.files_tab]
-order=5
+order=6
  0
- 5
  1
+ 5
  2
  3
+ 4
 firsttab=0
-index=1
+index=0
 [layout]
-windowlayout=583
+windowlayout=554
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1334,8 +1349,9 @@ windowlayout=583
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-mseguicontext3/tools/i18n/main.mfm
- history=50
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ history=20
+  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/main2.pas
   /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
@@ -1355,37 +1371,6 @@ windowlayout=583
   /home/fred/ideu/src/confcompiler.pas
   /home/fred/ideu/src/confideu.pas
   /home/fred/ideu/src/confcompiler.mfm
-  /home/fred/msegui/tools/i18n/main.pas
-  /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
-  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
-  /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
-  /home/fred/mseide-mseguiru/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/project.pas
-  /home/fred/ideu/src/languages/lang_ru/i18n.trd
-  /home/fred/ideu/src/languages/lang_ru/i18n.trp
-  /home/fred/ideu/src/languages/lang_ru/actionsmodule_mfm.pas
-  /home/fred/mseide-msegui2/tools/i18n/main.pas
-  /home/fred/strumpract/src/filelistform.pas
-  /home/fred/mselang/src/main.pas
-  /home/fred/Downloads/MSE/lang_ru/i18n.trd
-  /home/fred/Downloads/MSE/lang_ru/i18n.trp
-  /home/fred/Downloads/MSE/msei18n
-  /home/fred/mseguinew/mseide-msegui/tools/i18n/main.pas
-  /home/fred/mseguinew/mseide-msegui/apps/ide/mseide.pas
-  /home/fred/ideu/src/languages/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/tools/i18n/project.pas
-  /home/fred/mseguinew/mseide-mseguitest/tools/i18n/project.pas
-  /home/fred/main.pas
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/fr/i18n.trp
-  /home/fred/mseguinew/mseide-msegui/apps/ide/lang/ru/i18n.trd
-  /home/fred/mseguinew/mseide-msegui/lib/common/kernel/windows/mseguiintf.pas
-  /home/fred/uos/examples/uos_libsndfile.pas
-  /home/fred/uos/examples/conswebstream.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/editpage1form.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/baseeditpageform.pas
-  /home/fred/Downloads/mseuniverse-master/samples/forms/formintabpage/main.pas
-  /home/fred/uos/examples/consoleplay.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1407,14 +1392,15 @@ windowlayout=583
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=5
+ order=6
   0
-  5
   1
+  5
   2
   3
+  4
  firsttab=0
- index=1
+ index=0
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
