@@ -54,8 +54,9 @@ findinfiledialog=62
  filefilterindex=0
  filefilter=*.mfm
  [findinfileadialogfo.findtext]
- value=datatypefo
+ value=csv
  history=20
+  csv
   datatypefo
   parent
   info.
@@ -75,7 +76,6 @@ findinfiledialog=62
   t'-'Options
   ue]{,[name],[val
   Stop, unblockable
-  Unit, includ
  [findinfileadialogfo]
  stackedunder=
  x=407
@@ -502,11 +502,14 @@ settingsstorage=0
 settingsprojecttree=0
 settingsautoload=0
 settingsautosave=0
-modulenames=1
+modulenames=2
+ FILEDIALOGRES
  PROJECTFO
-moduletypes=1
+moduletypes=2
+ TFILEDIALOGRES
  TPROJECTFO
-modulefiles=1
+modulefiles=2
+ /home/fred/mseide-msegui/lib/common/dialogs/msefiledialogres.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
 befcommandon=0
 makeoptionson=7
@@ -813,8 +816,18 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=treeonupdaterowvalues
+finddtext=defaultext
 findhistory=20
+ defaultext
+ defaulext
+ replace
+ filenamedataentered
+ datastream
+ writerecord
+ writeexprecord
+ doexport
+ filind
+ datatype
  treeonupdaterowvalues
  writeln
  doread
@@ -825,25 +838,19 @@ findhistory=20
  datacols
  acomp
  allbo
- ,
- ','
- doexport
- writerecord
- writeexprecord
- importonexecute
- importtype
- copyu
- Data exchange files
- Yes you did it!
 findoptions=1
-editpos=7
- 0,323
+editpos=11
+ 0,1287
+ 0,127
+ 0,-1073741823
+ 0,-1073741823
  0,0
+ 0,0
+ 0,0
+ 0,1501
  0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
+ 0,0
+ 0,0
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -851,51 +858,75 @@ bookmarks3=0
 bookmarks4=0
 bookmarks5=0
 bookmarks6=0
-sourcefiles=7
+bookmarks7=0
+bookmarks8=0
+bookmarks9=0
+bookmarks10=0
+sourcefiles=11
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/project.pas
  ${PROJECTDIR}/main.mfm
  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
- /home/fred/mseide-mseguicontext3/tools/i18n/main.mfm
+ /home/fred/mseide-msegui/lib/common/kernel/msestream.pas
  ${PROJECTDIR}/msei18n.pas
  ${PROJECTDIR}/msei18n.pas
-relpaths=7
+ /home/fred/mseide-msegui/lib/common/dialogs/msefiledialog.pas
+ ${PROJECTDIR}/messagesform.pas
+ /home/fred/mseide-msegui/lib/common/dialogs/msefiledialogres.pas
+ /home/fred/mseide-msegui/lib/common/dialogs/msefiledialog.mfm
+relpaths=11
  main.pas
  project.pas
  main.mfm
- ../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
- mseide-mseguicontext3/tools/i18n/main.mfm
+ mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ ../lib/common/kernel/msestream.pas
  msei18n.pas
  msei18n.pas
-ismoduletexts=7
+ ../lib/common/dialogs/msefiledialog.pas
+ messagesform.pas
+ ../lib/common/dialogs/msefiledialogres.pas
+ ../lib/common/dialogs/msefiledialog.mfm
+ismoduletexts=11
  0
  0
  -1
  -1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
  -1
- 0
- 0
-modules=1
+modules=2
+ /home/fred/mseide-msegui/lib/common/dialogs/msefiledialogres.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
-moduleoptions=1
+moduleoptions=2
  0
-visiblemodules=1
+ 0
+visiblemodules=2
  -1
-nomenumodules=1
+ -1
+nomenumodules=2
+ 0
  0
 [sourcefo.files_tab]
-order=7
+order=11
  0
  3
- 4
- 5
  6
  1
+ 4
+ 8
  2
+ 5
+ 7
+ 10
+ 9
 firsttab=0
-index=0
+index=3
 [layout]
-windowlayout=574
+windowlayout=597
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1121,7 +1152,7 @@ windowlayout=574
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=
+ stackedunder=mainfo
  parent=
  mdistate=0
  nx=0
@@ -1136,12 +1167,12 @@ windowlayout=574
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [objectinspectorfo.grid]
- propcolwidthref=306
- width0=136
+ propcolwidthref=291
+ width0=129
  sortdescend0=0
- width1=164
+ width1=156
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1362,8 +1393,10 @@ windowlayout=574
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ value=/home/fred/mseide-msegui/lib/common/dialogs/msefiledialog.mfm
  history=20
+  /home/fred/mseide-msegui/tools/i18n/msei18n.pas
+  /home/fred/mseide-msegui/tools/i18n/main.mfm
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
   /home/fred/mseide-msegui/tools/i18n/main.pas
@@ -1382,8 +1415,6 @@ windowlayout=574
   /home/fred/ideu/src/finddialogform.pas
   /home/fred/ideu/src/ideusettings.pas
   /home/fred/ideu/src/conffpgui.pas
-  /home/fred/ideu/src/confcompiler.pas
-  /home/fred/ideu/src/confideu.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1405,21 +1436,25 @@ windowlayout=574
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=7
+ order=11
   0
   3
-  4
-  5
   6
   1
+  4
+  8
   2
+  5
+  7
+  10
+  9
  firsttab=0
- index=0
+ index=9
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=_mse_filedialogres_mse_
  parent=
  mdistate=0
  nx=0
@@ -1451,10 +1486,29 @@ windowlayout=574
  cy=515
  rcx=0
  rcy=0
- [_mse_projectfo_mse_]
+ [_mse_filedialogres_mse_]
  splitdir=0
  useroptions=268451963
  stackedunder=targetconsolefo
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=93
+ y=396
+ cx=245
+ cy=117
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_projectfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0

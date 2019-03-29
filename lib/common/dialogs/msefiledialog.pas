@@ -1492,8 +1492,14 @@ end;
 
 procedure tfiledialogfo.filteronsetvalue(const sender: tobject;
   var avalue: msestring; var accept: boolean);
+var 
+str1:string;  
 begin
  listview.mask:= avalue;
+ str1 := avalue;
+ str1 := StringReplace(str1, '*', '', [rfReplaceAll]);
+ str1 := StringReplace(str1, '.', '', [rfReplaceAll]);      
+ defaultext:= str1;
 end;
 
 procedure tfiledialogfo.okonexecute(const sender: tobject);

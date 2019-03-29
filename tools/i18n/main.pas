@@ -834,6 +834,7 @@ var
  str1,str2: string;
  mstr3: msestring;
  int1: integer;
+ filind : integer;
 begin
  rec:= nil; //compilerwarning
  if ttreenode1(sender).fparent <> nil then begin
@@ -841,22 +842,28 @@ begin
    str1:= rootstring(',');
    str2:= ansistring(typedisp.enumname(ord(valuetype)));
    mstr3:= valuetext;
-   
-   rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+
+ filind := projectfo.impexpfiledialog.controller.filterindex;
  
- { 
-  if datatypefo.allbo.value then  
-  rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[])
-  else 
-  if datatypefo.allntbo.value then  
-  rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[])
-  else 
-  if datatypefo.txtbo.value then  
-  rec:= mergevarrec([mstr3],[]);
- 
-  if (datatypefo.allbo.value) or (datatypefo.txttrbo.value)
-  or (datatypefo.trabo.value) then
-  }
+  case filind of
+  // csv
+  0: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  1: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  // po
+  2: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  3: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  4: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  5: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  6: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  7: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  // txt
+  8: rec:= mergevarrec([mstr3],[]);
+  //  9: nothing here
+  // all
+  10: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  end;
+  
+   if (filind <> 1) and (filind <> 8) then
   
    for int1:= 0 to high(variants) do begin
     rec:= mergevarrec(rec,[variants[int1]]);
@@ -1212,32 +1219,54 @@ end;
 procedure tmainfo.doexport(stream: ttextdatastream; aencoding: charencodingty);
 var
 str1 : msestringarty;
+filind: integer;
 begin
 setlength(str1,1);
  stream.encoding:= aencoding;
  datastream:= stream;
  try
- datastream.writerecord(getcolumnheaders);
+  filind := projectfo.impexpfiledialog.controller.filterindex;
  
- {
- if datatypefo.allbo.value then
-  datastream.writerecord(getcolumnheaders) else
- if datatypefo.txttrbo.value then begin
-  str1[0] := 'value,translation';
-  datastream.writerecord(str1) end
- else if datatypefo.txtbo.value then begin
-  str1[0] := 'value';
-  datastream.writerecord(str1)
-  end
-  else if datatypefo.allntbo.value then begin
-  str1[0] := 'name,type,notranslate,comment,value';
-  datastream.writerecord(str1)
-  end
-  else if datatypefo.trabo.value then begin
-  str1[0] := 'translation';
-  datastream.writerecord(str1)
+  case filind of
+  // csv
+  0: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  1: begin
+     str1[0] := 'name,type,notranslate,comment,value';
+     datastream.writerecord(str1)
+     end;
+  // po  // todo
+  2: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  3: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  4: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  5: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  6: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  7: begin
+     datastream.writerecord(getcolumnheaders);
+     end;
+  // txt
+  8: begin
+     str1[0] := 'value';
+     datastream.writerecord(str1)
+     end;
+  9: begin
+     str1[0] := 'translation';
+     datastream.writerecord(str1)
+     end;
+  // all
+  10: datastream.writerecord(getcolumnheaders);
   end;
-  }
       
   writeexprecord(rootnode);
  finally
@@ -1249,11 +1278,11 @@ procedure tmainfo.exportonexecute(const sender: tobject);
 var
  stream: ttextdatastream;
  str1: filenamety;
+ filind : integer;
 begin
 if nostring.value then
 showmessage('Exportation with -no string- is not allowed.') else
     begin  
-    // datatypefo.show(true);   
     if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     showworkpan;
     application.processmessages;

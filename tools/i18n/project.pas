@@ -57,7 +57,9 @@ type
                  const acount: integer);
    procedure projectstatonbeforewritestat(const sender: TObject);
    procedure filenamedataentered(const sender: TObject);
+   
   public
+  // puttype : integer;
  //  colwidths: integerarty;
  end;
 

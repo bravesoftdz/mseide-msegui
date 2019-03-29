@@ -497,7 +497,6 @@ object projectfo: tprojectfo
         '*.*'
       )
     )
-    controller.defaultext = 'csv'
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'
     controller.captionsave = 'Save export file'
