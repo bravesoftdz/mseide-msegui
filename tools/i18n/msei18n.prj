@@ -813,12 +813,13 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=doread
+finddtext=writeln
 findhistory=20
+ writeln
  doread
+ treeonupdaterowvalues
  datatypefo
  export
- treeonupdaterowvalues
  yellow
  color
  datacols
@@ -829,7 +830,6 @@ findhistory=20
  doexport
  writerecord
  writeexprecord
- writeln
  importonexecute
  importtype
  copyu
@@ -837,7 +837,7 @@ findhistory=20
  Yes you did it!
 findoptions=1
 editpos=7
- 0,1039
+ 0,378
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -863,7 +863,7 @@ relpaths=7
  main.pas
  project.pas
  main.mfm
- ../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
  mseide-mseguicontext3/tools/i18n/main.mfm
  msei18n.pas
  msei18n.pas
@@ -880,18 +880,18 @@ modules=1
 moduleoptions=1
  0
 visiblemodules=1
- -1
+ 0
 nomenumodules=1
  0
 [sourcefo.files_tab]
 order=7
  0
- 3
- 4
  5
  6
  1
  2
+ 3
+ 4
 firsttab=0
 index=0
 [layout]
@@ -909,8 +909,8 @@ windowlayout=574
  ny=0
  ncx=0
  ncy=0
- x=81
- y=53
+ x=62
+ y=66
  cx=1156
  cy=619
  rcx=0
@@ -927,10 +927,10 @@ windowlayout=574
  ny=0
  ncx=0
  ncy=0
- x=3
- y=29
- cx=1360
- cy=706
+ x=234
+ y=199
+ cx=782
+ cy=358
  rcx=0
  rcy=0
  wsize=0
@@ -1407,12 +1407,12 @@ windowlayout=574
  [sourcefo.files_tab]
  order=7
   0
-  3
-  4
   5
   6
   1
   2
+  3
+  4
  firsttab=0
  index=0
  [cpuc86_64fo]
@@ -1469,7 +1469,7 @@ windowlayout=574
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
 [targetconsole]
 finddtext=
 findhistory=0

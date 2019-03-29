@@ -421,9 +421,18 @@ begin
       
        while (x < length(valuearray)) and (hasfound = false) do
         begin
+         astrt := '';
+         str2 := '';
          str2 := (valuearray[x]);
-           
-         str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
+        
+        { 
+           if system.pos('Типm',str2) > 0 then
+         begin
+         writeln('+++++++++++++++++++++++++'); 
+         writeln(str2); 
+         end;
+         }  
+        // str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
          acomp := (utf8copy(str2,1,system.pos(';',str2)-1));
          
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)-1)) ;
@@ -431,7 +440,7 @@ begin
          
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)-1)) ;
          astrt := utf8copy(str2,1,length(str2)) ;  
-                        
+                                 
          if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
          begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
@@ -469,6 +478,9 @@ begin
        begin
          astrt := astrtemp;
          astrt := trim(astrt);
+         // writeln('------------------');
+          //writeln(acomp);
+          //writeln(astrt);
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
                           
@@ -968,6 +980,7 @@ var
  int1 : integer;
  isstring : boolean = false;
  isid : boolean = false;
+ iscontext : boolean = false;
 begin
 isloaded := false;
 showworkpan;
@@ -990,6 +1003,7 @@ application.processmessages;
     importtype := 0 else importtype := 1;
 
    while not stream.eof do begin
+   str1 := '';
     stream.readln(str1); 
      strtemp := '';   
   if  importtype < 1 then begin  // trd mse format
@@ -1009,29 +1023,34 @@ application.processmessages;
      end;
      
      end;
+     
+     ///////////////
    
    if importtype = 1 then begin   // po files
    if trim(str1) <> '' then begin
    if (utf8copy(str1,1,7) = 'msgctxt') then 
      begin
+        str4 := '';
         str4 := (utf8copy(str1,10,length(str1)-10)) ;
-       // writeln('------------------');
-       //   writeln(str4);
+        iscontext := true;
+        isid := false;
+        isstring := false;
       end     
        else   
        if (copy(str1,1,5) = 'msgid') then
         begin
          setlength(valuearray,length(valuearray)+1);  
-         str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3  ; 
+         str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3 ; 
          // writeln(str2);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
          valuearray[length(valuearray)-1] := str2;
-         // writeln(((valuearray[length(valuearray)-1])));
+         
          str2 := utf8copy(str1,8,length(str1)-8) ;
          str3 := '';
          str4 := '';
+         iscontext := false;
          isid := true;
          isstring := false;
          end
@@ -1039,34 +1058,37 @@ application.processmessages;
           if (utf8copy(str1,1,6) = 'msgstr') then begin 
           str3 := (utf8copy(str1,9,length(str1)-9)) ;
           str3 := utf8StringReplace(str3, '\n', '', [rfReplaceAll]);
+          iscontext := false;
           isid := false;
           isstring := true;
          end 
          else 
-       if isid then
+       if iscontext then
        begin
-        if  (system.pos('msgctxt',str1) > 0) then else
-        begin
+        strtemp := utf8copy(str1,2,length(str1)-2);
+        if  (system.pos('\n',strtemp) > 0) then begin
+        strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]);
+        str4 := str4 + strtemp  + utf8String(sLineBreak) ;
+        end else str4 := str4 + strtemp;
+        end else
+        if isid then
+       begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin
         strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]);
         str2 := str2 + strtemp  + utf8String(sLineBreak) ;
         end else str2 := str2 + strtemp;
-        end;
         end
         else 
        if isstring then 
        begin
-        if  (system.pos('msgctxt',str1) > 0) then else
-        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin   
          strtemp := utf8StringReplace(strtemp, '\n', '', [rfReplaceAll]); 
         str3 := (str3 + strtemp  + utf8String(sLineBreak)) ;
         end else str3 := str3 + strtemp;
         end;
-        end;
-      end;  
+       end;  
     
     end;
  end;
