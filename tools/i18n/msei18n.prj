@@ -837,10 +837,10 @@ findhistory=20
  Yes you did it!
 findoptions=1
 editpos=7
- 9,1024
+ 0,1018
  0,-1073741823
  0,-1073741823
- 0,0
+ 0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -863,7 +863,7 @@ relpaths=7
  main.pas
  project.pas
  main.mfm
- ../../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ ../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
  mseide-mseguicontext3/tools/i18n/main.mfm
  msei18n.pas
  msei18n.pas
@@ -886,12 +886,12 @@ nomenumodules=1
 [sourcefo.files_tab]
 order=7
  0
+ 3
+ 4
  5
  6
  1
  2
- 3
- 4
 firsttab=0
 index=0
 [layout]
@@ -935,7 +935,7 @@ windowlayout=574
  rcy=0
  wsize=0
  active=0
- visible=0
+ visible=1
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1364,8 +1364,8 @@ windowlayout=574
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
-  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
   /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/main2.pas
   /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
@@ -1407,12 +1407,12 @@ windowlayout=574
  [sourcefo.files_tab]
  order=7
   0
+  3
+  4
   5
   6
   1
   2
-  3
-  4
  firsttab=0
  index=0
  [cpuc86_64fo]
@@ -1454,7 +1454,7 @@ windowlayout=574
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0

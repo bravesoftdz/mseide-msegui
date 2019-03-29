@@ -1015,6 +1015,8 @@ application.processmessages;
    if (utf8copy(str1,1,7) = 'msgctxt') then 
      begin
         str4 := (utf8copy(str1,10,length(str1)-10)) ;
+        
+        str4 := ';' + str4;
        // writeln('------------------');
        //   writeln(str4);
       end     
