@@ -453,7 +453,11 @@ object projectfo: tprojectfo
     controller.filename = 'default.csv'
     controller.filterlist.data = (
       (
-        'Data exchange files'
+        'Data exchange files complete'
+        '*.csv'
+      )
+      (
+        'Data exchange files without translated value'
         '*.csv'
       )
       (
