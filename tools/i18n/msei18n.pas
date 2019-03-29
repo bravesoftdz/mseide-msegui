@@ -31,7 +31,7 @@ uses
   mseconsts_de,mseconsts_es,mseconsts_zh,mseconsts_id,
   {$endif}
   
-  main,messagesform,project, datatypeform;
+  main,messagesform,project;
 
 {$ifdef mse_i18n}
 var
@@ -46,7 +46,6 @@ begin
 {$endif}                                               
  application.createForm(tmainfo,mainfo);
  application.createForm(tmessagesfo,messagesfo);
- application.createForm(tdatatypefo,datatypefo);
  application.run;
 end.
  

@@ -164,7 +164,7 @@ var
  implementation
 uses
  main_mfm,msefileutils,msesystypes,msesys,sysutils,mselist,project,
- rtlconsts,mseprocutils,msestockobjects, datatypeform,
+ rtlconsts,mseprocutils,msestockobjects,
  mseparser,mseformdatatools,mseresourcetools, 
  msearrayutils,msesettings,messagesform,mseeditglob,mseformatstr;
 type
@@ -829,7 +829,10 @@ begin
    str1:= rootstring(',');
    str2:= ansistring(typedisp.enumname(ord(valuetype)));
    mstr3:= valuetext;
-  
+   
+   rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+ 
+ { 
   if datatypefo.allbo.value then  
   rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[])
   else 
@@ -839,8 +842,10 @@ begin
   if datatypefo.txtbo.value then  
   rec:= mergevarrec([mstr3],[]);
  
- if (datatypefo.allbo.value) or (datatypefo.txttrbo.value)
+  if (datatypefo.allbo.value) or (datatypefo.txttrbo.value)
   or (datatypefo.trabo.value) then
+  }
+  
    for int1:= 0 to high(variants) do begin
     rec:= mergevarrec(rec,[variants[int1]]);
    end;
@@ -1191,7 +1196,9 @@ setlength(str1,1);
  stream.encoding:= aencoding;
  datastream:= stream;
  try
+ datastream.writerecord(getcolumnheaders);
  
+ {
  if datatypefo.allbo.value then
   datastream.writerecord(getcolumnheaders) else
  if datatypefo.txttrbo.value then begin
@@ -1209,6 +1216,7 @@ setlength(str1,1);
   str1[0] := 'translation';
   datastream.writerecord(str1)
   end;
+  }
       
   writeexprecord(rootnode);
  finally
@@ -1224,7 +1232,7 @@ begin
 if nostring.value then
 showmessage('Exportation with -no string- is not allowed.') else
     begin  
-    datatypefo.show(true);   
+    // datatypefo.show(true);   
     if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     showworkpan;
     application.processmessages;
