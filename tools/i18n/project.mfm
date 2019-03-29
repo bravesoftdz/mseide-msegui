@@ -457,15 +457,23 @@ object projectfo: tprojectfo
         '*.csv'
       )
       (
-        'MSE trd files'
-        '*.trd'
+        'Data exchange files without translation'
+        '*.csv'
+      )
+      (
+        'POT templates files'
+        '*.pot'
       )
       (
         'PO translation files'
         '*.po'
       )
       (
-        'TXT text files'
+        'PO translation files with context'
+        '*.po'
+      )
+      (
+        'TXT text files with root values only'
         '*.txt'
       )
       (

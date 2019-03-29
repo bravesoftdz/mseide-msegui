@@ -837,13 +837,13 @@ findhistory=20
  Yes you did it!
 findoptions=1
 editpos=7
- 53,1048
- 0,59
- 0,-1073741823
- 0,0
+ 0,1048
+ 29,5
  0,-1073741823
  0,-1073741823
- 0,26
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -863,7 +863,7 @@ relpaths=7
  main.pas
  project.pas
  main.mfm
- ../../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
  mseide-mseguicontext3/tools/i18n/main.mfm
  msei18n.pas
  msei18n.pas
@@ -893,7 +893,7 @@ order=7
  1
  2
 firsttab=0
-index=0
+index=5
 [layout]
 windowlayout=574
  [mainfo.basedock]
@@ -1362,7 +1362,7 @@ windowlayout=574
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ value=/home/fred/mseide-msegui/tools/i18n/project.pas
  history=20
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
@@ -1414,7 +1414,7 @@ windowlayout=574
   1
   2
  firsttab=0
- index=0
+ index=5
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
