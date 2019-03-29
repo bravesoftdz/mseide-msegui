@@ -1022,7 +1022,6 @@ application.processmessages;
        if (copy(str1,1,5) = 'msgid') then
         begin
          setlength(valuearray,length(valuearray)+1);  
-         str2 := '';
          str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3  ; 
          // writeln(str2);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 

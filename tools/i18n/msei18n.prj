@@ -837,10 +837,10 @@ findhistory=20
  Yes you did it!
 findoptions=1
 editpos=7
- 0,1048
- 29,5
+ 9,1024
  0,-1073741823
  0,-1073741823
+ 0,0
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -863,7 +863,7 @@ relpaths=7
  main.pas
  project.pas
  main.mfm
- mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
+ ../../mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
  mseide-mseguicontext3/tools/i18n/main.mfm
  msei18n.pas
  msei18n.pas
@@ -886,14 +886,14 @@ nomenumodules=1
 [sourcefo.files_tab]
 order=7
  0
- 3
- 4
  5
  6
  1
  2
+ 3
+ 4
 firsttab=0
-index=5
+index=0
 [layout]
 windowlayout=574
  [mainfo.basedock]
@@ -1121,7 +1121,7 @@ windowlayout=574
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1136,7 +1136,7 @@ windowlayout=574
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=306
  width0=136
@@ -1362,8 +1362,9 @@ windowlayout=574
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/project.pas
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.mfm
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/main2.pas
@@ -1383,7 +1384,6 @@ windowlayout=574
   /home/fred/ideu/src/conffpgui.pas
   /home/fred/ideu/src/confcompiler.pas
   /home/fred/ideu/src/confideu.pas
-  /home/fred/ideu/src/confcompiler.mfm
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1407,14 +1407,14 @@ windowlayout=574
  [sourcefo.files_tab]
  order=7
   0
-  3
-  4
   5
   6
   1
   2
+  3
+  4
  firsttab=0
- index=5
+ index=0
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1454,7 +1454,7 @@ windowlayout=574
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
