@@ -24,7 +24,7 @@ program msei18n;
 {$endif}
 
 uses
-  {$ifdef FPC}{$ifdef unix}cmem, cthreads,{$endif}{$endif}msegui,
+  {$ifdef FPC}{$ifdef unix} cthreads,{$endif}{$endif}msegui,
 
   {$ifdef mse_i18n}
   gettext,msei18nutils,mseconsts,mseconsts_ru,mseconsts_uzcyr,
