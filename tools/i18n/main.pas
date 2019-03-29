@@ -518,12 +518,12 @@ begin
       end;
       end else begin // not found
       begin
-       if (info.variants[int1] <> valuetext) and (info.variants[int1] <> '') then
-       gridvalue[aindex]:= (info.variants[int1])
-       else begin
+       //if (info.variants[int1] <> valuetext) and (info.variants[int1] <> '') then
+       //gridvalue[aindex]:= (info.variants[int1])
+       //else begin
        gridvalue[aindex]:=   valuetext;
        info.variants[int1] := valuetext;
-     end;
+      // end;
      end;
      
      if donottranslate[aindex] then
