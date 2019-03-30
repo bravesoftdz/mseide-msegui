@@ -1242,18 +1242,23 @@ var
  int1: integer;
 begin
  with tpropinfonode1(sender) do begin
-  bo2:= not nont.value or not info.donottranslate;
- //  bo2:= true;
+ 
+   if nont.value then bo2:= not info.donottranslate
+   else if ntonly.value then bo2:= info.donottranslate
+   else bo2:= true;
+  
   if fparent <> nil then begin
-   bo1:= not stringonly.value or (info.valuetype in
-             [vastring,valstring,vawstring,vautf8string]);
+   if stringonly.value then
+   bo1:=  (info.valuetype in
+            [vastring,valstring,vawstring,vautf8string])
+    else bo1 := true;        
+  
    if bo1 and bo2 then begin
     writerecord(sender);
     end;
   end;
     
-   // if nostring.value then bo2 := false;
-  if bo2 then begin
+   if bo2 then begin
    for int1:= 0 to fcount -1 do begin
     writeexprecord(fitems[int1]);
    end;
@@ -1325,9 +1330,9 @@ var
  stream: ttextdatastream;
  str1: filenamety;
 begin
-if nostring.value then
-showmessage('Exportation with -no string- is not allowed.') else
-    begin  
+//if (nostring.value) or ((nostring.value = false) and (stringonly.value = false)) then
+//showmessage('Only exportation of strings is allowed.') else
+//   begin  
     if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     showworkpan;
     application.processmessages;
@@ -1335,7 +1340,7 @@ showmessage('Exportation with -no string- is not allowed.') else
     doexport(stream,charencodingty(projectfo.impexpencoding.value));
     formatchanged(sender);
     workpan.visible := false;
-    end;
+  //  end;
  end;   
 end;
 
