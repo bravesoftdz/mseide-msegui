@@ -454,7 +454,7 @@ object mainfo: tmainfo
     itemframetemplate = menuitemframe
     itemfacetemplate = concavey
     itemframetemplateactive = menuitemframe
-    menu.submenu.count = 12
+    menu.submenu.count = 11
     menu.submenu.items = <    
       item
         caption = '&Open'
@@ -484,8 +484,9 @@ object mainfo: tmainfo
       end    
       item
         caption = '&Edit'
+        hint = 'Edit project options'
         name = 'edit'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = onprojectedit
       end    
       item
@@ -507,7 +508,7 @@ object mainfo: tmainfo
         onexecute = makeonexecute
       end    
       item
-        submenu.count = 2
+        submenu.count = 3
         submenu.items = <        
           item
             caption = '&About'
@@ -518,6 +519,12 @@ object mainfo: tmainfo
             caption = '&Configure MSEi18n'
             state = [as_localcaption, as_localonexecute]
             onexecute = configureonexecute
+          end        
+          item
+            caption = '&Reset'
+            hint = 'Reset translated words to root value'
+            state = [as_localcaption, as_localhint, as_localonexecute]
+            onexecute = onreset
           end>
         caption = 'Se&ttings'
         name = 'settings'
@@ -527,11 +534,6 @@ object mainfo: tmainfo
         caption = '&Refresh'
         state = [as_localcaption, as_localonexecute]
         onexecute = formatchanged
-      end    
-      item
-        caption = 'Reset'
-        state = [as_localcaption, as_localonexecute]
-        onexecute = onreset
       end    
       item
         caption = 'E&xit'

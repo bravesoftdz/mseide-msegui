@@ -301,6 +301,7 @@ begin
        astrtemp := '';
        anonttemp := '';
        acomtmp := '';
+       anont := '';
        
       if importtype < 1 then begin 
         while (x < length(valuearray)) and (hasfound = false) do
@@ -420,20 +421,30 @@ begin
       donottranslate[aindex]:= true;
       end;  
      end; 
-    end;    
+    end; 
+       
         ////////////////
+  
      if importtype = 1 then begin 
       
        while (x < length(valuearray)) and (hasfound = false) do
         begin
          astrt := '';
          str2 := '';
+         
          str2 := (valuearray[x]);
-         str3 := str2;
                 
         // str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
          acomp := (utf8copy(str2,1,system.pos(';',str2)-1));
+                  
+         if system.pos('|',acomp) > 0 then
+         begin
+         str3 := (utf8copy(acomp,system.pos('|',acomp)+1,length(acomp)-system.pos('|',acomp)+1)) ;
+         if str3 = 'T' then anont := 'T' else if str3 = 'F' then anont := 'F';
+         acomp := utf8copy(acomp,1,system.pos('|',acomp)-2) ;
+         end;
          
+             
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
          
@@ -456,11 +467,13 @@ begin
           begin
            hasfoundtext := true;
            astrtemp := astrt;
+           anonttemp := anont;
            end;
              
            if system.pos(acomp,rootstring(',')) > 0 then 
            begin
            astrtemp := astrt;
+           anonttemp := anont;
            hasfound := true; 
           // writeln('------------------');
           //writeln(acomp);
@@ -476,12 +489,26 @@ begin
           if hasfoundtext or hasfound then
        begin
          astrt := astrtemp;
+         anont := anonttemp;
          astrt := trim(astrt);
-         // writeln('------------------');
-          //writeln(acomp);
-          //writeln(astrt);
+         {
+          writeln('------------------');
+          writeln(acomp);
+          writeln(astrt);
+          writeln(anont);
+          }
+          
          if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
          if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         
+         if anont = 'T' then begin
+         info.donottranslate := true;
+         donottranslate[aindex]:= true;
+         end else
+         if anont = 'F' then begin
+         info.donottranslate := false;
+         donottranslate[aindex]:= false;
+         end;
                           
           if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
           begin    
@@ -829,7 +856,7 @@ end;
 procedure tmainfo.writerecord(const sender: ttreenode);
 var
  rec : varrecarty;
- str1,str2 : string;
+ str1,str2,str5 : string;
  mstr3, mstr4 : msestring;
  int1: integer;
  filind : integer;
@@ -842,6 +869,7 @@ begin
    str1:= rootstring(',');
    str2:= ansistring(typedisp.enumname(ord(valuetype)));
    mstr3:= valuetext;
+   if donottranslate then str5 := 'T' else str5 := 'F';
 
  filind := projectfo.impexpfiledialog.controller.filterindex;
  
@@ -876,12 +904,31 @@ begin
  if (filind > 1) and (filind < 8) then
  begin
   if (filind = 3) or (filind = 4) or(filind = 6)  or(filind = 7) then
-   datastream.writeln('msgctxt "' + str1 + '"');
+   datastream.writeln('msgctxt "' + str1 + '|' + str5 + '"');
 
-   datastream.writeln('msgid "' + mstr3 + '"');
+   if system.pos(sLineBreak,mstr3) > 0 then
+   begin
+    mstr3 :=  
+   utf8StringReplace(mstr3, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]);
+     mstr3 :=  '""'+ #10#13 +  '"' +  mstr3;
+     
+     Delete((mstr3),system.pos(sLineBreak,mstr3),1);
+     
+      datastream.writeln('msgid ' + mstr3 + '"');
+    end else
+    datastream.writeln('msgid "' + mstr3 + '"');
  
  if (filind = 5) or(filind = 6) or(filind = 7) then
-  datastream.writeln( 'msgstr "' + mstr4 + '"') else
+  begin
+  if system.pos(sLineBreak,mstr4) > 0 then 
+  begin
+    mstr4 := 
+   utf8StringReplace(mstr4, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]); 
+   mstr4 :=  '""'+  #10#13  + '"' + mstr4;
+   Delete(mstr4,system.pos(sLineBreak,mstr4),1);
+   datastream.writeln( 'msgstr ' + mstr4 + '"') end
+   else  datastream.writeln( 'msgstr "' + mstr4 + '"') ;
+  end else
   datastream.writeln( 'msgstr ""');
 
  datastream.writeln('');
