@@ -21,7 +21,9 @@ interface
 uses
  mseforms,msewidgetgrid,msefiledialog,msestat,msestatfile,msegraphedits,
  msedataedits,msesimplewidgets,msesplitter,msegui,msestrings,msedbedit,msegrids,
- msetypes,mseedit,mseglob,mseguiglob,mseifiglob,msemenus,msememodialog;
+ msetypes,mseedit,mseglob,mseguiglob,mseifiglob,msemenus,msememodialog,mseact,
+ mseapplication,msedropdownlist,msegraphics,msegraphutils,mseificomp,
+ mseificompglob,msestream,sysutils;
 
 type
  tprojectfo = class(tmseform)
@@ -35,7 +37,6 @@ type
    lang: tstringedit;
    dir: tdirdropdownedit;
    rootname: tstringedit;
-   splitter: tsplitter;
    makecommand: tmemodialogedit;
    makeon: tbooleanedit;
    ok: tbutton;
@@ -44,6 +45,9 @@ type
    destname: tstringedit;
    beforemake: tmemodialogedit;
    aftermake: tmemodialogedit;
+   memopotheader: tmemodialogedit;
+   splitter: tsplitter;
+   memopoheader: tmemodialogedit;
    procedure projectstatonupdatestat(const sender: TObject; 
                       const filer: tstatfiler);
    procedure projectstatonafterreadstat(const sender: tobject);
@@ -58,8 +62,10 @@ type
    procedure projectstatonbeforewritestat(const sender: TObject);
    procedure filenamedataentered(const sender: TObject);
    
+   procedure onok(const sender: TObject);
+   procedure oncancel(const sender: TObject);
   public
-  // puttype : integer;
+    restype : integer;
  //  colwidths: integerarty;
  end;
 
@@ -69,7 +75,7 @@ var
 implementation
 
 uses
- main,project_mfm,msesysenv,msesettings,msestream,msemacros;
+ main,project_mfm,msesysenv,msesettings,msemacros;
 const
  defaultmakecommand = '${COMPILER} -Fu${MSELIBDIR}i18n -FE.. -FU. ${LIBFILE} -fPIC';
 
@@ -155,6 +161,18 @@ end;
 procedure tprojectfo.filenamedataentered(const sender: TObject);
 begin
  rootname.value:= '';
+end;
+
+procedure tprojectfo.onok(const sender: TObject);
+begin
+restype := 1;
+visible := false;
+end;
+
+procedure tprojectfo.oncancel(const sender: TObject);
+begin
+restype := 0;
+visible := false;
 end;
 
 end.

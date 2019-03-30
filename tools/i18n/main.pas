@@ -115,7 +115,6 @@ type
                    var cellinfo: cellinfoty; var processed: Boolean);
    procedure showcolordataentered(const sender: TObject);
    procedure loadedexe(const sender: TObject);
-   procedure ondonot(const sender: TObject);
    procedure onsetstringonly(const sender: TObject; var avalue: Boolean;
                    var accept: Boolean);
    procedure onsetnosting(const sender: TObject; var avalue: Boolean;
@@ -123,6 +122,7 @@ type
    procedure ontimerup(const sender: TObject);
    procedure onreset(const sender: TObject);
    procedure showworkpan;
+   procedure numrow(const Sender: TObject);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -145,8 +145,7 @@ type
    procedure doexport(stream: ttextdatastream; aencoding: charencodingty);
    function getcolumnheaders: msestringarty;
    function checksave(cancelonly: boolean = false): boolean;
-   procedure removenont(const sender: tobject);
-   procedure numrow(const Sender: TObject);
+   
   public
    procedure loadproject;
    procedure readprojectdata;
@@ -281,7 +280,7 @@ procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
 var
  hasfound, hasfoundtext, hasvirg : boolean;
 int1, x : integer;
-str2, acomp, anont, anonttemp, acom, acomtmp, astro,astrt, astrtemp, nodo, asdo : utf8String;
+str2, str3, acomp, anont, anonttemp, acom, acomtmp, astro,astrt, astrtemp, nodo, asdo : utf8String;
 astrtraw : RawByteString;
 
 begin
@@ -307,12 +306,18 @@ begin
         while (x < length(valuearray)) and (hasfound = false) do
          begin
          str2 := (valuearray[x]);
-         acomp :=    
-           (utf8copy(str2,1,length(str2)-system.pos('vaString',str2)+1)) ;
-        
-         str2 :=   
-     (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
          
+         If system.pos('vaString',str2) >0 then begin
+           acomp := (utf8copy(str2,1,length(str2)-system.pos('vaString',str2)+1));
+           str2 := (utf8copy(str2,system.pos('vaString',str2)+9,
+                     length(str2)-system.pos('vaString',str2)-8)) ;
+         end else
+         If system.pos('vaLString',str2) >0 then begin 
+           acomp := (utf8copy(str2,1,length(str2)-system.pos('vaLString',str2)+1));
+           str2 := (utf8copy(str2,system.pos('vaLString',str2)+10,
+                     length(str2)-system.pos('vaLString',str2)-9)) ;
+         end;
+            
          anont := (utf8copy(str2,1,1));
          str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
          acom := (utf8copy(str2,1,system.pos(',',str2)-1));
@@ -424,24 +429,18 @@ begin
          astrt := '';
          str2 := '';
          str2 := (valuearray[x]);
-        
-        { 
-           if system.pos('Типm',str2) > 0 then
-         begin
-         writeln('+++++++++++++++++++++++++'); 
-         writeln(str2); 
-         end;
-         }  
+         str3 := str2;
+                
         // str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
          acomp := (utf8copy(str2,1,system.pos(';',str2)-1));
          
-         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)-1)) ;
+         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
          
-         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)-1)) ;
+         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astrt := utf8copy(str2,1,length(str2)) ;  
-                                 
-         if (typedisp[aindex]=6) and (trim(valuetext) <> '') then
+                                  
+         if ((info.valuetype=valstring) or (info.valuetype=vastring)) and (trim(valuetext) <> '') then
          begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
@@ -458,14 +457,14 @@ begin
            hasfoundtext := true;
            astrtemp := astrt;
            end;
-          
+             
            if system.pos(acomp,rootstring(',')) > 0 then 
            begin
            astrtemp := astrt;
            hasfound := true; 
-         // writeln('------------------');
-         // writeln(acomp);
-         // writeln(astrt);
+          // writeln('------------------');
+          //writeln(acomp);
+          //writeln(astrt);
            // exit;
           end; 
         
@@ -493,9 +492,8 @@ begin
        end;
       end;
     end;
-    
-    
-     for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
+ 
+      for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
     
@@ -830,13 +828,15 @@ end;
 
 procedure tmainfo.writerecord(const sender: ttreenode);
 var
- rec: varrecarty;
- str1,str2: string;
- mstr3: msestring;
+ rec : varrecarty;
+ str1,str2 : string;
+ mstr3, mstr4 : msestring;
  int1: integer;
  filind : integer;
+
 begin
  rec:= nil; //compilerwarning
+ 
  if ttreenode1(sender).fparent <> nil then begin
   with tpropinfonode(sender),info do begin
    str1:= rootstring(',');
@@ -850,12 +850,14 @@ begin
   0: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   1: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   // po
+  {
   2: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   3: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   4: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   5: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   6: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   7: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
+  }
   // txt
   8: rec:= mergevarrec([mstr3],[]);
   //  9: nothing here
@@ -863,14 +865,33 @@ begin
   10: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   end;
   
-   if (filind <> 1) and (filind <> 8) then
+  mstr4 := '';
   
-   for int1:= 0 to high(variants) do begin
+   if (filind = 0) or ((filind > 1) and (filind < 8)) or (filind > 8) then
+     for int1:= 0 to high(variants) do begin
     rec:= mergevarrec(rec,[variants[int1]]);
+    if int1 = 0 then mstr4 := variants[int1];
    end;
-  end;
+  
+ if (filind > 1) and (filind < 8) then
+ begin
+  if (filind = 3) or (filind = 4) or(filind = 6)  or(filind = 7) then
+   datastream.writeln('msgctxt "' + str1 + '"');
+
+   datastream.writeln('msgid "' + mstr3 + '"');
+ 
+ if (filind = 5) or(filind = 6) or(filind = 7) then
+  datastream.writeln( 'msgstr "' + mstr4 + '"') else
+  datastream.writeln( 'msgstr ""');
+
+ datastream.writeln('');
+
+ end else
+ begin
   datastream.writerecord(rec);
  end;
+end;
+end;
 end;
 
 procedure tmainfo.donottranslateonsetvalue(const sender: tobject;
@@ -902,40 +923,11 @@ begin
  datachanged;
 end;
 
-procedure tmainfo.removenont(const sender: tobject);
-var
-x : integer;
-begin
-{
-  for x:=0 to grid.rowcount - 1 do 
-    begin
-     //   donottranslate[x] := false;
-    tbooleanedit(grid.datacols[2].editwidget).gridvalue[x]:= false;
-    tpropinfoitem(tree.items[x]).node.info.donottranslate:= false;
-    end; 
-  datachanged;
-  grid.invalidaterow(grid.row);   
- }
-  
- for x:=0 to grid.rowcount - 1 do begin
- 
-  if tstringedit(grid.datacols[grid.datacols.count-1].editwidget)[x] = ''
-      then   tstringedit(grid.datacols[grid.datacols.count-1].editwidget)[x] :=
-  tstringedit(grid.datacols[4].editwidget)[x];    
- 
-    if (stringonly.value = false) and (nont.value = true) then
-    begin
-      if (donottranslate[x]) then 
-       grid.rowcolorstate[x]:= 2 else
-        grid.rowcolorstate[x]:= 0;
-     end else grid.rowcolorstate[x]:= 0; 
-     end;  
- end;
-
 procedure tmainfo.numrow(const Sender: TObject);
 var
 x, nt, tt, nc, rc: integer;
 begin
+
  rc := grid.rowCount;
  nc := grid.datacols.count-1;
  grid.fixcols[-1].captions.count:= rc;
@@ -946,6 +938,18 @@ begin
  
  for x := 0 to grid.rowCount - 1 do 
    begin
+   
+  if tstringedit(grid.datacols[grid.datacols.count-1].editwidget)[x] = ''
+      then   tstringedit(grid.datacols[grid.datacols.count-1].editwidget)[x] :=
+  tstringedit(grid.datacols[4].editwidget)[x];    
+ 
+    if (stringonly.value = false) and (nont.value = true) then
+    begin
+      if (donottranslate[x]) then 
+       grid.rowcolorstate[x]:= 2 else
+        grid.rowcolorstate[x]:= 0;
+     end else grid.rowcolorstate[x]:= 0; 
+   
       grid.fixcols[-1].captions[x] := inttostr(x+1);
         if (donottranslate[x]) then inc(nt)
        else
@@ -953,21 +957,19 @@ begin
          tstringedit(grid.datacols[nc].editwidget)[x])
          or (tstringedit(grid.datacols[nc].editwidget)[x] = '')
        then inc(tt);
-   end;  
-   
+    
  statusdisp.value := '  ' + c[ord(sc_totrows)]+ ' ' + inttostr(rc) + '   ' +
                      c[ord(sc_totranslate)]+ ' ' + inttostr(rc-nt) + '   ' +
                      c[ord(sc_tonottranslate)]+ ' ' + inttostr(nt) + '   ' +
                      c[ord(sc_yettranslated)]+ ' ' + inttostr(rc-nt-tt) + '   ' +
                      c[ord(sc_notyettranslated)]+ ' ' + inttostr(tt);
   end;
-
+ end; 
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
  showworkpan;
  application.processmessages;
  updatedata;
- removenont(sender); 
  numrow(sender);
  application.processmessages;
  workpan.visible := false;
@@ -1016,14 +1018,14 @@ application.processmessages;
   if  importtype < 1 then begin  // trd mse format
      if (copy(str1,1,1) = '"') and (isstring = true) then
        begin
-         setlength(valuearray,length(valuearray)+1);  
+        setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] := str2;
         str2 := str1;    
         // writeln(((valuearray[length(valuearray)-1])));
         isstring := false;
        end else if isstring = true then str2 := str2 +sLineBreak+ str1;
  
-     if (system.pos('vaString',str1) > 0) then 
+     if (system.pos('vaString',str1) > 0) or (system.pos('vaLString',str1) > 0) then 
      begin
      isstring := true;
      str2 := str1;
@@ -1102,17 +1104,13 @@ application.processmessages;
  
      if importtype = 0 then begin
         setlength(valuearray,length(valuearray)+1);  
-        valuearray[length(valuearray)-1] :=
-        (utf8copy(str2,system.pos('vaString',str2)+9,length(str2)-system.pos('vaString',str2)-8)) ;
-     // writeln(((valuearray[length(valuearray)-1])));
+       
+        valuearray[length(valuearray)-1] := str2;
+       // writeln(((valuearray[length(valuearray)-1])));
        end else begin  
         setlength(valuearray,length(valuearray)+1);  
          str2 := str4 + ';' + str2 + ';' + str3 ; 
-         str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
-         str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
-         str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
-         valuearray[length(valuearray)-1] := str2;
-      //  writeln(((valuearray[length(valuearray)-1])));
+       //  writeln(((valuearray[length(valuearray)-1])));
         end;
  
   // {
@@ -1218,10 +1216,8 @@ end;
 
 procedure tmainfo.doexport(stream: ttextdatastream; aencoding: charencodingty);
 var
-str1 : msestringarty;
 filind: integer;
 begin
-setlength(str1,1);
  stream.encoding:= aencoding;
  datastream:= stream;
  try
@@ -1233,36 +1229,39 @@ setlength(str1,1);
      datastream.writerecord(getcolumnheaders);
      end;
   1: begin
-     str1[0] := 'name,type,notranslate,comment,value';
-     datastream.writerecord(str1)
+     datastream.writeln('name,type,notranslate,comment,value');
      end;
-  // po  // todo
+  // pot/po 
   2: begin
-     datastream.writerecord(getcolumnheaders);
+     datastream.writeln(projectfo.memopotheader.value);
+     datastream.writeln();
      end;
   3: begin
-     datastream.writerecord(getcolumnheaders);
+     datastream.writeln(projectfo.memopotheader.value);
+     datastream.writeln();
      end;
   4: begin
-     datastream.writerecord(getcolumnheaders);
+     datastream.writeln(projectfo.memopotheader.value);
+     datastream.writeln();
      end;
   5: begin
-     datastream.writerecord(getcolumnheaders);
+     datastream.writeln(projectfo.memopoheader.value);
+     datastream.writeln();
      end;
   6: begin
-     datastream.writerecord(getcolumnheaders);
+     datastream.writeln(projectfo.memopoheader.value);
+     datastream.writeln();
      end;
   7: begin
-     datastream.writerecord(getcolumnheaders);
+     datastream.writeln(projectfo.memopoheader.value);
+     datastream.writeln();
      end;
   // txt
   8: begin
-     str1[0] := 'value';
-     datastream.writerecord(str1)
+     datastream.writeln('value');
      end;
   9: begin
-     str1[0] := 'translation';
-     datastream.writerecord(str1)
+     datastream.writeln('translation');
      end;
   // all
   10: datastream.writerecord(getcolumnheaders);
@@ -1278,7 +1277,6 @@ procedure tmainfo.exportonexecute(const sender: tobject);
 var
  stream: ttextdatastream;
  str1: filenamety;
- filind : integer;
 begin
 if nostring.value then
 showmessage('Exportation with -no string- is not allowed.') else
@@ -1425,9 +1423,11 @@ end;
 procedure tmainfo.onprojectedit(const sender: tobject);
 begin
  projectfo.show(true);
+ if projectfo.restype = 1 then begin
  projectfo.projectstat.writestat;
  projectfo.projectstat.readstat;
  formatchanged(sender);
+ end;
 end;
 
 procedure tmainfo.makeexecute(const sender: tthreadcomp);
@@ -1795,7 +1795,7 @@ begin
  if coloron.value then begin
   with cellinfo.cell do begin
     int1:= typedisp[row];
-   if ((int1 = ord(vastring)) or (int1 = ord(vawstring))) and 
+   if ((int1 = ord(vastring)) or (int1 = ord(vawstring)) or (int1 = ord(valstring))   ) and 
           not donottranslate[row]
      then begin
 //     if (system.pos('>',value[row]) > 1) or
@@ -1824,11 +1824,6 @@ end;
 procedure tmainfo.loadedexe(const sender: TObject);
 begin
  iconbmp.free;
-end;
-
-procedure tmainfo.ondonot(const sender: TObject);
-begin
-removenont(sender); 
 end;
 
 procedure tmainfo.onsetstringonly(const sender: TObject; var avalue: Boolean;
@@ -1868,5 +1863,6 @@ if askconfirmation(mstr1) then begin
      doreset := false;
     end;
 end;
+
 
 end.

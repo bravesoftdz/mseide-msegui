@@ -247,7 +247,7 @@ object mainfo: tmainfo
       bounds_cy = 16
       optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savevalue, oe1_savestate]
-      ondataentered = ondonot
+      onchange = numrow
       visible = False
       onsetvalue = donottranslateonsetvalue
     end
