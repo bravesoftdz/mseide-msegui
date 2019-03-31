@@ -278,9 +278,9 @@ end;
 procedure tmainfo.treeonupdaterowvalues(const sender: tobject;
   const aindex: integer; const aitem: tlistitem);
 var
- hasfound, hasfoundtext, hasvirg : boolean;
+ hasfound, hasfoundtext, hasvirg, isstring : boolean;
 int1, x : integer;
-str2, str3, acomp, anont, anonttemp, acom, acomtmp, astro,astrt, astrtemp, nodo, asdo : utf8String;
+str2, str3, rstr, acomp, anont, anonttemp, acom, acomtmp, astro,astrt, astrtemp, nodo, asdo : utf8String;
 astrtraw : RawByteString;
 
 begin
@@ -291,10 +291,8 @@ begin
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
     donottranslate[aindex]:= info.donottranslate;
-     
-    hasvirg := false;
- 
-    if (doreset = false) and (isloaded = false) then begin
+   
+      if (doreset = false) and (isloaded = false) then begin
        x := 0;   
        hasfound := false;
        hasfoundtext := false;
@@ -302,22 +300,34 @@ begin
        anonttemp := '';
        acomtmp := '';
        anont := '';
+       hasvirg := false;
+       
+     if ((info.valuetype=valstring) or (info.valuetype=vastring)) and (trim(valuetext) <> '') then
+     begin           
        
       if importtype < 1 then begin 
         while (x < length(valuearray)) and (hasfound = false) do
          begin
          str2 := (valuearray[x]);
-         
-         If system.pos('vaString',str2) >0 then begin
-           acomp := (utf8copy(str2,1,length(str2)-system.pos('vaString',str2)+1));
+          isstring := false;    
+     
+       If system.pos('vaString',str2) >0 then begin
+        //   acomp := (utf8copy(str2,1,length(str2)-system.pos('vaString',str2)+12));
+           acomp := str2;
+     
            str2 := (utf8copy(str2,system.pos('vaString',str2)+9,
                      length(str2)-system.pos('vaString',str2)-8)) ;
+            isstring := true;         
          end else
          If system.pos('vaLString',str2) >0 then begin 
-           acomp := (utf8copy(str2,1,length(str2)-system.pos('vaLString',str2)+1));
+            acomp := str2;
+         //  acomp := (utf8copy(str2,1,length(str2)-system.pos('vaLString',str2)+12));
            str2 := (utf8copy(str2,system.pos('vaLString',str2)+10,
                      length(str2)-system.pos('vaLString',str2)-9)) ;
+           isstring := true;              
          end;
+         
+         if isstring then begin
             
          anont := (utf8copy(str2,1,1));
          str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
@@ -347,11 +357,15 @@ begin
            
          if trim((nodo)) = trim((asdo))   then 
           begin
-           if (trim(valuetext)) <> trim((astrt)) then begin
+          //if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then
+          if (trim(valuetext)) <> trim((astrt)) then begin
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
+           // writeln('+++++++++++ value found equal ++++++++++++++' );
+           // writeln(rootstring(','));
+           // writeln(acomp);
            end;
               
            if system.pos(rootstring(','),acomp) > 0 then begin
@@ -359,6 +373,9 @@ begin
            anonttemp := anont;
            acomtmp := acom;
            hasfound := true; 
+           // writeln('$$$$$$$$$$$$$$$ name found equal ++++++++++++++' );
+           // writeln(rootstring(','));
+           // writeln(acomp);
              //exit;
             end; 
            end; 
@@ -385,10 +402,11 @@ begin
             //writeln(rootstring(',') + ' name ' + info.name);
              //exit;
             end;
-       
+            end;  
          end;      
          end;
-         inc(x);   
+         inc(x); 
+        
         end; 
   
      if (hasfoundtext = true) or (hasfound = true) then
@@ -480,11 +498,10 @@ begin
           //writeln(astrt);
            // exit;
           end; 
-        
-          end;
+           end;  
          end; 
-        inc(x);   
-       end;    
+        inc(x); 
+      end;    
   
           if hasfoundtext or hasfound then
        begin
@@ -519,7 +536,8 @@ begin
        end;
       end;
     end;
- 
+   end;
+    
       for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin

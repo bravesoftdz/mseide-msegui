@@ -819,8 +819,9 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=writeexprecord
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
  writeexprecord
  doexport
  not allowed
@@ -828,7 +829,6 @@ findhistory=20
  utf8StringReplace
  linebrea
  filind
- treeonupdaterowvalues
  ondonot
  numrow
  rowcount
@@ -844,11 +844,11 @@ findhistory=20
 findoptions=1
 editpos=8
  0,-1073741823
- 0,1235
+ 5,605
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,308
+ 0,-1073741823
  0,29
  0,-1073741823
 bookmarks0=0
@@ -874,7 +874,7 @@ relpaths=8
  project.pas
  lib/common/fpccompatibility/mclasses.pas
  mseide-mseguipoex/tools/i18n/main.mfm
- ../../mseide-mseguipoex/tools/i18n/main.pas
+ mseide-mseguipoex/tools/i18n/main.pas
  ../lib/common/dialogs/msememodialog.pas
  lazutf8.pas
 ismoduletexts=8
@@ -903,19 +903,10 @@ nomenumodules=3
  0
  0
 [sourcefo.files_tab]
-order=8
- 0
- 1
- 5
- 7
- 4
- 2
- 6
- 3
 firsttab=0
 index=1
 [layout]
-windowlayout=613
+windowlayout=604
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -948,14 +939,14 @@ windowlayout=613
  ncx=0
  ncy=0
  x=3
- y=29
+ y=48
  cx=1360
  cy=706
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1141,7 +1132,7 @@ windowlayout=613
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1156,7 +1147,7 @@ windowlayout=613
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=575
  width0=255
@@ -1367,7 +1358,7 @@ windowlayout=613
  mdistate=0
  nx=0
  ny=0
- ncx=1356
+ ncx=1350
  ncy=60
  x=0
  y=0
@@ -1425,22 +1416,13 @@ windowlayout=613
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=8
-  0
-  1
-  5
-  7
-  4
-  2
-  6
-  3
  firsttab=0
  index=1
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1475,7 +1457,7 @@ windowlayout=613
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1513,7 +1495,7 @@ windowlayout=613
  [_mse_msememodialogfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_mainfo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
