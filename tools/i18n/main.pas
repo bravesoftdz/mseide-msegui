@@ -309,25 +309,18 @@ begin
         while (x < length(valuearray)) and (hasfound = false) do
          begin
          str2 := (valuearray[x]);
-          isstring := false;    
+          isstring := false;  
+          acomp := str2;
+            
      
-       If system.pos('vaString',str2) >0 then begin
-        //   acomp := (utf8copy(str2,1,length(str2)-system.pos('vaString',str2)+12));
-           acomp := str2;
-     
-           str2 := (utf8copy(str2,system.pos('vaString',str2)+9,
+         If system.pos('vaString',str2) >0 then begin
+          str2 := (utf8copy(str2,system.pos('vaString',str2)+9,
                      length(str2)-system.pos('vaString',str2)-8)) ;
-            isstring := true;         
          end else
          If system.pos('vaLString',str2) >0 then begin 
-            acomp := str2;
-         //  acomp := (utf8copy(str2,1,length(str2)-system.pos('vaLString',str2)+12));
-           str2 := (utf8copy(str2,system.pos('vaLString',str2)+10,
+          str2 := (utf8copy(str2,system.pos('vaLString',str2)+10,
                      length(str2)-system.pos('vaLString',str2)-9)) ;
-           isstring := true;              
          end;
-         
-         if isstring then begin
             
          anont := (utf8copy(str2,1,1));
          str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
@@ -404,8 +397,7 @@ begin
             end;
             end;  
          end;      
-         end;
-         inc(x); 
+        inc(x); 
         
         end; 
   
@@ -461,16 +453,13 @@ begin
          if str3 = 'T' then anont := 'T' else if str3 = 'F' then anont := 'F';
          acomp := utf8copy(acomp,1,system.pos('|',acomp)-2) ;
          end;
-         
-             
+                   
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
          
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astrt := utf8copy(str2,1,length(str2)) ;  
                                   
-         if ((info.valuetype=valstring) or (info.valuetype=vastring)) and (trim(valuetext) <> '') then
-         begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
@@ -499,7 +488,6 @@ begin
            // exit;
           end; 
            end;  
-         end; 
         inc(x); 
       end;    
   
