@@ -433,6 +433,50 @@ begin
      end; 
     end; 
        
+          ////////////////
+  if importtype = 2 then begin 
+        while (x < length(valuearray)) and (hasfound = false) do
+         begin
+         str2 := (valuearray[x]);
+         acomp := str2;
+         
+         astrt := trim(utf8copy(str2,system.pos('|',str2)+1,length(str2)-system.pos('|',str2)+1)) ; 
+         
+         acomtmp := rootstring(',');
+         lowercase(acomtmp);
+         acomtmp := utf8StringReplace(acomtmp, '.', '', [rfReplaceAll]);
+         acomtmp := utf8StringReplace(acomtmp, ',', '', [rfReplaceAll]);
+         acomtmp := utf8StringReplace(acomtmp, ':', '', [rfReplaceAll]);
+         acomtmp := utf8StringReplace(acomtmp, '_', '', [rfReplaceAll]);
+         
+         if system.pos(acomtmp,acomp) > 0 then
+           begin
+              hasfound := true; 
+           // writeln('------------------');
+           // writeln(acomtmp);
+           // writeln(astrt);
+            end;
+           inc(x); 
+        end; 
+  
+     if (hasfoundtext = true) then
+       begin
+         astrt := trim(astrt);
+            
+         astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
+                
+         if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
+         if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+                        
+      if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
+      begin    
+      info.donottranslate := true;
+      donottranslate[aindex]:= true;
+      end;  
+     end; 
+    end; 
+       
+       
         ////////////////
   
      if importtype = 1 then begin 
@@ -443,23 +487,27 @@ begin
          str2 := '';
          
          str2 := (valuearray[x]);
-                
-        // str2 := (utf8StringReplace(str2, '\n', '', [rfReplaceAll]));
-         acomp := (utf8copy(str2,1,system.pos(';',str2)-1));
-                  
+    
+        acomp :=  str2;
+        // writeln(acomp);
+        
+        {          
          if system.pos('|',acomp) > 0 then
          begin
          str3 := (utf8copy(acomp,system.pos('|',acomp)+1,length(acomp)-system.pos('|',acomp)+1)) ;
          if str3 = 'T' then anont := 'T' else if str3 = 'F' then anont := 'F';
          acomp := utf8copy(acomp,1,system.pos('|',acomp)-2) ;
          end;
-                   
-         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
-         astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
+         }   
          
+           
+         str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
+        
+         astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
+       
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astrt := utf8copy(str2,1,length(str2)) ;  
-                                  
+       
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
@@ -470,7 +518,8 @@ begin
          
          if trim((nodo)) = trim((asdo))   then 
           begin
-          if (trim(valuetext)) <> trim((astrt)) then
+          
+           if (trim(valuetext)) <> trim((astrt)) then
           begin
            hasfoundtext := true;
            astrtemp := astrt;
@@ -482,9 +531,9 @@ begin
            astrtemp := astrt;
            anonttemp := anont;
            hasfound := true; 
-          // writeln('------------------');
-          //writeln(acomp);
-          //writeln(astrt);
+       //    writeln('------has found equal------------');
+       //   writeln(acomp);
+       //   writeln(astrt);
            // exit;
           end; 
            end;  
@@ -875,42 +924,44 @@ begin
    str1:= rootstring(',');
    str2:= ansistring(typedisp.enumname(ord(valuetype)));
    mstr3:= valuetext;
-   if donottranslate then str5 := 'T' else str5 := 'F';
-
- filind := projectfo.impexpfiledialog.controller.filterindex;
+   
+   //if donottranslate then str5 := 'T' else str5 := 'F';
+   
+   filind := projectfo.impexpfiledialog.controller.filterindex;
  
   case filind of
   // csv
   0: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  1: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  // po
-  {
-  2: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  3: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  4: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  5: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  6: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  7: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
-  }
-  // txt
-  8: rec:= mergevarrec([mstr3],[]);
-  //  9: nothing here
-  // all
-  10: rec:= mergevarrec([str1,str2,donottranslate,comment,mstr3],[]);
   end;
   
   mstr4 := '';
   
-   if (filind = 0) or ((filind > 1) and (filind < 8)) or (filind > 8) then
-     for int1:= 0 to high(variants) do begin
+    for int1:= 0 to high(variants) do begin
     rec:= mergevarrec(rec,[variants[int1]]);
     if int1 = 0 then mstr4 := variants[int1];
-   end;
+    end;
   
- if (filind > 1) and (filind < 8) then
- begin
-  if (filind = 3) or (filind = 4) or(filind = 6)  or(filind = 7) then
-   datastream.writeln('msgctxt "' + str1 + '|' + str5 + '"');
+   if (filind = 0) then  datastream.writerecord(rec);
+   
+  if filind = 7 then
+  begin
+  str1 := '"' + lowercase(str1+str2);
+  str1 := utf8StringReplace(str1, '.', '', [rfReplaceAll]);
+  str1 := utf8StringReplace(str1, ',', '', [rfReplaceAll]);
+  str1 := utf8StringReplace(str1, ':', '', [rfReplaceAll]);
+  str1 := utf8StringReplace(str1, '_', '', [rfReplaceAll]);
+  mstr3 := utf8StringReplace(mstr3, '"', '', [rfReplaceAll]);
+  // Delete((mstr3),system.pos(sLineBreak,mstr3),1);
+ 
+ //  if donottranslate then str5 := ',T,' else str5 := ',F,';
+ 
+   datastream.writeln( str1 + ' | ' + mstr3  );
+  end;  
+ 
+  if  (filind > 0) and (filind < 7) then begin
+  
+  if (filind = 2) or (filind = 3) or(filind = 5)  or(filind = 6) then
+   datastream.writeln('msgctxt "' + str1 +'"');
 
    if system.pos(sLineBreak,mstr3) > 0 then
    begin
@@ -922,9 +973,11 @@ begin
      
       datastream.writeln('msgid ' + mstr3 + '"');
     end else
+    begin
     datastream.writeln('msgid "' + mstr3 + '"');
+    end;
  
- if (filind = 5) or(filind = 6) or(filind = 7) then
+ if (filind = 4) or(filind = 5) or(filind = 6) then
   begin
   if system.pos(sLineBreak,mstr4) > 0 then 
   begin
@@ -939,11 +992,8 @@ begin
 
  datastream.writeln('');
 
- end else
- begin
-  datastream.writerecord(rec);
  end;
-end;
+ end;
 end;
 end;
 
@@ -1062,13 +1112,15 @@ application.processmessages;
     str4 := '';
     
     if (system.pos('name,type,notranslate,comment,value',str1) > 0) then
-    importtype := 0 else importtype := 1;
-
+    importtype := 0 else if (system.pos('¿¡',str1) > 0) then
+    importtype := 2 else if copy(str1,1,1) = '#' then importtype := 1;
+    
    while not stream.eof do begin
    str1 := '';
     stream.readln(str1); 
-     strtemp := '';   
-  if  importtype < 1 then begin  // trd mse format
+     strtemp := '';  
+      
+  if  importtype = 0 then begin  // trd mse format
      if (copy(str1,1,1) = '"') and (isstring = true) then
        begin
         setlength(valuearray,length(valuearray)+1);  
@@ -1087,6 +1139,26 @@ application.processmessages;
      end;
      
      ///////////////
+     
+     if  importtype = 2 then begin  // from google translate format
+     if (copy(str1,1,1) = '"') and (isstring = true) then
+       begin
+        setlength(valuearray,length(valuearray)+1);  
+        valuearray[length(valuearray)-1] := str2;
+        str2 := str1;    
+        // writeln(((valuearray[length(valuearray)-1])));
+        isstring := false;
+       end else if isstring = true then str2 := str2 +sLineBreak+ str1;
+ 
+     if (system.pos('vastring',str1) > 0) or (system.pos('valstring',str1) > 0) then 
+     begin
+     isstring := true;
+     str2 := str1;
+     end;
+     
+     end;
+     
+    // 
    
    if importtype = 1 then begin   // po files
    if trim(str1) <> '' then begin
@@ -1103,7 +1175,7 @@ application.processmessages;
         begin
          setlength(valuearray,length(valuearray)+1);  
          str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3 ; 
-         // writeln(str2);
+          // writeln(str2);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
@@ -1155,15 +1227,20 @@ application.processmessages;
     end;
  end;
  
+ /////////////////
      if importtype = 0 then begin
         setlength(valuearray,length(valuearray)+1);  
        
         valuearray[length(valuearray)-1] := str2;
        // writeln(((valuearray[length(valuearray)-1])));
-       end else begin  
+       end else  if importtype = 1 then begin
         setlength(valuearray,length(valuearray)+1);  
          str2 := str4 + ';' + str2 + ';' + str3 ; 
+         valuearray[length(valuearray)-1] := str2;
        //  writeln(((valuearray[length(valuearray)-1])));
+        end else if importtype = 2 then begin
+         setlength(valuearray,length(valuearray)+1);  
+         valuearray[length(valuearray)-1] := str2;
         end;
  
   // {
@@ -1286,12 +1363,13 @@ begin
   0: begin
      datastream.writerecord(getcolumnheaders);
      end;
+   // pot/po 
   1: begin
-     datastream.writeln('name,type,notranslate,comment,value');
-     end;
-  // pot/po 
-  2: begin
      datastream.writeln(projectfo.memopotheader.value);
+     datastream.writeln();
+     end;
+  2: begin
+    datastream.writeln(projectfo.memopotheader.value);
      datastream.writeln();
      end;
   3: begin
@@ -1299,7 +1377,7 @@ begin
      datastream.writeln();
      end;
   4: begin
-     datastream.writeln(projectfo.memopotheader.value);
+     datastream.writeln(projectfo.memopoheader.value);
      datastream.writeln();
      end;
   5: begin
@@ -1310,20 +1388,11 @@ begin
      datastream.writeln(projectfo.memopoheader.value);
      datastream.writeln();
      end;
-  7: begin
-     datastream.writeln(projectfo.memopoheader.value);
-     datastream.writeln();
-     end;
   // txt
-  8: begin
-     datastream.writeln('value');
+   7: begin
+     datastream.writeln('¿¡');
      end;
-  9: begin
-     datastream.writeln('translation');
-     end;
-  // all
-  10: datastream.writerecord(getcolumnheaders);
-  end;
+   end;
       
   writeexprecord(rootnode);
  finally
@@ -1921,6 +1990,7 @@ if askconfirmation(mstr1) then begin
      doreset := false;
     end;
 end;
+
 
 
 end.

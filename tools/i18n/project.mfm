@@ -358,7 +358,6 @@ object projectfo: tprojectfo
     anchors = [an_right, an_bottom]
     state = [as_default, as_localdefault, as_localcaption, as_localonexecute]
     caption = 'OK'
-    modalresult = mr_none
     onexecute = onok
   end
   object cancel: tbutton
@@ -369,7 +368,6 @@ object projectfo: tprojectfo
     anchors = [an_right, an_bottom]
     state = [as_localcaption, as_localonexecute]
     caption = 'Cancel'
-    modalresult = mr_none
     onexecute = oncancel
   end
   object destname: tstringedit
@@ -507,11 +505,7 @@ object projectfo: tprojectfo
     controller.filename = 'default.csv'
     controller.filterlist.data = (
       (
-        'Data exchange files complete'
-        '*.csv'
-      )
-      (
-        'Data exchange files without translated values'
+        'Data exchange files'
         '*.csv'
       )
       (
@@ -539,16 +533,8 @@ object projectfo: tprojectfo
         '*.po'
       )
       (
-        'TXT text files with root values only'
+        'TXT text files with context and word'
         '*.txt'
-      )
-      (
-        'TXT text files with translated values only'
-        '*.txt'
-      )
-      (
-        'All files'
-        '*.*'
       )
     )
     controller.historymaxcount = 0
