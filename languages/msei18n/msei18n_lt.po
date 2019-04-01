@@ -21,49 +21,7 @@ msgstr ""
 "Language: lt\n"
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-msgid "Importation"
-msgstr ""
-
-msgid "Data type"
-msgstr ""
-
 msgid "no string"
-msgstr ""
-
-msgid "Working..."
-msgstr ""
-
-msgid "Reset"
-msgstr "Atstatyti"
-
-msgid "MSE trd files"
-msgstr ""
-
-msgid "PO translation files"
-msgstr ""
-
-msgid "Do you want to reset to root value?"
-msgstr ""
-
-msgid "&Refresh"
-msgstr ""
-
-msgid "Close error:"
-msgstr ""
-
-msgid "Total rows:"
-msgstr ""
-
-msgid "To translate:"
-msgstr ""
-
-msgid "To not translate:"
-msgstr ""
-
-msgid "Yet translated:"
-msgstr ""
-
-msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
@@ -93,6 +51,9 @@ msgstr ""
 msgid "show color"
 msgstr ""
 
+msgid "Working..."
+msgstr ""
+
 msgid "&Open"
 msgstr "&Atverti"
 
@@ -107,6 +68,9 @@ msgstr "&Naujas"
 
 msgid "&Edit"
 msgstr "K&eisti"
+
+msgid "Edit project options"
+msgstr ""
 
 msgid "&Import"
 msgstr "&Importuoti"
@@ -123,7 +87,16 @@ msgstr "&Apie"
 msgid "&Configure MSEi18n"
 msgstr "&Konfigūruoti MSEi18n"
 
+msgid "&Reset"
+msgstr "&Atstatyti"
+
+msgid "Reset translated words to root value"
+msgstr ""
+
 msgid "Se&ttings"
+msgstr ""
+
+msgid "&Refresh"
 msgstr ""
 
 msgid "E&xit"
@@ -189,8 +162,32 @@ msgstr ""
 msgid "CONFIRMATION"
 msgstr ""
 
+msgid "Close error:"
+msgstr ""
+
+msgid "Total rows:"
+msgstr ""
+
+msgid "To translate:"
+msgstr ""
+
+msgid "To not translate:"
+msgstr ""
+
+msgid "Yet translated:"
+msgstr ""
+
+msgid "Not yet translated:"
+msgstr ""
+
+msgid "Do you want to reset to root value?"
+msgstr ""
+
 msgid "Enter Memo Text"
 msgstr ""
+
+msgid "&Cancel"
+msgstr "&Atsisakyti"
 
 msgid "&OK"
 msgstr "&Gerai"
@@ -252,7 +249,40 @@ msgstr ""
 msgid "After make"
 msgstr ""
 
-msgid "Data exchange files"
+msgid "POT header"
+msgstr ""
+
+msgid "PO header"
+msgstr ""
+
+msgid "Data exchange files complete"
+msgstr ""
+
+msgid "Data exchange files without translated values"
+msgstr ""
+
+msgid "POT templates files without context"
+msgstr ""
+
+msgid "POT templates files with context"
+msgstr ""
+
+msgid "POT templates files with/without context"
+msgstr ""
+
+msgid "PO translation files without context"
+msgstr ""
+
+msgid "PO translation files with context"
+msgstr ""
+
+msgid "PO translation files with/without context"
+msgstr ""
+
+msgid "TXT text files with root values only"
+msgstr ""
+
+msgid "TXT text files with translated values only"
 msgstr ""
 
 msgid "Open import file"
@@ -263,9 +293,6 @@ msgstr ""
 
 msgid "Configure MSE environment"
 msgstr ""
-
-msgid "&Cancel"
-msgstr "&Atsisakyti"
 
 msgid "&Shortcuts"
 msgstr "&Spartieji klavišai"

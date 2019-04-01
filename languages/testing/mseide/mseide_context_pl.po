@@ -57,7 +57,7 @@ msgstr "Warunek"
 
 msgctxt "watchpointsfo,gripopup,menu.submenu.items,0:,caption"
 msgid "Delete all"
-msgstr ""
+msgstr "Usuń wszystko"
 
 msgctxt "watchpointsfo,c,strings.data,0:"
 msgid "Watchpoint error."
@@ -118,7 +118,7 @@ msgstr ""
 
 msgctxt "watchfo,gripopup,menu.submenu.items,0:,caption"
 msgid "Delete all"
-msgstr ""
+msgstr "Usuń wszystko"
 
 msgctxt "watchfo,gripopup,menu.submenu.items,2:,caption"
 msgid "Add Watchpoint"
@@ -142,7 +142,7 @@ msgstr ""
 
 msgctxt "watchfo,gripopup,menu.submenu.items,8:,caption"
 msgid "&Format default"
-msgstr ""
+msgstr "&Format domyślny"
 
 msgctxt "watchfo,gripopup,menu.submenu.items,9:,caption"
 msgid "&Binary"
@@ -276,7 +276,7 @@ msgstr ""
 
 msgctxt "templateeditorfo,selected,frame.caption"
 msgid "&select"
-msgstr ""
+msgstr "&wybierz"
 
 msgctxt "templateeditorfo,indented,frame.caption"
 msgid "&indent"
@@ -332,7 +332,7 @@ msgstr "Informacje"
 
 msgctxt "symbolfo,tpopupmenu1,menu.submenu.items,0:,caption"
 msgid "Delete all"
-msgstr ""
+msgstr "Usuń wszystko"
 
 msgctxt "symbolfo,c,strings.data,0:"
 msgid "GDB not active."
@@ -414,7 +414,7 @@ msgstr "&Otwórz plik"
 
 msgctxt "sourcefo,formpopup,menu.submenu.items,2:,caption"
 msgid "&Close File"
-msgstr ""
+msgstr "&Zamknij Plik"
 
 msgctxt "sourcefo,formpopup,menu.submenu.items,3:,caption"
 msgid "&Save File"
@@ -3801,7 +3801,7 @@ msgstr ""
 
 msgctxt "breakpointsfo,gripopup,menu.submenu.items,0:,caption"
 msgid "Delete all"
-msgstr ""
+msgstr "Usuń wszystko"
 
 msgctxt "breakpointsfo,c,strings.data,0:"
 msgid "Breakpoint error."

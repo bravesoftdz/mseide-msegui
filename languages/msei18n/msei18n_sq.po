@@ -22,50 +22,8 @@ msgstr ""
 "Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Importation"
-msgstr ""
-
-msgid "Data type"
-msgstr ""
-
 msgid "no string"
 msgstr ""
-
-msgid "Working..."
-msgstr ""
-
-msgid "Reset"
-msgstr ""
-
-msgid "MSE trd files"
-msgstr ""
-
-msgid "PO translation files"
-msgstr ""
-
-msgid "Do you want to reset to root value?"
-msgstr ""
-
-msgid "&Refresh"
-msgstr "&Fresko"
-
-msgid "Close error:"
-msgstr "Gabim mbyllur:"
-
-msgid "Total rows:"
-msgstr "Rreshta totale:"
-
-msgid "To translate:"
-msgstr "Në përkthim:"
-
-msgid "To not translate:"
-msgstr "Jo për përkthim:"
-
-msgid "Yet translated:"
-msgstr "Ende përkthyer:"
-
-msgid "Not yet translated:"
-msgstr "Ende pa përkthyer:"
 
 msgid "Name"
 msgstr "Emri"
@@ -94,6 +52,9 @@ msgstr "Vetëm NT"
 msgid "show color"
 msgstr "shfaq ngjyrat"
 
+msgid "Working..."
+msgstr "Punë..."
+
 msgid "&Open"
 msgstr "&Hapur"
 
@@ -108,6 +69,9 @@ msgstr "&e'Re"
 
 msgid "&Edit"
 msgstr "&Ndrysho"
+
+msgid "Edit project options"
+msgstr ""
 
 msgid "&Import"
 msgstr "&importo"
@@ -124,8 +88,17 @@ msgstr "&Informacione"
 msgid "&Configure MSEi18n"
 msgstr "&Konfiguro MSEi18n"
 
+msgid "&Reset"
+msgstr ""
+
+msgid "Reset translated words to root value"
+msgstr ""
+
 msgid "Se&ttings"
 msgstr "Cilë&sime"
+
+msgid "&Refresh"
+msgstr "&Fresko"
 
 msgid "E&xit"
 msgstr "D&il"
@@ -155,7 +128,7 @@ msgid "value"
 msgstr "vlerë"
 
 msgid "[no project]"
-msgstr ""
+msgstr "[ska projekt]"
 
 msgid "Can not read module"
 msgstr "Nuk mund të lexoje modulin"
@@ -190,8 +163,32 @@ msgstr "Dëshironi ta ruani"
 msgid "CONFIRMATION"
 msgstr "KONFIGURIM"
 
+msgid "Close error:"
+msgstr "Gabim mbyllur:"
+
+msgid "Total rows:"
+msgstr "Rreshta totale:"
+
+msgid "To translate:"
+msgstr "Në përkthim:"
+
+msgid "To not translate:"
+msgstr "Jo për përkthim:"
+
+msgid "Yet translated:"
+msgstr "Ende përkthyer:"
+
+msgid "Not yet translated:"
+msgstr "Ende pa përkthyer:"
+
+msgid "Do you want to reset to root value?"
+msgstr "Dëshiron të rivendosesh në vlerën e root?"
+
 msgid "Enter Memo Text"
 msgstr "Shkruan Tekstin Memorandumit"
+
+msgid "&Cancel"
+msgstr "&Anulo"
 
 msgid "&OK"
 msgstr "&OK"
@@ -203,10 +200,10 @@ msgid "Edit Translate Project"
 msgstr "Redakto Përkthimin Projektit"
 
 msgid "Encoding for imp/exp files"
-msgstr ""
+msgstr "Kodim për skedarët imp/exp"
 
 msgid "Rootname"
-msgstr ""
+msgstr "Rootemër"
 
 msgid "File"
 msgstr "Skedarë"
@@ -236,7 +233,7 @@ msgid "Make command"
 msgstr ""
 
 msgid "on"
-msgstr ""
+msgstr "në"
 
 msgid "OK"
 msgstr "Dakord"
@@ -248,12 +245,45 @@ msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
 
 msgid "Before make"
-msgstr ""
+msgstr "Përpara bëj"
 
 msgid "After make"
+msgstr "Pas bëj"
+
+msgid "POT header"
 msgstr ""
 
-msgid "Data exchange files"
+msgid "PO header"
+msgstr ""
+
+msgid "Data exchange files complete"
+msgstr ""
+
+msgid "Data exchange files without translated values"
+msgstr ""
+
+msgid "POT templates files without context"
+msgstr ""
+
+msgid "POT templates files with context"
+msgstr ""
+
+msgid "POT templates files with/without context"
+msgstr ""
+
+msgid "PO translation files without context"
+msgstr ""
+
+msgid "PO translation files with context"
+msgstr ""
+
+msgid "PO translation files with/without context"
+msgstr ""
+
+msgid "TXT text files with root values only"
+msgstr ""
+
+msgid "TXT text files with translated values only"
 msgstr ""
 
 msgid "Open import file"
@@ -264,9 +294,6 @@ msgstr ""
 
 msgid "Configure MSE environment"
 msgstr ""
-
-msgid "&Cancel"
-msgstr "&Anulo"
 
 msgid "&Shortcuts"
 msgstr ""

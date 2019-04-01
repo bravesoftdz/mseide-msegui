@@ -21,49 +21,7 @@ msgstr ""
 "Language: zh_HK\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Importation"
-msgstr ""
-
-msgid "Data type"
-msgstr ""
-
 msgid "no string"
-msgstr ""
-
-msgid "Working..."
-msgstr ""
-
-msgid "Reset"
-msgstr ""
-
-msgid "MSE trd files"
-msgstr ""
-
-msgid "PO translation files"
-msgstr ""
-
-msgid "Do you want to reset to root value?"
-msgstr ""
-
-msgid "&Refresh"
-msgstr ""
-
-msgid "Close error:"
-msgstr ""
-
-msgid "Total rows:"
-msgstr ""
-
-msgid "To translate:"
-msgstr ""
-
-msgid "To not translate:"
-msgstr ""
-
-msgid "Yet translated:"
-msgstr ""
-
-msgid "Not yet translated:"
 msgstr ""
 
 msgid "Name"
@@ -93,6 +51,9 @@ msgstr ""
 msgid "show color"
 msgstr ""
 
+msgid "Working..."
+msgstr ""
+
 msgid "&Open"
 msgstr "開啟"
 
@@ -106,6 +67,9 @@ msgid "&New"
 msgstr "新增"
 
 msgid "&Edit"
+msgstr ""
+
+msgid "Edit project options"
 msgstr ""
 
 msgid "&Import"
@@ -123,7 +87,16 @@ msgstr "關於"
 msgid "&Configure MSEi18n"
 msgstr ""
 
+msgid "&Reset"
+msgstr ""
+
+msgid "Reset translated words to root value"
+msgstr ""
+
 msgid "Se&ttings"
+msgstr ""
+
+msgid "&Refresh"
 msgstr ""
 
 msgid "E&xit"
@@ -189,8 +162,32 @@ msgstr ""
 msgid "CONFIRMATION"
 msgstr ""
 
+msgid "Close error:"
+msgstr ""
+
+msgid "Total rows:"
+msgstr ""
+
+msgid "To translate:"
+msgstr ""
+
+msgid "To not translate:"
+msgstr ""
+
+msgid "Yet translated:"
+msgstr ""
+
+msgid "Not yet translated:"
+msgstr ""
+
+msgid "Do you want to reset to root value?"
+msgstr ""
+
 msgid "Enter Memo Text"
 msgstr ""
+
+msgid "&Cancel"
+msgstr "取消"
 
 msgid "&OK"
 msgstr "確定"
@@ -252,7 +249,40 @@ msgstr ""
 msgid "After make"
 msgstr ""
 
-msgid "Data exchange files"
+msgid "POT header"
+msgstr ""
+
+msgid "PO header"
+msgstr ""
+
+msgid "Data exchange files complete"
+msgstr ""
+
+msgid "Data exchange files without translated values"
+msgstr ""
+
+msgid "POT templates files without context"
+msgstr ""
+
+msgid "POT templates files with context"
+msgstr ""
+
+msgid "POT templates files with/without context"
+msgstr ""
+
+msgid "PO translation files without context"
+msgstr ""
+
+msgid "PO translation files with context"
+msgstr ""
+
+msgid "PO translation files with/without context"
+msgstr ""
+
+msgid "TXT text files with root values only"
+msgstr ""
+
+msgid "TXT text files with translated values only"
 msgstr ""
 
 msgid "Open import file"
@@ -263,9 +293,6 @@ msgstr ""
 
 msgid "Configure MSE environment"
 msgstr ""
-
-msgid "&Cancel"
-msgstr "取消"
 
 msgid "&Shortcuts"
 msgstr ""

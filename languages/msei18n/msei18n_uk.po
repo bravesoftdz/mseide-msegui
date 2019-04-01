@@ -4,9 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Андрій Лашкєєв <zombyg@gmail.com>, 2019
 # Yuri Chornoivan <yurchor@ukr.net>, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
-# Андрій Лашкєєв <zombyg@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-05 00:07+0000\n"
-"Last-Translator: Андрій Лашкєєв <zombyg@gmail.com>, 2019\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/Magic/teams/44238/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,50 +23,8 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-msgid "Importation"
-msgstr ""
-
-msgid "Data type"
-msgstr ""
-
 msgid "no string"
-msgstr ""
-
-msgid "Working..."
-msgstr "Працює..."
-
-msgid "Reset"
-msgstr "Скинути"
-
-msgid "MSE trd files"
-msgstr ""
-
-msgid "PO translation files"
-msgstr ""
-
-msgid "Do you want to reset to root value?"
-msgstr ""
-
-msgid "&Refresh"
-msgstr "&Освіжити"
-
-msgid "Close error:"
-msgstr "Помилка закриття:"
-
-msgid "Total rows:"
-msgstr "Загалом рядків:"
-
-msgid "To translate:"
-msgstr "Для перекладу:"
-
-msgid "To not translate:"
-msgstr "Не для перекладу:"
-
-msgid "Yet translated:"
-msgstr "Перекладено:"
-
-msgid "Not yet translated:"
-msgstr "Ще не перекладено:"
+msgstr "не рядок"
 
 msgid "Name"
 msgstr "Назва"
@@ -95,6 +53,9 @@ msgstr "лише NT"
 msgid "show color"
 msgstr "показати кольором"
 
+msgid "Working..."
+msgstr "Працюємо..."
+
 msgid "&Open"
 msgstr "&Відкрити"
 
@@ -109,6 +70,9 @@ msgstr "&Новий"
 
 msgid "&Edit"
 msgstr "&Редагувати"
+
+msgid "Edit project options"
+msgstr ""
 
 msgid "&Import"
 msgstr "&Імпорт"
@@ -125,8 +89,17 @@ msgstr "&Інформація про MSEi18n"
 msgid "&Configure MSEi18n"
 msgstr "&Конфігурувати MSEi18n"
 
+msgid "&Reset"
+msgstr "&Скинути"
+
+msgid "Reset translated words to root value"
+msgstr ""
+
 msgid "Se&ttings"
 msgstr "Н&алаштування"
+
+msgid "&Refresh"
+msgstr "&Освіжити"
 
 msgid "E&xit"
 msgstr "Ви&хід"
@@ -141,7 +114,7 @@ msgid "Save translate project"
 msgstr "Зберегти проект перекладу"
 
 msgid "name"
-msgstr "ім'я"
+msgstr "назва"
 
 msgid "type"
 msgstr "тип"
@@ -191,11 +164,35 @@ msgstr "Бажаєте зберегти"
 msgid "CONFIRMATION"
 msgstr "ПІДТВЕРДЖЕННЯ"
 
+msgid "Close error:"
+msgstr "Помилка закриття:"
+
+msgid "Total rows:"
+msgstr "Загалом рядків:"
+
+msgid "To translate:"
+msgstr "Для перекладу:"
+
+msgid "To not translate:"
+msgstr "Не для перекладу:"
+
+msgid "Yet translated:"
+msgstr "Перекладено:"
+
+msgid "Not yet translated:"
+msgstr "Ще не перекладено:"
+
+msgid "Do you want to reset to root value?"
+msgstr "Хочете скинути до кореневого значення?"
+
 msgid "Enter Memo Text"
 msgstr "Ввести Memo текст"
 
+msgid "&Cancel"
+msgstr "&Скасувати"
+
 msgid "&OK"
-msgstr "&OK"
+msgstr "&Гаразд"
 
 msgid "Make Language Units"
 msgstr "Зібрати мовні модулі"
@@ -213,7 +210,7 @@ msgid "File"
 msgstr "Файл"
 
 msgid "Kind"
-msgstr "Вид"
+msgstr "Тип"
 
 msgid "Select unit or form file"
 msgstr "Вибір файла модуля чи форми"
@@ -254,8 +251,41 @@ msgstr "Перед збиранням"
 msgid "After make"
 msgstr "після збирання"
 
-msgid "Data exchange files"
-msgstr "Файли обміну даними"
+msgid "POT header"
+msgstr ""
+
+msgid "PO header"
+msgstr ""
+
+msgid "Data exchange files complete"
+msgstr ""
+
+msgid "Data exchange files without translated values"
+msgstr ""
+
+msgid "POT templates files without context"
+msgstr ""
+
+msgid "POT templates files with context"
+msgstr ""
+
+msgid "POT templates files with/without context"
+msgstr ""
+
+msgid "PO translation files without context"
+msgstr ""
+
+msgid "PO translation files with context"
+msgstr ""
+
+msgid "PO translation files with/without context"
+msgstr ""
+
+msgid "TXT text files with root values only"
+msgstr ""
+
+msgid "TXT text files with translated values only"
+msgstr ""
 
 msgid "Open import file"
 msgstr "Відкрити файл імпорту"
@@ -265,9 +295,6 @@ msgstr "Зберегти файл експорту"
 
 msgid "Configure MSE environment"
 msgstr "Налаштування оточення MSE"
-
-msgid "&Cancel"
-msgstr "Ві&дміна"
 
 msgid "&Shortcuts"
 msgstr "&Гар.клав."

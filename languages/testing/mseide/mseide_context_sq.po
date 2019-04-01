@@ -33,7 +33,7 @@ msgstr ""
 
 msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,0:,caption"
 msgid "on"
-msgstr ""
+msgstr "në"
 
 msgctxt "watchpointsfo,grid,fixrows.items,0:,captions.items,1:,caption"
 msgid "Kind"
@@ -1234,7 +1234,7 @@ msgstr ""
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,twidgetgrid2,fixrows.items,0:,captions.items,0:,caption"
 msgid "on"
-msgstr ""
+msgstr "në"
 
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,debuggerpage,ttabwidget1,ttabpage9,twidgetgrid2,fixrows.items,0:,captions.items,1:,caption"
@@ -2507,7 +2507,7 @@ msgstr ""
 
 msgctxt "programparametersfo,grid,fixrows.items,0:,captions.items,0:,caption"
 msgid "on"
-msgstr ""
+msgstr "në"
 
 msgctxt "programparametersfo,grid,fixrows.items,0:,captions.items,1:,caption"
 msgid "Name"
@@ -3769,7 +3769,7 @@ msgstr ""
 
 msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,0:,caption"
 msgid "on"
-msgstr ""
+msgstr "në"
 
 msgctxt "breakpointsfo,grid,fixrows.items,0:,captions.items,1:,caption"
 msgid "File"
@@ -3869,7 +3869,7 @@ msgstr ""
 
 msgctxt "actionsmo,reset,hint"
 msgid "Reset"
-msgstr ""
+msgstr "Rivendos"
 
 msgctxt "actionsmo,opensource,caption"
 msgid "&Open"
@@ -4253,7 +4253,7 @@ msgstr ""
 
 msgctxt "actionsmo,shortcuts,actions.items,56:,dispname"
 msgid "Reset"
-msgstr ""
+msgstr "Rivendos"
 
 msgctxt "actionsmo,shortcuts,actions.items,57:,dispname"
 msgid "Interrupt"

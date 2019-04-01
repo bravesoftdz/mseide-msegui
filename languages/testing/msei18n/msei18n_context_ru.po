@@ -20,7 +20,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Poedit 2.0.9\n"
 
 msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
 msgid "no string"
@@ -86,6 +85,10 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
 msgid "&Edit"
 msgstr "&Редактировать"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,hint"
+msgid "Edit project options"
+msgstr "Редактировать опции проекта"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
 msgid "&Import"
 msgstr "&Импорт"
@@ -106,6 +109,14 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
 msgid "&Configure MSEi18n"
 msgstr "&Конфигурировать MSEi18n"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption"
+msgid "&Reset"
+msgstr "&Сбросить"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint"
+msgid "Reset translated words to root value"
+msgstr "Сбросить переведённые слова к корневому значению"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
 msgid "Se&ttings"
 msgstr "Н&астройки"
@@ -115,10 +126,6 @@ msgid "&Refresh"
 msgstr "&Освежить"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
-msgid "Reset"
-msgstr "Сбросить"
-
-msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
 msgid "E&xit"
 msgstr "Вы&ход"
 
@@ -318,19 +325,55 @@ msgctxt "projectfo,aftermake,frame.caption"
 msgid "After make"
 msgstr "После сборки"
 
+msgctxt "projectfo,memopotheader,frame.caption"
+msgid "POT header"
+msgstr "Заголовок POT"
+
+msgctxt "projectfo,memopoheader,frame.caption"
+msgid "PO header"
+msgstr "Заголовок PO"
+
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:"
-msgid "Data exchange files"
-msgstr "Файлы обмена данными"
+msgid "Data exchange files complete"
+msgstr "Файлы обмена данными (полные)"
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
-msgid "MSE trd files"
-msgstr "Файлы MSE trd"
+msgid "Data exchange files without translated values"
+msgstr "Файлы обмена данными без переведённых значений"
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
-msgid "PO translation files"
-msgstr "Файлы переводов PO"
+msgid "POT templates files without context"
+msgstr "POT шаблонные файлы без контекста"
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
+msgid "POT templates files with context"
+msgstr "POT шаблонные файлы с контекстом"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,4:,0:"
+msgid "POT templates files with/without context"
+msgstr "POT шаблонные файлы с контекстом/без контекста"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,5:,0:"
+msgid "PO translation files without context"
+msgstr "PO файлы переводов без контекста"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,6:,0:"
+msgid "PO translation files with context"
+msgstr "PO файлы переводов с контекстом"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,7:,0:"
+msgid "PO translation files with/without context"
+msgstr "PO файлы переводов с контекстом/без контекста"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,8:,0:"
+msgid "TXT text files with root values only"
+msgstr "TXT текстовые файлы только с корневыми значениями"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,9:,0:"
+msgid "TXT text files with translated values only"
+msgstr "TXT текстовые файлы только с переведёнными значениями"
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,10:,0:"
 msgid "All files"
 msgstr "Все файлы"
 

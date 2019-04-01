@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# AlexL <loginov.alex.valer@gmail.com>, 2019
 # Waldemar Stoczkowski, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -14,14 +14,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-27 01:03+0300\n"
 "PO-Revision-Date: 2019-03-27 01:09+0000\n"
-"Last-Translator: Waldemar Stoczkowski, 2019\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: Polish (https://www.transifex.com/Magic/teams/44238/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Poedit 2.0.9\n"
 
 msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
 msgid "no string"
@@ -87,6 +86,10 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
 msgid "&Edit"
 msgstr "&Edycja"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,hint"
+msgid "Edit project options"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
 msgid "&Import"
 msgstr "&Importuj"
@@ -107,6 +110,14 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
 msgid "&Configure MSEi18n"
 msgstr "&Konfiguracja MSEi18n"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption"
+msgid "&Reset"
+msgstr "&Przywróć"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint"
+msgid "Reset translated words to root value"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
 msgid "Se&ttings"
 msgstr ""
@@ -116,10 +127,6 @@ msgid "&Refresh"
 msgstr "&Odśwież"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
-msgid "Reset"
-msgstr "Przywróć"
-
-msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
 msgid "E&xit"
 msgstr "Za&kończ"
 
@@ -145,7 +152,7 @@ msgstr "typ"
 
 msgctxt "mainfo,c,strings.data,2:"
 msgid "notranslate"
-msgstr ""
+msgstr "nie tłumaczyć"
 
 msgctxt "mainfo,c,strings.data,3:"
 msgid "comment"
@@ -157,7 +164,7 @@ msgstr "Wartość"
 
 msgctxt "mainfo,c,strings.data,5:"
 msgid "[no project]"
-msgstr ""
+msgstr "[brak projektu]"
 
 msgctxt "mainfo,c,strings.data,6:"
 msgid "Can not read module"
@@ -319,19 +326,55 @@ msgctxt "projectfo,aftermake,frame.caption"
 msgid "After make"
 msgstr ""
 
+msgctxt "projectfo,memopotheader,frame.caption"
+msgid "POT header"
+msgstr ""
+
+msgctxt "projectfo,memopoheader,frame.caption"
+msgid "PO header"
+msgstr ""
+
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:"
-msgid "Data exchange files"
+msgid "Data exchange files complete"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
-msgid "MSE trd files"
+msgid "Data exchange files without translated values"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
-msgid "PO translation files"
+msgid "POT templates files without context"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
+msgid "POT templates files with context"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,4:,0:"
+msgid "POT templates files with/without context"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,5:,0:"
+msgid "PO translation files without context"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,6:,0:"
+msgid "PO translation files with context"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,7:,0:"
+msgid "PO translation files with/without context"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,8:,0:"
+msgid "TXT text files with root values only"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,9:,0:"
+msgid "TXT text files with translated values only"
+msgstr ""
+
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,10:,0:"
 msgid "All files"
 msgstr "Wszystkie pliki"
 

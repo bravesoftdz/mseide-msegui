@@ -62,7 +62,7 @@ msgid "Condition"
 msgstr "Warunek"
 
 msgid "Delete all"
-msgstr ""
+msgstr "Usuń wszystko"
 
 msgid "Watchpoint error."
 msgstr ""
@@ -118,7 +118,7 @@ msgid "Address Watchpoint 64"
 msgstr ""
 
 msgid "&Format default"
-msgstr ""
+msgstr "&Format domyślny "
 
 msgid "&Binary"
 msgstr ""
@@ -211,7 +211,7 @@ msgid "&Set Cursor"
 msgstr ""
 
 msgid "&select"
-msgstr ""
+msgstr "&wybierz"
 
 msgid "&indent"
 msgstr "&wcięcia"
@@ -289,7 +289,7 @@ msgid "&Open File"
 msgstr "&Otwórz plik"
 
 msgid "&Close File"
-msgstr ""
+msgstr "&Zamknij Plik"
 
 msgid "&Save File"
 msgstr "&Zapisz plik"
