@@ -1987,6 +1987,7 @@ if askconfirmation(mstr1) then begin
      fdatachanged:= true;
      datachanged;
      updatedata;
+     numrow(sender);
      doreset := false;
     end;
 end;
