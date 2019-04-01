@@ -284,9 +284,11 @@ str2, str3, rstr, acomp, anont, anonttemp, acom, acomtmp, astro,astrt, astrtemp,
 astrtraw : RawByteString;
 
 begin
+
  with tpropinfoitem(aitem) do begin
   if node <> nil then begin
    with node do begin  
+   
     comment[aindex]:= info.comment;
     typedisp[aindex]:= ord(info.valuetype);
     value[aindex]:= valuetext;
@@ -1267,12 +1269,13 @@ application.processmessages;
     avariants[int1]:= '';
     pointers[int1 + variantshift]:= @avariants[int1];
    end;
+ 
    if stream.readrecord(pointers,str1) then begin
-   if importtype = 0 then
-    node:= rootnode.findsubnode(','+aname)
+   if importtype < 1 then
+   node:= rootnode.findsubnode(','+aname)
     else  node := nil;
-   
-    if node <> nil then begin
+    
+   if node <> nil then begin
      with node.info do begin
       comment:= acomment;
       variants:= avariants; 
@@ -1317,6 +1320,7 @@ if isloaded = true then begin
     importtype:=-1;
  end; 
  end; 
+ projectfo.impexpfiledialog.controller.filterindex := 0;
 end;
 
 procedure tmainfo.writeexprecord(const sender: ttreenode);
@@ -1416,6 +1420,7 @@ begin
     formatchanged(sender);
     workpan.visible := false;
   //  end;
+   projectfo.impexpfiledialog.controller.filterindex := 0; 
  end;   
 end;
 
@@ -1504,6 +1509,7 @@ end;
 procedure tmainfo.onprojectsave(const sender: tobject);
 begin
  showworkpan;
+ projectfo.impexpfiledialog.controller.filterindex := 0;
  application.processmessages;
  writeprojectdata;
  application.processmessages;
