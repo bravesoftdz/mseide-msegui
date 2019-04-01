@@ -1256,7 +1256,7 @@ msgstr """"
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files complete,Data exchange files complete
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.csv,*.csv
 "projectfo,impexpfiledialog,controller.filterlist.data,1:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,Data exchange files without translated value,Data exchange files without translated value
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,Data exchange files without translated values,Data exchange files without translated values
 "projectfo,impexpfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*.csv,*.trd
 "projectfo,impexpfiledialog,controller.filterlist.data,2:",vaList,F,,,
 "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files without context,POT templates files without context

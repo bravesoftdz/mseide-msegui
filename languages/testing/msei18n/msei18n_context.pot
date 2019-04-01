@@ -334,7 +334,7 @@ msgid "Data exchange files complete"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
-msgid "Data exchange files without translated value"
+msgid "Data exchange files without translated values"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"

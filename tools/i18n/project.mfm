@@ -511,7 +511,7 @@ object projectfo: tprojectfo
         '*.csv'
       )
       (
-        'Data exchange files without translated value'
+        'Data exchange files without translated values'
         '*.csv'
       )
       (
