@@ -23,7 +23,7 @@ mainfo,vaNull,F,,,
 "mainfo,container.bounds,3:",vaInt16,F,,371,
 "mainfo,optionswindow",vaSet,F,,[wo_groupleader],
 "mainfo,mainmenu",vaIdent,F,,mainmenu1,
-"mainfo,options",vaSet,F,,"[fo_main,fo_terminateonclose,fo_savepos,fo_savezorder,fo_savestate]",
+"mainfo,options",vaSet,F,,[fo_main;fo_terminateonclose;fo_savepos;fo_savezorder;fo_savestate],
 "mainfo,statfile",vaIdent,F,,projectfo.projectstat,
 "mainfo,caption",vaString,T,,MSEi18n,MSEi18n
 "mainfo,icon.transparentcolor",vaInt32,F,,-2147483642,
@@ -78,8 +78,8 @@ mainfo,vaNull,F,,,
 "mainfo,grid,bounds_y",vaInt8,F,,25,
 "mainfo,grid,bounds_cx",vaInt16,F,,684,
 "mainfo,grid,bounds_cy",vaInt16,F,,326,
-"mainfo,grid,anchors",vaSet,F,,"[an_left,an_top,an_right,an_bottom]",
-"mainfo,grid,optionsgrid",vaSet,F,,"[og_colsizing,og_focuscellonenter,og_rowheight,og_colchangeontabkey,og_wrapcol,og_autopopup]",
+"mainfo,grid,anchors",vaSet,F,,[an_left;an_top;an_right;an_bottom],
+"mainfo,grid,optionsgrid",vaSet,F,,[og_colsizing;og_focuscellonenter;og_rowheight;og_colchangeontabkey;og_wrapcol;og_autopopup],
 "mainfo,grid,fixcols.count",vaInt8,F,,1,
 "mainfo,grid,fixcols.items",vaCollection,F,,,
 "mainfo,grid,fixcols.items,0:",vaList,F,,,
@@ -113,28 +113,28 @@ mainfo,vaNull,F,,,
 "mainfo,grid,datacols.count",vaInt8,F,,5,
 "mainfo,grid,datacols.width",vaInt16,F,,200,
 "mainfo,grid,datacols.options",vaSet,F,,[co_savestate],
-"mainfo,grid,datacols.options1",vaSet,F,,"[co1_rowfont,co1_rowcolor,co1_zebracolor,co1_rowcoloractive,co1_rowcolorfocused,co1_rowreadonly,co1_autorowheight]",
+"mainfo,grid,datacols.options1",vaSet,F,,[co1_rowfont;co1_rowcolor;co1_zebracolor;co1_rowcoloractive;co1_rowcolorfocused;co1_rowreadonly;co1_autorowheight],
 "mainfo,grid,datacols.items",vaCollection,F,,,
 "mainfo,grid,datacols.items,tree",vaList,F,,,
 "mainfo,grid,datacols.items,tree,width",vaInt16,F,,200,
-"mainfo,grid,datacols.items,tree,options",vaSet,F,,"[co_readonly,co_savestate]",
-"mainfo,grid,datacols.items,tree,options1",vaSet,F,,"[co1_rowfont,co1_rowcolor,co1_zebracolor,co1_rowcoloractive,co1_rowcolorfocused,co1_rowreadonly,co1_autorowheight]",
+"mainfo,grid,datacols.items,tree,options",vaSet,F,,[co_readonly;co_savestate],
+"mainfo,grid,datacols.items,tree,options1",vaSet,F,,[co1_rowfont;co1_rowcolor;co1_zebracolor;co1_rowcoloractive;co1_rowcolorfocused;co1_rowreadonly;co1_autorowheight],
 "mainfo,grid,datacols.items,tree,widthmin",vaInt8,F,,10,
 "mainfo,grid,datacols.items,tree,widthmax",vaInt16,F,,600,
 "mainfo,grid,datacols.items,tree,widgetname",vaString,T,,tree,tree
 "mainfo,grid,datacols.items,tree,dataclass",vaIdent,F,,ttreeitemeditlist,
 "mainfo,grid,datacols.items,typedisp",vaList,F,,,
 "mainfo,grid,datacols.items,typedisp,width",vaInt8,F,,100,
-"mainfo,grid,datacols.items,typedisp,options",vaSet,F,,"[co_readonly,co_savestate]",
-"mainfo,grid,datacols.items,typedisp,options1",vaSet,F,,"[co1_rowfont,co1_rowcolor,co1_zebracolor,co1_rowcoloractive,co1_rowcolorfocused,co1_rowreadonly,co1_autorowheight]",
+"mainfo,grid,datacols.items,typedisp,options",vaSet,F,,[co_readonly;co_savestate],
+"mainfo,grid,datacols.items,typedisp,options1",vaSet,F,,[co1_rowfont;co1_rowcolor;co1_zebracolor;co1_rowcoloractive;co1_rowcolorfocused;co1_rowreadonly;co1_autorowheight],
 "mainfo,grid,datacols.items,typedisp,widthmin",vaInt8,F,,10,
 "mainfo,grid,datacols.items,typedisp,widthmax",vaInt16,F,,300,
 "mainfo,grid,datacols.items,typedisp,widgetname",vaString,T,,typedisp,typedisp
 "mainfo,grid,datacols.items,typedisp,dataclass",vaIdent,F,,tgridenumdatalist,
 "mainfo,grid,datacols.items,donottranslate",vaList,F,,,
 "mainfo,grid,datacols.items,donottranslate,width",vaInt8,F,,40,
-"mainfo,grid,datacols.items,donottranslate,options",vaSet,F,,"[co_drawfocus,co_savevalue,co_savestate]",
-"mainfo,grid,datacols.items,donottranslate,options1",vaSet,F,,"[co1_rowfont,co1_rowcolor,co1_zebracolor,co1_rowcoloractive,co1_rowcolorfocused,co1_rowreadonly,co1_autorowheight]",
+"mainfo,grid,datacols.items,donottranslate,options",vaSet,F,,[co_drawfocus;co_savevalue;co_savestate],
+"mainfo,grid,datacols.items,donottranslate,options1",vaSet,F,,[co1_rowfont;co1_rowcolor;co1_zebracolor;co1_rowcoloractive;co1_rowcolorfocused;co1_rowreadonly;co1_autorowheight],
 "mainfo,grid,datacols.items,donottranslate,widthmin",vaInt8,F,,10,
 "mainfo,grid,datacols.items,donottranslate,widthmax",vaInt8,F,,50,
 "mainfo,grid,datacols.items,donottranslate,widgetname",vaString,T,,donottranslate,donottranslate
@@ -142,15 +142,15 @@ mainfo,vaNull,F,,,
 "mainfo,grid,datacols.items,comment",vaList,F,,,
 "mainfo,grid,datacols.items,comment,width",vaInt8,F,,70,
 "mainfo,grid,datacols.items,comment,options",vaSet,F,,[co_savestate],
-"mainfo,grid,datacols.items,comment,options1",vaSet,F,,"[co1_rowfont,co1_rowcolor,co1_zebracolor,co1_rowcoloractive,co1_rowcolorfocused,co1_rowreadonly,co1_autorowheight]",
+"mainfo,grid,datacols.items,comment,options1",vaSet,F,,[co1_rowfont;co1_rowcolor;co1_zebracolor;co1_rowcoloractive;co1_rowcolorfocused;co1_rowreadonly;co1_autorowheight],
 "mainfo,grid,datacols.items,comment,widthmin",vaInt8,F,,10,
 "mainfo,grid,datacols.items,comment,widthmax",vaInt16,F,,400,
 "mainfo,grid,datacols.items,comment,widgetname",vaString,T,,comment,comment
 "mainfo,grid,datacols.items,comment,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "mainfo,grid,datacols.items,value",vaList,F,,,
 "mainfo,grid,datacols.items,value,width",vaInt16,F,,200,
-"mainfo,grid,datacols.items,value,options",vaSet,F,,"[co_readonly,co_savestate]",
-"mainfo,grid,datacols.items,value,options1",vaSet,F,,"[co1_rowfont,co1_rowcolor,co1_zebracolor,co1_rowcoloractive,co1_rowcolorfocused,co1_rowreadonly,co1_autorowheight]",
+"mainfo,grid,datacols.items,value,options",vaSet,F,,[co_readonly;co_savestate],
+"mainfo,grid,datacols.items,value,options1",vaSet,F,,[co1_rowfont;co1_rowcolor;co1_zebracolor;co1_rowcoloractive;co1_rowcolorfocused;co1_rowreadonly;co1_autorowheight],
 "mainfo,grid,datacols.items,value,widthmin",vaInt8,F,,10,
 "mainfo,grid,datacols.items,value,widthmax",vaInt16,F,,600,
 "mainfo,grid,datacols.items,value,widgetname",vaString,T,,value,value
@@ -167,14 +167,14 @@ mainfo,vaNull,F,,,
 "mainfo,grid,trowcount,bounds_y",vaInt8,F,,2,
 "mainfo,grid,trowcount,bounds_cx",vaInt8,F,,45,
 "mainfo,grid,trowcount,bounds_cy",vaInt8,F,,16,
-"mainfo,grid,trowcount,textflags",vaSet,F,,"[tf_xcentered,tf_ycentered]",
+"mainfo,grid,trowcount,textflags",vaSet,F,,[tf_xcentered;tf_ycentered],
 "mainfo,grid,trowcount,reffontheight",vaInt8,F,,14,
 "mainfo,grid,tree",vaNull,F,,,
 "mainfo,grid,tree,optionswidget1",vaSet,F,,[ow1_fontglyphheight],
 "mainfo,grid,tree,color",vaInt32,F,,-1879048185,
 "mainfo,grid,tree,frame.levelo",vaInt8,F,,0,
 "mainfo,grid,tree,frame.colorclient",vaInt32,F,,-2147483646,
-"mainfo,grid,tree,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"mainfo,grid,tree,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "mainfo,grid,tree,frame.localprops1",vaSet,F,,[],
 "mainfo,grid,tree,taborder",vaInt8,F,,1,
 "mainfo,grid,tree,visible",vaFalse,F,,,
@@ -182,9 +182,9 @@ mainfo,vaNull,F,,,
 "mainfo,grid,tree,bounds_y",vaInt8,F,,0,
 "mainfo,grid,tree,bounds_cx",vaInt16,F,,200,
 "mainfo,grid,tree,bounds_cy",vaInt8,F,,16,
-"mainfo,grid,tree,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate]",
-"mainfo,grid,tree,optionsedit",vaSet,F,,"[oe_readonly,oe_undoonesc,oe_checkmrcancel,oe_exitoncursor,oe_hintclippedtext]",
-"mainfo,grid,tree,textflags",vaSet,F,,"[tf_ycentered,tf_clipo,tf_noselect,tf_ellipseleft]",
+"mainfo,grid,tree,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savestate],
+"mainfo,grid,tree,optionsedit",vaSet,F,,[oe_readonly;oe_undoonesc;oe_checkmrcancel;oe_exitoncursor;oe_hintclippedtext],
+"mainfo,grid,tree,textflags",vaSet,F,,[tf_ycentered;tf_clipo;tf_noselect;tf_ellipseleft],
 "mainfo,grid,tree,onupdaterowvalues",vaIdent,F,,treeonupdaterowvalues,
 "mainfo,grid,tree,options",vaSet,F,,[teo_treecolnavig],
 "mainfo,grid,tree,reffontheight",vaInt8,F,,14,
@@ -193,21 +193,21 @@ mainfo,vaNull,F,,,
 "mainfo,grid,typedisp,color",vaInt32,F,,-1879048185,
 "mainfo,grid,typedisp,frame.levelo",vaInt8,F,,0,
 "mainfo,grid,typedisp,frame.colorclient",vaInt32,F,,-2147483646,
-"mainfo,grid,typedisp,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"mainfo,grid,typedisp,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "mainfo,grid,typedisp,frame.localprops1",vaSet,F,,[],
-"mainfo,grid,typedisp,frame.button.options",vaSet,F,,"[fbo_invisible,fbo_disabled]",
+"mainfo,grid,typedisp,frame.button.options",vaSet,F,,[fbo_invisible;fbo_disabled],
 "mainfo,grid,typedisp,frame.buttons.count",vaInt8,F,,1,
 "mainfo,grid,typedisp,frame.buttons.items",vaCollection,F,,,
 "mainfo,grid,typedisp,frame.buttons.items,0:",vaList,F,,,
-"mainfo,grid,typedisp,frame.buttons.items,0:,options",vaSet,F,,"[fbo_invisible,fbo_disabled]",
+"mainfo,grid,typedisp,frame.buttons.items,0:,options",vaSet,F,,[fbo_invisible;fbo_disabled],
 "mainfo,grid,typedisp,taborder",vaInt8,F,,2,
 "mainfo,grid,typedisp,visible",vaFalse,F,,,
 "mainfo,grid,typedisp,bounds_x",vaInt16,F,,201,
 "mainfo,grid,typedisp,bounds_y",vaInt8,F,,0,
 "mainfo,grid,typedisp,bounds_cy",vaInt8,F,,16,
-"mainfo,grid,typedisp,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate]",
-"mainfo,grid,typedisp,optionsedit",vaSet,F,,"[oe_readonly,oe_undoonesc,oe_checkmrcancel,oe_exitoncursor]",
-"mainfo,grid,typedisp,dropdown.options",vaSet,F,,"[deo_selectonly,deo_autodropdown,deo_disabled]",
+"mainfo,grid,typedisp,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savestate],
+"mainfo,grid,typedisp,optionsedit",vaSet,F,,[oe_readonly;oe_undoonesc;oe_checkmrcancel;oe_exitoncursor],
+"mainfo,grid,typedisp,dropdown.options",vaSet,F,,[deo_selectonly;deo_autodropdown;deo_disabled],
 "mainfo,grid,typedisp,dropdown.cols.count",vaInt8,F,,1,
 "mainfo,grid,typedisp,dropdown.cols.items",vaCollection,F,,,
 "mainfo,grid,typedisp,dropdown.cols.items,0:",vaList,F,,,
@@ -223,15 +223,15 @@ mainfo,vaNull,F,,,
 "mainfo,grid,donottranslate,bounds_y",vaInt8,F,,0,
 "mainfo,grid,donottranslate,bounds_cx",vaInt8,F,,40,
 "mainfo,grid,donottranslate,bounds_cy",vaInt8,F,,16,
-"mainfo,grid,donottranslate,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick]",
-"mainfo,grid,donottranslate,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savevalue,oe1_savestate]",
-"mainfo,grid,donottranslate,ondataentered",vaIdent,F,,ondonot,
+"mainfo,grid,donottranslate,optionsedit",vaSet,F,,[oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick],
+"mainfo,grid,donottranslate,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savevalue;oe1_savestate],
+"mainfo,grid,donottranslate,onchange",vaIdent,F,,numrow
 "mainfo,grid,donottranslate,visible",vaFalse,F,,,
 "mainfo,grid,donottranslate,onsetvalue",vaIdent,F,,donottranslateonsetvalue,
 "mainfo,grid,comment",vaNull,F,,,
 "mainfo,grid,comment,frame.levelo",vaInt8,F,,0,
 "mainfo,grid,comment,frame.colorclient",vaInt32,F,,-2147483646,
-"mainfo,grid,comment,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"mainfo,grid,comment,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "mainfo,grid,comment,frame.localprops1",vaSet,F,,[],
 "mainfo,grid,comment,frame.buttons.count",vaInt8,F,,1,
 "mainfo,grid,comment,frame.buttons.items",vaCollection,F,,,
@@ -248,12 +248,12 @@ mainfo,vaNull,F,,,
 "mainfo,grid,comment,bounds_y",vaInt8,F,,0,
 "mainfo,grid,comment,bounds_cx",vaInt8,F,,70,
 "mainfo,grid,comment,bounds_cy",vaInt8,F,,16,
-"mainfo,grid,comment,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate]",
-"mainfo,grid,comment,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick,oe_hintclippedtext]",
+"mainfo,grid,comment,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savestate],
+"mainfo,grid,comment,optionsedit",vaSet,F,,[oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick;oe_hintclippedtext],
 "mainfo,grid,comment,font.height",vaInt8,F,,12,
 "mainfo,grid,comment,font.name",vaString,T,,stf_default,stf_default
 "mainfo,grid,comment,font.xscale",vaInt8,F,,1,
-"mainfo,grid,comment,font.localprops",vaSet,F,,"[flp_xscale,flp_height]",
+"mainfo,grid,comment,font.localprops",vaSet,F,,[flp_xscale;flp_height],
 "mainfo,grid,comment,onsetvalue",vaIdent,F,,commentonsetvalue,
 "mainfo,grid,comment,reffontheight",vaInt8,F,,14,
 "mainfo,grid,value",vaNull,F,,,
@@ -261,23 +261,23 @@ mainfo,vaNull,F,,,
 "mainfo,grid,value,color",vaInt32,F,,-1879048185,
 "mainfo,grid,value,frame.levelo",vaInt8,F,,0,
 "mainfo,grid,value,frame.colorclient",vaInt32,F,,-2147483646,
-"mainfo,grid,value,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"mainfo,grid,value,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "mainfo,grid,value,frame.localprops1",vaSet,F,,[],
 "mainfo,grid,value,frame.buttons.count",vaInt8,F,,1,
 "mainfo,grid,value,frame.buttons.items",vaCollection,F,,,
 "mainfo,grid,value,frame.buttons.items,0:",vaList,F,,,
 "mainfo,grid,value,frame.buttons.items,0:,imagenr",vaInt8,F,,17,
-"mainfo,grid,value,frame.buttons.items,0:,options",vaSet,F,,"[fbo_invisible,fbo_disabled]",
+"mainfo,grid,value,frame.buttons.items,0:,options",vaSet,F,,[fbo_invisible;fbo_disabled],
 "mainfo,grid,value,frame.button.imagenr",vaInt8,F,,17,
-"mainfo,grid,value,frame.button.options",vaSet,F,,"[fbo_invisible,fbo_disabled]",
+"mainfo,grid,value,frame.button.options",vaSet,F,,[fbo_invisible;fbo_disabled],
 "mainfo,grid,value,taborder",vaInt8,F,,5,
 "mainfo,grid,value,visible",vaFalse,F,,,
 "mainfo,grid,value,bounds_x",vaInt16,F,,414,
 "mainfo,grid,value,bounds_y",vaInt8,F,,0,
 "mainfo,grid,value,bounds_cx",vaInt16,F,,200,
 "mainfo,grid,value,bounds_cy",vaInt8,F,,16,
-"mainfo,grid,value,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate]",
-"mainfo,grid,value,optionsedit",vaSet,F,,"[oe_readonly,oe_undoonesc,oe_checkmrcancel,oe_exitoncursor,oe_hintclippedtext]",
+"mainfo,grid,value,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savestate],
+"mainfo,grid,value,optionsedit",vaSet,F,,[oe_readonly;oe_undoonesc;oe_checkmrcancel;oe_exitoncursor;oe_hintclippedtext],
 "mainfo,grid,value,reffontheight",vaInt8,F,,14,
 "mainfo,flat",vaNull,F,,,
 "mainfo,flat,color",vaInt32,F,,-2147483645,
@@ -294,7 +294,7 @@ mainfo,vaNull,F,,,
 "mainfo,flat,bounds_y",vaInt8,F,,5,
 "mainfo,flat,bounds_cx",vaInt8,F,,35,
 "mainfo,flat,bounds_cy",vaInt8,F,,16,
-"mainfo,flat,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick]",
+"mainfo,flat,optionsedit",vaSet,F,,[oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick],
 "mainfo,flat,ondataentered",vaIdent,F,,formatchanged,
 "mainfo,flat,value",vaTrue,F,,,
 "mainfo,flat,valuedefault",vaTrue,F,,,
@@ -379,12 +379,12 @@ mainfo,vaNull,F,,,
 "mainfo,statusdisp,bounds_y",vaInt16,F,,352,
 "mainfo,statusdisp,bounds_cx",vaInt16,F,,684,
 "mainfo,statusdisp,bounds_cy",vaInt8,F,,18,
-"mainfo,statusdisp,anchors",vaSet,F,,"[an_left,an_right,an_bottom]",
+"mainfo,statusdisp,anchors",vaSet,F,,[an_left;an_right;an_bottom],
 "mainfo,statusdisp,reffontheight",vaInt8,F,,14,
 "mainfo,workpan",vaNull,F,,,
-"mainfo,workpan,frame.hiddenedges",vaSet,F,,"[edg_right,edg_top,edg_left,edg_bottom]",
+"mainfo,workpan,frame.hiddenedges",vaSet,F,,[edg_right;edg_top;edg_left;edg_bottom],
 "mainfo,workpan,frame.colorclient",vaInt32,F,,948325,
-"mainfo,workpan,frame.localprops",vaSet,F,,"[frl_levelo,frl_hiddenedges,frl_colorclient]",
+"mainfo,workpan,frame.localprops",vaSet,F,,[frl_levelo;frl_hiddenedges;frl_colorclient],
 "mainfo,workpan,frame.localprops1",vaSet,F,,[],
 "mainfo,workpan,taborder",vaInt8,F,,8,
 "mainfo,workpan,visible",vaFalse,F,,,
@@ -393,16 +393,16 @@ mainfo,vaNull,F,,,
 "mainfo,workpan,bounds_cx",vaInt16,F,,404,
 "mainfo,workpan,bounds_cy",vaInt16,F,,158,
 "mainfo,workpan,font.height",vaInt8,F,,20,
-"mainfo,workpan,font.style",vaSet,F,,"[fs_bold,fs_italic]",
+"mainfo,workpan,font.style",vaSet,F,,[fs_bold;fs_italic],
 "mainfo,workpan,font.name",vaString,T,,stf_default,stf_default
-"mainfo,workpan,font.localprops",vaSet,F,,"[flp_style,flp_height]",
-"mainfo,workpan,textflags",vaSet,F,,"[tf_xcentered,tf_ycentered]",
+"mainfo,workpan,font.localprops",vaSet,F,,[flp_style;flp_height],
+"mainfo,workpan,textflags",vaSet,F,,[tf_xcentered;tf_ycentered],
 "mainfo,workpan,value",vaString,F,,Working...,Working...
 "mainfo,workpan,reffontheight",vaInt8,F,,24,
 "mainfo,mainstatfile",vaNull,F,,,
 "mainfo,mainstatfile,filename",vaString,T,,msei18n.sta,msei18n.sta
 "mainfo,mainstatfile,filedir",vaString,T,,"""^/.mseide""",^/.mseide
-"mainfo,mainstatfile,options",vaSet,F,,"[sfo_createpath,sfo_transaction,sfo_activatorread,sfo_activatorwrite]",
+"mainfo,mainstatfile,options",vaSet,F,,[sfo_createpath;sfo_transaction;sfo_activatorread;sfo_activatorwrite],
 "mainfo,mainstatfile,onstatupdate",vaIdent,F,,mainupdatestat,
 "mainfo,mainstatfile,left",vaInt8,F,,16,
 "mainfo,mainstatfile,top",vaInt8,F,,96,
@@ -413,76 +413,78 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,itemframetemplate",vaIdent,F,,menuitemframe,
 "mainfo,mainmenu1,itemfacetemplate",vaIdent,F,,concavey,
 "mainfo,mainmenu1,itemframetemplateactive",vaIdent,F,,menuitemframe,
-"mainfo,mainmenu1,menu.submenu.count",vaInt8,F,,12,
+"mainfo,mainmenu1,menu.submenu.count",vaInt8,F,,11,
 "mainfo,mainmenu1,menu.submenu.items",vaCollection,F,,,
 "mainfo,mainmenu1,menu.submenu.items,0:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open,&Open
 "mainfo,mainmenu1,menu.submenu.items,0:,name",vaString,T,,open,open
-"mainfo,mainmenu1,menu.submenu.items,0:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,0:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,0:,font.name",vaString,T,,stf_menu,stf_menu
 "mainfo,mainmenu1,menu.submenu.items,0:,font.localprops",vaSet,F,,[flp_extraspace],
 "mainfo,mainmenu1,menu.submenu.items,0:,onexecute",vaIdent,F,,onprojectopen,
 "mainfo,mainmenu1,menu.submenu.items,1:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Save,&Save
 "mainfo,mainmenu1,menu.submenu.items,1:,name",vaString,T,,save,save
-"mainfo,mainmenu1,menu.submenu.items,1:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,1:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,1:,onexecute",vaIdent,F,,onprojectsave,
 "mainfo,mainmenu1,menu.submenu.items,2:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,2:,caption",vaString,F,,Save &as,Save &as
 "mainfo,mainmenu1,menu.submenu.items,2:,name",vaString,T,,saveas,saveas
-"mainfo,mainmenu1,menu.submenu.items,2:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,2:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,2:,onexecute",vaIdent,F,,saveasexecute,
 "mainfo,mainmenu1,menu.submenu.items,3:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,3:,caption",vaString,F,,&New,&New
 "mainfo,mainmenu1,menu.submenu.items,3:,name",vaString,T,,new,new
-"mainfo,mainmenu1,menu.submenu.items,3:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,3:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,3:,onexecute",vaIdent,F,,newprojectexe,
 "mainfo,mainmenu1,menu.submenu.items,4:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,4:,caption",vaString,F,,&Edit,&Edit
+"mainfo,mainmenu1,menu.submenu.items,4:,hint",vaString,F,,Edit project options,Edit project options
 "mainfo,mainmenu1,menu.submenu.items,4:,name",vaString,T,,edit,edit
-"mainfo,mainmenu1,menu.submenu.items,4:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,4:,state",vaSet,F,,[as_localcaption;as_localhint;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,4:,onexecute",vaIdent,F,,onprojectedit,
 "mainfo,mainmenu1,menu.submenu.items,5:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,5:,caption",vaString,F,,&Import,&Import
 "mainfo,mainmenu1,menu.submenu.items,5:,name",vaString,T,,import,import
-"mainfo,mainmenu1,menu.submenu.items,5:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,5:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,5:,onexecute",vaIdent,F,,importonexecute,
 "mainfo,mainmenu1,menu.submenu.items,6:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,6:,caption",vaString,F,,Ex&port,Ex&port
 "mainfo,mainmenu1,menu.submenu.items,6:,name",vaString,T,,export,export
-"mainfo,mainmenu1,menu.submenu.items,6:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,6:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,6:,onexecute",vaIdent,F,,exportonexecute,
 "mainfo,mainmenu1,menu.submenu.items,7:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,7:,caption",vaString,F,,&Make,&Make
 "mainfo,mainmenu1,menu.submenu.items,7:,name",vaString,T,,make,make
-"mainfo,mainmenu1,menu.submenu.items,7:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,7:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,7:,onexecute",vaIdent,F,,makeonexecute,
 "mainfo,mainmenu1,menu.submenu.items,8:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.count",vaInt8,F,,2,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.count",vaInt8,F,,3,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items",vaCollection,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,onexecute",vaIdent,F,,aboutexe,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,onexecute",vaIdent,F,,configureonexecute,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:",vaList,F,,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Reset,&Reset
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint",vaString,F,,Reset translated words to root value,Reset translated words to root value
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,state",vaSet,F,,[as_localcaption;as_localhint;as_localonexecute]
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,onexecute",vaIdent,F,,onreset
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
 "mainfo,mainmenu1,menu.submenu.items,8:,name",vaString,T,,settings,settings
 "mainfo,mainmenu1,menu.submenu.items,8:,state",vaSet,F,,[as_localcaption],
 "mainfo,mainmenu1,menu.submenu.items,9:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,&Refresh,&Refresh
-"mainfo,mainmenu1,menu.submenu.items,9:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,9:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,9:,onexecute",vaIdent,F,,formatchanged,
 "mainfo,mainmenu1,menu.submenu.items,10:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,Reset,Reset
-"mainfo,mainmenu1,menu.submenu.items,10:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
-"mainfo,mainmenu1,menu.submenu.items,10:,onexecute",vaIdent,F,,onreset,
-"mainfo,mainmenu1,menu.submenu.items,11:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
-"mainfo,mainmenu1,menu.submenu.items,11:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
-"mainfo,mainmenu1,menu.submenu.items,11:,onexecute",vaIdent,F,,exitexe,
+"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,10:,state",vaSet,F,,[as_localcaption;as_localonexecute],
+"mainfo,mainmenu1,menu.submenu.items,10:,onexecute",vaIdent,F,,exitexe,
 "mainfo,mainmenu1,left",vaInt16,F,,256,
 "mainfo,mainmenu1,top",vaInt16,F,,160,
 "mainfo,projectfiledialog",vaNull,F,,,
@@ -492,7 +494,7 @@ mainfo,vaNull,F,,,
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
 "mainfo,projectfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.trp,*.trp
 "mainfo,projectfiledialog,controller.defaultext",vaString,T,,trp,trp
-"mainfo,projectfiledialog,controller.options",vaSet,F,,"[fdo_checkexist,fdo_chdir]",
+"mainfo,projectfiledialog,controller.options",vaSet,F,,[fdo_checkexist;fdo_chdir],
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
 "mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project,Save translate project
 "mainfo,projectfiledialog,left",vaInt8,F,,120,
@@ -621,7 +623,7 @@ msememodialogfo,vaNull,F,,,
 "msememodialogfo,container.bounds,1:",vaInt8,F,,0,
 "msememodialogfo,container.bounds,2:",vaInt16,F,,409,
 "msememodialogfo,container.bounds,3:",vaInt16,F,,297,
-"msememodialogfo,options",vaSet,F,,"[fo_screencentered,fo_closeonesc,fo_autoreadstat,fo_autowritestat,fo_savepos,fo_savestate]",
+"msememodialogfo,options",vaSet,F,,[fo_screencentered;fo_closeonesc;fo_autoreadstat;fo_autowritestat;fo_savepos;fo_savestate],
 "msememodialogfo,statfile",vaIdent,F,,tstatfile1,
 "msememodialogfo,caption",vaString,F,,Enter Memo Text,Enter Memo Text
 "msememodialogfo,moduleclassname",vaString,T,,tmseform,tmseform
@@ -634,20 +636,20 @@ msememodialogfo,vaNull,F,,,
 "msememodialogfo,memo,bounds_y",vaInt8,F,,0,
 "msememodialogfo,memo,bounds_cx",vaInt16,F,,409,
 "msememodialogfo,memo,bounds_cy",vaInt16,F,,268,
-"msememodialogfo,memo,anchors",vaSet,F,,"[an_top,an_bottom]",
-"msememodialogfo,memo,optionsedit1",vaSet,F,,"[oe1_multiline,oe1_autopopupmenu,oe1_keyexecute,oe1_savevalue,oe1_savestate]",
-"msememodialogfo,memo,optionsedit",vaSet,F,,"[oe_closequery,oe_checkmrcancel,oe_linebreak,oe_shiftreturn,oe_resetselectonexit,oe_nofirstarrownavig,oe_caretonreadonly]",
+"msememodialogfo,memo,anchors",vaSet,F,,[an_top;an_bottom],
+"msememodialogfo,memo,optionsedit1",vaSet,F,,[oe1_multiline;oe1_autopopupmenu;oe1_keyexecute;oe1_savevalue;oe1_savestate],
+"msememodialogfo,memo,optionsedit",vaSet,F,,[oe_closequery;oe_checkmrcancel;oe_linebreak;oe_shiftreturn;oe_resetselectonexit;oe_nofirstarrownavig;oe_caretonreadonly],
 "msememodialogfo,memo,reffontheight",vaInt8,F,,14,
 "msememodialogfo,tlayouter1",vaNull,F,,,
-"msememodialogfo,tlayouter1,optionswidget",vaSet,F,,"[ow_tabfocus,ow_parenttabfocus,ow_arrowfocus,ow_arrowfocusin,ow_arrowfocusout,ow_subfocus,ow_destroywidgets]",
+"msememodialogfo,tlayouter1,optionswidget",vaSet,F,,[ow_tabfocus;ow_parenttabfocus;ow_arrowfocus;ow_arrowfocusin;ow_arrowfocusout;ow_subfocus;ow_destroywidgets],
 "msememodialogfo,tlayouter1,taborder",vaInt8,F,,1,
 "msememodialogfo,tlayouter1,bounds_x",vaInt8,F,,72,
 "msememodialogfo,tlayouter1,bounds_y",vaInt16,F,,272,
 "msememodialogfo,tlayouter1,bounds_cx",vaInt16,F,,330,
 "msememodialogfo,tlayouter1,bounds_cy",vaInt8,F,,20,
-"msememodialogfo,tlayouter1,anchors",vaSet,F,,"[an_left,an_right,an_bottom]",
-"msememodialogfo,tlayouter1,optionsscale",vaSet,F,,"[osc_expandy,osc_shrinky,osc_expandshrinkx,osc_expandshrinky]",
-"msememodialogfo,tlayouter1,optionslayout",vaSet,F,,"[lao_placex,lao_aligny]",
+"msememodialogfo,tlayouter1,anchors",vaSet,F,,[an_left;an_right;an_bottom],
+"msememodialogfo,tlayouter1,optionsscale",vaSet,F,,[osc_expandy;osc_shrinky;osc_expandshrinkx;osc_expandshrinky],
+"msememodialogfo,tlayouter1,optionslayout",vaSet,F,,[lao_placex;lao_aligny],
 "msememodialogfo,tlayouter1,align_glue",vaIdent,F,,wam_start,
 "msememodialogfo,tlayouter1,place_mindist",vaInt8,F,,8,
 "msememodialogfo,tlayouter1,place_maxdist",vaInt8,F,,8,
@@ -656,7 +658,7 @@ msememodialogfo,vaNull,F,,,
 "msememodialogfo,tlayouter1,dist_top",vaInt8,F,,4,
 "msememodialogfo,tlayouter1,options",vaSet,F,,[spao_gluebottom],
 "msememodialogfo,tlayouter1,tbutton2",vaNull,F,,,
-"msememodialogfo,tlayouter1,tbutton2,optionswidget1",vaSet,F,,"[ow1_fontglyphheight,ow1_autoscale,ow1_autowidth]",
+"msememodialogfo,tlayouter1,tbutton2,optionswidget1",vaSet,F,,[ow1_fontglyphheight;ow1_autoscale;ow1_autowidth],
 "msememodialogfo,tlayouter1,tbutton2,bounds_x",vaInt16,F,,278,
 "msememodialogfo,tlayouter1,tbutton2,bounds_y",vaInt8,F,,0,
 "msememodialogfo,tlayouter1,tbutton2,bounds_cx",vaInt8,F,,52,
@@ -669,52 +671,52 @@ msememodialogfo,vaNull,F,,,
 "msememodialogfo,tlayouter1,tbutton2,modalresult",vaIdent,F,,mr_cancel,
 "msememodialogfo,tlayouter1,tbutton2,reffontheight",vaInt8,F,,14,
 "msememodialogfo,tlayouter1,tbutton1",vaNull,F,,,
-"msememodialogfo,tlayouter1,tbutton1,optionswidget1",vaSet,F,,"[ow1_fontglyphheight,ow1_autoscale,ow1_autowidth]",
+"msememodialogfo,tlayouter1,tbutton1,optionswidget1",vaSet,F,,[ow1_fontglyphheight;ow1_autoscale;ow1_autowidth],
 "msememodialogfo,tlayouter1,tbutton1,taborder",vaInt8,F,,1,
 "msememodialogfo,tlayouter1,tbutton1,bounds_x",vaInt16,F,,220,
 "msememodialogfo,tlayouter1,tbutton1,bounds_y",vaInt8,F,,0,
 "msememodialogfo,tlayouter1,tbutton1,bounds_cx",vaInt8,F,,50,
 "msememodialogfo,tlayouter1,tbutton1,bounds_cy",vaInt8,F,,20,
 "msememodialogfo,tlayouter1,tbutton1,bounds_cxmin",vaInt8,F,,50,
-"msememodialogfo,tlayouter1,tbutton1,state",vaSet,F,,"[as_default,as_localdefault,as_localcaption]",
+"msememodialogfo,tlayouter1,tbutton1,state",vaSet,F,,[as_default;as_localdefault;as_localcaption],
 "msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK,&OK
 "msememodialogfo,tlayouter1,tbutton1,modalresult",vaIdent,F,,mr_ok,
 "msememodialogfo,tlayouter1,tbutton1,reffontheight",vaInt8,F,,14,
 "msememodialogfo,tstatfile1",vaNull,F,,,
 "msememodialogfo,tstatfile1,filename",vaString,T,,memodialog.sta,memodialog.sta
-"msememodialogfo,tstatfile1,options",vaSet,F,,"[sfo_memory,sfo_activatorread,sfo_activatorwrite]",
+"msememodialogfo,tstatfile1,options",vaSet,F,,[sfo_memory;sfo_activatorread;sfo_activatorwrite],
 "msememodialogfo,tstatfile1,left",vaInt8,F,,64,
 "msememodialogfo,tstatfile1,top",vaInt8,F,,104,
 messagesfo,vaNull,F,,,
-"messagesfo,optionswidget",vaSet,F,,"[ow_arrowfocus,ow_subfocus,ow_destroywidgets,ow_hinton]",
+"messagesfo,optionswidget",vaSet,F,,[ow_arrowfocus;ow_subfocus;ow_destroywidgets;ow_hinton],
 "messagesfo,visible",vaFalse,F,,,
 "messagesfo,bounds_x",vaInt16,F,,298,
 "messagesfo,bounds_y",vaInt16,F,,263,
 "messagesfo,bounds_cx",vaInt16,F,,421,
 "messagesfo,bounds_cy",vaInt16,F,,234,
-"messagesfo,container.optionswidget",vaSet,F,,"[ow_mousefocus,ow_tabfocus,ow_arrowfocus,ow_subfocus,ow_mousetransparent,ow_destroywidgets]",
+"messagesfo,container.optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_subfocus;ow_mousetransparent;ow_destroywidgets],
 "messagesfo,container.bounds",vaList,F,,,
 "messagesfo,container.bounds,0:",vaInt8,F,,0,
 "messagesfo,container.bounds,1:",vaInt8,F,,0,
 "messagesfo,container.bounds,2:",vaInt16,F,,421,
 "messagesfo,container.bounds,3:",vaInt16,F,,234,
-"messagesfo,options",vaSet,F,,"[fo_closeonesc,fo_closeonenter,fo_autoreadstat,fo_autowritestat,fo_savepos,fo_savestate]",
+"messagesfo,options",vaSet,F,,[fo_closeonesc;fo_closeonenter;fo_autoreadstat;fo_autowritestat;fo_savepos;fo_savestate],
 "messagesfo,caption",vaString,F,,Make Language Units,Make Language Units
 "messagesfo,onclosequery",vaIdent,F,,formclosquery,
 "messagesfo,moduleclassname",vaString,T,,tmseform,tmseform
 "messagesfo,twidgetgrid1",vaNull,F,,,
-"messagesfo,twidgetgrid1,optionswidget",vaSet,F,,"[ow_mousefocus,ow_tabfocus,ow_arrowfocus,ow_focusbackonesc,ow_destroywidgets]",
+"messagesfo,twidgetgrid1,optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_focusbackonesc;ow_destroywidgets],
 "messagesfo,twidgetgrid1,bounds_x",vaInt8,F,,0,
 "messagesfo,twidgetgrid1,bounds_y",vaInt8,F,,0,
 "messagesfo,twidgetgrid1,bounds_cx",vaInt16,F,,421,
 "messagesfo,twidgetgrid1,bounds_cy",vaInt16,F,,234,
 "messagesfo,twidgetgrid1,anchors",vaSet,F,,[],
 "messagesfo,twidgetgrid1,datacols.count",vaInt8,F,,1,
-"messagesfo,twidgetgrid1,datacols.options",vaSet,F,,"[co_fill,co_savestate]",
+"messagesfo,twidgetgrid1,datacols.options",vaSet,F,,[co_fill;co_savestate],
 "messagesfo,twidgetgrid1,datacols.items",vaCollection,F,,,
 "messagesfo,twidgetgrid1,datacols.items,messages",vaList,F,,,
 "messagesfo,twidgetgrid1,datacols.items,messages,width",vaInt16,F,,1024,
-"messagesfo,twidgetgrid1,datacols.items,messages,options",vaSet,F,,"[co_fill,co_savestate]",
+"messagesfo,twidgetgrid1,datacols.items,messages,options",vaSet,F,,[co_fill;co_savestate],
 "messagesfo,twidgetgrid1,datacols.items,messages,widthmin",vaInt16,F,,1024,
 "messagesfo,twidgetgrid1,datacols.items,messages,widgetname",vaString,T,,messages,messages
 "messagesfo,twidgetgrid1,datacols.items,messages,dataclass",vaIdent,F,,tgridrichstringdatalist,
@@ -728,26 +730,26 @@ messagesfo,vaNull,F,,,
 "messagesfo,twidgetgrid1,messages,bounds_y",vaInt8,F,,0,
 "messagesfo,twidgetgrid1,messages,bounds_cx",vaInt16,F,,1024,
 "messagesfo,twidgetgrid1,messages,bounds_cy",vaInt8,F,,16,
-"messagesfo,twidgetgrid1,messages,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate,oe1_checkvalueafterstatread]",
+"messagesfo,twidgetgrid1,messages,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savestate;oe1_checkvalueafterstatread],
 "messagesfo,twidgetgrid1,messages,options",vaSet,F,,[teo_readonly],
 "messagesfo,twidgetgrid1,messages,reffontheight",vaInt8,F,,14,
 projectfo,vaNull,F,,,
-"projectfo,optionswidget",vaSet,F,,"[ow_arrowfocus,ow_subfocus,ow_destroywidgets,ow_hinton]",
+"projectfo,optionswidget",vaSet,F,,[ow_arrowfocus;ow_subfocus;ow_destroywidgets;ow_hinton],
 "projectfo,visible",vaFalse,F,,,
-"projectfo,bounds_x",vaInt16,F,,149,
-"projectfo,bounds_y",vaInt16,F,,167,
-"projectfo,bounds_cx",vaInt16,F,,683,
-"projectfo,bounds_cy",vaInt16,F,,501,
-"projectfo,container.optionswidget",vaSet,F,,"[ow_mousefocus,ow_tabfocus,ow_arrowfocus,ow_subfocus,ow_mousetransparent,ow_destroywidgets]",
+"projectfo,bounds_x",vaInt16,F,,404,
+"projectfo,bounds_y",vaInt8,F,,62,
+"projectfo,bounds_cx",vaInt16,F,,646,
+"projectfo,bounds_cy",vaInt16,F,,561,
+"projectfo,container.optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_subfocus;ow_mousetransparent;ow_destroywidgets],
 "projectfo,container.frame.localprops",vaSet,F,,[],
 "projectfo,container.frame.localprops1",vaSet,F,,[],
 "projectfo,container.onlayout",vaIdent,F,,childscaled,
 "projectfo,container.bounds",vaList,F,,,
 "projectfo,container.bounds,0:",vaInt8,F,,0,
 "projectfo,container.bounds,1:",vaInt8,F,,0,
-"projectfo,container.bounds,2:",vaInt16,F,,683,
-"projectfo,container.bounds,3:",vaInt16,F,,501,
-"projectfo,options",vaSet,F,,"[fo_closeonesc,fo_savepos,fo_savestate]",
+"projectfo,container.bounds,2:",vaInt16,F,,646,
+"projectfo,container.bounds,3:",vaInt16,F,,561,
+"projectfo,options",vaSet,F,,[fo_closeonesc;fo_savepos;fo_savestate],
 "projectfo,statfile",vaIdent,F,,projectstat,
 "projectfo,caption",vaString,F,,Edit Translate Project,Edit Translate Project
 "projectfo,windowopacity",vaExtended,F,,-Inf,
@@ -770,9 +772,9 @@ projectfo,vaNull,F,,,
 "projectfo,impexpencoding,frame.outerframe,3:",vaInt8,F,,0,
 "projectfo,impexpencoding,taborder",vaInt8,F,,6,
 "projectfo,impexpencoding,bounds_x",vaInt8,F,,8,
-"projectfo,impexpencoding,bounds_y",vaInt16,F,,475,
+"projectfo,impexpencoding,bounds_y",vaInt16,F,,535,
 "projectfo,impexpencoding,bounds_cx",vaInt16,F,,260,
-"projectfo,impexpencoding,anchors",vaSet,F,,"[an_left,an_bottom]",
+"projectfo,impexpencoding,anchors",vaSet,F,,[an_left;an_bottom],
 "projectfo,impexpencoding,statfile",vaIdent,F,,projectstat,
 "projectfo,impexpencoding,valuedefault",vaInt8,F,,1,
 "projectfo,impexpencoding,valuemin",vaInt8,F,,0,
@@ -783,16 +785,16 @@ projectfo,vaNull,F,,,
 "projectfo,impexpencoding,oninit",vaIdent,F,,impexpencinit,
 "projectfo,impexpencoding,reffontheight",vaInt8,F,,14,
 "projectfo,grid",vaNull,F,,,
-"projectfo,grid,optionswidget",vaSet,F,,"[ow_mousefocus,ow_tabfocus,ow_arrowfocus,ow_focusbackonesc,ow_destroywidgets]",
+"projectfo,grid,optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_focusbackonesc;ow_destroywidgets],
 "projectfo,grid,frame.localprops",vaSet,F,,[],
 "projectfo,grid,frame.localprops1",vaSet,F,,[],
 "projectfo,grid,taborder",vaInt8,F,,4,
 "projectfo,grid,bounds_x",vaInt8,F,,0,
-"projectfo,grid,bounds_y",vaInt16,F,,264,
-"projectfo,grid,bounds_cx",vaInt16,F,,683,
-"projectfo,grid,bounds_cy",vaInt8,F,,104,
+"projectfo,grid,bounds_y",vaInt16,F,,224,
+"projectfo,grid,bounds_cx",vaInt16,F,,646,
+"projectfo,grid,bounds_cy",vaInt8,F,,96,
 "projectfo,grid,anchors",vaSet,F,,[an_top],
-"projectfo,grid,optionsgrid",vaSet,F,,"[og_colsizing,og_rowmoving,og_keyrowmoving,og_rowinserting,og_rowdeleting,og_focuscellonenter,og_autofirstrow,og_autoappend,og_colchangeontabkey,og_wrapcol,og_autopopup]",
+"projectfo,grid,optionsgrid",vaSet,F,,[og_colsizing;og_rowmoving;og_keyrowmoving;og_rowinserting;og_rowdeleting;og_focuscellonenter;og_autofirstrow;og_autoappend;og_colchangeontabkey;og_wrapcol;og_autopopup],
 "projectfo,grid,fixrows.count",vaInt8,F,,1,
 "projectfo,grid,fixrows.items",vaCollection,F,,,
 "projectfo,grid,fixrows.items,0:",vaList,F,,,
@@ -812,12 +814,12 @@ projectfo,vaNull,F,,,
 "projectfo,grid,datacols.items",vaCollection,F,,,
 "projectfo,grid,datacols.items,rootname",vaList,F,,,
 "projectfo,grid,datacols.items,rootname,width",vaInt8,F,,71,
-"projectfo,grid,datacols.items,rootname,options",vaSet,F,,"[co_readonly,co_savevalue,co_savestate]",
+"projectfo,grid,datacols.items,rootname,options",vaSet,F,,[co_readonly;co_savevalue;co_savestate],
 "projectfo,grid,datacols.items,rootname,widgetname",vaString,T,,rootname,rootname
 "projectfo,grid,datacols.items,rootname,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "projectfo,grid,datacols.items,filename",vaList,F,,,
-"projectfo,grid,datacols.items,filename,width",vaInt16,F,,479,
-"projectfo,grid,datacols.items,filename,options",vaSet,F,,"[co_fill,co_savevalue]",
+"projectfo,grid,datacols.items,filename,width",vaInt16,F,,442,
+"projectfo,grid,datacols.items,filename,options",vaSet,F,,[co_fill;co_savevalue],
 "projectfo,grid,datacols.items,filename,widgetname",vaString,T,,filename,filename
 "projectfo,grid,datacols.items,filename,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "projectfo,grid,datacols.items,filekind",vaList,F,,,
@@ -832,7 +834,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid,rootname,color",vaInt32,F,,-1879048185,
 "projectfo,grid,rootname,frame.levelo",vaInt8,F,,0,
 "projectfo,grid,rootname,frame.colorclient",vaInt32,F,,-2147483646,
-"projectfo,grid,rootname,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"projectfo,grid,rootname,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "projectfo,grid,rootname,frame.localprops1",vaSet,F,,[],
 "projectfo,grid,rootname,taborder",vaInt8,F,,1,
 "projectfo,grid,rootname,visible",vaFalse,F,,,
@@ -840,13 +842,13 @@ projectfo,vaNull,F,,,
 "projectfo,grid,rootname,bounds_y",vaInt8,F,,0,
 "projectfo,grid,rootname,bounds_cx",vaInt8,F,,71,
 "projectfo,grid,rootname,bounds_cy",vaInt8,F,,16,
-"projectfo,grid,rootname,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savevalue,oe1_savestate]",
-"projectfo,grid,rootname,optionsedit",vaSet,F,,"[oe_readonly,oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick]",
+"projectfo,grid,rootname,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savevalue;oe1_savestate],
+"projectfo,grid,rootname,optionsedit",vaSet,F,,[oe_readonly;oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick],
 "projectfo,grid,rootname,reffontheight",vaInt8,F,,14,
 "projectfo,grid,filename",vaNull,F,,,
 "projectfo,grid,filename,frame.levelo",vaInt8,F,,0,
 "projectfo,grid,filename,frame.colorclient",vaInt32,F,,-2147483646,
-"projectfo,grid,filename,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"projectfo,grid,filename,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "projectfo,grid,filename,frame.localprops1",vaSet,F,,[],
 "projectfo,grid,filename,frame.buttons.count",vaInt8,F,,1,
 "projectfo,grid,filename,frame.buttons.items",vaCollection,F,,,
@@ -859,7 +861,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid,filename,visible",vaFalse,F,,,
 "projectfo,grid,filename,bounds_x",vaInt8,F,,72,
 "projectfo,grid,filename,bounds_y",vaInt8,F,,0,
-"projectfo,grid,filename,bounds_cx",vaInt16,F,,479,
+"projectfo,grid,filename,bounds_cx",vaInt16,F,,442,
 "projectfo,grid,filename,bounds_cy",vaInt8,F,,16,
 "projectfo,grid,filename,ondataentered",vaIdent,F,,filenamedataentered,
 "projectfo,grid,filename,controller.historymaxcount",vaInt8,F,,0,
@@ -869,7 +871,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid,filekind,optionswidget1",vaSet,F,,[ow1_fontglyphheight],
 "projectfo,grid,filekind,frame.levelo",vaInt8,F,,0,
 "projectfo,grid,filekind,frame.colorclient",vaInt32,F,,-2147483646,
-"projectfo,grid,filekind,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"projectfo,grid,filekind,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "projectfo,grid,filekind,frame.localprops1",vaSet,F,,[],
 "projectfo,grid,filekind,frame.button.color",vaInt32,F,,-2147483646,
 "projectfo,grid,filekind,frame.buttons.count",vaInt8,F,,1,
@@ -878,7 +880,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid,filekind,frame.buttons.items,0:,color",vaInt32,F,,-2147483646,
 "projectfo,grid,filekind,taborder",vaInt8,F,,3,
 "projectfo,grid,filekind,visible",vaFalse,F,,,
-"projectfo,grid,filekind,bounds_x",vaInt16,F,,552,
+"projectfo,grid,filekind,bounds_x",vaInt16,F,,515,
 "projectfo,grid,filekind,bounds_y",vaInt8,F,,0,
 "projectfo,grid,filekind,bounds_cx",vaInt8,F,,126,
 "projectfo,grid,filekind,bounds_cy",vaInt8,F,,16,
@@ -906,7 +908,7 @@ projectfo,vaNull,F,,,
 "projectfo,datafilename,taborder",vaInt8,F,,1,
 "projectfo,datafilename,bounds_x",vaInt8,F,,0,
 "projectfo,datafilename,bounds_y",vaInt8,F,,-1,
-"projectfo,datafilename,bounds_cx",vaInt16,F,,683,
+"projectfo,datafilename,bounds_cx",vaInt16,F,,646,
 "projectfo,datafilename,bounds_cy",vaInt8,F,,37,
 "projectfo,datafilename,anchors",vaSet,F,,[an_top],
 "projectfo,datafilename,statfile",vaIdent,F,,projectstat,
@@ -921,16 +923,16 @@ projectfo,vaNull,F,,,
 "projectfo,datafilename,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,datafilename,reffontheight",vaInt8,F,,14,
 "projectfo,grid2",vaNull,F,,,
-"projectfo,grid2,optionswidget",vaSet,F,,"[ow_mousefocus,ow_tabfocus,ow_arrowfocus,ow_focusbackonesc,ow_destroywidgets]",
+"projectfo,grid2,optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_focusbackonesc;ow_destroywidgets],
 "projectfo,grid2,frame.localprops",vaSet,F,,[],
 "projectfo,grid2,frame.localprops1",vaSet,F,,[],
 "projectfo,grid2,taborder",vaInt8,F,,5,
 "projectfo,grid2,bounds_x",vaInt8,F,,0,
-"projectfo,grid2,bounds_y",vaInt16,F,,376,
-"projectfo,grid2,bounds_cx",vaInt16,F,,683,
-"projectfo,grid2,bounds_cy",vaInt8,F,,90,
-"projectfo,grid2,anchors",vaSet,F,,"[an_top,an_bottom]",
-"projectfo,grid2,optionsgrid",vaSet,F,,"[og_colsizing,og_rowmoving,og_keyrowmoving,og_rowinserting,og_rowdeleting,og_focuscellonenter,og_autofirstrow,og_autoappend,og_wrapcol,og_autopopup]",
+"projectfo,grid2,bounds_y",vaInt16,F,,332,
+"projectfo,grid2,bounds_cx",vaInt16,F,,646,
+"projectfo,grid2,bounds_cy",vaInt8,F,,102,
+"projectfo,grid2,anchors",vaSet,F,,[an_top;an_bottom],
+"projectfo,grid2,optionsgrid",vaSet,F,,[og_colsizing;og_rowmoving;og_keyrowmoving;og_rowinserting;og_rowdeleting;og_focuscellonenter;og_autofirstrow;og_autoappend;og_wrapcol;og_autopopup],
 "projectfo,grid2,fixrows.count",vaInt8,F,,1,
 "projectfo,grid2,fixrows.items",vaCollection,F,,,
 "projectfo,grid2,fixrows.items,0:",vaList,F,,,
@@ -950,8 +952,8 @@ projectfo,vaNull,F,,,
 "projectfo,grid2,datacols.items,lang,widgetname",vaString,T,,lang,lang
 "projectfo,grid2,datacols.items,lang,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "projectfo,grid2,datacols.items,dir",vaList,F,,,
-"projectfo,grid2,datacols.items,dir,width",vaInt16,F,,583,
-"projectfo,grid2,datacols.items,dir,options",vaSet,F,,"[co_fill,co_savevalue]",
+"projectfo,grid2,datacols.items,dir,width",vaInt16,F,,546,
+"projectfo,grid2,datacols.items,dir,options",vaSet,F,,[co_fill;co_savevalue],
 "projectfo,grid2,datacols.items,dir,widgetname",vaString,T,,dir,dir
 "projectfo,grid2,datacols.items,dir,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "projectfo,grid2,datarowheight",vaInt8,F,,16,
@@ -962,7 +964,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid2,lang,optionswidget1",vaSet,F,,[ow1_fontglyphheight],
 "projectfo,grid2,lang,frame.levelo",vaInt8,F,,0,
 "projectfo,grid2,lang,frame.colorclient",vaInt32,F,,-2147483646,
-"projectfo,grid2,lang,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"projectfo,grid2,lang,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "projectfo,grid2,lang,frame.localprops1",vaSet,F,,[],
 "projectfo,grid2,lang,taborder",vaInt8,F,,1,
 "projectfo,grid2,lang,visible",vaFalse,F,,,
@@ -974,7 +976,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid2,dir",vaNull,F,,,
 "projectfo,grid2,dir,frame.levelo",vaInt8,F,,0,
 "projectfo,grid2,dir,frame.colorclient",vaInt32,F,,-2147483646,
-"projectfo,grid2,dir,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"projectfo,grid2,dir,frame.localprops",vaSet,F,,[frl_levelo;frl_colorclient],
 "projectfo,grid2,dir,frame.localprops1",vaSet,F,,[],
 "projectfo,grid2,dir,frame.button.color",vaInt32,F,,-2147483646,
 "projectfo,grid2,dir,frame.buttons.count",vaInt8,F,,1,
@@ -985,18 +987,18 @@ projectfo,vaNull,F,,,
 "projectfo,grid2,dir,visible",vaFalse,F,,,
 "projectfo,grid2,dir,bounds_x",vaInt8,F,,95,
 "projectfo,grid2,dir,bounds_y",vaInt8,F,,0,
-"projectfo,grid2,dir,bounds_cx",vaInt16,F,,583,
+"projectfo,grid2,dir,bounds_cx",vaInt16,F,,546,
 "projectfo,grid2,dir,bounds_cy",vaInt8,F,,16,
 "projectfo,grid2,dir,reffontheight",vaInt8,F,,14,
 "projectfo,splitter",vaNull,F,,,
 "projectfo,splitter,color",vaInt32,F,,-1879048189,
-"projectfo,splitter,taborder",vaInt8,F,,8,
+"projectfo,splitter,taborder",vaInt8,F,,12,
 "projectfo,splitter,bounds_x",vaInt8,F,,0,
-"projectfo,splitter,bounds_y",vaInt16,F,,368,
-"projectfo,splitter,bounds_cx",vaInt16,F,,683,
-"projectfo,splitter,bounds_cy",vaInt8,F,,3,
+"projectfo,splitter,bounds_y",vaInt16,F,,322,
+"projectfo,splitter,bounds_cx",vaInt16,F,,646,
+"projectfo,splitter,bounds_cy",vaInt8,F,,6,
 "projectfo,splitter,anchors",vaSet,F,,[an_top],
-"projectfo,splitter,options",vaSet,F,,"[spo_vmove,spo_vprop]",
+"projectfo,splitter,options",vaSet,F,,[spo_vmove;spo_vprop],
 "projectfo,splitter,linktop",vaIdent,F,,grid,
 "projectfo,splitter,linkbottom",vaIdent,F,,grid2,
 "projectfo,makecommand",vaNull,F,,,
@@ -1016,10 +1018,10 @@ projectfo,vaNull,F,,,
 "projectfo,makecommand,taborder",vaInt8,F,,2,
 "projectfo,makecommand,onshowhint",vaIdent,F,,showhintexe,
 "projectfo,makecommand,bounds_x",vaInt8,F,,0,
-"projectfo,makecommand,bounds_y",vaInt16,F,,143,
-"projectfo,makecommand,bounds_cx",vaInt16,F,,644,
+"projectfo,makecommand,bounds_y",vaInt16,F,,135,
+"projectfo,makecommand,bounds_cx",vaInt16,F,,607,
 "projectfo,makecommand,bounds_cy",vaInt8,F,,37,
-"projectfo,makecommand,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"projectfo,makecommand,anchors",vaSet,F,,[an_left;an_top;an_right],
 "projectfo,makecommand,statfile",vaIdent,F,,projectstat,
 "projectfo,makecommand,value",vaString,T,,${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections,${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 "projectfo,makecommand,onsetvalue",vaIdent,F,,makecommandsetvalue,
@@ -1035,32 +1037,34 @@ projectfo,vaNull,F,,,
 "projectfo,makeon,frame.outerframe,2:",vaInt8,F,,2,
 "projectfo,makeon,frame.outerframe,3:",vaInt8,F,,0,
 "projectfo,makeon,taborder",vaInt8,F,,3,
-"projectfo,makeon,bounds_x",vaInt16,F,,654,
+"projectfo,makeon,bounds_x",vaInt16,F,,617,
 "projectfo,makeon,bounds_y",vaInt16,F,,148,
 "projectfo,makeon,bounds_cx",vaInt8,F,,17,
 "projectfo,makeon,bounds_cy",vaInt8,F,,30,
-"projectfo,makeon,anchors",vaSet,F,,"[an_top,an_right]",
+"projectfo,makeon,anchors",vaSet,F,,[an_top;an_right],
 "projectfo,makeon,statfile",vaIdent,F,,projectstat,
 "projectfo,makeon,value",vaTrue,F,,,
 "projectfo,ok",vaNull,F,,,
 "projectfo,ok,taborder",vaInt8,F,,7,
-"projectfo,ok,bounds_x",vaInt16,F,,558,
-"projectfo,ok,bounds_y",vaInt16,F,,473,
+"projectfo,ok,bounds_x",vaInt16,F,,521,
+"projectfo,ok,bounds_y",vaInt16,F,,533,
 "projectfo,ok,bounds_cx",vaInt8,F,,50,
 "projectfo,ok,bounds_cy",vaInt8,F,,22,
-"projectfo,ok,anchors",vaSet,F,,"[an_right,an_bottom]",
-"projectfo,ok,state",vaSet,F,,"[as_default,as_localdefault,as_localcaption]",
+"projectfo,ok,anchors",vaSet,F,,[an_right;an_bottom],
+"projectfo,ok,state",vaSet,F,,[as_default;as_localdefault;as_localcaption;as_localonexecute],
 "projectfo,ok,caption",vaString,F,,OK,OK
-"projectfo,ok,modalresult",vaIdent,F,,mr_ok,
+"projectfo,ok,modalresult",vaIdent,F,,mr_none,
+"projectfo,ok,onexecute",vaIdent,F,,onok
 "projectfo,cancel",vaNull,F,,,
-"projectfo,cancel,bounds_x",vaInt16,F,,622,
-"projectfo,cancel,bounds_y",vaInt16,F,,473,
+"projectfo,cancel,bounds_x",vaInt16,F,,585,
+"projectfo,cancel,bounds_y",vaInt16,F,,533,
 "projectfo,cancel,bounds_cx",vaInt8,F,,50,
 "projectfo,cancel,bounds_cy",vaInt8,F,,22,
-"projectfo,cancel,anchors",vaSet,F,,"[an_right,an_bottom]",
-"projectfo,cancel,state",vaSet,F,,[as_localcaption],
+"projectfo,cancel,anchors",vaSet,F,,[an_right;an_bottom],
+"projectfo,cancel,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "projectfo,cancel,caption",vaString,F,,Cancel,Cancel
-"projectfo,cancel,modalresult",vaIdent,F,,mr_cancel,
+"projectfo,cancel,modalresult",vaIdent,F,,mr_none,
+"projectfo,cancel,onexecute",vaIdent,F,,oncancel
 "projectfo,destname",vaNull,F,,,
 "projectfo,destname,frame.caption",vaString,F,,Destination Basename (empty = Datafile name),Destination Basename (empty = Datafile name)
 "projectfo,destname,frame.localprops",vaSet,F,,[],
@@ -1070,10 +1074,10 @@ projectfo,vaNull,F,,,
 "projectfo,destname,frame.outerframe,1:",vaInt8,F,,17,
 "projectfo,destname,frame.outerframe,2:",vaInt8,F,,0,
 "projectfo,destname,frame.outerframe,3:",vaInt8,F,,0,
-"projectfo,destname,taborder",vaInt8,F,,9,
+"projectfo,destname,taborder",vaInt8,F,,8,
 "projectfo,destname,bounds_x",vaInt8,F,,0,
-"projectfo,destname,bounds_y",vaInt8,F,,55,
-"projectfo,destname,bounds_cx",vaInt16,F,,683,
+"projectfo,destname,bounds_y",vaInt8,F,,47,
+"projectfo,destname,bounds_cx",vaInt16,F,,646,
 "projectfo,destname,bounds_cy",vaInt8,F,,37,
 "projectfo,destname,anchors",vaSet,F,,[an_top],
 "projectfo,destname,statfile",vaIdent,F,,projectstat,
@@ -1092,11 +1096,11 @@ projectfo,vaNull,F,,,
 "projectfo,beforemake,frame.outerframe,1:",vaInt8,F,,17,
 "projectfo,beforemake,frame.outerframe,2:",vaInt8,F,,0,
 "projectfo,beforemake,frame.outerframe,3:",vaInt8,F,,0,
-"projectfo,beforemake,taborder",vaInt8,F,,10,
+"projectfo,beforemake,taborder",vaInt8,F,,9,
 "projectfo,beforemake,onshowhint",vaIdent,F,,showhintexe,
 "projectfo,beforemake,bounds_x",vaInt8,F,,0,
-"projectfo,beforemake,bounds_y",vaInt8,F,,103,
-"projectfo,beforemake,bounds_cx",vaInt16,F,,683,
+"projectfo,beforemake,bounds_y",vaInt8,F,,95,
+"projectfo,beforemake,bounds_cx",vaInt16,F,,646,
 "projectfo,beforemake,bounds_cy",vaInt8,F,,37,
 "projectfo,beforemake,anchors",vaSet,F,,[an_top],
 "projectfo,beforemake,statfile",vaIdent,F,,projectstat,
@@ -1115,15 +1119,129 @@ projectfo,vaNull,F,,,
 "projectfo,aftermake,frame.outerframe,1:",vaInt8,F,,17,
 "projectfo,aftermake,frame.outerframe,2:",vaInt8,F,,0,
 "projectfo,aftermake,frame.outerframe,3:",vaInt8,F,,0,
-"projectfo,aftermake,taborder",vaInt8,F,,11,
+"projectfo,aftermake,taborder",vaInt8,F,,10,
 "projectfo,aftermake,onshowhint",vaIdent,F,,showhintexe,
 "projectfo,aftermake,bounds_x",vaInt8,F,,0,
 "projectfo,aftermake,bounds_y",vaInt16,F,,183,
-"projectfo,aftermake,bounds_cx",vaInt16,F,,683,
+"projectfo,aftermake,bounds_cx",vaInt16,F,,646,
 "projectfo,aftermake,bounds_cy",vaInt8,F,,37,
 "projectfo,aftermake,anchors",vaSet,F,,[an_top],
 "projectfo,aftermake,statfile",vaIdent,F,,projectstat,
 "projectfo,aftermake,reffontheight",vaInt8,F,,14,
+"projectfo,memopotheader",vaNull,F,,
+"projectfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
+"projectfo,memopotheader,frame.localprops",vaSet,F,,[]
+"projectfo,memopotheader,frame.localprops1",vaSet,F,,[]
+"projectfo,memopotheader,frame.buttons.count",vaInt8,F,,1
+"projectfo,memopotheader,frame.buttons.items",vaCollection,F,,
+"projectfo,memopotheader,frame.buttons.items,0:",vaList,F,,
+"projectfo,memopotheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17
+"projectfo,memopotheader,frame.button.imagenr",vaInt8,F,,17
+"projectfo,memopotheader,frame.outerframe",vaList,F,,
+"projectfo,memopotheader,frame.outerframe,0:",vaInt8,F,,0
+"projectfo,memopotheader,frame.outerframe,1:",vaInt8,F,,17
+"projectfo,memopotheader,frame.outerframe,2:",vaInt8,F,,0
+"projectfo,memopotheader,frame.outerframe,3:",vaInt8,F,,0
+"projectfo,memopotheader,taborder",vaInt8,F,,11
+"projectfo,memopotheader,bounds_x",vaInt8,F,,0
+"projectfo,memopotheader,bounds_y",vaInt16,F,,447
+"projectfo,memopotheader,bounds_cx",vaInt16,F,,646
+"projectfo,memopotheader,bounds_cy",vaInt8,F,,34
+"projectfo,memopotheader,anchors",vaSet,F,,[an_bottom]
+"projectfo,memopotheader,statfile",vaIdent,F,,projectstat
+"projectfo,memopotheader,value",vaLString,T,,"# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n""","# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n"""
+"projectfo,memopotheader,reffontheight",vaInt8,F,,14
+"projectfo,memopoheader",vaNull,F,,
+"projectfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
+"projectfo,memopoheader,frame.localprops",vaSet,F,,[]
+"projectfo,memopoheader,frame.localprops1",vaSet,F,,[]
+"projectfo,memopoheader,frame.buttons.count",vaInt8,F,,1
+"projectfo,memopoheader,frame.buttons.items",vaCollection,F,,
+"projectfo,memopoheader,frame.buttons.items,0:",vaList,F,,
+"projectfo,memopoheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17
+"projectfo,memopoheader,frame.button.imagenr",vaInt8,F,,17
+"projectfo,memopoheader,frame.outerframe",vaList,F,,
+"projectfo,memopoheader,frame.outerframe,0:",vaInt8,F,,0
+"projectfo,memopoheader,frame.outerframe,1:",vaInt8,F,,17
+"projectfo,memopoheader,frame.outerframe,2:",vaInt8,F,,0
+"projectfo,memopoheader,frame.outerframe,3:",vaInt8,F,,0
+"projectfo,memopoheader,taborder",vaInt8,F,,13
+"projectfo,memopoheader,bounds_x",vaInt8,F,,0
+"projectfo,memopoheader,bounds_y",vaInt16,F,,488
+"projectfo,memopoheader,bounds_cx",vaInt16,F,,646
+"projectfo,memopoheader,bounds_cy",vaInt8,F,,34
+"projectfo,memopoheader,anchors",vaSet,F,,[an_bottom]
+"projectfo,memopoheader,statfile",vaIdent,F,,projectstat
+"projectfo,memopoheader,value",vaLString,T,,"# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n""","# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n"""
+"projectfo,memopoheader,reffontheight",vaInt8,F,,14
 "projectfo,projectstat",vaNull,F,,,
 "projectfo,projectstat,onstatupdate",vaIdent,F,,projectstatonupdatestat,
 "projectfo,projectstat,onstatbeforewrite",vaIdent,F,,projectstatonbeforewritestat,
@@ -1135,105 +1253,45 @@ projectfo,vaNull,F,,,
 "projectfo,impexpfiledialog,controller.filename",vaString,T,,default.csv,default.csv
 "projectfo,impexpfiledialog,controller.filterlist.data",vaList,F,,,
 "projectfo,impexpfiledialog,controller.filterlist.data,0:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
+"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files complete,Data exchange files complete
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.csv,*.csv
 "projectfo,impexpfiledialog,controller.filterlist.data,1:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,MSE trd files,MSE trd files
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*.trd,*.trd
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,Data exchange files without translated value,Data exchange files without translated value
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*.csv,*.trd
 "projectfo,impexpfiledialog,controller.filterlist.data,2:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,PO translation files,PO translation files
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,1:",vaString,T,,*.po,*.po
+"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files without context,POT templates files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,2:,1:",vaString,T,,*.pot,*.po
 "projectfo,impexpfiledialog,controller.filterlist.data,3:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,All files,All files
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,1:",vaString,T,,*.*,*.*
-"projectfo,impexpfiledialog,controller.defaultext",vaString,T,,csv,csv
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with context,POT templates files with context
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,1:",vaString,T,,*.pot,*.*
+"projectfo,impexpfiledialog,controller.filterlist.data,4:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
+"projectfo,impexpfiledialog,controller.filterlist.data,4:,1:",vaString,T,,*.pot,*.pot
+"projectfo,impexpfiledialog,controller.filterlist.data,5:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files without context,PO translation files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,5:,1:",vaString,T,,*.po,*.po
+"projectfo,impexpfiledialog,controller.filterlist.data,6:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with context,PO translation files with context
+"projectfo,impexpfiledialog,controller.filterlist.data,6:,1:",vaString,T,,*.po,*.po
+"projectfo,impexpfiledialog,controller.filterlist.data,7:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
+"projectfo,impexpfiledialog,controller.filterlist.data,7:,1:",vaString,T,,*.po,*.po
+"projectfo,impexpfiledialog,controller.filterlist.data,8:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,8:,0:",vaString,F,,TXT text files with root values only,TXT text files with root values only
+"projectfo,impexpfiledialog,controller.filterlist.data,8:,1:",vaString,T,,*.txt,*.txt
+"projectfo,impexpfiledialog,controller.filterlist.data,9:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,9:,0:",vaString,F,,TXT text files with translated values only,TXT text files with translated values only
+"projectfo,impexpfiledialog,controller.filterlist.data,9:,1:",vaString,T,,*.txt,*.txt
+"projectfo,impexpfiledialog,controller.filterlist.data,10:",vaList,F,,
+"projectfo,impexpfiledialog,controller.filterlist.data,10:,0:",vaString,F,,All files,All files
+"projectfo,impexpfiledialog,controller.filterlist.data,10:,1:",vaString,T,,*.*,*.*
 "projectfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "projectfo,impexpfiledialog,left",vaInt16,F,,240,
 "projectfo,impexpfiledialog,top",vaInt8,F,,24,
-datatypefo,vaNull,F,,
-"datatypefo,visible",vaFalse,F,,
-"datatypefo,bounds_x",vaInt16,F,,406
-"datatypefo,bounds_y",vaInt16,F,,275
-"datatypefo,bounds_cx",vaInt16,F,,337
-"datatypefo,bounds_cy",vaInt8,F,,105
-"datatypefo,container.frame.localprops",vaSet,F,,[]
-"datatypefo,container.frame.localprops1",vaSet,F,,[]
-"datatypefo,container.bounds",vaList,F,,
-"datatypefo,container.bounds,0:",vaInt8,F,,0
-"datatypefo,container.bounds,1:",vaInt8,F,,0
-"datatypefo,container.bounds,2:",vaInt16,F,,337
-"datatypefo,container.bounds,3:",vaInt8,F,,105
-"datatypefo,options",vaSet,F,,"[fo_screencentered,fo_autoreadstat,fo_autowritestat,fo_savepos,fo_savezorder,fo_savestate]"
-"datatypefo,caption",vaString,F,,Importation,Importation
-"datatypefo,windowopacity",vaExtended,F,,-Inf
-"datatypefo,moduleclassname",vaString,T,,tmseform,tmseform
-"datatypefo,tgroupbox1",vaNull,F,,
-"datatypefo,tgroupbox1,frame.caption",vaString,F,,Data type,Data type
-"datatypefo,tgroupbox1,frame.localprops",vaSet,F,,[]
-"datatypefo,tgroupbox1,frame.localprops1",vaSet,F,,[]
-"datatypefo,tgroupbox1,frame.outerframe",vaList,F,,
-"datatypefo,tgroupbox1,frame.outerframe,0:",vaInt8,F,,0
-"datatypefo,tgroupbox1,frame.outerframe,1:",vaInt8,F,,7
-"datatypefo,tgroupbox1,frame.outerframe,2:",vaInt8,F,,0
-"datatypefo,tgroupbox1,frame.outerframe,3:",vaInt8,F,,0
-"datatypefo,tgroupbox1,bounds_x",vaInt8,F,,24
-"datatypefo,tgroupbox1,bounds_y",vaInt8,F,,9
-"datatypefo,tgroupbox1,bounds_cx",vaInt16,F,,290
-"datatypefo,tgroupbox1,bounds_cy",vaInt8,F,,57
-"datatypefo,tgroupbox1,trdbo",vaNull,F,,
-"datatypefo,tgroupbox1,trdbo,frame.caption",vaString,T,,trd/csv,trd/csv
-"datatypefo,tgroupbox1,trdbo,frame.localprops",vaSet,F,,[]
-"datatypefo,tgroupbox1,trdbo,frame.localprops1",vaSet,F,,[]
-"datatypefo,tgroupbox1,trdbo,frame.outerframe",vaList,F,,
-"datatypefo,tgroupbox1,trdbo,frame.outerframe,0:",vaInt8,F,,0
-"datatypefo,tgroupbox1,trdbo,frame.outerframe,1:",vaInt8,F,,1
-"datatypefo,tgroupbox1,trdbo,frame.outerframe,2:",vaInt8,F,,45
-"datatypefo,tgroupbox1,trdbo,frame.outerframe,3:",vaInt8,F,,2
-"datatypefo,tgroupbox1,trdbo,bounds_x",vaInt8,F,,48
-"datatypefo,tgroupbox1,trdbo,bounds_y",vaInt8,F,,26
-"datatypefo,tgroupbox1,trdbo,bounds_cx",vaInt8,F,,58
-"datatypefo,tgroupbox1,trdbo,bounds_cy",vaInt8,F,,16
-"datatypefo,tgroupbox1,trdbo,options",vaSet,F,,"[bo_executeonclick,bo_executeonkey,bo_executeonshortcut,bo_executedefaultonenterkey,bo_radioitem]"
-"datatypefo,tgroupbox1,trdbo,value",vaTrue,F,,
-"datatypefo,tgroupbox1,pobo",vaNull,F,,
-"datatypefo,tgroupbox1,pobo,frame.caption",vaString,T,,PO/POT,PO/POT
-"datatypefo,tgroupbox1,pobo,frame.localprops",vaSet,F,,[]
-"datatypefo,tgroupbox1,pobo,frame.localprops1",vaSet,F,,[]
-"datatypefo,tgroupbox1,pobo,frame.outerframe",vaList,F,,
-"datatypefo,tgroupbox1,pobo,frame.outerframe,0:",vaInt8,F,,0
-"datatypefo,tgroupbox1,pobo,frame.outerframe,1:",vaInt8,F,,1
-"datatypefo,tgroupbox1,pobo,frame.outerframe,2:",vaInt8,F,,46
-"datatypefo,tgroupbox1,pobo,frame.outerframe,3:",vaInt8,F,,2
-"datatypefo,tgroupbox1,pobo,taborder",vaInt8,F,,1
-"datatypefo,tgroupbox1,pobo,bounds_x",vaInt16,F,,168
-"datatypefo,tgroupbox1,pobo,bounds_y",vaInt8,F,,26
-"datatypefo,tgroupbox1,pobo,bounds_cx",vaInt8,F,,59
-"datatypefo,tgroupbox1,pobo,bounds_cy",vaInt8,F,,16
-"datatypefo,tgroupbox1,pobo,options",vaSet,F,,"[bo_executeonclick,bo_executeonkey,bo_executeonshortcut,bo_executedefaultonenterkey,bo_radioitem]"
-"datatypefo,tbutton1",vaNull,F,,
-"datatypefo,tbutton1,taborder",vaInt8,F,,1
-"datatypefo,tbutton1,bounds_x",vaInt8,F,,112
-"datatypefo,tbutton1,bounds_y",vaInt8,F,,75
-"datatypefo,tbutton1,bounds_cx",vaInt8,F,,50
-"datatypefo,tbutton1,bounds_cy",vaInt8,F,,25
-"datatypefo,tbutton1,state",vaSet,F,,"[as_localcaption,as_localonexecute]"
-"datatypefo,tbutton1,caption",vaString,F,,&Ok,&Ok
-"datatypefo,tbutton1,onexecute",vaIdent,F,,onexecdatatype
-"datatypefo,tbutton2",vaNull,F,,
-"datatypefo,tbutton2,frame.localprops",vaSet,F,,[]
-"datatypefo,tbutton2,frame.localprops1",vaSet,F,,[]
-"datatypefo,tbutton2,taborder",vaInt8,F,,2
-"datatypefo,tbutton2,bounds_x",vaInt16,F,,176
-"datatypefo,tbutton2,bounds_y",vaInt8,F,,75
-"datatypefo,tbutton2,bounds_cx",vaInt8,F,,50
-"datatypefo,tbutton2,bounds_cy",vaInt8,F,,25
-"datatypefo,tbutton2,state",vaSet,F,,"[as_localcaption,as_localonexecute]"
-"datatypefo,tbutton2,caption",vaString,F,,&Cancel,&Cancel
-"datatypefo,tbutton2,onexecute",vaIdent,F,,oncanceldatatype
 settingsfo,vaNull,F,,,
-"settingsfo,optionswidget",vaSet,F,,"[ow_arrowfocus,ow_subfocus,ow_mousewheel,ow_destroywidgets,ow_hinton]",
+"settingsfo,optionswidget",vaSet,F,,[ow_arrowfocus;ow_subfocus;ow_mousewheel;ow_destroywidgets;ow_hinton],
 "settingsfo,visible",vaFalse,F,,,
 "settingsfo,bounds_x",vaInt8,F,,100,
 "settingsfo,bounds_y",vaInt8,F,,106,
@@ -1246,14 +1304,14 @@ settingsfo,vaNull,F,,,
 "settingsfo,container.bounds,1:",vaInt8,F,,0,
 "settingsfo,container.bounds,2:",vaInt16,F,,348,
 "settingsfo,container.bounds,3:",vaInt16,F,,570,
-"settingsfo,options",vaSet,F,,"[fo_closeonesc,fo_autoreadstat,fo_autowritestat,fo_savepos,fo_savestate]",
+"settingsfo,options",vaSet,F,,[fo_closeonesc;fo_autoreadstat;fo_autowritestat;fo_savepos;fo_savestate],
 "settingsfo,statfile",vaIdent,F,,tstatfile1,
 "settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment
 "settingsfo,windowopacity",vaExtended,F,,-Inf,
 "settingsfo,oncreate",vaIdent,F,,formoncreate,
 "settingsfo,moduleclassname",vaString,T,,tmseform,tmseform
 "settingsfo,tsplitter1",vaNull,F,,,
-"settingsfo,tsplitter1,optionswidget",vaSet,F,,"[ow_tabfocus,ow_parenttabfocus,ow_arrowfocus,ow_arrowfocusin,ow_arrowfocusout,ow_subfocus,ow_destroywidgets]",
+"settingsfo,tsplitter1,optionswidget",vaSet,F,,[ow_tabfocus;ow_parenttabfocus;ow_arrowfocus;ow_arrowfocusin;ow_arrowfocusout;ow_subfocus;ow_destroywidgets],
 "settingsfo,tsplitter1,color",vaInt32,F,,-2147483645,
 "settingsfo,tsplitter1,taborder",vaInt8,F,,2,
 "settingsfo,tsplitter1,bounds_x",vaInt8,F,,0,
@@ -1261,43 +1319,43 @@ settingsfo,vaNull,F,,,
 "settingsfo,tsplitter1,bounds_cx",vaInt16,F,,348,
 "settingsfo,tsplitter1,bounds_cy",vaInt8,F,,38,
 "settingsfo,tsplitter1,anchors",vaSet,F,,[an_bottom],
-"settingsfo,tsplitter1,optionsscale",vaSet,F,,"[osc_expandy,osc_shrinky]",
+"settingsfo,tsplitter1,optionsscale",vaSet,F,,[osc_expandy;osc_shrinky],
 "settingsfo,tsplitter1,linktop",vaIdent,F,,macrogrid,
 "settingsfo,tsplitter1,grip",vaIdent,F,,stb_none,
 "settingsfo,tsplitter1,tbutton2",vaNull,F,,,
-"settingsfo,tsplitter1,tbutton2,optionswidget1",vaSet,F,,"[ow1_fontglyphheight,ow1_autoscale,ow1_autowidth]",
+"settingsfo,tsplitter1,tbutton2,optionswidget1",vaSet,F,,[ow1_fontglyphheight;ow1_autoscale;ow1_autowidth],
 "settingsfo,tsplitter1,tbutton2,taborder",vaInt8,F,,2,
 "settingsfo,tsplitter1,tbutton2,bounds_x",vaInt16,F,,283,
 "settingsfo,tsplitter1,tbutton2,bounds_y",vaInt8,F,,16,
 "settingsfo,tsplitter1,tbutton2,bounds_cx",vaInt8,F,,52,
 "settingsfo,tsplitter1,tbutton2,bounds_cy",vaInt8,F,,22,
 "settingsfo,tsplitter1,tbutton2,bounds_cxmin",vaInt8,F,,50,
-"settingsfo,tsplitter1,tbutton2,anchors",vaSet,F,,"[an_top,an_right]",
+"settingsfo,tsplitter1,tbutton2,anchors",vaSet,F,,[an_top;an_right],
 "settingsfo,tsplitter1,tbutton2,state",vaSet,F,,[as_localcaption],
 "settingsfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
 "settingsfo,tsplitter1,tbutton2,modalresult",vaIdent,F,,mr_cancel,
 "settingsfo,tsplitter1,tbutton2,reffontheight",vaInt8,F,,14,
 "settingsfo,tsplitter1,tbutton1",vaNull,F,,,
-"settingsfo,tsplitter1,tbutton1,optionswidget1",vaSet,F,,"[ow1_fontglyphheight,ow1_autoscale,ow1_autowidth]",
+"settingsfo,tsplitter1,tbutton1,optionswidget1",vaSet,F,,[ow1_fontglyphheight;ow1_autoscale;ow1_autowidth],
 "settingsfo,tsplitter1,tbutton1,taborder",vaInt8,F,,1,
 "settingsfo,tsplitter1,tbutton1,bounds_x",vaInt16,F,,225,
 "settingsfo,tsplitter1,tbutton1,bounds_y",vaInt8,F,,16,
 "settingsfo,tsplitter1,tbutton1,bounds_cx",vaInt8,F,,50,
 "settingsfo,tsplitter1,tbutton1,bounds_cy",vaInt8,F,,22,
 "settingsfo,tsplitter1,tbutton1,bounds_cxmin",vaInt8,F,,50,
-"settingsfo,tsplitter1,tbutton1,anchors",vaSet,F,,"[an_top,an_right]",
-"settingsfo,tsplitter1,tbutton1,state",vaSet,F,,"[as_default,as_localdefault,as_localcaption]",
+"settingsfo,tsplitter1,tbutton1,anchors",vaSet,F,,[an_top;an_right],
+"settingsfo,tsplitter1,tbutton1,state",vaSet,F,,[as_default;as_localdefault;as_localcaption],
 "settingsfo,tsplitter1,tbutton1,caption",vaString,F,,&OK,&OK
 "settingsfo,tsplitter1,tbutton1,modalresult",vaIdent,F,,mr_ok,
 "settingsfo,tsplitter1,tbutton1,reffontheight",vaInt8,F,,14,
 "settingsfo,tsplitter1,shortcutbu",vaNull,F,,,
-"settingsfo,tsplitter1,shortcutbu,optionswidget1",vaSet,F,,"[ow1_fontglyphheight,ow1_autoscale,ow1_autowidth]",
+"settingsfo,tsplitter1,shortcutbu,optionswidget1",vaSet,F,,[ow1_fontglyphheight;ow1_autoscale;ow1_autowidth],
 "settingsfo,tsplitter1,shortcutbu,bounds_x",vaInt8,F,,9,
 "settingsfo,tsplitter1,shortcutbu,bounds_y",vaInt8,F,,16,
 "settingsfo,tsplitter1,shortcutbu,bounds_cx",vaInt8,F,,78,
 "settingsfo,tsplitter1,shortcutbu,bounds_cy",vaInt8,F,,22,
 "settingsfo,tsplitter1,shortcutbu,bounds_cxmin",vaInt8,F,,78,
-"settingsfo,tsplitter1,shortcutbu,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"settingsfo,tsplitter1,shortcutbu,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "settingsfo,tsplitter1,shortcutbu,caption",vaString,F,,&Shortcuts,&Shortcuts
 "settingsfo,tsplitter1,shortcutbu,onexecute",vaIdent,F,,editshortcuts,
 "settingsfo,tsplitter1,shortcutbu,reffontheight",vaInt8,F,,14,
@@ -1315,8 +1373,8 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,bounds_y",vaInt8,F,,0,
 "settingsfo,tlayouter1,bounds_cx",vaInt16,F,,348,
 "settingsfo,tlayouter1,bounds_cy",vaInt16,F,,407,
-"settingsfo,tlayouter1,anchors",vaSet,F,,"[an_left,an_top,an_right]",
-"settingsfo,tlayouter1,optionsscale",vaSet,F,,"[osc_expandy,osc_shrinky,osc_expandshrinkx,osc_expandshrinky]",
+"settingsfo,tlayouter1,anchors",vaSet,F,,[an_left;an_top;an_right],
+"settingsfo,tlayouter1,optionsscale",vaSet,F,,[osc_expandy;osc_shrinky;osc_expandshrinkx;osc_expandshrinky],
 "settingsfo,tlayouter1,optionslayout",vaSet,F,,[lao_placey],
 "settingsfo,tlayouter1,linkbottom",vaIdent,F,,macrogrid,
 "settingsfo,tlayouter1,tspacer1",vaNull,F,,,
@@ -1325,13 +1383,13 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,tspacer1,bounds_y",vaInt16,F,,333,
 "settingsfo,tlayouter1,tspacer1,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,tspacer1,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,tspacer1,anchors",vaSet,F,,"[an_left,an_top,an_right]",
-"settingsfo,tlayouter1,tspacer1,optionsscale",vaSet,F,,"[osc_expandy,osc_shrinky,osc_expandshrinkx,osc_expandshrinky]",
-"settingsfo,tlayouter1,tspacer1,optionslayout",vaSet,F,,"[lao_placex,lao_aligny]",
+"settingsfo,tlayouter1,tspacer1,anchors",vaSet,F,,[an_left;an_top;an_right],
+"settingsfo,tlayouter1,tspacer1,optionsscale",vaSet,F,,[osc_expandy;osc_shrinky;osc_expandshrinkx;osc_expandshrinky],
+"settingsfo,tlayouter1,tspacer1,optionslayout",vaSet,F,,[lao_placex;lao_aligny],
 "settingsfo,tlayouter1,tspacer1,align_glue",vaIdent,F,,wam_start,
 "settingsfo,tlayouter1,tspacer1,place_mindist",vaInt8,F,,4,
 "settingsfo,tlayouter1,tspacer1,place_maxdist",vaInt8,F,,4,
-"settingsfo,tlayouter1,tspacer1,place_options",vaSet,F,,"[plo_scalesize,plo_endmargin]",
+"settingsfo,tlayouter1,tspacer1,place_options",vaSet,F,,[plo_scalesize;plo_endmargin],
 "settingsfo,tlayouter1,tspacer1,targetosdir",vaNull,F,,,
 "settingsfo,tlayouter1,tspacer1,targetosdir,Tag",vaInt8,F,,11,
 "settingsfo,tlayouter1,tspacer1,targetosdir,frame.caption",vaString,T,,${TARGETOSDIR},${TARGETOSDIR}
@@ -1347,7 +1405,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,tspacer1,targetosdir,bounds_y",vaInt8,F,,0,
 "settingsfo,tlayouter1,tspacer1,targetosdir,bounds_cx",vaInt16,F,,152,
 "settingsfo,tlayouter1,tspacer1,targetosdir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,tspacer1,targetosdir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,tspacer1,targetosdir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,tspacer1,targetosdir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,tspacer1,targetosdir,reffontheight",vaInt8,F,,14,
 "settingsfo,tlayouter1,tspacer1,target",vaNull,F,,,
@@ -1397,7 +1455,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,printcomm,bounds_y",vaInt16,F,,370,
 "settingsfo,tlayouter1,printcomm,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,printcomm,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,printcomm,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,printcomm,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,printcomm,onsetvalue",vaIdent,F,,setprintcomm,
 "settingsfo,tlayouter1,printcomm,reffontheight",vaInt8,F,,14,
 "settingsfo,tlayouter1,debugger",vaNull,F,,,
@@ -1421,7 +1479,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,debugger,bounds_y",vaInt16,F,,296,
 "settingsfo,tlayouter1,debugger,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,debugger,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,debugger,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,debugger,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,debugger,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,debugger,controller.captionopen",vaString,F,,Debugger path,Debugger path
 "settingsfo,tlayouter1,debugger,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -1447,7 +1505,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,compiler,bounds_y",vaInt16,F,,259,
 "settingsfo,tlayouter1,compiler,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,compiler,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,compiler,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,compiler,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,compiler,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,compiler,controller.captionopen",vaString,F,,Compiler path,Compiler path
 "settingsfo,tlayouter1,compiler,controller.ongetfilename",vaIdent,F,,epandfilenamemacro,
@@ -1473,7 +1531,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,compstoredir,bounds_y",vaInt16,F,,222,
 "settingsfo,tlayouter1,compstoredir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,compstoredir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,compstoredir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,compstoredir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,compstoredir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:",vaList,F,,,
@@ -1504,7 +1562,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,templatedir,bounds_y",vaInt16,F,,185,
 "settingsfo,tlayouter1,templatedir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,templatedir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,templatedir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,templatedir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,templatedir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:",vaList,F,,,
@@ -1535,7 +1593,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,bounds_y",vaInt16,F,,148,
 "settingsfo,tlayouter1,syntaxdefdir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,syntaxdefdir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,syntaxdefdir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,syntaxdefdir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,syntaxdefdir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data",vaList,F,,,
 "settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:",vaList,F,,,
@@ -1566,7 +1624,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,mselibdir,bounds_y",vaInt8,F,,111,
 "settingsfo,tlayouter1,mselibdir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,mselibdir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,mselibdir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,mselibdir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,mselibdir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,mselibdir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,mselibdir,controller.captionopen",vaString,F,,MSEgui library directory,MSEgui library directory
@@ -1593,7 +1651,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,msedir,bounds_y",vaInt8,F,,74,
 "settingsfo,tlayouter1,msedir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,msedir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,msedir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,msedir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,msedir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,msedir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,msedir,controller.captionopen",vaString,F,,MSEgui root directory,MSEgui root directory
@@ -1620,7 +1678,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,fpclibdir,bounds_y",vaInt8,F,,37,
 "settingsfo,tlayouter1,fpclibdir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,fpclibdir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,fpclibdir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,fpclibdir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,fpclibdir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,fpclibdir,controller.captionopen",vaString,F,,FPC library directory,FPC library directory
 "settingsfo,tlayouter1,fpclibdir,reffontheight",vaInt8,F,,14,
@@ -1643,7 +1701,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tlayouter1,fpcdir,bounds_y",vaInt8,F,,0,
 "settingsfo,tlayouter1,fpcdir,bounds_cx",vaInt16,F,,330,
 "settingsfo,tlayouter1,fpcdir,bounds_cy",vaInt8,F,,37,
-"settingsfo,tlayouter1,fpcdir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"settingsfo,tlayouter1,fpcdir,anchors",vaSet,F,,[an_left;an_top;an_right],
 "settingsfo,tlayouter1,fpcdir,onsetvalue",vaIdent,F,,setvalue,
 "settingsfo,tlayouter1,fpcdir,controller.options",vaSet,F,,[fdo_directory],
 "settingsfo,tlayouter1,fpcdir,controller.captionopen",vaString,F,,FPC root directory,FPC root directory
@@ -1664,8 +1722,8 @@ settingsfo,vaNull,F,,,
 "settingsfo,macrogrid,bounds_cx",vaInt16,F,,330,
 "settingsfo,macrogrid,bounds_cy",vaInt8,F,,113,
 "settingsfo,macrogrid,bounds_cymin",vaInt8,F,,80,
-"settingsfo,macrogrid,anchors",vaSet,F,,"[an_left,an_top,an_right,an_bottom]",
-"settingsfo,macrogrid,optionsgrid",vaSet,F,,"[og_colsizing,og_rowmoving,og_keyrowmoving,og_rowinserting,og_rowdeleting,og_focuscellonenter,og_autofirstrow,og_autoappend,og_noinsertempty,og_colchangeontabkey,og_wrapcol,og_autopopup,og_mousescrollcol]",
+"settingsfo,macrogrid,anchors",vaSet,F,,[an_left;an_top;an_right;an_bottom],
+"settingsfo,macrogrid,optionsgrid",vaSet,F,,[og_colsizing;og_rowmoving;og_keyrowmoving;og_rowinserting;og_rowdeleting;og_focuscellonenter;og_autofirstrow;og_autoappend;og_noinsertempty;og_colchangeontabkey;og_wrapcol;og_autopopup;og_mousescrollcol],
 "settingsfo,macrogrid,fixcols.count",vaInt8,F,,1,
 "settingsfo,macrogrid,fixcols.items",vaCollection,F,,,
 "settingsfo,macrogrid,fixcols.items,0:",vaList,F,,,
@@ -1685,16 +1743,16 @@ settingsfo,vaNull,F,,,
 "settingsfo,macrogrid,fixrows.items,0:,captions.items,2:",vaList,F,,,
 "settingsfo,macrogrid,fixrows.items,0:,captions.items,3:",vaList,F,,,
 "settingsfo,macrogrid,datacols.count",vaInt8,F,,2,
-"settingsfo,macrogrid,datacols.options",vaSet,F,,"[co_focusselect,co_mouseselect,co_keyselect,co_multiselect,co_rowselect,co_savestate,co_cancopy,co_canpaste,co_mousescrollrow]",
+"settingsfo,macrogrid,datacols.options",vaSet,F,,[co_focusselect;co_mouseselect;co_keyselect;co_multiselect;co_rowselect;co_savestate;co_cancopy;co_canpaste;co_mousescrollrow],
 "settingsfo,macrogrid,datacols.items",vaCollection,F,,,
 "settingsfo,macrogrid,datacols.items,macroname",vaList,F,,,
 "settingsfo,macrogrid,datacols.items,macroname,width",vaInt16,F,,151,
-"settingsfo,macrogrid,datacols.items,macroname,options",vaSet,F,,"[co_focusselect,co_mouseselect,co_keyselect,co_multiselect,co_rowselect,co_proportional,co_savestate,co_cancopy,co_canpaste,co_mousescrollrow]",
+"settingsfo,macrogrid,datacols.items,macroname,options",vaSet,F,,[co_focusselect;co_mouseselect;co_keyselect;co_multiselect;co_rowselect;co_proportional;co_savestate;co_cancopy;co_canpaste;co_mousescrollrow],
 "settingsfo,macrogrid,datacols.items,macroname,widgetname",vaString,T,,macroname,macroname
 "settingsfo,macrogrid,datacols.items,macroname,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "settingsfo,macrogrid,datacols.items,macrovalue",vaList,F,,,
 "settingsfo,macrogrid,datacols.items,macrovalue,width",vaInt16,F,,144,
-"settingsfo,macrogrid,datacols.items,macrovalue,options",vaSet,F,,"[co_focusselect,co_mouseselect,co_keyselect,co_multiselect,co_rowselect,co_fill,co_savestate,co_cancopy,co_canpaste,co_mousescrollrow]",
+"settingsfo,macrogrid,datacols.items,macrovalue,options",vaSet,F,,[co_focusselect;co_mouseselect;co_keyselect;co_multiselect;co_rowselect;co_fill;co_savestate;co_cancopy;co_canpaste;co_mousescrollrow],
 "settingsfo,macrogrid,datacols.items,macrovalue,widgetname",vaString,T,,macrovalue,macrovalue
 "settingsfo,macrogrid,datacols.items,macrovalue,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "settingsfo,macrogrid,datarowheight",vaInt8,F,,16,
@@ -1709,14 +1767,14 @@ settingsfo,vaNull,F,,,
 "settingsfo,macrogrid,macroname,bounds_cx",vaInt16,F,,151,
 "settingsfo,macrogrid,macroname,bounds_cy",vaInt8,F,,16,
 "settingsfo,macrogrid,macroname,optionsedit1",vaSet,F,,[],
-"settingsfo,macrogrid,macroname,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_shiftreturn,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick,oe_focusrectonreadonly,oe_hintclippedtext]",
+"settingsfo,macrogrid,macroname,optionsedit",vaSet,F,,[oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_shiftreturn;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick;oe_focusrectonreadonly;oe_hintclippedtext],
 "settingsfo,macrogrid,macroname,reffontheight",vaInt8,F,,14,
 "settingsfo,macrogrid,macrovalue",vaNull,F,,,
 "settingsfo,macrogrid,macrovalue,optionswidget1",vaSet,F,,[ow1_fontglyphheight],
 "settingsfo,macrogrid,macrovalue,optionsskin",vaSet,F,,[osk_framebuttononly],
 "settingsfo,macrogrid,macrovalue,frame.levelo",vaInt8,F,,0,
 "settingsfo,macrogrid,macrovalue,frame.colorclient",vaInt32,F,,-2147483645,
-"settingsfo,macrogrid,macrovalue,frame.localprops",vaSet,F,,"[frl_levelo,frl_leveli,frl_colorclient]",
+"settingsfo,macrogrid,macrovalue,frame.localprops",vaSet,F,,[frl_levelo;frl_leveli;frl_colorclient],
 "settingsfo,macrogrid,macrovalue,frame.localprops1",vaSet,F,,[],
 "settingsfo,macrogrid,macrovalue,frame.buttons.count",vaInt8,F,,1,
 "settingsfo,macrogrid,macrovalue,frame.buttons.items",vaCollection,F,,,
@@ -1732,7 +1790,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,macrogrid,macrovalue,bounds_cx",vaInt16,F,,144,
 "settingsfo,macrogrid,macrovalue,bounds_cy",vaInt8,F,,16,
 "settingsfo,macrogrid,macrovalue,optionsedit1",vaSet,F,,[],
-"settingsfo,macrogrid,macrovalue,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_shiftreturn,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick,oe_focusrectonreadonly,oe_hintclippedtext]",
+"settingsfo,macrogrid,macrovalue,optionsedit",vaSet,F,,[oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_shiftreturn;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick;oe_focusrectonreadonly;oe_hintclippedtext],
 "settingsfo,macrogrid,macrovalue,reffontheight",vaInt8,F,,14,
 "settingsfo,tstatfile1",vaNull,F,,,
 "settingsfo,tstatfile1,filename",vaString,T,,settingsfo.sta,settingsfo.sta

@@ -2,15 +2,53 @@
 colcount=6
 [projectfo.impexpfiledialog]
 filenames=1
- /home/fred/mseide-msegui/tools/i18n/lang_en/msei18n_i18n.csv
+ /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context.pot
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=/home/fred/mseide-msegui/tools/i18n/lang_en/
-filefilterindex=0
-filefilter=*.csv
+lastdir=/home/fred/mseide-msegui/languages/testing/msei18n/
+filefilterindex=3
+filefilter=*.pot
+[projectfo.memopoheader]
+value=# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: msei18n\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2019-03-04 23:54+0300\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
+[projectfo.memopotheader]
+value=# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: msei18n\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2019-03-04 23:54+0300\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
 [projectfo.aftermake]
 value=chmod 777 ./*.so; rm -f ../*.so; cp -f ./*.so ../;
 [projectfo.beforemake]
@@ -42,24 +80,21 @@ filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]
 propcolwidthref=569
-values0=6
+values0=5
  mainfo
  msememodialogfo
  messagesfo
  projectfo
- datatypefo
  settingsfo
 width0=71
 sortdescend0=0
-values1=6
+values1=5
  /home/fred/mseide-msegui/tools/i18n/main.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msememodialog.mfm
  /home/fred/mseide-msegui/tools/i18n/messagesform.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
- /home/fred/mseide-msegui/tools/i18n/datatypeform.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msesettings.mfm
-values2=6
- 0
+values2=5
  0
  0
  0
