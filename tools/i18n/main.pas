@@ -1223,7 +1223,8 @@ application.processmessages;
     
     if (system.pos('name,type,notranslate,comment,value',str1) > 0) then
     importtype := 0 else if (system.pos('¿¡',str1) > 0) then
-    importtype := 2 else if copy(str1,1,1) = '#' then importtype := 1;
+    importtype := 2 else importtype := 1;
+    // if copy(str1,1,1) = '#' then importtype := 1;
     
    while not stream.eof do begin
    str1 := '';
@@ -1498,7 +1499,7 @@ begin
   0: begin
      datastream.writerecord(getcolumnheaders);
      end;
-   // pot/po 
+   // pot
   1: begin
      datastream.writeln(projectfo.memopotheader.value);
      datastream.writeln();
@@ -1507,24 +1508,17 @@ begin
     datastream.writeln(projectfo.memopotheader.value);
      datastream.writeln();
      end;
+   // po  
   3: begin
-     datastream.writeln(projectfo.memopotheader.value);
+     datastream.writeln(projectfo.memopoheader.value);
      datastream.writeln();
      end;
   4: begin
      datastream.writeln(projectfo.memopoheader.value);
      datastream.writeln();
      end;
+    // txt 
   5: begin
-     datastream.writeln(projectfo.memopoheader.value);
-     datastream.writeln();
-     end;
-  6: begin
-     datastream.writeln(projectfo.memopoheader.value);
-     datastream.writeln();
-     end;
-  // txt
-   7: begin
      datastream.writeln('¿¡');
      end;
    end;
