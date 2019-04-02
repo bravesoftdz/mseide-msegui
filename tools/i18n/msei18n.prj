@@ -788,7 +788,7 @@ sigsettings=27
 defaultmake=1
 [breakpoints]
 on=1
- -1
+ 0
 path=1
  /home/fred/mseide-msegui/tools/i18n/headerform.pas
 line=1
@@ -832,8 +832,9 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=sememodial
+finddtext= "
 findhistory=20
+  "
  sememodial
  rootvaluearray
  writerecord
@@ -853,16 +854,15 @@ findhistory=20
  const
  NT
  doimport
- writeexprecord
 findoptions=1
 editpos=7
  0,-1073741823
- 0,-1073741823
+ 19,627
  0,13
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,2
+ 0,1
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -928,7 +928,7 @@ order=7
  6
  5
 firsttab=0
-index=5
+index=1
 [layout]
 windowlayout=650
  [mainfo.basedock]
@@ -1173,10 +1173,10 @@ windowlayout=650
  active=0
  visible=1
  [objectinspectorfo.grid]
- propcolwidthref=560
- width0=248
+ propcolwidthref=575
+ width0=255
  sortdescend0=0
- width1=306
+ width1=314
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1397,7 +1397,7 @@ windowlayout=650
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/headerform.pas
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
@@ -1449,7 +1449,7 @@ windowlayout=650
   6
   5
  firsttab=0
- index=5
+ index=1
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1546,7 +1546,7 @@ windowlayout=650
  [_mse_messagesfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0
@@ -1565,7 +1565,7 @@ windowlayout=650
  [_mse_headerfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0

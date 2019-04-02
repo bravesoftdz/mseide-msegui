@@ -415,8 +415,8 @@ begin
          
          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
                 
-         if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
-         if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         if (utf8copy(valuetext,1,2) = '" ') and (trim(astrt) <> '') then astrt := '" ' + astrt;
+         if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') and (trim(astrt) <> '') then astrt := astrt + ' "';
          
          info.comment := acom;  
          comment[aindex]:= acom; 
@@ -469,9 +469,11 @@ begin
          astrt := trim(astrt);
             
          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
-                
-         if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
-         if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
+         
+  if (utf8copy(valuetext,1,2) = '" ') and (trim(astrt) <> '')
+   then astrt := '" ' + astrt;
+  if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') and (trim(astrt) <> '')
+   then astrt := astrt + ' "';
                         
       if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
       begin    
@@ -557,9 +559,11 @@ begin
           writeln(anont);
           }
           
-         if utf8copy(valuetext,1,2) = '" ' then astrt := '" ' + astrt;
-         if utf8copy(valuetext,length(valuetext)-1,2) = ' "' then astrt := astrt + ' "';
-         
+   if (utf8copy(valuetext,1,2) = '" ') and (trim(astrt) <> '') 
+   then astrt := '" ' + astrt;
+   if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') and (trim(astrt) <> '')
+   then astrt := astrt + ' "';         
+   
          if anont = 'T' then begin
          info.donottranslate := true;
          donottranslate[aindex]:= true;
