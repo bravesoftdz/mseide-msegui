@@ -530,7 +530,7 @@ object mainfo: tmainfo
         onexecute = formatchanged
       end    
       item
-        caption = 'Reset'
+        caption = 'Re&set'
         state = [as_localcaption, as_localonexecute]
         onexecute = onreset
       end    
