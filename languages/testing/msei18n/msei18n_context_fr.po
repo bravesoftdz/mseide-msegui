@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: msei18n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-27 01:03+0300\n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-27 01:09+0000\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/Magic/teams/44238/fr/)\n"
@@ -110,23 +110,19 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
 msgid "&Configure MSEi18n"
 msgstr "&Configurer MSEi18n"
 
-msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption"
-msgid "&Reset"
-msgstr "&Réinitialiser"
-
-msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint"
-msgid "Reset translated words to root value"
-msgstr ""
-
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
 msgid "Se&ttings"
 msgstr "&Réglages"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,caption"
-msgid "&Refresh"
-msgstr "&Rafraîchir"
+msgid "Re&fresh"
+msgstr "Ra&fraîchir"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
+msgid "&Reset"
+msgstr "&Réinitialiser"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
 msgid "E&xit"
 msgstr "&Quitter"
 
@@ -335,48 +331,36 @@ msgid "PO header"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:"
-msgid "Data exchange files complete"
-msgstr ""
+msgid "Data exchange files"
+msgstr "Fichiers d'échange de données"
 
 msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
-msgid "Data exchange files without translated values"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
 msgid "POT templates files without context"
 msgstr ""
 
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
 msgid "POT templates files with context"
 msgstr ""
 
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,4:,0:"
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
 msgid "POT templates files with/without context"
 msgstr ""
 
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,5:,0:"
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,4:,0:"
 msgid "PO translation files without context"
 msgstr ""
 
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,6:,0:"
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,5:,0:"
 msgid "PO translation files with context"
 msgstr ""
 
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,7:,0:"
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,6:,0:"
 msgid "PO translation files with/without context"
 msgstr ""
 
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,8:,0:"
-msgid "TXT text files with root values only"
+msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,7:,0:"
+msgid "TXT text files with context and word"
 msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,9:,0:"
-msgid "TXT text files with translated values only"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,10:,0:"
-msgid "All files"
-msgstr "Tous les fichiers"
 
 msgctxt "projectfo,impexpfiledialog,controller.captionopen"
 msgid "Open import file"

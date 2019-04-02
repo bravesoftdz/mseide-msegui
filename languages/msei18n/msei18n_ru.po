@@ -87,17 +87,14 @@ msgstr "&Информация о MSEi18n"
 msgid "&Configure MSEi18n"
 msgstr "&Конфигурировать MSEi18n"
 
-msgid "&Reset"
-msgstr "&Сбросить"
-
-msgid "Reset translated words to root value"
-msgstr "Сбросить переведённые слова к корневому значению"
-
 msgid "Se&ttings"
 msgstr "Н&астройки"
 
-msgid "&Refresh"
-msgstr "&Освежить"
+msgid "Re&fresh"
+msgstr "Осве&жить"
+
+msgid "&Reset"
+msgstr "&Сбросить"
 
 msgid "E&xit"
 msgstr "Вы&ход"
@@ -255,11 +252,8 @@ msgstr "Заголовок POT"
 msgid "PO header"
 msgstr "Заголовок PO"
 
-msgid "Data exchange files complete"
-msgstr "Файлы обмена данными полные"
-
-msgid "Data exchange files without translated values"
-msgstr "Файлы обмена данными без переведённых значений"
+msgid "Data exchange files"
+msgstr "Файлы обмена данными"
 
 msgid "POT templates files without context"
 msgstr "POT шаблонные файлы без контекста"
@@ -279,11 +273,8 @@ msgstr "PO файлы переводов с контекстом"
 msgid "PO translation files with/without context"
 msgstr "PO файлы переводов с контекстом/без контекста"
 
-msgid "TXT text files with root values only"
-msgstr "TXT текстовые файлы только с корневыми значениями"
-
-msgid "TXT text files with translated values only"
-msgstr "TXT текстовые файлы только с переведёнными значениями"
+msgid "TXT text files with context and word"
+msgstr "TXT текстовые файлы с контекстом и словами"
 
 msgid "Open import file"
 msgstr "Открыть файл импорта"

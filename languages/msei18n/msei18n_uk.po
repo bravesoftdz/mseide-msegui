@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Андрій Лашкєєв <zombyg@gmail.com>, 2019
 # Yuri Chornoivan <yurchor@ukr.net>, 2019
+# Андрій Лашкєєв <zombyg@gmail.com>, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
@@ -89,17 +89,14 @@ msgstr "&Інформація про MSEi18n"
 msgid "&Configure MSEi18n"
 msgstr "&Конфігурувати MSEi18n"
 
-msgid "&Reset"
-msgstr "&Скинути"
-
-msgid "Reset translated words to root value"
-msgstr ""
-
 msgid "Se&ttings"
 msgstr "Н&алаштування"
 
-msgid "&Refresh"
-msgstr "&Освіжити"
+msgid "Re&fresh"
+msgstr "Осві&жити"
+
+msgid "&Reset"
+msgstr "&Скинути"
 
 msgid "E&xit"
 msgstr "Ви&хід"
@@ -257,11 +254,8 @@ msgstr ""
 msgid "PO header"
 msgstr ""
 
-msgid "Data exchange files complete"
-msgstr ""
-
-msgid "Data exchange files without translated values"
-msgstr ""
+msgid "Data exchange files"
+msgstr "Файли обміну даними"
 
 msgid "POT templates files without context"
 msgstr ""
@@ -281,10 +275,7 @@ msgstr ""
 msgid "PO translation files with/without context"
 msgstr ""
 
-msgid "TXT text files with root values only"
-msgstr ""
-
-msgid "TXT text files with translated values only"
+msgid "TXT text files with context and word"
 msgstr ""
 
 msgid "Open import file"
