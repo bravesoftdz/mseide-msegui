@@ -180,14 +180,14 @@ const
   'Text start',                //sc_beginoftext
   'Text ende',                 //sc_endoftext
   'Eingabe Modus',             //sc_inputmode
-  #$00DC'berschreiben',        //sc_overwrite
-  'Gel'#$00F6'scht',           //sc_deleted
+  #220'berschreiben',        //sc_overwrite
+  'Gel'#246'scht',           //sc_deleted
   'Kopiert',                   //sc_copied
-  'Eingef'#$00FC'gt',          //sc_inserted
-  'Eingef'#$00FC'gt',          //sc_pasted
-  'R'#$00FC'ckg'#$00E4'ngig',  //sc_withdrawn
+  'Eingef'#252'gt',          //sc_inserted
+  'Eingef'#252'gt',          //sc_pasted
+  'R'#252'ckg'#228'ngig',  //sc_withdrawn
   'Fenster aktiviert',         //sc_windowactivated
-  'Men'#$00FC,                 //sc_menu
+  'Men'#252,                 //sc_menu
   'Datei Beginn',              //sc_bof
   'Datei Ende',                //sc_eof
   'Sprachausgabe',             //sc_voiceoutput

@@ -56,7 +56,7 @@ const
   'S'#0237,      //mr_yes
   'No',         //mr_no
   'Todo',       //mr_all
-  'S'#$00ED' todo',    //mr_yesall
+  'S'#237' todo',    //mr_yesall
   'No todo',    //mr_noall
   'Ignorar',    //mr_ignore
   'Omitir',     //mr_skip
@@ -203,14 +203,14 @@ const
   'Ruta de hablar',              //sc_speakpath
   'Deshabilitar bot'#0243'n',    //sc_disabledbutton
   'Primer campo',                //sc_firstfield
-  #$00DA'ltimo campo',           //sc_lastfield
+  #218'ltimo campo',           //sc_lastfield
   'Primer elemento',             //sc_firstelement
-  #$00DA'ltimo elemento',        //sc_lastelement
-  'M'#$00E1's lento',            //sc_slower
-  'M'#$00E1's r'#$00E1'pido',    //sc_faster
+  #218'ltimo elemento',        //sc_lastelement
+  'M'#225's lento',            //sc_slower
+  'M'#225's r'#225'pido',    //sc_faster
   'Ventana',                     //sc_window
-  #$00C1'rea',                   //sc_area
-  #$00C1'rea activada',          //sc_areaactivated
+  #193'rea',                   //sc_area
+  #193'rea activada',          //sc_areaactivated
   'Bajar volumen',               //sc_volumedown
   'Subir volumen',               //sc_volumeup
   'Cancelar habla'               //sc_cancelspeech
