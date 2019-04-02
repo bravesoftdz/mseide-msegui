@@ -658,6 +658,12 @@ object mainfo: tmainfo
       'Yet translated:'
       'Not yet translated:'
       'Do you want to reset to root value?'
+      'Data exchange files'
+      'templates files'
+      'translation files'
+      'with context'
+      'without context'
+      'text files'
     )
     left = 64
     top = 200

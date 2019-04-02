@@ -194,7 +194,13 @@ type
   sc_tonottranslate,     //20
   sc_yettranslated,      //21
   sc_notyettranslated,    //22
-  sc_doyouwanttoreset    //23
+  sc_doyouwanttoreset,    //23
+  sc_dataexchangefiles,   //24
+  sc_templatesfiles,   //25
+  sc_translationfiles, //26
+  sc_context,   //27
+  sc_nocontext,   //28
+  sc_txtfiles    //29
     );
   
 //const
@@ -953,7 +959,7 @@ begin
   
    if (filind = 0) then  datastream.writerecord(rec);
    
-  if filind = 7 then
+  if filind = 5 then
   begin
   str1 := '"' + lowercase(str1+str2);
   str1 := utf8StringReplace(str1, '.', '', [rfReplaceAll]);
@@ -968,7 +974,7 @@ begin
    datastream.writeln( str1 + ' | ' + mstr3  );
   end;  
  
-  if  (filind > 0) and (filind < 7) then begin
+  if  (filind > 0) and (filind < 5) then begin
   
   if (filind = 1) then // pot + ss context
   begin
@@ -1004,7 +1010,7 @@ begin
     end;
   
   
- if (filind = 2) or (filind = 3) then // pot + context / mix
+ if (filind = 2) then // pot + context / mix
   begin
    datastream.writeln('msgctxt "' + str1 +'"');
 
@@ -1026,7 +1032,7 @@ begin
     datastream.writeln('');
    end;
    
-    if (filind =  4) then
+    if (filind = 3) then
   begin
   
     hasdouble := false;
@@ -1067,7 +1073,7 @@ begin
   end;
   end;
 
- if (filind =  5) or (filind =  6) then
+ if (filind = 4) then
   begin
   datastream.writeln('msgctxt "' + str1 +'"');
 
@@ -1411,9 +1417,32 @@ procedure tmainfo.importonexecute(const sender: tobject);
 var
  stream: ttextdatastream;
  str1: filenamety;
+ filterlista : msestringarty;
+ filterlistb : msestringarty;
 begin
 if isloaded = true then begin
-  if checksave and 
+
+setlength(filterlista,4);
+setlength(filterlistb,4);
+
+ filterlista[0]:= c[ord(sc_dataexchangefiles)];
+ filterlistb[0]:= '*.csv';
+ 
+ filterlista[1]:= 'POT ' + c[ord(sc_templatesfiles)];
+ filterlistb[1]:= '*.pot';
+ 
+ filterlista[2]:= 'PO ' + c[ord(sc_translationfiles)];
+ filterlistb[2]:= '*.po';
+ 
+ filterlista[3]:= 'TXT ' + c[ord(sc_txtfiles)];
+ filterlistb[3]:= '*.txt';
+ 
+  with projectfo.impexpfiledialog.controller.filterlist do begin
+    asarraya:= filterlista;
+    asarrayb:= filterlistb;
+    end;
+ 
+   if checksave and 
        projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
     stream:= ttextdatastream.create(str1,fm_read);
     doimport(stream,charencodingty(projectfo.impexpencoding.value));
@@ -1510,11 +1539,40 @@ procedure tmainfo.exportonexecute(const sender: tobject);
 var
  stream: ttextdatastream;
  str1: filenamety;
+ filterlista : msestringarty;
+ filterlistb : msestringarty;
 begin
 //if (nostring.value) or ((nostring.value = false) and (stringonly.value = false)) then
 //showmessage('Only exportation of strings is allowed.') else
-//   begin  
-    if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
+//   begin 
+
+setlength(filterlista,6);
+setlength(filterlistb,6);
+
+ filterlista[0]:= c[ord(sc_dataexchangefiles)];
+ filterlistb[0]:= '*.csv';
+ 
+ filterlista[1]:= 'POT ' + c[ord(sc_templatesfiles)] + ' ' + c[ord(sc_nocontext)] ;
+ filterlistb[1]:= '*.pot';
+ 
+ filterlista[2]:= 'POT ' + c[ord(sc_templatesfiles)] + ' ' + c[ord(sc_context)] ;
+ filterlistb[2]:= '*.pot';
+ 
+ filterlista[3]:= 'PO ' + c[ord(sc_translationfiles)] + ' ' + c[ord(sc_nocontext)] ;
+ filterlistb[3]:= '*.po';
+ 
+ filterlista[4]:= 'PO ' + c[ord(sc_translationfiles)] + ' ' + c[ord(sc_context)] ;
+ filterlistb[4]:= '*.po';
+ 
+ filterlista[5]:= 'TXT ' + c[ord(sc_txtfiles)];
+ filterlistb[5]:= '*.txt';
+ 
+   with projectfo.impexpfiledialog.controller.filterlist do begin
+    asarraya:= filterlista;
+    asarrayb:= filterlistb;
+    end;
+ 
+if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     showworkpan;
     application.processmessages;
     stream:= ttextdatastream.create(str1,fm_create);

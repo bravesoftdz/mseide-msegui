@@ -34,9 +34,9 @@ object settingsfo: tsettingsfo
     object tbutton2: tbutton
       optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autowidth]
       taborder = 2
-      bounds_x = 283
+      bounds_x = 285
       bounds_y = 16
-      bounds_cx = 52
+      bounds_cx = 50
       bounds_cy = 22
       bounds_cxmin = 50
       anchors = [an_top, an_right]
@@ -75,7 +75,7 @@ object settingsfo: tsettingsfo
       taborder = 3
       bounds_x = 275
       bounds_y = 16
-      bounds_cx = 8
+      bounds_cx = 10
       bounds_cy = 20
       linkleft = tbutton1
       linkright = tbutton2
