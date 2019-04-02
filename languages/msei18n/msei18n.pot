@@ -83,16 +83,13 @@ msgstr ""
 msgid "&Configure MSEi18n"
 msgstr ""
 
-msgid "&Reset"
-msgstr ""
-
-msgid "Reset translated words to root value"
-msgstr ""
-
 msgid "Se&ttings"
 msgstr ""
 
-msgid "&Refresh"
+msgid "Re&fresh"
+msgstr ""
+
+msgid "&Reset"
 msgstr ""
 
 msgid "E&xit"
@@ -251,10 +248,7 @@ msgstr ""
 msgid "PO header"
 msgstr ""
 
-msgid "Data exchange files complete"
-msgstr ""
-
-msgid "Data exchange files without translated values"
+msgid "Data exchange files"
 msgstr ""
 
 msgid "POT templates files without context"
@@ -275,10 +269,7 @@ msgstr ""
 msgid "PO translation files with/without context"
 msgstr ""
 
-msgid "TXT text files with root values only"
-msgstr ""
-
-msgid "TXT text files with translated values only"
+msgid "TXT text files with context and word"
 msgstr ""
 
 msgid "Open import file"
@@ -344,16 +335,13 @@ msgstr ""
 msgid "MSEgui root directory"
 msgstr ""
 
-msgid ""
-"Root directory of FPC library (not used by the default project templates)."
+msgid "Root directory of FPC library (not used by the default project templates)."
 msgstr ""
 
 msgid "FPC library directory"
 msgstr ""
 
-msgid ""
-"Root directory of Free Pascal system (not used by the default project "
-"templates)."
+msgid "Root directory of Free Pascal system (not used by the default project templates)."
 msgstr ""
 
 msgid "FPC root directory"
@@ -361,3 +349,4 @@ msgstr ""
 
 msgid "Global Macros"
 msgstr ""
+

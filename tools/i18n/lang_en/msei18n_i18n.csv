@@ -21,11 +21,10 @@ name,type,notranslate,comment,value,en
 "mainfo,mainmenu1,menu.submenu.items,7:,caption",vaString,F,,&Make,&Make
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Reset,&Reset
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint",vaString,F,,Reset translated words to root value,Reset translated words to root value
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
-"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,&Refresh,&Refresh
-"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,Re&fresh,Re&fresh
+"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,&Reset,&Reset
+"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
 "mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project,Save translate project
@@ -77,17 +76,14 @@ name,type,notranslate,comment,value,en
 "projectfo,aftermake,frame.caption",vaString,F,,After make,After make
 "projectfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
 "projectfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files complete,Data exchange files complete
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,Data exchange files without translated values,Data exchange files without translated values
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files without context,POT templates files without context
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with context,POT templates files with context
-"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files without context,PO translation files without context
-"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with context,PO translation files with context
-"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,8:,0:",vaString,F,,TXT text files with root values only,TXT text files with root values only
-"projectfo,impexpfiledialog,controller.filterlist.data,9:,0:",vaString,F,,TXT text files with translated values only,TXT text files with translated values only
-"projectfo,impexpfiledialog,controller.filterlist.data,10:,0:",vaString,F,,All files,All files
+"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,POT templates files without context,POT templates files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files with context,POT templates files with context
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
+"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,PO translation files without context,PO translation files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files with context,PO translation files with context
+"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
+"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,TXT text files with context and word,TXT text files with context and word
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment

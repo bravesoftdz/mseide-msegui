@@ -225,7 +225,7 @@ mainfo,vaNull,F,,,
 "mainfo,grid,donottranslate,bounds_cy",vaInt8,F,,16,
 "mainfo,grid,donottranslate,optionsedit",vaSet,F,,[oe_undoonesc;oe_closequery;oe_checkmrcancel;oe_eatreturn;oe_resetselectonexit;oe_exitoncursor;oe_endonenter;oe_autoselect;oe_autoselectonfirstclick],
 "mainfo,grid,donottranslate,optionsedit1",vaSet,F,,[oe1_autopopupmenu;oe1_keyexecute;oe1_savevalue;oe1_savestate],
-"mainfo,grid,donottranslate,onchange",vaIdent,F,,numrow
+"mainfo,grid,donottranslate,onchange",vaIdent,F,,numrow,
 "mainfo,grid,donottranslate,visible",vaFalse,F,,,
 "mainfo,grid,donottranslate,onsetvalue",vaIdent,F,,donottranslateonsetvalue,
 "mainfo,grid,comment",vaNull,F,,,
@@ -413,7 +413,7 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,itemframetemplate",vaIdent,F,,menuitemframe,
 "mainfo,mainmenu1,itemfacetemplate",vaIdent,F,,concavey,
 "mainfo,mainmenu1,itemframetemplateactive",vaIdent,F,,menuitemframe,
-"mainfo,mainmenu1,menu.submenu.count",vaInt8,F,,11,
+"mainfo,mainmenu1,menu.submenu.count",vaInt8,F,,12,
 "mainfo,mainmenu1,menu.submenu.items",vaCollection,F,,,
 "mainfo,mainmenu1,menu.submenu.items,0:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open,&Open
@@ -459,7 +459,7 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,menu.submenu.items,7:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,7:,onexecute",vaIdent,F,,makeonexecute,
 "mainfo,mainmenu1,menu.submenu.items,8:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.count",vaInt8,F,,3,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.count",vaInt8,F,,2,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items",vaCollection,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
@@ -469,22 +469,21 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,onexecute",vaIdent,F,,configureonexecute,
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:",vaList,F,,
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Reset,&Reset
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint",vaString,F,,Reset translated words to root value,Reset translated words to root value
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,state",vaSet,F,,[as_localcaption;as_localhint;as_localonexecute]
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,onexecute",vaIdent,F,,onreset
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
 "mainfo,mainmenu1,menu.submenu.items,8:,name",vaString,T,,settings,settings
 "mainfo,mainmenu1,menu.submenu.items,8:,state",vaSet,F,,[as_localcaption],
 "mainfo,mainmenu1,menu.submenu.items,9:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,&Refresh,&Refresh
+"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,Re&fresh,Re&fresh
 "mainfo,mainmenu1,menu.submenu.items,9:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,9:,onexecute",vaIdent,F,,formatchanged,
 "mainfo,mainmenu1,menu.submenu.items,10:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,&Reset,&Reset
 "mainfo,mainmenu1,menu.submenu.items,10:,state",vaSet,F,,[as_localcaption;as_localonexecute],
-"mainfo,mainmenu1,menu.submenu.items,10:,onexecute",vaIdent,F,,exitexe,
+"mainfo,mainmenu1,menu.submenu.items,10:,onexecute",vaIdent,F,,onreset,
+"mainfo,mainmenu1,menu.submenu.items,11:",vaList,F,,
+"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,11:,state",vaSet,F,,[as_localcaption;as_localonexecute]
+"mainfo,mainmenu1,menu.submenu.items,11:,onexecute",vaIdent,F,,exitexe
 "mainfo,mainmenu1,left",vaInt16,F,,256,
 "mainfo,mainmenu1,top",vaInt16,F,,160,
 "mainfo,projectfiledialog",vaNull,F,,,
@@ -1053,8 +1052,7 @@ projectfo,vaNull,F,,,
 "projectfo,ok,anchors",vaSet,F,,[an_right;an_bottom],
 "projectfo,ok,state",vaSet,F,,[as_default;as_localdefault;as_localcaption;as_localonexecute],
 "projectfo,ok,caption",vaString,F,,OK,OK
-"projectfo,ok,modalresult",vaIdent,F,,mr_none,
-"projectfo,ok,onexecute",vaIdent,F,,onok
+"projectfo,ok,onexecute",vaIdent,F,,onok,
 "projectfo,cancel",vaNull,F,,,
 "projectfo,cancel,bounds_x",vaInt16,F,,585,
 "projectfo,cancel,bounds_y",vaInt16,F,,533,
@@ -1063,8 +1061,7 @@ projectfo,vaNull,F,,,
 "projectfo,cancel,anchors",vaSet,F,,[an_right;an_bottom],
 "projectfo,cancel,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "projectfo,cancel,caption",vaString,F,,Cancel,Cancel
-"projectfo,cancel,modalresult",vaIdent,F,,mr_none,
-"projectfo,cancel,onexecute",vaIdent,F,,oncancel
+"projectfo,cancel,onexecute",vaIdent,F,,oncancel,
 "projectfo,destname",vaNull,F,,,
 "projectfo,destname,frame.caption",vaString,F,,Destination Basename (empty = Datafile name),Destination Basename (empty = Datafile name)
 "projectfo,destname,frame.localprops",vaSet,F,,[],
@@ -1128,27 +1125,27 @@ projectfo,vaNull,F,,,
 "projectfo,aftermake,anchors",vaSet,F,,[an_top],
 "projectfo,aftermake,statfile",vaIdent,F,,projectstat,
 "projectfo,aftermake,reffontheight",vaInt8,F,,14,
-"projectfo,memopotheader",vaNull,F,,
+"projectfo,memopotheader",vaNull,F,,,
 "projectfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
-"projectfo,memopotheader,frame.localprops",vaSet,F,,[]
-"projectfo,memopotheader,frame.localprops1",vaSet,F,,[]
-"projectfo,memopotheader,frame.buttons.count",vaInt8,F,,1
-"projectfo,memopotheader,frame.buttons.items",vaCollection,F,,
-"projectfo,memopotheader,frame.buttons.items,0:",vaList,F,,
-"projectfo,memopotheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17
-"projectfo,memopotheader,frame.button.imagenr",vaInt8,F,,17
-"projectfo,memopotheader,frame.outerframe",vaList,F,,
-"projectfo,memopotheader,frame.outerframe,0:",vaInt8,F,,0
-"projectfo,memopotheader,frame.outerframe,1:",vaInt8,F,,17
-"projectfo,memopotheader,frame.outerframe,2:",vaInt8,F,,0
-"projectfo,memopotheader,frame.outerframe,3:",vaInt8,F,,0
-"projectfo,memopotheader,taborder",vaInt8,F,,11
-"projectfo,memopotheader,bounds_x",vaInt8,F,,0
-"projectfo,memopotheader,bounds_y",vaInt16,F,,447
-"projectfo,memopotheader,bounds_cx",vaInt16,F,,646
-"projectfo,memopotheader,bounds_cy",vaInt8,F,,34
-"projectfo,memopotheader,anchors",vaSet,F,,[an_bottom]
-"projectfo,memopotheader,statfile",vaIdent,F,,projectstat
+"projectfo,memopotheader,frame.localprops",vaSet,F,,[],
+"projectfo,memopotheader,frame.localprops1",vaSet,F,,[],
+"projectfo,memopotheader,frame.buttons.count",vaInt8,F,,1,
+"projectfo,memopotheader,frame.buttons.items",vaCollection,F,,,
+"projectfo,memopotheader,frame.buttons.items,0:",vaList,F,,,
+"projectfo,memopotheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17,
+"projectfo,memopotheader,frame.button.imagenr",vaInt8,F,,17,
+"projectfo,memopotheader,frame.outerframe",vaList,F,,,
+"projectfo,memopotheader,frame.outerframe,0:",vaInt8,F,,0,
+"projectfo,memopotheader,frame.outerframe,1:",vaInt8,F,,17,
+"projectfo,memopotheader,frame.outerframe,2:",vaInt8,F,,0,
+"projectfo,memopotheader,frame.outerframe,3:",vaInt8,F,,0,
+"projectfo,memopotheader,taborder",vaInt8,F,,11,
+"projectfo,memopotheader,bounds_x",vaInt8,F,,0,
+"projectfo,memopotheader,bounds_y",vaInt16,F,,447,
+"projectfo,memopotheader,bounds_cx",vaInt16,F,,646,
+"projectfo,memopotheader,bounds_cy",vaInt8,F,,34,
+"projectfo,memopotheader,anchors",vaSet,F,,[an_bottom],
+"projectfo,memopotheader,statfile",vaIdent,F,,projectstat,
 "projectfo,memopotheader,value",vaLString,T,,"# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -1184,28 +1181,28 @@ msgstr """"
 ""MIME-Version: 1.0\n""
 ""Content-Type: text/plain; charset=UTF-8\n""
 ""Content-Transfer-Encoding: 8bit\n"""
-"projectfo,memopotheader,reffontheight",vaInt8,F,,14
-"projectfo,memopoheader",vaNull,F,,
+"projectfo,memopotheader,reffontheight",vaInt8,F,,14,
+"projectfo,memopoheader",vaNull,F,,,
 "projectfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
-"projectfo,memopoheader,frame.localprops",vaSet,F,,[]
-"projectfo,memopoheader,frame.localprops1",vaSet,F,,[]
-"projectfo,memopoheader,frame.buttons.count",vaInt8,F,,1
-"projectfo,memopoheader,frame.buttons.items",vaCollection,F,,
-"projectfo,memopoheader,frame.buttons.items,0:",vaList,F,,
-"projectfo,memopoheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17
-"projectfo,memopoheader,frame.button.imagenr",vaInt8,F,,17
-"projectfo,memopoheader,frame.outerframe",vaList,F,,
-"projectfo,memopoheader,frame.outerframe,0:",vaInt8,F,,0
-"projectfo,memopoheader,frame.outerframe,1:",vaInt8,F,,17
-"projectfo,memopoheader,frame.outerframe,2:",vaInt8,F,,0
-"projectfo,memopoheader,frame.outerframe,3:",vaInt8,F,,0
-"projectfo,memopoheader,taborder",vaInt8,F,,13
-"projectfo,memopoheader,bounds_x",vaInt8,F,,0
-"projectfo,memopoheader,bounds_y",vaInt16,F,,488
-"projectfo,memopoheader,bounds_cx",vaInt16,F,,646
-"projectfo,memopoheader,bounds_cy",vaInt8,F,,34
-"projectfo,memopoheader,anchors",vaSet,F,,[an_bottom]
-"projectfo,memopoheader,statfile",vaIdent,F,,projectstat
+"projectfo,memopoheader,frame.localprops",vaSet,F,,[],
+"projectfo,memopoheader,frame.localprops1",vaSet,F,,[],
+"projectfo,memopoheader,frame.buttons.count",vaInt8,F,,1,
+"projectfo,memopoheader,frame.buttons.items",vaCollection,F,,,
+"projectfo,memopoheader,frame.buttons.items,0:",vaList,F,,,
+"projectfo,memopoheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17,
+"projectfo,memopoheader,frame.button.imagenr",vaInt8,F,,17,
+"projectfo,memopoheader,frame.outerframe",vaList,F,,,
+"projectfo,memopoheader,frame.outerframe,0:",vaInt8,F,,0,
+"projectfo,memopoheader,frame.outerframe,1:",vaInt8,F,,17,
+"projectfo,memopoheader,frame.outerframe,2:",vaInt8,F,,0,
+"projectfo,memopoheader,frame.outerframe,3:",vaInt8,F,,0,
+"projectfo,memopoheader,taborder",vaInt8,F,,13,
+"projectfo,memopoheader,bounds_x",vaInt8,F,,0,
+"projectfo,memopoheader,bounds_y",vaInt16,F,,488,
+"projectfo,memopoheader,bounds_cx",vaInt16,F,,646,
+"projectfo,memopoheader,bounds_cy",vaInt8,F,,34,
+"projectfo,memopoheader,anchors",vaSet,F,,[an_bottom],
+"projectfo,memopoheader,statfile",vaIdent,F,,projectstat,
 "projectfo,memopoheader,value",vaLString,T,,"# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -1241,7 +1238,7 @@ msgstr """"
 ""MIME-Version: 1.0\n""
 ""Content-Type: text/plain; charset=UTF-8\n""
 ""Content-Transfer-Encoding: 8bit\n"""
-"projectfo,memopoheader,reffontheight",vaInt8,F,,14
+"projectfo,memopoheader,reffontheight",vaInt8,F,,14,
 "projectfo,projectstat",vaNull,F,,,
 "projectfo,projectstat,onstatupdate",vaIdent,F,,projectstatonupdatestat,
 "projectfo,projectstat,onstatbeforewrite",vaIdent,F,,projectstatonbeforewritestat,
@@ -1253,38 +1250,29 @@ msgstr """"
 "projectfo,impexpfiledialog,controller.filename",vaString,T,,default.csv,default.csv
 "projectfo,impexpfiledialog,controller.filterlist.data",vaList,F,,,
 "projectfo,impexpfiledialog,controller.filterlist.data,0:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files complete,Data exchange files complete
+"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
 "projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.csv,*.csv
 "projectfo,impexpfiledialog,controller.filterlist.data,1:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,Data exchange files without translated values,Data exchange files without translated values
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*.csv,*.trd
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,POT templates files without context,POT templates files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*.pot,*.trd
 "projectfo,impexpfiledialog,controller.filterlist.data,2:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files without context,POT templates files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files with context,POT templates files with context
 "projectfo,impexpfiledialog,controller.filterlist.data,2:,1:",vaString,T,,*.pot,*.po
 "projectfo,impexpfiledialog,controller.filterlist.data,3:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with context,POT templates files with context
+"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
 "projectfo,impexpfiledialog,controller.filterlist.data,3:,1:",vaString,T,,*.pot,*.*
-"projectfo,impexpfiledialog,controller.filterlist.data,4:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,4:,1:",vaString,T,,*.pot,*.pot
-"projectfo,impexpfiledialog,controller.filterlist.data,5:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files without context,PO translation files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,4:",vaList,F,,,
+"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,PO translation files without context,PO translation files without context
+"projectfo,impexpfiledialog,controller.filterlist.data,4:,1:",vaString,T,,*.po,*.pot
+"projectfo,impexpfiledialog,controller.filterlist.data,5:",vaList,F,,,
+"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files with context,PO translation files with context
 "projectfo,impexpfiledialog,controller.filterlist.data,5:,1:",vaString,T,,*.po,*.po
-"projectfo,impexpfiledialog,controller.filterlist.data,6:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with context,PO translation files with context
+"projectfo,impexpfiledialog,controller.filterlist.data,6:",vaList,F,,,
+"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
 "projectfo,impexpfiledialog,controller.filterlist.data,6:,1:",vaString,T,,*.po,*.po
-"projectfo,impexpfiledialog,controller.filterlist.data,7:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,7:,1:",vaString,T,,*.po,*.po
-"projectfo,impexpfiledialog,controller.filterlist.data,8:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,8:,0:",vaString,F,,TXT text files with root values only,TXT text files with root values only
-"projectfo,impexpfiledialog,controller.filterlist.data,8:,1:",vaString,T,,*.txt,*.txt
-"projectfo,impexpfiledialog,controller.filterlist.data,9:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,9:,0:",vaString,F,,TXT text files with translated values only,TXT text files with translated values only
-"projectfo,impexpfiledialog,controller.filterlist.data,9:,1:",vaString,T,,*.txt,*.txt
-"projectfo,impexpfiledialog,controller.filterlist.data,10:",vaList,F,,
-"projectfo,impexpfiledialog,controller.filterlist.data,10:,0:",vaString,F,,All files,All files
-"projectfo,impexpfiledialog,controller.filterlist.data,10:,1:",vaString,T,,*.*,*.*
+"projectfo,impexpfiledialog,controller.filterlist.data,7:",vaList,F,,,
+"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,TXT text files with context and word,TXT text files with context and word
+"projectfo,impexpfiledialog,controller.filterlist.data,7:,1:",vaString,T,,*.txt,*.po
 "projectfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
