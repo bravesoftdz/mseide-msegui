@@ -503,40 +503,6 @@ object projectfo: tprojectfo
   object impexpfiledialog: tfiledialog
     statfile = projectstat
     controller.filename = 'default.csv'
-    controller.filterlist.data = (
-      (
-        'Data exchange files'
-        '*.csv'
-      )
-      (
-        'POT templates files without context'
-        '*.pot'
-      )
-      (
-        'POT templates files with context'
-        '*.pot'
-      )
-      (
-        'POT templates files with/without context'
-        '*.pot'
-      )
-      (
-        'PO translation files without context'
-        '*.po'
-      )
-      (
-        'PO translation files with context'
-        '*.po'
-      )
-      (
-        'PO translation files with/without context'
-        '*.po'
-      )
-      (
-        'TXT text files with context and word'
-        '*.txt'
-      )
-    )
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'
     controller.captionsave = 'Save export file'

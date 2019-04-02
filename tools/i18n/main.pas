@@ -1435,7 +1435,7 @@ setlength(filterlistb,4);
  filterlista[2]:= 'PO ' + c[ord(sc_translationfiles)];
  filterlistb[2]:= '*.po';
  
- filterlista[3]:= 'TXT ' + c[ord(sc_txtfiles)];
+ filterlista[3]:= 'TXT ' + c[ord(sc_txtfiles)] + ' ' + c[ord(sc_context)] ;
  filterlistb[3]:= '*.txt';
  
   with projectfo.impexpfiledialog.controller.filterlist do begin
@@ -1558,7 +1558,7 @@ setlength(filterlistb,6);
  filterlista[4]:= 'PO ' + c[ord(sc_translationfiles)] + ' ' + c[ord(sc_context)] ;
  filterlistb[4]:= '*.po';
  
- filterlista[5]:= 'TXT ' + c[ord(sc_txtfiles)];
+ filterlista[5]:= 'TXT ' + c[ord(sc_txtfiles)] + ' ' + c[ord(sc_context)] ;
  filterlistb[5]:= '*.txt';
  
    with projectfo.impexpfiledialog.controller.filterlist do begin
