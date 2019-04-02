@@ -123,6 +123,7 @@ type
    procedure onreset(const sender: TObject);
    procedure showworkpan;
    procedure numrow(const Sender: TObject);
+   procedure ondefhead(const sender: TObject);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -153,6 +154,7 @@ type
  end;
 
 var
+ defaultheaderpo: tmsememodialogfo;
  mainfo: tmainfo;
  rootnode: tpropinfonode;
  valuearray : Array of utf8String;
@@ -164,7 +166,7 @@ var
  implementation
 uses
  main_mfm,msefileutils,msesystypes,msesys,sysutils,mselist,project,
- rtlconsts,mseprocutils,msestockobjects,
+ rtlconsts,mseprocutils,msestockobjects, headerform,
  mseparser,mseformdatatools,mseresourcetools, 
  msearrayutils,msesettings,messagesform,mseeditglob,mseformatstr;
 type
@@ -1633,6 +1635,10 @@ begin
    end;
   end;
   updatecaption;
+  projectfo.memopoheader.value := headerfo.memopoheader.value;
+  projectfo.memopotheader.value := headerfo.memopotheader.value;
+  numrow(sender);
+  statusdisp.value := '';
  end;
 end;
 
@@ -2093,6 +2099,11 @@ if askconfirmation(mstr1) then begin
      numrow(sender);
      doreset := false;
     end;
+end;
+
+procedure tmainfo.ondefhead(const sender: TObject);
+begin
+headerfo.visible := true;
 end;
 
 

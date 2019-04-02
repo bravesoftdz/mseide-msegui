@@ -24,7 +24,7 @@ object mainfo: tmainfo
   optionswindow = [wo_groupleader]
   mainmenu = mainmenu1
   options = [fo_main, fo_terminateonclose, fo_savepos, fo_savezorder, fo_savestate]
-  statfile = projectfo.projectstat
+  statfile = mainstatfile
   caption = 'MSEi18n'
   icon.transparentcolor = -2147483642
   icon.options = [bmo_masked]
@@ -508,7 +508,7 @@ object mainfo: tmainfo
         onexecute = makeonexecute
       end    
       item
-        submenu.count = 2
+        submenu.count = 3
         submenu.items = <        
           item
             caption = '&About'
@@ -519,6 +519,11 @@ object mainfo: tmainfo
             caption = '&Configure MSEi18n'
             state = [as_localcaption, as_localonexecute]
             onexecute = configureonexecute
+          end        
+          item
+            caption = '&Default headers'
+            state = [as_localcaption, as_localonexecute]
+            onexecute = ondefhead
           end>
         caption = 'Se&ttings'
         name = 'settings'
