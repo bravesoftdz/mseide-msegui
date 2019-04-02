@@ -156,6 +156,7 @@ var
  mainfo: tmainfo;
  rootnode: tpropinfonode;
  valuearray : Array of utf8String;
+ rootvaluearray : Array of utf8String;
  isloaded : boolean = false;
  doreset : boolean = false;
  importtype: integer = -1;
@@ -917,6 +918,7 @@ var
  mstr3, mstr4 : msestring;
  int1: integer;
  filind : integer;
+ hasdouble : boolean;
 
 begin
  rec:= nil; //compilerwarning
@@ -962,7 +964,42 @@ begin
  
   if  (filind > 0) and (filind < 7) then begin
   
-  if (filind = 2) or (filind = 3) or(filind = 5)  or(filind = 6) then
+  if (filind = 1) then // pot + ss context
+  begin
+    hasdouble := false;
+   
+    for int1 := 0 to length(rootvaluearray) - 1 do
+    begin
+    if mstr3 = rootvaluearray[int1] then hasdouble := true;
+    end;
+    
+     setlength(rootvaluearray,length(rootvaluearray)+1);  
+        rootvaluearray[length(rootvaluearray)-1] := mstr3; 
+        
+   if hasdouble = false then begin  
+  
+    if system.pos(sLineBreak,mstr3) > 0 then
+   begin
+    mstr3 :=  
+   utf8StringReplace(mstr3, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]);
+     mstr3 :=  '""'+ #10#13 +  '"' +  mstr3;
+     
+     Delete((mstr3),system.pos(sLineBreak,mstr3),1);
+     
+      datastream.writeln('msgid ' + mstr3 + '"');
+    end else
+    begin
+    datastream.writeln('msgid "' + mstr3 + '"');
+    end;
+    
+    datastream.writeln( 'msgstr ""');
+    datastream.writeln(''); 
+    end;
+    end;
+  
+  
+ if (filind = 2) or (filind = 3) then // pot + context / mix
+  begin
    datastream.writeln('msgctxt "' + str1 +'"');
 
    if system.pos(sLineBreak,mstr3) > 0 then
@@ -978,9 +1015,39 @@ begin
     begin
     datastream.writeln('msgid "' + mstr3 + '"');
     end;
- 
- if (filind = 4) or(filind = 5) or(filind = 6) then
+    
+    datastream.writeln( 'msgstr ""');
+    datastream.writeln('');
+   end;
+   
+    if (filind =  4) then
   begin
+  
+    hasdouble := false;
+   
+    for int1 := 0 to length(rootvaluearray) - 1 do
+    begin
+    if mstr3 = rootvaluearray[int1] then hasdouble := true;
+    end;
+    
+     setlength(rootvaluearray,length(rootvaluearray)+1);  
+        rootvaluearray[length(rootvaluearray)-1] := mstr3; 
+   if hasdouble = false then begin       
+    if system.pos(sLineBreak,mstr3) > 0 then
+   begin  
+   
+    mstr3 :=  
+   utf8StringReplace(mstr3, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]);
+     mstr3 :=  '""'+ #10#13 +  '"' +  mstr3;
+     
+     Delete((mstr3),system.pos(sLineBreak,mstr3),1);
+     
+      datastream.writeln('msgid ' + mstr3 + '"');
+    end else
+    begin
+    datastream.writeln('msgid "' + mstr3 + '"');
+    end;
+    
   if system.pos(sLineBreak,mstr4) > 0 then 
   begin
     mstr4 := 
@@ -989,12 +1056,41 @@ begin
    Delete(mstr4,system.pos(sLineBreak,mstr4),1);
    datastream.writeln( 'msgstr ' + mstr4 + '"') end
    else  datastream.writeln( 'msgstr "' + mstr4 + '"') ;
-  end else
-  datastream.writeln( 'msgstr ""');
+   
+   datastream.writeln('');
+  end;
+  end;
 
- datastream.writeln('');
+ if (filind =  5) or (filind =  6) then
+  begin
+  datastream.writeln('msgctxt "' + str1 +'"');
 
- end;
+   if system.pos(sLineBreak,mstr3) > 0 then
+   begin
+    mstr3 :=  
+   utf8StringReplace(mstr3, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]);
+     mstr3 :=  '""'+ #10#13 +  '"' +  mstr3;
+     
+     Delete((mstr3),system.pos(sLineBreak,mstr3),1);
+     
+      datastream.writeln('msgid ' + mstr3 + '"');
+    end else
+    begin
+    datastream.writeln('msgid "' + mstr3 + '"');
+    end;
+    
+  if system.pos(sLineBreak,mstr4) > 0 then 
+  begin
+    mstr4 := 
+   utf8StringReplace(mstr4, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]); 
+   mstr4 :=  '""'+  #10#13  + '"' + mstr4;
+   Delete(mstr4,system.pos(sLineBreak,mstr4),1);
+   datastream.writeln( 'msgstr ' + mstr4 + '"') end
+   else  datastream.writeln( 'msgstr "' + mstr4 + '"') ;
+   
+   datastream.writeln('');
+  end;
+  end;
  end;
 end;
 end;
@@ -1416,6 +1512,7 @@ begin
     showworkpan;
     application.processmessages;
     stream:= ttextdatastream.create(str1,fm_create);
+    setlength(rootvaluearray,0); 
     doexport(stream,charencodingty(projectfo.impexpencoding.value));
     formatchanged(sender);
     workpan.visible := false;
