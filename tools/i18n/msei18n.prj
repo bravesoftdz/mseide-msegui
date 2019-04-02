@@ -832,14 +832,15 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=sc_txt
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
+ writerecord
  sc_txt
  sc_context
  sc_name
  doread
  exportone
- writerecord
  asarraya
  msestringarty
  impexpfiledialog
@@ -848,7 +849,6 @@ findhistory=20
  rootvaluearray
  doexport
  valuearray
- treeonupdaterowvalues
  context
  strinconsts
  sc_notranslate
@@ -856,13 +856,13 @@ findhistory=20
  getcolumnheaders
 findoptions=1
 editpos=7
- 0,0
- 0,1427
- 0,14
+ 0,-1073741823
+ 0,580
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,0
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -922,11 +922,11 @@ nomenumodules=5
 order=7
  0
  1
+ 4
+ 5
  6
  2
  3
- 4
- 5
 firsttab=0
 index=1
 [layout]
@@ -968,9 +968,9 @@ windowlayout=650
  cy=370
  rcx=0
  rcy=0
- wsize=0
+ wsize=5
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1156,7 +1156,7 @@ windowlayout=650
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1171,7 +1171,7 @@ windowlayout=650
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=575
  width0=255
@@ -1443,18 +1443,18 @@ windowlayout=650
  order=7
   0
   1
+  4
+  5
   6
   2
   3
-  4
-  5
  firsttab=0
  index=1
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_settingsfo_mse_
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1489,7 +1489,7 @@ windowlayout=650
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_settingsfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1565,7 +1565,7 @@ windowlayout=650
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_projectfo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0

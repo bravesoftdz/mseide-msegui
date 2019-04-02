@@ -517,9 +517,11 @@ begin
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
         
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
+         astro := utf8StringReplace(astro,  '\"', '"', [rfReplaceAll]);  
        
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astrt := utf8copy(str2,1,length(str2)) ;  
+         astrt := utf8StringReplace(astrt,  '\"', '"', [rfReplaceAll]);  
        
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
@@ -989,9 +991,13 @@ begin
         rootvaluearray[length(rootvaluearray)-1] := mstr3; 
         
    if hasdouble = false then begin  
-  
+   
+       mstr3 :=  
+   utf8StringReplace(mstr3, '"', '\"', [rfReplaceAll]);
+   
     if system.pos(sLineBreak,mstr3) > 0 then
    begin
+    
     mstr3 :=  
    utf8StringReplace(mstr3, sLineBreak, '\n"' + sLineBreak + '"', [rfReplaceAll]);
      mstr3 :=  '""'+ #10#13 +  '"' +  mstr3;
@@ -1013,7 +1019,10 @@ begin
  if (filind = 2) then // pot + context / mix
   begin
    datastream.writeln('msgctxt "' + str1 +'"');
-
+   
+     mstr3 :=  
+   utf8StringReplace(mstr3, '"', '\"', [rfReplaceAll]);
+ 
    if system.pos(sLineBreak,mstr3) > 0 then
    begin
     mstr3 :=  
@@ -1044,6 +1053,11 @@ begin
     
      setlength(rootvaluearray,length(rootvaluearray)+1);  
         rootvaluearray[length(rootvaluearray)-1] := mstr3; 
+  
+     mstr3 :=  
+   utf8StringReplace(mstr3, '"', '\"', [rfReplaceAll]);
+      
+        
    if hasdouble = false then begin       
     if system.pos(sLineBreak,mstr3) > 0 then
    begin  
@@ -1060,6 +1074,9 @@ begin
     datastream.writeln('msgid "' + mstr3 + '"');
     end;
     
+    mstr4 :=  
+   utf8StringReplace(mstr4, '"', '\"', [rfReplaceAll]);
+       
   if system.pos(sLineBreak,mstr4) > 0 then 
   begin
     mstr4 := 
@@ -1076,6 +1093,9 @@ begin
  if (filind = 4) then
   begin
   datastream.writeln('msgctxt "' + str1 +'"');
+  
+   mstr3 :=  
+   utf8StringReplace(mstr3, '"', '\"', [rfReplaceAll]);  
 
    if system.pos(sLineBreak,mstr3) > 0 then
    begin
@@ -1090,6 +1110,9 @@ begin
     begin
     datastream.writeln('msgid "' + mstr3 + '"');
     end;
+    
+  mstr4 :=  
+   utf8StringReplace(mstr4, '"', '\"', [rfReplaceAll]);     
     
   if system.pos(sLineBreak,mstr4) > 0 then 
   begin
