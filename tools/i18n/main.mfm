@@ -531,7 +531,8 @@ object mainfo: tmainfo
       end    
       item
         caption = '&Reset'
-        state = [as_localcaption, as_localonexecute]
+        hint = 'Reset translated words to root value'
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = onreset
       end    
       item
