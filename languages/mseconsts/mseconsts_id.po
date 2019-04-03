@@ -2,19 +2,23 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# AlexL <loginov.alex.valer@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mseconsts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 02:31+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-04-03 06:16+0000\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Indonesian (https://www.transifex.com/Magic/teams/44238/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mseconsts.pas:91
 msgid "&Cancel"
@@ -146,7 +150,7 @@ msgstr "&Batal"
 
 #: mseconsts.pas:138
 msgid "&Redo"
-msgstr ""
+msgstr "Jadi &Lagi"
 
 #: mseconsts.pas:139
 msgid "&Copy"
@@ -162,7 +166,7 @@ msgstr "&Tempel"
 
 #: mseconsts.pas:142
 msgid "Select &all"
-msgstr ""
+msgstr "Pilih semu&a"
 
 #: mseconsts.pas:143
 msgid "&Insert Row"
@@ -182,7 +186,7 @@ msgstr "&Direktori"
 
 #: mseconsts.pas:148
 msgid "&Home"
-msgstr ""
+msgstr "&Basis"
 
 #: mseconsts.pas:149
 msgid "&Up"
@@ -202,7 +206,7 @@ msgstr "&File tersembunyi"
 
 #: mseconsts.pas:153
 msgid "&Filter"
-msgstr ""
+msgstr "&Penyaring"
 
 #: mseconsts.pas:154
 msgid "Save"
@@ -234,7 +238,7 @@ msgstr ""
 
 #: mseconsts.pas:161
 msgid "File"
-msgstr ""
+msgstr "Berkas"
 
 #: mseconsts.pas:162
 msgid "exists, do you want to overwrite?"
@@ -254,7 +258,7 @@ msgstr "SALAH"
 
 #: mseconsts.pas:166
 msgid "Exception"
-msgstr ""
+msgstr "Kekecualian"
 
 #: mseconsts.pas:167
 msgid "System"
@@ -482,7 +486,7 @@ msgstr "Tempel Cell"
 
 #: mseconsts.pas:226
 msgid "Close"
-msgstr ""
+msgstr "Tutup"
 
 #: mseconsts.pas:227
 msgid "Maximize"
