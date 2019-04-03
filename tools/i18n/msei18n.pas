@@ -28,7 +28,7 @@ uses
 
   {$ifdef mse_i18n}
   gettext,msei18nutils,mseconsts,mseconsts_ru,mseconsts_uzcyr,
-  mseconsts_de,mseconsts_es,mseconsts_zh,mseconsts_id,
+  mseconsts_de,mseconsts_fr,mseconsts_es,mseconsts_zh,mseconsts_id,
   {$endif}
   
   main,messagesform,project, headerform;
@@ -42,7 +42,7 @@ begin
 {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
  If loadlangunit('i18n_'+MSEFallbackLang,true) then
-                                                setlangconsts(MSEFallbackLang);
+   setlangconsts(MSEFallbackLang);
 {$endif}                                               
  application.createForm(tmainfo,mainfo);
  application.createForm(tmessagesfo,messagesfo);

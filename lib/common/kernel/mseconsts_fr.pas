@@ -66,7 +66,7 @@ const
   '',             //mr_escape
   '',             //mr_f10
   '',             //mr_exception
-  '&Effacer',     //mr_cancel
+  '&Annuler',     //mr_cancel
   '&Arr'#0234'ter',//mr_abort
   '&Valider',     //mr_ok
   '&Oui',         //mr_yes
@@ -88,7 +88,7 @@ const
   '',           //mr_escape
   '',           //mr_f10
   '',           //mr_exception
-  'Effacer',    //mr_cancel
+  'Annuler',    //mr_cancel
   'Arr'#0234'ter',//mr_abort
   'Valider',    //mr_ok
   'Oui',        //mr_yes
@@ -171,7 +171,7 @@ const
   'Supprimer',                            //sc_delete
   #0201'diter',                            //sc_edit
   'Poster',                               //sc_post
-  'Effacer',                              //sc_cancel
+  'Annuler',                              //sc_cancel
   'Rafra'#0238'chir',                           //sc_refresh
   #0201'dition Filtre',                    //sc_filter_filter
   #0201'dition Filtre Minimum',            //sc_edit_filter_min
