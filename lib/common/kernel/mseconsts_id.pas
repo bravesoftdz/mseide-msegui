@@ -85,7 +85,7 @@ const
   '&Home',                 //sc_homehk               //
   '&Naik',                 //sc_Uphk                 //
   'Dir &Baru',             //sc_New_dirhk            // hotkeys
-  '&Nama File',            //sc_Namehk               //
+  '&Nama',                 //sc_Namehk               //
   '&File tersembunyi',     //sc_Show_hidden_fileshk  //
   '&Filter',               //sc_Filterhk            /// 
   'Simpan',                //sc_save 
@@ -106,7 +106,7 @@ const
   'PASSWORD',              //sc_passwordupper
   'Enter password',        //sc_enterpassword
   'Invalid password!',     //sc_invalidpassword
-  'tidak dapat membaca direktori', //sc_can_not_read_directory
+  'Tidak dapat membaca direktori', //sc_can_not_read_directory
   'Format grafik tidak didukung', //sc_graphic_not_supported
   'Format grafik salah',  //sc_graphic_format_error
   'MS Bitmap',            //sc_MS_Bitmap

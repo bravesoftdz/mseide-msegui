@@ -104,7 +104,7 @@ const
   'System',                                    //sc_system
   'existiert nicht',                           //sc_does_not_exist
   'PASSWORT',                 //sc_passwordupper
-  'Ppassworteingabe',         //sc_enterpassword
+  'Passworteingabe',         //sc_enterpassword
   'Ung'#0252'ltiges Passwort!',//sc_invalidpassword
   'Verzeichnis kann nicht gelesen werden',     //sc_can_not_read_directory
   'Grafik Format nicht unterst'#0252'tzt', //sc_graphic_not_supported
@@ -155,7 +155,7 @@ const
   'Hochformat',               //sc_portrait print orientation
   'Querformat',               //sc_landscape print orientation
   'Zeile l'#0246'schen?',      //sc_Delete_row_question
-  'gew'#0228'hlte Zeilen',      //sc_selected_rows
+  'gew'#0228'hlte Zeilen?',      //sc_selected_rows
   'Nur Einzeleintrag erlaubt', //sc_Single_item_only 
   'Zellen kopieren',           //sc_Copy_Cells
   'Zellen einf'#0252'gen',      //sc_Paste_Cells

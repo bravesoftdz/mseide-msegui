@@ -196,8 +196,8 @@ const
   'Portrait',                             //sc_portrait print orientation
   'Paysage',                              //sc_landscape print orientation
   'Supprimer ligne ?',                    //sc_Delete_row_question
-  'Lignes s'#0233'lectionn'#0233'es',       //sc_selected_rows
-  'seulement un '#0233'l'#0233'ment',       //sc_Single_item_only 
+  'lignes s'#0233'lectionn'#0233'es ?',       //sc_selected_rows
+  'Seulement un '#0233'l'#0233'ment',       //sc_Single_item_only 
   'Copier cellules',                      //sc_Copy_Cells
   'Coller cellules',                      //sc_Paste_Cells
   'Fermer',               //sc_close
@@ -213,7 +213,7 @@ const
   'Entr'#0233'e',               //sc_input
   'Boutton',              //sc_button
   'Allum'#0233'',           //sc_on
-   #0201'teint',                 //sc_off
+  #0201'teint',                 //sc_off
   'Bord gauche',         //sc_leftborder
   'Bord haut',          //sc_topborder
   'Bord droit',        //sc_rightborder
@@ -221,7 +221,7 @@ const
   'D'#0233'but du texte',       //sc_beginoftext
   'Fin du texte',         //sc_endoftext
   'Mode entr'#0233'e',           //sc_inputmode
-   #0201'craser',           //sc_overwrite
+  #0201'craser',           //sc_overwrite
   'D'#0233'truit',             //sc_deleted
   'Copie'#0233,              //sc_copied
   'Inser'#0233,            //sc_inserted

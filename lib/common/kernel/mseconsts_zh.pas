@@ -97,7 +97,7 @@ const
   #26032#24314#25991#20214#22841,            //sc_create_new_directory
   'Back',                //sc_back
   'Forward',             //sc_forward
-  'Up',                  //sc_up
+  #21521#19978,                  //sc_up
   #25991#20214,                              //sc_file
   #25991#20214#24050#32463#23384#22312#65292#26159#21542#35206#30422#65311, //sc_exists_overwrite
     'is modified. Save?',  //sc_is_modified_save
@@ -146,14 +146,14 @@ const
   'Copy record',        //sc_copy_record
   'Dialog',             //sc_dialog
   #25554#20837,                        //sc_insert
-  'Copy',                              //sc_copy
-  'Paste',              //sc_paste
+  #22797#21046,                              //sc_copy
+  #31896#36148,              //sc_paste
   'Row insert',         //sc_row_insert
   'Row append',         //sc_row_append
   'Row delete',         //sc_row_delete
-  'Undo',               //sc_undo
+  #21462#28040,               //sc_undo
   'Redo',               //sc_redo
-  'Cut',                //sc_cut
+  #21098#20999,                //sc_cut
   'Select all',         //sc_select_all
   #36807#28388#20851#38381,            //sc_filter_off
   'Portrait',                          //sc_portrait print orientation

@@ -159,7 +159,7 @@ const
   'Apaisado',                          //sc_landscape print orientation
   #0191'Borrar fila?',                  //sc_Delete_row_question
   'filas seleccionadas?',              //sc_selected_rows
-  'un elemento solamente',             //sc_Single_item_only
+  'Un elemento solamente',             //sc_Single_item_only
   'Copiar Celdas',                     //sc_Copy_Cells
   'Pegar Celdas',                      //sc_Paste_Cells
   'Cerrar',               //sc_close
