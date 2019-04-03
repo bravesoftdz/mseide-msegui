@@ -1,0 +1,701 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mseconsts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 02:31+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mseconsts.pas:91
+msgid "&Cancel"
+msgstr "&Бекор қилиш"
+
+#: mseconsts.pas:92
+msgid "&Abort"
+msgstr "&Узиб қўйиш"
+
+#: mseconsts.pas:93
+msgid "&OK"
+msgstr "&Тайёр"
+
+#: mseconsts.pas:94
+msgid "&Yes"
+msgstr "&Ҳа"
+
+#: mseconsts.pas:95
+msgid "&No"
+msgstr "&Йўк"
+
+#: mseconsts.pas:96
+msgid "&All"
+msgstr "Ба&рча"
+
+#: mseconsts.pas:97
+msgid "Yes &all"
+msgstr ""
+
+#: mseconsts.pas:98
+msgid "N&o all"
+msgstr "Ҳе&ч бири"
+
+#: mseconsts.pas:99
+msgid "&Ignore"
+msgstr "&Ман этиш"
+
+#: mseconsts.pas:100
+msgid "&Skip"
+msgstr ""
+
+#: mseconsts.pas:101
+msgid "Skip a&ll"
+msgstr ""
+
+#: mseconsts.pas:102
+msgid "Co&ntinue"
+msgstr ""
+
+#: mseconsts.pas:113 mseconsts.pas:196
+msgid "Cancel"
+msgstr "Бекор қилиш"
+
+#: mseconsts.pas:114
+msgid "Abort"
+msgstr "Узиб қўйиш"
+
+#: mseconsts.pas:115
+msgid "OK"
+msgstr "Тайёр"
+
+#: mseconsts.pas:116
+msgid "Yes"
+msgstr "Ҳа"
+
+#: mseconsts.pas:117
+msgid "No"
+msgstr "Йўк"
+
+#: mseconsts.pas:118 mseconsts.pas:183
+msgid "All"
+msgstr "Барча"
+
+#: mseconsts.pas:119
+msgid "Yes all"
+msgstr ""
+
+#: mseconsts.pas:120
+msgid "No all"
+msgstr "Ҳеч бири"
+
+#: mseconsts.pas:121
+msgid "Ignore"
+msgstr "Ман этиш"
+
+#: mseconsts.pas:122
+msgid "Skip"
+msgstr ""
+
+#: mseconsts.pas:123
+msgid "Skip all"
+msgstr ""
+
+#: mseconsts.pas:124
+msgid "Continue"
+msgstr ""
+
+#: mseconsts.pas:129
+msgid "is invalid"
+msgstr "- ноаниқ"
+
+#: mseconsts.pas:130
+msgid "Format error"
+msgstr "Формат нотўғри"
+
+#: mseconsts.pas:131
+msgid "Value is required"
+msgstr "Ҳеч нарса керак эмас"
+
+#: mseconsts.pas:132
+msgid "Error"
+msgstr "Нотўғри"
+
+#: mseconsts.pas:133
+msgid "Min"
+msgstr "Мин."
+
+#: mseconsts.pas:134
+msgid "Max"
+msgstr "Макс."
+
+#: mseconsts.pas:135
+msgid "Range error"
+msgstr "Нотўғри диапазон"
+
+#: mseconsts.pas:137
+msgid "&Undo"
+msgstr "&Олдинги"
+
+#: mseconsts.pas:138
+msgid "&Redo"
+msgstr ""
+
+#: mseconsts.pas:139
+msgid "&Copy"
+msgstr "&Кўчириш"
+
+#: mseconsts.pas:140
+msgid "Cu&t"
+msgstr "Ол&иб ташлаш"
+
+#: mseconsts.pas:141
+msgid "&Paste"
+msgstr "&Ёзиб қўйиш"
+
+#: mseconsts.pas:142
+msgid "Select &all"
+msgstr ""
+
+#: mseconsts.pas:143
+msgid "&Insert Row"
+msgstr ""
+
+#: mseconsts.pas:144
+msgid "&Append Row"
+msgstr ""
+
+#: mseconsts.pas:145
+msgid "&Delete Row"
+msgstr ""
+
+#: mseconsts.pas:147
+msgid "&Dir"
+msgstr "&Каталог"
+
+#: mseconsts.pas:148
+msgid "&Home"
+msgstr ""
+
+#: mseconsts.pas:149
+msgid "&Up"
+msgstr "&Теппага"
+
+#: mseconsts.pas:150
+msgid "&New dir"
+msgstr "&Янги кат."
+
+#: mseconsts.pas:151
+msgid "&Name"
+msgstr "&Номи"
+
+#: mseconsts.pas:152
+msgid "&Show hidden files"
+msgstr "&Беритилган файларни қурсатиш"
+
+#: mseconsts.pas:153
+msgid "&Filter"
+msgstr "&Фильтр"
+
+#: mseconsts.pas:154
+msgid "Save"
+msgstr "Саклаш"
+
+#: mseconsts.pas:155
+msgid "Open"
+msgstr "Очиш"
+
+#: mseconsts.pas:156
+msgid "Name"
+msgstr "Номи"
+
+#: mseconsts.pas:157
+msgid "Create new directory"
+msgstr ""
+
+#: mseconsts.pas:158
+msgid "Back"
+msgstr ""
+
+#: mseconsts.pas:159
+msgid "Forward"
+msgstr ""
+
+#: mseconsts.pas:160
+msgid "Up"
+msgstr "Теппага"
+
+#: mseconsts.pas:161
+msgid "File"
+msgstr ""
+
+#: mseconsts.pas:162
+msgid "exists, do you want to overwrite?"
+msgstr ""
+
+#: mseconsts.pas:163
+msgid "is modified. Save?"
+msgstr ""
+
+#: mseconsts.pas:164
+msgid "WARNING"
+msgstr ""
+
+#: mseconsts.pas:165
+msgid "ERROR"
+msgstr ""
+
+#: mseconsts.pas:166
+msgid "Exception"
+msgstr ""
+
+#: mseconsts.pas:167
+msgid "System"
+msgstr ""
+
+#: mseconsts.pas:168
+msgid "does not exist"
+msgstr ""
+
+#: mseconsts.pas:169
+msgid "PASSWORD"
+msgstr ""
+
+#: mseconsts.pas:170
+msgid "Enter password"
+msgstr ""
+
+#: mseconsts.pas:171
+msgid "Invalid password!"
+msgstr ""
+
+#: mseconsts.pas:172
+msgid "Can not read directory"
+msgstr ""
+
+#: mseconsts.pas:173
+msgid "Graphic format not supported"
+msgstr "График формат таъминланмаган"
+
+#: mseconsts.pas:174
+msgid "Graphic format error"
+msgstr "Нотўғри график формати"
+
+#: mseconsts.pas:175
+msgid "MS Bitmap"
+msgstr "BMP-расми"
+
+#: mseconsts.pas:176
+msgid "MS Icon"
+msgstr "ICO-расми"
+
+#: mseconsts.pas:177
+msgid "JPEG Image"
+msgstr "JPEG-расми"
+
+#: mseconsts.pas:178
+msgid "PNG Image"
+msgstr "PNG-расми"
+
+#: mseconsts.pas:179
+msgid "XPM Image"
+msgstr "XPM-расми"
+
+#: mseconsts.pas:180
+msgid "PNM Image"
+msgstr "PNM-расми"
+
+#: mseconsts.pas:181
+msgid "TARGA Image"
+msgstr "TARGA-расми"
+
+#: mseconsts.pas:182
+msgid "TIFF Image"
+msgstr "TIFF-расми"
+
+#: mseconsts.pas:184
+msgid "Confirmation"
+msgstr "Тасдиқлаш"
+
+#: mseconsts.pas:185
+msgid "Delete record?"
+msgstr "Ёзувни ўчириш?"
+
+#: mseconsts.pas:186
+msgid "Copy record?"
+msgstr ""
+
+#: mseconsts.pas:187
+msgid "Close page"
+msgstr ""
+
+#: mseconsts.pas:188
+msgid "First"
+msgstr ""
+
+#: mseconsts.pas:189
+msgid "Prior"
+msgstr ""
+
+#: mseconsts.pas:190
+msgid "Next"
+msgstr ""
+
+#: mseconsts.pas:191
+msgid "Last"
+msgstr ""
+
+#: mseconsts.pas:192
+msgid "Append"
+msgstr ""
+
+#: mseconsts.pas:193
+msgid "Delete"
+msgstr ""
+
+#: mseconsts.pas:194
+msgid "Edit"
+msgstr ""
+
+#: mseconsts.pas:195
+msgid "Post"
+msgstr ""
+
+#: mseconsts.pas:197
+msgid "Refresh"
+msgstr ""
+
+#: mseconsts.pas:198
+msgid "Edit filter"
+msgstr ""
+
+#: mseconsts.pas:199
+msgid "Edit filter minimum"
+msgstr ""
+
+#: mseconsts.pas:200
+msgid "Edit filter maximum"
+msgstr ""
+
+#: mseconsts.pas:201
+msgid "Reset filter"
+msgstr ""
+
+#: mseconsts.pas:202
+msgid "Filter on"
+msgstr ""
+
+#: mseconsts.pas:203
+msgid "Search"
+msgstr ""
+
+#: mseconsts.pas:204
+msgid "Auto edit"
+msgstr ""
+
+#: mseconsts.pas:205
+msgid "Copy record"
+msgstr ""
+
+#: mseconsts.pas:206
+msgid "Dialog"
+msgstr ""
+
+#: mseconsts.pas:207
+msgid "Insert"
+msgstr ""
+
+#: mseconsts.pas:208
+msgid "Copy"
+msgstr "Кўчириш"
+
+#: mseconsts.pas:209
+msgid "Paste"
+msgstr "Ёзиб қўйиш"
+
+#: mseconsts.pas:210
+msgid "Row insert"
+msgstr ""
+
+#: mseconsts.pas:211
+msgid "Row append"
+msgstr ""
+
+#: mseconsts.pas:212
+msgid "Row delete"
+msgstr ""
+
+#: mseconsts.pas:213
+msgid "Undo"
+msgstr "Олдинги"
+
+#: mseconsts.pas:214
+msgid "Redo"
+msgstr ""
+
+#: mseconsts.pas:215
+msgid "Cut"
+msgstr "Олиб ташлаш"
+
+#: mseconsts.pas:216
+msgid "Select all"
+msgstr ""
+
+#: mseconsts.pas:218
+msgid "Filter off"
+msgstr ""
+
+#: mseconsts.pas:219
+msgid "Portrait"
+msgstr ""
+
+#: mseconsts.pas:220
+msgid "Landscape"
+msgstr ""
+
+#: mseconsts.pas:221
+msgid "Delete row?"
+msgstr ""
+
+#: mseconsts.pas:222
+msgid "selected rows?"
+msgstr ""
+
+#: mseconsts.pas:223
+msgid "Single item only"
+msgstr ""
+
+#: mseconsts.pas:224
+msgid "Copy Cells"
+msgstr ""
+
+#: mseconsts.pas:225
+msgid "Paste Cells"
+msgstr ""
+
+#: mseconsts.pas:226
+msgid "Close"
+msgstr ""
+
+#: mseconsts.pas:227
+msgid "Maximize"
+msgstr ""
+
+#: mseconsts.pas:228
+msgid "Normalize"
+msgstr ""
+
+#: mseconsts.pas:229
+msgid "Minimize"
+msgstr ""
+
+#: mseconsts.pas:230
+msgid "Fix size"
+msgstr ""
+
+#: mseconsts.pas:231
+msgid "Float"
+msgstr ""
+
+#: mseconsts.pas:232
+msgid "Stay on top"
+msgstr ""
+
+#: mseconsts.pas:233
+msgid "Stay in background"
+msgstr ""
+
+#: mseconsts.pas:234
+msgid "Lock children"
+msgstr ""
+
+#: mseconsts.pas:235
+msgid "No lock"
+msgstr ""
+
+#: mseconsts.pas:236
+msgid "Input"
+msgstr ""
+
+#: mseconsts.pas:237
+msgid "Button"
+msgstr ""
+
+#: mseconsts.pas:238
+msgid "On"
+msgstr ""
+
+#: mseconsts.pas:239
+msgid "Off"
+msgstr ""
+
+#: mseconsts.pas:240
+msgid "Left border"
+msgstr ""
+
+#: mseconsts.pas:241
+msgid "Top border"
+msgstr ""
+
+#: mseconsts.pas:242
+msgid "Right border"
+msgstr ""
+
+#: mseconsts.pas:243
+msgid "Bottom border"
+msgstr ""
+
+#: mseconsts.pas:244
+msgid "Begin of text"
+msgstr ""
+
+#: mseconsts.pas:245
+msgid "End of text"
+msgstr ""
+
+#: mseconsts.pas:246
+msgid "Inputmode"
+msgstr ""
+
+#: mseconsts.pas:247
+msgid "Overwrite"
+msgstr ""
+
+#: mseconsts.pas:248
+msgid "Deleted"
+msgstr ""
+
+#: mseconsts.pas:249
+msgid "Copied"
+msgstr ""
+
+#: mseconsts.pas:250
+msgid "Inserted"
+msgstr ""
+
+#: mseconsts.pas:251
+msgid "Pasted"
+msgstr ""
+
+#: mseconsts.pas:252
+msgid "Withdrawn"
+msgstr ""
+
+#: mseconsts.pas:253
+msgid "Window activated"
+msgstr ""
+
+#: mseconsts.pas:254
+msgid "Menu"
+msgstr ""
+
+#: mseconsts.pas:255
+msgid "Beginning of file"
+msgstr ""
+
+#: mseconsts.pas:256
+msgid "End of file"
+msgstr ""
+
+#: mseconsts.pas:257
+msgid "Voice output"
+msgstr ""
+
+#: mseconsts.pas:258
+msgid "Speak again"
+msgstr ""
+
+#: mseconsts.pas:259
+msgid "First column"
+msgstr ""
+
+#: mseconsts.pas:260
+msgid "First row"
+msgstr ""
+
+#: mseconsts.pas:261
+msgid "Last column"
+msgstr ""
+
+#: mseconsts.pas:262
+msgid "Last row"
+msgstr ""
+
+#: mseconsts.pas:263
+msgid "Selection"
+msgstr ""
+
+#: mseconsts.pas:264
+msgid "Speak path"
+msgstr ""
+
+#: mseconsts.pas:265
+msgid "Disabled button"
+msgstr ""
+
+#: mseconsts.pas:266
+msgid "First field"
+msgstr ""
+
+#: mseconsts.pas:267
+msgid "Last field"
+msgstr ""
+
+#: mseconsts.pas:268
+msgid "First element"
+msgstr ""
+
+#: mseconsts.pas:269
+msgid "Last element"
+msgstr ""
+
+#: mseconsts.pas:270
+msgid "Slower"
+msgstr ""
+
+#: mseconsts.pas:271
+msgid "Faster"
+msgstr ""
+
+#: mseconsts.pas:272
+msgid "Window"
+msgstr ""
+
+#: mseconsts.pas:273
+msgid "Area"
+msgstr ""
+
+#: mseconsts.pas:274
+msgid "Area activated"
+msgstr ""
+
+#: mseconsts.pas:275
+msgid "Volume down"
+msgstr ""
+
+#: mseconsts.pas:276
+msgid "Volume up"
+msgstr ""
+
+#: mseconsts.pas:277
+msgid "Cancel speech"
+msgstr ""
+
+#: mseconsts.pas:284
+msgid "Delete selected row?"
+msgstr ""
+
+#: mseconsts.pas:287
+msgid "Delete "
+msgstr ""
+
+#: mseconsts.pas:287
+msgid " selected rows?"
+msgstr ""
