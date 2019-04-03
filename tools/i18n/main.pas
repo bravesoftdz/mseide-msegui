@@ -124,6 +124,7 @@ type
    procedure showworkpan;
    procedure numrow(const Sender: TObject);
    procedure ondefhead(const sender: TObject);
+   procedure oncreated(const sender: TObject);
    private
    datastream: ttextdatastream;
 //   alang: integer;
@@ -2183,6 +2184,11 @@ end;
 procedure tmainfo.ondefhead(const sender: TObject);
 begin
 headerfo.visible := true;
+end;
+
+procedure tmainfo.oncreated(const sender: TObject);
+begin
+ projectfo.impexpfiledialog.controller.filterindex := 0; 
 end;
 
 

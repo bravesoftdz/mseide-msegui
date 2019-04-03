@@ -501,7 +501,6 @@ object projectfo: tprojectfo
     top = 56
   end
   object impexpfiledialog: tfiledialog
-    statfile = projectstat
     controller.filename = 'default.csv'
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'

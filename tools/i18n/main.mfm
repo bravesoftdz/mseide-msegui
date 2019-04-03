@@ -30,6 +30,7 @@ object mainfo: tmainfo
   icon.options = [bmo_masked]
   windowopacity = -Inf
   oncreate = tmainfooncreate
+  oncreated = oncreated
   onloaded = loadedexe
   oneventloopstart = tmainfoonloaded
   ondestroy = tmainfoondestroy
