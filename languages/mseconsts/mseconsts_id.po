@@ -234,7 +234,7 @@ msgstr ""
 
 #: mseconsts.pas:160
 msgid "Up"
-msgstr ""
+msgstr "Naik"
 
 #: mseconsts.pas:161
 msgid "File"
@@ -422,7 +422,7 @@ msgstr "Salin"
 
 #: mseconsts.pas:209
 msgid "Paste"
-msgstr ""
+msgstr "Tempel"
 
 #: mseconsts.pas:210
 msgid "Row insert"
@@ -438,7 +438,7 @@ msgstr ""
 
 #: mseconsts.pas:213
 msgid "Undo"
-msgstr ""
+msgstr "Batal"
 
 #: mseconsts.pas:214
 msgid "Redo"
@@ -446,11 +446,11 @@ msgstr ""
 
 #: mseconsts.pas:215
 msgid "Cut"
-msgstr ""
+msgstr "Potong"
 
 #: mseconsts.pas:216
 msgid "Select all"
-msgstr ""
+msgstr "Pilih semua"
 
 #: mseconsts.pas:218
 msgid "Filter off"
@@ -698,7 +698,7 @@ msgstr ""
 
 #: mseconsts.pas:287
 msgid "Delete "
-msgstr ""
+msgstr "Hapus "
 
 #: mseconsts.pas:287
 msgid " selected rows?"

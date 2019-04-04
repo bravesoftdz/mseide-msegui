@@ -5,7 +5,6 @@
 # 
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
-# Adolfo Jayme Barrientos, 2019
 # 
 msgid ""
 msgstr ""
@@ -13,694 +12,694 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 02:31+0300\n"
 "PO-Revision-Date: 2019-04-03 06:16+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos, 2019\n"
-"Language-Team: Spanish (https://www.transifex.com/Magic/teams/44238/es/)\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Language-Team: Hebrew (https://www.transifex.com/Magic/teams/44238/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
 #: mseconsts.pas:91
 msgid "&Cancel"
-msgstr "&Cancelar"
+msgstr "ביטול"
 
 #: mseconsts.pas:92
 msgid "&Abort"
-msgstr "&Interrumpir"
+msgstr "צא"
 
 #: mseconsts.pas:93
 msgid "&OK"
-msgstr "&Aceptar"
+msgstr "אישור"
 
 #: mseconsts.pas:94
 msgid "&Yes"
-msgstr "&Sí"
+msgstr ""
 
 #: mseconsts.pas:95
 msgid "&No"
-msgstr "&No"
+msgstr ""
 
 #: mseconsts.pas:96
 msgid "&All"
-msgstr "&Todo"
+msgstr "הכול"
 
 #: mseconsts.pas:97
 msgid "Yes &all"
-msgstr "Sí a &todo"
+msgstr ""
 
 #: mseconsts.pas:98
 msgid "N&o all"
-msgstr "N&o a todo"
+msgstr ""
 
 #: mseconsts.pas:99
 msgid "&Ignore"
-msgstr "&Ignorar"
+msgstr ""
 
 #: mseconsts.pas:100
 msgid "&Skip"
-msgstr "O&mitir"
+msgstr ""
 
 #: mseconsts.pas:101
 msgid "Skip a&ll"
-msgstr "Omitir to&do"
+msgstr ""
 
 #: mseconsts.pas:102
 msgid "Co&ntinue"
-msgstr "Co&ntinuar"
+msgstr ""
 
 #: mseconsts.pas:113 mseconsts.pas:196
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "ביטול"
 
 #: mseconsts.pas:114
 msgid "Abort"
-msgstr "Interrumpir"
+msgstr "צא"
 
 #: mseconsts.pas:115
 msgid "OK"
-msgstr "Aceptar"
+msgstr "אישור"
 
 #: mseconsts.pas:116
 msgid "Yes"
-msgstr "Sí"
+msgstr ""
 
 #: mseconsts.pas:117
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #: mseconsts.pas:118 mseconsts.pas:183
 msgid "All"
-msgstr "Todo"
+msgstr "הכול"
 
 #: mseconsts.pas:119
 msgid "Yes all"
-msgstr "Sí a todo"
+msgstr ""
 
 #: mseconsts.pas:120
 msgid "No all"
-msgstr "No a todo"
+msgstr ""
 
 #: mseconsts.pas:121
 msgid "Ignore"
-msgstr "Ignorar"
+msgstr ""
 
 #: mseconsts.pas:122
 msgid "Skip"
-msgstr "Omitir"
+msgstr ""
 
 #: mseconsts.pas:123
 msgid "Skip all"
-msgstr "Omitir todo"
+msgstr ""
 
 #: mseconsts.pas:124
 msgid "Continue"
-msgstr "Continuar"
+msgstr ""
 
 #: mseconsts.pas:129
 msgid "is invalid"
-msgstr "no es válido"
+msgstr ""
 
 #: mseconsts.pas:130
 msgid "Format error"
-msgstr "Error de formato"
+msgstr ""
 
 #: mseconsts.pas:131
 msgid "Value is required"
-msgstr "Se necesita un valor"
+msgstr ""
 
 #: mseconsts.pas:132
 msgid "Error"
-msgstr "Error"
+msgstr "שגיאה"
 
 #: mseconsts.pas:133
 msgid "Min"
-msgstr "Mín."
+msgstr ""
 
 #: mseconsts.pas:134
 msgid "Max"
-msgstr "Máx."
+msgstr ""
 
 #: mseconsts.pas:135
 msgid "Range error"
-msgstr "Error de intervalo"
+msgstr ""
 
 #: mseconsts.pas:137
 msgid "&Undo"
-msgstr "&Deshacer"
+msgstr "ביטול"
 
 #: mseconsts.pas:138
 msgid "&Redo"
-msgstr "&Rehacer"
+msgstr "ביצוע שוב"
 
 #: mseconsts.pas:139
 msgid "&Copy"
-msgstr "&Copiar"
+msgstr "העתקה"
 
 #: mseconsts.pas:140
 msgid "Cu&t"
-msgstr "C&ortar"
+msgstr ""
 
 #: mseconsts.pas:141
 msgid "&Paste"
-msgstr "&Pegar"
+msgstr "הדבקה"
 
 #: mseconsts.pas:142
 msgid "Select &all"
-msgstr "Seleccionar &todo"
+msgstr ""
 
 #: mseconsts.pas:143
 msgid "&Insert Row"
-msgstr "&Insertar fila"
+msgstr ""
 
 #: mseconsts.pas:144
 msgid "&Append Row"
-msgstr "&Añadir fila"
+msgstr ""
 
 #: mseconsts.pas:145
 msgid "&Delete Row"
-msgstr "&Eliminar fila"
+msgstr ""
 
 #: mseconsts.pas:147
 msgid "&Dir"
-msgstr "&Carpetas"
+msgstr ""
 
 #: mseconsts.pas:148
 msgid "&Home"
-msgstr "&Principal"
+msgstr ""
 
 #: mseconsts.pas:149
 msgid "&Up"
-msgstr "&Subir un nivel"
+msgstr ""
 
 #: mseconsts.pas:150
 msgid "&New dir"
-msgstr "Crear carpeta"
+msgstr ""
 
 #: mseconsts.pas:151
 msgid "&Name"
-msgstr "N&ombre"
+msgstr "שם"
 
 #: mseconsts.pas:152
 msgid "&Show hidden files"
-msgstr "&Mostrar archivos ocultos"
+msgstr ""
 
 #: mseconsts.pas:153
 msgid "&Filter"
-msgstr "&Filtro"
+msgstr "מסנן"
 
 #: mseconsts.pas:154
 msgid "Save"
-msgstr "Guardar"
+msgstr "שמירה"
 
 #: mseconsts.pas:155
 msgid "Open"
-msgstr "Abrir"
+msgstr "פתיחה"
 
 #: mseconsts.pas:156
 msgid "Name"
-msgstr "Nombre"
+msgstr "שם"
 
 #: mseconsts.pas:157
 msgid "Create new directory"
-msgstr "Crear una carpeta nueva"
+msgstr ""
 
 #: mseconsts.pas:158
 msgid "Back"
-msgstr "Atrás"
+msgstr ""
 
 #: mseconsts.pas:159
 msgid "Forward"
-msgstr "Adelante"
+msgstr ""
 
 #: mseconsts.pas:160
 msgid "Up"
-msgstr "Arriba"
+msgstr ""
 
 #: mseconsts.pas:161
 msgid "File"
-msgstr "Archivo"
+msgstr "קובץ"
 
 #: mseconsts.pas:162
 msgid "exists, do you want to overwrite?"
-msgstr "existe, ¿quiere sobreescribirlo?"
+msgstr ""
 
 #: mseconsts.pas:163
 msgid "is modified. Save?"
-msgstr "ha sido modificado. ¿Guardar?"
+msgstr ""
 
 #: mseconsts.pas:164
 msgid "WARNING"
-msgstr "ADVERTENCIA"
+msgstr ""
 
 #: mseconsts.pas:165
 msgid "ERROR"
-msgstr "ERROR"
+msgstr ""
 
 #: mseconsts.pas:166
 msgid "Exception"
-msgstr "Excepción"
+msgstr ""
 
 #: mseconsts.pas:167
 msgid "System"
-msgstr "Sistema"
+msgstr ""
 
 #: mseconsts.pas:168
 msgid "does not exist"
-msgstr "no existe"
+msgstr ""
 
 #: mseconsts.pas:169
 msgid "PASSWORD"
-msgstr "CONTRASEÑA"
+msgstr ""
 
 #: mseconsts.pas:170
 msgid "Enter password"
-msgstr "Escriba la contraseña"
+msgstr ""
 
 #: mseconsts.pas:171
 msgid "Invalid password!"
-msgstr "La contraseña es incorrecta."
+msgstr ""
 
 #: mseconsts.pas:172
 msgid "Can not read directory"
-msgstr "No puedo leer la carpeta"
+msgstr ""
 
 #: mseconsts.pas:173
 msgid "Graphic format not supported"
-msgstr "Formato gráfico no admitido"
+msgstr ""
 
 #: mseconsts.pas:174
 msgid "Graphic format error"
-msgstr "Error de formato gráfico"
+msgstr ""
 
 #: mseconsts.pas:175
 msgid "MS Bitmap"
-msgstr "Mapa de bits MS"
+msgstr ""
 
 #: mseconsts.pas:176
 msgid "MS Icon"
-msgstr "Icono MS"
+msgstr ""
 
 #: mseconsts.pas:177
 msgid "JPEG Image"
-msgstr "Imagen JPEG"
+msgstr ""
 
 #: mseconsts.pas:178
 msgid "PNG Image"
-msgstr "Imagen PNG"
+msgstr ""
 
 #: mseconsts.pas:179
 msgid "XPM Image"
-msgstr "Imagen XPM"
+msgstr ""
 
 #: mseconsts.pas:180
 msgid "PNM Image"
-msgstr "Imagen PNM"
+msgstr ""
 
 #: mseconsts.pas:181
 msgid "TARGA Image"
-msgstr "Imagen TARGA"
+msgstr ""
 
 #: mseconsts.pas:182
 msgid "TIFF Image"
-msgstr "Imagen TIFF"
+msgstr ""
 
 #: mseconsts.pas:184
 msgid "Confirmation"
-msgstr "Confirmación"
+msgstr "וידוא"
 
 #: mseconsts.pas:185
 msgid "Delete record?"
-msgstr "¿Quiere eliminar el registro?"
+msgstr ""
 
 #: mseconsts.pas:186
 msgid "Copy record?"
-msgstr "¿Quiere copiar el registro?"
+msgstr ""
 
 #: mseconsts.pas:187
 msgid "Close page"
-msgstr "Cerrar página"
+msgstr ""
 
 #: mseconsts.pas:188
 msgid "First"
-msgstr "Primero"
+msgstr ""
 
 #: mseconsts.pas:189
 msgid "Prior"
-msgstr "Anterior"
+msgstr ""
 
 #: mseconsts.pas:190
 msgid "Next"
-msgstr "Siguiente"
+msgstr "הבא"
 
 #: mseconsts.pas:191
 msgid "Last"
-msgstr "Último"
+msgstr ""
 
 #: mseconsts.pas:192
 msgid "Append"
-msgstr "Añadir"
+msgstr ""
 
 #: mseconsts.pas:193
 msgid "Delete"
-msgstr "Eliminar"
+msgstr ""
 
 #: mseconsts.pas:194
 msgid "Edit"
-msgstr "Editar"
+msgstr "עריכה"
 
 #: mseconsts.pas:195
 msgid "Post"
-msgstr "Guardar"
+msgstr ""
 
 #: mseconsts.pas:197
 msgid "Refresh"
-msgstr "Actualizar"
+msgstr ""
 
 #: mseconsts.pas:198
 msgid "Edit filter"
-msgstr "Filtro de edición"
+msgstr ""
 
 #: mseconsts.pas:199
 msgid "Edit filter minimum"
-msgstr "Filtro edición mínimo"
+msgstr ""
 
 #: mseconsts.pas:200
 msgid "Edit filter maximum"
-msgstr "Filtro edición máximo"
+msgstr ""
 
 #: mseconsts.pas:201
 msgid "Reset filter"
-msgstr "Reiniciar filtro"
+msgstr ""
 
 #: mseconsts.pas:202
 msgid "Filter on"
-msgstr "Filtro activo"
+msgstr ""
 
 #: mseconsts.pas:203
 msgid "Search"
-msgstr "Buscar"
+msgstr "חיפוש"
 
 #: mseconsts.pas:204
 msgid "Auto edit"
-msgstr "Edición automática"
+msgstr ""
 
 #: mseconsts.pas:205
 msgid "Copy record"
-msgstr "Copiar registro"
+msgstr ""
 
 #: mseconsts.pas:206
 msgid "Dialog"
-msgstr "Diálogo"
+msgstr ""
 
 #: mseconsts.pas:207
 msgid "Insert"
-msgstr "Insertar"
+msgstr ""
 
 #: mseconsts.pas:208
 msgid "Copy"
-msgstr "Copiar"
+msgstr "העתקה"
 
 #: mseconsts.pas:209
 msgid "Paste"
-msgstr "Pegar"
+msgstr "הדבקה"
 
 #: mseconsts.pas:210
 msgid "Row insert"
-msgstr "Insertar fila"
+msgstr ""
 
 #: mseconsts.pas:211
 msgid "Row append"
-msgstr "Añadir fila"
+msgstr ""
 
 #: mseconsts.pas:212
 msgid "Row delete"
-msgstr "Eliminar fila"
+msgstr ""
 
 #: mseconsts.pas:213
 msgid "Undo"
-msgstr "Deshacer"
+msgstr "ביטול"
 
 #: mseconsts.pas:214
 msgid "Redo"
-msgstr "Rehacer"
+msgstr "ביצוע שוב"
 
 #: mseconsts.pas:215
 msgid "Cut"
-msgstr "Cortar"
+msgstr ""
 
 #: mseconsts.pas:216
 msgid "Select all"
-msgstr "Seleccionar todo"
+msgstr ""
 
 #: mseconsts.pas:218
 msgid "Filter off"
-msgstr "Filtro desactivado"
+msgstr ""
 
 #: mseconsts.pas:219
 msgid "Portrait"
-msgstr "Vertical"
+msgstr ""
 
 #: mseconsts.pas:220
 msgid "Landscape"
-msgstr "Apaisado"
+msgstr ""
 
 #: mseconsts.pas:221
 msgid "Delete row?"
-msgstr "¿Quiere eliminar la fila?"
+msgstr ""
 
 #: mseconsts.pas:222
 msgid "selected rows?"
-msgstr "filas seleccionadas?"
+msgstr ""
 
 #: mseconsts.pas:223
 msgid "Single item only"
-msgstr "Un elemento solamente"
+msgstr ""
 
 #: mseconsts.pas:224
 msgid "Copy Cells"
-msgstr "Copiar celdas"
+msgstr ""
 
 #: mseconsts.pas:225
 msgid "Paste Cells"
-msgstr "Pegar celdas"
+msgstr ""
 
 #: mseconsts.pas:226
 msgid "Close"
-msgstr "Cerrar"
+msgstr "סגירה"
 
 #: mseconsts.pas:227
 msgid "Maximize"
-msgstr "Maximizar"
+msgstr ""
 
 #: mseconsts.pas:228
 msgid "Normalize"
-msgstr "Restaurar"
+msgstr ""
 
 #: mseconsts.pas:229
 msgid "Minimize"
-msgstr "Minimizar"
+msgstr ""
 
 #: mseconsts.pas:230
 msgid "Fix size"
-msgstr "Ajustar tamaño"
+msgstr ""
 
 #: mseconsts.pas:231
 msgid "Float"
-msgstr "Flotar"
+msgstr ""
 
 #: mseconsts.pas:232
 msgid "Stay on top"
-msgstr "Permanecer en primer plano"
+msgstr ""
 
 #: mseconsts.pas:233
 msgid "Stay in background"
-msgstr "Permanecer en el fondo"
+msgstr ""
 
 #: mseconsts.pas:234
 msgid "Lock children"
-msgstr "Bloquear hijas"
+msgstr ""
 
 #: mseconsts.pas:235
 msgid "No lock"
-msgstr "Sin bloquear"
+msgstr ""
 
 #: mseconsts.pas:236
 msgid "Input"
-msgstr "Entrada"
+msgstr ""
 
 #: mseconsts.pas:237
 msgid "Button"
-msgstr "Botón"
+msgstr ""
 
 #: mseconsts.pas:238
 msgid "On"
-msgstr "Encendido"
+msgstr ""
 
 #: mseconsts.pas:239
 msgid "Off"
-msgstr "Apagado"
+msgstr ""
 
 #: mseconsts.pas:240
 msgid "Left border"
-msgstr "Borde izquierdo"
+msgstr ""
 
 #: mseconsts.pas:241
 msgid "Top border"
-msgstr "Borde superior"
+msgstr ""
 
 #: mseconsts.pas:242
 msgid "Right border"
-msgstr "Borde derecho"
+msgstr ""
 
 #: mseconsts.pas:243
 msgid "Bottom border"
-msgstr "Borde inferior"
+msgstr ""
 
 #: mseconsts.pas:244
 msgid "Begin of text"
-msgstr "Principio del texto"
+msgstr ""
 
 #: mseconsts.pas:245
 msgid "End of text"
-msgstr "Fin del texto"
+msgstr ""
 
 #: mseconsts.pas:246
 msgid "Inputmode"
-msgstr "Modo entrada"
+msgstr ""
 
 #: mseconsts.pas:247
 msgid "Overwrite"
-msgstr "Sobrescribir"
+msgstr ""
 
 #: mseconsts.pas:248
 msgid "Deleted"
-msgstr "Borrado"
+msgstr ""
 
 #: mseconsts.pas:249
 msgid "Copied"
-msgstr "Copiado"
+msgstr ""
 
 #: mseconsts.pas:250
 msgid "Inserted"
-msgstr "Insertado"
+msgstr ""
 
 #: mseconsts.pas:251
 msgid "Pasted"
-msgstr "Pegado"
+msgstr ""
 
 #: mseconsts.pas:252
 msgid "Withdrawn"
-msgstr "Retirado"
+msgstr ""
 
 #: mseconsts.pas:253
 msgid "Window activated"
-msgstr "Ventana activada"
+msgstr ""
 
 #: mseconsts.pas:254
 msgid "Menu"
-msgstr "Menú"
+msgstr ""
 
 #: mseconsts.pas:255
 msgid "Beginning of file"
-msgstr "Principio del archivo"
+msgstr ""
 
 #: mseconsts.pas:256
 msgid "End of file"
-msgstr "Fin del archivo"
+msgstr ""
 
 #: mseconsts.pas:257
 msgid "Voice output"
-msgstr "Salida de voz"
+msgstr ""
 
 #: mseconsts.pas:258
 msgid "Speak again"
-msgstr "Hablar de nuevo"
+msgstr ""
 
 #: mseconsts.pas:259
 msgid "First column"
-msgstr "Primera columna"
+msgstr ""
 
 #: mseconsts.pas:260
 msgid "First row"
-msgstr "Primera fila"
+msgstr ""
 
 #: mseconsts.pas:261
 msgid "Last column"
-msgstr "Última columna"
+msgstr ""
 
 #: mseconsts.pas:262
 msgid "Last row"
-msgstr "Última fila"
+msgstr ""
 
 #: mseconsts.pas:263
 msgid "Selection"
-msgstr "Selección"
+msgstr ""
 
 #: mseconsts.pas:264
 msgid "Speak path"
-msgstr "Ruta de hablar"
+msgstr ""
 
 #: mseconsts.pas:265
 msgid "Disabled button"
-msgstr "Deshabilitar botón"
+msgstr ""
 
 #: mseconsts.pas:266
 msgid "First field"
-msgstr "Primer campo"
+msgstr ""
 
 #: mseconsts.pas:267
 msgid "Last field"
-msgstr "Último campo"
+msgstr ""
 
 #: mseconsts.pas:268
 msgid "First element"
-msgstr "Primer elemento"
+msgstr ""
 
 #: mseconsts.pas:269
 msgid "Last element"
-msgstr "Último elemento"
+msgstr ""
 
 #: mseconsts.pas:270
 msgid "Slower"
-msgstr "Más lento"
+msgstr ""
 
 #: mseconsts.pas:271
 msgid "Faster"
-msgstr "Más rápido"
+msgstr ""
 
 #: mseconsts.pas:272
 msgid "Window"
-msgstr "Ventana"
+msgstr ""
 
 #: mseconsts.pas:273
 msgid "Area"
-msgstr "Área"
+msgstr ""
 
 #: mseconsts.pas:274
 msgid "Area activated"
-msgstr "Área activada"
+msgstr ""
 
 #: mseconsts.pas:275
 msgid "Volume down"
-msgstr "Bajar volumen"
+msgstr ""
 
 #: mseconsts.pas:276
 msgid "Volume up"
-msgstr "Subir volumen"
+msgstr ""
 
 #: mseconsts.pas:277
 msgid "Cancel speech"
-msgstr "Cancelar habla"
+msgstr ""
 
 #: mseconsts.pas:284
 msgid "Delete selected row?"
-msgstr "¿Borrar la fila seleccionada?"
+msgstr ""
 
 #: mseconsts.pas:287
 msgid "Delete "
-msgstr "¿Borrar "
+msgstr ""
 
 #: mseconsts.pas:287
 msgid " selected rows?"
-msgstr " filas seleccionadas?"
+msgstr ""
