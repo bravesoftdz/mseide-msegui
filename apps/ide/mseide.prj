@@ -772,7 +772,7 @@ hintheight=214
 finddtext=
 findhistory=0
 findoptions=1
-editpos=24
+editpos=23
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -790,13 +790,12 @@ editpos=24
  0,-1073741823
  0,-1073741823
  0,-1073741823
+ 0,0
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,-1073741823
- 0,2235
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -820,8 +819,7 @@ bookmarks19=0
 bookmarks20=0
 bookmarks21=0
 bookmarks22=0
-bookmarks23=0
-sourcefiles=24
+sourcefiles=23
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/sourceform.pas
  ${PROJECTDIR}/actionsmodule.pas
@@ -836,17 +834,16 @@ sourcefiles=24
  ${PROJECTDIR}/disassform.pas
  ${PROJECTDIR}/componentstore.pas
  ${PROJECTDIR}/componentstore.mfm
- ${PROJECTDIR}/watchform.mfm.bak
  ${PROJECTDIR}/formdesigner.mfm
  ${PROJECTDIR}/sourceform.mfm
  ${PROJECTDIR}/sourceform.pas
- ${PROJECTDIR}/templates/default/dockpanelform.mfm
+ /home/fred/mseide-msegui/apps/ide/templates/default/dockpanelform.mfm
  ${PROJECTDIR}/panelform.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/projectoptionsform.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/projectoptionsform.pas
-relpaths=24
+relpaths=23
  main.pas
  sourceform.pas
  actionsmodule.pas
@@ -861,7 +858,6 @@ relpaths=24
  disassform.pas
  componentstore.pas
  componentstore.mfm
- watchform.mfm.bak
  formdesigner.mfm
  sourceform.mfm
  sourceform.pas
@@ -871,7 +867,7 @@ relpaths=24
  projectoptionsform.pas
  main.pas
  projectoptionsform.pas
-ismoduletexts=24
+ismoduletexts=23
  0
  0
  0
@@ -887,10 +883,9 @@ ismoduletexts=24
  0
  -1
  0
- 0
  -1
  0
- 0
+ -1
  0
  0
  0
@@ -925,7 +920,7 @@ nomenumodules=6
  0
  0
 [sourcefo.files_tab]
-order=24
+order=23
  0
  1
  2
@@ -939,17 +934,16 @@ order=24
  10
  11
  12
- 15
- 17
  23
- 20
  13
- 22
- 16
  18
- 21
+ 15
  19
- 14
+ 20
+ 22
+ 21
+ 16
+ 17
 firsttab=13
 index=15
 [layout]
@@ -1420,8 +1414,9 @@ windowlayout=632
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/apps/ide/projectoptionsform.pas
- history=4
+ value=/home/fred/mseide-msegui/apps/ide/templates/default/dockpanelform.mfm
+ history=5
+  /home/fred/mseide-msegui/apps/ide/templates/default/dockpanelform.mfm
   /home/fred/mseide-msegui/apps/ide/projectoptionsform.pas
   /home/fred/mseide-msegui/apps/ide/sourceform.pas
   /home/fred/mseide-msegui/apps/ide/componentstore.pas
@@ -1447,7 +1442,7 @@ windowlayout=632
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=24
+ order=23
   0
   1
   2
@@ -1461,17 +1456,16 @@ windowlayout=632
   10
   11
   12
-  15
-  17
   23
-  20
   13
-  22
-  16
   18
-  21
+  15
   19
-  14
+  20
+  22
+  21
+  16
+  17
  firsttab=13
  index=15
  [cpuc86_64fo]

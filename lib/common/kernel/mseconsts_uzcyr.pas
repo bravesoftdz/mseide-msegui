@@ -1,4 +1,4 @@
-{ MSEgui Copyright (c) 1999-2006 by Martin Schreiber
+{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
     for details about the copyright.
@@ -6,11 +6,9 @@
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-    
-    Uzbek-Cyrillic translation by IvankoB.
-    
-}
 
+     Uzbek-Cyrillic translation by IvankoB.
+} 
 
 unit mseconsts_uzcyr;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
@@ -21,8 +19,16 @@ uses
 implementation
 uses
  msetypes{msestrings},sysutils,mseformatstr;
-const
- uzcyr_modalresulttext: defaultmodalresulttextty = (
+ 
+const 
+extendedconst: extendedaty =
+ ('uzcyr',  // ex_lang
+  'Delete selected row?',   // ex_delfileselected
+  'Delete',                 // ex_deletefiles
+  'selected rows?'          //ex_selected
+  ); 
+
+ modalresulttext: defaultmodalresulttextty = (
   '',                                             //mr_none => Nichego
   '',                                             //mr_canclose => Mozhno zakryt`
   '',                                             //mr_windowclosed => Okno zakryto
@@ -44,7 +50,7 @@ const
   'Co&ntinue'  //mr_continue
  );
 
- uzcyr_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',                                             //mr_none
   '',                                             //mr_canclose
   '',                                             //mr_windowclosed
@@ -66,7 +72,7 @@ const
   'Continue'  //mr_continue
   );
 
- uzcyr_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                                        //sc_none
   '- '#1085#1086#1072#1085#1080#1179 ,       //sc_is_invalid => - neverno
   #1060#1086#1088#1084#1072#1090' '#1085#1086#1090#1118#1171#1088#1080 ,   
@@ -220,24 +226,27 @@ const
   'Volume up',           //sc_volumeup
   'Cancel speech'        //sc_cancelspeech
 );
-    
+
+
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= 'Delete selected row?'
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
-   result:= 'Delete '+inttostrmse(vinteger)+' selected rows?';
+   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
+          ' ' + extendedconst[ex_selected];
   end;
  end;
 end;
 
 const
- uzcyr_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_uzcyr],@uzcyr_stockcaption,@uzcyr_modalresulttext,
-                               @uzcyr_modalresulttextnoshortcut,@uzcyr_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
+        @modalresulttextnoshortcut,@textgenerator);
+                               
 end.

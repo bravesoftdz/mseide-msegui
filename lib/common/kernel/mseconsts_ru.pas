@@ -1,4 +1,4 @@
-{ MSEgui Copyright (c) 1999-2006 by Martin Schreiber
+{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
     for details about the copyright.
@@ -6,20 +6,28 @@
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-    
-    Russian translation by IvankoB and AlexL.
-    
-}
+} 
 
 unit mseconsts_ru;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
+uses
+ mseconsts;
+ 
 implementation
 uses
- mseconsts,msetypes{msestrings},sysutils,mseformatstr;
+ msetypes{msestrings},sysutils,mseformatstr;
+
+const 
+extendedconst: extendedaty =
+ ('ru',  // ex_lang
+  #1059#1076#1072#1083#1080#1090#1100' '#1074#1099#1073#1088#1072#1085#1085#1091#1102' '#1089#1090#1088#1086#1082#1091'?',   // ex_delfileselected
+  #1059#1076#1072#1083#1080#1090#1100,                 // ex_deletefiles
+  #1074#1099#1073#1088#1072#1085#1085#1099#1077' '#1089#1090#1088#1086#1082#1080'?'          //ex_selected
+  ); 
  
-const
- ru_modalresulttext: defaultmodalresulttextty = (
+const 
+ modalresulttext: defaultmodalresulttextty = (
   '',                                             //mr_none => Nichego
   '',                                             //mr_canclose => 
                                                   //Mozhno zakryt`
@@ -45,7 +53,7 @@ const
   '&'#1055#1088#1086#1076#1086#1083#1078#1080#1090#1100  //mr_continue
 );
 
- ru_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',                                             //mr_none
   '',                                             //mr_canclose
   '',                                             //mr_windowclosed
@@ -67,7 +75,7 @@ const
   #1055#1088#1086#1076#1086#1083#1078#1080#1090#1100  //mr_continue
   );
 
- ru_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                                             //sc_none
   '- '#1085#1077#1074#1077#1088#1085#1086 ,       //sc_is_invalid => - neverno
   #1053#1077#1089#1086#1086#1090#1074#1077#1090#1089#1090#1074#1080#1077' '+
@@ -256,24 +264,27 @@ const
   #1055#1086#1074#1099#1089#1080#1090#1100' '#1075#1088#1086#1084#1082#1086#1089#1090#1100,           //sc_volumeup
   #1054#1090#1084#1077#1085#1080#1090#1100' '#1088#1077#1095#1100        //sc_cancelspeech
 );
-    
+
+
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= #1059#1076#1072#1083#1080#1090#1100' '#1074#1099#1073#1088#1072#1085#1085#1091#1102' '#1089#1090#1088#1086#1082#1091'?'
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
-   result:= #1059#1076#1072#1083#1080#1090#1100' '+inttostrmse(vinteger)+' '#1074#1099#1073#1088#1072#1085#1085#1099#1077' '#1089#1090#1088#1086#1082#1080'?';
+   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
+          ' ' + extendedconst[ex_selected];
   end;
  end;
 end;
 
 const
- ru_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_ru],@ru_stockcaption,@ru_modalresulttext,
-                               @ru_modalresulttextnoshortcut,@ru_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
+        @modalresulttextnoshortcut,@textgenerator);
+                               
 end.

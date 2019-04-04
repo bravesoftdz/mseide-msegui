@@ -14,6 +14,7 @@ interface
 uses
  msestockobjects,mseglob,msestrings,mseapplication,msetypes;
  
+ 
 type
  stockcaptionaty = array[stockcaptionty] of msestring;
  pstockcaptionaty = ^stockcaptionaty;
@@ -22,6 +23,11 @@ type
  defaultgeneratortextty = array[textgeneratorty] of textgeneratorfuncty;
  pdefaultgeneratortextty = ^defaultgeneratortextty;
  
+ extendedty = (ex_lang,ex_delfileselected,ex_deletefiles,ex_selected);
+ 
+ extendedaty = array[extendedty] of msestring;
+ pextendeadty = ^extendedaty;
+ 
  langty = (la_none,la_en,la_de,la_ru,la_es,la_uzcyr,la_id,la_zh,
            la_fr);
  
@@ -29,7 +35,7 @@ const
  langnames: array[langty] of string = (
             '','en','de','ru','es','uz_cyr','id','zh',
             'fr');
-
+            
  function modalresulttext(const index: modalresultty): msestring;
  function modalresulttextnoshortcut(const index: modalresultty): msestring;
  function stockcaptions(const index: stockcaptionty): msestring;

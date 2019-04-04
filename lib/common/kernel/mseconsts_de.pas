@@ -1,4 +1,4 @@
-{ MSEgui Copyright (c) 1999-2017 by Martin Schreiber
+{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
     for details about the copyright.
@@ -6,7 +6,8 @@
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-}
+} 
+
 unit mseconsts_de;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
@@ -16,8 +17,16 @@ uses
 implementation
 uses
  msetypes{msestrings},sysutils,mseformatstr;
-const
- de_modalresulttext: defaultmodalresulttextty =
+ 
+const 
+extendedconst: extendedaty =
+ ('de',  // ex_lang
+  'Gew'#0228'hlte Zeile l'#0246'schen?',   // ex_delfileselected
+  '',                 // ex_deletefiles
+  'gew'#0228'hlte Zeilen l'#0246'schen?'          //ex_selected
+  ); 
+
+modalresulttext: defaultmodalresulttextty =
  ('',            //mr_none
   '',            //mr_canclose
   '',            //mr_windowclosed
@@ -39,7 +48,7 @@ const
   '&Fortfahren'  //mr_continue
   );
 
- de_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',                         //mr_none
   '',                         //mr_canclose
   '',                         //mr_windowclosed
@@ -61,7 +70,7 @@ const
   'Fortfahren'                //mr_continue
   );
 
- de_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                        //sc_none
   'ist ung'#0252'ltig',       //sc_is_invalid
   'Format Fehler',           //sc_Format_error
@@ -212,25 +221,26 @@ const
   'Lauter',                    //sc_volumeup
   'Ansage abbrechen'           //sc_cancelspeech
 );
-    
+
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= 'Gew'#0228'hlte Zeile l'#0246'schen?';
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
    result:= inttostrmse(vinteger)+
-     widestring(' gew'#0228'hlte Zeilen l'#0246'schen?');
+          ' ' + extendedconst[ex_selected];
   end;
- end;    
+ end;
 end;
 
 const
- de_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_de],@de_stockcaption,@de_modalresulttext,
-                               @de_modalresulttextnoshortcut,@de_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
+        @modalresulttextnoshortcut,@textgenerator);
+                               
 end.

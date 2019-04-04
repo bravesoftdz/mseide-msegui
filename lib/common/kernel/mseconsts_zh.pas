@@ -1,4 +1,4 @@
-{ MSEgui Copyright (c) 1999-2009 by Martin Schreiber
+{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
     for details about the copyright.
@@ -6,10 +6,10 @@
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-    Chinese translation by liuzg2.
-    
+  
+          Chinese translation by liuzg2.
 } 
+
 unit mseconsts_zh;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
@@ -19,8 +19,16 @@ uses
 implementation
 uses
  msetypes{msestrings},sysutils,mseformatstr;
-const
- zh_modalresulttext: defaultmodalresulttextty =
+ 
+const 
+extendedconst: extendedaty =
+ ('zh',  // ex_lang
+  #30830#23450#21024#38500#27492#26465#35760#24405#21527#65311,   // ex_delfileselected
+  #30830#23450#21024#38500#25152#36873#25321#30340,               // ex_deletefiles
+  #34892#35760#24405#21527#65311                                  //ex_selected
+  ); 
+
+ modalresulttext: defaultmodalresulttextty =
  ('',                        //mr_none
   '',                        //mr_canclose
   '',                        //mr_windowclosed
@@ -42,7 +50,7 @@ const
   'Co&ntinue'  //mr_continue
   );
 
- zh_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',                       //mr_none
   '',                       //mr_canclose
   '',                       //mr_windowclosed
@@ -64,7 +72,7 @@ const
   'Continue'  //mr_continue
   );
 
- zh_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                                 //sc_none
   #26080#25928,                       //sc_is_invalid
   #26684#24335#38169#35823,           //sc_Format_error
@@ -218,25 +226,26 @@ const
   'Volume up',           //sc_volumeup
   'Cancel speech'        //sc_cancelspeech
 );
-    
+  
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= #30830#23450#21024#38500#27492#26465#35760#24405#21527#65311
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
-   result:= #30830#23450#21024#38500#25152#36873#25321#30340' '+
-                    inttostrmse(vinteger)+' '#34892#35760#24405#21527#65311;
+   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
+          ' ' + extendedconst[ex_selected];
   end;
  end;
 end;
 
 const
- zh_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_zh],@zh_stockcaption,@zh_modalresulttext,
-                               @zh_modalresulttextnoshortcut,@zh_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
+        @modalresulttextnoshortcut,@textgenerator);
+                               
 end.

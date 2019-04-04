@@ -1,4 +1,4 @@
-{ MSEgui Copyright (c) 1999-2006 by Martin Schreiber
+{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
     for details about the copyright.
@@ -6,21 +6,27 @@
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+} 
 
-    Spanish translation by Julio Jimenez Borreguero.
-
-}
 unit mseconsts_es;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
 uses
  mseconsts;
-
+ 
 implementation
 uses
  msetypes{msestrings},sysutils,mseformatstr;
-const
- es_modalresulttext: defaultmodalresulttextty =
+ 
+const 
+extendedconst: extendedaty =
+ ('es',                                   // ex_lang
+  #0191'Borrar la fila seleccionada?',   // ex_delfileselected
+  #0191'Borrar las',                     // ex_deletefiles
+  'filas seleccionadas?'                  //ex_selected
+  ); 
+
+ modalresulttext: defaultmodalresulttextty =
  ('',            //mr_none
   '',            //mr_canclose
   '',            //mr_windowclosed
@@ -42,7 +48,7 @@ const
   'Co&ntinuar'  //mr_continue
   );
 
- es_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',           //mr_none
   '',           //mr_canclose
   '',           //mr_windowclosed
@@ -64,7 +70,7 @@ const
   'Continuar'  //mr_continue
   );
 
- es_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                           //sc_none
   'es inv'#0225'lido',           //sc_is_invalid
   'Error de formato',           //sc_Format_error
@@ -220,19 +226,21 @@ function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= #0191'Borrar la fila seleccionada?'
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
-   result:= #0191'Borrar '+inttostrmse(vinteger)+' filas seleccionadas?';
+   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
+          ' ' + extendedconst[ex_selected];
   end;
  end;
 end;
 
 const
- es_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_es],@es_stockcaption,@es_modalresulttext,
-                               @es_modalresulttextnoshortcut,@es_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
+        @modalresulttextnoshortcut,@textgenerator);
+                               
 end.

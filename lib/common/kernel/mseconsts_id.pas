@@ -1,4 +1,4 @@
-{ MSEgui Copyright (c) 1999-2010 by Martin Schreiber
+{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
     for details about the copyright.
@@ -6,20 +6,29 @@
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-    Indonesia translation by Wahono.
-    
+ 
+        Indonesia translation by Wahono.
 } 
+
 unit mseconsts_id;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
+uses
+ mseconsts;
  
 implementation
 uses
- mseconsts,msetypes{msestrings},sysutils,mseformatstr;
+ msetypes{msestrings},sysutils,mseformatstr;
+ 
+const 
+extendedconst: extendedaty =
+ ('id',  // ex_lang
+  'Delete selected row?',   // ex_delfileselected
+  'Delete',                 // ex_deletefiles
+  'selected rows?'          //ex_selected
+  ); 
 
-const
- id_modalresulttext: defaultmodalresulttextty =
+modalresulttext: defaultmodalresulttextty =
  ('',            //mr_none
   '',            //mr_canclose
   '',            //mr_windowclosed
@@ -41,7 +50,7 @@ const
   'Co&ntinue'  //mr_continue
   );
 
- id_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',           //mr_none
   '',           //mr_canclose
   '',           //mr_windowclosed
@@ -63,7 +72,7 @@ const
   'Continue'  //mr_continue
   );
 
- id_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                      //sc_none
   'adalah salah',          //sc_is_invalid
   'Format salah',          //sc_Format_error
@@ -212,24 +221,26 @@ const
   'Volume up',           //sc_volumeup
   'Cancel speech'        //sc_cancelspeech
 );
-    
+
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= 'Delete selected row?'
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
-   result:= 'Delete '+inttostrmse(vinteger)+' selected rows?';
+   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
+          ' ' + extendedconst[ex_selected];
   end;
  end;
 end;
 
 const
- id_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_id],@id_stockcaption,@id_modalresulttext,
-                               @id_modalresulttextnoshortcut,@id_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
+        @modalresulttextnoshortcut,@textgenerator);
+                               
 end.

@@ -8,46 +8,8 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
     French translation by Fabrice Michel Bouillerot.
-    UTF-8 Accented french characters
-    
-    &#0192;  A grave
-    &#0194;  A circumflex
-    &#0196;  A diaresis
-    &#0198;  AE Aesh Ash
-    &#0200;  E grave
-    &#0203;  E diaresis
-    &#0201;  E acute
-    &#0202;  E circumflex
-    &#0203;  E diaresis
-    &#0206;  I circumflex
-    &#0207;  I diaresis
-    &#0212;  O circumflex
-    &#0214;  O diaresis
-    &#0217;  U grave
-    &#0219;  U circumflex
-    &#0220;  U diaresis
-    &#0224;  a grave
-    &#0226;  a circumflex
-    &#0228;  a diaresis
-    &#0230;  aesc ash
-    &#0232;  e grave
-    &#0233;  e acute
-    &#0234;  e circumflex
-    &#0235;  e diaresis
-    &#0238;  i circumflex
-    &#0239;  i diaresis
-    &#0244;  o circumflex
-    &#0246;  o diaresis
-    &#0249;  u grave
-    &#0251;  u circumflex
-    &#0252;  u diaresis
-    &#0255;  y diaresis
-    &#0338;  OE ethel
-    &#0339;  oe ethel
-    &#0376;  Y diaresis
-    
-    &#8217; apostrophe
-} 
+ } 
+
 unit mseconsts_fr;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
@@ -57,8 +19,16 @@ uses
 implementation
 uses
  msetypes{msestrings},sysutils,mseformatstr;
-const
- fr_modalresulttext: defaultmodalresulttextty =
+ 
+const 
+extendedconst: extendedaty =
+ ('fr',  // ex_lang
+  'Effacer le fichier s'#0233'lectionn'#0233'?',   // ex_delfileselected
+  'Effacer les',                          // ex_deletefiles
+  ' fichiers s'#0233'lectionn'#0233's?'                       //ex_selected
+  ); 
+
+ modalresulttext: defaultmodalresulttextty =
  ('',             //mr_none
   '',             //mr_canclose
   '',             //mr_windowclosed
@@ -80,7 +50,7 @@ const
   'Co&ntinuer'  //mr_continue
   );
 
- fr_modalresulttextnoshortcut: defaultmodalresulttextty =
+ modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',           //mr_none
   '',           //mr_canclose
   '',           //mr_windowclosed
@@ -102,7 +72,7 @@ const
   'Continuer'  //mr_continue
   );
 
- fr_stockcaption: stockcaptionaty = (
+ stockcaption: stockcaptionaty = (
   '',                                     //sc_none
   'est invalide',                         //sc_is_invalid
   'Erreur de format',                     //sc_Format_error
@@ -253,25 +223,25 @@ const
   'Volume plus',           //sc_volumeup
   'Annuler speech'        //sc_cancelspeech
 );
-    
+
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= 'Effacer le fichier s'#0233'lectionn'#0233' ?'
+   result:= extendedconst[ex_delfileselected];
   end
   else begin
-   result:= 'Effacer les '+inttostrmse(vinteger)+
-            ' fichiers s'#0233'lectionn'#0233's ?';
+   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
+          ' ' + extendedconst[ex_selected];
   end;
  end;
 end;
 
 const
- fr_textgenerator: defaultgeneratortextty = (
-              {$ifdef FPC}@{$endif}delete_n_selected_rows //tg_delete_n_selected_rows
+ textgenerator: defaultgeneratortextty = (
+              {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
 initialization
- registerlangconsts(langnames[la_fr],@fr_stockcaption,@fr_modalresulttext,
-                               @fr_modalresulttextnoshortcut,@fr_textgenerator);
+ registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext,                              @modalresulttextnoshortcut,@textgenerator);
+                               
 end.
