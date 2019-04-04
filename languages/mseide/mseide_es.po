@@ -5,6 +5,7 @@
 # 
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
+# Adolfo Jayme Barrientos, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,31 +14,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-05 00:06+0000\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Last-Translator: Adolfo Jayme Barrientos, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/Magic/teams/44238/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgid "[filepath]"
-msgstr ""
-
-msgid "[name],[value]{,[name],[value]}"
-msgstr ""
-
-msgid "auto"
-msgstr ""
-
-msgid "None"
-msgstr ""
-
-msgid "Do not use a skin, no fades."
-msgstr ""
-
-msgid "Display this help and exit."
-msgstr ""
 
 msgid "Watchpoints"
 msgstr ""
@@ -480,7 +463,7 @@ msgid "Do you wish to delete"
 msgstr ""
 
 msgid "WARNING"
-msgstr ""
+msgstr "ADVERTENCIA"
 
 msgid "Find and Replace Text"
 msgstr ""
@@ -852,6 +835,9 @@ msgstr ""
 msgid "Processor"
 msgstr ""
 
+msgid "auto"
+msgstr ""
+
 msgid "Simulator"
 msgstr ""
 
@@ -987,6 +973,9 @@ msgid "3 (Make 3)"
 msgstr ""
 
 msgid "4 (Make 4)"
+msgstr ""
+
+msgid "None"
 msgstr ""
 
 msgid "&Mainfile"
@@ -1732,7 +1721,7 @@ msgid "Recursive form hierarchy for \""
 msgstr ""
 
 msgid "ERROR"
-msgstr ""
+msgstr "ERROR"
 
 msgid "Classtype"
 msgstr ""
@@ -1741,7 +1730,7 @@ msgid "Project"
 msgstr "Proyecto"
 
 msgid "is modified. Save?"
-msgstr ""
+msgstr "ha sido modificado. ¿Guardar?"
 
 msgid "Unable to open file \""
 msgstr ""
@@ -1877,7 +1866,13 @@ msgid ""
 "Martin"
 msgstr ""
 
+msgid "[filepath]"
+msgstr ""
+
 msgid "Set path to global status file."
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid ""
@@ -1895,6 +1890,12 @@ msgid ""
 msgstr ""
 
 msgid "Do not load a project."
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
 msgstr ""
 
 msgid "Do not touch Z-order of the windows."
@@ -2730,7 +2731,7 @@ msgid "Startup"
 msgstr "Inicio"
 
 msgid "Exception"
-msgstr ""
+msgstr "Excepción"
 
 msgid "GDB died"
 msgstr ""
@@ -3156,7 +3157,7 @@ msgid "&Home"
 msgstr "&Inicio"
 
 msgid "&Dir"
-msgstr ""
+msgstr "&Carpetas"
 
 msgid "Edit Font Format"
 msgstr ""

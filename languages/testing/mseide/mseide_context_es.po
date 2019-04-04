@@ -5,22 +5,22 @@
 # 
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
+# Adolfo Jayme Barrientos, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: mseide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-27 01:03+0300\n"
+"POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-27 01:10+0000\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Last-Translator: Adolfo Jayme Barrientos, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/Magic/teams/44238/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.9\n"
 
 msgctxt "watchpointsfo,dragdock.caption"
 msgid "Watchpoints"
@@ -705,7 +705,7 @@ msgstr ""
 
 msgctxt "reportdesignerfo,sc,strings.data,1:"
 msgid "WARNING"
-msgstr ""
+msgstr "ADVERTENCIA"
 
 msgctxt "replacedialogfo,caption"
 msgid "Find and Replace Text"
@@ -2977,7 +2977,7 @@ msgstr ""
 
 msgctxt "mainfo,c,strings.data,3:"
 msgid "WARNING"
-msgstr ""
+msgstr "ADVERTENCIA"
 
 msgctxt "mainfo,c,strings.data,4:"
 msgid "Formfile for"
@@ -2993,7 +2993,7 @@ msgstr ""
 
 msgctxt "mainfo,c,strings.data,7:"
 msgid "ERROR"
-msgstr ""
+msgstr "ERROR"
 
 msgctxt "mainfo,c,strings.data,8:"
 msgid "Classtype"
@@ -3009,7 +3009,7 @@ msgstr "Proyecto"
 
 msgctxt "mainfo,c,strings.data,11:"
 msgid "is modified. Save?"
-msgstr ""
+msgstr "ha sido modificado. ¿Guardar?"
 
 msgctxt "mainfo,c,strings.data,12:"
 msgid "Confirmation"
@@ -3197,7 +3197,7 @@ msgid ""
 "Environment variables\n"
 "FPCDIR, FPCLIBDIR, MSEDIR, MSELIBDIR\n"
 "SYNTAXDEFDIR, TEMPLATEDIR, COMPSTOREDIR\n"
-"COMPILER, DEBUGGER, EXEEXT,TARGET,TARGETOSDIR\n"
+"COMPILER, DEBUGGER, EXEEXT, TARGET, TARGETOSDIR\n"
 "can be used to override the settings macros.\n"
 "\n"
 "Have a lot of fun!\n"
@@ -3716,7 +3716,7 @@ msgstr ""
 
 msgctxt "componentstorefo,c,strings.data,4:"
 msgid "WARNING"
-msgstr ""
+msgstr "ADVERTENCIA"
 
 msgctxt "componentstorefo,c,strings.data,5:"
 msgid "No component(s) in clipboard."
@@ -3728,7 +3728,7 @@ msgstr ""
 
 msgctxt "componentstorefo,c,strings.data,7:"
 msgid "ERROR"
-msgstr ""
+msgstr "ERROR"
 
 msgctxt "componentstorefo,c,strings.data,8:"
 msgid "Do you want to remove \""
@@ -4564,7 +4564,7 @@ msgstr ""
 
 msgctxt "actionsmo,c,strings.data,6:"
 msgid "ERROR"
-msgstr ""
+msgstr "ERROR"
 
 msgctxt "actionsmo,c,strings.data,7:"
 msgid "Make aborted."
@@ -4660,7 +4660,7 @@ msgstr ""
 
 msgctxt "actionsmo,c,strings.data,30:"
 msgid "WARNING"
-msgstr ""
+msgstr "ADVERTENCIA"
 
 msgctxt "actionsmo,c,strings.data,31:"
 msgid "Method"
@@ -4796,7 +4796,7 @@ msgstr "Inicio"
 
 msgctxt "actionsmo,c,strings.data,64:"
 msgid "Exception"
-msgstr ""
+msgstr "Excepción"
 
 msgctxt "actionsmo,c,strings.data,65:"
 msgid "GDB died"
@@ -5714,7 +5714,7 @@ msgstr "&Inicio"
 
 msgctxt "filedialogfo,tlayouter3,dir,frame.caption"
 msgid "&Dir"
-msgstr ""
+msgstr "&Carpetas"
 
 msgctxt "fontformatdialogfo,caption"
 msgid "Edit Font Format"

@@ -23,24 +23,6 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-msgid "[filepath]"
-msgstr ""
-
-msgid "[name],[value]{,[name],[value]}"
-msgstr ""
-
-msgid "auto"
-msgstr ""
-
-msgid "None"
-msgstr ""
-
-msgid "Do not use a skin, no fades."
-msgstr ""
-
-msgid "Display this help and exit."
-msgstr ""
-
 msgid "Watchpoints"
 msgstr "Точки спостереження"
 
@@ -854,6 +836,9 @@ msgstr ""
 msgid "Processor"
 msgstr ""
 
+msgid "auto"
+msgstr ""
+
 msgid "Simulator"
 msgstr "Iмітатор"
 
@@ -990,6 +975,9 @@ msgstr "3 (Зібрати 3)"
 
 msgid "4 (Make 4)"
 msgstr "4 (Зібрати 4)"
+
+msgid "None"
+msgstr ""
 
 msgid "&Mainfile"
 msgstr ""
@@ -1879,7 +1867,13 @@ msgid ""
 "Martin"
 msgstr ""
 
+msgid "[filepath]"
+msgstr ""
+
 msgid "Set path to global status file."
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid ""
@@ -1897,6 +1891,12 @@ msgid ""
 msgstr ""
 
 msgid "Do not load a project."
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
 msgstr ""
 
 msgid "Do not touch Z-order of the windows."

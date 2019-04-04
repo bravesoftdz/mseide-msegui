@@ -21,24 +21,6 @@ msgstr ""
 "Language: sr\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-msgid "[filepath]"
-msgstr ""
-
-msgid "[name],[value]{,[name],[value]}"
-msgstr ""
-
-msgid "auto"
-msgstr ""
-
-msgid "None"
-msgstr ""
-
-msgid "Do not use a skin, no fades."
-msgstr ""
-
-msgid "Display this help and exit."
-msgstr ""
-
 msgid "Watchpoints"
 msgstr ""
 
@@ -183,7 +165,7 @@ msgid "&Cancel"
 msgstr "&Откажи"
 
 msgid "&Name"
-msgstr ""
+msgstr "&Име"
 
 msgid "C&omment"
 msgstr ""
@@ -216,7 +198,7 @@ msgid "&indent"
 msgstr ""
 
 msgid "Delete"
-msgstr ""
+msgstr "Обриши"
 
 msgid "Filename"
 msgstr ""
@@ -381,10 +363,10 @@ msgid "Set Tab Order"
 msgstr ""
 
 msgid "OK"
-msgstr ""
+msgstr "У реду"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Откажи"
 
 msgid "&Start"
 msgstr ""
@@ -852,6 +834,9 @@ msgstr ""
 msgid "Processor"
 msgstr ""
 
+msgid "auto"
+msgstr ""
+
 msgid "Simulator"
 msgstr ""
 
@@ -987,6 +972,9 @@ msgid "3 (Make 3)"
 msgstr ""
 
 msgid "4 (Make 4)"
+msgstr ""
+
+msgid "None"
 msgstr ""
 
 msgid "&Mainfile"
@@ -1877,7 +1865,13 @@ msgid ""
 "Martin"
 msgstr ""
 
+msgid "[filepath]"
+msgstr ""
+
 msgid "Set path to global status file."
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid ""
@@ -1895,6 +1889,12 @@ msgid ""
 msgstr ""
 
 msgid "Do not load a project."
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
 msgstr ""
 
 msgid "Do not touch Z-order of the windows."

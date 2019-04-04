@@ -87,6 +87,9 @@ msgstr "സംബന്ധിച്ചു്"
 msgid "&Configure MSEi18n"
 msgstr ""
 
+msgid "&Default headers"
+msgstr ""
+
 msgid "Se&ttings"
 msgstr ""
 
@@ -95,6 +98,9 @@ msgstr ""
 
 msgid "&Reset"
 msgstr "പഴയതാക്കുക"
+
+msgid "Reset translated words to root value"
+msgstr ""
 
 msgid "E&xit"
 msgstr ""
@@ -180,6 +186,24 @@ msgstr ""
 msgid "Do you want to reset to root value?"
 msgstr ""
 
+msgid "Data exchange files"
+msgstr ""
+
+msgid "templates files"
+msgstr ""
+
+msgid "translation files"
+msgstr ""
+
+msgid "with context"
+msgstr ""
+
+msgid "without context"
+msgstr ""
+
+msgid "text files"
+msgstr ""
+
 msgid "Enter Memo Text"
 msgstr ""
 
@@ -202,7 +226,7 @@ msgid "Rootname"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "ഫയല്‍"
 
 msgid "Kind"
 msgstr ""
@@ -235,7 +259,7 @@ msgid "OK"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "റദ്ദാക്കുക"
 
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
@@ -250,30 +274,6 @@ msgid "POT header"
 msgstr ""
 
 msgid "PO header"
-msgstr ""
-
-msgid "Data exchange files"
-msgstr ""
-
-msgid "POT templates files without context"
-msgstr ""
-
-msgid "POT templates files with context"
-msgstr ""
-
-msgid "POT templates files with/without context"
-msgstr ""
-
-msgid "PO translation files without context"
-msgstr ""
-
-msgid "PO translation files with context"
-msgstr ""
-
-msgid "PO translation files with/without context"
-msgstr ""
-
-msgid "TXT text files with context and word"
 msgstr ""
 
 msgid "Open import file"
@@ -355,4 +355,7 @@ msgid "FPC root directory"
 msgstr ""
 
 msgid "Global Macros"
+msgstr ""
+
+msgid "Default headers"
 msgstr ""

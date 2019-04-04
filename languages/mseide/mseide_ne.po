@@ -21,24 +21,6 @@ msgstr ""
 "Language: ne\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "[filepath]"
-msgstr ""
-
-msgid "[name],[value]{,[name],[value]}"
-msgstr ""
-
-msgid "auto"
-msgstr ""
-
-msgid "None"
-msgstr ""
-
-msgid "Do not use a skin, no fades."
-msgstr ""
-
-msgid "Display this help and exit."
-msgstr ""
-
 msgid "Watchpoints"
 msgstr ""
 
@@ -180,7 +162,7 @@ msgid "&OK"
 msgstr ""
 
 msgid "&Cancel"
-msgstr "&रद्द गर्नुहोस्"
+msgstr "रद्द गर्नुहोस्"
 
 msgid "&Name"
 msgstr ""
@@ -216,7 +198,7 @@ msgid "&indent"
 msgstr ""
 
 msgid "Delete"
-msgstr ""
+msgstr "मेट्नुहोस्"
 
 msgid "Filename"
 msgstr ""
@@ -384,7 +366,7 @@ msgid "OK"
 msgstr ""
 
 msgid "Cancel"
-msgstr ""
+msgstr "रद्द गर्नुहोस्"
 
 msgid "&Start"
 msgstr ""
@@ -411,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr "&खोल्नुहोस्"
+msgstr "खोल्नुहोस्"
 
 msgid "0.0mm"
 msgstr ""
@@ -852,6 +834,9 @@ msgstr ""
 msgid "Processor"
 msgstr ""
 
+msgid "auto"
+msgstr ""
+
 msgid "Simulator"
 msgstr ""
 
@@ -987,6 +972,9 @@ msgid "3 (Make 3)"
 msgstr ""
 
 msgid "4 (Make 4)"
+msgstr ""
+
+msgid "None"
 msgstr ""
 
 msgid "&Mainfile"
@@ -1217,7 +1205,7 @@ msgid "Alternate shortcut key"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "फाइल"
 
 msgid "Parameters"
 msgstr ""
@@ -1877,7 +1865,13 @@ msgid ""
 "Martin"
 msgstr ""
 
+msgid "[filepath]"
+msgstr ""
+
 msgid "Set path to global status file."
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid ""
@@ -1895,6 +1889,12 @@ msgid ""
 msgstr ""
 
 msgid "Do not load a project."
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
 msgstr ""
 
 msgid "Do not touch Z-order of the windows."
@@ -2214,7 +2214,7 @@ msgid "&Interrupt"
 msgstr ""
 
 msgid "&Reset"
-msgstr "&पुनः मिलाउ"
+msgstr "पुनः मिलाउ"
 
 msgid "Reset"
 msgstr "पुनः मिलाउ"
@@ -2241,7 +2241,7 @@ msgid "&Copy"
 msgstr "प्रतिलिपि गर्नुहोस्"
 
 msgid "&Paste"
-msgstr "&टाँस्नुहोस्"
+msgstr "टाँस्नुहोस्"
 
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
@@ -2334,7 +2334,7 @@ msgid "Save as"
 msgstr ""
 
 msgid "Close"
-msgstr ""
+msgstr "बन्द गर्नुहोस्"
 
 msgid "Close all"
 msgstr ""
@@ -2343,7 +2343,7 @@ msgid "Print"
 msgstr ""
 
 msgid "Search"
-msgstr ""
+msgstr "खोजी गर्नुहोस्"
 
 msgid "Line"
 msgstr ""
@@ -2364,7 +2364,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr ""
+msgstr "सम्पादन गर्नुहोस्"
 
 msgid "Select Editpage"
 msgstr ""

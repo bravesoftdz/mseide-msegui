@@ -87,6 +87,9 @@ msgstr "关于"
 msgid "&Configure MSEi18n"
 msgstr ""
 
+msgid "&Default headers"
+msgstr ""
+
 msgid "Se&ttings"
 msgstr ""
 
@@ -95,6 +98,9 @@ msgstr ""
 
 msgid "&Reset"
 msgstr "重置"
+
+msgid "Reset translated words to root value"
+msgstr ""
 
 msgid "E&xit"
 msgstr "退出"
@@ -142,7 +148,7 @@ msgid "overwrites itself"
 msgstr ""
 
 msgid "ERROR"
-msgstr ""
+msgstr "错误"
 
 msgid "Finished OK"
 msgstr ""
@@ -178,6 +184,24 @@ msgid "Not yet translated:"
 msgstr ""
 
 msgid "Do you want to reset to root value?"
+msgstr ""
+
+msgid "Data exchange files"
+msgstr ""
+
+msgid "templates files"
+msgstr ""
+
+msgid "translation files"
+msgstr ""
+
+msgid "with context"
+msgstr ""
+
+msgid "without context"
+msgstr ""
+
+msgid "text files"
 msgstr ""
 
 msgid "Enter Memo Text"
@@ -250,30 +274,6 @@ msgid "POT header"
 msgstr ""
 
 msgid "PO header"
-msgstr ""
-
-msgid "Data exchange files"
-msgstr ""
-
-msgid "POT templates files without context"
-msgstr ""
-
-msgid "POT templates files with context"
-msgstr ""
-
-msgid "POT templates files with/without context"
-msgstr ""
-
-msgid "PO translation files without context"
-msgstr ""
-
-msgid "PO translation files with context"
-msgstr ""
-
-msgid "PO translation files with/without context"
-msgstr ""
-
-msgid "TXT text files with context and word"
 msgstr ""
 
 msgid "Open import file"
@@ -355,4 +355,7 @@ msgid "FPC root directory"
 msgstr ""
 
 msgid "Global Macros"
+msgstr ""
+
+msgid "Default headers"
 msgstr ""

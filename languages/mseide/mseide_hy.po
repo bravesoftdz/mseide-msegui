@@ -21,24 +21,6 @@ msgstr ""
 "Language: hy\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "[filepath]"
-msgstr ""
-
-msgid "[name],[value]{,[name],[value]}"
-msgstr ""
-
-msgid "auto"
-msgstr ""
-
-msgid "None"
-msgstr ""
-
-msgid "Do not use a skin, no fades."
-msgstr ""
-
-msgid "Display this help and exit."
-msgstr ""
-
 msgid "Watchpoints"
 msgstr ""
 
@@ -330,7 +312,7 @@ msgid "Complete class at cursor"
 msgstr ""
 
 msgid "File \""
-msgstr ""
+msgstr "Ֆայլ \""
 
 msgid "\" has changed."
 msgstr ""
@@ -411,7 +393,7 @@ msgid "Select edit page (Ctrl+E)"
 msgstr ""
 
 msgid "&Open"
-msgstr ""
+msgstr "Բացել"
 
 msgid "0.0mm"
 msgstr ""
@@ -852,6 +834,9 @@ msgstr ""
 msgid "Processor"
 msgstr ""
 
+msgid "auto"
+msgstr ""
+
 msgid "Simulator"
 msgstr ""
 
@@ -987,6 +972,9 @@ msgid "3 (Make 3)"
 msgstr ""
 
 msgid "4 (Make 4)"
+msgstr ""
+
+msgid "None"
 msgstr ""
 
 msgid "&Mainfile"
@@ -1217,7 +1205,7 @@ msgid "Alternate shortcut key"
 msgstr ""
 
 msgid "File"
-msgstr ""
+msgstr "Ֆայլ"
 
 msgid "Parameters"
 msgstr ""
@@ -1813,7 +1801,7 @@ msgid "Select project template"
 msgstr ""
 
 msgid "All files"
-msgstr ""
+msgstr "Բոլոր Ֆայլերը"
 
 msgid "Select program file"
 msgstr ""
@@ -1877,7 +1865,13 @@ msgid ""
 "Martin"
 msgstr ""
 
+msgid "[filepath]"
+msgstr ""
+
 msgid "Set path to global status file."
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid ""
@@ -1895,6 +1889,12 @@ msgid ""
 msgstr ""
 
 msgid "Do not load a project."
+msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr ""
+
+msgid "Display this help and exit."
 msgstr ""
 
 msgid "Do not touch Z-order of the windows."
@@ -2226,7 +2226,7 @@ msgid "Finish"
 msgstr ""
 
 msgid "&Save"
-msgstr ""
+msgstr "Պահել"
 
 msgid "&Undo"
 msgstr ""
@@ -2310,7 +2310,7 @@ msgid "Find && &Replace"
 msgstr ""
 
 msgid "&Print"
-msgstr ""
+msgstr "Տպել"
 
 msgid "Detach"
 msgstr ""
@@ -2364,7 +2364,7 @@ msgid "Find in File"
 msgstr ""
 
 msgid "Edit"
-msgstr ""
+msgstr "Խմբագրել"
 
 msgid "Select Editpage"
 msgstr ""

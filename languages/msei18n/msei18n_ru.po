@@ -87,6 +87,9 @@ msgstr "&Информация о MSEi18n"
 msgid "&Configure MSEi18n"
 msgstr "&Конфигурировать MSEi18n"
 
+msgid "&Default headers"
+msgstr "&Заголовки по умолчанию"
+
 msgid "Se&ttings"
 msgstr "Н&астройки"
 
@@ -95,6 +98,9 @@ msgstr "Осве&жить"
 
 msgid "&Reset"
 msgstr "&Сбросить"
+
+msgid "Reset translated words to root value"
+msgstr "Сбросить переведённые слова к корневому значению"
 
 msgid "E&xit"
 msgstr "Вы&ход"
@@ -180,6 +186,24 @@ msgstr "Ещё не перев-но:"
 msgid "Do you want to reset to root value?"
 msgstr "Вы хотите сбросить к корневому значению?"
 
+msgid "Data exchange files"
+msgstr "Файлы обмена данными"
+
+msgid "templates files"
+msgstr "шаблонные файлы"
+
+msgid "translation files"
+msgstr "файлы переводов"
+
+msgid "with context"
+msgstr "с контекстом"
+
+msgid "without context"
+msgstr "без контекста"
+
+msgid "text files"
+msgstr "текстовые файлы"
+
 msgid "Enter Memo Text"
 msgstr "Ввести Memo текст"
 
@@ -251,30 +275,6 @@ msgstr "Заголовок POT"
 
 msgid "PO header"
 msgstr "Заголовок PO"
-
-msgid "Data exchange files"
-msgstr "Файлы обмена данными"
-
-msgid "POT templates files without context"
-msgstr "POT шаблонные файлы без контекста"
-
-msgid "POT templates files with context"
-msgstr "POT шаблонные файлы с контекстом"
-
-msgid "POT templates files with/without context"
-msgstr "POT шаблонные файлы с контекстом/без контекста"
-
-msgid "PO translation files without context"
-msgstr "PO файлы переводов без контекста"
-
-msgid "PO translation files with context"
-msgstr "PO файлы переводов с контекстом"
-
-msgid "PO translation files with/without context"
-msgstr "PO файлы переводов с контекстом/без контекста"
-
-msgid "TXT text files with context and word"
-msgstr "TXT текстовые файлы с контекстом и словами"
 
 msgid "Open import file"
 msgstr "Открыть файл импорта"
@@ -360,3 +360,6 @@ msgstr "Корневая директория для компилятора FPC"
 
 msgid "Global Macros"
 msgstr "Глобальные макро-определения"
+
+msgid "Default headers"
+msgstr "Заголовки по умолчанию"

@@ -5,6 +5,7 @@
 # 
 # Translators:
 # AlexL <loginov.alex.valer@gmail.com>, 2019
+# Adolfo Jayme Barrientos, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-27 01:09+0000\n"
-"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
+"Last-Translator: Adolfo Jayme Barrientos, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/Magic/teams/44238/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -109,6 +110,10 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
 msgid "&Configure MSEi18n"
 msgstr ""
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption"
+msgid "&Default headers"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
 msgid "Se&ttings"
 msgstr ""
@@ -120,6 +125,10 @@ msgstr ""
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
 msgid "&Reset"
 msgstr "&Restablecer"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,hint"
+msgid "Reset translated words to root value"
+msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
 msgid "E&xit"
@@ -183,7 +192,7 @@ msgstr ""
 
 msgctxt "mainfo,c,strings.data,11:"
 msgid "ERROR"
-msgstr ""
+msgstr "ERROR"
 
 msgctxt "mainfo,c,strings.data,12:"
 msgid "Finished OK"
@@ -231,6 +240,30 @@ msgstr ""
 
 msgctxt "mainfo,c,strings.data,23:"
 msgid "Do you want to reset to root value?"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,24:"
+msgid "Data exchange files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,25:"
+msgid "templates files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,26:"
+msgid "translation files"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,27:"
+msgid "with context"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,28:"
+msgid "without context"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,29:"
+msgid "text files"
 msgstr ""
 
 msgctxt "msememodialogfo,caption"
@@ -327,38 +360,6 @@ msgstr ""
 
 msgctxt "projectfo,memopoheader,frame.caption"
 msgid "PO header"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,0:,0:"
-msgid "Data exchange files"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,1:,0:"
-msgid "POT templates files without context"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,2:,0:"
-msgid "POT templates files with context"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,3:,0:"
-msgid "POT templates files with/without context"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,4:,0:"
-msgid "PO translation files without context"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,5:,0:"
-msgid "PO translation files with context"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,6:,0:"
-msgid "PO translation files with/without context"
-msgstr ""
-
-msgctxt "projectfo,impexpfiledialog,controller.filterlist.data,7:,0:"
-msgid "TXT text files with context and word"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.captionopen"
@@ -487,3 +488,15 @@ msgstr "Nombre"
 msgctxt "settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption"
 msgid "Value"
 msgstr "Valor"
+
+msgctxt "headerfo,caption"
+msgid "Default headers"
+msgstr ""
+
+msgctxt "headerfo,memopoheader,frame.caption"
+msgid "PO header"
+msgstr ""
+
+msgctxt "headerfo,memopotheader,frame.caption"
+msgid "POT header"
+msgstr ""

@@ -22,24 +22,6 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "[filepath]"
-msgstr ""
-
-msgid "[name],[value]{,[name],[value]}"
-msgstr ""
-
-msgid "auto"
-msgstr "auto"
-
-msgid "None"
-msgstr "Aucun"
-
-msgid "Do not use a skin, no fades."
-msgstr "Ne pas utiliser une peau, pas de fondus."
-
-msgid "Display this help and exit."
-msgstr "Affiche cette aide et quitter."
-
 msgid "Watchpoints"
 msgstr "Points de surveillance"
 
@@ -859,6 +841,9 @@ msgstr ""
 msgid "Processor"
 msgstr ""
 
+msgid "auto"
+msgstr "auto"
+
 msgid "Simulator"
 msgstr ""
 
@@ -995,6 +980,9 @@ msgstr ""
 
 msgid "4 (Make 4)"
 msgstr ""
+
+msgid "None"
+msgstr "Aucun"
 
 msgid "&Mainfile"
 msgstr ""
@@ -1748,7 +1736,7 @@ msgid "Project"
 msgstr "Projet"
 
 msgid "is modified. Save?"
-msgstr ""
+msgstr "modifié. Enregistrer ?"
 
 msgid "Unable to open file \""
 msgstr ""
@@ -1884,7 +1872,13 @@ msgid ""
 "Martin"
 msgstr ""
 
+msgid "[filepath]"
+msgstr ""
+
 msgid "Set path to global status file."
+msgstr ""
+
+msgid "[name],[value]{,[name],[value]}"
 msgstr ""
 
 msgid ""
@@ -1903,6 +1897,12 @@ msgstr ""
 
 msgid "Do not load a project."
 msgstr ""
+
+msgid "Do not use a skin, no fades."
+msgstr "Ne pas utiliser une peau, pas de fondus."
+
+msgid "Display this help and exit."
+msgstr "Affiche cette aide et quitter."
 
 msgid "Do not touch Z-order of the windows."
 msgstr ""
@@ -2737,7 +2737,7 @@ msgid "Startup"
 msgstr "Démarrage"
 
 msgid "Exception"
-msgstr ""
+msgstr "Exception"
 
 msgid "GDB died"
 msgstr ""
@@ -3161,13 +3161,13 @@ msgid "&Filter"
 msgstr "&Filtrer"
 
 msgid "&New dir"
-msgstr ""
+msgstr "&Nouveau répertoire"
 
 msgid "&Home"
 msgstr "&Début"
 
 msgid "&Dir"
-msgstr ""
+msgstr "Ré&pertoire"
 
 msgid "Edit Font Format"
 msgstr ""
