@@ -1180,7 +1180,7 @@ uses
  selecteditpageform,programparametersform,sourceupdate,mseimagelisteditor,
  msesysenvmanagereditor,targetconsole,actionsmodule,mseactions,
  msefilemacros,mseenvmacros,msemacmacros,mseexecmacros,msestrmacros,
- msedesigner,panelform,watchpointsform,commandlineform,messageform,
+ msedesigner,panelform2,watchpointsform,commandlineform,messageform,
  componentpaletteform,mserichstring,msesettings,formdesigner,
  msestringlisteditor,msetexteditor,msepropertyeditors,mseshapes,
  componentstore,cpuform,msesysutils,msecomptree,msefont,typinfo
@@ -2233,7 +2233,7 @@ begin
   updateprojectsettings(statfiler,[]);
   b1:= projecttree.updatestat(statfiler) or statfiler.iswriter;
   breakpointsfo.updatestat(statfiler);
-  panelform.updatestat(statfiler); //uses section breakpoints!
+  panelform2.updatestat(statfiler); //uses section breakpoints!
   if not b1 then begin
    projecttree.updatestat(statfiler); //backward compatibility with section
                                       //breakpoints

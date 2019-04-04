@@ -14,7 +14,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 }
-unit panelform;
+unit panelform2;
 
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 
@@ -61,7 +61,7 @@ procedure endpanelplacement();
 implementation
 
 uses
- panelform_mfm,main,sysutils,msekeyboard,mselist,msedatalist,
+ panelform2_mfm,main,sysutils,msekeyboard,mselist,msedatalist,
  msearrayutils,mseformatstr;
 {$ifndef mse_allwarnings}
  {$if fpc_fullversion >= 030100}

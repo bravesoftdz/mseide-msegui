@@ -209,7 +209,7 @@ uses
  sourceform_mfm,msefileutils,sysutils,mseformatstr,
  projectoptionsform,main,mseeditglob,watchform,msesys,msewidgets,msedesigner,
  selecteditpageform,sourceupdate,pascaldesignparser,mseclasses,msearrayutils,
- msebits,msesysutils,mseintegerenter,panelform;
+ msebits,msesysutils,mseintegerenter,panelform2;
 {$ifndef mse_allwarnings}
  {$if fpc_fullversion >= 030100}
   {$warn 5089 off}

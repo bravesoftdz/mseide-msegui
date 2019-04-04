@@ -392,7 +392,7 @@ uses
  mseformdatatools,mseshapes,msefileutils,mseeditglob,
  findinfileform,formdesigner,sourceupdate,actionsmodule,programparametersform,
  objectinspector,msesysutils,cpuform,disassform,
- panelform,watchpointsform,threadsform,targetconsole,
+ panelform2,watchpointsform,threadsform,targetconsole,
  debuggerform,componentpaletteform,componentstore,
  messageform,msesettings,mseintegerenter,symbolform
  {$ifdef unix},mselibc {$endif}, //SIGRT*
@@ -3029,7 +3029,7 @@ begin
  awriter.setsection('breakpoints');
  beginpanelplacement();
  try
-  panelform.updatestat(awriter);
+  panelform2.updatestat(awriter);
   awriter.setsection('layout');
   projectstatfile.updatestat('windowlayout',awriter);
  finally
@@ -3055,7 +3055,7 @@ begin
  beginpanelplacement();
  try
   areader.setsection('breakpoints');
-  panelform.updatestat(areader);
+  panelform2.updatestat(areader);
   areader.setsection('layout');
   projectstatfile.options:= projectstatfile.options + 
                                           [sfo_nodata,sfo_nooptions];

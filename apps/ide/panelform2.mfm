@@ -1,4 +1,4 @@
-object panelfo: tpanelfo
+object idepanelfo: tpanelfo
   optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_arrowfocusin, ow_arrowfocusout, ow_subfocus, ow_hinton]
   frame.localprops = []
   frame.localprops1 = []
@@ -6,8 +6,8 @@ object panelfo: tpanelfo
   frame.grip_options = [go_closebutton, go_fixsizebutton, go_floatbutton, go_topbutton, go_backgroundbutton, go_lockbutton, go_nolockbutton, go_buttonhints]
   onpaint = paintexe
   visible = False
-  bounds_x = 157
-  bounds_y = 493
+  bounds_x = 476
+  bounds_y = 249
   bounds_cx = 323
   bounds_cy = 195
   container.optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_arrowfocusin, ow_arrowfocusout, ow_subfocus, ow_mousetransparent]
