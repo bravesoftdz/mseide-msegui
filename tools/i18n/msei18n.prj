@@ -847,8 +847,8 @@ findhistory=20
  valuearray
 findoptions=1
 editpos=2
- 0,320
- 0,46
+ 37,590
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 sourcefiles=2
@@ -1349,6 +1349,7 @@ windowlayout=604
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/msei18n.pas
   /home/fred/mseide-msegui/lib/common/kernel/msebucketlist.pas
   /home/fred/mseide-msegui/tools/i18n/mseconsts_fr.pas
@@ -1363,7 +1364,6 @@ windowlayout=604
   /home/fred/mseide-msegui/tools/i18n/msesettings.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
-  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
   /home/fred/mseide-mseguioldworksave/tools/i18n/main.pas
   /home/fred/mseide-mseguigooglelast/tools/i18n/main.pas

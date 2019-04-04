@@ -324,8 +324,7 @@ begin
           isstring := false;  
           acomp := str2;
             
-     
-         If system.pos('vaString',str2) >0 then begin
+        If system.pos('vaString',str2) >0 then begin
           str2 := (utf8copy(str2,system.pos('vaString',str2)+9,
                      length(str2)-system.pos('vaString',str2)-8)) ;
          end else
@@ -362,7 +361,6 @@ begin
            
          if trim((nodo)) = trim((asdo))   then 
           begin
-          if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then begin
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
@@ -370,8 +368,7 @@ begin
            // writeln('+++++++++++ value found equal ++++++++++++++' );
            // writeln(rootstring(','));
            // writeln(acomp);
-           end;
-              
+                      
            if system.pos(rootstring(','),acomp) > 0 then begin
            astrtemp := astrt;
            anonttemp := anont;
@@ -388,14 +385,11 @@ begin
          begin
           if (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) then
-         begin 
-       if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then
-           begin
+          begin 
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
-           end;
            
            if system.pos(rootstring(','),acomp) > 0 then
            begin
@@ -533,13 +527,10 @@ begin
          
          if trim((nodo)) = trim((asdo))   then 
           begin
-          if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then
-          begin
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
-           end;
-             
+            
            if system.pos(acomp,rootstring(',')) > 0 then 
            begin
            astrtemp := astrt;
