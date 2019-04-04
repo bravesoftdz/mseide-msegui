@@ -1,16 +1,5 @@
 [projectfo.projectstat]
 colcount=6
-[projectfo.impexpfiledialog]
-filenames=1
- /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context.pot
-filecolwidth=174
-x=0
-y=0
-cx=0
-cy=0
-lastdir=/home/fred/mseide-msegui/languages/testing/msei18n/
-filefilterindex=0
-filefilter=*.pot
 [projectfo.memopoheader]
 value=# SOME DESCRIPTIVE TITLE.
 +# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -60,7 +49,7 @@ value=1
 [projectfo.makecommand]
 value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
-propcolwidthref=687
+propcolwidthref=754
 values0=1
  en
 width0=94
@@ -79,22 +68,25 @@ lastdir=/home/fred/mseide-msegui/tools/i18n/lang_en/
 filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]
-propcolwidthref=569
-values0=5
+propcolwidthref=651
+values0=6
  mainfo
  msememodialogfo
  messagesfo
  projectfo
  settingsfo
+ headerfo
 width0=71
 sortdescend0=0
-values1=5
+values1=6
  /home/fred/mseide-msegui/tools/i18n/main.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msememodialog.mfm
  /home/fred/mseide-msegui/tools/i18n/messagesform.mfm
  /home/fred/mseide-msegui/tools/i18n/project.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msesettings.mfm
-values2=5
+ /home/fred/mseide-msegui/tools/i18n/headerform.mfm
+values2=6
+ 0
  0
  0
  0
@@ -108,19 +100,10 @@ value=1
 [projectfo]
 x=255
 y=90
-cx=781
-cy=514
+cx=848
+cy=739
 wsize=0
 active=0
 visible=0
-[mainfo]
-stackedunder=
-x=209
-y=65
-cx=917
-cy=586
-wsize=6
-active=1
-visible=1
 [mainfo.coloron]
 value=1

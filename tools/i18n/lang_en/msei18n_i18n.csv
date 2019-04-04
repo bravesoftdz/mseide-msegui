@@ -21,9 +21,11 @@ name,type,notranslate,comment,value,en
 "mainfo,mainmenu1,menu.submenu.items,7:,caption",vaString,F,,&Make,&Make
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Default headers,&Default headers
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
 "mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,Re&fresh,Re&fresh
 "mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,&Reset,&Reset
+"mainfo,mainmenu1,menu.submenu.items,10:,hint",vaString,F,,Reset translated words to root value,Reset translated words to root value
 "mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
@@ -52,6 +54,12 @@ name,type,notranslate,comment,value,en
 "mainfo,c,strings.data,21:",vaString,F,,Yet translated:,Yet translated:
 "mainfo,c,strings.data,22:",vaString,F,,Not yet translated:,Not yet translated:
 "mainfo,c,strings.data,23:",vaString,F,,Do you want to reset to root value?,Do you want to reset to root value?
+"mainfo,c,strings.data,24:",vaString,F,,Data exchange files,Data exchange files
+"mainfo,c,strings.data,25:",vaString,F,,templates files,templates files
+"mainfo,c,strings.data,26:",vaString,F,,translation files,translation files
+"mainfo,c,strings.data,27:",vaString,F,,with context,with context
+"mainfo,c,strings.data,28:",vaString,F,,without context,without context
+"mainfo,c,strings.data,29:",vaString,F,,text files,text files
 "msememodialogfo,caption",vaString,F,,Enter Memo Text,Enter Memo Text
 "msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
 "msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK,&OK
@@ -76,14 +84,6 @@ name,type,notranslate,comment,value,en
 "projectfo,aftermake,frame.caption",vaString,F,,After make,After make
 "projectfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
 "projectfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,POT templates files without context,POT templates files without context
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files with context,POT templates files with context
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,PO translation files without context,PO translation files without context
-"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files with context,PO translation files with context
-"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,TXT text files with context and word,TXT text files with context and word
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
 "settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment
@@ -115,3 +115,6 @@ name,type,notranslate,comment,value,en
 "settingsfo,macrogrid,frame.caption",vaString,F,,Global Macros,Global Macros
 "settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
 "settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value,Value
+"headerfo,caption",vaString,F,,Default headers,Default headers
+"headerfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
+"headerfo,memopotheader,frame.caption",vaString,F,,POT header,POT header

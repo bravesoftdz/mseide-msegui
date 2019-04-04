@@ -24,12 +24,13 @@ mainfo,vaNull,F,,,
 "mainfo,optionswindow",vaSet,F,,[wo_groupleader],
 "mainfo,mainmenu",vaIdent,F,,mainmenu1,
 "mainfo,options",vaSet,F,,[fo_main;fo_terminateonclose;fo_savepos;fo_savezorder;fo_savestate],
-"mainfo,statfile",vaIdent,F,,projectfo.projectstat,
+"mainfo,statfile",vaIdent,F,,mainstatfile,
 "mainfo,caption",vaString,T,,MSEi18n,MSEi18n
 "mainfo,icon.transparentcolor",vaInt32,F,,-2147483642,
 "mainfo,icon.options",vaSet,F,,[bmo_masked],
 "mainfo,windowopacity",vaExtended,F,,-Inf,
 "mainfo,oncreate",vaIdent,F,,tmainfooncreate,
+"mainfo,oncreated",vaIdent,F,,oncreated,
 "mainfo,onloaded",vaIdent,F,,loadedexe,
 "mainfo,oneventloopstart",vaIdent,F,,tmainfoonloaded,
 "mainfo,ondestroy",vaIdent,F,,tmainfoondestroy,
@@ -459,7 +460,7 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,menu.submenu.items,7:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,7:,onexecute",vaIdent,F,,makeonexecute,
 "mainfo,mainmenu1,menu.submenu.items,8:",vaList,F,,,
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.count",vaInt8,F,,2,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.count",vaInt8,F,,3,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items",vaCollection,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
@@ -469,6 +470,10 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,state",vaSet,F,,[as_localcaption;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,onexecute",vaIdent,F,,configureonexecute,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:",vaList,F,,,
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Default headers,&Default headers
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,state",vaSet,F,,[as_localcaption;as_localonexecute],
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,onexecute",vaIdent,F,,ondefhead,
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
 "mainfo,mainmenu1,menu.submenu.items,8:,name",vaString,T,,settings,settings
 "mainfo,mainmenu1,menu.submenu.items,8:,state",vaSet,F,,[as_localcaption],
@@ -478,12 +483,13 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,menu.submenu.items,9:,onexecute",vaIdent,F,,formatchanged,
 "mainfo,mainmenu1,menu.submenu.items,10:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,&Reset,&Reset
-"mainfo,mainmenu1,menu.submenu.items,10:,state",vaSet,F,,[as_localcaption;as_localonexecute],
+"mainfo,mainmenu1,menu.submenu.items,10:,hint",vaString,F,,Reset translated words to root value,Reset translated words to root value
+"mainfo,mainmenu1,menu.submenu.items,10:,state",vaSet,F,,[as_localcaption;as_localhint;as_localonexecute],
 "mainfo,mainmenu1,menu.submenu.items,10:,onexecute",vaIdent,F,,onreset,
-"mainfo,mainmenu1,menu.submenu.items,11:",vaList,F,,
+"mainfo,mainmenu1,menu.submenu.items,11:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
-"mainfo,mainmenu1,menu.submenu.items,11:,state",vaSet,F,,[as_localcaption;as_localonexecute]
-"mainfo,mainmenu1,menu.submenu.items,11:,onexecute",vaIdent,F,,exitexe
+"mainfo,mainmenu1,menu.submenu.items,11:,state",vaSet,F,,[as_localcaption;as_localonexecute],
+"mainfo,mainmenu1,menu.submenu.items,11:,onexecute",vaIdent,F,,exitexe,
 "mainfo,mainmenu1,left",vaInt16,F,,256,
 "mainfo,mainmenu1,top",vaInt16,F,,160,
 "mainfo,projectfiledialog",vaNull,F,,,
@@ -579,6 +585,12 @@ mainfo,vaNull,F,,,
 "mainfo,c,strings.data,21:",vaString,F,,Yet translated:,Yet translated:
 "mainfo,c,strings.data,22:",vaString,F,,Not yet translated:,Not yet translated:
 "mainfo,c,strings.data,23:",vaString,F,,Do you want to reset to root value?,Do you want to reset to root value?
+"mainfo,c,strings.data,24:",vaString,F,,Data exchange files,Data exchange files
+"mainfo,c,strings.data,25:",vaString,F,,templates files,templates files
+"mainfo,c,strings.data,26:",vaString,F,,translation files,translation files
+"mainfo,c,strings.data,27:",vaString,F,,with context,with context
+"mainfo,c,strings.data,28:",vaString,F,,without context,without context
+"mainfo,c,strings.data,29:",vaString,F,,text files,text files
 "mainfo,c,left",vaInt8,F,,64,
 "mainfo,c,top",vaInt16,F,,200,
 "mainfo,tskincontroller1",vaNull,F,,,
@@ -694,6 +706,8 @@ messagesfo,vaNull,F,,,
 "messagesfo,bounds_cx",vaInt16,F,,421,
 "messagesfo,bounds_cy",vaInt16,F,,234,
 "messagesfo,container.optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_subfocus;ow_mousetransparent;ow_destroywidgets],
+"messagesfo,container.frame.localprops",vaSet,F,,[],
+"messagesfo,container.frame.localprops1",vaSet,F,,[],
 "messagesfo,container.bounds",vaList,F,,,
 "messagesfo,container.bounds,0:",vaInt8,F,,0,
 "messagesfo,container.bounds,1:",vaInt8,F,,0,
@@ -701,10 +715,13 @@ messagesfo,vaNull,F,,,
 "messagesfo,container.bounds,3:",vaInt16,F,,234,
 "messagesfo,options",vaSet,F,,[fo_closeonesc;fo_closeonenter;fo_autoreadstat;fo_autowritestat;fo_savepos;fo_savestate],
 "messagesfo,caption",vaString,F,,Make Language Units,Make Language Units
+"messagesfo,windowopacity",vaExtended,F,,-Inf,
 "messagesfo,onclosequery",vaIdent,F,,formclosquery,
 "messagesfo,moduleclassname",vaString,T,,tmseform,tmseform
 "messagesfo,twidgetgrid1",vaNull,F,,,
 "messagesfo,twidgetgrid1,optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_focusbackonesc;ow_destroywidgets],
+"messagesfo,twidgetgrid1,frame.localprops",vaSet,F,,[],
+"messagesfo,twidgetgrid1,frame.localprops1",vaSet,F,,[],
 "messagesfo,twidgetgrid1,bounds_x",vaInt8,F,,0,
 "messagesfo,twidgetgrid1,bounds_y",vaInt8,F,,0,
 "messagesfo,twidgetgrid1,bounds_cx",vaInt16,F,,421,
@@ -735,8 +752,8 @@ messagesfo,vaNull,F,,,
 projectfo,vaNull,F,,,
 "projectfo,optionswidget",vaSet,F,,[ow_arrowfocus;ow_subfocus;ow_destroywidgets;ow_hinton],
 "projectfo,visible",vaFalse,F,,,
-"projectfo,bounds_x",vaInt16,F,,404,
-"projectfo,bounds_y",vaInt8,F,,62,
+"projectfo,bounds_x",vaInt16,F,,463,
+"projectfo,bounds_y",vaInt16,F,,137,
 "projectfo,bounds_cx",vaInt16,F,,646,
 "projectfo,bounds_cy",vaInt16,F,,561,
 "projectfo,container.optionswidget",vaSet,F,,[ow_mousefocus;ow_tabfocus;ow_arrowfocus;ow_subfocus;ow_mousetransparent;ow_destroywidgets],
@@ -1246,33 +1263,7 @@ msgstr """"
 "projectfo,projectstat,left",vaInt16,F,,128,
 "projectfo,projectstat,top",vaInt8,F,,56,
 "projectfo,impexpfiledialog",vaNull,F,,,
-"projectfo,impexpfiledialog,statfile",vaIdent,F,,projectstat,
 "projectfo,impexpfiledialog,controller.filename",vaString,T,,default.csv,default.csv
-"projectfo,impexpfiledialog,controller.filterlist.data",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,0:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Data exchange files,Data exchange files
-"projectfo,impexpfiledialog,controller.filterlist.data,0:,1:",vaString,T,,*.csv,*.csv
-"projectfo,impexpfiledialog,controller.filterlist.data,1:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,0:",vaString,F,,POT templates files without context,POT templates files without context
-"projectfo,impexpfiledialog,controller.filterlist.data,1:,1:",vaString,T,,*.pot,*.trd
-"projectfo,impexpfiledialog,controller.filterlist.data,2:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,0:",vaString,F,,POT templates files with context,POT templates files with context
-"projectfo,impexpfiledialog,controller.filterlist.data,2:,1:",vaString,T,,*.pot,*.po
-"projectfo,impexpfiledialog,controller.filterlist.data,3:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,0:",vaString,F,,POT templates files with/without context,POT templates files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,3:,1:",vaString,T,,*.pot,*.*
-"projectfo,impexpfiledialog,controller.filterlist.data,4:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,4:,0:",vaString,F,,PO translation files without context,PO translation files without context
-"projectfo,impexpfiledialog,controller.filterlist.data,4:,1:",vaString,T,,*.po,*.pot
-"projectfo,impexpfiledialog,controller.filterlist.data,5:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,5:,0:",vaString,F,,PO translation files with context,PO translation files with context
-"projectfo,impexpfiledialog,controller.filterlist.data,5:,1:",vaString,T,,*.po,*.po
-"projectfo,impexpfiledialog,controller.filterlist.data,6:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,6:,0:",vaString,F,,PO translation files with/without context,PO translation files with/without context
-"projectfo,impexpfiledialog,controller.filterlist.data,6:,1:",vaString,T,,*.po,*.po
-"projectfo,impexpfiledialog,controller.filterlist.data,7:",vaList,F,,,
-"projectfo,impexpfiledialog,controller.filterlist.data,7:,0:",vaString,F,,TXT text files with context and word,TXT text files with context and word
-"projectfo,impexpfiledialog,controller.filterlist.data,7:,1:",vaString,T,,*.txt,*.po
 "projectfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
@@ -1313,9 +1304,9 @@ settingsfo,vaNull,F,,,
 "settingsfo,tsplitter1,tbutton2",vaNull,F,,,
 "settingsfo,tsplitter1,tbutton2,optionswidget1",vaSet,F,,[ow1_fontglyphheight;ow1_autoscale;ow1_autowidth],
 "settingsfo,tsplitter1,tbutton2,taborder",vaInt8,F,,2,
-"settingsfo,tsplitter1,tbutton2,bounds_x",vaInt16,F,,283,
+"settingsfo,tsplitter1,tbutton2,bounds_x",vaInt16,F,,285,
 "settingsfo,tsplitter1,tbutton2,bounds_y",vaInt8,F,,16,
-"settingsfo,tsplitter1,tbutton2,bounds_cx",vaInt8,F,,52,
+"settingsfo,tsplitter1,tbutton2,bounds_cx",vaInt8,F,,50,
 "settingsfo,tsplitter1,tbutton2,bounds_cy",vaInt8,F,,22,
 "settingsfo,tsplitter1,tbutton2,bounds_cxmin",vaInt8,F,,50,
 "settingsfo,tsplitter1,tbutton2,anchors",vaSet,F,,[an_top;an_right],
@@ -1351,7 +1342,7 @@ settingsfo,vaNull,F,,,
 "settingsfo,tsplitter1,tspacer2,taborder",vaInt8,F,,3,
 "settingsfo,tsplitter1,tspacer2,bounds_x",vaInt16,F,,275,
 "settingsfo,tsplitter1,tspacer2,bounds_y",vaInt8,F,,16,
-"settingsfo,tsplitter1,tspacer2,bounds_cx",vaInt8,F,,8,
+"settingsfo,tsplitter1,tspacer2,bounds_cx",vaInt8,F,,10,
 "settingsfo,tsplitter1,tspacer2,bounds_cy",vaInt8,F,,20,
 "settingsfo,tsplitter1,tspacer2,linkleft",vaIdent,F,,tbutton1,
 "settingsfo,tsplitter1,tspacer2,linkright",vaIdent,F,,tbutton2,
@@ -1785,3 +1776,134 @@ settingsfo,vaNull,F,,,
 "settingsfo,tstatfile1,options",vaSet,F,,[sfo_memory],
 "settingsfo,tstatfile1,left",vaInt8,F,,16,
 "settingsfo,tstatfile1,top",vaInt8,F,,32,
+headerfo,vaNull,F,,,
+"headerfo,visible",vaFalse,F,,,
+"headerfo,bounds_x",vaInt16,F,,476,
+"headerfo,bounds_y",vaInt16,F,,260,
+"headerfo,bounds_cx",vaInt16,F,,371,
+"headerfo,bounds_cy",vaInt8,F,,110,
+"headerfo,container.frame.localprops",vaSet,F,,[],
+"headerfo,container.frame.localprops1",vaSet,F,,[],
+"headerfo,container.bounds",vaList,F,,,
+"headerfo,container.bounds,0:",vaInt8,F,,0,
+"headerfo,container.bounds,1:",vaInt8,F,,0,
+"headerfo,container.bounds,2:",vaInt16,F,,371,
+"headerfo,container.bounds,3:",vaInt8,F,,110,
+"headerfo,options",vaSet,F,,[fo_screencentered;fo_autoreadstat;fo_autowritestat;fo_savepos;fo_savezorder;fo_savestate],
+"headerfo,statfile",vaIdent,F,,settingsfo.tstatfile1,
+"headerfo,caption",vaString,F,,Default headers,Default headers
+"headerfo,windowopacity",vaExtended,F,,-Inf,
+"headerfo,moduleclassname",vaString,T,,tmseform,tmseform
+"headerfo,memopoheader",vaNull,F,,,
+"headerfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
+"headerfo,memopoheader,frame.localprops",vaSet,F,,[],
+"headerfo,memopoheader,frame.localprops1",vaSet,F,,[],
+"headerfo,memopoheader,frame.buttons.count",vaInt8,F,,1,
+"headerfo,memopoheader,frame.buttons.items",vaCollection,F,,,
+"headerfo,memopoheader,frame.buttons.items,0:",vaList,F,,,
+"headerfo,memopoheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17,
+"headerfo,memopoheader,frame.button.imagenr",vaInt8,F,,17,
+"headerfo,memopoheader,frame.outerframe",vaList,F,,,
+"headerfo,memopoheader,frame.outerframe,0:",vaInt8,F,,0,
+"headerfo,memopoheader,frame.outerframe,1:",vaInt8,F,,17,
+"headerfo,memopoheader,frame.outerframe,2:",vaInt8,F,,0,
+"headerfo,memopoheader,frame.outerframe,3:",vaInt8,F,,0,
+"headerfo,memopoheader,bounds_x",vaInt8,F,,8,
+"headerfo,memopoheader,bounds_y",vaInt8,F,,58,
+"headerfo,memopoheader,bounds_cx",vaInt16,F,,356,
+"headerfo,memopoheader,bounds_cy",vaInt8,F,,34,
+"headerfo,memopoheader,anchors",vaSet,F,,[an_left;an_top;an_right],
+"headerfo,memopoheader,statfile",vaIdent,F,,settingsfo.tstatfile1,
+"headerfo,memopoheader,value",vaLString,T,,"# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n""","# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n"""
+"headerfo,memopoheader,reffontheight",vaInt8,F,,14,
+"headerfo,memopotheader",vaNull,F,,,
+"headerfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
+"headerfo,memopotheader,frame.localprops",vaSet,F,,[],
+"headerfo,memopotheader,frame.localprops1",vaSet,F,,[],
+"headerfo,memopotheader,frame.buttons.count",vaInt8,F,,1,
+"headerfo,memopotheader,frame.buttons.items",vaCollection,F,,,
+"headerfo,memopotheader,frame.buttons.items,0:",vaList,F,,,
+"headerfo,memopotheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17,
+"headerfo,memopotheader,frame.button.imagenr",vaInt8,F,,17,
+"headerfo,memopotheader,frame.outerframe",vaList,F,,,
+"headerfo,memopotheader,frame.outerframe,0:",vaInt8,F,,0,
+"headerfo,memopotheader,frame.outerframe,1:",vaInt8,F,,17,
+"headerfo,memopotheader,frame.outerframe,2:",vaInt8,F,,0,
+"headerfo,memopotheader,frame.outerframe,3:",vaInt8,F,,0,
+"headerfo,memopotheader,taborder",vaInt8,F,,1,
+"headerfo,memopotheader,bounds_x",vaInt8,F,,8,
+"headerfo,memopotheader,bounds_y",vaInt8,F,,2,
+"headerfo,memopotheader,bounds_cx",vaInt16,F,,356,
+"headerfo,memopotheader,bounds_cy",vaInt8,F,,34,
+"headerfo,memopotheader,anchors",vaSet,F,,[an_left;an_top;an_right],
+"headerfo,memopotheader,statfile",vaIdent,F,,settingsfo.tstatfile1,
+"headerfo,memopotheader,value",vaLString,T,,"# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n""","# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid """"
+msgstr """"
+""Project-Id-Version: \n""
+""Report-Msgid-Bugs-To: \n""
+""POT-Creation-Date: 2019-03-04 23:54+0300\n""
+""PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n""
+""Last-Translator: FULL NAME <EMAIL@ADDRESS>\n""
+""Language-Team: LANGUAGE <LL@li.org>\n""
+""Language: \n""
+""MIME-Version: 1.0\n""
+""Content-Type: text/plain; charset=UTF-8\n""
+""Content-Transfer-Encoding: 8bit\n"""
+"headerfo,memopotheader,reffontheight",vaInt8,F,,14,
