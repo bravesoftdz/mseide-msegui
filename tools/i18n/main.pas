@@ -362,8 +362,7 @@ begin
            
          if trim((nodo)) = trim((asdo))   then 
           begin
-          //if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then
-          if (trim(valuetext)) <> trim((astrt)) then begin
+          if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then begin
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
@@ -390,7 +389,7 @@ begin
           if (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) then
          begin 
-           if (trim(valuetext)) <> trim((astrt)) then
+       if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then
            begin
            hasfoundtext := true;
            astrtemp := astrt;
@@ -534,8 +533,7 @@ begin
          
          if trim((nodo)) = trim((asdo))   then 
           begin
-          
-           if (trim(valuetext)) <> trim((astrt)) then
+          if (utf8pos(copy(rootstring(','),1,length(rootstring(','))-8),acomp) > 0) then
           begin
            hasfoundtext := true;
            astrtemp := astrt;

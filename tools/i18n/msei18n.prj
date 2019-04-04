@@ -502,11 +502,14 @@ settingsstorage=0
 settingsprojecttree=0
 settingsautoload=0
 settingsautosave=0
-modulenames=1
+modulenames=2
+ MAINFO
  SETTINGSFO
-moduletypes=1
+moduletypes=2
+ TMAINFO
  TSETTINGSFO
-modulefiles=1
+modulefiles=2
+ /home/fred/mseide-msegui/tools/i18n/main.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msesettings.mfm
 befcommandon=0
 makeoptionson=7
@@ -820,15 +823,15 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=stockcaptionty
+finddtext=treeonupdaterowvalues
 findhistory=20
+ treeonupdaterowvalues
  stockcaptionty
  defaultmodalresulttextty
  s'#0233'lectionn'#0233
  la_fr
  doexport
  cancel
- treeonupdaterowvalues
  writerecord
  sc_txt
  sc_context
@@ -843,42 +846,41 @@ findhistory=20
  rootvaluearray
  valuearray
 findoptions=1
-editpos=3
- 0,24
- 0,24
- 0,34
+editpos=2
+ 0,320
+ 0,46
 bookmarks0=0
 bookmarks1=0
-bookmarks2=0
-sourcefiles=3
- ${PROJECTDIR}/mseconsts_ru.pas
- ${PROJECTDIR}/mseconsts_es.pas
+sourcefiles=2
+ ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/msei18n.pas
-relpaths=3
- mseconsts_ru.pas
- mseconsts_es.pas
+relpaths=2
+ main.pas
  msei18n.pas
-ismoduletexts=3
+ismoduletexts=2
  0
  0
- 0
-modules=2
+modules=3
  /home/fred/mseide-msegui/tools/i18n/project.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msesettings.mfm
-moduleoptions=2
+ /home/fred/mseide-msegui/tools/i18n/main.mfm
+moduleoptions=3
  0
  0
-visiblemodules=2
+ 0
+visiblemodules=3
  0
  -1
-nomenumodules=2
  -1
+nomenumodules=3
+ -1
+ 0
  0
 [sourcefo.files_tab]
 firsttab=0
-index=2
+index=0
 [layout]
-windowlayout=615
+windowlayout=604
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1104,7 +1106,7 @@ windowlayout=615
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1345,8 +1347,9 @@ windowlayout=615
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/msei18n.pas
- history=50
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ history=20
+  /home/fred/mseide-msegui/tools/i18n/msei18n.pas
   /home/fred/mseide-msegui/lib/common/kernel/msebucketlist.pas
   /home/fred/mseide-msegui/tools/i18n/mseconsts_fr.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts.pas
@@ -1366,37 +1369,6 @@ windowlayout=615
   /home/fred/mseide-mseguigooglelast/tools/i18n/main.pas
   /home/fred/mseide-mseguigooogle/tools/i18n/main.pas
   /home/fred/mseide-mseguigoogle2/tools/i18n/main.pas
-  /home/fred/mseide-mseguiast/tools/i18n/main.pas
-  /home/fred/mseide-mseguipoex/tools/i18n/main.pas
-  /home/fred/mseide-mseguicontext3/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/main2.pas
-  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
-  /home/fred/mseide-mseguipocontext/tools/i18n/main.pas
-  /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
-  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
-  /home/fred/mseide-mseguiok/tools/i18n/main.pas
-  /home/fred/mseide-mseguiimport/tools/i18n/main.pas
-  /home/fred/ideu/src/msefiledialogres.mfm
-  /home/fred/ideu/src/msefiledialog.mfm
-  /home/fred/ideu/src/dialogfiles.mfm
-  /home/fred/ideu/src/finddialogform.pas
-  /home/fred/ideu/src/ideusettings.pas
-  /home/fred/ideu/src/conffpgui.pas
-  /home/fred/ideu/src/confcompiler.pas
-  /home/fred/ideu/src/confideu.pas
-  /home/fred/ideu/src/confcompiler.mfm
-  /home/fred/msegui/tools/i18n/main.pas
-  /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
-  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
-  /home/fred/mseide-msegui/apps/ide/lang_ru/actionsmodule.mfm
-  /home/fred/mseide-mseguiru/tools/i18n/main.pas
-  /home/fred/ideu/src/languages/lang_ru/i18n.trd
-  /home/fred/ideu/src/languages/lang_ru/i18n.trp
-  /home/fred/ideu/src/languages/lang_ru/actionsmodule_mfm.pas
-  /home/fred/mseide-msegui2/tools/i18n/main.pas
-  /home/fred/strumpract/src/filelistform.pas
-  /home/fred/mselang/src/main.pas
-  /home/fred/Downloads/MSE/lang_ru/i18n.trd
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1419,12 +1391,12 @@ windowlayout=615
  rcy=0
  [sourcefo.files_tab]
  firsttab=0
- index=2
+ index=0
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=objectinspectorfo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1478,7 +1450,7 @@ windowlayout=615
  [_mse_settingsfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1489,6 +1461,25 @@ windowlayout=615
  y=106
  cx=358
  cy=570
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_mainfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=targetconsolefo
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=506
+ y=204
+ cx=697
+ cy=395
  rcx=0
  rcy=0
  wsize=0
