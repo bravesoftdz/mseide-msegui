@@ -36,56 +36,15 @@ const
             '','en','de','ru','es','uz_cyr','id','zh',
             'fr');
             
- function modalresulttext(const index: modalresultty): msestring;
- function modalresulttextnoshortcut(const index: modalresultty): msestring;
- function stockcaptions(const index: stockcaptionty): msestring;
- function stocktextgenerators(const index: textgeneratorty): textgeneratorfuncty;
- function uc(const index: integer): msestring; //get user caption
-
- procedure registeruserlangconsts(name: string;
-                                      const caption: array of msestring);
- procedure registerlangconsts(const name: string;
-               const stockcaptionpo: pstockcaptionaty;
-            const modalresulttextpo: pdefaultmodalresulttextty;
-            const modalresulttextnoshortcutpo: pdefaultmodalresulttextty;
-            const textgeneratorpo: pdefaultgeneratortextty);
- function setlangconsts(const name: string): boolean;
-                 //true if ok, no change otherwise
- function getcurrentlangconstsname: string;
- procedure setuserlangconsts(const name: string);
-                 //called by setlangconsts automatically
-type
- langchangeprocty = procedure(const langname: ansistring);
-  
- procedure registerlangchangeproc(const aproc: langchangeprocty); 
- procedure unregisterlangchangeproc(const aproc: langchangeprocty); 
- 
-implementation
-uses
- sysutils,msesysintf,msearrayutils,mseformatstr;
- 
-type
- langinfoty = record
-  name: string;
-  stockcaption: pstockcaptionaty;
-  modalresulttext: pdefaultmodalresulttextty;
-  modalresulttextnoshortcut: pdefaultmodalresulttextty;
-  textgenerator: pdefaultgeneratortextty;
- end;
- userlanginfoty = record
-  name: string;
-  caption: msestringarty;
- end;
- 
-var
- langs: array of langinfoty;
- lang: langinfoty;
- langbefore: ansistring;
- userlangs: array of userlanginfoty;
- userlang: userlanginfoty;
- langchangeprocs: array of langchangeprocty;
- 
-const
+ const
+ en_extendedconst: extendedaty =
+ ('en',  // ex_lang
+  'Delete selected row?',   // ex_delfileselected
+  'Delete',                 // ex_deletefiles
+  'selected rows?'          //ex_selected
+  );            
+            
+ const
  en_modalresulttext: defaultmodalresulttextty =
  ('',          //mr_none
   '',          //mr_canclose
@@ -107,8 +66,8 @@ const
   'Skip a&ll', //mr_skipall
   'Co&ntinue'  //mr_continue
   );
-
- en_modalresulttextnoshortcut: defaultmodalresulttextty =
+  
+  en_modalresulttextnoshortcut: defaultmodalresulttextty =
  ('',         //mr_none
   '',         //mr_canclose
   '',         //mr_windowclosed
@@ -283,6 +242,56 @@ const
   'Cancel speech'        //sc_cancelspeech
 );
 
+            
+ function modalresulttext(const index: modalresultty): msestring;
+ function modalresulttextnoshortcut(const index: modalresultty): msestring;
+ function stockcaptions(const index: stockcaptionty): msestring;
+ function stocktextgenerators(const index: textgeneratorty): textgeneratorfuncty;
+ function uc(const index: integer): msestring; //get user caption
+
+ procedure registeruserlangconsts(name: string;
+                                      const caption: array of msestring);
+ procedure registerlangconsts(const name: string;
+               const stockcaptionpo: pstockcaptionaty;
+            const modalresulttextpo: pdefaultmodalresulttextty;
+            const modalresulttextnoshortcutpo: pdefaultmodalresulttextty;
+            const textgeneratorpo: pdefaultgeneratortextty);
+ function setlangconsts(const name: string): boolean;
+                 //true if ok, no change otherwise
+ function getcurrentlangconstsname: string;
+ procedure setuserlangconsts(const name: string);
+                 //called by setlangconsts automatically
+type
+ langchangeprocty = procedure(const langname: ansistring);
+  
+ procedure registerlangchangeproc(const aproc: langchangeprocty); 
+ procedure unregisterlangchangeproc(const aproc: langchangeprocty); 
+ 
+implementation
+uses
+ sysutils,msesysintf,msearrayutils,mseformatstr;
+ 
+type
+ langinfoty = record
+  name: string;
+  stockcaption: pstockcaptionaty;
+  modalresulttext: pdefaultmodalresulttextty;
+  modalresulttextnoshortcut: pdefaultmodalresulttextty;
+  textgenerator: pdefaultgeneratortextty;
+ end;
+ userlanginfoty = record
+  name: string;
+  caption: msestringarty;
+ end;
+ 
+var
+ langs: array of langinfoty;
+ lang: langinfoty;
+ langbefore: ansistring;
+ userlangs: array of userlanginfoty;
+ userlang: userlanginfoty;
+ langchangeprocs: array of langchangeprocty;
+ 
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin

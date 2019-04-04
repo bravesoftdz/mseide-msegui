@@ -33,6 +33,7 @@ const
  drcext = '_DRC.rc';
  rstext = '_rst';
  variantshift = 5;
+ 
 
 type
  resfilekindty = (rfk_module,rfk_unit,rfk_resource,rfk_resstrings);
@@ -1222,7 +1223,7 @@ showworkpan;
 grid.datacols[0].color := cl_white;
 grid.clear;
 application.processmessages;
- 
+
  try
    stream.encoding:= aencoding;
  
@@ -2173,11 +2174,15 @@ end;
 procedure tmainfo.ondefhead(const sender: TObject);
 begin
 headerfo.visible := true;
+
 end;
 
 procedure tmainfo.oncreated(const sender: TObject);
+var
+defaultresult : array of msestring;
+x : integer;
 begin
- projectfo.impexpfiledialog.controller.filterindex := 0; 
+projectfo.impexpfiledialog.controller.filterindex := 0; 
 end;
 
 
