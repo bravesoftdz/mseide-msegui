@@ -363,7 +363,9 @@ begin
           asdo := utf8StringReplace(asdo, '\', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
            
-         if trim((nodo)) = trim((asdo))   then 
+          if (trim(valuetext) <> '') and 
+          (trim((nodo)) = trim((asdo))) and  
+          (trim((valuetext)) <> trim((astrt)))then 
           begin
            hasfoundtext := true;
         
@@ -389,7 +391,8 @@ begin
          end else 
          begin
           if (trim(valuetext) <> '') and 
-          (trim((valuetext)) = trim((astro))) then
+          (trim((valuetext)) = trim((astro))) and 
+          (trim((valuetext)) <> trim((astrt))) then
           begin 
            hasfoundtext := true;
            astrtemp := astrt;
@@ -441,13 +444,12 @@ begin
          info.donottranslate := false;
          donottranslate[aindex]:= false;
          end;
-                 
-      if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
+        end; 
+      if (trim(valuetext) = '')  then
       begin    
       info.donottranslate := true;
       donottranslate[aindex]:= true;
       end;  
-     end; 
     end; 
        
           ////////////////
@@ -506,18 +508,7 @@ begin
          str2 := (valuearray[x]);
     
         acomp :=  str2;
-        // writeln(acomp);
-        
-        {          
-         if system.pos('|',acomp) > 0 then
-         begin
-         str3 := (utf8copy(acomp,system.pos('|',acomp)+1,length(acomp)-system.pos('|',acomp)+1)) ;
-         if str3 = 'T' then anont := 'T' else if str3 = 'F' then anont := 'F';
-         acomp := utf8copy(acomp,1,system.pos('|',acomp)-2) ;
-         end;
-         }   
-         
-           
+       
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
          astro := utf8StringReplace(astro,  '\"', '"', [rfReplaceAll]);  
@@ -534,7 +525,9 @@ begin
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
          
-         if trim((nodo)) = trim((asdo))   then 
+         if (trim(valuetext) <> '') and 
+          (trim(nodo) = trim(asdo)) and  
+          (trim(valuetext) <> trim(astrt))  then 
           begin
            hasfoundtext := true;
            astrtemp := astrt;
@@ -583,14 +576,14 @@ begin
          info.donottranslate := false;
          donottranslate[aindex]:= false;
          end;
-                          
-          if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
+       
+       end;
+        if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
           begin    
           info.donottranslate := true;
           donottranslate[aindex]:= true;
           end;  
-           
-       end;
+         
       end;
     end;
    end;
