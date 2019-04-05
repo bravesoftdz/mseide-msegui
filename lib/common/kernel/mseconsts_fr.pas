@@ -23,10 +23,9 @@ uses
 const 
 extendedconst: extendedaty =
  ('fr',  // ex_lang
-  'Effacer le fichier s'#0233'lectionn'#0233'?',   // ex_delfileselected
-  'Effacer les',                          // ex_deletefiles
-  ' fichiers s'#0233'lectionn'#0233's?'                       //ex_selected
-  ); 
+  'Effacer le fichier s'#0233'lectionn'#0233' ?',    // ex_del_row_selected
+  'Effacer les %s fichiers s'#0233'lectionn'#0233's ?' // ex_del_rows_selected
+  );
 
  modalresulttext: defaultmodalresulttextty =
  ('',             //mr_none
@@ -228,11 +227,10 @@ function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= extendedconst[ex_delfileselected];
+   result:= extendedconst[ex_del_row_selected];
   end
   else begin
-   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
-          ' ' + extendedconst[ex_selected];
+   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);
   end;
  end;
 end;

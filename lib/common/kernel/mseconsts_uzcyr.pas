@@ -23,10 +23,9 @@ uses
 const 
 extendedconst: extendedaty =
  ('uzcyr',  // ex_lang
-  'Delete selected row?',   // ex_delfileselected
-  'Delete',                 // ex_deletefiles
-  'selected rows?'          //ex_selected
-  ); 
+  'Delete selected row?',    // ex_del_row_selected
+  'Delete %s selected rows?' // ex_del_rows_selected
+  );
 
  modalresulttext: defaultmodalresulttextty = (
   '',                                             //mr_none => Nichego
@@ -227,16 +226,14 @@ extendedconst: extendedaty =
   'Cancel speech'        //sc_cancelspeech
 );
 
-
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= extendedconst[ex_delfileselected];
+   result:= extendedconst[ex_del_row_selected];
   end
   else begin
-   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
-          ' ' + extendedconst[ex_selected];
+   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);
   end;
  end;
 end;

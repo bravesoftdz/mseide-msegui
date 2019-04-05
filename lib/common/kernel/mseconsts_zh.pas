@@ -23,10 +23,9 @@ uses
 const 
 extendedconst: extendedaty =
  ('zh',  // ex_lang
-  #30830#23450#21024#38500#27492#26465#35760#24405#21527#65311,   // ex_delfileselected
-  #30830#23450#21024#38500#25152#36873#25321#30340,               // ex_deletefiles
-  #34892#35760#24405#21527#65311                                  //ex_selected
-  ); 
+   #30830#23450#21024#38500#27492#26465#35760#24405#21527#65311,    // ex_del_row_selected
+   #30830#23450#21024#38500#25152#36873#25321#30340' %s '#34892#35760#24405#21527#65311 // ex_del_rows_selected
+  );
 
  modalresulttext: defaultmodalresulttextty =
  ('',                        //mr_none
@@ -231,11 +230,10 @@ function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= extendedconst[ex_delfileselected];
+   result:= extendedconst[ex_del_row_selected];
   end
   else begin
-   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
-          ' ' + extendedconst[ex_selected];
+   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);
   end;
  end;
 end;

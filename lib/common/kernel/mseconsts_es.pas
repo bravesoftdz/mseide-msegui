@@ -20,11 +20,10 @@ uses
  
 const 
 extendedconst: extendedaty =
- ('es',                                   // ex_lang
-  #0191'Borrar la fila seleccionada?',   // ex_delfileselected
-  #0191'Borrar las',                     // ex_deletefiles
-  'filas seleccionadas?'                  //ex_selected
-  ); 
+ ('es',  // ex_lang
+  #0191'Borrar la fila seleccionada?',    // ex_del_row_selected
+  #0191'Borrar %s filas seleccionadas?' // ex_del_rows_selected
+  );
 
  modalresulttext: defaultmodalresulttextty =
  ('',            //mr_none
@@ -226,11 +225,10 @@ function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= extendedconst[ex_delfileselected];
+   result:= extendedconst[ex_del_row_selected];
   end
   else begin
-   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
-          ' ' + extendedconst[ex_selected];
+   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);
   end;
  end;
 end;

@@ -23,27 +23,26 @@ type
  defaultgeneratortextty = array[textgeneratorty] of textgeneratorfuncty;
  pdefaultgeneratortextty = ^defaultgeneratortextty;
  
- extendedty = (ex_lang,ex_delfileselected,ex_deletefiles,ex_selected);
+ extendedty = (ex_lang,ex_del_row_selected,ex_del_rows_selected);
  
  extendedaty = array[extendedty] of msestring;
  pextendeadty = ^extendedaty;
  
  langty = (la_none,la_en,la_de,la_ru,la_es,la_uzcyr,la_id,la_zh,
            la_fr);
- 
+
 const
  langnames: array[langty] of string = (
             '','en','de','ru','es','uz_cyr','id','zh',
             'fr');
-            
- const
- en_extendedconst: extendedaty =
+
+const 
+en_extendedconst: extendedaty =
  ('en',  // ex_lang
-  'Delete selected row?',   // ex_delfileselected
-  'Delete',                 // ex_deletefiles
-  'selected rows?'          //ex_selected
-  );            
-            
+  'Delete selected row?',    // ex_del_row_selected
+  'Delete %s selected rows?' // ex_del_rows_selected
+  );           
+
  const
  en_modalresulttext: defaultmodalresulttextty =
  ('',          //mr_none
@@ -296,10 +295,10 @@ function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= 'Delete selected row?'
+   result:= en_extendedconst[ex_del_row_selected];
   end
   else begin
-   result:= 'Delete '+inttostrmse(vinteger)+' selected rows?';
+   result := StringReplace(en_extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);
   end;
  end;
 end;

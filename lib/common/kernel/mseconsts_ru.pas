@@ -21,10 +21,9 @@ uses
 const 
 extendedconst: extendedaty =
  ('ru',  // ex_lang
-  #1059#1076#1072#1083#1080#1090#1100' '#1074#1099#1073#1088#1072#1085#1085#1091#1102' '#1089#1090#1088#1086#1082#1091'?',   // ex_delfileselected
-  #1059#1076#1072#1083#1080#1090#1100,                 // ex_deletefiles
-  #1074#1099#1073#1088#1072#1085#1085#1099#1077' '#1089#1090#1088#1086#1082#1080'?'          //ex_selected
-  ); 
+  #1059#1076#1072#1083#1080#1090#1100' '#1074#1099#1073#1088#1072#1085#1085#1091#1102' '#1089#1090#1088#1086#1082#1091'?',    // ex_del_row_selected
+  #1059#1076#1072#1083#1080#1090#1100' %s '#1074#1099#1073#1088#1072#1085#1085#1099#1077' '#1089#1090#1088#1086#1082#1080'?' // ex_del_rows_selected
+  );
  
 const 
  modalresulttext: defaultmodalresulttextty = (
@@ -265,16 +264,14 @@ const
   #1054#1090#1084#1077#1085#1080#1090#1100' '#1088#1077#1095#1100        //sc_cancelspeech
 );
 
-
 function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
-   result:= extendedconst[ex_delfileselected];
+   result:= extendedconst[ex_del_row_selected];
   end
   else begin
-   result:= extendedconst[ex_deletefiles] + ' ' + inttostrmse(vinteger)+
-          ' ' + extendedconst[ex_selected];
+   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);
   end;
  end;
 end;
