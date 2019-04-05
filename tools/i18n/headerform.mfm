@@ -217,14 +217,14 @@ object headerfo: theaderfo
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
-    frame.sbvert.pagesize = 0.1306990881459
+    frame.sbvert.pagesize = 0.13650793650794
     taborder = 7
     visible = False
     bounds_x = 96
     bounds_y = 72
     bounds_cx = 156
     bounds_cy = 92
-    value = ');'#10#10'function delete_n_selected_rows(const params: array of const): msestring;'#10'begin'#10' with params[0] do begin'#10'  if vinteger = 1 then begin'#10'   result:= extendedconst[ex_del_row_selected];'#10'  end'#10'  else begin'#10'   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);'#10'  end;'#10' end;'#10'end;'#10#10'const'#10' textgenerator: defaultgeneratortextty = ('#10'              {$ifdef FPC}@{$endif}delete_n_selected_rows'#10'                                     );'#10'initialization'#10' registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, '#10'        @modalresulttextnoshortcut,@textgenerator);'#10'                               '#10'end.'
+    value = 'function delete_n_selected_rows(const params: array of const): msestring;'#10'begin'#10' with params[0] do begin'#10'  if vinteger = 1 then begin'#10'   result:= extendedconst[ex_del_row_selected];'#10'  end'#10'  else begin'#10'   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);'#10'  end;'#10' end;'#10'end;'#10#10'const'#10' textgenerator: defaultgeneratortextty = ('#10'              {$ifdef FPC}@{$endif}delete_n_selected_rows'#10'                                     );'#10'initialization'#10' registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, '#10'        @modalresulttextnoshortcut,@textgenerator);'#10'                               '#10'end.'
     reffontheight = 14
   end
 end

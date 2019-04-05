@@ -856,15 +856,15 @@ findhistory=20
  modalresultty
 findoptions=1
 editpos=9
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
  0,0
- 0,244
- 0,189
+ 0,0
+ 0,39
  0,-1073741823
  0,-1073741823
+ 11,170
  0,-1073741823
+ 0,-1073741823
+ 0,24
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -887,13 +887,13 @@ sourcefiles=9
 relpaths=9
  main.pas
  msei18n.pas
- lib/common/kernel/mseconsts.pas
- ../lib/common/kernel/mseglob.pas
- ../lib/common/kernel/mseconsts_en.pas
+ ../lib/common/kernel/mseconsts.pas
+ lib/common/kernel/mseglob.pas
+ lib/common/kernel/mseconsts_en.pas
  headerform.pas
  project.pas
  lib/common/kernel/msestream.pas
- languages/testing/msei18n/msei18n_context_fr.po
+ ../languages/testing/msei18n/msei18n_context_fr.po
 ismoduletexts=9
  0
  0
@@ -1380,7 +1380,7 @@ windowlayout=623
  mdistate=0
  nx=0
  ny=0
- ncx=1356
+ ncx=1350
  ncy=60
  x=0
  y=0
@@ -1397,11 +1397,11 @@ windowlayout=623
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/headerform.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/headerform.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseglob.pas
   /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context_fr.po
   /home/fred/mseide-msegui/tools/i18n/test/for_use_mseide-msegui_mseconsts_fr.po
   /home/fred/mseide-msegui/tools/i18n/project.pas
-  /home/fred/mseide-msegui/tools/i18n/headerform.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts_en.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts_es.pas
   /home/fred/mseide-msegui/lib/common/kernel/msebucketlist.pas
