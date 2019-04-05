@@ -14,8 +14,6 @@ type
    memopotheader: tmemodialogedit;
    tgroupbox1: tgroupbox;
    tbutton1: tbutton;
-   newlang: tstringedit;
-   functiondeleterow: tmemodialogedit;
    mseconstheader: tmemodialogedit;
    pofilename: tfilenameedit;
    initunit: tmemoedit;
@@ -42,7 +40,7 @@ defaultresult, defmodalresulttext, defmodalresulttextnosc,
 x : integer;
 file1: ttextdatastream;
 //file2: ttextdatastream;
-str1, strinit : msestring;
+str1, strinit, strlang : msestring;
  str2, str3, str4, strtemp : utf8String;
  
 int1 : integer;
@@ -151,6 +149,8 @@ file1.encoding:= ce_utf8;
     end;
     
     if 2 = 2 then begin // create mesconst_xx.pas
+    
+    strlang := 'en';
 
 setlength(defmodalresulttext,length(en_modalresulttext));
 defmodalresulttext := en_modalresulttext;
@@ -164,14 +164,14 @@ defaultstockcaption := en_stockcaption;
   setlength(defaultextendedconst,length(en_extendedconst));
 defaultextendedconst := en_extendedconst;
 
- file1:= ttextdatastream.create('mseconsts_' + newlang.value + '.pas',fm_create);
+ file1:= ttextdatastream.create('mseconsts_' + strlang + '.pas',fm_create);
 
 file1.encoding:= ce_utf8;
 
    file1.writeln(mseconstheader.value); 
    file1.writeln();
    
-   file1.writeln('unit mseconsts_' + newlang.value + #059);
+   file1.writeln('unit mseconsts_' + strlang + #059);
    file1.writeln();
    file1.writeln(initunit.value); 
    
@@ -208,11 +208,7 @@ file1.encoding:= ce_utf8;
     
      file1.writeln();
     
-    file1.writeln(functiondeleterow.value); 
-    
-     file1.writeln();
- 
-    file1.writeln(endmemo.value); 
+     file1.writeln(endmemo.value); 
  
    file1.free;
 end;
