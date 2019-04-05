@@ -341,6 +341,7 @@ begin
        
          if copy(str2,1,1) = '"' then 
          begin
+         str2 :=  (utf8copy(str2,1,length(str2)-2)) ;
          astro := (utf8copy(str2,2,system.pos('",',str2)-1)) ;
          astrt := (utf8copy(str2,system.pos('",',str2)+2,length(str2)-system.pos('",',str2)-2)) ; 
          hasvirg := true;
@@ -355,14 +356,17 @@ begin
           nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
                            
           asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, '\', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
            
          if trim((nodo)) = trim((asdo))   then 
           begin
            hasfoundtext := true;
+        
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
@@ -407,17 +411,24 @@ begin
         
         end; 
   
-     if (hasfoundtext = true) or (hasfound = true) then
+     if ((hasfoundtext = true) or (hasfound = true)) then
        begin
          astrt := astrtemp;
          anont := anonttemp;
          acom := acomtmp;
-         astrt := trim(astrt);
+         astrt := utf8trim(astrt);
+         astrt := utf8StringReplace(astrt, '""', '|', [rfReplaceAll]);
+         astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]);
+         astrt := utf8StringReplace(astrt, '|', '"', [rfReplaceAll]);
          
-         astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
-                
-         if (utf8copy(valuetext,1,2) = '" ') and (trim(astrt) <> '') then astrt := '" ' + astrt;
-         if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') and (trim(astrt) <> '') then astrt := astrt + ' "';
+         if (utf8copy(valuetext,1,2) <> '" ') and  (utf8copy(astrt,1,2) = '" ') 
+         then astrt :=  utf8copy(astrt,3,length(astrt)-2);
+   
+         astrt := utf8StringReplace(astrt, ' "', '', [rfReplaceAll]);
+           if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') 
+         then astrt := astrt + ' "';          
+    
+          astrt := utf8trim(astrt);
          
          info.comment := acom;  
          comment[aindex]:= acom; 
@@ -467,15 +478,13 @@ begin
   
      if (hasfoundtext = true) then
        begin
-         astrt := trim(astrt);
             
-         astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]); 
-         
-  if (utf8copy(valuetext,1,2) = '" ') and (trim(astrt) <> '')
-   then astrt := '" ' + astrt;
-  if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') and (trim(astrt) <> '')
-   then astrt := astrt + ' "';
-                        
+         astrt := utf8trim(astrt);
+         astrt := utf8StringReplace(astrt, '""', '"', [rfReplaceAll]);
+        // astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]);
+       //  astrt := utf8StringReplace(astrt, '|', '"', [rfReplaceAll]);
+         astrt := utf8trim(astrt); 
+                            
       if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
       begin    
       info.donottranslate := true;
@@ -510,7 +519,6 @@ begin
          
            
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
-        
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
          astro := utf8StringReplace(astro,  '\"', '"', [rfReplaceAll]);  
        
@@ -550,19 +558,23 @@ begin
        begin
          astrt := astrtemp;
          anont := anonttemp;
-         astrt := trim(astrt);
          {
           writeln('------------------');
           writeln(acomp);
           writeln(astrt);
           writeln(anont);
           }
-          
-   if (utf8copy(valuetext,1,2) = '" ') and (trim(astrt) <> '') 
-   then astrt := '" ' + astrt;
-   if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') and (trim(astrt) <> '')
-   then astrt := astrt + ' "';         
-   
+         astrt := utf8trim(astrt);
+         astrt := utf8StringReplace(astrt, '""', '"', [rfReplaceAll]);
+         
+          if (utf8copy(valuetext,1,2) <> '" ') and  (utf8copy(astrt,1,2) = '" ') 
+         then astrt :=  utf8copy(astrt,3,length(astrt)-2);
+         
+         
+         astrt := utf8StringReplace(astrt, ' "', '', [rfReplaceAll]);
+           if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') 
+         then astrt := astrt + ' "';         
+ 
          if anont = 'T' then begin
          info.donottranslate := true;
          donottranslate[aindex]:= true;
@@ -1284,8 +1296,7 @@ application.processmessages;
      end;
      
     // 
-   
-   if importtype = 1 then begin   // po files
+  if importtype = 1 then begin   // po files
    if trim(str1) <> '' then begin
    if (utf8copy(str1,1,7) = 'msgctxt') then 
      begin
@@ -1303,7 +1314,6 @@ application.processmessages;
           // writeln(str2);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
-         str2 := utf8StringReplace(str2, '"', '', [rfReplaceAll]);
          valuearray[length(valuearray)-1] := str2;
          
          str2 := utf8copy(str1,8,length(str1)-8) ;

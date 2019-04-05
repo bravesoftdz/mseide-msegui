@@ -832,8 +832,13 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=writerec
+finddtext=doread
 findhistory=20
+ doread
+ '"'
+ utf8StringReplace(astrt, '"'
+ dore
+ update
  writerec
  dowr
  writed
@@ -847,24 +852,21 @@ findhistory=20
  :10
  :9
  #: mseconsts.pas
- doread
  fm_
  doimport
- readmodule
- readunit
- stream
- modalresultty
 findoptions=1
-editpos=9
- 0,0
- 0,0
- 0,39
+editpos=11
+ 0,437
  0,-1073741823
  0,-1073741823
- 11,170
  0,-1073741823
  0,-1073741823
- 0,24
+ 0,170
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,564
+ 0,5
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -874,7 +876,9 @@ bookmarks5=0
 bookmarks6=0
 bookmarks7=0
 bookmarks8=0
-sourcefiles=9
+bookmarks9=0
+bookmarks10=0
+sourcefiles=11
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/msei18n.pas
  /home/fred/mseide-msegui/lib/common/kernel/mseconsts.pas
@@ -884,17 +888,21 @@ sourcefiles=9
  ${PROJECTDIR}/project.pas
  /home/fred/mseide-msegui/lib/common/kernel/msestream.pas
  /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context_fr.po
-relpaths=9
+ /home/fred/mseide-mseguitools/tools/i18n/main.pas
+ /home/fred/mseide-mseguitools/tools/i18n/main.mfm
+relpaths=11
  main.pas
  msei18n.pas
- ../lib/common/kernel/mseconsts.pas
+ lib/common/kernel/mseconsts.pas
  lib/common/kernel/mseglob.pas
  lib/common/kernel/mseconsts_en.pas
  headerform.pas
  project.pas
  lib/common/kernel/msestream.pas
- ../languages/testing/msei18n/msei18n_context_fr.po
-ismoduletexts=9
+ languages/testing/msei18n/msei18n_context_fr.po
+ ../../mseide-mseguitools/tools/i18n/main.pas
+ ../../mseide-mseguitools/tools/i18n/main.mfm
+ismoduletexts=11
  0
  0
  0
@@ -904,6 +912,8 @@ ismoduletexts=9
  0
  0
  0
+ 0
+ -1
 modules=4
  /home/fred/mseide-msegui/tools/i18n/project.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msesettings.mfm
@@ -925,10 +935,22 @@ nomenumodules=4
  0
  0
 [sourcefo.files_tab]
+order=11
+ 0
+ 9
+ 10
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
 firsttab=0
-index=5
+index=0
 [layout]
-windowlayout=623
+windowlayout=665
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1154,7 +1176,7 @@ windowlayout=623
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1169,12 +1191,12 @@ windowlayout=623
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=560
- width0=248
+ propcolwidthref=575
+ width0=255
  sortdescend0=0
- width1=306
+ width1=314
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1395,13 +1417,17 @@ windowlayout=623
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/headerform.pas
- history=20
-  /home/fred/mseide-msegui/tools/i18n/headerform.pas
-  /home/fred/mseide-msegui/lib/common/kernel/mseglob.pas
+ value=/home/fred/mseide-mseguitools/tools/i18n/main.mfm
+ history=50
+  /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts.pas
+  /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts_de.pas
+  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_de.pas
+  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_fr.pas
+  /home/fred/mseide-msegui/languages/mseconsts/mseconsts_fr.po
   /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context_fr.po
   /home/fred/mseide-msegui/tools/i18n/test/for_use_mseide-msegui_mseconsts_fr.po
   /home/fred/mseide-msegui/tools/i18n/project.pas
+  /home/fred/mseide-msegui/tools/i18n/headerform.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts_en.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts_es.pas
   /home/fred/mseide-msegui/lib/common/kernel/msebucketlist.pas
@@ -1413,10 +1439,36 @@ windowlayout=623
   /home/fred/mseide-msegui/tools/i18n/mseconsts.mfm
   /home/fred/sak/sak/sak_mse/src/sak_mse.pas
   /home/fred/mseide-msegui/apps/ide/mseide.pas
-  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_fr.pas
   /home/fred/mseide-msegui/tools/i18n/msesettings.pas
   /home/fred/mseide-msegui/tools/i18n/messagesform.pas
   /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
+  /home/fred/mseide-mseguioldworksave/tools/i18n/main.pas
+  /home/fred/mseide-mseguigooglelast/tools/i18n/main.pas
+  /home/fred/mseide-mseguigooogle/tools/i18n/main.pas
+  /home/fred/mseide-mseguigoogle2/tools/i18n/main.pas
+  /home/fred/mseide-mseguiast/tools/i18n/main.pas
+  /home/fred/mseide-mseguipoex/tools/i18n/main.pas
+  /home/fred/mseide-mseguicontext3/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/main2.pas
+  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
+  /home/fred/mseide-mseguipocontext/tools/i18n/main.pas
+  /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
+  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
+  /home/fred/mseide-mseguiok/tools/i18n/main.pas
+  /home/fred/mseide-mseguiimport/tools/i18n/main.pas
+  /home/fred/ideu/src/msefiledialogres.mfm
+  /home/fred/ideu/src/msefiledialog.mfm
+  /home/fred/ideu/src/dialogfiles.mfm
+  /home/fred/ideu/src/finddialogform.pas
+  /home/fred/ideu/src/ideusettings.pas
+  /home/fred/ideu/src/conffpgui.pas
+  /home/fred/ideu/src/confcompiler.pas
+  /home/fred/ideu/src/confideu.pas
+  /home/fred/ideu/src/confcompiler.mfm
+  /home/fred/msegui/tools/i18n/main.pas
+  /home/fred/mseide-mseguitimer2/tools/i18n/main.pas
+  /home/fred/mseide-msegui/apps/ide/lang_ru/i18n.trp
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1438,8 +1490,20 @@ windowlayout=623
  rcx=0
  rcy=0
  [sourcefo.files_tab]
+ order=11
+  0
+  9
+  10
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
  firsttab=0
- index=5
+ index=2
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1517,7 +1581,7 @@ windowlayout=623
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=_mse_headerfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1536,7 +1600,7 @@ windowlayout=623
  [_mse_headerfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
