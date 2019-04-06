@@ -41,7 +41,8 @@ var
 begin
 {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- If loadlangunit('i18n_'+MSEFallbackLang,true) then
+ // MSEFallbackLang := 'ru';
+  If loadlangunit('i18n_'+MSEFallbackLang,true) then
    setlangconsts(MSEFallbackLang);
 {$endif}                                               
  application.createForm(tmainfo,mainfo);

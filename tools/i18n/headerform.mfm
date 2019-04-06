@@ -3,14 +3,14 @@ object headerfo: theaderfo
   bounds_x = 493
   bounds_y = 200
   bounds_cx = 379
-  bounds_cy = 284
+  bounds_cy = 249
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
     379
-    284
+    249
   )
   options = [fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
   statfile = settingsfo.tstatfile1
@@ -83,18 +83,8 @@ object headerfo: theaderfo
     bounds_x = 8
     bounds_y = 89
     bounds_cx = 364
-    bounds_cy = 185
+    bounds_cy = 153
     anchors = [an_left, an_top, an_right]
-    object tbutton1: tbutton
-      bounds_x = 80
-      bounds_y = 111
-      bounds_cx = 194
-      bounds_cy = 28
-      anchors = [an_top, an_right]
-      state = [as_localcaption, as_localonexecute]
-      caption = 'Create default consts file'
-      onexecute = createnewlang
-    end
     object mseconstheader: tmemodialogedit
       frame.caption = 'mseconst header'
       frame.localprops = []
@@ -111,7 +101,6 @@ object headerfo: theaderfo
         0
         0
       )
-      taborder = 1
       bounds_x = 8
       bounds_y = 23
       bounds_cx = 346
@@ -137,24 +126,31 @@ object headerfo: theaderfo
         0
         0
       )
-      taborder = 2
+      taborder = 1
       bounds_x = 8
       bounds_y = 62
       bounds_cx = 342
       bounds_cy = 37
       anchors = [an_left, an_top, an_right]
+      controller.filterlist.data = (
+        (
+          'PO translated files'
+          '*.po'
+        )
+      )
       reffontheight = 14
     end
     object tbutton2: tbutton
-      taborder = 3
+      Tag = 1
+      taborder = 2
       bounds_x = 80
-      bounds_y = 143
+      bounds_y = 111
       bounds_cx = 194
       bounds_cy = 28
       anchors = [an_top, an_right]
-      state = [as_disabled, as_localdisabled, as_localcaption, as_localonexecute]
+      state = [as_localdisabled, as_localcaption, as_localonexecute]
       caption = 'Create new consts from po'
-      onexecute = createnewlang
+      onexecute = createnew
     end
   end
   object initunit: tmemoedit

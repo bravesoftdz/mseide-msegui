@@ -1286,7 +1286,7 @@ application.processmessages;
      ///////////////
      
      if  importtype = 2 then begin  // from google translate format
-     if (copy(str1,1,1) = '"') and (isstring = true) then
+          if (copy(str1,1,1) = '"') and (isstring = true) then
        begin
         setlength(valuearray,length(valuearray)+1);  
         valuearray[length(valuearray)-1] := str2;
@@ -1306,7 +1306,9 @@ application.processmessages;
     ////////////
      
   if importtype = 1 then begin   // po files
-   if trim(str1) <> '' then begin
+  
+   if (trim(str1) <> '') and (utf8copy(str1,1,1) <> '#') then begin
+  
    if (utf8copy(str1,1,7) = 'msgctxt') then 
      begin
         ispocontext := true;
