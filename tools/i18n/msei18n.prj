@@ -832,12 +832,12 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=colorstate
+finddtext=doread
 findhistory=20
+ doread
  colorstate
  color
  yellow
- doread
  '"'
  utf8StringReplace(astrt, '"'
  dore
@@ -856,7 +856,7 @@ findhistory=20
  :9
 findoptions=1
 editpos=11
- 38,575
+ 25,1453
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -864,7 +864,7 @@ editpos=11
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,0
+ 0,-1073741823
  0,-1073741823
  0,-1073741823
 bookmarks0=0
@@ -899,9 +899,9 @@ relpaths=11
  headerform.pas
  project.pas
  lib/common/kernel/msestream.pas
- ../languages/testing/msei18n/msei18n_context_fr.po
- ../mseide-mseguitools/tools/i18n/main.pas
- ../mseide-mseguitools/tools/i18n/main.mfm
+ languages/testing/msei18n/msei18n_context_fr.po
+ mseide-mseguitools/tools/i18n/main.pas
+ mseide-mseguitools/tools/i18n/main.mfm
 ismoduletexts=11
  0
  0
@@ -937,6 +937,8 @@ nomenumodules=4
 [sourcefo.files_tab]
 order=11
  0
+ 5
+ 6
  7
  8
  9
@@ -945,8 +947,6 @@ order=11
  2
  3
  4
- 5
- 6
 firsttab=0
 index=0
 [layout]
@@ -975,22 +975,22 @@ windowlayout=635
  visible=1
  [targetconsolefo]
  splitdir=0
- useroptions=268451945
+ useroptions=268517481
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=311
- y=320
- cx=774
- cy=370
+ x=0
+ y=29
+ cx=1366
+ cy=706
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1058,7 +1058,7 @@ windowlayout=635
  [findinfilefo]
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1176,7 +1176,7 @@ windowlayout=635
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=confideufo
  parent=
  mdistate=0
  nx=0
@@ -1189,14 +1189,14 @@ windowlayout=635
  cy=484
  rcx=0
  rcy=0
- wsize=0
+ wsize=5
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=575
- width0=255
+ propcolwidthref=560
+ width0=248
  sortdescend0=0
- width1=314
+ width1=306
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1419,6 +1419,7 @@ windowlayout=635
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context_fr.po
   /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts.pas
   /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts_de.pas
@@ -1438,7 +1439,6 @@ windowlayout=635
   /home/fred/mseide-msegui/lib/common/i18n/mseucs2toru.pas
   /home/fred/mseide-msegui/tools/i18n/mseconsts.mfm
   /home/fred/sak/sak/sak_mse/src/sak_mse.pas
-  /home/fred/mseide-msegui/apps/ide/mseide.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1462,6 +1462,8 @@ windowlayout=635
  [sourcefo.files_tab]
  order=11
   0
+  5
+  6
   7
   8
   9
@@ -1470,8 +1472,6 @@ windowlayout=635
   2
   3
   4
-  5
-  6
  firsttab=0
  index=0
  [cpuc86_64fo]
@@ -1551,7 +1551,7 @@ windowlayout=635
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
@@ -1570,7 +1570,7 @@ windowlayout=635
  [_mse_headerfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=findinfilefo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0

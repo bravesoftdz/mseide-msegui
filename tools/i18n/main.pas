@@ -365,7 +365,8 @@ begin
            
           if (trim(valuetext) <> '') and 
           (trim((nodo)) = trim((asdo))) and  
-          (trim((valuetext)) <> trim((astrt)))then 
+          (system.pos(copy(rootstring(','), 1 ,length(rootstring(','))-12),acomp) > 1) and
+          (trim((valuetext)) <> trim((astrt))) then 
           begin
            hasfoundtext := true;
         
@@ -383,7 +384,7 @@ begin
            hasfound := true; 
            // writeln('$$$$$$$$$$$$$$$ name found equal ++++++++++++++' );
            // writeln(rootstring(','));
-           // writeln(acomp);
+            // writeln(acomp);
              //exit;
             end; 
            end; 
@@ -392,12 +393,14 @@ begin
          begin
           if (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) and 
+          (system.pos(copy(rootstring(','), 1 ,length(rootstring(','))-12),acomp) > 1)and
           (trim((valuetext)) <> trim((astrt))) then
           begin 
            hasfoundtext := true;
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
+           
            
            if system.pos(rootstring(','),acomp) > 0 then
            begin
@@ -494,8 +497,7 @@ begin
       end;  
      end; 
     end; 
-       
-       
+   
         ////////////////
   
      if importtype = 1 then begin 
@@ -507,7 +509,7 @@ begin
          
          str2 := (valuearray[x]);
     
-        acomp :=  str2;
+         acomp :=  utf8copy(str2,1, system.pos(';',str2)-1) ;
        
          str2 := (utf8copy(str2,system.pos(';',str2)+1,length(str2)-system.pos(';',str2)+1)) ;
          astro := (utf8copy(str2,1,system.pos(';',str2)-1)) ;  
@@ -525,25 +527,29 @@ begin
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
          
-         if (trim(valuetext) <> '') and 
-          (trim(nodo) = trim(asdo)) and  
-          (trim(valuetext) <> trim(astrt))  then 
-          begin
-           hasfoundtext := true;
-           astrtemp := astrt;
-           anonttemp := anont;
-            
-           if system.pos(acomp,rootstring(',')) > 0 then 
-           begin
-           astrtemp := astrt;
-           anonttemp := anont;
-           hasfound := true; 
-       //    writeln('------has found equal------------');
-       //   writeln(acomp);
-       //   writeln(astrt);
-           // exit;
-          end; 
-           end;  
+          int1 := length(rootstring(',')) -12;
+           
+             if (trim(valuetext) <> '') and (trim(nodo) = trim(asdo)) and  
+               (trim(valuetext) <> trim(astrt))  then 
+             begin
+              if  (copy(acomp, 1 ,int1) = copy(rootstring(','), 1 ,int1)) then
+              begin
+               hasfoundtext := true;
+               astrtemp := astrt;
+               anonttemp := anont;
+                      
+               if system.pos(acomp,rootstring(',')) > 0 then 
+               begin
+               astrtemp := astrt;
+               anonttemp := anont;
+               hasfound := true; 
+               writeln('------has found equal------------');
+               //  writeln(acomp);
+               // writeln(astrt);
+                // exit;
+              end; 
+             end; 
+             end; 
         inc(x); 
       end;    
   
@@ -578,7 +584,7 @@ begin
          end;
        
        end;
-        if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
+        if (trim(valuetext) = '') then
           begin    
           info.donottranslate := true;
           donottranslate[aindex]:= true;
@@ -1222,6 +1228,7 @@ var
  isstring : boolean = false;
  isid : boolean = false;
  iscontext : boolean = false;
+ ispocontext : boolean = false;
 begin
 isloaded := false;
 showworkpan;
@@ -1288,11 +1295,21 @@ application.processmessages;
      
      end;
      
-    // 
+    ////////////
+     
   if importtype = 1 then begin   // po files
    if trim(str1) <> '' then begin
    if (utf8copy(str1,1,7) = 'msgctxt') then 
      begin
+        ispocontext := true;
+       
+        setlength(valuearray,length(valuearray)+1);  
+         str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3 ; 
+          // writeln(str2);
+         str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
+         str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
+         valuearray[length(valuearray)-1] := str2;
+        str3 := '';
         str4 := '';
         str4 := (utf8copy(str1,10,length(str1)-10)) ;
         iscontext := true;
@@ -1302,16 +1319,17 @@ application.processmessages;
        else   
        if (copy(str1,1,5) = 'msgid') then
         begin
+        if ispocontext = false then begin
          setlength(valuearray,length(valuearray)+1);  
          str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3 ; 
           // writeln(str2);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          valuearray[length(valuearray)-1] := str2;
-         
-         str2 := utf8copy(str1,8,length(str1)-8) ;
-         str3 := '';
+          str3 := '';
          str4 := '';
+         end;
+         str2 := utf8copy(str1,8,length(str1)-8) ;
          iscontext := false;
          isid := true;
          isstring := false;
@@ -1325,7 +1343,7 @@ application.processmessages;
           isstring := true;
          end 
          else 
-       if iscontext then
+      if iscontext then
        begin
         strtemp := utf8copy(str1,2,length(str1)-2);
         if  (system.pos('\n',strtemp) > 0) then begin
@@ -1459,9 +1477,9 @@ setlength(filterlistb,4);
     asarraya:= filterlista;
     asarrayb:= filterlistb;
     end;
- 
-   if checksave and 
-       projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
+
+   if checksave then if 
+     if  projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
     stream:= ttextdatastream.create(str1,fm_read);
     doimport(stream,charencodingty(projectfo.impexpencoding.value));
     // updatedata;
