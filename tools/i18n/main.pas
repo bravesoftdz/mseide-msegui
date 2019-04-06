@@ -1487,7 +1487,7 @@ setlength(filterlistb,4);
     end;
 
    if checksave then if 
-     if  projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
+      projectfo.impexpfiledialog.controller.execute(str1,fdk_open) then begin
     stream:= ttextdatastream.create(str1,fm_read);
     doimport(stream,charencodingty(projectfo.impexpencoding.value));
     // updatedata;

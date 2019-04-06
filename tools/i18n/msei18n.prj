@@ -856,7 +856,7 @@ findhistory=20
  :10
 findoptions=1
 editpos=11
- 1,1488
+ 0,1489
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -937,16 +937,16 @@ nomenumodules=4
 [sourcefo.files_tab]
 order=11
  0
+ 3
+ 4
+ 5
+ 6
  7
  8
  9
  10
  1
  2
- 3
- 4
- 5
- 6
 firsttab=0
 index=0
 [layout]
@@ -1462,16 +1462,16 @@ windowlayout=635
  [sourcefo.files_tab]
  order=11
   0
+  3
+  4
+  5
+  6
   7
   8
   9
   10
   1
   2
-  3
-  4
-  5
-  6
  firsttab=0
  index=0
  [cpuc86_64fo]
