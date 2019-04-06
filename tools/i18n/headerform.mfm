@@ -3,14 +3,14 @@ object headerfo: theaderfo
   bounds_x = 493
   bounds_y = 200
   bounds_cx = 379
-  bounds_cy = 249
+  bounds_cy = 198
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
     379
-    249
+    198
   )
   options = [fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
   statfile = settingsfo.tstatfile1
@@ -68,100 +68,15 @@ object headerfo: theaderfo
     value = '# SOME DESCRIPTIVE TITLE.'#10'# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER'#10'# This file is distributed under the same license as the PACKAGE package.'#10'# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.'#10'#'#10'#, fuzzy'#10'msgid ""'#10'msgstr ""'#10'"Project-Id-Version: \n"'#10'"Report-Msgid-Bugs-To: \n"'#10'"POT-Creation-Date: 2019-03-04 23:54+0300\n"'#10'"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"'#10'"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"'#10'"Language-Team: LANGUAGE <LL@li.org>\n"'#10'"Language: \n"'#10'"MIME-Version: 1.0\n"'#10'"Content-Type: text/plain; charset=UTF-8\n"'#10'"Content-Transfer-Encoding: 8bit\n"'
     reffontheight = 14
   end
-  object tgroupbox1: tgroupbox
-    color = -1610612731
-    frame.caption = 'mseconsts_xx conversion'
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.outerframe = (
-      0
-      7
-      0
-      0
-    )
-    taborder = 2
-    bounds_x = 8
-    bounds_y = 89
-    bounds_cx = 364
-    bounds_cy = 153
-    anchors = [an_left, an_top, an_right]
-    object mseconstheader: tmemodialogedit
-      frame.caption = 'mseconst header'
-      frame.localprops = []
-      frame.localprops1 = []
-      frame.buttons.count = 1
-      frame.buttons.items = <      
-        item
-          imagenr = 17
-        end>
-      frame.button.imagenr = 17
-      frame.outerframe = (
-        0
-        17
-        0
-        0
-      )
-      bounds_x = 8
-      bounds_y = 23
-      bounds_cx = 346
-      bounds_cy = 34
-      anchors = [an_left, an_top, an_right]
-      statfile = settingsfo.tstatfile1
-      value = '{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber'#10#10'    See the file COPYING.MSE, included in this distribution,'#10'    for details about the copyright.'#10#10'    This program is distributed in the hope that it will be useful,'#10'    but WITHOUT ANY WARRANTY; without even the implied warranty of'#10'    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.'#10'} '
-      reffontheight = 14
-    end
-    object pofilename: tfilenameedit
-      frame.caption = 'PO import file'
-      frame.localprops = []
-      frame.localprops1 = []
-      frame.buttons.count = 1
-      frame.buttons.items = <      
-        item
-          imagenr = 17
-        end>
-      frame.button.imagenr = 17
-      frame.outerframe = (
-        0
-        17
-        0
-        0
-      )
-      taborder = 1
-      bounds_x = 8
-      bounds_y = 62
-      bounds_cx = 342
-      bounds_cy = 37
-      anchors = [an_left, an_top, an_right]
-      controller.filterlist.data = (
-        (
-          'PO translated files'
-          '*.po'
-        )
-      )
-      reffontheight = 14
-    end
-    object tbutton2: tbutton
-      Tag = 1
-      taborder = 2
-      bounds_x = 80
-      bounds_y = 111
-      bounds_cx = 194
-      bounds_cy = 28
-      anchors = [an_top, an_right]
-      state = [as_localdisabled, as_localcaption, as_localonexecute]
-      caption = 'Create new consts from po'
-      onexecute = createnew
-    end
-  end
   object initunit: tmemoedit
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
     frame.sbvert.pagesize = 0.34126984126984
-    taborder = 3
+    taborder = 2
     visible = False
-    bounds_x = 16
-    bounds_y = 8
+    bounds_x = 200
+    bounds_y = 0
     bounds_cx = 156
     bounds_cy = 92
     value = '{$ifdef FPC}{$mode objfpc}{$h+}{$endif}'#10'interface'#10'uses'#10' mseconsts;'#10' '#10'implementation'#10'uses'#10' msetypes{msestrings},sysutils,mseformatstr;'#10' '#10'const '#10'extendedconst: extendedaty ='#10' ('
@@ -172,10 +87,10 @@ object headerfo: theaderfo
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
     frame.sbvert.pagesize = 0.73809523809524
-    taborder = 4
+    taborder = 3
     visible = False
-    bounds_x = 32
-    bounds_y = 24
+    bounds_x = 152
+    bounds_y = 32
     bounds_cx = 156
     bounds_cy = 68
     value = '); '#10#10' modalresulttext: defaultmodalresulttextty ='#10' ('
@@ -186,10 +101,10 @@ object headerfo: theaderfo
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
     frame.sbvert.pagesize = 0.76785714285714
-    taborder = 5
+    taborder = 4
     visible = False
-    bounds_x = 48
-    bounds_y = 40
+    bounds_x = 152
+    bounds_y = 16
     bounds_cx = 156
     bounds_cy = 92
     value = ');'#10#10' modalresulttextnoshortcut: defaultmodalresulttextty ='#10' ('
@@ -200,10 +115,10 @@ object headerfo: theaderfo
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
     frame.sbvert.pagesize = 1
-    taborder = 6
+    taborder = 5
     visible = False
-    bounds_x = 72
-    bounds_y = 56
+    bounds_x = 208
+    bounds_y = 32
     bounds_cx = 156
     bounds_cy = 92
     value = ' );'#10#10' stockcaption: stockcaptionaty = ('
@@ -214,13 +129,71 @@ object headerfo: theaderfo
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
     frame.sbvert.pagesize = 0.13650793650794
-    taborder = 7
+    taborder = 6
     visible = False
-    bounds_x = 96
-    bounds_y = 72
+    bounds_x = 184
+    bounds_y = 8
     bounds_cx = 156
     bounds_cy = 92
     value = 'function delete_n_selected_rows(const params: array of const): msestring;'#10'begin'#10' with params[0] do begin'#10'  if vinteger = 1 then begin'#10'   result:= extendedconst[ex_del_row_selected];'#10'  end'#10'  else begin'#10'   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);'#10'  end;'#10' end;'#10'end;'#10#10'const'#10' textgenerator: defaultgeneratortextty = ('#10'              {$ifdef FPC}@{$endif}delete_n_selected_rows'#10'                                     );'#10'initialization'#10' registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, '#10'        @modalresulttextnoshortcut,@textgenerator);'#10'                               '#10'end.'
     reffontheight = 14
+  end
+  object mseconstheader: tmemodialogedit
+    frame.caption = 'Default mseconst header'
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.buttons.count = 1
+    frame.buttons.items = <    
+      item
+        imagenr = 17
+      end>
+    frame.button.imagenr = 17
+    frame.outerframe = (
+      0
+      17
+      0
+      0
+    )
+    taborder = 7
+    bounds_x = 8
+    bounds_y = 88
+    bounds_cx = 346
+    bounds_cy = 34
+    anchors = [an_left, an_top, an_right]
+    statfile = settingsfo.tstatfile1
+    value = '{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber'#10#10'    See the file COPYING.MSE, included in this distribution,'#10'    for details about the copyright.'#10#10'    This program is distributed in the hope that it will be useful,'#10'    but WITHOUT ANY WARRANTY; without even the implied warranty of'#10'    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.'#10'} '
+    reffontheight = 14
+  end
+  object tbutton3: tbutton
+    Tag = 1
+    taborder = 8
+    bounds_x = 85
+    bounds_y = 160
+    bounds_cx = 194
+    bounds_cy = 28
+    anchors = [an_top, an_right]
+    state = [as_localdisabled, as_localcaption, as_localonexecute]
+    caption = 'Create new po from consts'
+    onexecute = createnewpo
+  end
+  object tbutton2: tbutton
+    Tag = 1
+    taborder = 9
+    bounds_x = 85
+    bounds_y = 128
+    bounds_cx = 194
+    bounds_cy = 28
+    anchors = [an_top, an_right]
+    state = [as_localdisabled, as_localcaption, as_localonexecute]
+    caption = 'Create new consts from po'
+    onexecute = createnewconst
+  end
+  object impexpfiledialog: tfiledialog
+    controller.filename = 'default.csv'
+    controller.historymaxcount = 0
+    controller.captionopen = 'Open import file'
+    controller.captionsave = 'Save export file'
+    left = 40
+    top = 128
   end
 end

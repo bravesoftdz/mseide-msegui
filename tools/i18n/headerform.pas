@@ -5,23 +5,24 @@ uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,mseact,
  msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,mseifiglob,
- msememodialog,msestatfile,msestream,sysutils,msesimplewidgets, mseconsts, msefileutils,
- msebitmap,msedatanodes,msedragglob,msefiledialog,msegrids,msegridsglob,LazUTF8,
- mselistbrowser,msesys;
+ msememodialog,msestatfile,msestream,sysutils,msesimplewidgets, mseconsts,
+ msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,msegrids,
+ msegridsglob,LazUTF8,mselistbrowser,msesys;
 type
  theaderfo = class(tmseform)
    memopoheader: tmemodialogedit;
    memopotheader: tmemodialogedit;
-   tgroupbox1: tgroupbox;
-   mseconstheader: tmemodialogedit;
-   pofilename: tfilenameedit;
    initunit: tmemoedit;
    modalresulttext: tmemoedit;
    modalresultsnoshort: tmemoedit;
    stockcaptionmemo: tmemoedit;
    endmemo: tmemoedit;
+   mseconstheader: tmemodialogedit;
+   tbutton3: tbutton;
    tbutton2: tbutton;
-   procedure createnew(const sender: TObject);
+   impexpfiledialog: tfiledialog;
+   procedure createnewconst(const sender: TObject);
+   procedure createnewpo(const sender: TObject);
    procedure dosearch(thearray : array of msestring; theindex : integer);
  end;
 
@@ -64,7 +65,184 @@ uses
    end; 
   end;  
 
-procedure theaderfo.createnew(const sender: TObject);
+procedure theaderfo.createnewpo(const sender: TObject);
+var
+x, y: integer;
+file1: ttextdatastream;
+//file2: ttextdatastream;
+str1, strinit, strlang, filename1 : msestring;
+ str2, str3, str4, strtemp : utf8String;
+ 
+int1 : integer;
+ isarray1 : boolean = false;
+ isarray2 : boolean = false;
+ isarray3 : boolean = false; 
+ isarray4 : boolean = false;
+ theend : boolean = false;
+ filterlista : msestringarty;
+ filterlistb : msestringarty;
+begin
+
+if 1 = 1 then begin // read from mseconst_xx.pas
+
+setlength(filterlista,1);
+setlength(filterlistb,1);
+
+filterlista[0]:= 'mseconsts_xx.pas';
+filterlistb[0]:= '*.pas';
+ 
+  with impexpfiledialog.controller.filterlist do begin
+    asarraya:= filterlista;
+    asarrayb:= filterlistb;
+    end; 
+ 
+ impexpfiledialog.controller.filterindex := 0;   
+    
+if impexpfiledialog.controller.execute(str1,fdk_save) then begin
+
+if fileexists(str1) then begin
+
+file1:= ttextdatastream.create(str1,fm_read);
+
+filename1 := copy(filename(str1),1, length(filename(str1))-4);
+ strlang := trim(copy(filename1,system.pos('_',filename1)+1,length(filename1)-system.pos('_',filename1))) ;
+ 
+  file1.encoding:= ce_utf8;
+
+ setlength(constvaluearray,0); 
+   
+    file1.readln(str1); 
+    
+    str3 := '';
+    str2 := '';
+    str4 := '';
+    
+   while (not file1.eof) and (theend = false) do begin
+   str1 := '';
+    file1.readln(str1); 
+     strtemp := '';  
+
+   if system.pos('extendedconst',str1) > 0 then isarray1 := true;
+   if (isarray1 = true) and (system.pos(#039,str1) > 0) then
+   begin
+    setlength(constvaluearray,length(constvaluearray)+1);  
+    str1 := utf8StringReplace(str1, #039, '', [rfReplaceAll]); 
+    str1 := utf8StringReplace(str1, #044, '', [rfReplaceAll]); 
+    constvaluearray[length(constvaluearray)-1] := str1;  
+   end;
+   
+   if system.pos('modalresulttext',str1) > 0 then isarray2 := true;
+   if (isarray2 = true) and (system.pos(#039,str1) > 0) then
+   begin
+    isarray1 := false;
+    setlength(constvaluearray,length(constvaluearray)+1);  
+    str1 := utf8StringReplace(str1, #039, '', [rfReplaceAll]); 
+    str1 := utf8StringReplace(str1, #044, '', [rfReplaceAll]); 
+    constvaluearray[length(constvaluearray)-1] := str1;  
+   end;
+   
+  if system.pos('modalresulttextnoshortcut',str1) > 0 then isarray3 := true;
+  if (isarray3 = true) and (system.pos(#039,str1) > 0) then
+   begin
+    isarray2 := false;
+    setlength(constvaluearray,length(constvaluearray)+1);  
+    str1 := utf8StringReplace(str1, #039, '', [rfReplaceAll]); 
+    str1 := utf8StringReplace(str1, #044, '', [rfReplaceAll]); 
+    constvaluearray[length(constvaluearray)-1] := str1;  
+   end;
+   
+  if system.pos('stockcaption',str1) > 0 then isarray3 := true;
+
+   if (isarray3 = true) and (system.pos(#039,str1) > 0) then
+   begin
+    isarray3 := false;
+    setlength(constvaluearray,length(constvaluearray)+1);  
+    str1 := utf8StringReplace(str1, #039, '', [rfReplaceAll]); 
+    str1 := utf8StringReplace(str1, #044, '', [rfReplaceAll]); 
+    constvaluearray[length(constvaluearray)-1] := str1;  
+   end;
+   
+   if system.pos('delete_n_selected_rows',str1) > 0 then theend := true;
+   end;
+        file1.free;
+  end;
+  end;
+  
+ // writeln(length(constvaluearray));
+    
+    if 1 = 1 then begin // create po file
+    
+ setlength(defaultextendedconst,length(en_extendedconst));
+defaultextendedconst := en_extendedconst;
+
+setlength(defaultresult,length(defaultextendedconst));
+for x := 0 to length(defaultextendedconst) -1 do
+begin
+ defaultresult[x] := defaultextendedconst[x];    
+ //writeln(defaultresult[x]); 
+end;
+setlength(defmodalresulttext,length(en_modalresulttext));
+defmodalresulttext := en_modalresulttext;
+
+y := length(defaultresult);
+
+setlength(defaultresult,length(defmodalresulttext)+y);
+for x := 0 to length(defmodalresulttext) -1 do
+begin
+ defaultresult[x+y] := defmodalresulttext[x];    
+// writeln(defaultresult[x+y]); 
+end;
+
+ setlength(defmodalresulttextnosc,length(en_modalresulttextnoshortcut));
+defmodalresulttextnosc := en_modalresulttextnoshortcut;
+
+y := length(defaultresult);
+
+setlength(defaultresult,length(defmodalresulttextnosc)+y);
+for x := 0 to length(defmodalresulttextnosc) -1 do
+begin
+ defaultresult[x+y] := defmodalresulttextnosc[x];    
+// writeln(defaultresult[x+y]); 
+end;
+
+  setlength(defaultstockcaption,length(en_stockcaption));
+defaultstockcaption := en_stockcaption;
+
+y := length(defaultresult);
+
+setlength(defaultresult,length(defaultstockcaption)+y);
+for x := 0 to length(defaultstockcaption) -1 do
+begin
+ defaultresult[x+y] := defaultstockcaption[x];    
+// writeln(defaultresult[x+y]); 
+end;
+
+ // writeln(length(defaultresult));
+  
+  file1:= ttextdatastream.create('mseconsts_' + strlang + '.po',fm_create);
+
+  file1.encoding:= ce_utf8;
+
+   file1.writeln(memopoheader.value); 
+   file1.writeln();
+   
+   for x := 0 to length(defaultresult) -1 do
+begin
+if trim(defaultresult[x]) <> '' then begin
+ file1.writeln('msgid "' + defaultresult[x] + '"');
+ file1.writeln( 'msgstr "' + constvaluearray[x] + '"') ;
+ file1.writeln(''); 
+ end;
+end;
+ 
+  file1.free;
+end;
+end;
+
+end;
+
+
+procedure theaderfo.createnewconst(const sender: TObject);
 var
 x: integer;
 file1: ttextdatastream;
@@ -77,15 +255,31 @@ int1 : integer;
  isid : boolean = false;
  iscontext : boolean = false; 
  ispocontext : boolean = false;
+ filterlista : msestringarty;
+ filterlistb : msestringarty;
 begin
 
-if 1 = 1 then begin // read from po
+if 1 = 1 then begin // read from mseconst_xx.pas
 
-if fileexists(pofilename.value) then begin
+setlength(filterlista,1);
+setlength(filterlistb,1);
 
-file1:= ttextdatastream.create(pofilename.value,fm_read);
+filterlista[0]:= 'mseconsts_xx.po';
+filterlistb[0]:= '*.po';
+ 
+  with impexpfiledialog.controller.filterlist do begin
+    asarraya:= filterlista;
+    asarrayb:= filterlistb;
+    end; 
+ impexpfiledialog.controller.filterindex := 0;  
 
-filename1 := copy(filename(pofilename.value),1, length(filename(pofilename.value))-3);
+if impexpfiledialog.controller.execute(str1,fdk_save) then begin
+
+if fileexists(str1) then begin
+
+file1:= ttextdatastream.create(str1,fm_read);
+
+filename1 := copy(filename(str1),1, length(filename(str1))-3);
  strlang := trim(copy(filename1,system.pos('_',filename1)+1,length(filename1)-system.pos('_',filename1))) ;
  
   file1.encoding:= ce_utf8;
@@ -276,6 +470,7 @@ defaultextendedconst := en_extendedconst;
  
    file1.free;
    
+end;
 end;
 
 end;
