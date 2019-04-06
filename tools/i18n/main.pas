@@ -164,6 +164,7 @@ var
  isloaded : boolean = false;
  doreset : boolean = false;
  importtype: integer = -1;
+ ispocontext : boolean = false;
  
  implementation
 uses
@@ -532,7 +533,7 @@ begin
              if (trim(valuetext) <> '') and (trim(nodo) = trim(asdo)) and  
                (trim(valuetext) <> trim(astrt))  then 
              begin
-              if  (copy(acomp, 1 ,int1) = copy(rootstring(','), 1 ,int1)) then
+              if ispocontext and (copy(acomp, 1 ,int1) = copy(rootstring(','), 1 ,int1)) then
               begin
                hasfoundtext := true;
                astrtemp := astrt;
@@ -548,7 +549,13 @@ begin
                // writeln(astrt);
                 // exit;
               end; 
-             end; 
+             end else
+             begin
+             hasfoundtext := true;
+             astrtemp := astrt;
+             anonttemp := anont;
+             end;
+              
              end; 
         inc(x); 
       end;    
@@ -1231,6 +1238,7 @@ var
  ispocontext : boolean = false;
 begin
 isloaded := false;
+ispocontext := false;
 showworkpan;
 grid.datacols[0].color := cl_white;
 grid.clear;
