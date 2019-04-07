@@ -859,7 +859,7 @@ findhistory=20
  writed
 findoptions=1
 editpos=9
- 0,43
+ 0,65
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -867,7 +867,7 @@ editpos=9
  0,-1073741823
  0,0
  0,0
- 0,24
+ 0,44
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -939,7 +939,7 @@ order=9
  4
  5
 firsttab=0
-index=0
+index=3
 [layout]
 windowlayout=663
  [mainfo.basedock]
@@ -1167,7 +1167,7 @@ windowlayout=663
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=targetconsolefo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1182,7 +1182,7 @@ windowlayout=663
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=560
  width0=248
@@ -1408,7 +1408,7 @@ windowlayout=663
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/headerform.pas
+ value=/home/fred/mseide-msegui/tools/i18n/msei18n.pas
  history=50
   /home/fred/mseide-msegui/tools/i18n/headerform.mfm
   /home/fred/mseide-msegui/tools/i18n/headerform.pas
@@ -1492,7 +1492,7 @@ windowlayout=663
   4
   5
  firsttab=0
- index=0
+ index=3
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1532,7 +1532,7 @@ windowlayout=663
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_headerfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1589,7 +1589,7 @@ windowlayout=663
  [_mse_headerfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=mainfo
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
