@@ -23,7 +23,7 @@ type
    impexpfiledialog: tfiledialog;
    alldir: tbooleanedit;
    tstatfile1: tstatfile;
-   procedure createnewalone(const sender: TObject);
+   procedure createnew(const sender: TObject);
    procedure createnewconst(const sender: TObject; fn : msestring);
    procedure createnewpo(const sender: TObject; fn : msestring);
    procedure dosearch(thearray : array of msestring; theindex : integer);
@@ -48,7 +48,7 @@ uses
     y := 0;
     hasfound := false;
     
-   while (y < length(constvaluearray) -1) and (hasfound = false) do begin
+   while (y < length(constvaluearray)) and (hasfound = false) do begin
        str2 := (constvaluearray[y]);
        acomp :=  utf8copy(str2,1, system.pos(';',str2)-1) ;
        // writeln('---acomp:' + acomp);
@@ -225,7 +225,7 @@ end;
 
 end;
 
-procedure theaderfo.createnewalone(const sender: TObject);
+procedure theaderfo.createnew(const sender: TObject);
 var
 x: integer;
  filterlista : msestringarty;
@@ -271,7 +271,6 @@ if tbutton(sender).tag = 0 then
 createnewconst(sender, str1) else createnewpo(sender, str1);
 end else
 begin
-writeln(str1);
 
 if tbutton(sender).tag = 0 then str2 := '*.po' else str2 := '*.pas';
 
@@ -358,7 +357,7 @@ filename1 := copy(filename(str1),1, length(filename(str1))-3);
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
          constvaluearray[length(constvaluearray)-1] := str2;
-         //  writeln(str2);
+         // writeln(str2);
           str3 := '';
          str4 := '';
          end;
@@ -406,10 +405,13 @@ filename1 := copy(filename(str1),1, length(filename(str1))-3);
     end;
     
         
-    setlength(constvaluearray,length(constvaluearray)+1);  
-    str2 := str4 + ';' + str2 + ';' + str3 ; 
-    constvaluearray[length(constvaluearray)-1] := str2;
-     
+       setlength(constvaluearray,length(constvaluearray)+1);  
+         str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3 ; 
+         str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
+         str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
+         constvaluearray[length(constvaluearray)-1] := str2;
+     // writeln(str2);
+   
      file1.free;
   
 setlength(defmodalresulttext,length(en_modalresulttext));

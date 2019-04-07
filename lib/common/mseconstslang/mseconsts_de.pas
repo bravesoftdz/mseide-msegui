@@ -220,7 +220,7 @@ extendedconst: extendedaty =
 'Bereich aktiviert',
 'Leiser',
 'Lauter',
-'Cancel speech'
+'Ansage abbrechen'
 );
 
 function delete_n_selected_rows(const params: array of const): msestring;

@@ -220,7 +220,7 @@ extendedconst: extendedaty =
 'Зона активирована',
 'Снизить громкость',
 'Повысить громкость',
-'Cancel speech'
+'Отменить речь'
 );
 
 function delete_n_selected_rows(const params: array of const): msestring;

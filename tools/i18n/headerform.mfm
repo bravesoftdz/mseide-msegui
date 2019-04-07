@@ -173,7 +173,7 @@ object headerfo: theaderfo
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
     caption = 'Create new po from consts'
-    onexecute = createnewalone
+    onexecute = createnew
   end
   object tbutton2: tbutton
     taborder = 9
@@ -184,7 +184,7 @@ object headerfo: theaderfo
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
     caption = 'Create new consts from po'
-    onexecute = createnewalone
+    onexecute = createnew
   end
   object alldir: tbooleanedit
     frame.caption = 'All directory'
