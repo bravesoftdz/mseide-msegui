@@ -201,10 +201,11 @@ object headerfo: theaderfo
     bounds_y = 151
     bounds_cx = 88
     bounds_cy = 16
+    statfile = tstatfile1
   end
   object impexpfiledialog: tfiledialog
+    statfile = tstatfile1
     controller.filename = 'default.csv'
-    controller.options = [fdo_directory, fdo_savelastdir]
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'
     controller.captionsave = 'Save export file'

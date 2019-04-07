@@ -264,7 +264,7 @@ end;
  impexpfiledialog.controller.filterindex := 0;  
  application.processmessages;
 
-if impexpfiledialog.controller.execute(str1,fdk_save) then 
+if impexpfiledialog.controller.execute(str1,fdk_open) then 
 begin
 if alldir.value = false then begin
 if tbutton(sender).tag = 0 then
