@@ -4,10 +4,10 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,mseact,
- msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,mseifiglob,
- msememodialog,msestatfile,msestream,sysutils,msesimplewidgets, mseconsts,
- msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,msegrids,
- msegridsglob,LazUTF8,mselistbrowser,msesys;
+  mclasses,msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,
+ mseifiglob,msememodialog,msestatfile,msestream,sysutils,msesimplewidgets,
+  mseconsts,msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,
+ msegrids,msegridsglob,LazUTF8,mselistbrowser,msesys,msegraphedits,msescrollbar;
 type
  theaderfo = class(tmseform)
    memopoheader: tmemodialogedit;
@@ -21,8 +21,11 @@ type
    tbutton3: tbutton;
    tbutton2: tbutton;
    impexpfiledialog: tfiledialog;
-   procedure createnewconst(const sender: TObject);
-   procedure createnewpo(const sender: TObject);
+   alldir: tbooleanedit;
+   tstatfile1: tstatfile;
+   procedure createnewalone(const sender: TObject);
+   procedure createnewconst(const sender: TObject; fn : msestring);
+   procedure createnewpo(const sender: TObject; fn : msestring);
    procedure dosearch(thearray : array of msestring; theindex : integer);
  end;
 
@@ -65,7 +68,7 @@ uses
    end; 
   end;  
 
-procedure theaderfo.createnewpo(const sender: TObject);
+procedure theaderfo.createnewpo(const sender: TObject; fn : msestring);
 var
 x, y: integer;
 file1: ttextdatastream;
@@ -79,26 +82,8 @@ int1 : integer;
  isarray3 : boolean = false; 
  isarray4 : boolean = false;
  theend : boolean = false;
- filterlista : msestringarty;
- filterlistb : msestringarty;
 begin
-
-if 1 = 1 then begin // read from mseconst_xx.pas
-
-setlength(filterlista,1);
-setlength(filterlistb,1);
-
-filterlista[0]:= 'mseconsts_xx.pas';
-filterlistb[0]:= '*.pas';
- 
-  with impexpfiledialog.controller.filterlist do begin
-    asarraya:= filterlista;
-    asarrayb:= filterlistb;
-    end; 
- 
- impexpfiledialog.controller.filterindex := 0;   
-    
-if impexpfiledialog.controller.execute(str1,fdk_save) then begin
+str1 := fn;
 
 if fileexists(str1) then begin
 
@@ -164,15 +149,12 @@ filename1 := copy(filename(str1),1, length(filename(str1))-4);
    
    if system.pos('delete_n_selected_rows',str1) > 0 then theend := true;
    end;
-        file1.free;
-  end;
-  end;
-  
+   
+   file1.free;
+   
  // writeln(length(constvaluearray));
     
-    if 1 = 1 then begin // create po file
-    
- setlength(defaultextendedconst,length(en_extendedconst));
+  setlength(defaultextendedconst,length(en_extendedconst));
 defaultextendedconst := en_extendedconst;
 
 setlength(defaultresult,length(defaultextendedconst));
@@ -219,7 +201,8 @@ end;
 
  // writeln(length(defaultresult));
   
-  file1:= ttextdatastream.create('mseconsts_' + strlang + '.po',fm_create);
+  file1:= ttextdatastream.create('.' + directoryseparator +'output' + directoryseparator +
+   'mseconsts_' + strlang + '.po',fm_create);
 
   file1.encoding:= ce_utf8;
 
@@ -230,19 +213,87 @@ end;
 begin
 if trim(defaultresult[x]) <> '' then begin
  file1.writeln('msgid "' + defaultresult[x] + '"');
- file1.writeln( 'msgstr "' + constvaluearray[x] + '"') ;
+ if trim(constvaluearray[x]) <> '' then
+ file1.writeln( 'msgstr "' + constvaluearray[x] + '"')
+ else  file1.writeln( 'msgstr "' + defaultresult[x] + '"');
  file1.writeln(''); 
  end;
 end;
  
   file1.free;
 end;
+
+end;
+
+procedure theaderfo.createnewalone(const sender: TObject);
+var
+x: integer;
+ filterlista : msestringarty;
+ filterlistb : msestringarty;
+ str1, str2 : msestring;
+ dirfiles: TStringList;
+ Info : TSearchRec;
+begin
+
+setlength(filterlista,1);
+setlength(filterlistb,1);
+
+if tbutton(sender).tag = 0 then 
+begin
+filterlista[0]:= 'mseconsts_xx.po';
+filterlistb[0]:= '*.po';
+impexpfiledialog.controller.filter := '*.po';
+if alldir.value then
+impexpfiledialog.controller.options := [fdo_directory,fdo_savelastdir] else
+impexpfiledialog.controller.options := [fdo_savelastdir];
+end else
+begin
+filterlista[0]:= 'mseconsts_xx.pas';
+filterlistb[0]:= '*.pas';
+impexpfiledialog.controller.filter := '*.pas';
+if alldir.value then
+impexpfiledialog.controller.options := [fdo_directory,fdo_savelastdir] else
+impexpfiledialog.controller.options := [fdo_savelastdir];
+end;
+ 
+  with impexpfiledialog.controller.filterlist do begin
+    asarraya:= filterlista;
+    asarrayb:= filterlistb;
+    end; 
+
+ impexpfiledialog.controller.filterindex := 0;  
+ application.processmessages;
+
+if impexpfiledialog.controller.execute(str1,fdk_save) then 
+begin
+if alldir.value = false then begin
+if tbutton(sender).tag = 0 then
+createnewconst(sender, str1) else createnewpo(sender, str1);
+end else
+begin
+writeln(str1);
+
+if tbutton(sender).tag = 0 then str2 := '*.po' else str2 := '*.pas';
+
+    if FindFirst(filedir(str1)+DirectorySeparator+str2, faAnyFile , Info)=0 then begin
+                repeat
+              if tbutton(sender).tag = 0 then
+  createnewconst(sender, filedir(str1) + Info.Name) else
+   createnewpo(sender,  filedir(str1) + Info.Name); 
+      
+                until FindNext(Info) <> 0;
+        end;
+        FindClose(Info);
+ 
+end;
 end;
 
 end;
 
 
-procedure theaderfo.createnewconst(const sender: TObject);
+///////////////
+
+procedure theaderfo.createnewconst(const sender: TObject; fn : msestring);
 var
 x: integer;
 file1: ttextdatastream;
@@ -250,31 +301,13 @@ file1: ttextdatastream;
 str1, strinit, strlang, filename1 : msestring;
  str2, str3, str4, strtemp : utf8String;
  
-int1 : integer;
+ int1 : integer;
  isstring : boolean = false;
  isid : boolean = false;
  iscontext : boolean = false; 
  ispocontext : boolean = false;
- filterlista : msestringarty;
- filterlistb : msestringarty;
 begin
-
-if 1 = 1 then begin // read from mseconst_xx.pas
-
-setlength(filterlista,1);
-setlength(filterlistb,1);
-
-filterlista[0]:= 'mseconsts_xx.po';
-filterlistb[0]:= '*.po';
- 
-  with impexpfiledialog.controller.filterlist do begin
-    asarraya:= filterlista;
-    asarrayb:= filterlistb;
-    end; 
- impexpfiledialog.controller.filterindex := 0;  
-
-if impexpfiledialog.controller.execute(str1,fdk_save) then begin
-
+str1 := fn;
 if fileexists(str1) then begin
 
 file1:= ttextdatastream.create(str1,fm_read);
@@ -371,17 +404,14 @@ filename1 := copy(filename(str1),1, length(filename(str1))-3);
        end;  
     
     end;
-     
+    
+        
     setlength(constvaluearray,length(constvaluearray)+1);  
     str2 := str4 + ';' + str2 + ';' + str3 ; 
     constvaluearray[length(constvaluearray)-1] := str2;
      
      file1.free;
-      end;
-    end;
-    
-    if 1 = 1 then begin // create mesconst_xx.pas
-
+  
 setlength(defmodalresulttext,length(en_modalresulttext));
 defmodalresulttext := en_modalresulttext;
 
@@ -394,7 +424,8 @@ defaultstockcaption := en_stockcaption;
   setlength(defaultextendedconst,length(en_extendedconst));
 defaultextendedconst := en_extendedconst;
 
-  file1:= ttextdatastream.create('mseconsts_' + strlang + '.pas',fm_create);
+  file1:= ttextdatastream.create('.' + directoryseparator +'output' + directoryseparator + 
+  'mseconsts_' + strlang + '.pas',fm_create);
 
   file1.encoding:= ce_utf8;
 
@@ -415,6 +446,8 @@ defaultextendedconst := en_extendedconst;
     dosearch(defaultextendedconst,x);
      
     if hasfound then else astrt := defaultextendedconst[x];
+    
+    if trim(astrt) = '' then astrt := defaultextendedconst[x]; 
    
     if (x < length(defaultextendedconst) -1) and
     (length(defaultextendedconst) > 1 ) then
@@ -429,7 +462,8 @@ defaultextendedconst := en_extendedconst;
      dosearch(defmodalresulttext,x);
      
      if hasfound then else astrt := defmodalresulttext[x];
-   
+     if trim(astrt) = '' then astrt := defmodalresulttext[x]; 
+     
     if (x < length(defmodalresulttext) -1) and
     (length(defmodalresulttext) > 1 ) then
     file1.writeln(#039 + astrt + #039 + #044) else
@@ -443,7 +477,7 @@ defaultextendedconst := en_extendedconst;
     dosearch(defmodalresulttextnosc,x);
     
      if hasfound then else astrt := defmodalresulttextnosc[x];
-   
+    if trim(astrt) = '' then astrt := defmodalresulttextnosc[x]; 
     if (x < length(defmodalresulttextnosc) -1) and
     (length(defmodalresulttextnosc) > 1 ) then
     file1.writeln(#039 + astrt + #039 +#044) else
@@ -457,7 +491,7 @@ defaultextendedconst := en_extendedconst;
     dosearch(defaultstockcaption,x);
     
      if hasfound then else astrt := defaultstockcaption[x];
-  
+    if trim(astrt) = '' then astrt := defaultstockcaption[x]; 
    if (x < length(defaultstockcaption) -1) and
     (length(defaultstockcaption) > 1 ) then
     file1.writeln(#039 + astrt + #039+ #044) else
@@ -471,8 +505,6 @@ defaultextendedconst := en_extendedconst;
    file1.free;
    
 end;
-end;
-
 end;
 
 end.
