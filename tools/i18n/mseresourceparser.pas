@@ -313,7 +313,7 @@ var
          if str2 = '' then begin
           break;
          end;
-         str1:= str1 + str2 + ';';
+         str1:= str1 + str2 + ',';
         end;
         stringvalue:= '['+copy(str1,1,length(str1)-1)+']';
        end;
