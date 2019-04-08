@@ -87,9 +87,6 @@ msgstr "په اړه&"
 msgid "&Configure MSEi18n"
 msgstr ""
 
-msgid "&Default headers"
-msgstr ""
-
 msgid "Se&ttings"
 msgstr ""
 
@@ -100,6 +97,9 @@ msgid "&Reset"
 msgstr ""
 
 msgid "Reset translated words to root value"
+msgstr ""
+
+msgid "&Tools"
 msgstr ""
 
 msgid "E&xit"
@@ -357,5 +357,23 @@ msgstr ""
 msgid "Global Macros"
 msgstr ""
 
-msgid "Default headers"
+msgid "Tools"
+msgstr ""
+
+msgid "Default PO header"
+msgstr ""
+
+msgid "Default POT header"
+msgstr ""
+
+msgid "Default mseconst header"
+msgstr ""
+
+msgid "Create new po from consts"
+msgstr ""
+
+msgid "Create new consts from po"
+msgstr ""
+
+msgid "All directory"
 msgstr ""

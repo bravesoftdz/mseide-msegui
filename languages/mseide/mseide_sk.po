@@ -1283,7 +1283,7 @@ msgid "Macros"
 msgstr "Makrá"
 
 msgid "Tools"
-msgstr "&Nástroje"
+msgstr "Nástroje"
 
 msgid "Templates"
 msgstr "Šablóny"

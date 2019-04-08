@@ -87,9 +87,6 @@ msgstr "&Информация о MSEi18n"
 msgid "&Configure MSEi18n"
 msgstr "&Конфигурировать MSEi18n"
 
-msgid "&Default headers"
-msgstr "&Заголовки по умолчанию"
-
 msgid "Se&ttings"
 msgstr "Н&астройки"
 
@@ -101,6 +98,9 @@ msgstr "&Сбросить"
 
 msgid "Reset translated words to root value"
 msgstr "Сбросить переведённые слова к корневому значению"
+
+msgid "&Tools"
+msgstr "&Инструменты"
 
 msgid "E&xit"
 msgstr "Вы&ход"
@@ -361,5 +361,23 @@ msgstr "Корневая директория для компилятора FPC"
 msgid "Global Macros"
 msgstr "Глобальные макро-определения"
 
-msgid "Default headers"
-msgstr "Заголовки по умолчанию"
+msgid "Tools"
+msgstr "Инструменты"
+
+msgid "Default PO header"
+msgstr "Заголовок PO по умолчанию"
+
+msgid "Default POT header"
+msgstr "Заголовок POT по умолчанию"
+
+msgid "Default mseconst header"
+msgstr "Заголовок mseconst по умолчанию"
+
+msgid "Create new po from consts"
+msgstr "Создать новый PO из констант"
+
+msgid "Create new consts from po"
+msgstr "Создать новые константы из PO"
+
+msgid "All directory"
+msgstr "Весь каталог"

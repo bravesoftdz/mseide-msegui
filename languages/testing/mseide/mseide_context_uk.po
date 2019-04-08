@@ -2575,7 +2575,7 @@ msgctxt "printfo,c,strings.data,1:"
 msgid "Do you wish to cancel printing?"
 msgstr ""
 
-msgctxt "panelfo,dragdock.caption"
+msgctxt "idepanelfo,dragdock.caption"
 msgid "Mainwindow"
 msgstr "Головне вікно"
 

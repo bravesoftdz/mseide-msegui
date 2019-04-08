@@ -2302,7 +2302,7 @@ msgstr "Makrá"
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingstools,frame.caption"
 msgid "Tools"
-msgstr "&Nástroje"
+msgstr "Nástroje"
 
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage20,settingstemplates,frame.caption"
@@ -2573,7 +2573,7 @@ msgctxt "printfo,c,strings.data,1:"
 msgid "Do you wish to cancel printing?"
 msgstr ""
 
-msgctxt "panelfo,dragdock.caption"
+msgctxt "idepanelfo,dragdock.caption"
 msgid "Mainwindow"
 msgstr ""
 
@@ -4375,7 +4375,7 @@ msgstr "Pomoc"
 
 msgctxt "actionsmo,shortcuts,actions.items,87:,dispname"
 msgid "Tools"
-msgstr "&Nástroje"
+msgstr "Nástroje"
 
 msgctxt "actionsmo,shortcuts,actions.items,88:,dispname"
 msgid "Tool 1"

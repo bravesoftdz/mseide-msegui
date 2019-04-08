@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# AlexL <loginov.alex.valer@gmail.com>, 2019
 # Adolfo Jayme Barrientos, 2019
+# AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 23:54+0300\n"
 "PO-Revision-Date: 2019-03-05 00:07+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos, 2019\n"
+"Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/Magic/teams/44238/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -88,9 +88,6 @@ msgstr "Acerca &de"
 msgid "&Configure MSEi18n"
 msgstr ""
 
-msgid "&Default headers"
-msgstr ""
-
 msgid "Se&ttings"
 msgstr ""
 
@@ -102,6 +99,9 @@ msgstr "&Restablecer"
 
 msgid "Reset translated words to root value"
 msgstr ""
+
+msgid "&Tools"
+msgstr "&Herramientas"
 
 msgid "E&xit"
 msgstr "&Salir"
@@ -358,5 +358,23 @@ msgstr ""
 msgid "Global Macros"
 msgstr ""
 
-msgid "Default headers"
+msgid "Tools"
+msgstr "Herramientas"
+
+msgid "Default PO header"
+msgstr ""
+
+msgid "Default POT header"
+msgstr ""
+
+msgid "Default mseconst header"
+msgstr ""
+
+msgid "Create new po from consts"
+msgstr ""
+
+msgid "Create new consts from po"
+msgstr ""
+
+msgid "All directory"
 msgstr ""
