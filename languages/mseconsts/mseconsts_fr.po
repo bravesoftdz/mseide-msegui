@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mseconsts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-03 02:31+0300\n"
+"POT-Creation-Date: 2019-04-09 00:57+0300\n"
 "PO-Revision-Date: 2019-04-03 06:16+0000\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/Magic/teams/44238/fr/)\n"
@@ -21,683 +21,512 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: mseconsts_en.pas:24
 msgid "Delete selected row?"
 msgstr "Effacer le fichier sélectionné ?"
 
-#: mseconsts_en.pas:25
-#, lua-format
 msgid "Delete %s selected rows?"
 msgstr "Effacer les %s fichiers sélectionnés ?"
 
-#: mseconsts_en.pas:36
 msgid "&Cancel"
 msgstr "&Annuler"
 
-#: mseconsts_en.pas:37
 msgid "&Abort"
 msgstr "&Arrêter"
 
-#: mseconsts_en.pas:38
 msgid "&OK"
 msgstr "&Valider"
 
-#: mseconsts_en.pas:39
 msgid "&Yes"
 msgstr "&Oui"
 
-#: mseconsts_en.pas:40
 msgid "&No"
 msgstr "&Non"
 
-#: mseconsts_en.pas:41
 msgid "&All"
 msgstr "&Tout"
 
-#: mseconsts_en.pas:42
 msgid "Yes &all"
 msgstr "Oui &tout"
 
-#: mseconsts_en.pas:43
 msgid "N&o all"
 msgstr "A&ucun"
 
-#: mseconsts_en.pas:44
 msgid "&Ignore"
 msgstr "&Ignorer"
 
-#: mseconsts_en.pas:45
 msgid "&Skip"
 msgstr "&Passer"
 
-#: mseconsts_en.pas:46
 msgid "Skip a&ll"
 msgstr "Passer &tout"
 
-#: mseconsts_en.pas:47
 msgid "Co&ntinue"
 msgstr "Co&ntinuer"
 
-#: mseconsts_en.pas:58 mseconsts_en.pas:141
 msgid "Cancel"
 msgstr "Annuler"
 
-#: mseconsts_en.pas:59
 msgid "Abort"
 msgstr "Arrêter"
 
-#: mseconsts_en.pas:60
 msgid "OK"
 msgstr "Valider"
 
-#: mseconsts_en.pas:61
 msgid "Yes"
 msgstr "Oui"
 
-#: mseconsts_en.pas:62
 msgid "No"
 msgstr "Non"
 
-#: mseconsts_en.pas:63 mseconsts_en.pas:128
 msgid "All"
 msgstr "Tout"
 
-#: mseconsts_en.pas:64
 msgid "Yes all"
 msgstr "Oui tout"
 
-#: mseconsts_en.pas:65
 msgid "No all"
 msgstr "Aucun"
 
-#: mseconsts_en.pas:66
 msgid "Ignore"
 msgstr "Ignorer"
 
-#: mseconsts_en.pas:67
 msgid "Skip"
 msgstr "Passer"
 
-#: mseconsts_en.pas:68
 msgid "Skip all"
 msgstr "Passer tout"
 
-#: mseconsts_en.pas:69
 msgid "Continue"
 msgstr "Continuer"
 
-#: mseconsts_en.pas:74
 msgid "is invalid"
 msgstr "est invalide"
 
-#: mseconsts_en.pas:75
 msgid "Format error"
 msgstr "Erreur de format"
 
-#: mseconsts_en.pas:76
 msgid "Value is required"
 msgstr "Valeur requise"
 
-#: mseconsts_en.pas:77
 msgid "Error"
 msgstr "Erreur"
 
-#: mseconsts_en.pas:78
 msgid "Min"
 msgstr "Min."
 
-#: mseconsts_en.pas:79
 msgid "Max"
 msgstr "Max."
 
-#: mseconsts_en.pas:80
 msgid "Range error"
 msgstr "Erreur de rang"
 
-#: mseconsts_en.pas:82
 msgid "&Undo"
 msgstr "&Défaire"
 
-#: mseconsts_en.pas:83
 msgid "&Redo"
 msgstr "&Refaire"
 
-#: mseconsts_en.pas:84
 msgid "&Copy"
 msgstr "&Copier"
 
-#: mseconsts_en.pas:85
 msgid "Cu&t"
 msgstr "C&ouper"
 
-#: mseconsts_en.pas:86
 msgid "&Paste"
 msgstr "Co&ller"
 
-#: mseconsts_en.pas:87
 msgid "Select &all"
 msgstr "&Sélectionner tout"
 
-#: mseconsts_en.pas:88
 msgid "&Insert Row"
 msgstr "&Insérer ligne"
 
-#: mseconsts_en.pas:89
 msgid "&Append Row"
 msgstr "&Ajouter ligne"
 
-#: mseconsts_en.pas:90
 msgid "&Delete Row"
 msgstr "&Supprimer ligne"
 
-#: mseconsts_en.pas:92
 msgid "&Dir"
 msgstr "Ré&pertoire"
 
-#: mseconsts_en.pas:93
 msgid "&Home"
 msgstr "&Racine"
 
-#: mseconsts_en.pas:94
 msgid "&Up"
 msgstr "&Remonter"
 
-#: mseconsts_en.pas:95
 msgid "&New dir"
 msgstr "&Nouveau répertoire"
 
-#: mseconsts_en.pas:96
 msgid "&Name"
 msgstr "N&om"
 
-#: mseconsts_en.pas:97
 msgid "&Show hidden files"
 msgstr "&Afficher fichiers cachés"
 
-#: mseconsts_en.pas:98
 msgid "&Filter"
 msgstr "&Filtre"
 
-#: mseconsts_en.pas:99
 msgid "Save"
 msgstr "Sauver"
 
-#: mseconsts_en.pas:100
 msgid "Open"
 msgstr "Ouvrir"
 
-#: mseconsts_en.pas:101
 msgid "Name"
 msgstr "Nom"
 
-#: mseconsts_en.pas:102
 msgid "Create new directory"
 msgstr "Créer un nouveau répertoire"
 
-#: mseconsts_en.pas:103
 msgid "Back"
 msgstr "Arrière"
 
-#: mseconsts_en.pas:104
 msgid "Forward"
 msgstr "Avant"
 
-#: mseconsts_en.pas:105
 msgid "Up"
 msgstr "Dessus"
 
-#: mseconsts_en.pas:106
 msgid "File"
 msgstr "Fichier"
 
-#: mseconsts_en.pas:107
 msgid "exists, do you want to overwrite?"
 msgstr "existe, Remplacer ?"
 
-#: mseconsts_en.pas:108
 msgid "is modified. Save?"
 msgstr "modifié. Enregistrer ?"
 
-#: mseconsts_en.pas:109
 msgid "WARNING"
 msgstr "AVERTISSEMENT"
 
-#: mseconsts_en.pas:110
 msgid "ERROR"
 msgstr "ERREUR"
 
-#: mseconsts_en.pas:111
 msgid "Exception"
 msgstr "Exception"
 
-#: mseconsts_en.pas:112
 msgid "System"
 msgstr "Système"
 
-#: mseconsts_en.pas:113
 msgid "does not exist"
 msgstr "n’existe pas"
 
-#: mseconsts_en.pas:114
 msgid "PASSWORD"
 msgstr "MOT DE PASSE"
 
-#: mseconsts_en.pas:115
 msgid "Enter password"
 msgstr "Entrer le mot de passe"
 
-#: mseconsts_en.pas:116
 msgid "Invalid password!"
 msgstr "Mot de passe invalide!"
 
-#: mseconsts_en.pas:117
 msgid "Can not read directory"
 msgstr "Impossible de lire le répertoire"
 
-#: mseconsts_en.pas:118
 msgid "Graphic format not supported"
 msgstr "Format graphique non supporté"
 
-#: mseconsts_en.pas:119
 msgid "Graphic format error"
 msgstr "Erreur de format graphique"
 
-#: mseconsts_en.pas:120
 msgid "MS Bitmap"
 msgstr "Bitmap MS"
 
-#: mseconsts_en.pas:121
 msgid "MS Icon"
 msgstr "Icone MS"
 
-#: mseconsts_en.pas:122
 msgid "JPEG Image"
 msgstr "Image JPEG"
 
-#: mseconsts_en.pas:123
 msgid "PNG Image"
 msgstr "Image PNG"
 
-#: mseconsts_en.pas:124
 msgid "XPM Image"
 msgstr "Image XPM"
 
-#: mseconsts_en.pas:125
 msgid "PNM Image"
 msgstr "Image PNM"
 
-#: mseconsts_en.pas:126
 msgid "TARGA Image"
 msgstr "Image TARGA"
 
-#: mseconsts_en.pas:127
 msgid "TIFF Image"
 msgstr "Image TIFF"
 
-#: mseconsts_en.pas:129
 msgid "Confirmation"
 msgstr "Confirmer"
 
-#: mseconsts_en.pas:130
 msgid "Delete record?"
 msgstr "Effacer l’enregistrement ?"
 
-#: mseconsts_en.pas:131
 msgid "Copy record?"
 msgstr "Copier l’enregistrement ?"
 
-#: mseconsts_en.pas:132
 msgid "Close page"
 msgstr "Fermer page"
 
-#: mseconsts_en.pas:133
 msgid "First"
 msgstr "Premier"
 
-#: mseconsts_en.pas:134
 msgid "Prior"
 msgstr "Précédent"
 
-#: mseconsts_en.pas:135
 msgid "Next"
 msgstr "Suivant"
 
-#: mseconsts_en.pas:136
 msgid "Last"
 msgstr "Dernier"
 
-#: mseconsts_en.pas:137
 msgid "Append"
 msgstr "Ajouter"
 
-#: mseconsts_en.pas:138
 msgid "Delete"
 msgstr "Supprimer"
 
-#: mseconsts_en.pas:139
 msgid "Edit"
 msgstr "Éditer"
 
-#: mseconsts_en.pas:140
 msgid "Post"
 msgstr "Poster"
 
-#: mseconsts_en.pas:142
 msgid "Refresh"
 msgstr "Rafraîchir"
 
-#: mseconsts_en.pas:143
 msgid "Edit filter"
 msgstr "Édition Filtre"
 
-#: mseconsts_en.pas:144
 msgid "Edit filter minimum"
 msgstr "Édition Filtre Minimum"
 
-#: mseconsts_en.pas:145
 msgid "Edit filter maximum"
 msgstr "Édition Filtre Maximum"
 
-#: mseconsts_en.pas:146
 msgid "Reset filter"
 msgstr "Réinitialiser le filtre"
 
-#: mseconsts_en.pas:147
 msgid "Filter on"
 msgstr "Filtre actif"
 
-#: mseconsts_en.pas:148
 msgid "Search"
 msgstr "Rechercher"
 
-#: mseconsts_en.pas:149
 msgid "Auto edit"
 msgstr "Édition automatique"
 
-#: mseconsts_en.pas:150
 msgid "Copy record"
 msgstr "Copier l’enregistrement"
 
-#: mseconsts_en.pas:151
 msgid "Dialog"
 msgstr "Dialogue"
 
-#: mseconsts_en.pas:152
 msgid "Insert"
 msgstr "Insérer"
 
-#: mseconsts_en.pas:153
 msgid "Copy"
 msgstr "Copier"
 
-#: mseconsts_en.pas:154
 msgid "Paste"
 msgstr "Coller"
 
-#: mseconsts_en.pas:155
 msgid "Row insert"
 msgstr "Insérer ligne"
 
-#: mseconsts_en.pas:156
 msgid "Row append"
 msgstr "Ajouter ligne"
 
-#: mseconsts_en.pas:157
 msgid "Row delete"
 msgstr "Supprimer ligne"
 
-#: mseconsts_en.pas:158
 msgid "Undo"
 msgstr "Défaire"
 
-#: mseconsts_en.pas:159
 msgid "Redo"
 msgstr "Refaire"
 
-#: mseconsts_en.pas:160
 msgid "Cut"
 msgstr "Couper"
 
-#: mseconsts_en.pas:161
 msgid "Select all"
 msgstr "Sélectionner tout"
 
-#: mseconsts_en.pas:163
 msgid "Filter off"
 msgstr "Filtre inactif"
 
-#: mseconsts_en.pas:164
 msgid "Portrait"
 msgstr "Portrait"
 
-#: mseconsts_en.pas:165
 msgid "Landscape"
 msgstr "Paysage"
 
-#: mseconsts_en.pas:166
 msgid "Delete row?"
 msgstr "Supprimer ligne ?"
 
-#: mseconsts_en.pas:167
 msgid "selected rows?"
 msgstr "lignes sélectionnées ?"
 
-#: mseconsts_en.pas:168
 msgid "Single item only"
 msgstr "Seulement un élément"
 
-#: mseconsts_en.pas:169
 msgid "Copy Cells"
 msgstr "Copier cellules"
 
-#: mseconsts_en.pas:170
 msgid "Paste Cells"
 msgstr "Coller cellules"
 
-#: mseconsts_en.pas:171
 msgid "Close"
 msgstr "Fermer"
 
-#: mseconsts_en.pas:172
 msgid "Maximize"
 msgstr "Maximiser"
 
-#: mseconsts_en.pas:173
 msgid "Normalize"
 msgstr "Normaliser"
 
-#: mseconsts_en.pas:174
 msgid "Minimize"
 msgstr "Minimiser"
 
-#: mseconsts_en.pas:175
 msgid "Fix size"
 msgstr "Taille fixe"
 
-#: mseconsts_en.pas:176
 msgid "Float"
 msgstr "Flottant"
 
-#: mseconsts_en.pas:177
 msgid "Stay on top"
 msgstr "Rester en avant"
 
-#: mseconsts_en.pas:178
 msgid "Stay in background"
 msgstr "Rester en arrière"
 
-#: mseconsts_en.pas:179
 msgid "Lock children"
 msgstr "Bloquer les descendants"
 
-#: mseconsts_en.pas:180
 msgid "No lock"
 msgstr "Ne pas bloquer"
 
-#: mseconsts_en.pas:181
 msgid "Input"
 msgstr "Entrée"
 
-#: mseconsts_en.pas:182
 msgid "Button"
 msgstr "Boutton"
 
-#: mseconsts_en.pas:183
 msgid "On"
 msgstr "Allumé"
 
-#: mseconsts_en.pas:184
 msgid "Off"
 msgstr "Éteint"
 
-#: mseconsts_en.pas:185
 msgid "Left border"
 msgstr "Bord gauche"
 
-#: mseconsts_en.pas:186
 msgid "Top border"
 msgstr "Bord haut"
 
-#: mseconsts_en.pas:187
 msgid "Right border"
 msgstr "Bord droit"
 
-#: mseconsts_en.pas:188
 msgid "Bottom border"
 msgstr "Bord bas"
 
-#: mseconsts_en.pas:189
 msgid "Begin of text"
 msgstr "Début du texte"
 
-#: mseconsts_en.pas:190
 msgid "End of text"
 msgstr "Fin du texte"
 
-#: mseconsts_en.pas:191
 msgid "Inputmode"
 msgstr "Mode entrée"
 
-#: mseconsts_en.pas:192
 msgid "Overwrite"
 msgstr "Écraser"
 
-#: mseconsts_en.pas:193
 msgid "Deleted"
 msgstr "Détruit"
 
-#: mseconsts_en.pas:194
 msgid "Copied"
 msgstr "Copieé"
 
-#: mseconsts_en.pas:195
 msgid "Inserted"
 msgstr "Inseré"
 
-#: mseconsts_en.pas:196
 msgid "Pasted"
 msgstr "Collé"
 
-#: mseconsts_en.pas:197
 msgid "Withdrawn"
 msgstr "Retiré"
 
-#: mseconsts_en.pas:198
 msgid "Window activated"
 msgstr "Fenètre activée"
 
-#: mseconsts_en.pas:199
 msgid "Menu"
 msgstr "Menu"
 
-#: mseconsts_en.pas:200
 msgid "Beginning of file"
 msgstr "Début du fichier"
 
-#: mseconsts_en.pas:201
 msgid "End of file"
 msgstr "Fin du fichier"
 
-#: mseconsts_en.pas:202
 msgid "Voice output"
 msgstr "Sortie voix"
 
-#: mseconsts_en.pas:203
 msgid "Speak again"
 msgstr "Répéter"
 
-#: mseconsts_en.pas:204
 msgid "First column"
 msgstr "Première colonne"
 
-#: mseconsts_en.pas:205
 msgid "First row"
 msgstr "Première ligne"
 
-#: mseconsts_en.pas:206
 msgid "Last column"
 msgstr "Dèrnière colonne"
 
-#: mseconsts_en.pas:207
 msgid "Last row"
 msgstr "Dèrnière ligne"
 
-#: mseconsts_en.pas:208
 msgid "Selection"
 msgstr "Sélection"
 
-#: mseconsts_en.pas:209
 msgid "Speak path"
 msgstr "Chemin de speak"
 
-#: mseconsts_en.pas:210
 msgid "Disabled button"
 msgstr "Désactiver le boutton"
 
-#: mseconsts_en.pas:211
 msgid "First field"
 msgstr "Premier champ"
 
-#: mseconsts_en.pas:212
 msgid "Last field"
 msgstr "Dèrnier champ"
 
-#: mseconsts_en.pas:213
 msgid "First element"
 msgstr "Premier élement"
 
-#: mseconsts_en.pas:214
 msgid "Last element"
 msgstr "Dèrnier élement"
 
-#: mseconsts_en.pas:215
 msgid "Slower"
 msgstr "Plus lent"
 
-#: mseconsts_en.pas:216
 msgid "Faster"
 msgstr "Plus rapide"
 
-#: mseconsts_en.pas:217
 msgid "Window"
 msgstr "Fenètre"
 
-#: mseconsts_en.pas:218
 msgid "Area"
 msgstr "Aire"
 
-#: mseconsts_en.pas:219
 msgid "Area activated"
 msgstr "Aire activée"
 
-#: mseconsts_en.pas:220
 msgid "Volume down"
 msgstr "Volume moins"
 
-#: mseconsts_en.pas:221
 msgid "Volume up"
 msgstr "Volume plus"
 
-#: mseconsts_en.pas:222
 msgid "Cancel speech"
 msgstr "Annuler speech"

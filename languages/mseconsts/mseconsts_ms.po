@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mseconsts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-03 02:31+0300\n"
+"POT-Creation-Date: 2019-04-09 00:57+0300\n"
 "PO-Revision-Date: 2019-04-03 06:16+0000\n"
 "Last-Translator: AlexL <loginov.alex.valer@gmail.com>, 2019\n"
 "Language-Team: Malay (https://www.transifex.com/Magic/teams/44238/ms/)\n"
@@ -20,683 +20,512 @@ msgstr ""
 "Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: mseconsts_en.pas:24
 msgid "Delete selected row?"
 msgstr ""
 
-#: mseconsts_en.pas:25
-#, lua-format
 msgid "Delete %s selected rows?"
 msgstr ""
 
-#: mseconsts_en.pas:36
 msgid "&Cancel"
 msgstr "&Batal"
 
-#: mseconsts_en.pas:37
 msgid "&Abort"
 msgstr "&Henti Paksa"
 
-#: mseconsts_en.pas:38
 msgid "&OK"
 msgstr ""
 
-#: mseconsts_en.pas:39
 msgid "&Yes"
 msgstr ""
 
-#: mseconsts_en.pas:40
 msgid "&No"
 msgstr ""
 
-#: mseconsts_en.pas:41
 msgid "&All"
 msgstr "&Semua"
 
-#: mseconsts_en.pas:42
 msgid "Yes &all"
 msgstr ""
 
-#: mseconsts_en.pas:43
 msgid "N&o all"
 msgstr ""
 
-#: mseconsts_en.pas:44
 msgid "&Ignore"
 msgstr "&Abai"
 
-#: mseconsts_en.pas:45
 msgid "&Skip"
 msgstr ""
 
-#: mseconsts_en.pas:46
 msgid "Skip a&ll"
 msgstr ""
 
-#: mseconsts_en.pas:47
 msgid "Co&ntinue"
 msgstr ""
 
-#: mseconsts_en.pas:58 mseconsts_en.pas:141
 msgid "Cancel"
 msgstr "Batal"
 
-#: mseconsts_en.pas:59
 msgid "Abort"
 msgstr "Henti Paksa"
 
-#: mseconsts_en.pas:60
 msgid "OK"
 msgstr "OK"
 
-#: mseconsts_en.pas:61
 msgid "Yes"
 msgstr ""
 
-#: mseconsts_en.pas:62
 msgid "No"
 msgstr ""
 
-#: mseconsts_en.pas:63 mseconsts_en.pas:128
 msgid "All"
 msgstr "Semua"
 
-#: mseconsts_en.pas:64
 msgid "Yes all"
 msgstr ""
 
-#: mseconsts_en.pas:65
 msgid "No all"
 msgstr ""
 
-#: mseconsts_en.pas:66
 msgid "Ignore"
 msgstr "Abai"
 
-#: mseconsts_en.pas:67
 msgid "Skip"
 msgstr ""
 
-#: mseconsts_en.pas:68
 msgid "Skip all"
 msgstr ""
 
-#: mseconsts_en.pas:69
 msgid "Continue"
 msgstr ""
 
-#: mseconsts_en.pas:74
 msgid "is invalid"
 msgstr ""
 
-#: mseconsts_en.pas:75
 msgid "Format error"
 msgstr ""
 
-#: mseconsts_en.pas:76
 msgid "Value is required"
 msgstr ""
 
-#: mseconsts_en.pas:77
 msgid "Error"
 msgstr "Ralat"
 
-#: mseconsts_en.pas:78
 msgid "Min"
 msgstr ""
 
-#: mseconsts_en.pas:79
 msgid "Max"
 msgstr ""
 
-#: mseconsts_en.pas:80
 msgid "Range error"
 msgstr ""
 
-#: mseconsts_en.pas:82
 msgid "&Undo"
 msgstr "&Nyahcara"
 
-#: mseconsts_en.pas:83
 msgid "&Redo"
 msgstr "&Ulangcara"
 
-#: mseconsts_en.pas:84
 msgid "&Copy"
 msgstr "&Salin"
 
-#: mseconsts_en.pas:85
 msgid "Cu&t"
 msgstr "&Potong"
 
-#: mseconsts_en.pas:86
 msgid "&Paste"
 msgstr "&Tepek"
 
-#: mseconsts_en.pas:87
 msgid "Select &all"
 msgstr "Pilih &semua"
 
-#: mseconsts_en.pas:88
 msgid "&Insert Row"
 msgstr ""
 
-#: mseconsts_en.pas:89
 msgid "&Append Row"
 msgstr ""
 
-#: mseconsts_en.pas:90
 msgid "&Delete Row"
 msgstr ""
 
-#: mseconsts_en.pas:92
 msgid "&Dir"
 msgstr ""
 
-#: mseconsts_en.pas:93
 msgid "&Home"
 msgstr ""
 
-#: mseconsts_en.pas:94
 msgid "&Up"
 msgstr ""
 
-#: mseconsts_en.pas:95
 msgid "&New dir"
 msgstr ""
 
-#: mseconsts_en.pas:96
 msgid "&Name"
 msgstr "&Nama"
 
-#: mseconsts_en.pas:97
 msgid "&Show hidden files"
 msgstr "&Tunjuk fail tersembunyi"
 
-#: mseconsts_en.pas:98
 msgid "&Filter"
 msgstr "&Tapis"
 
-#: mseconsts_en.pas:99
 msgid "Save"
 msgstr "Simpan"
 
-#: mseconsts_en.pas:100
 msgid "Open"
 msgstr "Buka"
 
-#: mseconsts_en.pas:101
 msgid "Name"
 msgstr "Nama"
 
-#: mseconsts_en.pas:102
 msgid "Create new directory"
 msgstr ""
 
-#: mseconsts_en.pas:103
 msgid "Back"
 msgstr ""
 
-#: mseconsts_en.pas:104
 msgid "Forward"
 msgstr ""
 
-#: mseconsts_en.pas:105
 msgid "Up"
 msgstr ""
 
-#: mseconsts_en.pas:106
 msgid "File"
 msgstr "Fail"
 
-#: mseconsts_en.pas:107
 msgid "exists, do you want to overwrite?"
 msgstr ""
 
-#: mseconsts_en.pas:108
 msgid "is modified. Save?"
 msgstr ""
 
-#: mseconsts_en.pas:109
 msgid "WARNING"
 msgstr "AMARAN"
 
-#: mseconsts_en.pas:110
 msgid "ERROR"
 msgstr "RALAT"
 
-#: mseconsts_en.pas:111
 msgid "Exception"
 msgstr ""
 
-#: mseconsts_en.pas:112
 msgid "System"
 msgstr ""
 
-#: mseconsts_en.pas:113
 msgid "does not exist"
 msgstr " tidak wujud"
 
-#: mseconsts_en.pas:114
 msgid "PASSWORD"
 msgstr ""
 
-#: mseconsts_en.pas:115
 msgid "Enter password"
 msgstr ""
 
-#: mseconsts_en.pas:116
 msgid "Invalid password!"
 msgstr ""
 
-#: mseconsts_en.pas:117
 msgid "Can not read directory"
 msgstr ""
 
-#: mseconsts_en.pas:118
 msgid "Graphic format not supported"
 msgstr ""
 
-#: mseconsts_en.pas:119
 msgid "Graphic format error"
 msgstr ""
 
-#: mseconsts_en.pas:120
 msgid "MS Bitmap"
 msgstr ""
 
-#: mseconsts_en.pas:121
 msgid "MS Icon"
 msgstr ""
 
-#: mseconsts_en.pas:122
 msgid "JPEG Image"
 msgstr ""
 
-#: mseconsts_en.pas:123
 msgid "PNG Image"
 msgstr ""
 
-#: mseconsts_en.pas:124
 msgid "XPM Image"
 msgstr ""
 
-#: mseconsts_en.pas:125
 msgid "PNM Image"
 msgstr ""
 
-#: mseconsts_en.pas:126
 msgid "TARGA Image"
 msgstr ""
 
-#: mseconsts_en.pas:127
 msgid "TIFF Image"
 msgstr ""
 
-#: mseconsts_en.pas:129
 msgid "Confirmation"
 msgstr "Pengesahan"
 
-#: mseconsts_en.pas:130
 msgid "Delete record?"
 msgstr ""
 
-#: mseconsts_en.pas:131
 msgid "Copy record?"
 msgstr ""
 
-#: mseconsts_en.pas:132
 msgid "Close page"
 msgstr ""
 
-#: mseconsts_en.pas:133
 msgid "First"
 msgstr ""
 
-#: mseconsts_en.pas:134
 msgid "Prior"
 msgstr ""
 
-#: mseconsts_en.pas:135
 msgid "Next"
 msgstr "Berikutnya"
 
-#: mseconsts_en.pas:136
 msgid "Last"
 msgstr ""
 
-#: mseconsts_en.pas:137
 msgid "Append"
 msgstr ""
 
-#: mseconsts_en.pas:138
 msgid "Delete"
 msgstr "Padam"
 
-#: mseconsts_en.pas:139
 msgid "Edit"
 msgstr "Sunting"
 
-#: mseconsts_en.pas:140
 msgid "Post"
 msgstr ""
 
-#: mseconsts_en.pas:142
 msgid "Refresh"
 msgstr ""
 
-#: mseconsts_en.pas:143
 msgid "Edit filter"
 msgstr ""
 
-#: mseconsts_en.pas:144
 msgid "Edit filter minimum"
 msgstr ""
 
-#: mseconsts_en.pas:145
 msgid "Edit filter maximum"
 msgstr ""
 
-#: mseconsts_en.pas:146
 msgid "Reset filter"
 msgstr ""
 
-#: mseconsts_en.pas:147
 msgid "Filter on"
 msgstr ""
 
-#: mseconsts_en.pas:148
 msgid "Search"
 msgstr "Gelintar"
 
-#: mseconsts_en.pas:149
 msgid "Auto edit"
 msgstr ""
 
-#: mseconsts_en.pas:150
 msgid "Copy record"
 msgstr ""
 
-#: mseconsts_en.pas:151
 msgid "Dialog"
 msgstr ""
 
-#: mseconsts_en.pas:152
 msgid "Insert"
 msgstr "Sisip"
 
-#: mseconsts_en.pas:153
 msgid "Copy"
 msgstr "Salin"
 
-#: mseconsts_en.pas:154
 msgid "Paste"
 msgstr "Tepek"
 
-#: mseconsts_en.pas:155
 msgid "Row insert"
 msgstr ""
 
-#: mseconsts_en.pas:156
 msgid "Row append"
 msgstr ""
 
-#: mseconsts_en.pas:157
 msgid "Row delete"
 msgstr ""
 
-#: mseconsts_en.pas:158
 msgid "Undo"
 msgstr "Nyahcara"
 
-#: mseconsts_en.pas:159
 msgid "Redo"
 msgstr "Ulangcara"
 
-#: mseconsts_en.pas:160
 msgid "Cut"
 msgstr "Potong"
 
-#: mseconsts_en.pas:161
 msgid "Select all"
 msgstr "Pilih semua"
 
-#: mseconsts_en.pas:163
 msgid "Filter off"
 msgstr ""
 
-#: mseconsts_en.pas:164
 msgid "Portrait"
 msgstr ""
 
-#: mseconsts_en.pas:165
 msgid "Landscape"
 msgstr ""
 
-#: mseconsts_en.pas:166
 msgid "Delete row?"
 msgstr ""
 
-#: mseconsts_en.pas:167
 msgid "selected rows?"
 msgstr ""
 
-#: mseconsts_en.pas:168
 msgid "Single item only"
 msgstr ""
 
-#: mseconsts_en.pas:169
 msgid "Copy Cells"
 msgstr ""
 
-#: mseconsts_en.pas:170
 msgid "Paste Cells"
 msgstr ""
 
-#: mseconsts_en.pas:171
 msgid "Close"
 msgstr "Tutup"
 
-#: mseconsts_en.pas:172
 msgid "Maximize"
 msgstr ""
 
-#: mseconsts_en.pas:173
 msgid "Normalize"
 msgstr ""
 
-#: mseconsts_en.pas:174
 msgid "Minimize"
 msgstr ""
 
-#: mseconsts_en.pas:175
 msgid "Fix size"
 msgstr ""
 
-#: mseconsts_en.pas:176
 msgid "Float"
 msgstr ""
 
-#: mseconsts_en.pas:177
 msgid "Stay on top"
 msgstr ""
 
-#: mseconsts_en.pas:178
 msgid "Stay in background"
 msgstr ""
 
-#: mseconsts_en.pas:179
 msgid "Lock children"
 msgstr ""
 
-#: mseconsts_en.pas:180
 msgid "No lock"
 msgstr ""
 
-#: mseconsts_en.pas:181
 msgid "Input"
 msgstr ""
 
-#: mseconsts_en.pas:182
 msgid "Button"
 msgstr ""
 
-#: mseconsts_en.pas:183
 msgid "On"
 msgstr ""
 
-#: mseconsts_en.pas:184
 msgid "Off"
 msgstr ""
 
-#: mseconsts_en.pas:185
 msgid "Left border"
 msgstr ""
 
-#: mseconsts_en.pas:186
 msgid "Top border"
 msgstr ""
 
-#: mseconsts_en.pas:187
 msgid "Right border"
 msgstr ""
 
-#: mseconsts_en.pas:188
 msgid "Bottom border"
 msgstr ""
 
-#: mseconsts_en.pas:189
 msgid "Begin of text"
 msgstr ""
 
-#: mseconsts_en.pas:190
 msgid "End of text"
 msgstr ""
 
-#: mseconsts_en.pas:191
 msgid "Inputmode"
 msgstr ""
 
-#: mseconsts_en.pas:192
 msgid "Overwrite"
 msgstr ""
 
-#: mseconsts_en.pas:193
 msgid "Deleted"
 msgstr ""
 
-#: mseconsts_en.pas:194
 msgid "Copied"
 msgstr ""
 
-#: mseconsts_en.pas:195
 msgid "Inserted"
 msgstr ""
 
-#: mseconsts_en.pas:196
 msgid "Pasted"
 msgstr ""
 
-#: mseconsts_en.pas:197
 msgid "Withdrawn"
 msgstr ""
 
-#: mseconsts_en.pas:198
 msgid "Window activated"
 msgstr ""
 
-#: mseconsts_en.pas:199
 msgid "Menu"
 msgstr ""
 
-#: mseconsts_en.pas:200
 msgid "Beginning of file"
 msgstr ""
 
-#: mseconsts_en.pas:201
 msgid "End of file"
 msgstr ""
 
-#: mseconsts_en.pas:202
 msgid "Voice output"
 msgstr ""
 
-#: mseconsts_en.pas:203
 msgid "Speak again"
 msgstr ""
 
-#: mseconsts_en.pas:204
 msgid "First column"
 msgstr ""
 
-#: mseconsts_en.pas:205
 msgid "First row"
 msgstr ""
 
-#: mseconsts_en.pas:206
 msgid "Last column"
 msgstr ""
 
-#: mseconsts_en.pas:207
 msgid "Last row"
 msgstr ""
 
-#: mseconsts_en.pas:208
 msgid "Selection"
 msgstr ""
 
-#: mseconsts_en.pas:209
 msgid "Speak path"
 msgstr ""
 
-#: mseconsts_en.pas:210
 msgid "Disabled button"
 msgstr ""
 
-#: mseconsts_en.pas:211
 msgid "First field"
 msgstr ""
 
-#: mseconsts_en.pas:212
 msgid "Last field"
 msgstr ""
 
-#: mseconsts_en.pas:213
 msgid "First element"
 msgstr ""
 
-#: mseconsts_en.pas:214
 msgid "Last element"
 msgstr ""
 
-#: mseconsts_en.pas:215
 msgid "Slower"
 msgstr ""
 
-#: mseconsts_en.pas:216
 msgid "Faster"
 msgstr ""
 
-#: mseconsts_en.pas:217
 msgid "Window"
 msgstr ""
 
-#: mseconsts_en.pas:218
 msgid "Area"
 msgstr ""
 
-#: mseconsts_en.pas:219
 msgid "Area activated"
 msgstr ""
 
-#: mseconsts_en.pas:220
 msgid "Volume down"
 msgstr ""
 
-#: mseconsts_en.pas:221
 msgid "Volume up"
 msgstr ""
 
-#: mseconsts_en.pas:222
 msgid "Cancel speech"
 msgstr ""

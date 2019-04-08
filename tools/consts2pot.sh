@@ -24,10 +24,11 @@ sed -i "s|PACKAGE VERSION|mseconsts|g" $pot
 sed -i "s|charset=CHARSET|charset=UTF-8|g" $pot
 
 # delete comments from POT file
-sed -i "/#:/d" $pot
+sed -i "/^#:/d" $pot
+sed -i "/^#,/d" $pot
 
 # POT file header is not fuzzy already
-sed -i "/#, fuzzy/d" $pot
+sed -i "/^#, fuzzy/d" $pot
 
 # delete temporary file
 rm -f ./$constfile
