@@ -105,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Naik',
 'Berkas',
-'sudah ada  akan ditimpa?',
+'sudah ada‚ akan ditimpa?',
 'is modified. Save?',
 'PERINGATAN',
 'SALAH',

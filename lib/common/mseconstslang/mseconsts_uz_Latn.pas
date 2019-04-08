@@ -8,7 +8,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 } 
 
-unit mseconsts_uz@Latn;
+unit mseconsts_uz_Latn;
 
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
@@ -105,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Teppaga',
 'File',
-'exists  do you want to overwrite?',
+'exists‚ do you want to overwrite?',
 'is modified. Save?',
 'WARNING',
 'ERROR',
@@ -240,7 +240,7 @@ const
                                      );
 
 initialization
-registerlangconsts('uz@Latn',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+registerlangconsts('uz_Latn',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
 
 end.
 

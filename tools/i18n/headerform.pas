@@ -34,6 +34,7 @@ type
 var
  headerfo: theaderfo;
  astro, astrt, acomp : utf8String;
+ // listfiles : TStringList;
  hasfound : boolean = false;
  defaultresult, defmodalresulttext, defmodalresulttextnosc,
  defaultstockcaption, defaultextendedconst, constvaluearray : array of msestring;
@@ -233,9 +234,9 @@ x: integer;
  filterlista : msestringarty;
  filterlistb : msestringarty;
  str1, str2 : msestring;
- dirfiles: TStringList;
  Info : TSearchRec;
-begin
+ langall : msestring;
+ begin
 
 setlength(filterlista,1);
 setlength(filterlistb,1);
@@ -265,6 +266,8 @@ end;
 
  impexpfiledialog.controller.filterindex := 0;  
  application.processmessages;
+ 
+  langall := '';
 
 if impexpfiledialog.controller.execute(str1,fdk_open) then 
 begin
@@ -273,6 +276,11 @@ if tbutton(sender).tag = 0 then
 createnewconst(sender, str1) else createnewpo(sender, str1);
 end else
 begin
+
+{
+ListFiles := TStringList.Create;
+ListFiles.sorted := true;
+}
 
 if tbutton(sender).tag = 0 then str2 := '*.po' else str2 := '*.pas';
 
@@ -285,6 +293,17 @@ if tbutton(sender).tag = 0 then str2 := '*.po' else str2 := '*.pas';
                 until FindNext(Info) <> 0;
         end;
         FindClose(Info);
+        
+{
+ langall := '';
+ ListFiles.sort;
+ for x:= 0 to ListFiles.count -1 do
+ langall := langall + #44 + #039 + ListFiles[x] + #039;
+// langall := langall + #44  + ListFiles[x] ;
+ 
+  writeln(langall);
+   ListFiles.free;
+}           
  
 end;
 end;
@@ -309,12 +328,16 @@ str1, strinit, strlang, filename1 : msestring;
  ispocontext : boolean = false;
 begin
 str1 := fn;
+strlang := '';
+
 if fileexists(str1) then begin
 
 file1:= ttextdatastream.create(str1,fm_read);
 
 filename1 := copy(filename(str1),1, length(filename(str1))-3);
  strlang := trim(copy(filename1,system.pos('_',filename1)+1,length(filename1)-system.pos('_',filename1))) ;
+ 
+ strlang := utf8StringReplace(strlang, '@', '_', [rfReplaceAll]); 
  
   file1.encoding:= ce_utf8;
 
@@ -427,8 +450,11 @@ defaultstockcaption := en_stockcaption;
 defaultextendedconst := en_extendedconst;
 
   file1:= ttextdatastream.create(outputdir.value + 'mseconsts_' + strlang + '.pas',fm_create);
-
   file1.encoding:= ce_utf8;
+  
+ //  listfiles.add('mseconsts_' + strlang);
+ //  listfiles.add('la_' + strlang);
+ //  listfiles.add(strlang);
 
    file1.writeln(mseconstheader.value); 
    file1.writeln();
@@ -446,8 +472,8 @@ defaultextendedconst := en_extendedconst;
     
     if trim(astrt) = '' then astrt := defaultextendedconst[x]; 
     
-     astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]); 
-     astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+     astrt := utf8StringReplace(astrt, ',', '‚', [rfReplaceAll]); 
+     astrt := utf8StringReplace(astrt, #039, '‘' , [rfReplaceAll]);
  
     if (x < length(defaultextendedconst) -1) and
     (length(defaultextendedconst) > 1 ) then
@@ -464,8 +490,8 @@ defaultextendedconst := en_extendedconst;
      if hasfound then else astrt := defmodalresulttext[x];
      if trim(astrt) = '' then astrt := defmodalresulttext[x];
      
-       astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]);
-         astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+       astrt := utf8StringReplace(astrt, ',', '‚', [rfReplaceAll]);
+         astrt := utf8StringReplace(astrt, #039, '‘' , [rfReplaceAll]);
  
     if (x < length(defmodalresulttext) -1) and
     (length(defmodalresulttext) > 1 ) then
@@ -482,8 +508,8 @@ defaultextendedconst := en_extendedconst;
      if hasfound then else astrt := defmodalresulttextnosc[x];
     if trim(astrt) = '' then astrt := defmodalresulttextnosc[x];
     
-      astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]);
-       astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+      astrt := utf8StringReplace(astrt, ',', '‚', [rfReplaceAll]);
+       astrt := utf8StringReplace(astrt, #039, '‘' , [rfReplaceAll]);
  
     if (x < length(defmodalresulttextnosc) -1) and
     (length(defmodalresulttextnosc) > 1 ) then
@@ -500,8 +526,8 @@ defaultextendedconst := en_extendedconst;
      if hasfound then else astrt := defaultstockcaption[x];
     if trim(astrt) = '' then astrt := defaultstockcaption[x];
     
-      astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]);
-      astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+      astrt := utf8StringReplace(astrt, ',', '‚', [rfReplaceAll]);
+      astrt := utf8StringReplace(astrt, #039, '‘' , [rfReplaceAll]);
  
    if (x < length(defaultstockcaption) -1) and
     (length(defaultstockcaption) > 1 ) then

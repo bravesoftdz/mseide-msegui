@@ -28,26 +28,25 @@ type
  extendedaty = array[extendedty] of msestring;
  pextendeadty = ^extendedaty;
  
- langty = (la_none,la_en,la_af,la_am,la_an,la_ar,la_as,la_ast,la_az,la_be,la_bg,
-          la_bn,la_br,la_bs,la_ca,la_crh,la_cs,la_cy,la_da,la_de,la_dz,la_el,
-          la_eo,la_es,la_et,la_eu,la_fa,la_fi,la_fr,la_ga,la_gd,la_gl,la_gu,
-          la_he,la_hi,la_hr,la_hu,la_hy,la_id,la_is,la_it,la_ja,la_ka,la_kk,
-          la_km,la_kn,la_ko,la_ku,la_lb,la_ln,la_lo,la_lt,la_lv,la_mg,la_mi,
-          la_mk,la_ml,la_mn,la_mr,la_ms,la_my,la_nb,la_nds,la_ne,la_nl,la_nn,
-          la_oc,la_or,la_pa,la_pl,la_ps,la_pt,la_pt_BR,la_ro,la_ru,la_rw,la_si,
-          la_sk,la_sl,la_sq,la_sr,la_sr_latin,la_sv,la_ta,la_te,la_tg,la_th,
-          la_tk,la_tr,la_ug,la_uk,la_uz,la_vi,la_wa,la_xh,la_zh,la_zh_HK,la_zh_TW);
+ langty = (la_none,la_en,la_af,la_am,la_an,la_ar,la_as,la_ast,la_az,la_be,
+ la_bg,la_bn,la_br,la_bs,la_ca,la_crh,la_cs,la_cy,la_da,la_de,la_dz,la_el,
+ la_eo,la_es,la_et,la_eu,la_fa,la_fi,la_fr,la_ga,la_gd,la_gl,la_gu,la_he,
+ la_hi,la_hr,la_hu,la_hy,la_id,la_is,la_it,la_ja,la_ka,la_kk,la_km,la_kn,
+ la_ko,la_ku,la_lb,la_ln,la_lo,la_lt,la_lv,la_mg,la_mi,la_mk,la_ml,la_mn,
+ la_mr,la_ms,la_my,la_nb,la_nds,la_ne,la_nl,la_nn,la_oc,la_or,la_pa,la_pl,
+ la_ps,la_pt,la_pt_BR,la_ro,la_ru,la_rw,la_si,la_sk,la_sl,la_sq,la_sr,
+ la_sr_latin,la_sv,la_ta,la_te,la_tg,la_th,la_tk,la_tr,la_ug,la_uk,la_uz,
+ la_uz_Latn,la_vi,la_wa,la_xh,la_zh,la_zh_HK,la_zh_TW);
 
 const
- langnames: array[langty] of string = (
-            '','en','af','am','an','ar','as','ast','az','be','bg','bn','br','bs',
-            'ca','crh','cs','cy','da','de','dz','el','eo','es','et','eu','fa',
-            'fi','fr','ga','gd','gl','gu','he','hi','hr','hu','hy','id','is',
-            'it','ja','ka','kk','km','kn','ko','ku','lb','ln','lo','lt','lv',
-            'mg','mi','mk','ml','mn','mr','ms','my','nb','nds','ne','nl','nn',
-            'oc','or','pa','pl','ps','pt','pt_BR','ro','ru','rw','si','sk','sl',
-            'sq','sr','sr@latin','sv','ta','te','tg','th','tk','tr','ug','uk',
-            'uz','vi','wa','xh','zh','zh_HK','zh_TW');
+ langnames: array[langty] of string = ('','en','af','am','an','ar','as','ast',
+ 'az','be','bg','bn','br','bs','ca','crh','cs','cy','da','de','dz','el','eo',
+ 'es','et','eu','fa','fi','fr','ga','gd','gl','gu','he','hi','hr','hu','hy',
+ 'id','is','it','ja','ka','kk','km','kn','ko','ku','lb','ln','lo','lt','lv',
+ 'mg','mi','mk','ml','mn','mr','ms','my','nb','nds','ne','nl','nn','oc','or',
+ 'pa','pl','ps','pt','pt_BR','ro','ru','rw','si','sk','sl','sq','sr',
+ 'sr_latin','sv','ta','te','tg','th','tk','tr','ug','uk','uz','uz_Latn','vi',
+ 'wa','xh','zh','zh_HK','zh_TW');
 
 const 
 en_extendedconst: extendedaty =

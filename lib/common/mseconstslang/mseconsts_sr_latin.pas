@@ -8,7 +8,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 } 
 
-unit mseconsts_sr@latin;
+unit mseconsts_sr_latin;
 
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
@@ -105,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Up',
 'Datoteka',
-'exists  do you want to overwrite?',
+'exists‚ do you want to overwrite?',
 'is modified. Save?',
 'WARNING',
 'ERROR',
@@ -240,7 +240,7 @@ const
                                      );
 
 initialization
-registerlangconsts('sr@latin',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+registerlangconsts('sr_latin',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
 
 end.
 

@@ -105,7 +105,7 @@ extendedconst: extendedaty =
 'Adelante',
 'Arriba',
 'Archivo',
-'existe  ¿quiere sobreescribirlo?',
+'existe‚ ¿quiere sobreescribirlo?',
 'ha sido modificado. ¿Guardar?',
 'ADVERTENCIA',
 'ERROR',

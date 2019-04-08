@@ -105,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Up',
 'File',
-'exists  do you want to overwrite?',
+'exists‚ do you want to overwrite?',
 'is modified. Save?',
 'WARNING',
 'ຜິດພາດ',

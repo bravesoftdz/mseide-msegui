@@ -105,7 +105,7 @@ extendedconst: extendedaty =
 'Avant',
 'Dessus',
 'Fichier',
-'existe  Remplacer ?',
+'existe‚ Remplacer ?',
 'modifié. Enregistrer ?',
 'AVERTISSEMENT',
 'ERREUR',
