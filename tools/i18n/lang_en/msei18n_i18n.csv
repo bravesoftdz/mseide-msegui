@@ -21,12 +21,12 @@ name,type,notranslate,comment,value,en
 "mainfo,mainmenu1,menu.submenu.items,7:,caption",vaString,F,,&Make,&Make
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
 "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
-"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Default headers,&Default headers
 "mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
 "mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,Re&fresh,Re&fresh
 "mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,&Reset,&Reset
 "mainfo,mainmenu1,menu.submenu.items,10:,hint",vaString,F,,Reset translated words to root value,Reset translated words to root value
-"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,&Tools,&Tools
+"mainfo,mainmenu1,menu.submenu.items,12:,caption",vaString,F,,E&xit,E&xit
 "mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
 "mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
 "mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project,Save translate project
@@ -115,6 +115,12 @@ name,type,notranslate,comment,value,en
 "settingsfo,macrogrid,frame.caption",vaString,F,,Global Macros,Global Macros
 "settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
 "settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value,Value
-"headerfo,caption",vaString,F,,Default headers,Default headers
-"headerfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
-"headerfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
+"headerfo,caption",vaString,F,,Tools,Tools
+"headerfo,memopoheader,frame.caption",vaString,F,,Default PO header,Default PO header
+"headerfo,memopotheader,frame.caption",vaString,F,,Default POT header,Default POT header
+"headerfo,mseconstheader,frame.caption",vaString,F,,Default mseconst header,Default mseconst header
+"headerfo,tbutton3,caption",vaString,F,,Create new po from consts,Create new po from consts
+"headerfo,tbutton2,caption",vaString,F,,Create new consts from po,Create new consts from po
+"headerfo,alldir,frame.caption",vaString,F,,All directory,All directory
+"headerfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
+"headerfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
