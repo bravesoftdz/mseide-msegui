@@ -342,9 +342,9 @@ begin
        
          if copy(str2,1,1) = '"' then 
          begin
-         str2 :=  (utf8copy(str2,1,length(str2)-2)) ;
+         str2 :=  (utf8copy(str2,1,length(str2)-1)) ;
          astro := (utf8copy(str2,2,system.pos('",',str2)-1)) ;
-         astrt := (utf8copy(str2,system.pos('",',str2)+2,length(str2)-system.pos('",',str2)-2)) ; 
+         astrt := (utf8copy(str2,system.pos('",',str2)+2,length(str2)-1-system.pos('",',str2))) ; 
          hasvirg := true;
          end else
          begin 
@@ -401,8 +401,7 @@ begin
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
-           
-           
+            
            if system.pos(rootstring(','),acomp) > 0 then
            begin
            anonttemp := anont;
@@ -428,15 +427,6 @@ begin
          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]);
          astrt := utf8StringReplace(astrt, '|', '"', [rfReplaceAll]);
          
-         if (utf8copy(valuetext,1,2) <> '" ') and  (utf8copy(astrt,1,2) = '" ') 
-         then astrt :=  utf8copy(astrt,3,length(astrt)-2);
-   
-         astrt := utf8StringReplace(astrt, ' "', '', [rfReplaceAll]);
-           if (utf8copy(valuetext,length(valuetext)-1,2) = ' "') 
-         then astrt := astrt + ' "';          
-    
-          astrt := utf8trim(astrt);
-         
          info.comment := acom;  
          comment[aindex]:= acom; 
       
@@ -449,6 +439,10 @@ begin
          donottranslate[aindex]:= false;
          end;
         end; 
+        
+     //  if utf8copy(valuetext,1,2) = '" ' then writeln('valuetext: ' + valuetext); 
+     //  if utf8copy(astrt,1,2) = '" ' then writeln('astrt: ' + astrt); 
+                     
       if (trim(valuetext) = '')  then
       begin    
       info.donottranslate := true;
@@ -600,6 +594,8 @@ begin
       end;
     end;
    end;
+   
+   
     
       for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
@@ -607,6 +603,11 @@ begin
     
     if doreset = false then begin  
     if isloaded = false then begin
+    
+      if (utf8copy(valuetext,1,2) <> '" ')
+         then if  (utf8copy(astrt,1,2) = '" ') then 
+          astrt :=  utf8copy(astrt,3,length(astrt)-2) ;
+    
      if hasfound or hasfoundtext then
      begin
        if (trim(astrt) <> '') and  (astrt <> valuetext) then
