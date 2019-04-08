@@ -201,8 +201,9 @@ end;
 
  // writeln(length(defaultresult));
   
-  file1:= ttextdatastream.create('.' + directoryseparator +'output' + directoryseparator +
-   'mseconsts_' + strlang + '.po',fm_create);
+   file1:= ttextdatastream.create(ExtractFilePath(ParamStr(0)) + 
+   directoryseparator +'output' + directoryseparator + 
+  'mseconsts_' + strlang + '.pas',fm_create);
 
   file1.encoding:= ce_utf8;
 
