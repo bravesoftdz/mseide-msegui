@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'bs',
 'Delete selected row?',
 'Delete %s selected rows?'
 ); 
@@ -106,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Up',
 'Datoteka',
-'exists, do you want to overwrite?',
+'exists  do you want to overwrite?',
 'is modified. Save?',
 'WARNING',
 'ERROR',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('bs',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'ru',
 'Удалить выбранную строку?',
 'Удалить %s выбранные строки?'
 ); 
@@ -106,7 +105,7 @@ extendedconst: extendedaty =
 'Вперёд',
 'Вверх',
 'Файл',
-'уже есть, перезаписать?',
+'уже есть  перезаписать?',
 'был изменён. Сохранить?',
 'ПРЕДУПРЕЖДЕНИЕ',
 'ОШИБКА',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('ru',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

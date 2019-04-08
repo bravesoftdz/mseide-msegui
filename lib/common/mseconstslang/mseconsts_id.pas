@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'id',
 'Delete selected row?',
 'Delete %s selected rows?'
 ); 
@@ -106,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Naik',
 'Berkas',
-'sudah ada, akan ditimpa?',
+'sudah ada  akan ditimpa?',
 'is modified. Save?',
 'PERINGATAN',
 'SALAH',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('id',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

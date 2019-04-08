@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'fr',
 'Effacer le fichier sélectionné ?',
 'Effacer les %s fichiers sélectionnés ?'
 ); 
@@ -106,7 +105,7 @@ extendedconst: extendedaty =
 'Avant',
 'Dessus',
 'Fichier',
-'existe, Remplacer ?',
+'existe  Remplacer ?',
 'modifié. Enregistrer ?',
 'AVERTISSEMENT',
 'ERREUR',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('fr',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

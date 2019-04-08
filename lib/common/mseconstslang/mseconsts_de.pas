@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'de',
 'Gewählte Zeile löschen?',
 '%s gewählte Zeilen löschen?'
 ); 
@@ -106,8 +105,8 @@ extendedconst: extendedaty =
 'Forwärts',
 'Aufwärts',
 'Datei',
-'existiert, wollen Sie überschreiben?',
-'wurde geändert, wollen Sie speichern?',
+'existiert  wollen Sie überschreiben?',
+'wurde geändert  wollen Sie speichern?',
 'WARNUNG',
 'FEHLER',
 'Exception',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('de',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

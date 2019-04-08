@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'es',
 '¿Borrar la fila seleccionada?',
 '¿Borrar %s filas seleccionadas?'
 ); 
@@ -106,7 +105,7 @@ extendedconst: extendedaty =
 'Adelante',
 'Arriba',
 'Archivo',
-'existe, ¿quiere sobreescribirlo?',
+'existe  ¿quiere sobreescribirlo?',
 'ha sido modificado. ¿Guardar?',
 'ADVERTENCIA',
 'ERROR',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('es',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'uk',
 'Delete selected row?',
 'Delete %s selected rows?'
 ); 
@@ -95,7 +94,7 @@ extendedconst: extendedaty =
 '&Дом',
 '&Up',
 '&New dir',
-'&Ім'я',
+'&Ім я',
 '&Показувати приховані файли',
 '&Фільтр',
 'Зберегти',
@@ -106,7 +105,7 @@ extendedconst: extendedaty =
 'Forward',
 'Up',
 'Файл',
-'exists, do you want to overwrite?',
+'exists  do you want to overwrite?',
 'is modified. Save?',
 'ПОПЕРЕДЖЕННЯ',
 'ПОМИЛКА',
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('uk',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

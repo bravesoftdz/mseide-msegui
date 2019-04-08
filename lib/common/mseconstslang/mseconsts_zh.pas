@@ -22,7 +22,6 @@ uses
 const 
 extendedconst: extendedaty =
  (
-'zh',
 '确定删除此条记录吗？',
 '确定删除所选择的 %s 行记录吗？'
 ); 
@@ -239,8 +238,9 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
+
 initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
+registerlangconsts('zh',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+
 end.
+

@@ -3,18 +3,19 @@ object headerfo: theaderfo
   bounds_x = 493
   bounds_y = 200
   bounds_cx = 379
-  bounds_cy = 195
+  bounds_cy = 218
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
     379
-    195
+    218
   )
   options = [fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
   caption = 'Tools'
   windowopacity = -Inf
+  oncreate = oncreateform
   moduleclassname = 'tmseform'
   object memopoheader: tmemodialogedit
     frame.caption = 'Default PO header'
@@ -117,7 +118,7 @@ object headerfo: theaderfo
     taborder = 5
     visible = False
     bounds_x = 208
-    bounds_y = 32
+    bounds_y = 16
     bounds_cx = 156
     bounds_cy = 92
     value = ' );'#10#10' stockcaption: stockcaptionaty = ('
@@ -127,14 +128,14 @@ object headerfo: theaderfo
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
-    frame.sbvert.pagesize = 0.13650793650794
+    frame.sbvert.pagesize = 0.18067226890756
     taborder = 6
     visible = False
     bounds_x = 184
     bounds_y = 8
     bounds_cx = 156
     bounds_cy = 92
-    value = 'function delete_n_selected_rows(const params: array of const): msestring;'#10'begin'#10' with params[0] do begin'#10'  if vinteger = 1 then begin'#10'   result:= extendedconst[ex_del_row_selected];'#10'  end'#10'  else begin'#10'   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);'#10'  end;'#10' end;'#10'end;'#10#10'const'#10' textgenerator: defaultgeneratortextty = ('#10'              {$ifdef FPC}@{$endif}delete_n_selected_rows'#10'                                     );'#10'initialization'#10' registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, '#10'        @modalresulttextnoshortcut,@textgenerator);'#10'                               '#10'end.'
+    value = 'function delete_n_selected_rows(const params: array of const): msestring;'#10'begin'#10' with params[0] do begin'#10'  if vinteger = 1 then begin'#10'   result:= extendedconst[ex_del_row_selected];'#10'  end'#10'  else begin'#10'   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);'#10'  end;'#10' end;'#10'end;'#10#10'const'#10' textgenerator: defaultgeneratortextty = ('#10'              {$ifdef FPC}@{$endif}delete_n_selected_rows'#10'                                     );'#10
     reffontheight = 14
   end
   object mseconstheader: tmemodialogedit
@@ -156,7 +157,7 @@ object headerfo: theaderfo
     taborder = 7
     bounds_x = 8
     bounds_y = 88
-    bounds_cx = 346
+    bounds_cx = 362
     bounds_cy = 34
     anchors = [an_left, an_top, an_right]
     statfile = tstatfile1
@@ -166,9 +167,9 @@ object headerfo: theaderfo
   object tbutton3: tbutton
     Tag = 1
     taborder = 8
-    bounds_x = 133
-    bounds_y = 160
-    bounds_cx = 194
+    bounds_x = 181
+    bounds_y = 176
+    bounds_cx = 186
     bounds_cy = 28
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
@@ -177,9 +178,9 @@ object headerfo: theaderfo
   end
   object tbutton2: tbutton
     taborder = 9
-    bounds_x = 133
-    bounds_y = 128
-    bounds_cx = 194
+    bounds_x = 181
+    bounds_y = 144
+    bounds_cx = 186
     bounds_cy = 28
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
@@ -187,21 +188,50 @@ object headerfo: theaderfo
     onexecute = createnew
   end
   object alldir: tbooleanedit
-    frame.caption = 'All directory'
+    frame.caption = 'All files of directory'
     frame.localprops = []
     frame.localprops1 = []
     frame.outerframe = (
       0
       1
-      75
+      117
       2
     )
     taborder = 10
-    bounds_x = 24
-    bounds_y = 151
-    bounds_cx = 88
+    bounds_x = 16
+    bounds_y = 183
+    bounds_cx = 130
     bounds_cy = 16
     statfile = tstatfile1
+  end
+  object outputdir: tfilenameedit
+    frame.caption = 'Output directory'
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.buttons.count = 1
+    frame.buttons.items = <    
+      item
+        imagenr = 17
+      end>
+    frame.button.imagenr = 17
+    frame.outerframe = (
+      0
+      17
+      0
+      0
+    )
+    taborder = 11
+    bounds_x = 8
+    bounds_y = 135
+    bounds_cx = 164
+    bounds_cy = 37
+    statfile = tstatfile1
+    value = './output'
+    controller.filename = './output/'
+    controller.lastdir = '/home/fred/mseide-msegui/tools/i18n/output/'
+    controller.basedir = './output'
+    controller.options = [fdo_directory, fdo_savelastdir]
+    reffontheight = 14
   end
   object impexpfiledialog: tfiledialog
     statfile = tstatfile1
@@ -209,8 +239,8 @@ object headerfo: theaderfo
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'
     controller.captionsave = 'Save export file'
-    left = 40
-    top = 128
+    left = 192
+    top = 48
   end
   object tstatfile1: tstatfile
     filename = 'status.sta'

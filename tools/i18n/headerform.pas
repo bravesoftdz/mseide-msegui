@@ -4,9 +4,9 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,mseact,
-  mclasses,msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,
+ mclasses,msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,
  mseifiglob,msememodialog,msestatfile,msestream,sysutils,msesimplewidgets,
-  mseconsts,msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,
+ mseconsts,msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,
  msegrids,msegridsglob,LazUTF8,mselistbrowser,msesys,msegraphedits,msescrollbar;
 type
  theaderfo = class(tmseform)
@@ -23,10 +23,12 @@ type
    impexpfiledialog: tfiledialog;
    alldir: tbooleanedit;
    tstatfile1: tstatfile;
+   outputdir: tfilenameedit;
    procedure createnew(const sender: TObject);
    procedure createnewconst(const sender: TObject; fn : msestring);
    procedure createnewpo(const sender: TObject; fn : msestring);
    procedure dosearch(thearray : array of msestring; theindex : integer);
+   procedure oncreateform(const sender: TObject);
  end;
 
 var
@@ -201,9 +203,8 @@ end;
 
  // writeln(length(defaultresult));
   
-   file1:= ttextdatastream.create(ExtractFilePath(ParamStr(0)) + 
-   directoryseparator +'output' + directoryseparator + 
-  'mseconsts_' + strlang + '.pas',fm_create);
+   file1:= ttextdatastream.create(outputdir.value+ 
+  'mseconsts_' + strlang + '.po',fm_create);
 
   file1.encoding:= ce_utf8;
 
@@ -404,9 +405,7 @@ filename1 := copy(filename(str1),1, length(filename(str1))-3);
        end;  
     
     end;
-    
-        
-       setlength(constvaluearray,length(constvaluearray)+1);  
+        setlength(constvaluearray,length(constvaluearray)+1);  
          str2 := str4 + utf8String(';') + str2 + utf8String(';') + str3 ; 
          str2 := utf8StringReplace(str2, '\n', '', [rfReplaceAll]); 
          str2 := utf8StringReplace(str2, '\', '', [rfReplaceAll]);
@@ -427,8 +426,7 @@ defaultstockcaption := en_stockcaption;
   setlength(defaultextendedconst,length(en_extendedconst));
 defaultextendedconst := en_extendedconst;
 
-  file1:= ttextdatastream.create('.' + directoryseparator +'output' + directoryseparator + 
-  'mseconsts_' + strlang + '.pas',fm_create);
+  file1:= ttextdatastream.create(outputdir.value + 'mseconsts_' + strlang + '.pas',fm_create);
 
   file1.encoding:= ce_utf8;
 
@@ -438,12 +436,8 @@ defaultextendedconst := en_extendedconst;
    file1.writeln('unit mseconsts_' + strlang + #059);
    file1.writeln();
    file1.writeln(initunit.value); 
-   
-     if (length(defaultextendedconst) > 1 ) then
-    file1.writeln(#039 + strlang + #039 + #044) else
-    file1.writeln(#039 + strlang + #039);
-   
-   for x := 1 to length(defaultextendedconst) -1 do
+      
+   for x := 0 to length(defaultextendedconst) -1 do
    begin
     
     dosearch(defaultextendedconst,x);
@@ -451,7 +445,10 @@ defaultextendedconst := en_extendedconst;
     if hasfound then else astrt := defaultextendedconst[x];
     
     if trim(astrt) = '' then astrt := defaultextendedconst[x]; 
-   
+    
+     astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]); 
+     astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+ 
     if (x < length(defaultextendedconst) -1) and
     (length(defaultextendedconst) > 1 ) then
     file1.writeln(#039 + astrt + #039 + #044) else
@@ -465,8 +462,11 @@ defaultextendedconst := en_extendedconst;
      dosearch(defmodalresulttext,x);
      
      if hasfound then else astrt := defmodalresulttext[x];
-     if trim(astrt) = '' then astrt := defmodalresulttext[x]; 
+     if trim(astrt) = '' then astrt := defmodalresulttext[x];
      
+       astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]);
+         astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+ 
     if (x < length(defmodalresulttext) -1) and
     (length(defmodalresulttext) > 1 ) then
     file1.writeln(#039 + astrt + #039 + #044) else
@@ -480,7 +480,11 @@ defaultextendedconst := en_extendedconst;
     dosearch(defmodalresulttextnosc,x);
     
      if hasfound then else astrt := defmodalresulttextnosc[x];
-    if trim(astrt) = '' then astrt := defmodalresulttextnosc[x]; 
+    if trim(astrt) = '' then astrt := defmodalresulttextnosc[x];
+    
+      astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]);
+       astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+ 
     if (x < length(defmodalresulttextnosc) -1) and
     (length(defmodalresulttextnosc) > 1 ) then
     file1.writeln(#039 + astrt + #039 +#044) else
@@ -494,7 +498,11 @@ defaultextendedconst := en_extendedconst;
     dosearch(defaultstockcaption,x);
     
      if hasfound then else astrt := defaultstockcaption[x];
-    if trim(astrt) = '' then astrt := defaultstockcaption[x]; 
+    if trim(astrt) = '' then astrt := defaultstockcaption[x];
+    
+      astrt := utf8StringReplace(astrt, ',', ' ', [rfReplaceAll]);
+      astrt := utf8StringReplace(astrt, #039, ' ' , [rfReplaceAll]);
+ 
    if (x < length(defaultstockcaption) -1) and
     (length(defaultstockcaption) > 1 ) then
     file1.writeln(#039 + astrt + #039+ #044) else
@@ -502,12 +510,28 @@ defaultextendedconst := en_extendedconst;
     end;
     
      file1.writeln();
-    
+         
      file1.writeln(endmemo.value); 
- 
-   file1.free;
+     
+     file1.writeln('initialization');
+     
+      file1.writeln('registerlangconsts' + #040+ #039+strlang+ #039 + #044 +
+      '@stockcaption' + #044 + '@modalresulttext' + #044 +
+      '@modalresulttextnoshortcut' + #044 + '@textgenerator'+ #041 + #059);
+     
+     file1.writeln();  
+     file1.writeln('end.');  
+     file1.writeln();
+     
+     file1.free;
    
 end;
+end;
+
+procedure theaderfo.oncreateform(const sender: TObject);
+begin
+ outputdir.value := ExtractFilePath(ParamStr(0)) + directoryseparator +'output' 
+  + directoryseparator;
 end;
 
 end.
