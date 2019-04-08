@@ -69,7 +69,7 @@ filefilterindex=-1
 filefilter=*.trd
 [projectfo.grid]
 propcolwidthref=541
-values0=86
+values0=87
  watchpointsfo
  watchfo
  toolhandlermo
@@ -92,7 +92,7 @@ values0=86
  projectoptionsfo
  programparametersfo
  printfo
- panelfo
+ idepanelfo
  objectinspectorfo
  msetemplateselectfo
  mseparamentryfo
@@ -144,6 +144,7 @@ values0=86
  doublereallisteditor
  msedbfieldeditorfo
  msecornermaskeditorfo
+ panelfo
  colordialogfo
  dirtreefo
  dirtreesubfo
@@ -158,7 +159,7 @@ values0=86
  stringenterfo
 width0=201
 sortdescend0=0
-values1=86
+values1=87
  /home/fred/mseide-msegui/apps/ide/watchpointsform.mfm
  /home/fred/mseide-msegui/apps/ide/watchform.mfm
  /home/fred/mseide-msegui/apps/ide/toolhandlermodule.mfm
@@ -181,7 +182,7 @@ values1=86
  /home/fred/mseide-msegui/apps/ide/projectoptionsform.mfm
  /home/fred/mseide-msegui/apps/ide/programparametersform.mfm
  /home/fred/mseide-msegui/apps/ide/printform.mfm
- /home/fred/mseide-msegui/apps/ide/panelform.mfm
+ /home/fred/mseide-msegui/apps/ide/panelform2.mfm
  /home/fred/mseide-msegui/apps/ide/objectinspector.mfm
  /home/fred/mseide-msegui/apps/ide/msetemplateselectform.mfm
  /home/fred/mseide-msegui/apps/ide/mseparamentryform.mfm
@@ -233,6 +234,7 @@ values1=86
  /home/fred/mseide-msegui/lib/common/designutils/msedoublereallisteditor.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msedbfieldeditor.mfm
  /home/fred/mseide-msegui/lib/common/designutils/msecornermaskeditor.mfm
+ /home/fred/mseide-msegui/lib/common/designutils/panelform.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msecolordialog.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msedirtree.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msedirtreesub.mfm
@@ -245,7 +247,8 @@ values1=86
  /home/fred/mseide-msegui/lib/common/dialogs/mserealenter.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/mseshortcutdialog.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msestringenter.mfm
-values2=86
+values2=87
+ 0
  0
  0
  0

@@ -612,7 +612,7 @@ bugs"
 "printfo,pages,frame.caption",vaString,F,,Pages,Pages
 "printfo,c,strings.data,0:",vaString,F,,Page,Page
 "printfo,c,strings.data,1:",vaString,F,,Do you wish to cancel printing?,Do you wish to cancel printing?
-"panelfo,dragdock.caption",vaString,F,,Mainwindow,Mainwindow
+"idepanelfo,dragdock.caption",vaString,F,,Mainwindow,Mainwindow
 "objectinspectorfo,dragdock.caption",vaString,F,,Objectinspector,Objectinspector
 "objectinspectorfo,caption",vaString,F,,Object Inspector,Object Inspector
 "objectinspectorfo,compedit,hint",vaString,F,,Show component editor.,Show component editor.
