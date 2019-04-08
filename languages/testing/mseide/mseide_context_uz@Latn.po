@@ -2027,7 +2027,7 @@ msgstr ""
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,1:,caption"
 msgid "Filter"
-msgstr "Filьtr"
+msgstr "Filtr"
 
 msgctxt ""
 "projectoptionsfo,tlayouter9,tabwidget,ttabpage2,newfile,ttabpage4,twidgetgrid1,fixrows.items,0:,captions.items,2:,caption"
@@ -5697,7 +5697,7 @@ msgstr "&Tayyor"
 
 msgctxt "filedialogfo,tlayouter2,tlayouter1,filter,frame.caption"
 msgid "&Filter"
-msgstr "&Filьtr"
+msgstr "&Filtr"
 
 msgctxt "filedialogfo,tlayouter2,tlayouter1,filename,frame.caption"
 msgid "&Name"

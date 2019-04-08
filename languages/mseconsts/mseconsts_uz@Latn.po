@@ -215,7 +215,7 @@ msgstr "&Beritilgan faylarni qursatish"
 
 #: mseconsts_en.pas:98
 msgid "&Filter"
-msgstr "&Filьtr"
+msgstr "&Filtr"
 
 #: mseconsts_en.pas:99
 msgid "Save"

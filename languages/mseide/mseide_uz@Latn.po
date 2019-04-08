@@ -1140,7 +1140,7 @@ msgid "New File"
 msgstr ""
 
 msgid "Filter"
-msgstr "Filьtr"
+msgstr "Filtr"
 
 msgid "Ext"
 msgstr ""
@@ -3147,7 +3147,7 @@ msgid "&Show hidden files"
 msgstr "&Beritilgan faylarni qursatish"
 
 msgid "&Filter"
-msgstr "&Filьtr"
+msgstr "&Filtr"
 
 msgid "&New dir"
 msgstr "&Yangi kat."

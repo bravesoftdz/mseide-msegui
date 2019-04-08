@@ -96,7 +96,7 @@ extendedconst: extendedaty =
 '&Yangi kat.',
 '&Nomi',
 '&Beritilgan faylarni qursatish',
-'&Filьtr',
+'&Filtr',
 'Saklash',
 'Ochish',
 'Nomi',
