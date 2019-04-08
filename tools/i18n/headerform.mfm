@@ -173,7 +173,7 @@ object headerfo: theaderfo
     bounds_cy = 28
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
-    caption = 'Create new po from consts'
+    caption = 'Create new PO from consts'
     onexecute = createnew
   end
   object tbutton2: tbutton
@@ -184,7 +184,7 @@ object headerfo: theaderfo
     bounds_cy = 28
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
-    caption = 'Create new consts from po'
+    caption = 'Create new consts from PO'
     onexecute = createnew
   end
   object alldir: tbooleanedit
