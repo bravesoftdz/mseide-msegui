@@ -832,8 +832,9 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=dowrite
+finddtext=fpsystem
 findhistory=20
+ fpsystem
  dowrite
  readprojectdata
  writeprojectdata
@@ -853,14 +854,13 @@ findhistory=20
  doread
  colorstate
  color
- yellow
 findoptions=1
 editpos=6
  0,-1073741823
  0,-1073741823
- 0,262
+ 0,4
  0,-1073741823
- 0,2147
+ 0,21
  0,178
 bookmarks0=0
 bookmarks1=0

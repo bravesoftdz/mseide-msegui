@@ -2,7 +2,7 @@ unit headerform;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
 uses
- msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
+ {$ifdef unix}unix,{$endif} msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,mseact,
  mclasses,msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,
  mseifiglob,msememodialog,msestatfile,msestream,sysutils,msesimplewidgets,
@@ -575,6 +575,11 @@ procedure theaderfo.oncreateform(const sender: TObject);
 begin
  outputdir.value := ExtractFilePath(ParamStr(0)) + directoryseparator +'output' 
   + directoryseparator;
+
+{$ifdef unix}
+ fpsystem('chmod 777 '+outputdir.value);
+{$endif}  
+  
 end;
 
 procedure theaderfo.ontime(const sender: TObject);
