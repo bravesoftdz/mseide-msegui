@@ -21,22 +21,10 @@ msgstr ""
 "Language: am\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "no string"
-msgstr ""
-
-msgid "Name"
-msgstr ""
-
-msgid "Type"
-msgstr ""
-
-msgid "Comment"
-msgstr ""
-
-msgid "Value"
-msgstr ""
-
 msgid "flat"
+msgstr ""
+
+msgid "no string"
 msgstr ""
 
 msgid "string only"
@@ -49,6 +37,18 @@ msgid "NT only"
 msgstr ""
 
 msgid "show color"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Value"
 msgstr ""
 
 msgid "Working..."
@@ -369,11 +369,14 @@ msgstr ""
 msgid "Default mseconst header"
 msgstr ""
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgid "Output directory"
 msgstr ""

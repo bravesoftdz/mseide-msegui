@@ -21,8 +21,28 @@ msgstr ""
 "Language: or\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "mainfo,tgroupbox1,flat,frame.caption"
+msgid "flat"
+msgstr ""
+
 msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
 msgid "no string"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,stringonly,frame.caption"
+msgid "string only"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,nont,frame.caption"
+msgid "no NT"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,ntonly,frame.caption"
+msgid "NT only"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,coloron,frame.caption"
+msgid "show color"
 msgstr ""
 
 msgctxt "mainfo,grid,fixrows.items,0:,captions.items,0:,caption"
@@ -40,26 +60,6 @@ msgstr "ଟିପ୍ପଣୀ"
 msgctxt "mainfo,grid,fixrows.items,0:,captions.items,4:,caption"
 msgid "Value"
 msgstr "ମୂଲ୍ଯ"
-
-msgctxt "mainfo,flat,frame.caption"
-msgid "flat"
-msgstr ""
-
-msgctxt "mainfo,stringonly,frame.caption"
-msgid "string only"
-msgstr ""
-
-msgctxt "mainfo,nont,frame.caption"
-msgid "no NT"
-msgstr ""
-
-msgctxt "mainfo,ntonly,frame.caption"
-msgid "NT only"
-msgstr ""
-
-msgctxt "mainfo,coloron,frame.caption"
-msgid "show color"
-msgstr ""
 
 msgctxt "mainfo,workpan,value"
 msgid "Working..."
@@ -505,15 +505,19 @@ msgid "Default mseconst header"
 msgstr ""
 
 msgctxt "headerfo,tbutton3,caption"
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
 msgctxt "headerfo,tbutton2,caption"
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
 msgctxt "headerfo,alldir,frame.caption"
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgctxt "headerfo,outputdir,frame.caption"
+msgid "Output directory"
 msgstr ""
 
 msgctxt "headerfo,impexpfiledialog,controller.captionopen"

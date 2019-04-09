@@ -21,22 +21,10 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "no string"
+msgid "flat"
 msgstr ""
 
-msgid "Name"
-msgstr "이름"
-
-msgid "Type"
-msgstr "형식"
-
-msgid "Comment"
-msgstr "설명"
-
-msgid "Value"
-msgstr "값"
-
-msgid "flat"
+msgid "no string"
 msgstr ""
 
 msgid "string only"
@@ -50,6 +38,18 @@ msgstr ""
 
 msgid "show color"
 msgstr ""
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Type"
+msgstr "형식"
+
+msgid "Comment"
+msgstr "설명"
+
+msgid "Value"
+msgstr "값"
 
 msgid "Working..."
 msgstr ""
@@ -369,11 +369,14 @@ msgstr ""
 msgid "Default mseconst header"
 msgstr ""
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgid "Output directory"
 msgstr ""

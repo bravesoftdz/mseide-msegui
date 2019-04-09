@@ -21,22 +21,10 @@ msgstr ""
 "Language: lt\n"
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-msgid "no string"
+msgid "flat"
 msgstr ""
 
-msgid "Name"
-msgstr "Pavadinimas"
-
-msgid "Type"
-msgstr "Tipas"
-
-msgid "Comment"
-msgstr "Komentaras"
-
-msgid "Value"
-msgstr "Reikšmė"
-
-msgid "flat"
+msgid "no string"
 msgstr ""
 
 msgid "string only"
@@ -50,6 +38,18 @@ msgstr ""
 
 msgid "show color"
 msgstr ""
+
+msgid "Name"
+msgstr "Pavadinimas"
+
+msgid "Type"
+msgstr "Tipas"
+
+msgid "Comment"
+msgstr "Komentaras"
+
+msgid "Value"
+msgstr "Reikšmė"
 
 msgid "Working..."
 msgstr ""
@@ -369,11 +369,14 @@ msgstr ""
 msgid "Default mseconst header"
 msgstr ""
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgid "Output directory"
 msgstr ""

@@ -21,22 +21,10 @@ msgstr ""
 "Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "no string"
-msgstr ""
-
-msgid "Name"
-msgstr "नाम"
-
-msgid "Type"
-msgstr ""
-
-msgid "Comment"
-msgstr "टिप्पणी"
-
-msgid "Value"
-msgstr "मान"
-
 msgid "flat"
+msgstr ""
+
+msgid "no string"
 msgstr ""
 
 msgid "string only"
@@ -50,6 +38,18 @@ msgstr ""
 
 msgid "show color"
 msgstr ""
+
+msgid "Name"
+msgstr "नाम"
+
+msgid "Type"
+msgstr ""
+
+msgid "Comment"
+msgstr "टिप्पणी"
+
+msgid "Value"
+msgstr "मान"
 
 msgid "Working..."
 msgstr ""
@@ -369,11 +369,14 @@ msgstr ""
 msgid "Default mseconst header"
 msgstr ""
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgid "Output directory"
 msgstr ""

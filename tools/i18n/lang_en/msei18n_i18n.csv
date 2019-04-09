@@ -1,14 +1,14 @@
 name,type,notranslate,comment,value,en
+"mainfo,tgroupbox1,flat,frame.caption",vaString,F,,flat,flat
 "mainfo,tgroupbox1,nostring,frame.caption",vaString,F,,no string,no string
+"mainfo,tgroupbox1,stringonly,frame.caption",vaString,F,,string only,string only
+"mainfo,tgroupbox1,nont,frame.caption",vaString,F,,no NT,no NT
+"mainfo,tgroupbox1,ntonly,frame.caption",vaString,F,,NT only,NT only
+"mainfo,tgroupbox1,coloron,frame.caption",vaString,F,,show color,show color
 "mainfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
 "mainfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type,Type
 "mainfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Comment,Comment
 "mainfo,grid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Value,Value
-"mainfo,flat,frame.caption",vaString,F,,flat,flat
-"mainfo,stringonly,frame.caption",vaString,F,,string only,string only
-"mainfo,nont,frame.caption",vaString,F,,no NT,no NT
-"mainfo,ntonly,frame.caption",vaString,F,,NT only,NT only
-"mainfo,coloron,frame.caption",vaString,F,,show color,show color
 "mainfo,workpan,value",vaString,F,,Working...,Working...
 "mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open,&Open
 "mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Save,&Save
@@ -119,8 +119,9 @@ name,type,notranslate,comment,value,en
 "headerfo,memopoheader,frame.caption",vaString,F,,Default PO header,Default PO header
 "headerfo,memopotheader,frame.caption",vaString,F,,Default POT header,Default POT header
 "headerfo,mseconstheader,frame.caption",vaString,F,,Default mseconst header,Default mseconst header
-"headerfo,tbutton3,caption",vaString,F,,Create new po from consts,Create new po from consts
-"headerfo,tbutton2,caption",vaString,F,,Create new consts from po,Create new consts from po
-"headerfo,alldir,frame.caption",vaString,F,,All directory,All directory
+"headerfo,tbutton3,caption",vaString,F,,Create new PO from consts,Create new PO from consts
+"headerfo,tbutton2,caption",vaString,F,,Create new consts from PO,Create new consts from PO
+"headerfo,alldir,frame.caption",vaString,F,,All files of directory,All files of directory
+"headerfo,outputdir,frame.caption",vaString,F,,Output directory,Output directory
 "headerfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "headerfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file

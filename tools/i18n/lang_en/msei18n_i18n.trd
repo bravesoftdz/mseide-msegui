@@ -42,11 +42,30 @@ mainfo,vaNull,F,,,
 "mainfo,tgroupbox1,frame.localprops1",vaSet,F,,[frl1_captiondist],
 "mainfo,tgroupbox1,face.localprops",vaSet,F,,[],
 "mainfo,tgroupbox1,face.template",vaIdent,F,,concavex,
+"mainfo,tgroupbox1,visible",vaFalse,F,,
 "mainfo,tgroupbox1,bounds_x",vaInt8,F,,1,
 "mainfo,tgroupbox1,bounds_y",vaInt8,F,,1,
 "mainfo,tgroupbox1,bounds_cx",vaInt16,F,,685,
 "mainfo,tgroupbox1,bounds_cy",vaInt8,F,,24,
 "mainfo,tgroupbox1,anchors",vaSet,F,,[an_top],
+"mainfo,tgroupbox1,flat",vaNull,F,,
+"mainfo,tgroupbox1,flat,color",vaInt32,F,,-2147483645
+"mainfo,tgroupbox1,flat,frame.caption",vaString,F,,flat,flat
+"mainfo,tgroupbox1,flat,frame.localprops",vaSet,F,,[]
+"mainfo,tgroupbox1,flat,frame.localprops1",vaSet,F,,[]
+"mainfo,tgroupbox1,flat,frame.outerframe",vaList,F,,
+"mainfo,tgroupbox1,flat,frame.outerframe,0:",vaInt8,F,,0
+"mainfo,tgroupbox1,flat,frame.outerframe,1:",vaInt8,F,,1
+"mainfo,tgroupbox1,flat,frame.outerframe,2:",vaInt8,F,,22
+"mainfo,tgroupbox1,flat,frame.outerframe,3:",vaInt8,F,,2
+"mainfo,tgroupbox1,flat,bounds_x",vaInt8,F,,8
+"mainfo,tgroupbox1,flat,bounds_y",vaInt8,F,,4
+"mainfo,tgroupbox1,flat,bounds_cx",vaInt8,F,,35
+"mainfo,tgroupbox1,flat,bounds_cy",vaInt8,F,,16
+"mainfo,tgroupbox1,flat,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick]"
+"mainfo,tgroupbox1,flat,ondataentered",vaIdent,F,,formatchanged
+"mainfo,tgroupbox1,flat,value",vaTrue,F,,
+"mainfo,tgroupbox1,flat,valuedefault",vaTrue,F,,
 "mainfo,tgroupbox1,nostring",vaNull,F,,,
 "mainfo,tgroupbox1,nostring,color",vaInt32,F,,-2147483645,
 "mainfo,tgroupbox1,nostring,frame.caption",vaString,F,,no string,no string
@@ -57,12 +76,86 @@ mainfo,vaNull,F,,,
 "mainfo,tgroupbox1,nostring,frame.outerframe,1:",vaInt8,F,,1,
 "mainfo,tgroupbox1,nostring,frame.outerframe,2:",vaInt8,F,,57,
 "mainfo,tgroupbox1,nostring,frame.outerframe,3:",vaInt8,F,,2,
-"mainfo,tgroupbox1,nostring,bounds_x",vaInt8,F,,70,
-"mainfo,tgroupbox1,nostring,bounds_y",vaInt8,F,,5,
+"mainfo,tgroupbox1,nostring,taborder",vaInt8,F,,1
+"mainfo,tgroupbox1,nostring,bounds_x",vaInt8,F,,69,
+"mainfo,tgroupbox1,nostring,bounds_y",vaInt8,F,,4,
 "mainfo,tgroupbox1,nostring,bounds_cx",vaInt8,F,,70,
 "mainfo,tgroupbox1,nostring,bounds_cy",vaInt8,F,,16,
 "mainfo,tgroupbox1,nostring,ondataentered",vaIdent,F,,formatchanged,
 "mainfo,tgroupbox1,nostring,onsetvalue",vaIdent,F,,onsetnosting,
+"mainfo,tgroupbox1,stringonly",vaNull,F,,
+"mainfo,tgroupbox1,stringonly,color",vaInt32,F,,-2147483645
+"mainfo,tgroupbox1,stringonly,frame.caption",vaString,F,,string only,string only
+"mainfo,tgroupbox1,stringonly,frame.localprops",vaSet,F,,[]
+"mainfo,tgroupbox1,stringonly,frame.localprops1",vaSet,F,,[]
+"mainfo,tgroupbox1,stringonly,frame.outerframe",vaList,F,,
+"mainfo,tgroupbox1,stringonly,frame.outerframe,0:",vaInt8,F,,0
+"mainfo,tgroupbox1,stringonly,frame.outerframe,1:",vaInt8,F,,1
+"mainfo,tgroupbox1,stringonly,frame.outerframe,2:",vaInt8,F,,67
+"mainfo,tgroupbox1,stringonly,frame.outerframe,3:",vaInt8,F,,2
+"mainfo,tgroupbox1,stringonly,taborder",vaInt8,F,,2
+"mainfo,tgroupbox1,stringonly,bounds_x",vaInt16,F,,176
+"mainfo,tgroupbox1,stringonly,bounds_y",vaInt8,F,,4
+"mainfo,tgroupbox1,stringonly,bounds_cx",vaInt8,F,,80
+"mainfo,tgroupbox1,stringonly,bounds_cy",vaInt8,F,,16
+"mainfo,tgroupbox1,stringonly,ondataentered",vaIdent,F,,formatchanged
+"mainfo,tgroupbox1,stringonly,onsetvalue",vaIdent,F,,onsetstringonly
+"mainfo,tgroupbox1,stringonly,value",vaTrue,F,,
+"mainfo,tgroupbox1,stringonly,valuedefault",vaTrue,F,,
+"mainfo,tgroupbox1,nont",vaNull,F,,
+"mainfo,tgroupbox1,nont,color",vaInt32,F,,-2147483645
+"mainfo,tgroupbox1,nont,frame.caption",vaString,F,,no NT,no NT
+"mainfo,tgroupbox1,nont,frame.localprops",vaSet,F,,[]
+"mainfo,tgroupbox1,nont,frame.localprops1",vaSet,F,,[]
+"mainfo,tgroupbox1,nont,frame.outerframe",vaList,F,,
+"mainfo,tgroupbox1,nont,frame.outerframe,0:",vaInt8,F,,0
+"mainfo,tgroupbox1,nont,frame.outerframe,1:",vaInt8,F,,1
+"mainfo,tgroupbox1,nont,frame.outerframe,2:",vaInt8,F,,38
+"mainfo,tgroupbox1,nont,frame.outerframe,3:",vaInt8,F,,2
+"mainfo,tgroupbox1,nont,taborder",vaInt8,F,,3
+"mainfo,tgroupbox1,nont,bounds_x",vaInt16,F,,288
+"mainfo,tgroupbox1,nont,bounds_y",vaInt8,F,,4
+"mainfo,tgroupbox1,nont,bounds_cx",vaInt8,F,,51
+"mainfo,tgroupbox1,nont,bounds_cy",vaInt8,F,,16
+"mainfo,tgroupbox1,nont,ondataentered",vaIdent,F,,formatchanged
+"mainfo,tgroupbox1,nont,onsetvalue",vaIdent,F,,nontonsetvalue
+"mainfo,tgroupbox1,nont,value",vaTrue,F,,
+"mainfo,tgroupbox1,nont,valuedefault",vaTrue,F,,
+"mainfo,tgroupbox1,ntonly",vaNull,F,,
+"mainfo,tgroupbox1,ntonly,color",vaInt32,F,,-2147483645
+"mainfo,tgroupbox1,ntonly,frame.caption",vaString,F,,NT only,NT only
+"mainfo,tgroupbox1,ntonly,frame.localprops",vaSet,F,,[]
+"mainfo,tgroupbox1,ntonly,frame.localprops1",vaSet,F,,[]
+"mainfo,tgroupbox1,ntonly,frame.outerframe",vaList,F,,
+"mainfo,tgroupbox1,ntonly,frame.outerframe,0:",vaInt8,F,,0
+"mainfo,tgroupbox1,ntonly,frame.outerframe,1:",vaInt8,F,,1
+"mainfo,tgroupbox1,ntonly,frame.outerframe,2:",vaInt8,F,,48
+"mainfo,tgroupbox1,ntonly,frame.outerframe,3:",vaInt8,F,,2
+"mainfo,tgroupbox1,ntonly,taborder",vaInt8,F,,4
+"mainfo,tgroupbox1,ntonly,bounds_x",vaInt16,F,,376
+"mainfo,tgroupbox1,ntonly,bounds_y",vaInt8,F,,4
+"mainfo,tgroupbox1,ntonly,bounds_cx",vaInt8,F,,61
+"mainfo,tgroupbox1,ntonly,bounds_cy",vaInt8,F,,16
+"mainfo,tgroupbox1,ntonly,ondataentered",vaIdent,F,,formatchanged
+"mainfo,tgroupbox1,ntonly,onsetvalue",vaIdent,F,,ntonlyonsetvalue
+"mainfo,tgroupbox1,coloron",vaNull,F,,
+"mainfo,tgroupbox1,coloron,color",vaInt32,F,,-2147483645
+"mainfo,tgroupbox1,coloron,frame.caption",vaString,F,,show color,show color
+"mainfo,tgroupbox1,coloron,frame.localprops",vaSet,F,,[]
+"mainfo,tgroupbox1,coloron,frame.localprops1",vaSet,F,,[]
+"mainfo,tgroupbox1,coloron,frame.outerframe",vaList,F,,
+"mainfo,tgroupbox1,coloron,frame.outerframe,0:",vaInt8,F,,0
+"mainfo,tgroupbox1,coloron,frame.outerframe,1:",vaInt8,F,,1
+"mainfo,tgroupbox1,coloron,frame.outerframe,2:",vaInt8,F,,67
+"mainfo,tgroupbox1,coloron,frame.outerframe,3:",vaInt8,F,,2
+"mainfo,tgroupbox1,coloron,taborder",vaInt8,F,,5
+"mainfo,tgroupbox1,coloron,bounds_x",vaInt16,F,,472
+"mainfo,tgroupbox1,coloron,bounds_y",vaInt8,F,,4
+"mainfo,tgroupbox1,coloron,bounds_cx",vaInt8,F,,80
+"mainfo,tgroupbox1,coloron,bounds_cy",vaInt8,F,,16
+"mainfo,tgroupbox1,coloron,statfile",vaIdent,F,,projectfo.projectstat
+"mainfo,tgroupbox1,coloron,ondataentered",vaIdent,F,,showcolordataentered
+"mainfo,tgroupbox1,coloron,value",vaTrue,F,,
 "mainfo,grid",vaNull,F,,,
 "mainfo,grid,frame.sbvert.facebutton.localprops",vaSet,F,,[],
 "mainfo,grid,frame.sbvert.facebutton.template",vaIdent,F,,concavey,
@@ -74,7 +167,8 @@ mainfo,vaNull,F,,,
 "mainfo,grid,frame.sbhorz.faceendbutton.template",vaIdent,F,,concavex,
 "mainfo,grid,frame.localprops",vaSet,F,,[],
 "mainfo,grid,frame.localprops1",vaSet,F,,[],
-"mainfo,grid,taborder",vaInt8,F,,5,
+"mainfo,grid,taborder",vaInt8,F,,1,
+"mainfo,grid,visible",vaFalse,F,,
 "mainfo,grid,bounds_x",vaInt8,F,,1,
 "mainfo,grid,bounds_y",vaInt8,F,,25,
 "mainfo,grid,bounds_cx",vaInt16,F,,684,
@@ -280,102 +374,11 @@ mainfo,vaNull,F,,,
 "mainfo,grid,value,optionsedit1",vaSet,F,,"[oe1_autopopupmenu,oe1_keyexecute,oe1_savestate]",
 "mainfo,grid,value,optionsedit",vaSet,F,,"[oe_readonly,oe_undoonesc,oe_checkmrcancel,oe_exitoncursor,oe_hintclippedtext]",
 "mainfo,grid,value,reffontheight",vaInt8,F,,14,
-"mainfo,flat",vaNull,F,,,
-"mainfo,flat,color",vaInt32,F,,-2147483645,
-"mainfo,flat,frame.caption",vaString,F,,flat,flat
-"mainfo,flat,frame.localprops",vaSet,F,,[],
-"mainfo,flat,frame.localprops1",vaSet,F,,[],
-"mainfo,flat,frame.outerframe",vaList,F,,,
-"mainfo,flat,frame.outerframe,0:",vaInt8,F,,0,
-"mainfo,flat,frame.outerframe,1:",vaInt8,F,,1,
-"mainfo,flat,frame.outerframe,2:",vaInt8,F,,22,
-"mainfo,flat,frame.outerframe,3:",vaInt8,F,,2,
-"mainfo,flat,taborder",vaInt8,F,,1,
-"mainfo,flat,bounds_x",vaInt8,F,,9,
-"mainfo,flat,bounds_y",vaInt8,F,,5,
-"mainfo,flat,bounds_cx",vaInt8,F,,35,
-"mainfo,flat,bounds_cy",vaInt8,F,,16,
-"mainfo,flat,optionsedit",vaSet,F,,"[oe_undoonesc,oe_closequery,oe_checkmrcancel,oe_eatreturn,oe_resetselectonexit,oe_exitoncursor,oe_endonenter,oe_autoselect,oe_autoselectonfirstclick]",
-"mainfo,flat,ondataentered",vaIdent,F,,formatchanged,
-"mainfo,flat,value",vaTrue,F,,,
-"mainfo,flat,valuedefault",vaTrue,F,,,
-"mainfo,stringonly",vaNull,F,,,
-"mainfo,stringonly,color",vaInt32,F,,-2147483645,
-"mainfo,stringonly,frame.caption",vaString,F,,string only,string only
-"mainfo,stringonly,frame.localprops",vaSet,F,,[],
-"mainfo,stringonly,frame.localprops1",vaSet,F,,[],
-"mainfo,stringonly,frame.outerframe",vaList,F,,,
-"mainfo,stringonly,frame.outerframe,0:",vaInt8,F,,0,
-"mainfo,stringonly,frame.outerframe,1:",vaInt8,F,,1,
-"mainfo,stringonly,frame.outerframe,2:",vaInt8,F,,67,
-"mainfo,stringonly,frame.outerframe,3:",vaInt8,F,,2,
-"mainfo,stringonly,taborder",vaInt8,F,,2,
-"mainfo,stringonly,bounds_x",vaInt16,F,,177,
-"mainfo,stringonly,bounds_y",vaInt8,F,,5,
-"mainfo,stringonly,bounds_cx",vaInt8,F,,80,
-"mainfo,stringonly,bounds_cy",vaInt8,F,,16,
-"mainfo,stringonly,ondataentered",vaIdent,F,,formatchanged,
-"mainfo,stringonly,onsetvalue",vaIdent,F,,onsetstringonly,
-"mainfo,stringonly,value",vaTrue,F,,,
-"mainfo,stringonly,valuedefault",vaTrue,F,,,
-"mainfo,nont",vaNull,F,,,
-"mainfo,nont,color",vaInt32,F,,-2147483645,
-"mainfo,nont,frame.caption",vaString,F,,no NT,no NT
-"mainfo,nont,frame.localprops",vaSet,F,,[],
-"mainfo,nont,frame.localprops1",vaSet,F,,[],
-"mainfo,nont,frame.outerframe",vaList,F,,,
-"mainfo,nont,frame.outerframe,0:",vaInt8,F,,0,
-"mainfo,nont,frame.outerframe,1:",vaInt8,F,,1,
-"mainfo,nont,frame.outerframe,2:",vaInt8,F,,38,
-"mainfo,nont,frame.outerframe,3:",vaInt8,F,,2,
-"mainfo,nont,taborder",vaInt8,F,,3,
-"mainfo,nont,bounds_x",vaInt16,F,,289,
-"mainfo,nont,bounds_y",vaInt8,F,,5,
-"mainfo,nont,bounds_cx",vaInt8,F,,51,
-"mainfo,nont,bounds_cy",vaInt8,F,,16,
-"mainfo,nont,ondataentered",vaIdent,F,,formatchanged,
-"mainfo,nont,onsetvalue",vaIdent,F,,nontonsetvalue,
-"mainfo,nont,value",vaTrue,F,,,
-"mainfo,nont,valuedefault",vaTrue,F,,,
-"mainfo,ntonly",vaNull,F,,,
-"mainfo,ntonly,color",vaInt32,F,,-2147483645,
-"mainfo,ntonly,frame.caption",vaString,F,,NT only,NT only
-"mainfo,ntonly,frame.localprops",vaSet,F,,[],
-"mainfo,ntonly,frame.localprops1",vaSet,F,,[],
-"mainfo,ntonly,frame.outerframe",vaList,F,,,
-"mainfo,ntonly,frame.outerframe,0:",vaInt8,F,,0,
-"mainfo,ntonly,frame.outerframe,1:",vaInt8,F,,1,
-"mainfo,ntonly,frame.outerframe,2:",vaInt8,F,,48,
-"mainfo,ntonly,frame.outerframe,3:",vaInt8,F,,2,
-"mainfo,ntonly,taborder",vaInt8,F,,4,
-"mainfo,ntonly,bounds_x",vaInt16,F,,377,
-"mainfo,ntonly,bounds_y",vaInt8,F,,5,
-"mainfo,ntonly,bounds_cx",vaInt8,F,,61,
-"mainfo,ntonly,bounds_cy",vaInt8,F,,16,
-"mainfo,ntonly,ondataentered",vaIdent,F,,formatchanged,
-"mainfo,ntonly,onsetvalue",vaIdent,F,,ntonlyonsetvalue,
-"mainfo,coloron",vaNull,F,,,
-"mainfo,coloron,color",vaInt32,F,,-2147483645,
-"mainfo,coloron,frame.caption",vaString,F,,show color,show color
-"mainfo,coloron,frame.localprops",vaSet,F,,[],
-"mainfo,coloron,frame.localprops1",vaSet,F,,[],
-"mainfo,coloron,frame.outerframe",vaList,F,,,
-"mainfo,coloron,frame.outerframe,0:",vaInt8,F,,0,
-"mainfo,coloron,frame.outerframe,1:",vaInt8,F,,1,
-"mainfo,coloron,frame.outerframe,2:",vaInt8,F,,67,
-"mainfo,coloron,frame.outerframe,3:",vaInt8,F,,2,
-"mainfo,coloron,taborder",vaInt8,F,,6,
-"mainfo,coloron,bounds_x",vaInt16,F,,473,
-"mainfo,coloron,bounds_y",vaInt8,F,,5,
-"mainfo,coloron,bounds_cx",vaInt8,F,,80,
-"mainfo,coloron,bounds_cy",vaInt8,F,,16,
-"mainfo,coloron,statfile",vaIdent,F,,projectfo.projectstat,
-"mainfo,coloron,ondataentered",vaIdent,F,,showcolordataentered,
-"mainfo,coloron,value",vaTrue,F,,,
 "mainfo,statusdisp",vaNull,F,,,
 "mainfo,statusdisp,frame.localprops",vaSet,F,,[],
 "mainfo,statusdisp,frame.localprops1",vaSet,F,,[],
-"mainfo,statusdisp,taborder",vaInt8,F,,7,
+"mainfo,statusdisp,taborder",vaInt8,F,,2,
+"mainfo,statusdisp,visible",vaFalse,F,,
 "mainfo,statusdisp,bounds_x",vaInt8,F,,1,
 "mainfo,statusdisp,bounds_y",vaInt16,F,,352,
 "mainfo,statusdisp,bounds_cx",vaInt16,F,,684,
@@ -387,7 +390,7 @@ mainfo,vaNull,F,,,
 "mainfo,workpan,frame.colorclient",vaInt32,F,,948325,
 "mainfo,workpan,frame.localprops",vaSet,F,,"[frl_levelo,frl_hiddenedges,frl_colorclient]",
 "mainfo,workpan,frame.localprops1",vaSet,F,,[],
-"mainfo,workpan,taborder",vaInt8,F,,8,
+"mainfo,workpan,taborder",vaInt8,F,,3,
 "mainfo,workpan,visible",vaFalse,F,,,
 "mainfo,workpan,bounds_x",vaInt16,F,,161,
 "mainfo,workpan,bounds_y",vaInt16,F,,129,
@@ -486,10 +489,10 @@ mainfo,vaNull,F,,,
 "mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,&Tools,&Tools
 "mainfo,mainmenu1,menu.submenu.items,11:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
 "mainfo,mainmenu1,menu.submenu.items,11:,onexecute",vaIdent,F,,ondefhead,
-"mainfo,mainmenu1,menu.submenu.items,12:",vaList,F,,
+"mainfo,mainmenu1,menu.submenu.items,12:",vaList,F,,,
 "mainfo,mainmenu1,menu.submenu.items,12:,caption",vaString,F,,E&xit,E&xit
-"mainfo,mainmenu1,menu.submenu.items,12:,state",vaSet,F,,"[as_localcaption,as_localonexecute]"
-"mainfo,mainmenu1,menu.submenu.items,12:,onexecute",vaIdent,F,,exitexe
+"mainfo,mainmenu1,menu.submenu.items,12:,state",vaSet,F,,"[as_localcaption,as_localonexecute]",
+"mainfo,mainmenu1,menu.submenu.items,12:,onexecute",vaIdent,F,,exitexe,
 "mainfo,mainmenu1,left",vaInt16,F,,256,
 "mainfo,mainmenu1,top",vaInt16,F,,160,
 "mainfo,projectfiledialog",vaNull,F,,,
@@ -1781,17 +1784,18 @@ headerfo,vaNull,F,,,
 "headerfo,bounds_x",vaInt16,F,,493,
 "headerfo,bounds_y",vaInt16,F,,200,
 "headerfo,bounds_cx",vaInt16,F,,379,
-"headerfo,bounds_cy",vaInt16,F,,195,
+"headerfo,bounds_cy",vaInt16,F,,218,
 "headerfo,container.frame.localprops",vaSet,F,,[],
 "headerfo,container.frame.localprops1",vaSet,F,,[],
 "headerfo,container.bounds",vaList,F,,,
 "headerfo,container.bounds,0:",vaInt8,F,,0,
 "headerfo,container.bounds,1:",vaInt8,F,,0,
 "headerfo,container.bounds,2:",vaInt16,F,,379,
-"headerfo,container.bounds,3:",vaInt16,F,,195,
+"headerfo,container.bounds,3:",vaInt16,F,,218,
 "headerfo,options",vaSet,F,,"[fo_screencentered,fo_autoreadstat,fo_autowritestat,fo_savepos,fo_savezorder,fo_savestate]",
 "headerfo,caption",vaString,F,,Tools,Tools
 "headerfo,windowopacity",vaExtended,F,,-Inf,
+"headerfo,oncreate",vaIdent,F,,oncreateform
 "headerfo,moduleclassname",vaString,T,,tmseform,tmseform
 "headerfo,memopoheader",vaNull,F,,,
 "headerfo,memopoheader,frame.caption",vaString,F,,Default PO header,Default PO header
@@ -1906,17 +1910,17 @@ msgstr """"
 ""Content-Type: text/plain; charset=UTF-8\n""
 ""Content-Transfer-Encoding: 8bit\n"""
 "headerfo,memopotheader,reffontheight",vaInt8,F,,14,
-"headerfo,initunit",vaNull,F,,
-"headerfo,initunit,frame.localprops",vaSet,F,,[]
-"headerfo,initunit,frame.localprops1",vaSet,F,,[]
-"headerfo,initunit,frame.sbhorz.pagesize",vaInt8,F,,1
-"headerfo,initunit,frame.sbvert.pagesize",vaExtended,F,,0.34126984126984
-"headerfo,initunit,taborder",vaInt8,F,,2
-"headerfo,initunit,visible",vaFalse,F,,
-"headerfo,initunit,bounds_x",vaInt16,F,,200
-"headerfo,initunit,bounds_y",vaInt8,F,,0
-"headerfo,initunit,bounds_cx",vaInt16,F,,156
-"headerfo,initunit,bounds_cy",vaInt8,F,,92
+"headerfo,initunit",vaNull,F,,,
+"headerfo,initunit,frame.localprops",vaSet,F,,[],
+"headerfo,initunit,frame.localprops1",vaSet,F,,[],
+"headerfo,initunit,frame.sbhorz.pagesize",vaInt8,F,,1,
+"headerfo,initunit,frame.sbvert.pagesize",vaExtended,F,,0.34126984126984,
+"headerfo,initunit,taborder",vaInt8,F,,2,
+"headerfo,initunit,visible",vaFalse,F,,,
+"headerfo,initunit,bounds_x",vaInt16,F,,200,
+"headerfo,initunit,bounds_y",vaInt8,F,,0,
+"headerfo,initunit,bounds_cx",vaInt16,F,,156,
+"headerfo,initunit,bounds_cy",vaInt8,F,,92,
 "headerfo,initunit,value",vaString,T,,"{$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
 uses
@@ -1940,18 +1944,18 @@ uses
 const 
 extendedconst: extendedaty =
  ("
-"headerfo,initunit,reffontheight",vaInt8,F,,14
-"headerfo,modalresulttext",vaNull,F,,
-"headerfo,modalresulttext,frame.localprops",vaSet,F,,[]
-"headerfo,modalresulttext,frame.localprops1",vaSet,F,,[]
-"headerfo,modalresulttext,frame.sbhorz.pagesize",vaInt8,F,,1
-"headerfo,modalresulttext,frame.sbvert.pagesize",vaExtended,F,,0.73809523809524
-"headerfo,modalresulttext,taborder",vaInt8,F,,3
-"headerfo,modalresulttext,visible",vaFalse,F,,
-"headerfo,modalresulttext,bounds_x",vaInt16,F,,152
-"headerfo,modalresulttext,bounds_y",vaInt8,F,,32
-"headerfo,modalresulttext,bounds_cx",vaInt16,F,,156
-"headerfo,modalresulttext,bounds_cy",vaInt8,F,,68
+"headerfo,initunit,reffontheight",vaInt8,F,,14,
+"headerfo,modalresulttext",vaNull,F,,,
+"headerfo,modalresulttext,frame.localprops",vaSet,F,,[],
+"headerfo,modalresulttext,frame.localprops1",vaSet,F,,[],
+"headerfo,modalresulttext,frame.sbhorz.pagesize",vaInt8,F,,1,
+"headerfo,modalresulttext,frame.sbvert.pagesize",vaExtended,F,,0.73809523809524,
+"headerfo,modalresulttext,taborder",vaInt8,F,,3,
+"headerfo,modalresulttext,visible",vaFalse,F,,,
+"headerfo,modalresulttext,bounds_x",vaInt16,F,,152,
+"headerfo,modalresulttext,bounds_y",vaInt8,F,,32,
+"headerfo,modalresulttext,bounds_cx",vaInt16,F,,156,
+"headerfo,modalresulttext,bounds_cy",vaInt8,F,,68,
 "headerfo,modalresulttext,value",vaString,T,,"); 
 
  modalresulttext: defaultmodalresulttextty =
@@ -1959,18 +1963,18 @@ extendedconst: extendedaty =
 
  modalresulttext: defaultmodalresulttextty =
  ("
-"headerfo,modalresulttext,reffontheight",vaInt8,F,,14
-"headerfo,modalresultsnoshort",vaNull,F,,
-"headerfo,modalresultsnoshort,frame.localprops",vaSet,F,,[]
-"headerfo,modalresultsnoshort,frame.localprops1",vaSet,F,,[]
-"headerfo,modalresultsnoshort,frame.sbhorz.pagesize",vaInt8,F,,1
-"headerfo,modalresultsnoshort,frame.sbvert.pagesize",vaExtended,F,,0.76785714285714
-"headerfo,modalresultsnoshort,taborder",vaInt8,F,,4
-"headerfo,modalresultsnoshort,visible",vaFalse,F,,
-"headerfo,modalresultsnoshort,bounds_x",vaInt16,F,,152
-"headerfo,modalresultsnoshort,bounds_y",vaInt8,F,,16
-"headerfo,modalresultsnoshort,bounds_cx",vaInt16,F,,156
-"headerfo,modalresultsnoshort,bounds_cy",vaInt8,F,,92
+"headerfo,modalresulttext,reffontheight",vaInt8,F,,14,
+"headerfo,modalresultsnoshort",vaNull,F,,,
+"headerfo,modalresultsnoshort,frame.localprops",vaSet,F,,[],
+"headerfo,modalresultsnoshort,frame.localprops1",vaSet,F,,[],
+"headerfo,modalresultsnoshort,frame.sbhorz.pagesize",vaInt8,F,,1,
+"headerfo,modalresultsnoshort,frame.sbvert.pagesize",vaExtended,F,,0.76785714285714,
+"headerfo,modalresultsnoshort,taborder",vaInt8,F,,4,
+"headerfo,modalresultsnoshort,visible",vaFalse,F,,,
+"headerfo,modalresultsnoshort,bounds_x",vaInt16,F,,152,
+"headerfo,modalresultsnoshort,bounds_y",vaInt8,F,,16,
+"headerfo,modalresultsnoshort,bounds_cx",vaInt16,F,,156,
+"headerfo,modalresultsnoshort,bounds_cy",vaInt8,F,,92,
 "headerfo,modalresultsnoshort,value",vaString,T,,");
 
  modalresulttextnoshortcut: defaultmodalresulttextty =
@@ -1978,35 +1982,35 @@ extendedconst: extendedaty =
 
  modalresulttextnoshortcut: defaultmodalresulttextty =
  ("
-"headerfo,modalresultsnoshort,reffontheight",vaInt8,F,,14
-"headerfo,stockcaptionmemo",vaNull,F,,
-"headerfo,stockcaptionmemo,frame.localprops",vaSet,F,,[]
-"headerfo,stockcaptionmemo,frame.localprops1",vaSet,F,,[]
-"headerfo,stockcaptionmemo,frame.sbhorz.pagesize",vaInt8,F,,1
-"headerfo,stockcaptionmemo,frame.sbvert.pagesize",vaInt8,F,,1
-"headerfo,stockcaptionmemo,taborder",vaInt8,F,,5
-"headerfo,stockcaptionmemo,visible",vaFalse,F,,
-"headerfo,stockcaptionmemo,bounds_x",vaInt16,F,,208
-"headerfo,stockcaptionmemo,bounds_y",vaInt8,F,,32
-"headerfo,stockcaptionmemo,bounds_cx",vaInt16,F,,156
-"headerfo,stockcaptionmemo,bounds_cy",vaInt8,F,,92
+"headerfo,modalresultsnoshort,reffontheight",vaInt8,F,,14,
+"headerfo,stockcaptionmemo",vaNull,F,,,
+"headerfo,stockcaptionmemo,frame.localprops",vaSet,F,,[],
+"headerfo,stockcaptionmemo,frame.localprops1",vaSet,F,,[],
+"headerfo,stockcaptionmemo,frame.sbhorz.pagesize",vaInt8,F,,1,
+"headerfo,stockcaptionmemo,frame.sbvert.pagesize",vaInt8,F,,1,
+"headerfo,stockcaptionmemo,taborder",vaInt8,F,,5,
+"headerfo,stockcaptionmemo,visible",vaFalse,F,,,
+"headerfo,stockcaptionmemo,bounds_x",vaInt16,F,,208,
+"headerfo,stockcaptionmemo,bounds_y",vaInt8,F,,16,
+"headerfo,stockcaptionmemo,bounds_cx",vaInt16,F,,156,
+"headerfo,stockcaptionmemo,bounds_cy",vaInt8,F,,92,
 "headerfo,stockcaptionmemo,value",vaString,T,," );
 
  stockcaption: stockcaptionaty = ("," );
 
  stockcaption: stockcaptionaty = ("
-"headerfo,stockcaptionmemo,reffontheight",vaInt8,F,,14
-"headerfo,endmemo",vaNull,F,,
-"headerfo,endmemo,frame.localprops",vaSet,F,,[]
-"headerfo,endmemo,frame.localprops1",vaSet,F,,[]
-"headerfo,endmemo,frame.sbhorz.pagesize",vaInt8,F,,1
-"headerfo,endmemo,frame.sbvert.pagesize",vaExtended,F,,0.13650793650794
-"headerfo,endmemo,taborder",vaInt8,F,,6
-"headerfo,endmemo,visible",vaFalse,F,,
-"headerfo,endmemo,bounds_x",vaInt16,F,,184
-"headerfo,endmemo,bounds_y",vaInt8,F,,8
-"headerfo,endmemo,bounds_cx",vaInt16,F,,156
-"headerfo,endmemo,bounds_cy",vaInt8,F,,92
+"headerfo,stockcaptionmemo,reffontheight",vaInt8,F,,14,
+"headerfo,endmemo",vaNull,F,,,
+"headerfo,endmemo,frame.localprops",vaSet,F,,[],
+"headerfo,endmemo,frame.localprops1",vaSet,F,,[],
+"headerfo,endmemo,frame.sbhorz.pagesize",vaInt8,F,,1,
+"headerfo,endmemo,frame.sbvert.pagesize",vaExtended,F,,0.18067226890756,
+"headerfo,endmemo,taborder",vaInt8,F,,6,
+"headerfo,endmemo,visible",vaFalse,F,,,
+"headerfo,endmemo,bounds_x",vaInt16,F,,184,
+"headerfo,endmemo,bounds_y",vaInt8,F,,8,
+"headerfo,endmemo,bounds_cx",vaInt16,F,,156,
+"headerfo,endmemo,bounds_cy",vaInt8,F,,92,
 "headerfo,endmemo,value",vaLString,T,,"function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
@@ -2023,11 +2027,7 @@ const
  textgenerator: defaultgeneratortextty = (
               {$ifdef FPC}@{$endif}delete_n_selected_rows
                                      );
-initialization
- registerlangconsts(extendedconst[ex_lang],@stockcaption,@modalresulttext, 
-        @modalresulttextnoshortcut,@textgenerator);
-                               
-end.","function delete_n_selected_rows(const params: array of const): msestring;
+","function delete_n_selected_rows(const params: array of const): msestring;
 begin
  with params[0] do begin
   if vinteger = 1 then begin
@@ -2048,28 +2048,28 @@ initialization
         @modalresulttextnoshortcut,@textgenerator);
                                
 end."
-"headerfo,endmemo,reffontheight",vaInt8,F,,14
-"headerfo,mseconstheader",vaNull,F,,
+"headerfo,endmemo,reffontheight",vaInt8,F,,14,
+"headerfo,mseconstheader",vaNull,F,,,
 "headerfo,mseconstheader,frame.caption",vaString,F,,Default mseconst header,Default mseconst header
-"headerfo,mseconstheader,frame.localprops",vaSet,F,,[]
-"headerfo,mseconstheader,frame.localprops1",vaSet,F,,[]
-"headerfo,mseconstheader,frame.buttons.count",vaInt8,F,,1
-"headerfo,mseconstheader,frame.buttons.items",vaCollection,F,,
-"headerfo,mseconstheader,frame.buttons.items,0:",vaList,F,,
-"headerfo,mseconstheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17
-"headerfo,mseconstheader,frame.button.imagenr",vaInt8,F,,17
-"headerfo,mseconstheader,frame.outerframe",vaList,F,,
-"headerfo,mseconstheader,frame.outerframe,0:",vaInt8,F,,0
-"headerfo,mseconstheader,frame.outerframe,1:",vaInt8,F,,17
-"headerfo,mseconstheader,frame.outerframe,2:",vaInt8,F,,0
-"headerfo,mseconstheader,frame.outerframe,3:",vaInt8,F,,0
-"headerfo,mseconstheader,taborder",vaInt8,F,,7
-"headerfo,mseconstheader,bounds_x",vaInt8,F,,8
-"headerfo,mseconstheader,bounds_y",vaInt8,F,,88
-"headerfo,mseconstheader,bounds_cx",vaInt16,F,,346
-"headerfo,mseconstheader,bounds_cy",vaInt8,F,,34
-"headerfo,mseconstheader,anchors",vaSet,F,,"[an_left,an_top,an_right]"
-"headerfo,mseconstheader,statfile",vaIdent,F,,tstatfile1
+"headerfo,mseconstheader,frame.localprops",vaSet,F,,[],
+"headerfo,mseconstheader,frame.localprops1",vaSet,F,,[],
+"headerfo,mseconstheader,frame.buttons.count",vaInt8,F,,1,
+"headerfo,mseconstheader,frame.buttons.items",vaCollection,F,,,
+"headerfo,mseconstheader,frame.buttons.items,0:",vaList,F,,,
+"headerfo,mseconstheader,frame.buttons.items,0:,imagenr",vaInt8,F,,17,
+"headerfo,mseconstheader,frame.button.imagenr",vaInt8,F,,17,
+"headerfo,mseconstheader,frame.outerframe",vaList,F,,,
+"headerfo,mseconstheader,frame.outerframe,0:",vaInt8,F,,0,
+"headerfo,mseconstheader,frame.outerframe,1:",vaInt8,F,,17,
+"headerfo,mseconstheader,frame.outerframe,2:",vaInt8,F,,0,
+"headerfo,mseconstheader,frame.outerframe,3:",vaInt8,F,,0,
+"headerfo,mseconstheader,taborder",vaInt8,F,,7,
+"headerfo,mseconstheader,bounds_x",vaInt8,F,,8,
+"headerfo,mseconstheader,bounds_y",vaInt8,F,,88,
+"headerfo,mseconstheader,bounds_cx",vaInt16,F,,362,
+"headerfo,mseconstheader,bounds_cy",vaInt8,F,,34,
+"headerfo,mseconstheader,anchors",vaSet,F,,"[an_left,an_top,an_right]",
+"headerfo,mseconstheader,statfile",vaIdent,F,,tstatfile1,
 "headerfo,mseconstheader,value",vaLString,T,,"{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber
 
     See the file COPYING.MSE, included in this distribution,
@@ -2087,52 +2087,78 @@ end."
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 } "
-"headerfo,mseconstheader,reffontheight",vaInt8,F,,14
-"headerfo,tbutton3",vaNull,F,,
-"headerfo,tbutton3,Tag",vaInt8,F,,1
-"headerfo,tbutton3,taborder",vaInt8,F,,8
-"headerfo,tbutton3,bounds_x",vaInt16,F,,133
-"headerfo,tbutton3,bounds_y",vaInt16,F,,160
-"headerfo,tbutton3,bounds_cx",vaInt16,F,,194
-"headerfo,tbutton3,bounds_cy",vaInt8,F,,28
-"headerfo,tbutton3,anchors",vaSet,F,,"[an_top,an_right]"
-"headerfo,tbutton3,state",vaSet,F,,"[as_localdisabled,as_localcaption,as_localonexecute]"
-"headerfo,tbutton3,caption",vaString,F,,Create new po from consts,Create new po from consts
-"headerfo,tbutton3,onexecute",vaIdent,F,,createnew
-"headerfo,tbutton2",vaNull,F,,
-"headerfo,tbutton2,taborder",vaInt8,F,,9
-"headerfo,tbutton2,bounds_x",vaInt16,F,,133
-"headerfo,tbutton2,bounds_y",vaInt16,F,,128
-"headerfo,tbutton2,bounds_cx",vaInt16,F,,194
-"headerfo,tbutton2,bounds_cy",vaInt8,F,,28
-"headerfo,tbutton2,anchors",vaSet,F,,"[an_top,an_right]"
-"headerfo,tbutton2,state",vaSet,F,,"[as_localdisabled,as_localcaption,as_localonexecute]"
-"headerfo,tbutton2,caption",vaString,F,,Create new consts from po,Create new consts from po
-"headerfo,tbutton2,onexecute",vaIdent,F,,createnew
-"headerfo,alldir",vaNull,F,,
-"headerfo,alldir,frame.caption",vaString,F,,All directory,All directory
-"headerfo,alldir,frame.localprops",vaSet,F,,[]
-"headerfo,alldir,frame.localprops1",vaSet,F,,[]
-"headerfo,alldir,frame.outerframe",vaList,F,,
-"headerfo,alldir,frame.outerframe,0:",vaInt8,F,,0
-"headerfo,alldir,frame.outerframe,1:",vaInt8,F,,1
-"headerfo,alldir,frame.outerframe,2:",vaInt8,F,,75
-"headerfo,alldir,frame.outerframe,3:",vaInt8,F,,2
-"headerfo,alldir,taborder",vaInt8,F,,10
-"headerfo,alldir,bounds_x",vaInt8,F,,24
-"headerfo,alldir,bounds_y",vaInt16,F,,151
-"headerfo,alldir,bounds_cx",vaInt8,F,,88
-"headerfo,alldir,bounds_cy",vaInt8,F,,16
-"headerfo,alldir,statfile",vaIdent,F,,tstatfile1
-"headerfo,impexpfiledialog",vaNull,F,,
-"headerfo,impexpfiledialog,statfile",vaIdent,F,,tstatfile1
+"headerfo,mseconstheader,reffontheight",vaInt8,F,,14,
+"headerfo,tbutton3",vaNull,F,,,
+"headerfo,tbutton3,Tag",vaInt8,F,,1,
+"headerfo,tbutton3,taborder",vaInt8,F,,8,
+"headerfo,tbutton3,bounds_x",vaInt16,F,,181,
+"headerfo,tbutton3,bounds_y",vaInt16,F,,176,
+"headerfo,tbutton3,bounds_cx",vaInt16,F,,186,
+"headerfo,tbutton3,bounds_cy",vaInt8,F,,28,
+"headerfo,tbutton3,anchors",vaSet,F,,"[an_top,an_right]",
+"headerfo,tbutton3,state",vaSet,F,,"[as_localdisabled,as_localcaption,as_localonexecute]",
+"headerfo,tbutton3,caption",vaString,F,,Create new PO from consts,Create new PO from consts
+"headerfo,tbutton3,onexecute",vaIdent,F,,createnew,
+"headerfo,tbutton2",vaNull,F,,,
+"headerfo,tbutton2,taborder",vaInt8,F,,9,
+"headerfo,tbutton2,bounds_x",vaInt16,F,,181,
+"headerfo,tbutton2,bounds_y",vaInt16,F,,144,
+"headerfo,tbutton2,bounds_cx",vaInt16,F,,186,
+"headerfo,tbutton2,bounds_cy",vaInt8,F,,28,
+"headerfo,tbutton2,anchors",vaSet,F,,"[an_top,an_right]",
+"headerfo,tbutton2,state",vaSet,F,,"[as_localdisabled,as_localcaption,as_localonexecute]",
+"headerfo,tbutton2,caption",vaString,F,,Create new consts from PO,Create new consts from PO
+"headerfo,tbutton2,onexecute",vaIdent,F,,createnew,
+"headerfo,alldir",vaNull,F,,,
+"headerfo,alldir,frame.caption",vaString,F,,All files of directory,All files of directory
+"headerfo,alldir,frame.localprops",vaSet,F,,[],
+"headerfo,alldir,frame.localprops1",vaSet,F,,[],
+"headerfo,alldir,frame.outerframe",vaList,F,,,
+"headerfo,alldir,frame.outerframe,0:",vaInt8,F,,0,
+"headerfo,alldir,frame.outerframe,1:",vaInt8,F,,1,
+"headerfo,alldir,frame.outerframe,2:",vaInt8,F,,117,
+"headerfo,alldir,frame.outerframe,3:",vaInt8,F,,2,
+"headerfo,alldir,taborder",vaInt8,F,,10,
+"headerfo,alldir,bounds_x",vaInt8,F,,16,
+"headerfo,alldir,bounds_y",vaInt16,F,,183,
+"headerfo,alldir,bounds_cx",vaInt16,F,,130,
+"headerfo,alldir,bounds_cy",vaInt8,F,,16,
+"headerfo,alldir,statfile",vaIdent,F,,tstatfile1,
+"headerfo,outputdir",vaNull,F,,
+"headerfo,outputdir,frame.caption",vaString,F,,Output directory,Output directory
+"headerfo,outputdir,frame.localprops",vaSet,F,,[]
+"headerfo,outputdir,frame.localprops1",vaSet,F,,[]
+"headerfo,outputdir,frame.buttons.count",vaInt8,F,,1
+"headerfo,outputdir,frame.buttons.items",vaCollection,F,,
+"headerfo,outputdir,frame.buttons.items,0:",vaList,F,,
+"headerfo,outputdir,frame.buttons.items,0:,imagenr",vaInt8,F,,17
+"headerfo,outputdir,frame.button.imagenr",vaInt8,F,,17
+"headerfo,outputdir,frame.outerframe",vaList,F,,
+"headerfo,outputdir,frame.outerframe,0:",vaInt8,F,,0
+"headerfo,outputdir,frame.outerframe,1:",vaInt8,F,,17
+"headerfo,outputdir,frame.outerframe,2:",vaInt8,F,,0
+"headerfo,outputdir,frame.outerframe,3:",vaInt8,F,,0
+"headerfo,outputdir,taborder",vaInt8,F,,11
+"headerfo,outputdir,bounds_x",vaInt8,F,,8
+"headerfo,outputdir,bounds_y",vaInt16,F,,135
+"headerfo,outputdir,bounds_cx",vaInt16,F,,164
+"headerfo,outputdir,bounds_cy",vaInt8,F,,37
+"headerfo,outputdir,statfile",vaIdent,F,,tstatfile1
+"headerfo,outputdir,value",vaString,T,,./output,./output
+"headerfo,outputdir,controller.filename",vaString,T,,./output/,./output/
+"headerfo,outputdir,controller.lastdir",vaString,T,,./output,./output
+"headerfo,outputdir,controller.basedir",vaString,T,,./output,./output
+"headerfo,outputdir,controller.options",vaSet,F,,"[fdo_directory,fdo_savelastdir]"
+"headerfo,outputdir,reffontheight",vaInt8,F,,14
+"headerfo,impexpfiledialog",vaNull,F,,,
+"headerfo,impexpfiledialog,statfile",vaIdent,F,,tstatfile1,
 "headerfo,impexpfiledialog,controller.filename",vaString,T,,default.csv,default.csv
-"headerfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0
+"headerfo,impexpfiledialog,controller.historymaxcount",vaInt8,F,,0,
 "headerfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "headerfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
-"headerfo,impexpfiledialog,left",vaInt8,F,,40
-"headerfo,impexpfiledialog,top",vaInt16,F,,128
-"headerfo,tstatfile1",vaNull,F,,
+"headerfo,impexpfiledialog,left",vaInt16,F,,192,
+"headerfo,impexpfiledialog,top",vaInt8,F,,48,
+"headerfo,tstatfile1",vaNull,F,,,
 "headerfo,tstatfile1,filename",vaString,T,,status.sta,status.sta
-"headerfo,tstatfile1,left",vaInt16,F,,136
-"headerfo,tstatfile1,top",vaInt8,F,,40
+"headerfo,tstatfile1,left",vaInt16,F,,136,
+"headerfo,tstatfile1,top",vaInt8,F,,40,

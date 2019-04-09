@@ -21,23 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-msgid "no string"
-msgstr "без строк"
-
-msgid "Name"
-msgstr "Имя"
-
-msgid "Type"
-msgstr "Тип"
-
-msgid "Comment"
-msgstr "Комментарий"
-
-msgid "Value"
-msgstr "Значение"
-
 msgid "flat"
 msgstr "плос."
+
+msgid "no string"
+msgstr "без строк"
 
 msgid "string only"
 msgstr "одни строки"
@@ -50,6 +38,18 @@ msgstr "только NT"
 
 msgid "show color"
 msgstr "показать цветом"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Comment"
+msgstr "Комментарий"
+
+msgid "Value"
+msgstr "Значение"
 
 msgid "Working..."
 msgstr "За работой..."
@@ -373,11 +373,14 @@ msgstr "Заголовок POT по умолчанию"
 msgid "Default mseconst header"
 msgstr "Заголовок mseconst по умолчанию"
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr "Создать новый PO из констант"
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr "Создать новые константы из PO"
 
-msgid "All directory"
-msgstr "Весь каталог"
+msgid "All files of directory"
+msgstr "Все файлы каталога"
+
+msgid "Output directory"
+msgstr "Каталог выгрузки"

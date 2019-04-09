@@ -21,22 +21,10 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-msgid "no string"
+msgid "flat"
 msgstr ""
 
-msgid "Name"
-msgstr "الاسم"
-
-msgid "Type"
-msgstr "النوع"
-
-msgid "Comment"
-msgstr "تعليق"
-
-msgid "Value"
-msgstr "القيمة"
-
-msgid "flat"
+msgid "no string"
 msgstr ""
 
 msgid "string only"
@@ -50,6 +38,18 @@ msgstr ""
 
 msgid "show color"
 msgstr ""
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Type"
+msgstr "النوع"
+
+msgid "Comment"
+msgstr "تعليق"
+
+msgid "Value"
+msgstr "القيمة"
 
 msgid "Working..."
 msgstr ""
@@ -369,11 +369,14 @@ msgstr ""
 msgid "Default mseconst header"
 msgstr ""
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgid "Output directory"
 msgstr ""

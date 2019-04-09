@@ -22,22 +22,10 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-msgid "no string"
+msgid "flat"
 msgstr ""
 
-msgid "Name"
-msgstr "Nazwa"
-
-msgid "Type"
-msgstr "Typ"
-
-msgid "Comment"
-msgstr "Komentarz"
-
-msgid "Value"
-msgstr "Wartość"
-
-msgid "flat"
+msgid "no string"
 msgstr ""
 
 msgid "string only"
@@ -51,6 +39,18 @@ msgstr ""
 
 msgid "show color"
 msgstr "pokaż kolor"
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Comment"
+msgstr "Komentarz"
+
+msgid "Value"
+msgstr "Wartość"
 
 msgid "Working..."
 msgstr "Pracuję..."
@@ -370,11 +370,14 @@ msgstr ""
 msgid "Default mseconst header"
 msgstr ""
 
-msgid "Create new po from consts"
+msgid "Create new PO from consts"
 msgstr ""
 
-msgid "Create new consts from po"
+msgid "Create new consts from PO"
 msgstr ""
 
-msgid "All directory"
+msgid "All files of directory"
+msgstr ""
+
+msgid "Output directory"
 msgstr ""
