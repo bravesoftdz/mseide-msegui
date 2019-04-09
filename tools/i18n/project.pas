@@ -65,6 +65,8 @@ type
    
    procedure onok(const sender: TObject);
    procedure oncancel(const sender: TObject);
+   procedure onsetval(const sender: TObject; var avalue: msestring;
+                   var accept: Boolean);
   public
     restype : integer;
  //  colwidths: integerarty;
@@ -176,6 +178,14 @@ procedure tprojectfo.oncancel(const sender: TObject);
 begin
 restype := 0;
 visible := false;
+end;
+
+procedure tprojectfo.onsetval(const sender: TObject; var avalue: msestring;
+               var accept: Boolean);
+begin
+if system.pos(unitsdir.value,avalue) > 0 then
+avalue := StringReplace(avalue, unitsdir.value, '', [rfReplaceAll]);
+
 end;
 
 end.

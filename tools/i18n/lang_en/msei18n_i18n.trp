@@ -91,7 +91,7 @@ values0=6
 width0=71
 sortdescend0=0
 values1=6
- /tools/i18n/main.mfm
+ tools/i18n/main.mfm
  /lib/common/dialogs/msememodialog.mfm
  /tools/i18n/messagesform.mfm
  /tools/i18n/project.mfm

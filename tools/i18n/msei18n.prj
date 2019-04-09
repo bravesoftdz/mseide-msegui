@@ -832,8 +832,9 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=/home/fred/mseide-msegui
+finddtext=replace
 findhistory=20
+ replace
  /home/fred/mseide-msegui
  projectfo.filename
  fpsystem
@@ -853,18 +854,18 @@ findhistory=20
  defaultresult
  filename
  importtype
- doread
 findoptions=1
-editpos=9
+editpos=10
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
+ 0,357
+ 0,186
+ 0,1634
  0,67
- 0,136
+ 0,133
+ 0,225
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -874,7 +875,8 @@ bookmarks5=0
 bookmarks6=0
 bookmarks7=0
 bookmarks8=0
-sourcefiles=9
+bookmarks9=0
+sourcefiles=10
  ${PROJECTDIR}/msei18n.pas
  /home/fred/mseide-msegui/lib/common/kernel/mseconsts.pas
  ${PROJECTDIR}/headerform.pas
@@ -884,7 +886,8 @@ sourcefiles=9
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/lang_en/msei18n_i18n.trp
  ${PROJECTDIR}/project.pas
-relpaths=9
+ /home/fred/mseide-msegui/apps/ide/lang_en/i18n.trp
+relpaths=10
  msei18n.pas
  lib/common/kernel/mseconsts.pas
  headerform.pas
@@ -894,7 +897,9 @@ relpaths=9
  main.pas
  lang_en/msei18n_i18n.trp
  project.pas
-ismoduletexts=9
+ ../apps/ide/lang_en/i18n.trp
+ismoduletexts=10
+ 0
  0
  0
  0
@@ -921,7 +926,7 @@ nomenumodules=3
  0
  0
 [sourcefo.files_tab]
-order=9
+order=10
  2
  0
  1
@@ -931,10 +936,11 @@ order=9
  6
  7
  8
+ 9
 firsttab=0
-index=8
+index=5
 [layout]
-windowlayout=614
+windowlayout=645
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -974,7 +980,7 @@ windowlayout=614
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1177,10 +1183,10 @@ windowlayout=614
  active=0
  visible=1
  [objectinspectorfo.grid]
- propcolwidthref=560
- width0=248
+ propcolwidthref=575
+ width0=255
  sortdescend0=0
- width1=306
+ width1=314
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1402,7 +1408,7 @@ windowlayout=614
  value=Pascal
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/project.pas
- history=20
+ history=50
   /home/fred/mseide-msegui/tools/i18n/lang_en/msei18n_i18n.trp
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/msesettings.pas
@@ -1423,6 +1429,36 @@ windowlayout=614
   /home/fred/mseide-msegui/languages/mseconsts/mseconsts_fr.po
   /home/fred/mseide-msegui/tools/i18n/headerform.mfm
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts_es.pas
+  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_fr.pas
+  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_en.pas
+  /home/fred/mseide-mseguitools/tools/i18n/main.pas
+  /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts.pas
+  /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts_de.pas
+  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_de.pas
+  /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context_fr.po
+  /home/fred/mseide-msegui/tools/i18n/test/for_use_mseide-msegui_mseconsts_fr.po
+  /home/fred/mseide-msegui/lib/common/kernel/msebucketlist.pas
+  /home/fred/mseide-msegui/tools/i18n/mseconsts_fr.pas
+  /home/fred/mseide-msegui/tools/i18n/mseconsts.pas
+  /home/fred/mseide-msegui/lib/common/i18n/msestringcontainer.pas
+  /home/fred/mseide-msegui/lib/common/i18n/mseucs2toru.pas
+  /home/fred/mseide-msegui/tools/i18n/mseconsts.mfm
+  /home/fred/sak/sak/sak_mse/src/sak_mse.pas
+  /home/fred/mseide-msegui/tools/i18n/messagesform.pas
+  /home/fred/mseide-mseguioldworksave/tools/i18n/main.pas
+  /home/fred/mseide-mseguigooglelast/tools/i18n/main.pas
+  /home/fred/mseide-mseguigooogle/tools/i18n/main.pas
+  /home/fred/mseide-mseguigoogle2/tools/i18n/main.pas
+  /home/fred/mseide-mseguiast/tools/i18n/main.pas
+  /home/fred/mseide-mseguipoex/tools/i18n/main.pas
+  /home/fred/mseide-mseguicontext3/tools/i18n/main.pas
+  /home/fred/mseide-msegui/tools/i18n/main2.pas
+  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
+  /home/fred/mseide-mseguipocontext/tools/i18n/main.pas
+  /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
+  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
+  /home/fred/mseide-mseguiok/tools/i18n/main.pas
+  /home/fred/mseide-mseguiimport/tools/i18n/main.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1444,7 +1480,7 @@ windowlayout=614
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=9
+ order=10
   2
   0
   1
@@ -1454,8 +1490,9 @@ windowlayout=614
   6
   7
   8
+  9
  firsttab=0
- index=8
+ index=5
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1514,7 +1551,7 @@ windowlayout=614
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=3
  nx=0

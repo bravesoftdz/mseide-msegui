@@ -143,6 +143,7 @@ object projectfo: tprojectfo
       bounds_cx = 442
       bounds_cy = 16
       ondataentered = filenamedataentered
+      onsetvalue = onsetval
       controller.historymaxcount = 0
       controller.captionopen = 'Select unit or form file'
       reffontheight = 14
