@@ -832,9 +832,14 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=loadpr
+finddtext=dowrite
 findhistory=20
+ dowrite
+ readprojectdata
+ writeprojectdata
+ save
  loadpr
+ savep
  listfiles
  writeln
  createnew
@@ -849,19 +854,14 @@ findhistory=20
  colorstate
  color
  yellow
- '"'
- utf8StringReplace(astrt, '"'
- dore
- update
- writerec
 findoptions=1
 editpos=6
  0,-1073741823
  0,-1073741823
- 0,270
+ 0,262
  0,-1073741823
- 0,26
- 0,-1073741823
+ 0,2147
+ 0,178
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -1326,7 +1326,7 @@ windowlayout=611
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=targetconsolefo
+ stackedunder=confideufo
  parent=
  mdistate=3
  nx=0
@@ -1339,9 +1339,9 @@ windowlayout=611
  cy=77
  rcx=0
  rcy=0
- wsize=0
+ wsize=5
  active=0
- visible=1
+ visible=0
  [componentpalettefo.componentpages]
  activetab=0
  [debuggerfo]
@@ -1439,7 +1439,7 @@ windowlayout=611
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1493,7 +1493,7 @@ windowlayout=611
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_projectfo_mse_
+ stackedunder=targetconsolefo
  parent=
  mdistate=3
  nx=0
@@ -1512,7 +1512,7 @@ windowlayout=611
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=componentpalettefo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0

@@ -225,9 +225,6 @@ object headerfo: theaderfo
     bounds_y = 135
     bounds_cx = 164
     bounds_cy = 37
-    statfile = tstatfile1
-    controller.lastdir = '/home/fred/mseide-msegui/tools/i18n/output/'
-    controller.basedir = './output'
     controller.options = [fdo_directory, fdo_savelastdir]
     reffontheight = 14
   end
