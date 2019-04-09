@@ -226,12 +226,51 @@ object headerfo: theaderfo
     bounds_cx = 164
     bounds_cy = 37
     statfile = tstatfile1
-    value = './output'
-    controller.filename = './output/'
-    controller.lastdir = './output'
+    controller.lastdir = '/home/fred/mseide-msegui/tools/i18n/output/'
     controller.basedir = './output'
     controller.options = [fdo_directory, fdo_savelastdir]
     reffontheight = 14
+  end
+  object paneldone: tgroupbox
+    frame.colorclient = 16765345
+    frame.localprops = [frl_colorclient]
+    frame.localprops1 = []
+    taborder = 12
+    visible = False
+    bounds_x = 176
+    bounds_y = 128
+    bounds_cx = 194
+    bounds_cy = 82
+    object labdone: tlabel
+      optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+      color = -2147483645
+      visible = False
+      bounds_x = 8
+      bounds_y = 32
+      bounds_cx = 177
+      bounds_cy = 24
+      caption = 'Done.'
+      font.height = 20
+      font.name = 'stf_default'
+      font.localprops = [flp_height]
+      textflags = [tf_xcentered, tf_ycentered]
+      reffontheight = 24
+    end
+    object labwork: tlabel
+      optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+      color = -2147483645
+      taborder = 1
+      bounds_x = 8
+      bounds_y = 32
+      bounds_cx = 177
+      bounds_cy = 24
+      caption = 'Working...'
+      font.height = 20
+      font.name = 'stf_default'
+      font.localprops = [flp_height]
+      textflags = [tf_xcentered, tf_ycentered]
+      reffontheight = 24
+    end
   end
   object impexpfiledialog: tfiledialog
     statfile = tstatfile1
@@ -246,5 +285,12 @@ object headerfo: theaderfo
     filename = 'status.sta'
     left = 136
     top = 40
+  end
+  object ttimer1: ttimer
+    interval = 2000000
+    options = [to_single]
+    ontimer = ontime
+    left = 144
+    top = 128
   end
 end
