@@ -832,9 +832,14 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=loadpr
+finddtext=dowrite
 findhistory=20
+ dowrite
+ readprojectdata
+ writeprojectdata
+ save
  loadpr
+ savep
  listfiles
  writeln
  createnew
@@ -849,19 +854,14 @@ findhistory=20
  colorstate
  color
  yellow
- '"'
- utf8StringReplace(astrt, '"'
- dore
- update
- writerec
 findoptions=1
 editpos=6
  0,-1073741823
  0,-1073741823
  0,270
  0,-1073741823
- 0,26
- 0,-1073741823
+ 0,2147
+ 0,178
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -914,7 +914,7 @@ order=6
  4
  5
 firsttab=0
-index=0
+index=4
 [layout]
 windowlayout=611
  [mainfo.basedock]
@@ -956,7 +956,7 @@ windowlayout=611
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1326,7 +1326,7 @@ windowlayout=611
  [componentpalettefo]
  splitdir=0
  useroptions=268460139
- stackedunder=targetconsolefo
+ stackedunder=_mse_headerfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1383,7 +1383,7 @@ windowlayout=611
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/headerform.pas
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/apps/ide/mseide.pas
@@ -1434,12 +1434,12 @@ windowlayout=611
   4
   5
  firsttab=0
- index=0
+ index=4
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_mainfo_mse_
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1474,7 +1474,7 @@ windowlayout=611
  [_mse_headerfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1493,7 +1493,7 @@ windowlayout=611
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_projectfo_mse_
+ stackedunder=objectinspectorfo
  parent=
  mdistate=3
  nx=0

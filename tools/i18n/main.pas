@@ -1683,6 +1683,7 @@ end;
 
 procedure tmainfo.readprojectdata;
 begin
+if projloaded then begin
  if projectfo.datafilename.value <> '' then begin
   try
    doread(ttextdatastream.Create(projectfo.datafilename.value),ce_utf8);
@@ -1691,9 +1692,11 @@ begin
   end;
  end;
 end;
+end;
 
 procedure tmainfo.dowrite(stream: ttextdatastream; aencoding: charencodingty);
 begin
+if projloaded then begin
  stream.encoding:= aencoding;
  datastream:= stream;
  try
@@ -1702,16 +1705,19 @@ begin
  finally
   datastream.Free;
  end;
+ end;
 end;
 
 procedure tmainfo.writeprojectdata;
 var
  stream: ttextdatastream;
 begin
+if projloaded then begin
  stream:= ttextdatastream.Create(projectfo.datafilename.value,fm_create);
  dowrite(stream,ce_utf8);
  fdatachanged:= false;
  updatecaption;
+end; 
 end;
 
 procedure tmainfo.onprojectopen(const sender: tobject);
@@ -2048,6 +2054,7 @@ procedure tmainfo.mainupdatestat(const sender: TObject; const filer: tstatfiler)
 var
  mstr1: msestring;
 begin
+if projloaded then begin
  updatesettings(filer);
  mstr1:= projectfo.projectstat.filename;
  filer.updatevalue('projectfile',mstr1);
@@ -2065,6 +2072,7 @@ begin
  else begin
   projectfo.projectstat.readstat;
  end;
+end;
 end;
 
 procedure tmainfo.configureonexecute(const sender: TObject);
@@ -2104,6 +2112,7 @@ end;
 procedure tmainfo.mainclosequery(const sender: tcustommseform;
                                              var amodalresult: modalresultty);
 begin
+if projloaded then begin
  if not checksave then begin
   amodalresult:= mr_none;
  end
@@ -2119,20 +2128,24 @@ begin
    end;
   end;
  end;
+ end;
 end;
 
 procedure tmainfo.mainmenuupdate(const sender: tcustommenu);
 var
  bo1: boolean;
 begin
- bo1:= projectfo.projectstat.filename <> '';
+ if (projectfo.projectstat.filename <> '') and (projloaded = true) then
+ bo1 := true else bo1 := false;
  with mainmenu.menu do begin
-  itembyname('save').enabled:= bo1;
-  itembyname('saveas').enabled:= bo1;
-  itembyname('edit').enabled:= bo1;
-  itembyname('import').enabled:= bo1;
-  itembyname('export').enabled:= bo1;
-  itembyname('make').enabled:= bo1;
+  itembyname('save').visible:= bo1;
+  itembyname('saveas').visible:= bo1;
+  itembyname('edit').visible:= bo1;
+  itembyname('import').visible:= bo1;
+  itembyname('export').visible:= bo1;
+  itembyname('make').visible:= bo1;
+  itembyname('reset').visible:= bo1;
+  itembyname('refresh').visible:= bo1;
  end;
 end;
 
