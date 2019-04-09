@@ -228,7 +228,7 @@ object headerfo: theaderfo
     statfile = tstatfile1
     value = './output'
     controller.filename = './output/'
-    controller.lastdir = '/home/fred/mseide-msegui/tools/i18n/output/'
+    controller.lastdir = './output'
     controller.basedir = './output'
     controller.options = [fdo_directory, fdo_savelastdir]
     reffontheight = 14
