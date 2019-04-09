@@ -374,3 +374,6 @@ msgstr ""
 msgid "Output directory"
 msgstr ""
 
+msgid "Done."
+msgstr ""
+

@@ -513,6 +513,14 @@ msgctxt "headerfo,outputdir,frame.caption"
 msgid "Output directory"
 msgstr ""
 
+msgctxt "headerfo,paneldone,labdone,caption"
+msgid "Done."
+msgstr ""
+
+msgctxt "headerfo,paneldone,labwork,caption"
+msgid "Working..."
+msgstr ""
+
 msgctxt "headerfo,impexpfiledialog,controller.captionopen"
 msgid "Open import file"
 msgstr ""

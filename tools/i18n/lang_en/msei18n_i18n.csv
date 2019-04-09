@@ -123,5 +123,7 @@ name,type,notranslate,comment,value,en
 "headerfo,tbutton2,caption",vaString,F,,Create new consts from PO,Create new consts from PO
 "headerfo,alldir,frame.caption",vaString,F,,All files of directory,All files of directory
 "headerfo,outputdir,frame.caption",vaString,F,,Output directory,Output directory
+"headerfo,paneldone,labdone,caption",vaString,F,,Done.,Done.
+"headerfo,paneldone,labwork,caption",vaString,F,,Working...,Working...
 "headerfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
 "headerfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
