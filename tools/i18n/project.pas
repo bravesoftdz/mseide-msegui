@@ -23,8 +23,7 @@ uses
  msedataedits,msesimplewidgets,msesplitter,msegui,msestrings,msedbedit,msegrids,
  msetypes,mseedit,mseglob,mseguiglob,mseifiglob,msemenus,msememodialog,mseact,
  mseapplication,msedropdownlist,msegraphics,msegraphutils,mseificomp,
- mseificompglob,msestream,sysutils,msebitmap,mseclasses,msedatanodes,
- msedragglob,msegridsglob,mselistbrowser,msesys;
+ mseificompglob,msestream,sysutils;
 
 type
  tprojectfo = class(tmseform)
@@ -47,9 +46,8 @@ type
    beforemake: tmemodialogedit;
    aftermake: tmemodialogedit;
    memopotheader: tmemodialogedit;
-   memopoheader: tmemodialogedit;
-   unitsdir: tfilenameedit;
    splitter: tsplitter;
+   memopoheader: tmemodialogedit;
    procedure projectstatonupdatestat(const sender: TObject; 
                       const filer: tstatfiler);
    procedure projectstatonafterreadstat(const sender: tobject);
@@ -66,9 +64,6 @@ type
    
    procedure onok(const sender: TObject);
    procedure oncancel(const sender: TObject);
-   procedure onsetval(const sender: TObject; var avalue: msestring;
-                   var accept: Boolean);
-   procedure onactiv(const sender: TObject);
   public
     restype : integer;
  //  colwidths: integerarty;
@@ -132,14 +127,11 @@ end;
 
 procedure tprojectfo.childscaled(const sender: TObject);
 begin
-{
  placeyorder(0,[0,0,2,0,0,0,0,4],[datafilename,destname,
                   beforemake,makecommand,aftermake,
                   grid,splitter,grid2,ok],4);
  aligny(wam_center,[makecommand,makeon]);
  aligny(wam_center,[ok,cancel,impexpencoding]);
- }
- 
 end;
 
 procedure tprojectfo.showhintexe(const sender: TObject; var info: hintinfoty);
@@ -181,20 +173,6 @@ procedure tprojectfo.oncancel(const sender: TObject);
 begin
 restype := 0;
 visible := false;
-end;
-
-procedure tprojectfo.onsetval(const sender: TObject; var avalue: msestring;
-               var accept: Boolean);
-begin
-if system.pos(unitsdir.value,avalue) > 0 then
-avalue := StringReplace(avalue, unitsdir.value, '', [rfReplaceAll]);
-
-end;
-
-procedure tprojectfo.onactiv(const sender: TObject);
-begin
-filename.controller.basedir := unitsdir.value; 
-filename.controller.lastdir := unitsdir.value; 
 end;
 
 end.
