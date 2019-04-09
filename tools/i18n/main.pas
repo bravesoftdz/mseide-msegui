@@ -1655,7 +1655,7 @@ begin
  rootnode.clear;
  try
   for int1:= 0 to projectfo.grid.rowcount - 1 do begin
-   file1:= tmsefilestream.create(projectfo.filename[int1]);
+   file1:= tmsefilestream.create(projectfo.unitsdir.value+projectfo.filename[int1]);
    case resfilekindty(projectfo.filekind[int1]) of
     rfk_module: begin
      mstr1:= readmodule(file1);

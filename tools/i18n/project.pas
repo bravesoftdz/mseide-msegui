@@ -23,7 +23,8 @@ uses
  msedataedits,msesimplewidgets,msesplitter,msegui,msestrings,msedbedit,msegrids,
  msetypes,mseedit,mseglob,mseguiglob,mseifiglob,msemenus,msememodialog,mseact,
  mseapplication,msedropdownlist,msegraphics,msegraphutils,mseificomp,
- mseificompglob,msestream,sysutils;
+ mseificompglob,msestream,sysutils,msebitmap,mseclasses,msedatanodes,
+ msedragglob,msegridsglob,mselistbrowser,msesys;
 
 type
  tprojectfo = class(tmseform)
@@ -46,8 +47,8 @@ type
    beforemake: tmemodialogedit;
    aftermake: tmemodialogedit;
    memopotheader: tmemodialogedit;
-   splitter: tsplitter;
    memopoheader: tmemodialogedit;
+   unitsdir: tfilenameedit;
    procedure projectstatonupdatestat(const sender: TObject; 
                       const filer: tstatfiler);
    procedure projectstatonafterreadstat(const sender: tobject);
@@ -127,11 +128,13 @@ end;
 
 procedure tprojectfo.childscaled(const sender: TObject);
 begin
+{
  placeyorder(0,[0,0,2,0,0,0,0,4],[datafilename,destname,
                   beforemake,makecommand,aftermake,
                   grid,splitter,grid2,ok],4);
  aligny(wam_center,[makecommand,makeon]);
  aligny(wam_center,[ok,cancel,impexpencoding]);
+ }
 end;
 
 procedure tprojectfo.showhintexe(const sender: TObject; var info: hintinfoty);

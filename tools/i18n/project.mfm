@@ -60,7 +60,7 @@ object projectfo: tprojectfo
     frame.localprops1 = []
     taborder = 4
     bounds_x = 0
-    bounds_y = 224
+    bounds_y = 280
     bounds_cx = 646
     bounds_cy = 96
     anchors = [an_top]
@@ -218,9 +218,9 @@ object projectfo: tprojectfo
     frame.localprops1 = []
     taborder = 5
     bounds_x = 0
-    bounds_y = 332
+    bounds_y = 380
     bounds_cx = 646
-    bounds_cy = 102
+    bounds_cy = 54
     anchors = [an_top, an_bottom]
     optionsgrid = [og_colsizing, og_rowmoving, og_keyrowmoving, og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_wrapcol, og_autopopup]
     fixrows.count = 1
@@ -288,18 +288,6 @@ object projectfo: tprojectfo
       bounds_cy = 16
       reffontheight = 14
     end
-  end
-  object splitter: tsplitter
-    color = -1879048189
-    taborder = 12
-    bounds_x = 0
-    bounds_y = 322
-    bounds_cx = 646
-    bounds_cy = 6
-    anchors = [an_top]
-    options = [spo_vmove, spo_vprop]
-    linktop = grid
-    linkbottom = grid2
   end
   object makecommand: tmemodialogedit
     frame.caption = 'Make command'
@@ -483,7 +471,7 @@ object projectfo: tprojectfo
       0
       0
     )
-    taborder = 13
+    taborder = 12
     bounds_x = 0
     bounds_y = 488
     bounds_cx = 646
@@ -491,6 +479,32 @@ object projectfo: tprojectfo
     anchors = [an_bottom]
     statfile = projectstat
     value = '# SOME DESCRIPTIVE TITLE.'#10'# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER'#10'# This file is distributed under the same license as the PACKAGE package.'#10'# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.'#10'#'#10'#, fuzzy'#10'msgid ""'#10'msgstr ""'#10'"Project-Id-Version: \n"'#10'"Report-Msgid-Bugs-To: \n"'#10'"POT-Creation-Date: 2019-03-04 23:54+0300\n"'#10'"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"'#10'"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"'#10'"Language-Team: LANGUAGE <LL@li.org>\n"'#10'"Language: \n"'#10'"MIME-Version: 1.0\n"'#10'"Content-Type: text/plain; charset=UTF-8\n"'#10'"Content-Transfer-Encoding: 8bit\n"'
+    reffontheight = 14
+  end
+  object unitsdir: tfilenameedit
+    frame.caption = 'Units and forms directory'
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.buttons.count = 1
+    frame.buttons.items = <    
+      item
+        imagenr = 17
+      end>
+    frame.button.imagenr = 17
+    frame.outerframe = (
+      0
+      17
+      0
+      0
+    )
+    taborder = 13
+    bounds_x = 0
+    bounds_y = 232
+    bounds_cx = 646
+    bounds_cy = 37
+    anchors = [an_left, an_top, an_right]
+    statfile = projectstat
+    controller.options = [fdo_directory, fdo_savelastdir]
     reffontheight = 14
   end
   object projectstat: tstatfile
