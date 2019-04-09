@@ -530,14 +530,12 @@ object mainfo: tmainfo
       end    
       item
         caption = 'Re&fresh'
-        name = 'refresh'
         state = [as_localcaption, as_localonexecute]
         onexecute = formatchanged
       end    
       item
         caption = '&Reset'
         hint = 'Reset translated words to root value'
-        name = 'reset'
         state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = onreset
       end    
