@@ -2054,7 +2054,6 @@ procedure tmainfo.mainupdatestat(const sender: TObject; const filer: tstatfiler)
 var
  mstr1: msestring;
 begin
-if projloaded then begin
  updatesettings(filer);
  mstr1:= projectfo.projectstat.filename;
  filer.updatevalue('projectfile',mstr1);
@@ -2072,7 +2071,6 @@ if projloaded then begin
  else begin
   projectfo.projectstat.readstat;
  end;
-end;
 end;
 
 procedure tmainfo.configureonexecute(const sender: TObject);
