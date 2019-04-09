@@ -41,10 +41,6 @@ type
  tmainfo = class(tmseform)
    mainstatfile: tstatfile;
    clear: tbutton;
-   flat: tbooleanedit;
-   stringonly: tbooleanedit;
-   nont: tbooleanedit;
-   ntonly: tbooleanedit;
    grid: twidgetgrid;
    convexx: tfacecomp;
    convexy: tfacecomp;
@@ -60,7 +56,6 @@ type
    scan: tbutton;
    mainmenu1: tmainmenu;
    projectfiledialog: tfiledialog;
-   coloron: tbooleanedit;
    sysenv: tsysenvmanager;
    c: tstringcontainer;
    tskincontroller1: tskincontroller;
@@ -69,9 +64,14 @@ type
    trowcount: tstringdisp;
    statusdisp: tstringdisp;
    ttimer1: ttimer;
-   nostring: tbooleanedit;
    ttimer2: ttimer;
    workpan: tstringdisp;
+   flat: tbooleanedit;
+   nostring: tbooleanedit;
+   stringonly: tbooleanedit;
+   nont: tbooleanedit;
+   ntonly: tbooleanedit;
+   coloron: tbooleanedit;
    procedure onprojectopen(const sender: tobject);
    procedure onprojectsave(const sender: tobject);
    procedure onprojectedit(const sender: tobject);
@@ -1637,6 +1637,12 @@ var
  file1: tmsefilestream;
  mstr1: msestring;
 begin
+ if isloaded  = true then begin
+  grid.visible := true;
+ statusdisp.visible := true;
+ tgroupbox1.visible := true;
+ application.processmessages;
+ 
  rootnode.clear;
  try
   for int1:= 0 to projectfo.grid.rowcount - 1 do begin
@@ -1663,6 +1669,7 @@ begin
  finally
   updatecaption;
  end;
+end;
 end;
 
 procedure tmainfo.readprojectdata;

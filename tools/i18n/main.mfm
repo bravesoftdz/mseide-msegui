@@ -42,11 +42,32 @@ object mainfo: tmainfo
     frame.localprops1 = [frl1_captiondist]
     face.localprops = []
     face.template = concavex
+    visible = False
     bounds_x = 1
     bounds_y = 1
     bounds_cx = 685
     bounds_cy = 24
     anchors = [an_top]
+    object flat: tbooleanedit
+      color = -2147483645
+      frame.caption = 'flat'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        22
+        2
+      )
+      bounds_x = 8
+      bounds_y = 4
+      bounds_cx = 35
+      bounds_cy = 16
+      optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
+      ondataentered = formatchanged
+      value = True
+      valuedefault = True
+    end
     object nostring: tbooleanedit
       color = -2147483645
       frame.caption = 'no string'
@@ -58,12 +79,94 @@ object mainfo: tmainfo
         57
         2
       )
-      bounds_x = 70
-      bounds_y = 5
+      taborder = 1
+      bounds_x = 69
+      bounds_y = 4
       bounds_cx = 70
       bounds_cy = 16
       ondataentered = formatchanged
       onsetvalue = onsetnosting
+    end
+    object stringonly: tbooleanedit
+      color = -2147483645
+      frame.caption = 'string only'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        67
+        2
+      )
+      taborder = 2
+      bounds_x = 176
+      bounds_y = 4
+      bounds_cx = 80
+      bounds_cy = 16
+      ondataentered = formatchanged
+      onsetvalue = onsetstringonly
+      value = True
+      valuedefault = True
+    end
+    object nont: tbooleanedit
+      color = -2147483645
+      frame.caption = 'no NT'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        38
+        2
+      )
+      taborder = 3
+      bounds_x = 288
+      bounds_y = 4
+      bounds_cx = 51
+      bounds_cy = 16
+      ondataentered = formatchanged
+      onsetvalue = nontonsetvalue
+      value = True
+      valuedefault = True
+    end
+    object ntonly: tbooleanedit
+      color = -2147483645
+      frame.caption = 'NT only'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        48
+        2
+      )
+      taborder = 4
+      bounds_x = 376
+      bounds_y = 4
+      bounds_cx = 61
+      bounds_cy = 16
+      ondataentered = formatchanged
+      onsetvalue = ntonlyonsetvalue
+    end
+    object coloron: tbooleanedit
+      color = -2147483645
+      frame.caption = 'show color'
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.outerframe = (
+        0
+        1
+        67
+        2
+      )
+      taborder = 5
+      bounds_x = 472
+      bounds_y = 4
+      bounds_cx = 80
+      bounds_cy = 16
+      statfile = projectfo.projectstat
+      ondataentered = showcolordataentered
+      value = True
     end
   end
   object grid: twidgetgrid
@@ -77,7 +180,8 @@ object mainfo: tmainfo
     frame.sbhorz.faceendbutton.template = concavex
     frame.localprops = []
     frame.localprops1 = []
-    taborder = 5
+    taborder = 1
+    visible = False
     bounds_x = 1
     bounds_y = 25
     bounds_cx = 684
@@ -308,112 +412,11 @@ object mainfo: tmainfo
       reffontheight = 14
     end
   end
-  object flat: tbooleanedit
-    color = -2147483645
-    frame.caption = 'flat'
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.outerframe = (
-      0
-      1
-      22
-      2
-    )
-    taborder = 1
-    bounds_x = 9
-    bounds_y = 5
-    bounds_cx = 35
-    bounds_cy = 16
-    optionsedit = [oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
-    ondataentered = formatchanged
-    value = True
-    valuedefault = True
-  end
-  object stringonly: tbooleanedit
-    color = -2147483645
-    frame.caption = 'string only'
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.outerframe = (
-      0
-      1
-      67
-      2
-    )
-    taborder = 2
-    bounds_x = 177
-    bounds_y = 5
-    bounds_cx = 80
-    bounds_cy = 16
-    ondataentered = formatchanged
-    onsetvalue = onsetstringonly
-    value = True
-    valuedefault = True
-  end
-  object nont: tbooleanedit
-    color = -2147483645
-    frame.caption = 'no NT'
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.outerframe = (
-      0
-      1
-      38
-      2
-    )
-    taborder = 3
-    bounds_x = 289
-    bounds_y = 5
-    bounds_cx = 51
-    bounds_cy = 16
-    ondataentered = formatchanged
-    onsetvalue = nontonsetvalue
-    value = True
-    valuedefault = True
-  end
-  object ntonly: tbooleanedit
-    color = -2147483645
-    frame.caption = 'NT only'
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.outerframe = (
-      0
-      1
-      48
-      2
-    )
-    taborder = 4
-    bounds_x = 377
-    bounds_y = 5
-    bounds_cx = 61
-    bounds_cy = 16
-    ondataentered = formatchanged
-    onsetvalue = ntonlyonsetvalue
-  end
-  object coloron: tbooleanedit
-    color = -2147483645
-    frame.caption = 'show color'
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.outerframe = (
-      0
-      1
-      67
-      2
-    )
-    taborder = 6
-    bounds_x = 473
-    bounds_y = 5
-    bounds_cx = 80
-    bounds_cy = 16
-    statfile = projectfo.projectstat
-    ondataentered = showcolordataentered
-    value = True
-  end
   object statusdisp: tstringdisp
     frame.localprops = []
     frame.localprops1 = []
-    taborder = 7
+    taborder = 2
+    visible = False
     bounds_x = 1
     bounds_y = 352
     bounds_cx = 684
@@ -426,7 +429,7 @@ object mainfo: tmainfo
     frame.colorclient = 948325
     frame.localprops = [frl_levelo, frl_hiddenedges, frl_colorclient]
     frame.localprops1 = []
-    taborder = 8
+    taborder = 3
     visible = False
     bounds_x = 161
     bounds_y = 129
