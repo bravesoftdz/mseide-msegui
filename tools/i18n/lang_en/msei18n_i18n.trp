@@ -1,7 +1,8 @@
 [projectfo.projectstat]
 colcount=6
 [projectfo.unitsdir]
-filenames=0
+filenames=1
+ /home/fred/mseide-msegui/
 filecolwidth=174
 x=0
 y=0
@@ -80,29 +81,32 @@ lastdir=
 filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]
-propcolwidthref=636
-values0=6
+propcolwidthref=651
+values0=7
  mainfo
  msememodialogfo
  messagesfo
  projectfo
  settingsfo
+ 
  headerfo
 width0=71
 sortdescend0=0
-values1=6
+values1=7
  tools/i18n/main.mfm
  /lib/common/dialogs/msememodialog.mfm
  /tools/i18n/messagesform.mfm
  /tools/i18n/project.mfm
  /lib/common/designutils/msesettings.mfm
- /tools/i18n/headerform.mfm
-values2=6
+ 
+ tools/i18n/headerform.mfm
+values2=7
  0
  0
  0
  0
  0
+ -1
  0
 values2_ci=-1
 width2=126

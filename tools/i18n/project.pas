@@ -49,6 +49,7 @@ type
    memopotheader: tmemodialogedit;
    memopoheader: tmemodialogedit;
    unitsdir: tfilenameedit;
+   splitter: tsplitter;
    procedure projectstatonupdatestat(const sender: TObject; 
                       const filer: tstatfiler);
    procedure projectstatonafterreadstat(const sender: tobject);
@@ -67,6 +68,7 @@ type
    procedure oncancel(const sender: TObject);
    procedure onsetval(const sender: TObject; var avalue: msestring;
                    var accept: Boolean);
+   procedure onactiv(const sender: TObject);
   public
     restype : integer;
  //  colwidths: integerarty;
@@ -137,6 +139,7 @@ begin
  aligny(wam_center,[makecommand,makeon]);
  aligny(wam_center,[ok,cancel,impexpencoding]);
  }
+ 
 end;
 
 procedure tprojectfo.showhintexe(const sender: TObject; var info: hintinfoty);
@@ -186,6 +189,12 @@ begin
 if system.pos(unitsdir.value,avalue) > 0 then
 avalue := StringReplace(avalue, unitsdir.value, '', [rfReplaceAll]);
 
+end;
+
+procedure tprojectfo.onactiv(const sender: TObject);
+begin
+filename.controller.basedir := unitsdir.value; 
+filename.controller.lastdir := unitsdir.value; 
 end;
 
 end.

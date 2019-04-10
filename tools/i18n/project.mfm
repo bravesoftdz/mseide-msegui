@@ -1,5 +1,6 @@
 object projectfo: tprojectfo
   optionswidget = [ow_arrowfocus, ow_subfocus, ow_destroywidgets, ow_hinton]
+  onactivate = onactiv
   visible = False
   bounds_x = 463
   bounds_y = 137
@@ -8,7 +9,6 @@ object projectfo: tprojectfo
   container.optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousetransparent, ow_destroywidgets]
   container.frame.localprops = []
   container.frame.localprops1 = []
-  container.onlayout = childscaled
   container.bounds = (
     0
     0
@@ -19,7 +19,6 @@ object projectfo: tprojectfo
   statfile = projectstat
   caption = 'Edit Translate Project'
   windowopacity = -Inf
-  onlayout = childscaled
   moduleclassname = 'tmseform'
   object impexpencoding: tenumtypeedit
     frame.caption = 'Encoding for imp/exp files'
@@ -219,7 +218,7 @@ object projectfo: tprojectfo
     frame.localprops1 = []
     taborder = 5
     bounds_x = 0
-    bounds_y = 380
+    bounds_y = 388
     bounds_cx = 646
     bounds_cy = 54
     anchors = [an_top, an_bottom]
@@ -507,6 +506,18 @@ object projectfo: tprojectfo
     statfile = projectstat
     controller.options = [fdo_directory, fdo_savelastdir]
     reffontheight = 14
+  end
+  object splitter: tsplitter
+    color = -1879048189
+    taborder = 14
+    bounds_x = 0
+    bounds_y = 378
+    bounds_cx = 646
+    bounds_cy = 6
+    anchors = [an_top]
+    options = [spo_vmove, spo_vprop]
+    linktop = grid
+    linkbottom = grid2
   end
   object projectstat: tstatfile
     onstatupdate = projectstatonupdatestat

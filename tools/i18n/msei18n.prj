@@ -860,12 +860,12 @@ editpos=10
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,357
- 0,186
- 0,1634
- 0,67
- 0,133
- 0,225
+ 0,-1073741823
+ 0,185
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -897,7 +897,7 @@ relpaths=10
  main.pas
  lang_en/msei18n_i18n.trp
  project.pas
- ../apps/ide/lang_en/i18n.trp
+ apps/ide/lang_en/i18n.trp
 ismoduletexts=10
  0
  0
@@ -920,16 +920,16 @@ moduleoptions=3
 visiblemodules=3
  -1
  -1
- -1
+ 0
 nomenumodules=3
  0
  0
  0
 [sourcefo.files_tab]
 order=10
+ 1
  2
  0
- 1
  3
  4
  5
@@ -940,7 +940,7 @@ order=10
 firsttab=0
 index=5
 [layout]
-windowlayout=645
+windowlayout=615
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1166,27 +1166,27 @@ windowlayout=645
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=_mse_headerfo_mse_
  parent=
  mdistate=0
  nx=0
  ny=0
  ncx=0
  ncy=0
- x=697
- y=168
+ x=501
+ y=161
  cx=585
  cy=484
  rcx=0
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
- propcolwidthref=575
- width0=255
+ propcolwidthref=560
+ width0=248
  sortdescend0=0
- width1=314
+ width1=306
  sortdescend1=0
  [symbolfo]
  splitdir=0
@@ -1408,7 +1408,8 @@ windowlayout=645
  value=Pascal
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/project.pas
- history=50
+ history=20
+  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/lang_en/msei18n_i18n.trp
   /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/msesettings.pas
@@ -1419,7 +1420,6 @@ windowlayout=645
   /home/fred/mseide-msegui/apps/ide/mseide.pas
   /home/fred/mseide-msegui/tools/i18n/headerform.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts.pas
-  /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-mseguiexportmulti/apps/ide/mseide.pas
   /home/fred/mseide-mseguiexportmulti/tools/i18n/headerform.pas
   /home/fred/designer_ext/src/designer_ext.pas
@@ -1429,36 +1429,6 @@ windowlayout=645
   /home/fred/mseide-msegui/languages/mseconsts/mseconsts_fr.po
   /home/fred/mseide-msegui/tools/i18n/headerform.mfm
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts_es.pas
-  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_fr.pas
-  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_en.pas
-  /home/fred/mseide-mseguitools/tools/i18n/main.pas
-  /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts.pas
-  /home/fred/mseide-mseguioldworksave/lib/common/kernel/mseconsts_de.pas
-  /home/fred/mseide-msegui/lib/common/kernel/mseconsts_de.pas
-  /home/fred/mseide-msegui/languages/testing/msei18n/msei18n_context_fr.po
-  /home/fred/mseide-msegui/tools/i18n/test/for_use_mseide-msegui_mseconsts_fr.po
-  /home/fred/mseide-msegui/lib/common/kernel/msebucketlist.pas
-  /home/fred/mseide-msegui/tools/i18n/mseconsts_fr.pas
-  /home/fred/mseide-msegui/tools/i18n/mseconsts.pas
-  /home/fred/mseide-msegui/lib/common/i18n/msestringcontainer.pas
-  /home/fred/mseide-msegui/lib/common/i18n/mseucs2toru.pas
-  /home/fred/mseide-msegui/tools/i18n/mseconsts.mfm
-  /home/fred/sak/sak/sak_mse/src/sak_mse.pas
-  /home/fred/mseide-msegui/tools/i18n/messagesform.pas
-  /home/fred/mseide-mseguioldworksave/tools/i18n/main.pas
-  /home/fred/mseide-mseguigooglelast/tools/i18n/main.pas
-  /home/fred/mseide-mseguigooogle/tools/i18n/main.pas
-  /home/fred/mseide-mseguigoogle2/tools/i18n/main.pas
-  /home/fred/mseide-mseguiast/tools/i18n/main.pas
-  /home/fred/mseide-mseguipoex/tools/i18n/main.pas
-  /home/fred/mseide-mseguicontext3/tools/i18n/main.pas
-  /home/fred/mseide-msegui/tools/i18n/main2.pas
-  /home/fred/mseide-msegui-22ce63394e6976a8a495f4a02a35da328ec8c4e2/tools/i18n/main.pas
-  /home/fred/mseide-mseguipocontext/tools/i18n/main.pas
-  /home/fred/mseide-msegui/apps/ide/lang_ru_mseidenew/i18n.trd
-  /home/fred/mseide-msegui/tools/i18n/datatypeform.pas
-  /home/fred/mseide-mseguiok/tools/i18n/main.pas
-  /home/fred/mseide-mseguiimport/tools/i18n/main.pas
  [debuggerfo.project_options]
  value=1
  [debuggerfo.hints]
@@ -1481,9 +1451,9 @@ windowlayout=645
  rcy=0
  [sourcefo.files_tab]
  order=10
+  1
   2
   0
-  1
   3
   4
   5
@@ -1497,7 +1467,7 @@ windowlayout=645
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_headerfo_mse_
+ stackedunder=objectinspectorfo
  parent=
  mdistate=0
  nx=0
@@ -1551,7 +1521,7 @@ windowlayout=645
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_projectfo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
@@ -1570,7 +1540,7 @@ windowlayout=645
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=
  parent=
  mdistate=3
  nx=0
@@ -1585,7 +1555,7 @@ windowlayout=645
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
 [targetconsole]
 finddtext=
 findhistory=0
