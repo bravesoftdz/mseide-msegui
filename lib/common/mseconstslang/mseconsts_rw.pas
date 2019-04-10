@@ -240,7 +240,7 @@ const
                                      );
 
 initialization
-registerlangconsts('rw',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+registerlangconsts(langnames[la_rw],@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
 
 end.
 

@@ -240,7 +240,7 @@ const
                                      );
 
 initialization
-registerlangconsts('uk',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+registerlangconsts(langnames[la_uk],@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
 
 end.
 

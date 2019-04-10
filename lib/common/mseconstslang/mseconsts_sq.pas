@@ -240,7 +240,7 @@ const
                                      );
 
 initialization
-registerlangconsts('sq',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+registerlangconsts(langnames[la_sq],@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
 
 end.
 

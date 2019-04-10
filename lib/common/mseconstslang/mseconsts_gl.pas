@@ -240,7 +240,7 @@ const
                                      );
 
 initialization
-registerlangconsts('gl',@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
+registerlangconsts(langnames[la_gl],@stockcaption,@modalresulttext,@modalresulttextnoshortcut,@textgenerator);
 
 end.
 

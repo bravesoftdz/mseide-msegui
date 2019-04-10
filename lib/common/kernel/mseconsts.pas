@@ -45,7 +45,7 @@ const
  'id','is','it','ja','ka','kk','km','kn','ko','ku','lb','ln','lo','lt','lv',
  'mg','mi','mk','ml','mn','mr','ms','my','nb','nds','ne','nl','nn','oc','or',
  'pa','pl','ps','pt','pt_BR','ro','ru','rw','si','sk','sl','sq','sr',
- 'sr_latin','sv','ta','te','tg','th','tk','tr','ug','uk','uz','uz_Latn','vi',
+ 'sr@latin','sv','ta','te','tg','th','tk','tr','ug','uk','uz','uz@Latn','vi',
  'wa','xh','zh','zh_HK','zh_TW');
 
 const 
