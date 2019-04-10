@@ -162,6 +162,7 @@ var
  valuearray : Array of utf8String;
  rootvaluearray : Array of utf8String;
  isloaded : boolean = false;
+ projloaded : boolean = false;
  doreset : boolean = false;
  importtype: integer = -1;
  ispocontext : boolean = false;
@@ -1213,12 +1214,14 @@ begin
  end; 
 procedure tmainfo.formatchanged(const sender: tobject);
 begin
+if projloaded then begin
  showworkpan;
  application.processmessages;
  updatedata;
  numrow(sender);
  application.processmessages;
  workpan.visible := false;
+end;
 end;
 
 procedure tmainfo.doread(stream: ttextdatastream; aencoding: charencodingty);
@@ -1467,6 +1470,7 @@ var
  filterlista : msestringarty;
  filterlistb : msestringarty;
 begin
+if projloaded then begin
 if isloaded = true then begin
 
 setlength(filterlista,4);
@@ -1498,6 +1502,7 @@ setlength(filterlistb,4);
     importtype:=-1;
  end; 
  end; 
+ end;
  projectfo.impexpfiledialog.controller.filterindex := 0;
 end;
 
@@ -1585,7 +1590,7 @@ begin
 //if (nostring.value) or ((nostring.value = false) and (stringonly.value = false)) then
 //showmessage('Only exportation of strings is allowed.') else
 //   begin 
-
+if projloaded then begin
 setlength(filterlista,6);
 setlength(filterlistb,6);
 
@@ -1622,6 +1627,8 @@ if projectfo.impexpfiledialog.controller.execute(str1,fdk_save) then begin
     workpan.visible := false;
   //  end;
    projectfo.impexpfiledialog.controller.filterindex := 0; 
+ end;
+ 
  end;   
 end;
 
@@ -1638,15 +1645,17 @@ var
  mstr1: msestring;
 begin
  if isloaded  = true then begin
-  grid.visible := true;
+ grid.visible := true;
  statusdisp.visible := true;
  tgroupbox1.visible := true;
  application.processmessages;
  
+ projloaded := true;
+ 
  rootnode.clear;
  try
   for int1:= 0 to projectfo.grid.rowcount - 1 do begin
-   file1:= tmsefilestream.create(projectfo.filename[int1]);
+   file1:= tmsefilestream.create(projectfo.unitsdir.value+projectfo.filename[int1]);
    case resfilekindty(projectfo.filekind[int1]) of
     rfk_module: begin
      mstr1:= readmodule(file1);
@@ -1674,6 +1683,7 @@ end;
 
 procedure tmainfo.readprojectdata;
 begin
+if projloaded then begin
  if projectfo.datafilename.value <> '' then begin
   try
    doread(ttextdatastream.Create(projectfo.datafilename.value),ce_utf8);
@@ -1682,9 +1692,11 @@ begin
   end;
  end;
 end;
+end;
 
 procedure tmainfo.dowrite(stream: ttextdatastream; aencoding: charencodingty);
 begin
+if projloaded then begin
  stream.encoding:= aencoding;
  datastream:= stream;
  try
@@ -1693,16 +1705,19 @@ begin
  finally
   datastream.Free;
  end;
+ end;
 end;
 
 procedure tmainfo.writeprojectdata;
 var
  stream: ttextdatastream;
 begin
+if projloaded then begin
  stream:= ttextdatastream.Create(projectfo.datafilename.value,fm_create);
  dowrite(stream,ce_utf8);
  fdatachanged:= false;
  updatecaption;
+end; 
 end;
 
 procedure tmainfo.onprojectopen(const sender: tobject);
@@ -1716,12 +1731,14 @@ end;
 
 procedure tmainfo.onprojectsave(const sender: tobject);
 begin
+if projloaded then begin
  showworkpan;
  projectfo.impexpfiledialog.controller.filterindex := 0;
  application.processmessages;
  writeprojectdata;
  application.processmessages;
  workpan.visible := false;
+ end;
 end;
  
 procedure tmainfo.newprojectexe(const sender: TObject);
@@ -1753,7 +1770,7 @@ end;
 
 procedure tmainfo.saveasexecute(const sender: TObject);
 begin
-
+if projloaded then begin
  if projectfiledialog.controller.execute(fdk_save) = mr_ok then begin
   showworkpan;
   application.processmessages;
@@ -1763,15 +1780,18 @@ begin
   application.processmessages;
   workpan.visible := false;
  end;
+ end;
 end;
 
 procedure tmainfo.onprojectedit(const sender: tobject);
 begin
+if projloaded then begin
  projectfo.show(true);
  if projectfo.restype = 1 then begin
  projectfo.projectstat.writestat;
  projectfo.projectstat.readstat;
  formatchanged(sender);
+ end;
  end;
 end;
 
@@ -1995,6 +2015,7 @@ end;
 
 procedure tmainfo.makeonexecute(const sender: tobject);
 begin
+if projloaded then begin
  if checksave(true) then begin
   messagesfo.messages.clear;
   messagesfo.running:= true;
@@ -2004,6 +2025,7 @@ begin
   loadproject;
   formatchanged(sender);
   // workpan.visible := false;
+ end;
  end;
 end;
 
@@ -2088,6 +2110,7 @@ end;
 procedure tmainfo.mainclosequery(const sender: tcustommseform;
                                              var amodalresult: modalresultty);
 begin
+if projloaded then begin
  if not checksave then begin
   amodalresult:= mr_none;
  end
@@ -2103,20 +2126,24 @@ begin
    end;
   end;
  end;
+ end;
 end;
 
 procedure tmainfo.mainmenuupdate(const sender: tcustommenu);
 var
  bo1: boolean;
 begin
- bo1:= projectfo.projectstat.filename <> '';
+ if (projectfo.projectstat.filename <> '') and (projloaded = true) then
+ bo1 := true else bo1 := false;
  with mainmenu.menu do begin
-  itembyname('save').enabled:= bo1;
-  itembyname('saveas').enabled:= bo1;
-  itembyname('edit').enabled:= bo1;
-  itembyname('import').enabled:= bo1;
-  itembyname('export').enabled:= bo1;
-  itembyname('make').enabled:= bo1;
+  itembyname('save').visible:= bo1;
+  itembyname('saveas').visible:= bo1;
+  itembyname('edit').visible:= bo1;
+  itembyname('import').visible:= bo1;
+  itembyname('export').visible:= bo1;
+  itembyname('make').visible:= bo1;
+  itembyname('reset').visible:= bo1;
+  itembyname('refresh').visible:= bo1;
  end;
 end;
 
@@ -2192,12 +2219,15 @@ begin
  workpan.visible := false;
  isloaded := true;
  importtype := -1;
+ //mainmenu1.menu.itembyname('save').enabled := false;
+ //application.processmessages;
 end;
 
 procedure tmainfo.onreset(const sender: TObject);
 var
 mstr1 : string;
 begin
+if projloaded then begin
 mstr1 := c[ord(sc_doyouwanttoreset)];
 
 if askconfirmation(mstr1) then begin
@@ -2208,6 +2238,7 @@ if askconfirmation(mstr1) then begin
      numrow(sender);
      doreset := false;
     end;
+  end;  
 end;
 
 procedure tmainfo.ondefhead(const sender: TObject);
@@ -2221,7 +2252,7 @@ var
 defaultresult : array of msestring;
 x : integer;
 begin
-projectfo.impexpfiledialog.controller.filterindex := 0; 
+projectfo.impexpfiledialog.controller.filterindex := 0;
 end;
 
 

@@ -2,12 +2,13 @@ unit headerform;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
 uses
- msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
+ {$ifdef unix}unix,{$endif} msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,mseact,
  mclasses,msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,
  mseifiglob,msememodialog,msestatfile,msestream,sysutils,msesimplewidgets,
  mseconsts,msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,
- msegrids,msegridsglob,LazUTF8,mselistbrowser,msesys,msegraphedits,msescrollbar;
+ msegrids,msegridsglob,LazUTF8,mselistbrowser,msesys,msegraphedits,msescrollbar,
+ msetimer,msedispwidgets,mserichstring;
 type
  theaderfo = class(tmseform)
    memopoheader: tmemodialogedit;
@@ -24,11 +25,16 @@ type
    alldir: tbooleanedit;
    tstatfile1: tstatfile;
    outputdir: tfilenameedit;
+   ttimer1: ttimer;
+   paneldone: tgroupbox;
+   labdone: tlabel;
+   labwork: tlabel;
    procedure createnew(const sender: TObject);
    procedure createnewconst(const sender: TObject; fn : msestring);
    procedure createnewpo(const sender: TObject; fn : msestring);
    procedure dosearch(thearray : array of msestring; theindex : integer);
    procedure oncreateform(const sender: TObject);
+   procedure ontime(const sender: TObject);
  end;
 
 var
@@ -271,6 +277,12 @@ end;
 
 if impexpfiledialog.controller.execute(str1,fdk_open) then 
 begin
+paneldone.frame.colorclient := $FFD1A1;
+labwork.visible := true;
+labdone.visible := false;
+paneldone.visible := true;
+application.processmessages;
+
 if alldir.value = false then begin
 if tbutton(sender).tag = 0 then
 createnewconst(sender, str1) else createnewpo(sender, str1);
@@ -306,6 +318,11 @@ if tbutton(sender).tag = 0 then str2 := '*.po' else str2 := '*.pas';
 }           
  
 end;
+paneldone.frame.colorclient := cl_ltgreen;
+labwork.visible := false;
+labdone.visible := true;
+paneldone.visible := true;
+ttimer1.enabled := true;
 end;
 
 end;
@@ -558,6 +575,16 @@ procedure theaderfo.oncreateform(const sender: TObject);
 begin
  outputdir.value := ExtractFilePath(ParamStr(0)) + directoryseparator +'output' 
   + directoryseparator;
+
+{$ifdef unix}
+ fpsystem('chmod 777 '+outputdir.value);
+{$endif}  
+  
+end;
+
+procedure theaderfo.ontime(const sender: TObject);
+begin
+paneldone.visible := false;
 end;
 
 end.
