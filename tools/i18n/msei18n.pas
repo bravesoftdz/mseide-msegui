@@ -27,7 +27,7 @@ uses
   {$ifdef FPC}{$ifdef unix} cthreads,{$endif}{$endif}msegui,
 
  {$ifdef mse_i18n}
-  gettext,msei18nutils,mseconsts,
+  gettext,msei18nutils,msestrings,mseconsts,
   //{
   mseconsts_af,mseconsts_am,mseconsts_an,mseconsts_ar,mseconsts_as,
   mseconsts_ast,mseconsts_az,mseconsts_be,mseconsts_bg,mseconsts_bn,
@@ -49,10 +49,10 @@ uses
   mseconsts_tk,mseconsts_tr,mseconsts_ug,mseconsts_uk,mseconsts_uz,
   mseconsts_uz_Latn,mseconsts_vi,mseconsts_wa,mseconsts_xh,mseconsts_zh,
   mseconsts_zh_HK,mseconsts_zh_TW,
- //}
+  //}
   {$endif}
  
-  main,messagesform,project, headerform;
+  main,messagesform,project,headerform;
 
 {$ifdef mse_i18n}
 var
@@ -61,14 +61,14 @@ var
 
 begin
 {$ifdef mse_i18n}
- Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- // MSEFallbackLang := 'ru';
-  If loadlangunit('i18n_'+MSEFallbackLang,true) then
-   setlangconsts(MSEFallbackLang);
+  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
+  if not loadlangunit('i18n_'+splitstring((MSELang),'.')[0],true) then
+     if loadlangunit('i18n_'+MSEFallbackLang,true) then
+         if not setlangconsts(splitstring((MSELang),'.')[0]) then
+               setlangconsts(MSEFallbackLang);
 {$endif}                                               
  application.createForm(tmainfo,mainfo);
  application.createForm(tmessagesfo,messagesfo);
  application.createForm(theaderfo,headerfo);
  application.run;
 end.
- 

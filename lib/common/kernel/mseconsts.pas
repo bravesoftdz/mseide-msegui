@@ -44,9 +44,9 @@ const
  'es','et','eu','fa','fi','fr','ga','gd','gl','gu','he','hi','hr','hu','hy',
  'id','is','it','ja','ka','kk','km','kn','ko','ku','lb','ln','lo','lt','lv',
  'mg','mi','mk','ml','mn','mr','ms','my','nb','nds','ne','nl','nn','oc','or',
- 'pa','pl','ps','pt','pt_BR','ro','ru','rw','si','sk','sl','sq','sr',
- 'sr@latin','sv','ta','te','tg','th','tk','tr','ug','uk','uz','uz@Latn','vi',
- 'wa','xh','zh','zh_HK','zh_TW');
+ 'pa','pl','ps','pt','pt_br','ro','ru','rw','si','sk','sl','sq','sr',
+ 'sr@latin','sv','ta','te','tg','th','tk','tr','ug','uk','uz','uz@latn','vi',
+ 'wa','xh','zh','zh_hk','zh_tw');
 
 const 
 en_extendedconst: extendedaty =
