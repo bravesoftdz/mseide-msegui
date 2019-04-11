@@ -1900,6 +1900,15 @@ msgstr "Загрузить схему окон"
 msgid "Docking Area"
 msgstr "Зона пристыкования"
 
+msgid "%s version"
+msgstr "Версия %s"
+
+msgid "About %s"
+msgstr "О %s"
+
+msgid "Host"
+msgstr "Хост"
+
 msgid "Open Form File"
 msgstr "Открыть файл описания формы"
 

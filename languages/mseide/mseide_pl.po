@@ -1843,6 +1843,15 @@ msgstr ""
 msgid "Docking Area"
 msgstr ""
 
+msgid "%s version"
+msgstr ""
+
+msgid "About %s"
+msgstr ""
+
+msgid "Host"
+msgstr ""
+
 msgid "Open Form File"
 msgstr ""
 

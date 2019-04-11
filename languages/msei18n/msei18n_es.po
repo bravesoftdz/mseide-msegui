@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme Barrientos, 2019
+# Fito JB, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
@@ -205,6 +205,12 @@ msgstr ""
 msgid "text files"
 msgstr ""
 
+msgid "%s version"
+msgstr ""
+
+msgid "About %s"
+msgstr ""
+
 msgid "Enter Memo Text"
 msgstr ""
 
@@ -380,4 +386,7 @@ msgid "All files of directory"
 msgstr ""
 
 msgid "Output directory"
+msgstr ""
+
+msgid "Done."
 msgstr ""

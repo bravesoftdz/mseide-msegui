@@ -3175,6 +3175,18 @@ msgctxt "mainfo,c,strings.data,52:"
 msgid "Docking Area"
 msgstr ""
 
+msgctxt "mainfo,c,strings.data,53:"
+msgid "%s version"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,54:"
+msgid "About %s"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,55:"
+msgid "Host"
+msgstr ""
+
 msgctxt "mainfo,openform,controller.filterlist.data,0:,0:"
 msgid "Form Files"
 msgstr ""
