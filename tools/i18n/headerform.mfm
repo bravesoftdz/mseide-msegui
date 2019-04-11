@@ -1,4 +1,5 @@
 object headerfo: theaderfo
+  optionswidget = [ow_top, ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousewheel, ow_destroywidgets, ow_hinton]
   visible = False
   bounds_x = 493
   bounds_y = 200
