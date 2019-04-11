@@ -104,7 +104,10 @@ type
   makeok,             //49 Make OK.
   str_sourcechanged,  //50 Source has changed, do you wish to remake project?
   str_loadwindowlayout,   //51 Load Window Layout
-  dockingarea         //52 Docking Area
+  dockingarea,         //52 Docking Area
+  sc_version,          //53
+  sc_about,            //54
+  sc_host              //55
  );
 
  filekindty = (fk_none,fk_source,fk_unit);
@@ -2851,13 +2854,13 @@ end;
 
 procedure tmainfo.aboutonexecute(const sender: TObject);
 begin
- showmessage('MSEide version: '+versiontext+c_linefeed+
-             'MSEgui version: '+mseguiversiontext+c_linefeed+
-             'Host: '+ platformtext+ c_linefeed+
+ showmessage(StringReplace(c[ord(sc_version)],'%s','MSEide', [rfReplaceAll])+': '+versiontext+c_linefeed+
+             StringReplace(c[ord(sc_version)],'%s','MSEgui', [rfReplaceAll])+': '+mseguiversiontext+c_linefeed+
+             c[ord(sc_host)]+': '+ platformtext+ c_linefeed+
              c_linefeed+
              copyrighttext+c_linefeed+
              'by Martin Schreiber'
-             ,actionsmo.c[ord(ac_about)]+' MSEide');
+             ,StringReplace(c[ord(sc_about)],'%s','MSEide', [rfReplaceAll]));
 end;
 
 procedure tmainfo.configureexecute(const sender: TObject);
