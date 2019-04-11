@@ -2109,13 +2109,17 @@ procedure tmainfo.mainmenuupdate(const sender: tcustommenu);
 var
  bo1: boolean;
 begin
- bo1:= projectfo.projectstat.filename <> '';
+ //bo1:= projectfo.projectstat.filename <> '';
+ if (projectfo.projectstat.filename <> '') and (isloaded = true) then
+ bo1 := true else bo1 := false;
  with mainmenu.menu do begin
   itembyname('save').enabled:= bo1;
   itembyname('saveas').enabled:= bo1;
   itembyname('edit').enabled:= bo1;
   itembyname('import').enabled:= bo1;
   itembyname('export').enabled:= bo1;
+  itembyname('reset').enabled:= bo1;
+  itembyname('refresh').enabled:= bo1;
   itembyname('make').enabled:= bo1;
  end;
 end;
