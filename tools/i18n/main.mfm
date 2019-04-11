@@ -672,6 +672,8 @@ object mainfo: tmainfo
       'with context'
       'without context'
       'text files'
+      '%s version'
+      'About %s'
     )
     left = 64
     top = 200

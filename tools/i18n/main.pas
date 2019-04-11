@@ -203,7 +203,9 @@ type
   sc_translationfiles, //26
   sc_context,   //27
   sc_nocontext,   //28
-  sc_txtfiles    //29
+  sc_txtfiles,    //29
+  sc_version,    //30
+  sc_about    //31
     );
   
 //const
@@ -2126,8 +2128,10 @@ end;
 
 procedure tmainfo.aboutexe(const sender: TObject);
 begin
- showmessage('MSEgui version: '+mseguiversiontext+lineend+
-         'MSEi18n version: ' + msei18nversiontext,'About MSEi18n');
+ showmessage(StringReplace(c[ord(sc_version)],'%s','MSEgui', [rfReplaceAll])+': '
+     +mseguiversiontext+lineend+
+         StringReplace(c[ord(sc_version)],'%s','MSEi18n', [rfReplaceAll])+': '
+            + msei18nversiontext,StringReplace(c[ord(sc_about)],'%s','MSEi18n', [rfReplaceAll]));
 end;
 
 procedure tmainfo.exitexe(const sender: TObject);
