@@ -169,9 +169,9 @@ object headerfo: theaderfo
   object tbutton3: tbutton
     Tag = 1
     taborder = 8
-    bounds_x = 174
+    bounds_x = 182
     bounds_y = 176
-    bounds_cx = 186
+    bounds_cx = 178
     bounds_cy = 28
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
@@ -180,9 +180,9 @@ object headerfo: theaderfo
   end
   object tbutton2: tbutton
     taborder = 9
-    bounds_x = 174
+    bounds_x = 182
     bounds_y = 144
-    bounds_cx = 186
+    bounds_cx = 178
     bounds_cy = 28
     anchors = [an_top, an_right]
     state = [as_localdisabled, as_localcaption, as_localonexecute]
@@ -289,7 +289,7 @@ object headerfo: theaderfo
     interval = 2000000
     options = [to_single]
     ontimer = ontime
-    left = 144
+    left = 136
     top = 128
   end
 end
