@@ -9,7 +9,7 @@ value=# SOME DESCRIPTIVE TITLE.
 +#, fuzzy
 +msgid ""
 +msgstr ""
-+"Project-Id-Version: \n"
++"Project-Id-Version: mseide\n"
 +"Report-Msgid-Bugs-To: \n"
 +"POT-Creation-Date: 2019-03-04 23:54+0300\n"
 +"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -28,7 +28,7 @@ value=# SOME DESCRIPTIVE TITLE.
 +#, fuzzy
 +msgid ""
 +msgstr ""
-+"Project-Id-Version: \n"
++"Project-Id-Version: mseide\n"
 +"Report-Msgid-Bugs-To: \n"
 +"POT-Creation-Date: 2019-03-04 23:54+0300\n"
 +"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -58,7 +58,7 @@ values1=1
  /home/fred/mseide-msegui/apps/ide/lang_en/
 [projectfo.datafilename]
 filenames=1
- /home/fred/mseide-msegui/apps/ide/lang_en/i18n.trd
+ /home/fred/mseide-msegui/apps/ide/lang_en/mseide_i18n.trd
 filecolwidth=174
 x=0
 y=0

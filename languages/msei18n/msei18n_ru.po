@@ -204,6 +204,12 @@ msgstr "без контекста"
 msgid "text files"
 msgstr "текстовые файлы"
 
+msgid "%s version"
+msgstr "Версия %s"
+
+msgid "About %s"
+msgstr "О %s"
+
 msgid "Enter Memo Text"
 msgstr "Ввести Memo текст"
 
@@ -384,3 +390,6 @@ msgstr "Все файлы каталога"
 
 msgid "Output directory"
 msgstr "Каталог выгрузки"
+
+msgid "Done."
+msgstr "Готово."

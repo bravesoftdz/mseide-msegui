@@ -759,6 +759,9 @@ bugs"
 "mainfo,c,strings.data,50:",vaString,F,,"Source has changed, do you wish to remake project?","Source has changed, do you wish to remake project?"
 "mainfo,c,strings.data,51:",vaString,F,,Load Window Layout,Load Window Layout
 "mainfo,c,strings.data,52:",vaString,F,,Docking Area,Docking Area
+"mainfo,c,strings.data,53:",vaString,F,,%s version,%s version
+"mainfo,c,strings.data,54:",vaString,F,,About %s,About %s
+"mainfo,c,strings.data,55:",vaString,F,,Host,Host
 "mainfo,openform,controller.filterlist.data,0:,0:",vaString,F,,Form Files,Form Files
 "mainfo,openform,controller.captionopen",vaString,F,,Open Form File,Open Form File
 "guitemplatesmo,sysenv,helpheader",vaString,F,,"MSEide Copyright 1999-2015 by Martin Schreiber

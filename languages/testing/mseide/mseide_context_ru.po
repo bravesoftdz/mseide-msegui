@@ -3232,6 +3232,18 @@ msgctxt "mainfo,c,strings.data,52:"
 msgid "Docking Area"
 msgstr "Зона пристыкования"
 
+msgctxt "mainfo,c,strings.data,53:"
+msgid "%s version"
+msgstr "Версия %s"
+
+msgctxt "mainfo,c,strings.data,54:"
+msgid "About %s"
+msgstr "О %s"
+
+msgctxt "mainfo,c,strings.data,55:"
+msgid "Host"
+msgstr "Хост"
+
 msgctxt "mainfo,openform,controller.filterlist.data,0:,0:"
 msgid "Form Files"
 msgstr "Файлы описаний форм"

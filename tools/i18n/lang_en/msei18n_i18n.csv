@@ -60,6 +60,8 @@ name,type,notranslate,comment,value,en
 "mainfo,c,strings.data,27:",vaString,F,,with context,with context
 "mainfo,c,strings.data,28:",vaString,F,,without context,without context
 "mainfo,c,strings.data,29:",vaString,F,,text files,text files
+"mainfo,c,strings.data,30:",vaString,F,,%s version,%s version
+"mainfo,c,strings.data,31:",vaString,F,,About %s,About %s
 "msememodialogfo,caption",vaString,F,,Enter Memo Text,Enter Memo Text
 "msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
 "msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK,&OK

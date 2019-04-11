@@ -205,6 +205,12 @@ msgstr ""
 msgid "text files"
 msgstr ""
 
+msgid "%s version"
+msgstr ""
+
+msgid "About %s"
+msgstr ""
+
 msgid "Enter Memo Text"
 msgstr "Entrer le texte du mémo"
 
@@ -384,4 +390,7 @@ msgid "All files of directory"
 msgstr ""
 
 msgid "Output directory"
+msgstr ""
+
+msgid "Done."
 msgstr ""

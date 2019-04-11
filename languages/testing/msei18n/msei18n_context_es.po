@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme Barrientos, 2019
+# Fito JB, 2019
 # AlexL <loginov.alex.valer@gmail.com>, 2019
 # 
 #, fuzzy
@@ -266,6 +266,14 @@ msgctxt "mainfo,c,strings.data,29:"
 msgid "text files"
 msgstr ""
 
+msgctxt "mainfo,c,strings.data,30:"
+msgid "%s version"
+msgstr ""
+
+msgctxt "mainfo,c,strings.data,31:"
+msgid "About %s"
+msgstr ""
+
 msgctxt "msememodialogfo,caption"
 msgid "Enter Memo Text"
 msgstr ""
@@ -520,6 +528,14 @@ msgstr ""
 msgctxt "headerfo,outputdir,frame.caption"
 msgid "Output directory"
 msgstr ""
+
+msgctxt "headerfo,paneldone,labdone,caption"
+msgid "Done."
+msgstr ""
+
+msgctxt "headerfo,paneldone,labwork,caption"
+msgid "Working..."
+msgstr "Trabajando..."
 
 msgctxt "headerfo,impexpfiledialog,controller.captionopen"
 msgid "Open import file"

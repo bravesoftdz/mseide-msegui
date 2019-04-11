@@ -200,6 +200,12 @@ msgstr ""
 msgid "text files"
 msgstr ""
 
+msgid "%s version"
+msgstr ""
+
+msgid "About %s"
+msgstr ""
+
 msgid "Enter Memo Text"
 msgstr ""
 
