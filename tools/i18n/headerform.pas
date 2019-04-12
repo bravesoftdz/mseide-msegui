@@ -556,11 +556,13 @@ defaultextendedconst := en_extendedconst;
      file1.writeln(endmemo.value); 
      
      file1.writeln('initialization');
-     
-      file1.writeln('registerlangconsts' + #040+ #039+strlang+ #039 + #044 +
+
+    file1.writeln();  
+   
+    file1.writeln('registerlangconsts' + #040+ 'langnames[la_'+strlang+ ']' + #044 +
       '@stockcaption' + #044 + '@modalresulttext' + #044 +
       '@modalresulttextnoshortcut' + #044 + '@textgenerator'+ #041 + #059);
-     
+          
      file1.writeln();  
      file1.writeln('end.');  
      file1.writeln();

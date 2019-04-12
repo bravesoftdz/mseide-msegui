@@ -869,7 +869,7 @@ editpos=11
  0,-1073741823
  0,-1073741823
  0,9
- 0,0
+ 0,-1073741823
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -939,17 +939,17 @@ nomenumodules=4
  0
 [sourcefo.files_tab]
 order=11
+ 1
  2
  0
- 1
  3
  4
  5
  6
- 9
- 10
  7
  8
+ 9
+ 10
 firsttab=0
 index=4
 [layout]
@@ -1179,7 +1179,7 @@ windowlayout=635
  [objectinspectorfo]
  splitdir=0
  useroptions=268451947
- stackedunder=mainfo
+ stackedunder=
  parent=
  mdistate=0
  nx=0
@@ -1194,7 +1194,7 @@ windowlayout=635
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [objectinspectorfo.grid]
  propcolwidthref=575
  width0=255
@@ -1422,10 +1422,10 @@ windowlayout=635
  [debuggerfo.file_history]
  value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/lib/common/dialogs/msefiledialogres.pas
   /home/fred/mseide-msegui/apps/ide/lang_en/i18n.trp
   /home/fred/mseide-msegui/tools/i18n/lang_en/msei18n_i18n.trp
-  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/msesettings.pas
   /home/fred/mseide-msegui/lib/common/designutils/msesettings.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
@@ -1464,24 +1464,24 @@ windowlayout=635
  rcy=0
  [sourcefo.files_tab]
  order=11
+  1
   2
   0
-  1
   3
   4
   5
   6
-  9
-  10
   7
   8
+  9
+  10
  firsttab=0
  index=4
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
  useroptions=268451947
- stackedunder=_mse_projectfo_mse_
+ stackedunder=_mse_headerfo_mse_
  parent=
  mdistate=0
  nx=0
@@ -1516,7 +1516,7 @@ windowlayout=635
  [_mse_headerfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_mainfo_mse_
+ stackedunder=_mse_projectfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1535,7 +1535,7 @@ windowlayout=635
  [_mse_projectfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_filedialogres_mse_
+ stackedunder=_mse_mainfo_mse_
  parent=
  mdistate=3
  nx=0
@@ -1554,7 +1554,7 @@ windowlayout=635
  [_mse_mainfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=objectinspectorfo
+ stackedunder=_mse_filedialogres_mse_
  parent=
  mdistate=3
  nx=0
@@ -1573,7 +1573,7 @@ windowlayout=635
  [_mse_filedialogres_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=_mse_headerfo_mse_
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0
