@@ -59,6 +59,7 @@ object mainfo: tmainfo
         22
         2
       )
+      hint = 'Toggle tree/flat view'
       bounds_x = 8
       bounds_y = 3
       bounds_cx = 35
@@ -80,6 +81,7 @@ object mainfo: tmainfo
         2
       )
       taborder = 1
+      hint = 'Show all rows, that are not string type'
       bounds_x = 69
       bounds_y = 3
       bounds_cx = 70
@@ -99,6 +101,7 @@ object mainfo: tmainfo
         2
       )
       taborder = 2
+      hint = 'Show all rows, that are string type'
       bounds_x = 176
       bounds_y = 3
       bounds_cx = 80
@@ -120,6 +123,7 @@ object mainfo: tmainfo
         2
       )
       taborder = 3
+      hint = 'Show all rows, that have ''no NT'' (No Translate) flag'
       bounds_x = 288
       bounds_y = 3
       bounds_cx = 51
@@ -141,6 +145,7 @@ object mainfo: tmainfo
         2
       )
       taborder = 4
+      hint = 'Show all rows, that have ''NT'' (No Translate) flag'
       bounds_x = 376
       bounds_y = 3
       bounds_cx = 61
@@ -160,6 +165,7 @@ object mainfo: tmainfo
         2
       )
       taborder = 5
+      hint = 'Colorize rows to differentiate translated and not translated values, to see warnings'
       bounds_x = 472
       bounds_y = 3
       bounds_cx = 80
@@ -462,28 +468,32 @@ object mainfo: tmainfo
     menu.submenu.items = <    
       item
         caption = '&Open'
+        hint = 'Open translation project (trp)'
         name = 'open'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         font.name = 'stf_menu'
         font.localprops = [flp_extraspace]
         onexecute = onprojectopen
       end    
       item
         caption = '&Save'
+        hint = 'Save work into current trd (Translation Data) file'
         name = 'save'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = onprojectsave
       end    
       item
         caption = 'Save &as'
+        hint = 'Save work into specified trd (Translation Data) file'
         name = 'saveas'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = saveasexecute
       end    
       item
         caption = '&New'
+        hint = 'New translation project'
         name = 'new'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = newprojectexe
       end    
       item
@@ -495,20 +505,23 @@ object mainfo: tmainfo
       end    
       item
         caption = '&Import'
+        hint = 'Import translations from supported file formats'
         name = 'import'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = importonexecute
       end    
       item
         caption = 'Ex&port'
+        hint = 'Export translations into supported file formats'
         name = 'export'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = exportonexecute
       end    
       item
         caption = '&Make'
+        hint = 'Make project by compiling library'
         name = 'make'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = makeonexecute
       end    
       item
@@ -516,43 +529,50 @@ object mainfo: tmainfo
         submenu.items = <        
           item
             caption = '&About'
-            state = [as_localcaption, as_localonexecute]
+            hint = 'About program: version, license, authors, etc.'
+            state = [as_localcaption, as_localhint, as_localonexecute]
             onexecute = aboutexe
           end        
           item
             caption = '&Configure MSEi18n'
-            state = [as_localcaption, as_localonexecute]
+            hint = 'Program configuration'
+            state = [as_localcaption, as_localhint, as_localonexecute]
             onexecute = configureonexecute
           end>
         caption = 'Se&ttings'
+        hint = 'Program settings'
         name = 'settings'
-        state = [as_localcaption]
+        state = [as_localcaption, as_localhint]
       end    
       item
         caption = 'Re&fresh'
+        hint = 'Refresh display'
         name = 'refresh'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = formatchanged
       end    
       item
         caption = '&Reset'
-        hint = 'Reset translated words to root value'
+        hint = 'Reset translated words to root values'
         name = 'reset'
         state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = onreset
       end    
       item
         caption = '&Tools'
+        hint = 'Special tools to work with constants to support localization of them'
         name = 'tools'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = ondefhead
       end    
       item
         caption = 'E&xit'
+        hint = 'Exit from program'
         name = 'exit'
-        state = [as_localcaption, as_localonexecute]
+        state = [as_localcaption, as_localhint, as_localonexecute]
         onexecute = exitexe
       end>
+    menu.state = [as_localhint]
     left = 256
     top = 160
   end

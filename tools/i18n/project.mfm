@@ -39,9 +39,11 @@ object projectfo: tprojectfo
       0
     )
     taborder = 6
+    hint = 'Encoding for imported/exported files'
     bounds_x = 8
-    bounds_y = 535
+    bounds_y = 534
     bounds_cx = 260
+    bounds_cy = 21
     anchors = [an_left, an_bottom]
     statfile = projectstat
     valuedefault = 1
@@ -52,13 +54,14 @@ object projectfo: tprojectfo
       item
       end>
     oninit = impexpencinit
-    reffontheight = 14
+    reffontheight = 15
   end
   object grid: twidgetgrid
     optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_focusbackonesc, ow_destroywidgets]
     frame.localprops = []
     frame.localprops1 = []
     taborder = 4
+    hint = 'Files of project and type of them'
     bounds_x = 0
     bounds_y = 224
     bounds_cx = 646
@@ -68,7 +71,7 @@ object projectfo: tprojectfo
     fixrows.count = 1
     fixrows.items = <    
       item
-        height = 16
+        height = 17
         captions.count = 3
         captions.items = <        
           item
@@ -103,9 +106,9 @@ object projectfo: tprojectfo
         widgetname = 'filekind'
         dataclass = tgridenumdatalist
       end>
-    datarowheight = 16
+    datarowheight = 17
     statfile = projectstat
-    reffontheight = 14
+    reffontheight = 15
     object rootname: tstringedit
       optionswidget1 = [ow1_fontglyphheight]
       color = -1879048185
@@ -118,10 +121,10 @@ object projectfo: tprojectfo
       bounds_x = 0
       bounds_y = 0
       bounds_cx = 71
-      bounds_cy = 16
+      bounds_cy = 17
       optionsedit1 = [oe1_autopopupmenu, oe1_keyexecute, oe1_savevalue, oe1_savestate]
       optionsedit = [oe_readonly, oe_undoonesc, oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_resetselectonexit, oe_exitoncursor, oe_endonenter, oe_autoselect, oe_autoselectonfirstclick]
-      reffontheight = 14
+      reffontheight = 15
     end
     object filename: tfilenameedit
       frame.levelo = 0
@@ -141,11 +144,11 @@ object projectfo: tprojectfo
       bounds_x = 72
       bounds_y = 0
       bounds_cx = 442
-      bounds_cy = 16
+      bounds_cy = 17
       ondataentered = filenamedataentered
       controller.historymaxcount = 0
       controller.captionopen = 'Select unit or form file'
-      reffontheight = 14
+      reffontheight = 15
     end
     object filekind: tenumtypeedit
       optionswidget1 = [ow1_fontglyphheight]
@@ -164,13 +167,13 @@ object projectfo: tprojectfo
       bounds_x = 515
       bounds_y = 0
       bounds_cx = 126
-      bounds_cy = 16
+      bounds_cy = 17
       dropdown.cols.count = 1
       dropdown.cols.items = <      
         item
         end>
       oninit = filekindoninit
-      reffontheight = 14
+      reffontheight = 15
     end
   end
   object datafilename: tfilenameedit
@@ -187,15 +190,16 @@ object projectfo: tprojectfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 1
+    hint = 'Translation data file (trd)'
     bounds_x = 0
-    bounds_y = -1
+    bounds_y = -2
     bounds_cx = 646
-    bounds_cy = 37
+    bounds_cy = 39
     anchors = [an_top]
     statfile = projectstat
     controller.filterlist.data = (
@@ -210,13 +214,14 @@ object projectfo: tprojectfo
     )
     controller.defaultext = 'trd'
     controller.historymaxcount = 0
-    reffontheight = 14
+    reffontheight = 15
   end
   object grid2: twidgetgrid
     optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_focusbackonesc, ow_destroywidgets]
     frame.localprops = []
     frame.localprops1 = []
     taborder = 5
+    hint = 'List of languages and their working directories'
     bounds_x = 0
     bounds_y = 332
     bounds_cx = 646
@@ -226,7 +231,7 @@ object projectfo: tprojectfo
     fixrows.count = 1
     fixrows.items = <    
       item
-        height = 16
+        height = 17
         captions.count = 2
         captions.items = <        
           item
@@ -251,10 +256,10 @@ object projectfo: tprojectfo
         widgetname = 'dir'
         dataclass = tgridmsestringdatalist
       end>
-    datarowheight = 16
+    datarowheight = 17
     statfile = projectstat
     onrowsdeleted = langdeleted
-    reffontheight = 14
+    reffontheight = 15
     object lang: tstringedit
       optionswidget1 = [ow1_fontglyphheight]
       frame.levelo = 0
@@ -266,8 +271,8 @@ object projectfo: tprojectfo
       bounds_x = 0
       bounds_y = 0
       bounds_cx = 94
-      bounds_cy = 16
-      reffontheight = 14
+      bounds_cy = 17
+      reffontheight = 15
     end
     object dir: tdirdropdownedit
       frame.levelo = 0
@@ -285,8 +290,8 @@ object projectfo: tprojectfo
       bounds_x = 95
       bounds_y = 0
       bounds_cx = 546
-      bounds_cy = 16
-      reffontheight = 14
+      bounds_cy = 17
+      reffontheight = 15
     end
   end
   object splitter: tsplitter
@@ -313,21 +318,22 @@ object projectfo: tprojectfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 2
+    hint = 'Make command'
     onshowhint = showhintexe
     bounds_x = 0
-    bounds_y = 135
+    bounds_y = 134
     bounds_cx = 607
-    bounds_cy = 37
+    bounds_cy = 39
     anchors = [an_left, an_top, an_right]
     statfile = projectstat
     value = '${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections'
     onsetvalue = makecommandsetvalue
-    reffontheight = 14
+    reffontheight = 15
   end
   object makeon: tbooleanedit
     frame.caption = 'on'
@@ -336,15 +342,16 @@ object projectfo: tprojectfo
     frame.localprops1 = []
     frame.outerframe = (
       2
-      17
+      18
       2
       0
     )
     taborder = 3
+    hint = 'Toggle make (make on/make off)'
     bounds_x = 617
-    bounds_y = 148
+    bounds_y = 147
     bounds_cx = 17
-    bounds_cy = 30
+    bounds_cy = 31
     anchors = [an_top, an_right]
     statfile = projectstat
     value = True
@@ -376,18 +383,19 @@ object projectfo: tprojectfo
     frame.localprops1 = []
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 8
+    hint = 'Name of trp (Translation Project) file'
     bounds_x = 0
-    bounds_y = 47
+    bounds_y = 46
     bounds_cx = 646
-    bounds_cy = 37
+    bounds_cy = 39
     anchors = [an_top]
     statfile = projectstat
-    reffontheight = 14
+    reffontheight = 15
   end
   object beforemake: tmemodialogedit
     frame.caption = 'Before make'
@@ -401,19 +409,20 @@ object projectfo: tprojectfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 9
+    hint = 'Commands to run before make'
     onshowhint = showhintexe
     bounds_x = 0
-    bounds_y = 95
+    bounds_y = 94
     bounds_cx = 646
-    bounds_cy = 37
+    bounds_cy = 39
     anchors = [an_top]
     statfile = projectstat
-    reffontheight = 14
+    reffontheight = 15
   end
   object aftermake: tmemodialogedit
     frame.caption = 'After make'
@@ -427,19 +436,20 @@ object projectfo: tprojectfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 10
+    hint = 'Commands to run after make'
     onshowhint = showhintexe
     bounds_x = 0
-    bounds_y = 183
+    bounds_y = 182
     bounds_cx = 646
-    bounds_cy = 37
+    bounds_cy = 39
     anchors = [an_top]
     statfile = projectstat
-    reffontheight = 14
+    reffontheight = 15
   end
   object memopotheader: tmemodialogedit
     frame.caption = 'POT header'
@@ -453,19 +463,20 @@ object projectfo: tprojectfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 11
+    hint = 'POT header for exported POT file'
     bounds_x = 0
-    bounds_y = 447
+    bounds_y = 445
     bounds_cx = 646
-    bounds_cy = 34
+    bounds_cy = 36
     anchors = [an_bottom]
     statfile = projectstat
     value = '# SOME DESCRIPTIVE TITLE.'#10'# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER'#10'# This file is distributed under the same license as the PACKAGE package.'#10'# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.'#10'#'#10'#, fuzzy'#10'msgid ""'#10'msgstr ""'#10'"Project-Id-Version: \n"'#10'"Report-Msgid-Bugs-To: \n"'#10'"POT-Creation-Date: 2019-03-04 23:54+0300\n"'#10'"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"'#10'"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"'#10'"Language-Team: LANGUAGE <LL@li.org>\n"'#10'"Language: \n"'#10'"MIME-Version: 1.0\n"'#10'"Content-Type: text/plain; charset=UTF-8\n"'#10'"Content-Transfer-Encoding: 8bit\n"'
-    reffontheight = 14
+    reffontheight = 15
   end
   object memopoheader: tmemodialogedit
     frame.caption = 'PO header'
@@ -479,19 +490,20 @@ object projectfo: tprojectfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      17
+      18
       0
       0
     )
     taborder = 13
+    hint = 'PO header for exported PO file'
     bounds_x = 0
-    bounds_y = 488
+    bounds_y = 486
     bounds_cx = 646
-    bounds_cy = 34
+    bounds_cy = 36
     anchors = [an_bottom]
     statfile = projectstat
     value = '# SOME DESCRIPTIVE TITLE.'#10'# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER'#10'# This file is distributed under the same license as the PACKAGE package.'#10'# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.'#10'#'#10'#, fuzzy'#10'msgid ""'#10'msgstr ""'#10'"Project-Id-Version: \n"'#10'"Report-Msgid-Bugs-To: \n"'#10'"POT-Creation-Date: 2019-03-04 23:54+0300\n"'#10'"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"'#10'"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"'#10'"Language-Team: LANGUAGE <LL@li.org>\n"'#10'"Language: \n"'#10'"MIME-Version: 1.0\n"'#10'"Content-Type: text/plain; charset=UTF-8\n"'#10'"Content-Transfer-Encoding: 8bit\n"'
-    reffontheight = 14
+    reffontheight = 15
   end
   object projectstat: tstatfile
     onstatupdate = projectstatonupdatestat
