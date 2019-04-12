@@ -26,20 +26,40 @@ msgstr ""
 msgid "flat"
 msgstr "площ."
 
+msgid "Toggle tree/flat view"
+msgstr ""
+
 msgid "no string"
 msgstr "не рядок"
+
+msgid "Show all rows, that are not string type"
+msgstr ""
 
 msgid "string only"
 msgstr "лише рядки"
 
+msgid "Show all rows, that are string type"
+msgstr ""
+
 msgid "no NT"
 msgstr "без NT"
+
+msgid "Show all rows, that have 'no NT' (No Translate) flag"
+msgstr ""
 
 msgid "NT only"
 msgstr "лише NT"
 
+msgid "Show all rows, that have 'NT' (No Translate) flag"
+msgstr ""
+
 msgid "show color"
 msgstr "показати кольором"
+
+msgid ""
+"Colorize rows to differentiate translated and not translated values, to see "
+"warnings"
+msgstr ""
 
 msgid "Name"
 msgstr "Назва"
@@ -59,14 +79,26 @@ msgstr "Працюємо..."
 msgid "&Open"
 msgstr "&Відкрити"
 
+msgid "Open Translation Project (trp)"
+msgstr ""
+
 msgid "&Save"
 msgstr "&Зберегти"
+
+msgid "Save work into current trd (Translation Data) file"
+msgstr ""
 
 msgid "Save &as"
 msgstr "Зберегти &як"
 
+msgid "Save work into specified trd (Translation Data) file"
+msgstr ""
+
 msgid "&New"
 msgstr "&Новий"
+
+msgid "New translation project"
+msgstr ""
 
 msgid "&Edit"
 msgstr "&Редагувати"
@@ -77,35 +109,68 @@ msgstr ""
 msgid "&Import"
 msgstr "&Імпорт"
 
+msgid "Import translations from supported file formats"
+msgstr ""
+
 msgid "Ex&port"
 msgstr "Ек&спорт"
+
+msgid "Export translations into supported file formats"
+msgstr ""
 
 msgid "&Make"
 msgstr "Зі&брати"
 
+msgid "Make project by compiling library"
+msgstr ""
+
 msgid "&About"
 msgstr "&Інформація про MSEi18n"
+
+msgid "About program: version, license, authors, etc."
+msgstr ""
 
 msgid "&Configure MSEi18n"
 msgstr "&Конфігурувати MSEi18n"
 
+msgid "Program configuration"
+msgstr ""
+
+msgid "&Default headers"
+msgstr ""
+
+msgid "Default headers for POT/PO/constants files"
+msgstr ""
+
 msgid "Se&ttings"
 msgstr "Н&алаштування"
+
+msgid "Program settings"
+msgstr ""
 
 msgid "Re&fresh"
 msgstr "Осві&жити"
 
+msgid "Refresh display"
+msgstr ""
+
 msgid "&Reset"
 msgstr "&Скинути"
 
-msgid "Reset translated words to root value"
+msgid "Reset translated words to root values"
 msgstr ""
 
 msgid "&Tools"
 msgstr "&Засоби"
 
+msgid "Special tools to work with constants to support localization of them"
+msgstr ""
+
 msgid "E&xit"
 msgstr "Ви&хід"
+
+msgid "Exit from program"
+msgstr ""
 
 msgid "Translate project"
 msgstr "Проект перекладу"
@@ -230,6 +295,12 @@ msgstr "Редагувати проект перекладу"
 msgid "Encoding for imp/exp files"
 msgstr "Кодування для файлів імпорту/экспорту"
 
+msgid "Encoding for imported/exported files"
+msgstr ""
+
+msgid "Files of project and type of them"
+msgstr ""
+
 msgid "Rootname"
 msgstr "Назва"
 
@@ -245,11 +316,17 @@ msgstr "Вибір файла модуля чи форми"
 msgid "Datafile"
 msgstr "Файл даних .trd (наприклад, введіть i18n)"
 
+msgid "Translation Data file (trd)"
+msgstr ""
+
 msgid "MSEi18n Data Files"
 msgstr "Файли даних MSEi18n"
 
 msgid "All files"
 msgstr "Всі файли"
+
+msgid "List of languages and their working directories"
+msgstr ""
 
 msgid "Language"
 msgstr "Мова"
@@ -263,6 +340,9 @@ msgstr "Команда збирання"
 msgid "on"
 msgstr "увімкнути"
 
+msgid "Toggle make (make on/make off)"
+msgstr ""
+
 msgid "OK"
 msgstr "Гаразд"
 
@@ -272,16 +352,31 @@ msgstr "Скасувати"
 msgid "Destination Basename (empty = Datafile name)"
 msgstr "Розташування базового імені (пусто = ім'я файла даних)"
 
+msgid "Name of trp (Translation Project) file"
+msgstr ""
+
 msgid "Before make"
 msgstr "Перед збиранням"
+
+msgid "Commands to run before make"
+msgstr ""
 
 msgid "After make"
 msgstr "після збирання"
 
+msgid "Commands to run after make"
+msgstr ""
+
 msgid "POT header"
 msgstr ""
 
+msgid "POT header for exported POT file"
+msgstr ""
+
 msgid "PO header"
+msgstr ""
+
+msgid "PO header for exported PO file"
 msgstr ""
 
 msgid "Open import file"
@@ -369,19 +464,34 @@ msgstr "Кореневий каталог FPC"
 msgid "Global Macros"
 msgstr "Глобальні Макро-визначення"
 
-msgid "Tools"
-msgstr "Засоби"
+msgid "Tools/Default headers"
+msgstr ""
 
 msgid "Default PO header"
+msgstr ""
+
+msgid "Default PO header for created PO file"
 msgstr ""
 
 msgid "Default POT header"
 msgstr ""
 
+msgid "Default POT header for created POT file"
+msgstr ""
+
 msgid "Default mseconst header"
 msgstr ""
 
+msgid "Default header for created mseconsts_*.pas"
+msgstr ""
+
+msgid "Create PO file(s) from mseconsts_*.pas"
+msgstr ""
+
 msgid "Create new PO from consts"
+msgstr ""
+
+msgid "Create mseconstst_*.pas from PO file(s)"
 msgstr ""
 
 msgid "Create new consts from PO"
@@ -390,7 +500,13 @@ msgstr ""
 msgid "All files of directory"
 msgstr ""
 
+msgid "Do task for all files of specified directory"
+msgstr ""
+
 msgid "Output directory"
+msgstr ""
+
+msgid "Directory to write output files in"
 msgstr ""
 
 msgid "Done."

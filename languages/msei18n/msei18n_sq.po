@@ -25,20 +25,40 @@ msgstr ""
 msgid "flat"
 msgstr "Sheshtë"
 
+msgid "Toggle tree/flat view"
+msgstr ""
+
 msgid "no string"
+msgstr ""
+
+msgid "Show all rows, that are not string type"
 msgstr ""
 
 msgid "string only"
 msgstr "Vetën varg"
 
+msgid "Show all rows, that are string type"
+msgstr ""
+
 msgid "no NT"
 msgstr "Jo NT"
+
+msgid "Show all rows, that have 'no NT' (No Translate) flag"
+msgstr ""
 
 msgid "NT only"
 msgstr "Vetëm NT"
 
+msgid "Show all rows, that have 'NT' (No Translate) flag"
+msgstr ""
+
 msgid "show color"
 msgstr "shfaq ngjyrat"
+
+msgid ""
+"Colorize rows to differentiate translated and not translated values, to see "
+"warnings"
+msgstr ""
 
 msgid "Name"
 msgstr "Emri"
@@ -58,14 +78,26 @@ msgstr "Punë..."
 msgid "&Open"
 msgstr "&Hapur"
 
+msgid "Open Translation Project (trp)"
+msgstr ""
+
 msgid "&Save"
 msgstr "&Ruaj"
+
+msgid "Save work into current trd (Translation Data) file"
+msgstr ""
 
 msgid "Save &as"
 msgstr "Ruaj &si"
 
+msgid "Save work into specified trd (Translation Data) file"
+msgstr ""
+
 msgid "&New"
 msgstr "&e'Re"
+
+msgid "New translation project"
+msgstr ""
 
 msgid "&Edit"
 msgstr "&Ndrysho"
@@ -76,35 +108,68 @@ msgstr ""
 msgid "&Import"
 msgstr "&importo"
 
+msgid "Import translations from supported file formats"
+msgstr ""
+
 msgid "Ex&port"
 msgstr "Eks&porto"
+
+msgid "Export translations into supported file formats"
+msgstr ""
 
 msgid "&Make"
 msgstr "&Bëj"
 
+msgid "Make project by compiling library"
+msgstr ""
+
 msgid "&About"
 msgstr "&Informacione"
+
+msgid "About program: version, license, authors, etc."
+msgstr ""
 
 msgid "&Configure MSEi18n"
 msgstr "&Konfiguro MSEi18n"
 
+msgid "Program configuration"
+msgstr ""
+
+msgid "&Default headers"
+msgstr ""
+
+msgid "Default headers for POT/PO/constants files"
+msgstr ""
+
 msgid "Se&ttings"
 msgstr "Cilë&sime"
+
+msgid "Program settings"
+msgstr ""
 
 msgid "Re&fresh"
 msgstr "&Fresko"
 
+msgid "Refresh display"
+msgstr ""
+
 msgid "&Reset"
 msgstr "&Rivendos"
 
-msgid "Reset translated words to root value"
+msgid "Reset translated words to root values"
 msgstr ""
 
 msgid "&Tools"
 msgstr ""
 
+msgid "Special tools to work with constants to support localization of them"
+msgstr ""
+
 msgid "E&xit"
 msgstr "D&il"
+
+msgid "Exit from program"
+msgstr ""
 
 msgid "Translate project"
 msgstr "Përkthe projektin"
@@ -229,6 +294,12 @@ msgstr "Redakto Përkthimin Projektit"
 msgid "Encoding for imp/exp files"
 msgstr "Kodim për skedarët imp/exp"
 
+msgid "Encoding for imported/exported files"
+msgstr ""
+
+msgid "Files of project and type of them"
+msgstr ""
+
 msgid "Rootname"
 msgstr "Rootemër"
 
@@ -244,11 +315,17 @@ msgstr ""
 msgid "Datafile"
 msgstr ""
 
+msgid "Translation Data file (trd)"
+msgstr ""
+
 msgid "MSEi18n Data Files"
 msgstr ""
 
 msgid "All files"
 msgstr "Të gjithë file"
+
+msgid "List of languages and their working directories"
+msgstr ""
 
 msgid "Language"
 msgstr "Gjuhë"
@@ -262,6 +339,9 @@ msgstr ""
 msgid "on"
 msgstr "në"
 
+msgid "Toggle make (make on/make off)"
+msgstr ""
+
 msgid "OK"
 msgstr "Dakord"
 
@@ -271,16 +351,31 @@ msgstr "Anulo"
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
 
+msgid "Name of trp (Translation Project) file"
+msgstr ""
+
 msgid "Before make"
 msgstr "Përpara bëj"
+
+msgid "Commands to run before make"
+msgstr ""
 
 msgid "After make"
 msgstr "Pas bëj"
 
+msgid "Commands to run after make"
+msgstr ""
+
 msgid "POT header"
 msgstr ""
 
+msgid "POT header for exported POT file"
+msgstr ""
+
 msgid "PO header"
+msgstr ""
+
+msgid "PO header for exported PO file"
 msgstr ""
 
 msgid "Open import file"
@@ -364,19 +459,34 @@ msgstr ""
 msgid "Global Macros"
 msgstr ""
 
-msgid "Tools"
+msgid "Tools/Default headers"
 msgstr ""
 
 msgid "Default PO header"
 msgstr ""
 
+msgid "Default PO header for created PO file"
+msgstr ""
+
 msgid "Default POT header"
+msgstr ""
+
+msgid "Default POT header for created POT file"
 msgstr ""
 
 msgid "Default mseconst header"
 msgstr ""
 
+msgid "Default header for created mseconsts_*.pas"
+msgstr ""
+
+msgid "Create PO file(s) from mseconsts_*.pas"
+msgstr ""
+
 msgid "Create new PO from consts"
+msgstr ""
+
+msgid "Create mseconstst_*.pas from PO file(s)"
 msgstr ""
 
 msgid "Create new consts from PO"
@@ -385,7 +495,13 @@ msgstr ""
 msgid "All files of directory"
 msgstr ""
 
+msgid "Do task for all files of specified directory"
+msgstr ""
+
 msgid "Output directory"
+msgstr ""
+
+msgid "Directory to write output files in"
 msgstr ""
 
 msgid "Done."
