@@ -136,7 +136,8 @@ end;
 
 procedure tprojectfo.showhintexe(const sender: TObject; var info: hintinfoty);
 begin
- info.caption:= expandmacros(makecommand.value,getsyssettingsmacros);
+ //info.caption:= expandmacros(makecommand.value,getsyssettingsmacros);
+  makecommand.hint:= expandmacros(makecommand.value,getsyssettingsmacros);
 end;
 
 procedure tprojectfo.makecommandsetvalue(const sender: TObject;

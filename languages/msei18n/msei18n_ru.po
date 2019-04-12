@@ -24,20 +24,42 @@ msgstr ""
 msgid "flat"
 msgstr "плос."
 
+msgid "Toggle tree/flat view"
+msgstr "Переключить вид с дерева на плоский"
+
 msgid "no string"
 msgstr "без строк"
+
+msgid "Show all rows, that are not string type"
+msgstr "Показать все строки, что не строкового типа"
 
 msgid "string only"
 msgstr "одни строки"
 
+msgid "Show all rows, that are string type"
+msgstr "Показать все строки, что строкового типа"
+
 msgid "no NT"
 msgstr "без NT"
+
+msgid "Show all rows, that have 'no NT' (No Translate) flag"
+msgstr "Показать все строки, что имеют флаг 'без NT' (No Translate)"
 
 msgid "NT only"
 msgstr "только NT"
 
+msgid "Show all rows, that have 'NT' (No Translate) flag"
+msgstr "Показать все строки, что имеют флаг 'NT' (No Translate)"
+
 msgid "show color"
 msgstr "показать цветом"
+
+msgid ""
+"Colorize rows to differentiate translated and not translated values, to see "
+"warnings"
+msgstr ""
+"Раскрасить строки, чтобы различать переведённые и непереведённые значения, "
+"чтобы увидеть предупреждения"
 
 msgid "Name"
 msgstr "Имя"
@@ -57,14 +79,26 @@ msgstr "За работой..."
 msgid "&Open"
 msgstr "&Открыть"
 
+msgid "Open Translation Project (trp)"
+msgstr "Открыть проект перевода (Translation Project - trp)"
+
 msgid "&Save"
 msgstr "&Сохранить"
+
+msgid "Save work into current trd (Translation Data) file"
+msgstr "Сохранить работу в текущий файл trd (Translation Data)"
 
 msgid "Save &as"
 msgstr "Со&хранить как"
 
+msgid "Save work into specified trd (Translation Data) file"
+msgstr "Сохранить работу в указанный файл trd (Translation Data)"
+
 msgid "&New"
 msgstr "&Новый"
+
+msgid "New translation project"
+msgstr "Новый проект перевода"
 
 msgid "&Edit"
 msgstr "&Редактировать"
@@ -75,35 +109,70 @@ msgstr "Редактировать опции проекта"
 msgid "&Import"
 msgstr "&Импорт"
 
+msgid "Import translations from supported file formats"
+msgstr "Импорт переводов из поддерживаемых форматов файлов"
+
 msgid "Ex&port"
 msgstr "&Экспорт"
+
+msgid "Export translations into supported file formats"
+msgstr "Экспорт переводов в поддерживаемые форматы файлов"
 
 msgid "&Make"
 msgstr "Со&брать"
 
+msgid "Make project by compiling library"
+msgstr "Собрать проект путём компиляции библиотеки"
+
 msgid "&About"
 msgstr "&Информация о MSEi18n"
+
+msgid "About program: version, license, authors, etc."
+msgstr "О программе: версия, лицензия, авторы и т. д."
 
 msgid "&Configure MSEi18n"
 msgstr "&Конфигурировать MSEi18n"
 
+msgid "Program configuration"
+msgstr "Конфигурация программы"
+
+msgid "&Default headers"
+msgstr "&Заголовки по умолчанию"
+
+msgid "Default headers for POT/PO/constants files"
+msgstr "Заголовки по умолчанию для файлов POT/PO/констант"
+
 msgid "Se&ttings"
 msgstr "Н&астройки"
+
+msgid "Program settings"
+msgstr "Настройки программы"
 
 msgid "Re&fresh"
 msgstr "Осве&жить"
 
+msgid "Refresh display"
+msgstr "Освежить дисплей"
+
 msgid "&Reset"
 msgstr "&Сбросить"
 
-msgid "Reset translated words to root value"
-msgstr "Сбросить переведённые слова к корневому значению"
+msgid "Reset translated words to root values"
+msgstr "Сбросить переведённые слова к корневым значениям"
 
 msgid "&Tools"
 msgstr "&Инструменты"
 
+msgid "Special tools to work with constants to support localization of them"
+msgstr ""
+"Специальные инструменты для работы с константами для поддержки их "
+"локализации"
+
 msgid "E&xit"
 msgstr "Вы&ход"
+
+msgid "Exit from program"
+msgstr "Выход из программы"
 
 msgid "Translate project"
 msgstr "Проект перевода"
@@ -228,6 +297,12 @@ msgstr "Редактировать проект перевода"
 msgid "Encoding for imp/exp files"
 msgstr "Кодировка для файлов импорта/экспорта"
 
+msgid "Encoding for imported/exported files"
+msgstr "Кодировка для файлов импорта/экспорта"
+
+msgid "Files of project and type of them"
+msgstr "Файлы проекта и их тип"
+
 msgid "Rootname"
 msgstr "Название"
 
@@ -243,11 +318,17 @@ msgstr "Выбор файла модуля или формы"
 msgid "Datafile"
 msgstr "Файл данных .trd (например, введите i18n)"
 
+msgid "Translation Data file (trd)"
+msgstr "Файл данных перевода (Translation Data - trd)"
+
 msgid "MSEi18n Data Files"
 msgstr "Файлы данных MSEi18n"
 
 msgid "All files"
 msgstr "Все файлы"
+
+msgid "List of languages and their working directories"
+msgstr "Список языков и их рабочие каталоги"
 
 msgid "Language"
 msgstr "Язык"
@@ -261,6 +342,9 @@ msgstr "Команда сборки"
 msgid "on"
 msgstr "вкл"
 
+msgid "Toggle make (make on/make off)"
+msgstr "Переключить сборку (сборка вкл/сборка выкл)"
+
 msgid "OK"
 msgstr "ОК"
 
@@ -270,17 +354,32 @@ msgstr "Отмена"
 msgid "Destination Basename (empty = Datafile name)"
 msgstr "Расположение базового имени (пусто = имя файла данных)"
 
+msgid "Name of trp (Translation Project) file"
+msgstr "Имя файла trp (Translation Project)"
+
 msgid "Before make"
 msgstr "Перед сборкой"
+
+msgid "Commands to run before make"
+msgstr "Команды для запуска перед сборкой"
 
 msgid "After make"
 msgstr "После сборки"
 
+msgid "Commands to run after make"
+msgstr "Команды для запуска после сборки"
+
 msgid "POT header"
 msgstr "Заголовок POT"
 
+msgid "POT header for exported POT file"
+msgstr "Заголовок POT для экспортированного файла POT"
+
 msgid "PO header"
 msgstr "Заголовок PO"
+
+msgid "PO header for exported PO file"
+msgstr "Заголовок PO для экспортированного PO файла"
 
 msgid "Open import file"
 msgstr "Открыть файл импорта"
@@ -367,20 +466,35 @@ msgstr "Корневая директория для компилятора FPC"
 msgid "Global Macros"
 msgstr "Глобальные макро-определения"
 
-msgid "Tools"
-msgstr "Инструменты"
+msgid "Tools/Default headers"
+msgstr "Утилиты/Заголовки по умолчанию"
 
 msgid "Default PO header"
 msgstr "Заголовок PO по умолчанию"
 
+msgid "Default PO header for created PO file"
+msgstr "Заголовок PO по умолчанию для созданного PO файла"
+
 msgid "Default POT header"
 msgstr "Заголовок POT по умолчанию"
+
+msgid "Default POT header for created POT file"
+msgstr "Заголовок POT по умолчанию для созданного POT файла"
 
 msgid "Default mseconst header"
 msgstr "Заголовок mseconst по умолчанию"
 
+msgid "Default header for created mseconsts_*.pas"
+msgstr "Заголовок по умолчанию для созданных mseconsts_*.pas"
+
+msgid "Create PO file(s) from mseconsts_*.pas"
+msgstr "Создать PO файл(ы) из mseconsts_*.pas"
+
 msgid "Create new PO from consts"
 msgstr "Создать новый PO из констант"
+
+msgid "Create mseconstst_*.pas from PO file(s)"
+msgstr "Создать mseconstst_*.pas из PO файла(ов)"
 
 msgid "Create new consts from PO"
 msgstr "Создать новые константы из PO"
@@ -388,8 +502,14 @@ msgstr "Создать новые константы из PO"
 msgid "All files of directory"
 msgstr "Все файлы каталога"
 
+msgid "Do task for all files of specified directory"
+msgstr "Выполнить задание для всех файлов указанного каталога"
+
 msgid "Output directory"
 msgstr "Каталог выгрузки"
+
+msgid "Directory to write output files in"
+msgstr "Каталог для записи выходных файлов"
 
 msgid "Done."
 msgstr "Готово."

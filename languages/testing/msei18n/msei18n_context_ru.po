@@ -25,25 +25,53 @@ msgctxt "mainfo,tgroupbox1,flat,frame.caption"
 msgid "flat"
 msgstr "плос."
 
+msgctxt "mainfo,tgroupbox1,flat,hint"
+msgid "Toggle tree/flat view"
+msgstr "Переключить вид с дерева на плоский"
+
 msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
 msgid "no string"
 msgstr "без строк"
+
+msgctxt "mainfo,tgroupbox1,nostring,hint"
+msgid "Show all rows, that are not string type"
+msgstr "Показать все строки, что не строкового типа"
 
 msgctxt "mainfo,tgroupbox1,stringonly,frame.caption"
 msgid "string only"
 msgstr "одни строки"
 
+msgctxt "mainfo,tgroupbox1,stringonly,hint"
+msgid "Show all rows, that are string type"
+msgstr "Показать все строки, что строкового типа"
+
 msgctxt "mainfo,tgroupbox1,nont,frame.caption"
 msgid "no NT"
 msgstr "без NT"
+
+msgctxt "mainfo,tgroupbox1,nont,hint"
+msgid "Show all rows, that have 'no NT' (No Translate) flag"
+msgstr "Показать все строки, что имеют флаг 'без NT' (No Translate)"
 
 msgctxt "mainfo,tgroupbox1,ntonly,frame.caption"
 msgid "NT only"
 msgstr "только NT"
 
+msgctxt "mainfo,tgroupbox1,ntonly,hint"
+msgid "Show all rows, that have 'NT' (No Translate) flag"
+msgstr "Показать все строки, что имеют флаг 'NT' (No Translate)"
+
 msgctxt "mainfo,tgroupbox1,coloron,frame.caption"
 msgid "show color"
 msgstr "показать цветом"
+
+msgctxt "mainfo,tgroupbox1,coloron,hint"
+msgid ""
+"Colorize rows to differentiate translated and not translated values, to see "
+"warnings"
+msgstr ""
+"Раскрасить строки, чтобы различать переведённые и непереведённые значения, "
+"чтобы увидеть предупреждения"
 
 msgctxt "mainfo,grid,fixrows.items,0:,captions.items,0:,caption"
 msgid "Name"
@@ -69,17 +97,33 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,caption"
 msgid "&Open"
 msgstr "&Открыть"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,hint"
+msgid "Open Translation Project (trp)"
+msgstr "Открыть проект перевода (Translation Project - trp)"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,caption"
 msgid "&Save"
 msgstr "&Сохранить"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,hint"
+msgid "Save work into current trd (Translation Data) file"
+msgstr "Сохранить работу в текущий файл trd (Translation Data)"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,caption"
 msgid "Save &as"
 msgstr "Со&хранить как"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,hint"
+msgid "Save work into specified trd (Translation Data) file"
+msgstr "Сохранить работу в указанный файл trd (Translation Data)"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,caption"
 msgid "&New"
 msgstr "&Новый(ая)"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,hint"
+msgid "New translation project"
+msgstr "Новый проект перевода"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
 msgid "&Edit"
@@ -93,45 +137,91 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
 msgid "&Import"
 msgstr "&Импорт"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,hint"
+msgid "Import translations from supported file formats"
+msgstr "Импорт переводов из поддерживаемых форматов файлов"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,caption"
 msgid "Ex&port"
 msgstr "&Экспорт"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,hint"
+msgid "Export translations into supported file formats"
+msgstr "Экспорт переводов в поддерживаемые форматы файлов"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,7:,caption"
 msgid "&Make"
 msgstr "&Сборка"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,7:,hint"
+msgid "Make project by compiling library"
+msgstr "Собрать проект путём компиляции библиотеки"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption"
 msgid "&About"
 msgstr "&Информация о MSEi18n"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,hint"
+msgid "About program: version, license, authors, etc."
+msgstr "О программе: версия, лицензия, авторы и т. д."
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
 msgid "&Configure MSEi18n"
 msgstr "&Конфигурировать MSEi18n"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,hint"
+msgid "Program configuration"
+msgstr "Конфигурация программы"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption"
+msgid "&Default headers"
+msgstr "&Заголовки по умолчанию"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint"
+msgid "Default headers for POT/PO/constants files"
+msgstr "Заголовки по умолчанию для файлов POT/PO/констант"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
 msgid "Se&ttings"
 msgstr "Н&астройки"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,hint"
+msgid "Program settings"
+msgstr "Настройки программы"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,caption"
 msgid "Re&fresh"
 msgstr "Осве&жить"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,hint"
+msgid "Refresh display"
+msgstr "Освежить дисплей"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
 msgid "&Reset"
 msgstr "&Сбросить"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,hint"
-msgid "Reset translated words to root value"
-msgstr "Сбросить переведённые слова к корневому значению"
+msgid "Reset translated words to root values"
+msgstr "Сбросить переведённые слова к корневым значениям"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
 msgid "&Tools"
 msgstr "&Инструменты"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,hint"
+msgid "Special tools to work with constants to support localization of them"
+msgstr ""
+"Специальные инструменты для работы с константами для поддержки их "
+"локализации"
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,12:,caption"
 msgid "E&xit"
 msgstr "Вы&ход"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,12:,hint"
+msgid "Exit from program"
+msgstr "Выход из программы"
 
 msgctxt "mainfo,projectfiledialog,controller.filterlist.data,0:,0:"
 msgid "Translate project"
@@ -297,6 +387,14 @@ msgctxt "projectfo,impexpencoding,frame.caption"
 msgid "Encoding for imp/exp files"
 msgstr "Кодировка для файлов импорта/экспорта"
 
+msgctxt "projectfo,impexpencoding,hint"
+msgid "Encoding for imported/exported files"
+msgstr "Кодировка для файлов импорта/экспорта"
+
+msgctxt "projectfo,grid,hint"
+msgid "Files of project and type of them"
+msgstr "Файлы проекта и их тип"
+
 msgctxt "projectfo,grid,fixrows.items,0:,captions.items,0:,caption"
 msgid "Rootname"
 msgstr "Название"
@@ -317,6 +415,10 @@ msgctxt "projectfo,datafilename,frame.caption"
 msgid "Datafile"
 msgstr "Файл данных .trd (например, введите i18n)"
 
+msgctxt "projectfo,datafilename,hint"
+msgid "Translation Data file (trd)"
+msgstr "Файл данных перевода (Translation Data - trd)"
+
 msgctxt "projectfo,datafilename,controller.filterlist.data,0:,0:"
 msgid "MSEi18n Data Files"
 msgstr "Файлы данных MSEi18n"
@@ -324,6 +426,10 @@ msgstr "Файлы данных MSEi18n"
 msgctxt "projectfo,datafilename,controller.filterlist.data,1:,0:"
 msgid "All files"
 msgstr "Все файлы"
+
+msgctxt "projectfo,grid2,hint"
+msgid "List of languages and their working directories"
+msgstr "Список языков и их рабочие каталоги"
 
 msgctxt "projectfo,grid2,fixrows.items,0:,captions.items,0:,caption"
 msgid "Language"
@@ -337,9 +443,17 @@ msgctxt "projectfo,makecommand,frame.caption"
 msgid "Make command"
 msgstr "Команда сборки"
 
+msgctxt "projectfo,makecommand,hint"
+msgid "Make command"
+msgstr "Команда сборки"
+
 msgctxt "projectfo,makeon,frame.caption"
 msgid "on"
 msgstr "вкл"
+
+msgctxt "projectfo,makeon,hint"
+msgid "Toggle make (make on/make off)"
+msgstr "Переключить сборку (сборка вкл/выкл)"
 
 msgctxt "projectfo,ok,caption"
 msgid "OK"
@@ -353,21 +467,41 @@ msgctxt "projectfo,destname,frame.caption"
 msgid "Destination Basename (empty = Datafile name)"
 msgstr "Расположение базового имени (пусто = имя файла данных)"
 
+msgctxt "projectfo,destname,hint"
+msgid "Name of trp (Translation Project) file"
+msgstr "Имя файла trp (Translation Project)"
+
 msgctxt "projectfo,beforemake,frame.caption"
 msgid "Before make"
 msgstr "Перед сборкой"
+
+msgctxt "projectfo,beforemake,hint"
+msgid "Commands to run before make"
+msgstr "Команды для запуска перед сборкой"
 
 msgctxt "projectfo,aftermake,frame.caption"
 msgid "After make"
 msgstr "После сборки"
 
+msgctxt "projectfo,aftermake,hint"
+msgid "Commands to run after make"
+msgstr "Команды для запуска после сборки"
+
 msgctxt "projectfo,memopotheader,frame.caption"
 msgid "POT header"
 msgstr "Заголовок POT"
 
+msgctxt "projectfo,memopotheader,hint"
+msgid "POT header for exported POT file"
+msgstr "Заголовок POT для экспортированного файла POT"
+
 msgctxt "projectfo,memopoheader,frame.caption"
 msgid "PO header"
 msgstr "Заголовок PO"
+
+msgctxt "projectfo,memopoheader,hint"
+msgid "PO header for exported PO file"
+msgstr "Заголовок PO для экспортированного файла PO"
 
 msgctxt "projectfo,impexpfiledialog,controller.captionopen"
 msgid "Open import file"
@@ -501,24 +635,44 @@ msgid "Value"
 msgstr "Значение"
 
 msgctxt "headerfo,caption"
-msgid "Tools"
-msgstr "Инструменты"
+msgid "Tools/Default headers"
+msgstr "Утилиты/Заголовки по умолчанию"
 
 msgctxt "headerfo,memopoheader,frame.caption"
 msgid "Default PO header"
 msgstr "Заголовок PO по умолчанию"
 
+msgctxt "headerfo,memopoheader,hint"
+msgid "Default PO header for created PO file"
+msgstr "Заголовок PO по умолчанию для созданного PO-файла"
+
 msgctxt "headerfo,memopotheader,frame.caption"
 msgid "Default POT header"
 msgstr "Заголовок POT по умолчанию"
+
+msgctxt "headerfo,memopotheader,hint"
+msgid "Default POT header for created POT file"
+msgstr "Заголовок POT по умолчанию для созданного файла POT"
 
 msgctxt "headerfo,mseconstheader,frame.caption"
 msgid "Default mseconst header"
 msgstr "Заголовок mseconst по умолчанию"
 
+msgctxt "headerfo,mseconstheader,hint"
+msgid "Default header for created mseconsts_*.pas"
+msgstr "Заголовок по умолчанию для созданных mseconsts_*.pas"
+
+msgctxt "headerfo,tbutton3,hint"
+msgid "Create PO file(s) from mseconsts_*.pas"
+msgstr "Создать PO файл(ы) из mseconsts_*.pas"
+
 msgctxt "headerfo,tbutton3,caption"
 msgid "Create new PO from consts"
 msgstr "Создать новый PO из констант"
+
+msgctxt "headerfo,tbutton2,hint"
+msgid "Create mseconstst_*.pas from PO file(s)"
+msgstr "Создать mseconstst_*.pas из PO файла(ов)"
 
 msgctxt "headerfo,tbutton2,caption"
 msgid "Create new consts from PO"
@@ -528,9 +682,17 @@ msgctxt "headerfo,alldir,frame.caption"
 msgid "All files of directory"
 msgstr "Все файлы каталога"
 
+msgctxt "headerfo,alldir,hint"
+msgid "Do task for all files of specified directory"
+msgstr "Выполнить задание для всех файлов указанного каталога"
+
 msgctxt "headerfo,outputdir,frame.caption"
 msgid "Output directory"
 msgstr "Каталог выгрузки"
+
+msgctxt "headerfo,outputdir,hint"
+msgid "Directory to write output files in"
+msgstr "Каталог для записи выходных файлов"
 
 msgctxt "headerfo,paneldone,labdone,caption"
 msgid "Done."

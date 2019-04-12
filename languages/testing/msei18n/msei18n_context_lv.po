@@ -25,24 +25,50 @@ msgctxt "mainfo,tgroupbox1,flat,frame.caption"
 msgid "flat"
 msgstr ""
 
+msgctxt "mainfo,tgroupbox1,flat,hint"
+msgid "Toggle tree/flat view"
+msgstr ""
+
 msgctxt "mainfo,tgroupbox1,nostring,frame.caption"
 msgid "no string"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,nostring,hint"
+msgid "Show all rows, that are not string type"
 msgstr ""
 
 msgctxt "mainfo,tgroupbox1,stringonly,frame.caption"
 msgid "string only"
 msgstr ""
 
+msgctxt "mainfo,tgroupbox1,stringonly,hint"
+msgid "Show all rows, that are string type"
+msgstr ""
+
 msgctxt "mainfo,tgroupbox1,nont,frame.caption"
 msgid "no NT"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,nont,hint"
+msgid "Show all rows, that have 'no NT' (No Translate) flag"
 msgstr ""
 
 msgctxt "mainfo,tgroupbox1,ntonly,frame.caption"
 msgid "NT only"
 msgstr ""
 
+msgctxt "mainfo,tgroupbox1,ntonly,hint"
+msgid "Show all rows, that have 'NT' (No Translate) flag"
+msgstr ""
+
 msgctxt "mainfo,tgroupbox1,coloron,frame.caption"
 msgid "show color"
+msgstr ""
+
+msgctxt "mainfo,tgroupbox1,coloron,hint"
+msgid ""
+"Colorize rows to differentiate translated and not translated values, to see "
+"warnings"
 msgstr ""
 
 msgctxt "mainfo,grid,fixrows.items,0:,captions.items,0:,caption"
@@ -69,17 +95,33 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,caption"
 msgid "&Open"
 msgstr "&Atvērt"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,0:,hint"
+msgid "Open Translation Project (trp)"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,caption"
 msgid "&Save"
 msgstr "&Saglabāt"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,1:,hint"
+msgid "Save work into current trd (Translation Data) file"
+msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,caption"
 msgid "Save &as"
 msgstr ""
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,2:,hint"
+msgid "Save work into specified trd (Translation Data) file"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,caption"
 msgid "&New"
 msgstr "Jau&ns"
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,3:,hint"
+msgid "New translation project"
+msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,4:,caption"
 msgid "&Edit"
@@ -93,28 +135,64 @@ msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,caption"
 msgid "&Import"
 msgstr ""
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,5:,hint"
+msgid "Import translations from supported file formats"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,caption"
 msgid "Ex&port"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,6:,hint"
+msgid "Export translations into supported file formats"
 msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,7:,caption"
 msgid "&Make"
 msgstr ""
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,7:,hint"
+msgid "Make project by compiling library"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption"
 msgid "&About"
 msgstr "P&ar"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,hint"
+msgid "About program: version, license, authors, etc."
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption"
 msgid "&Configure MSEi18n"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,hint"
+msgid "Program configuration"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption"
+msgid "&Default headers"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint"
+msgid "Default headers for POT/PO/constants files"
 msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,caption"
 msgid "Se&ttings"
 msgstr ""
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,8:,hint"
+msgid "Program settings"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,caption"
 msgid "Re&fresh"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,9:,hint"
+msgid "Refresh display"
 msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,caption"
@@ -122,15 +200,23 @@ msgid "&Reset"
 msgstr "&Atiestatīt"
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,10:,hint"
-msgid "Reset translated words to root value"
+msgid "Reset translated words to root values"
 msgstr ""
 
 msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,caption"
 msgid "&Tools"
 msgstr "&Rīki"
 
+msgctxt "mainfo,mainmenu1,menu.submenu.items,11:,hint"
+msgid "Special tools to work with constants to support localization of them"
+msgstr ""
+
 msgctxt "mainfo,mainmenu1,menu.submenu.items,12:,caption"
 msgid "E&xit"
+msgstr ""
+
+msgctxt "mainfo,mainmenu1,menu.submenu.items,12:,hint"
+msgid "Exit from program"
 msgstr ""
 
 msgctxt "mainfo,projectfiledialog,controller.filterlist.data,0:,0:"
@@ -297,6 +383,14 @@ msgctxt "projectfo,impexpencoding,frame.caption"
 msgid "Encoding for imp/exp files"
 msgstr ""
 
+msgctxt "projectfo,impexpencoding,hint"
+msgid "Encoding for imported/exported files"
+msgstr ""
+
+msgctxt "projectfo,grid,hint"
+msgid "Files of project and type of them"
+msgstr ""
+
 msgctxt "projectfo,grid,fixrows.items,0:,captions.items,0:,caption"
 msgid "Rootname"
 msgstr ""
@@ -317,6 +411,10 @@ msgctxt "projectfo,datafilename,frame.caption"
 msgid "Datafile"
 msgstr ""
 
+msgctxt "projectfo,datafilename,hint"
+msgid "Translation Data file (trd)"
+msgstr ""
+
 msgctxt "projectfo,datafilename,controller.filterlist.data,0:,0:"
 msgid "MSEi18n Data Files"
 msgstr ""
@@ -324,6 +422,10 @@ msgstr ""
 msgctxt "projectfo,datafilename,controller.filterlist.data,1:,0:"
 msgid "All files"
 msgstr "Visas datnes"
+
+msgctxt "projectfo,grid2,hint"
+msgid "List of languages and their working directories"
+msgstr ""
 
 msgctxt "projectfo,grid2,fixrows.items,0:,captions.items,0:,caption"
 msgid "Language"
@@ -337,8 +439,16 @@ msgctxt "projectfo,makecommand,frame.caption"
 msgid "Make command"
 msgstr ""
 
+msgctxt "projectfo,makecommand,hint"
+msgid "Make command"
+msgstr ""
+
 msgctxt "projectfo,makeon,frame.caption"
 msgid "on"
+msgstr ""
+
+msgctxt "projectfo,makeon,hint"
+msgid "Toggle make (make on/make off)"
 msgstr ""
 
 msgctxt "projectfo,ok,caption"
@@ -353,20 +463,40 @@ msgctxt "projectfo,destname,frame.caption"
 msgid "Destination Basename (empty = Datafile name)"
 msgstr ""
 
+msgctxt "projectfo,destname,hint"
+msgid "Name of trp (Translation Project) file"
+msgstr ""
+
 msgctxt "projectfo,beforemake,frame.caption"
 msgid "Before make"
+msgstr ""
+
+msgctxt "projectfo,beforemake,hint"
+msgid "Commands to run before make"
 msgstr ""
 
 msgctxt "projectfo,aftermake,frame.caption"
 msgid "After make"
 msgstr ""
 
+msgctxt "projectfo,aftermake,hint"
+msgid "Commands to run after make"
+msgstr ""
+
 msgctxt "projectfo,memopotheader,frame.caption"
 msgid "POT header"
 msgstr ""
 
+msgctxt "projectfo,memopotheader,hint"
+msgid "POT header for exported POT file"
+msgstr ""
+
 msgctxt "projectfo,memopoheader,frame.caption"
 msgid "PO header"
+msgstr ""
+
+msgctxt "projectfo,memopoheader,hint"
+msgid "PO header for exported PO file"
 msgstr ""
 
 msgctxt "projectfo,impexpfiledialog,controller.captionopen"
@@ -497,23 +627,43 @@ msgid "Value"
 msgstr "Vērtība"
 
 msgctxt "headerfo,caption"
-msgid "Tools"
-msgstr "Rīki"
+msgid "Tools/Default headers"
+msgstr ""
 
 msgctxt "headerfo,memopoheader,frame.caption"
 msgid "Default PO header"
+msgstr ""
+
+msgctxt "headerfo,memopoheader,hint"
+msgid "Default PO header for created PO file"
 msgstr ""
 
 msgctxt "headerfo,memopotheader,frame.caption"
 msgid "Default POT header"
 msgstr ""
 
+msgctxt "headerfo,memopotheader,hint"
+msgid "Default POT header for created POT file"
+msgstr ""
+
 msgctxt "headerfo,mseconstheader,frame.caption"
 msgid "Default mseconst header"
 msgstr ""
 
+msgctxt "headerfo,mseconstheader,hint"
+msgid "Default header for created mseconsts_*.pas"
+msgstr ""
+
+msgctxt "headerfo,tbutton3,hint"
+msgid "Create PO file(s) from mseconsts_*.pas"
+msgstr ""
+
 msgctxt "headerfo,tbutton3,caption"
 msgid "Create new PO from consts"
+msgstr ""
+
+msgctxt "headerfo,tbutton2,hint"
+msgid "Create mseconstst_*.pas from PO file(s)"
 msgstr ""
 
 msgctxt "headerfo,tbutton2,caption"
@@ -524,8 +674,16 @@ msgctxt "headerfo,alldir,frame.caption"
 msgid "All files of directory"
 msgstr ""
 
+msgctxt "headerfo,alldir,hint"
+msgid "Do task for all files of specified directory"
+msgstr ""
+
 msgctxt "headerfo,outputdir,frame.caption"
 msgid "Output directory"
+msgstr ""
+
+msgctxt "headerfo,outputdir,hint"
+msgid "Directory to write output files in"
 msgstr ""
 
 msgctxt "headerfo,paneldone,labdone,caption"
