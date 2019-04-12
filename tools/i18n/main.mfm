@@ -468,7 +468,7 @@ object mainfo: tmainfo
     menu.submenu.items = <    
       item
         caption = '&Open'
-        hint = 'Open translation project (trp)'
+        hint = 'Open Translation Project (trp)'
         name = 'open'
         state = [as_localcaption, as_localhint, as_localonexecute]
         font.name = 'stf_menu'
