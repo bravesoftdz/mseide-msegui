@@ -2,13 +2,14 @@ unit headerform;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
 uses
- msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
- msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,mseact,
- mclasses,msedataedits,msedropdownlist,mseedit,mseificomp,mseificompglob,
- mseifiglob,msememodialog,msestatfile,msestream,sysutils,msesimplewidgets,
- mseconsts,msefileutils,msebitmap,msedatanodes,msedragglob,msefiledialog,
- msegrids,msegridsglob,LazUTF8,mselistbrowser,msesys,msegraphedits,msescrollbar,
- msetimer,msedispwidgets,mserichstring;
+ {$ifdef unix}unix,{$endif} msetypes,mseglob,mseguiglob,mseguiintf,
+ mseapplication,msestat,msemenus,msegui,msegraphics,msegraphutils,mseevent,
+ mseclasses,msewidgets,mseforms,mseact,mclasses,msedataedits,msedropdownlist,
+ mseedit,mseificomp,mseificompglob,mseifiglob,msememodialog,msestatfile,
+ msestream,sysutils,msesimplewidgets,mseconsts,msefileutils,msebitmap,
+ msedatanodes,msedragglob,msefiledialog,msegrids,msegridsglob,LazUTF8,
+ mselistbrowser,msesys,msegraphedits,msescrollbar,msetimer,msedispwidgets,
+ mserichstring,msestringcontainer;
 type
  theaderfo = class(tmseform)
    memopoheader: tmemodialogedit;
@@ -28,7 +29,7 @@ type
    ttimer1: ttimer;
    paneldone: tgroupbox;
    labdone: tlabel;
-   labwork: tlabel;
+   sc: tstringcontainer;
    procedure createnew(const sender: TObject);
    procedure createnewconst(const sender: TObject; fn : msestring);
    procedure createnewpo(const sender: TObject; fn : msestring);
@@ -278,8 +279,7 @@ end;
 if impexpfiledialog.controller.execute(str1,fdk_open) then 
 begin
 paneldone.frame.colorclient := $FFD1A1;
-labwork.visible := true;
-labdone.visible := false;
+labdone.caption := sc[0];
 paneldone.visible := true;
 application.processmessages;
 
@@ -319,8 +319,7 @@ if tbutton(sender).tag = 0 then str2 := '*.po' else str2 := '*.pas';
  
 end;
 paneldone.frame.colorclient := cl_ltgreen;
-labwork.visible := false;
-labdone.visible := true;
+labdone.caption := sc[1];
 paneldone.visible := true;
 ttimer1.enabled := true;
 end;
@@ -558,7 +557,7 @@ defaultextendedconst := en_extendedconst;
      
      file1.writeln('initialization');
      
-      file1.writeln('registerlangconsts' + #040+ 'langnames[la_'+strlang+ ']' + #044 +
+      file1.writeln('registerlangconsts' + #040+ #039+strlang+ #039 + #044 +
       '@stockcaption' + #044 + '@modalresulttext' + #044 +
       '@modalresulttextnoshortcut' + #044 + '@textgenerator'+ #041 + #059);
      
@@ -575,6 +574,11 @@ procedure theaderfo.oncreateform(const sender: TObject);
 begin
  outputdir.value := ExtractFilePath(ParamStr(0)) + directoryseparator +'output' 
   + directoryseparator;
+
+{$ifdef unix}
+ fpsystem('chmod 777 '+outputdir.value);
+{$endif}  
+  
 end;
 
 procedure theaderfo.ontime(const sender: TObject);

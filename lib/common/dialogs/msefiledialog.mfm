@@ -84,6 +84,7 @@ object filedialogfo: Tfiledialogfo
           109
           2
         )
+        taborder = 1
         bounds_x = 6
         bounds_y = 4
         bounds_cx = 122
@@ -108,7 +109,7 @@ object filedialogfo: Tfiledialogfo
         bounds_cx = 50
         bounds_cy = 20
         bounds_cxmin = 35
-        options = [bo_executeonclick, bo_executeonkey, bo_executeonshortcut, bo_executedefaultonenterkey, bo_candefocuswindow]
+        options = [bo_executeonclick, bo_executeonkey, bo_executeonshortcut, bo_candefocuswindow]
         state = [as_localcaption]
         caption = '&Cancel'
         modalresult = mr_cancel
@@ -117,7 +118,6 @@ object filedialogfo: Tfiledialogfo
         optionswidget1 = [ow1_autowidth, ow1_autoheight]
         optionswidget = [ow_tabfocus, ow_arrowfocus, ow_arrowfocusin, ow_arrowfocusout, ow_destroywidgets]
         color = -1879048187
-        taborder = 1
         bounds_x = 6
         bounds_y = 22
         bounds_cx = 35

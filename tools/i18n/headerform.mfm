@@ -1,20 +1,19 @@
 object headerfo: theaderfo
-  optionswidget = [ow_top, ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousewheel, ow_destroywidgets, ow_hinton]
   visible = False
   bounds_x = 493
   bounds_y = 200
   bounds_cx = 379
-  bounds_cy = 218
+  bounds_cy = 217
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
     379
-    218
+    217
   )
   options = [fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
-  caption = 'Tools/Default headers'
+  caption = 'Tools'
   windowopacity = -Inf
   oncreate = oncreateform
   moduleclassname = 'tmseform'
@@ -30,19 +29,18 @@ object headerfo: theaderfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      18
+      17
       0
       0
     )
-    hint = 'Default PO header for created PO file'
     bounds_x = 8
-    bounds_y = 49
+    bounds_y = 42
     bounds_cx = 364
-    bounds_cy = 36
+    bounds_cy = 34
     anchors = [an_left, an_top, an_right]
     statfile = tstatfile1
     value = '# SOME DESCRIPTIVE TITLE.'#10'# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER'#10'# This file is distributed under the same license as the PACKAGE package.'#10'# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.'#10'#'#10'#, fuzzy'#10'msgid ""'#10'msgstr ""'#10'"Project-Id-Version: \n"'#10'"Report-Msgid-Bugs-To: \n"'#10'"POT-Creation-Date: 2019-03-04 23:54+0300\n"'#10'"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"'#10'"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"'#10'"Language-Team: LANGUAGE <LL@li.org>\n"'#10'"Language: \n"'#10'"MIME-Version: 1.0\n"'#10'"Content-Type: text/plain; charset=UTF-8\n"'#10'"Content-Transfer-Encoding: 8bit\n"'
-    reffontheight = 15
+    reffontheight = 14
   end
   object memopotheader: tmemodialogedit
     frame.caption = 'Default POT header'
@@ -56,62 +54,61 @@ object headerfo: theaderfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      18
+      17
       0
       0
     )
     taborder = 1
-    hint = 'Default POT header for created POT file'
     bounds_x = 8
-    bounds_y = 9
+    bounds_y = 2
     bounds_cx = 364
-    bounds_cy = 36
+    bounds_cy = 34
     anchors = [an_left, an_top, an_right]
     statfile = tstatfile1
     value = '# SOME DESCRIPTIVE TITLE.'#10'# Copyright (C) YEAR THE PACKAGE''S COPYRIGHT HOLDER'#10'# This file is distributed under the same license as the PACKAGE package.'#10'# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.'#10'#'#10'#, fuzzy'#10'msgid ""'#10'msgstr ""'#10'"Project-Id-Version: \n"'#10'"Report-Msgid-Bugs-To: \n"'#10'"POT-Creation-Date: 2019-03-04 23:54+0300\n"'#10'"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"'#10'"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"'#10'"Language-Team: LANGUAGE <LL@li.org>\n"'#10'"Language: \n"'#10'"MIME-Version: 1.0\n"'#10'"Content-Type: text/plain; charset=UTF-8\n"'#10'"Content-Transfer-Encoding: 8bit\n"'
-    reffontheight = 15
+    reffontheight = 14
   end
   object initunit: tmemoedit
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
-    frame.sbvert.pagesize = 0.32222222222222
+    frame.sbvert.pagesize = 0.34126984126984
     taborder = 2
     visible = False
     bounds_x = 200
     bounds_y = 0
     bounds_cx = 156
-    bounds_cy = 93
+    bounds_cy = 92
     value = '{$ifdef FPC}{$mode objfpc}{$h+}{$endif}'#10'interface'#10'uses'#10' mseconsts;'#10' '#10'implementation'#10'uses'#10' msetypes{msestrings},sysutils,mseformatstr;'#10' '#10'const '#10'extendedconst: extendedaty ='#10' ('
-    reffontheight = 15
+    reffontheight = 14
   end
   object modalresulttext: tmemoedit
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
-    frame.sbvert.pagesize = 0.7
+    frame.sbvert.pagesize = 0.73809523809524
     taborder = 3
     visible = False
     bounds_x = 152
     bounds_y = 32
     bounds_cx = 156
-    bounds_cy = 69
+    bounds_cy = 68
     value = '); '#10#10' modalresulttext: defaultmodalresulttextty ='#10' ('
-    reffontheight = 15
+    reffontheight = 14
   end
   object modalresultsnoshort: tmemoedit
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
-    frame.sbvert.pagesize = 0.725
+    frame.sbvert.pagesize = 0.76785714285714
     taborder = 4
     visible = False
     bounds_x = 152
     bounds_y = 16
     bounds_cx = 156
-    bounds_cy = 93
+    bounds_cy = 92
     value = ');'#10#10' modalresulttextnoshortcut: defaultmodalresulttextty ='#10' ('
-    reffontheight = 15
+    reffontheight = 14
   end
   object stockcaptionmemo: tmemoedit
     frame.localprops = []
@@ -123,23 +120,23 @@ object headerfo: theaderfo
     bounds_x = 208
     bounds_y = 16
     bounds_cx = 156
-    bounds_cy = 93
+    bounds_cy = 92
     value = ' );'#10#10' stockcaption: stockcaptionaty = ('
-    reffontheight = 15
+    reffontheight = 14
   end
   object endmemo: tmemoedit
     frame.localprops = []
     frame.localprops1 = []
     frame.sbhorz.pagesize = 1
-    frame.sbvert.pagesize = 0.17058823529412
+    frame.sbvert.pagesize = 0.18067226890756
     taborder = 6
     visible = False
     bounds_x = 184
     bounds_y = 8
     bounds_cx = 156
-    bounds_cy = 93
+    bounds_cy = 92
     value = 'function delete_n_selected_rows(const params: array of const): msestring;'#10'begin'#10' with params[0] do begin'#10'  if vinteger = 1 then begin'#10'   result:= extendedconst[ex_del_row_selected];'#10'  end'#10'  else begin'#10'   result := StringReplace(extendedconst[ex_del_rows_selected], #37#115, inttostrmse(vinteger), [rfReplaceAll]);'#10'  end;'#10' end;'#10'end;'#10#10'const'#10' textgenerator: defaultgeneratortextty = ('#10'              {$ifdef FPC}@{$endif}delete_n_selected_rows'#10'                                     );'#10
-    reffontheight = 15
+    reffontheight = 14
   end
   object mseconstheader: tmemodialogedit
     frame.caption = 'Default mseconst header'
@@ -153,43 +150,40 @@ object headerfo: theaderfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      18
+      17
       0
       0
     )
     taborder = 7
-    hint = 'Default header for created mseconsts_*.pas'
     bounds_x = 8
-    bounds_y = 87
+    bounds_y = 88
     bounds_cx = 362
-    bounds_cy = 36
+    bounds_cy = 34
     anchors = [an_left, an_top, an_right]
     statfile = tstatfile1
-    value = '{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber'#10#10'    See the file COPYING.MSE, included in this distribution,'#10'    for details about the copyright.'#10#10'    This program is distributed in the hope that it will be useful,'#10'    but WITHOUT ANY WARRANTY; without even the implied warranty of'#10'    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.'#10#10'    This file was auto generated by MSEi18n Tools.'#10'} '
-    reffontheight = 15
+    value = '{ MSEgui Copyright (c) 1999-2018 by Martin Schreiber'#10#10'    See the file COPYING.MSE, included in this distribution,'#10'    for details about the copyright.'#10#10'    This program is distributed in the hope that it will be useful,'#10'    but WITHOUT ANY WARRANTY; without even the implied warranty of'#10'    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.'#10'} '
+    reffontheight = 14
   end
   object tbutton3: tbutton
     Tag = 1
     taborder = 8
-    hint = 'Create PO file(s) from mseconsts_*.pas'
-    bounds_x = 189
+    bounds_x = 181
     bounds_y = 176
-    bounds_cx = 178
+    bounds_cx = 186
     bounds_cy = 28
     anchors = [an_top, an_right]
-    state = [as_localdisabled, as_localcaption, as_localhint, as_localonexecute]
+    state = [as_localdisabled, as_localcaption, as_localonexecute]
     caption = 'Create new PO from consts'
     onexecute = createnew
   end
   object tbutton2: tbutton
     taborder = 9
-    hint = 'Create mseconstst_*.pas from PO file(s)'
-    bounds_x = 189
+    bounds_x = 181
     bounds_y = 144
-    bounds_cx = 178
+    bounds_cx = 186
     bounds_cy = 28
     anchors = [an_top, an_right]
-    state = [as_localdisabled, as_localcaption, as_localhint, as_localonexecute]
+    state = [as_localdisabled, as_localcaption, as_localonexecute]
     caption = 'Create new consts from PO'
     onexecute = createnew
   end
@@ -199,16 +193,15 @@ object headerfo: theaderfo
     frame.localprops1 = []
     frame.outerframe = (
       0
-      2
+      1
       117
       2
     )
     taborder = 10
-    hint = 'Do task for all files of specified directory'
     bounds_x = 16
-    bounds_y = 182
+    bounds_y = 143
     bounds_cx = 130
-    bounds_cy = 17
+    bounds_cy = 16
     statfile = tstatfile1
   end
   object outputdir: tfilenameedit
@@ -223,18 +216,17 @@ object headerfo: theaderfo
     frame.button.imagenr = 17
     frame.outerframe = (
       0
-      18
+      17
       0
       0
     )
     taborder = 11
-    hint = 'Directory to write output files in'
     bounds_x = 8
-    bounds_y = 134
+    bounds_y = 159
     bounds_cx = 164
-    bounds_cy = 39
-    controller.options = [fdo_directory, fdo_savelastdir]
-    reffontheight = 15
+    bounds_cy = 37
+    controller.options = [fdo_directory]
+    reffontheight = 14
   end
   object paneldone: tgroupbox
     frame.colorclient = 16765345
@@ -249,27 +241,11 @@ object headerfo: theaderfo
     object labdone: tlabel
       optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
       color = -2147483645
-      visible = False
       bounds_x = 8
       bounds_y = 32
       bounds_cx = 177
       bounds_cy = 24
       caption = 'Done.'
-      font.height = 20
-      font.name = 'stf_default'
-      font.localprops = [flp_height]
-      textflags = [tf_xcentered, tf_ycentered]
-      reffontheight = 24
-    end
-    object labwork: tlabel
-      optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
-      color = -2147483645
-      taborder = 1
-      bounds_x = 8
-      bounds_y = 32
-      bounds_cx = 177
-      bounds_cy = 24
-      caption = 'Working...'
       font.height = 20
       font.name = 'stf_default'
       font.localprops = [flp_height]
@@ -295,7 +271,15 @@ object headerfo: theaderfo
     interval = 2000000
     options = [to_single]
     ontimer = ontime
-    left = 136
+    left = 144
     top = 128
+  end
+  object sc: tstringcontainer
+    strings.data = (
+      'Working'
+      'Done'
+    )
+    left = 16
+    top = 120
   end
 end
