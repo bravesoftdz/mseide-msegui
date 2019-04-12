@@ -1,5 +1,16 @@
 [projectfo.projectstat]
 colcount=6
+[projectfo.unitsdir]
+filenames=0
+filecolwidth=0
+x=0
+y=0
+cx=0
+cy=0
+lastdir=
+filehistory=0
+filefilterindex=0
+filefilter=
 [projectfo.memopoheader]
 value=# SOME DESCRIPTIVE TITLE.
 +# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
