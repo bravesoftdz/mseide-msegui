@@ -1,7 +1,7 @@
 object mainfo: tmainfo
   visible = False
-  bounds_x = 534
-  bounds_y = 203
+  bounds_x = 521
+  bounds_y = 245
   bounds_cx = 687
   bounds_cy = 395
   container.frame.levelo = 1
@@ -525,7 +525,7 @@ object mainfo: tmainfo
         onexecute = makeonexecute
       end    
       item
-        submenu.count = 2
+        submenu.count = 3
         submenu.items = <        
           item
             caption = '&About'
@@ -538,6 +538,12 @@ object mainfo: tmainfo
             hint = 'Program configuration'
             state = [as_localcaption, as_localhint, as_localonexecute]
             onexecute = configureonexecute
+          end        
+          item
+            caption = '&Default headers'
+            hint = 'Default headers for POT/PO/constants files'
+            state = [as_localcaption, as_localhint, as_localonexecute]
+            onexecute = ondefhead1
           end>
         caption = 'Se&ttings'
         hint = 'Program settings'

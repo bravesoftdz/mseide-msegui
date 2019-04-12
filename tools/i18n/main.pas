@@ -125,6 +125,7 @@ type
    procedure showworkpan;
    procedure numrow(const Sender: TObject);
    procedure ondefhead(const sender: TObject);
+   procedure ondefhead1(const sender: TObject);
    procedure oncreated(const sender: TObject);
    private
    datastream: ttextdatastream;
@@ -2221,7 +2222,34 @@ end;
 procedure tmainfo.ondefhead(const sender: TObject);
 begin
 headerfo.visible := true;
+headerfo.caption := StringReplace(mainfo.mainmenu1.menu[11].caption,'&','', [rfReplaceAll]);
+headerfo.memopotheader.visible := false;
+headerfo.memopoheader.visible := false;
+headerfo.mseconstheader.visible := false;
+headerfo.outputdir.visible := true;
+headerfo.alldir.visible := true;
+headerfo.tbutton2.visible := true;
+headerfo.tbutton3.visible := true;
+headerfo.outputdir.bounds_y:= 9;
+headerfo.alldir.bounds_y:=57;
+headerfo.tbutton2.bounds_y:=19;
+headerfo.tbutton3.bounds_y:=51;
+headerfo.paneldone.bounds_y:=3;
+headerfo.bounds_cy:=150;
+end;
 
+procedure tmainfo.ondefhead1(const sender: TObject);
+begin
+headerfo.visible := true;
+headerfo.caption := StringReplace(mainfo.mainmenu1.menu[8].submenu[2].caption,'&','', [rfReplaceAll]);
+headerfo.memopotheader.visible := true;
+headerfo.memopoheader.visible := true;
+headerfo.mseconstheader.visible := true;
+headerfo.outputdir.visible := false;
+headerfo.alldir.visible := false;
+headerfo.tbutton2.visible := false;
+headerfo.tbutton3.visible := false;
+headerfo.bounds_cy:=150;
 end;
 
 procedure tmainfo.oncreated(const sender: TObject);

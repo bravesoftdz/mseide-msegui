@@ -14,7 +14,7 @@ object headerfo: theaderfo
     218
   )
   options = [fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
-  caption = 'Tools'
+  caption = 'Tools/Default headers'
   windowopacity = -Inf
   oncreate = oncreateform
   moduleclassname = 'tmseform'
@@ -171,7 +171,7 @@ object headerfo: theaderfo
   object tbutton3: tbutton
     Tag = 1
     taborder = 8
-    hint = 'Create PO files from mseconsts.pas'
+    hint = 'Create PO files from mseconsts_*.pas'
     bounds_x = 189
     bounds_y = 176
     bounds_cx = 178
