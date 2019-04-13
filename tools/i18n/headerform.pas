@@ -576,11 +576,6 @@ procedure theaderfo.oncreateform(const sender: TObject);
 begin
  outputdir.value := ExtractFilePath(ParamStr(0)) + directoryseparator +'output' 
   + directoryseparator;
-
-{$ifdef unix}
- fpsystem('chmod 777 '+outputdir.value);
-{$endif}  
-  
 end;
 
 procedure theaderfo.ontime(const sender: TObject);
