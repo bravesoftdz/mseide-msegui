@@ -2,7 +2,7 @@ unit headerform;
 {$ifdef FPC}{$mode objfpc}{$h+}{$endif}
 interface
 uses
- {$ifdef unix}unix,{$endif} msetypes,mseglob,mseguiglob,mseguiintf,
+ msetypes,mseglob,mseguiglob,mseguiintf,
  mseapplication,msestat,msemenus,msegui,msegraphics,msegraphutils,mseevent,
  mseclasses,msewidgets,mseforms,mseact,mclasses,msedataedits,msedropdownlist,
  mseedit,mseificomp,mseificompglob,mseifiglob,msememodialog,msestatfile,
