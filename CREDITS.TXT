@@ -1,0 +1,1 @@
+Form the LazUtils package: lazutf8.pas: Useful routines for managing UTF-8 strings.
