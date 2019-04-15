@@ -62,10 +62,18 @@ var
 begin
 {$ifdef mse_i18n}
   Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
-  if not loadlangunit('i18n_'+splitstring((MSELang),'.')[0],true) then
-     if loadlangunit('i18n_'+MSEFallbackLang,true) then
-         if not setlangconsts(splitstring((MSELang),'.')[0]) then
-               setlangconsts(MSEFallbackLang);
+               
+ MSEFallbackLang := 'fr';
+
+ if not loadlangunit('.' + directoryseparator + 'lang' + directoryseparator+ 
+ 'lang_' + MSEFallbackLang + directoryseparator+
+ 'msei18n_i18n_'+splitstring((MSELang),'.')[0],true) then
+
+ loadlangunit('.' + directoryseparator + 'lang' + directoryseparator+
+   'lang_' + MSEFallbackLang + directoryseparator+'msei18n_i18n_'+MSEFallbackLang,true);
+   
+  setlangconsts(MSEFallbackLang);
+               
 {$endif}                                               
  application.createForm(tmainfo,mainfo);
  application.createForm(tmessagesfo,messagesfo);

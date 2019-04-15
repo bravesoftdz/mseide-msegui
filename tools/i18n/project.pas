@@ -118,6 +118,11 @@ begin
  try
   mainfo.loadproject;
  except
+  unitsdir.frame.colorclient := cl_ltyellow;
+  datafilename.frame.colorclient := cl_ltyellow;
+  dir.frame.colorclient := cl_ltyellow;
+  visible := true;
+  application.processmessages;
   application.handleexception(nil);
  end;
  {

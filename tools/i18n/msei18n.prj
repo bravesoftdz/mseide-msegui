@@ -29,11 +29,11 @@ findinfiledialog=65
  [findinfileadialogfo.wholeword]
  value=0
  [findinfileadialogfo.inprojectdir]
- value=0
+ value=1
  [findinfileadialogfo.casesensitive]
  value=0
  [findinfileadialogfo.indirectories]
- value=1
+ value=0
  [findinfileadialogfo.mask]
  value="*.pas" "*.pp" "*.inc"
  history=3
@@ -57,8 +57,14 @@ findinfiledialog=65
  filefilterindex=0
  filefilter="*.pas" "*.pp" "*.inc"
  [findinfileadialogfo.findtext]
- value=msecopy
+ value=projectfo.datafilename.value
  history=20
+  projectfo.datafilename.value
+  trd
+  .trd
+  mainupdatestat
+  setcurrentdir
+  projectfo.filename
   msecopy
   projectstat
   c.
@@ -73,12 +79,6 @@ findinfiledialog=65
   langnames[
   la_en
   asarraya
-  controller.filterlist
-  sc_notranslate
-  getcolumnheaders
-  sc_nocontext
-  donottranslate
-  rfReplaceAll
  [findinfileadialogfo]
  stackedunder=
  x=407
@@ -100,10 +100,10 @@ replacedialog=22
  [replacedialogfo.selectedonly]
  value=0
  [replacedialogfo.replacetext]
- value=:
+ value=
  history=9
-  :
   
+  :
   :0
   msgctxt "stockcaption"
   ;
@@ -536,8 +536,8 @@ compilerusedon=29
  4031
  0
  0
- 0
  64
+ 0
  0
  0
  0
@@ -570,9 +570,9 @@ debuggerusedon=6
  0
  4
 exeusedon=15
- 4095
+ 4031
  0
- 0
+ 64
  0
  0
  0
@@ -835,12 +835,19 @@ envvarons=0
 [edit]
 hintwidth=314
 hintheight=214
-finddtext=doread
+finddtext=application.handleexception
 findhistory=20
+ application.handleexception
+ .trd
+ onprojectopen
+ /home/fred/mseide-msegui
+ writeln
  doread
- labdone
  loadp
  sc_totranslate
+ readmodule
+ cannotreadmodule
+ labdone
  strinconsts
  c.
  dowrite
@@ -850,26 +857,21 @@ findhistory=20
  loadpr
  savep
  listfiles
- writeln
- createnew
- statf
- impexpfiledialog
- datastream.writeln
- msgctxt
- defaultresult
 findoptions=1
-editpos=11
+editpos=13
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 28,1433
+ 0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,-1073741823
  0,9
  0,-1073741823
+ 0,-1073741823
+ 0,75
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -881,11 +883,13 @@ bookmarks7=0
 bookmarks8=0
 bookmarks9=0
 bookmarks10=0
-sourcefiles=11
+bookmarks11=0
+bookmarks12=0
+sourcefiles=13
  ${PROJECTDIR}/msei18n.pas
  /home/fred/mseide-msegui/lib/common/kernel/mseconsts.pas
  ${PROJECTDIR}/headerform.pas
- /home/fred/mseide-msegui/apps/ide/mseide.pas
+ ${PROJECTDIR}/mseide.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/project.pas
  /home/fred/mseide-msegui/lib/common/dialogs/msefiledialog.pas
@@ -893,7 +897,9 @@ sourcefiles=11
  /home/fred/mseide-msegui/lib/common/dialogs/msefiledialog.mfm
  /home/fred/mseide-msegui/lib/common/dialogs/msefiledialogres.pas
  ${PROJECTDIR}/headerform.pas
-relpaths=11
+ ${PROJECTDIR}/mseresourceparser.pas
+ ${PROJECTDIR}/mseide.pas
+relpaths=13
  msei18n.pas
  lib/common/kernel/mseconsts.pas
  headerform.pas
@@ -905,7 +911,9 @@ relpaths=11
  lib/common/dialogs/msefiledialog.mfm
  ../lib/common/dialogs/msefiledialogres.pas
  headerform.pas
-ismoduletexts=11
+ mseresourceparser.pas
+ ../apps/ide/mseide.pas
+ismoduletexts=13
  0
  0
  0
@@ -915,6 +923,8 @@ ismoduletexts=11
  0
  0
  -1
+ 0
+ 0
  0
  0
 modules=4
@@ -938,22 +948,24 @@ nomenumodules=4
  0
  0
 [sourcefo.files_tab]
-order=11
+order=13
+ 6
+ 9
+ 5
+ 12
  2
  0
  1
- 3
- 4
- 5
- 6
  7
  8
- 9
+ 3
  10
+ 11
+ 4
 firsttab=0
-index=4
+index=3
 [layout]
-windowlayout=635
+windowlayout=637
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -967,8 +979,8 @@ windowlayout=635
  ny=0
  ncx=0
  ncy=0
- x=-84
- y=106
+ x=3
+ y=59
  cx=1360
  cy=706
  rcx=0
@@ -1420,18 +1432,19 @@ windowlayout=635
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/main.pas
+ value=/home/fred/mseide-msegui/apps/ide/mseide.pas
  history=20
-  /home/fred/mseide-msegui/tools/i18n/main.pas
+  /home/fred/mseide-msegui/apps/ide/mseide.pas
+  /home/fred/mseide-msegui/tools/i18n/headerform.pas
+  /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
+  /home/fred/mseide-msegui/apps/ide/lang_en/mseide_i18n.trp
   /home/fred/mseide-msegui/lib/common/dialogs/msefiledialogres.pas
   /home/fred/mseide-msegui/apps/ide/lang_en/i18n.trp
   /home/fred/mseide-msegui/tools/i18n/lang_en/msei18n_i18n.trp
+  /home/fred/mseide-msegui/tools/i18n/main.pas
   /home/fred/mseide-msegui/tools/i18n/msesettings.pas
   /home/fred/mseide-msegui/lib/common/designutils/msesettings.pas
-  /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
   /home/fred/mseide-msegui/apps/ide/main.pas
-  /home/fred/mseide-msegui/apps/ide/mseide.pas
-  /home/fred/mseide-msegui/tools/i18n/headerform.pas
   /home/fred/mseide-msegui/lib/common/kernel/mseconsts.pas
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-mseguiexportmulti/apps/ide/mseide.pas
@@ -1441,9 +1454,8 @@ windowlayout=635
   /home/fred/mseide-msegui/lib/common/mseconstslang/mseconsts_sr_latin.pas
   /home/fred/mseide-msegui/lib/common/mseconstslang/mseconsts_sr@latin.pas
   /home/fred/mseide-msegui/languages/mseconsts/mseconsts_fr.po
-  /home/fred/mseide-msegui/tools/i18n/headerform.mfm
  [debuggerfo.project_options]
- value=1
+ value=5
  [debuggerfo.hints]
  value=0
  [sourcefo]
@@ -1463,20 +1475,22 @@ windowlayout=635
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=11
+ order=13
+  6
+  9
+  5
+  12
   2
   0
   1
-  3
-  4
-  5
-  6
   7
   8
-  9
+  3
   10
+  11
+  4
  firsttab=0
- index=4
+ index=3
  [cpuc86_64fo]
  irqoff=0
  splitdir=0

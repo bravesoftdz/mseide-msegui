@@ -79,11 +79,17 @@ var
 begin
  {$ifdef mse_i18n}
  Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
- if not loadlangunit('i18n_'+splitstring((MSELang),'.')[0],true) then
-    if loadlangunit('i18n_'+MSEFallbackLang,true) then
-        if not setlangconsts(splitstring((MSELang),'.')[0]) then
-              setlangconsts(MSEFallbackLang);
- {$endif}
+ 
+ // MSEFallbackLang := 'fr';
+ 
+ if not loadlangunit('.' + directoryseparator + 'lang' + directoryseparator+
+  'lang_' + MSEFallbackLang + directoryseparator+
+   'mseide_i18n_'+splitstring((MSELang),'.')[0],true) then
+   loadlangunit('.' + directoryseparator + 'lang' + directoryseparator+ 'lang_'
+    + MSEFallbackLang + directoryseparator+'mseide_i18n_'+MSEFallbackLang,true);
+    
+  setlangconsts(MSEFallbackLang);
+  {$endif}
 
  registerfontalias('mseide_source',gui_getdefaultfontnames[stf_courier],
                     fam_fixnooverwrite,16);

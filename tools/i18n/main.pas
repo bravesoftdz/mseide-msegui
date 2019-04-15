@@ -328,29 +328,29 @@ begin
           acomp := str2;
             
         If system.pos('vaString',str2) >0 then begin
-          str2 := (utf8copy(str2,system.pos('vaString',str2)+9,
-                     length(str2)-system.pos('vaString',str2)-8)) ;
+          str2 := (utf8copy(str2,utf8pos('vaString',str2)+9,
+                     utf8length(str2)-utf8pos('vaString',str2)-8)) ;
          end else
          If system.pos('vaLString',str2) >0 then begin 
-          str2 := (utf8copy(str2,system.pos('vaLString',str2)+10,
-                     length(str2)-system.pos('vaLString',str2)-9)) ;
+          str2 := (utf8copy(str2,utf8pos('vaLString',str2)+10,
+                     utf8length(str2)-utf8pos('vaLString',str2)-9)) ;
          end;
             
          anont := (utf8copy(str2,1,1));
-         str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
-         acom := (utf8copy(str2,1,system.pos(',',str2)-1));
-         str2 := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;
+         str2 := (utf8copy(str2,utf8pos(',',str2)+1,utf8length(str2)-utf8pos(',',str2))) ;
+         acom := (utf8copy(str2,1,utf8pos(',',str2)-1));
+         str2 := (utf8copy(str2,utf8pos(',',str2)+1,utf8length(str2)-utf8pos(',',str2))) ;
        
-         if copy(str2,1,1) = '"' then 
+        if utf8copy(str2,1,1) = '"' then 
          begin
-         str2 :=  (utf8copy(str2,1,length(str2)-1)) ;
-         astro := (utf8copy(str2,2,system.pos('",',str2)-1)) ;
-         astrt := (utf8copy(str2,system.pos('",',str2)+2,length(str2)-1-system.pos('",',str2))) ; 
+         str2 :=  (utf8copy(str2,1,utf8length(str2)-1)) ;
+         astro := (utf8copy(str2,2,utf8pos('",',str2)-1)) ;
+         astrt := (utf8copy(str2,utf8pos('",',str2)+2,utf8length(str2)-1-utf8pos('",',str2))) ; 
          hasvirg := true;
          end else
          begin 
-         astro := (utf8copy(str2,1,system.pos(',',str2)-1));
-         astrt := (utf8copy(str2,system.pos(',',str2)+1,length(str2)-system.pos(',',str2))) ;       
+         astro := (utf8copy(str2,1,utf8pos(',',str2)-1));
+         astrt := (utf8copy(str2,utf8pos(',',str2)+1,utf8length(str2)-utf8pos(',',str2))) ;       
          end;
           
          if  (hasvirg = true)  then
@@ -359,15 +359,22 @@ begin
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
-                           
+          nodo := utf8StringReplace(nodo, '/', '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, ',', '', [rfReplaceAll]);
+                                     
           asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '\', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, '/', '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, ',', '', [rfReplaceAll]);
+          
+           //writeln(nodo);
+           //writeln(asdo);
            
           if (trim(valuetext) <> '') and 
           (trim((nodo)) = trim((asdo))) and  
-          (system.pos(copy(rootstring(','), 1 ,length(rootstring(','))-12),acomp) > 1) and
+          (utf8pos(copy(rootstring(','), 1 ,utf8length(rootstring(','))-12),acomp) > 1) and
           (trim((valuetext)) <> trim((astrt))) then 
           begin
            hasfoundtext := true;
@@ -379,7 +386,7 @@ begin
            // writeln(rootstring(','));
            // writeln(acomp);
                       
-           if system.pos(rootstring(','),acomp) > 0 then begin
+           if utf8pos(rootstring(','),acomp) > 0 then begin
            astrtemp := astrt;
            anonttemp := anont;
            acomtmp := acom;
@@ -395,7 +402,7 @@ begin
          begin
           if (trim(valuetext) <> '') and 
           (trim((valuetext)) = trim((astro))) and 
-          (system.pos(copy(rootstring(','), 1 ,length(rootstring(','))-12),acomp) > 1)and
+          (utf8pos(copy(rootstring(','), 1 ,length(rootstring(','))-12),acomp) > 1)and
           (trim((valuetext)) <> trim((astrt))) then
           begin 
            hasfoundtext := true;
@@ -595,10 +602,8 @@ begin
       end;
     end;
    end;
-   
-   
-    
-      for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
+  
+    for int1:= 0 to grid.datacols.count - variantshift - 1 do begin
      with tmemodialogedit(grid.datacols[int1+variantshift].editwidget) do begin
       if high(info.variants) >= int1 then begin
     
@@ -608,6 +613,8 @@ begin
       if (utf8copy(valuetext,1,2) <> '" ')
          then if  (utf8copy(astrt,1,2) = '" ') then 
           astrt :=  utf8copy(astrt,3,length(astrt)-2) ;
+          
+    if (trim(astrt) = '"') then astrt := '';
     
      if hasfound or hasfoundtext then
      begin
@@ -930,6 +937,11 @@ begin
   result:= msestring(node.info.name);
   rootnode.add(node);
  except
+  projectfo.unitsdir.frame.colorclient := cl_ltyellow;
+  projectfo.datafilename.frame.colorclient := cl_ltyellow;
+  projectfo.dir.frame.colorclient := cl_ltyellow;
+  projectfo.visible := true;
+  application.processmessages;
   application.handleexception(self,c[ord(sc_cannotreadmodule)]+' '+stream.filename+':');
  end;
  memstream.Free;
@@ -1448,7 +1460,10 @@ application.processmessages;
  end;
 // refreshnodedata;
 // updatedata;
-application.processmessages;
+  projectfo.unitsdir.frame.colorclient := cl_default;
+  projectfo.datafilename.frame.colorclient := cl_default;
+  projectfo.dir.frame.colorclient := cl_default;
+ application.processmessages;
  isloaded := false;
  if ttimer2.Enabled then
  ttimer2.restart // to reset
@@ -1653,6 +1668,7 @@ begin
  try
   for int1:= 0 to projectfo.grid.rowcount - 1 do begin
    file1:= tmsefilestream.create(projectfo.unitsdir.value+projectfo.filename[int1]);
+  // writeln(projectfo.unitsdir.value+projectfo.filename[int1]);
    case resfilekindty(projectfo.filekind[int1]) of
     rfk_module: begin
      mstr1:= readmodule(file1);
@@ -1685,7 +1701,20 @@ if projloaded then begin
   try
    doread(ttextdatastream.Create(projectfo.datafilename.value),ce_utf8);
   except
+  {projectfo.unitsdir.frame.colorclient := cl_ltyellow;
+  projectfo.datafilename.frame.colorclient := cl_ltyellow;
+  projectfo.dir.frame.colorclient := cl_ltyellow;
+  projectfo.visible := true;
+  application.processmessages;
+  }
    application.handleexception(self);
+  application.processmessages;
+  projectfo.unitsdir.frame.colorclient := cl_ltyellow;
+  projectfo.datafilename.frame.colorclient := cl_ltyellow;
+  projectfo.dir.frame.colorclient := cl_ltyellow;
+  projectfo.visible := true;
+  application.processmessages;
+     
   end;
  end;
 end;
@@ -2052,14 +2081,20 @@ procedure tmainfo.mainupdatestat(const sender: TObject; const filer: tstatfiler)
 var
  mstr1: msestring;
 begin
- updatesettings(filer);
+  updatesettings(filer);
  mstr1:= projectfo.projectstat.filename;
  filer.updatevalue('projectfile',mstr1);
  projectfo.projectstat.filename:= mstr1;
+  if not projloaded then mstr1 := '' ;
  if mstr1 <> '' then begin
   try
    setcurrentdirmse(filedir(mstr1));
   except
+  projectfo.unitsdir.frame.colorclient := cl_ltyellow;
+  projectfo.datafilename.frame.colorclient := cl_ltyellow;
+  projectfo.dir.frame.colorclient := cl_ltyellow;
+  projectfo.visible := true;
+  application.processmessages;
    application.handleexception(nil);
   end;
  end;

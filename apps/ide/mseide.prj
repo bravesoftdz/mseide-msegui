@@ -165,7 +165,7 @@ options=114
  value=
  [projectoptionsfo.makegroupbox]
  firsttab=0
- index=2
+ index=5
  [projectoptionsfo.exceptionsgrid]
  propcolwidthref=790
  width0=47
@@ -174,7 +174,7 @@ options=114
  sortdescend1=0
  [projectoptionsfo.ttabwidget1]
  firsttab=0
- index=0
+ index=1
  [projectoptionsfo.filefiltergrid]
  propcolwidthref=698
  width0=112
@@ -186,7 +186,7 @@ options=114
  index=0
  [projectoptionsfo.setting_tab]
  firsttab=0
- index=0
+ index=2
  [projectoptionsfo]
  stackedunder=
  x=245
@@ -207,9 +207,10 @@ targetfile=mseide${EXEEXT}
 messageoutputfile=
 makecommand=${COMPILER}
 makedir=
-unitdirs=4
+unitdirs=5
  ${MSEDIR}lib/addon/*/
  ${MSELIBDIR}kernel/$TARGETOSDIR/
+ ${MSELIBDIR}kernel/windows
  ${MSELIBDIR}kernel/
  ${MSELIBDIR}*/
 unitpref=-Fu
@@ -468,17 +469,17 @@ modulefiles=6
  /home/fred/mseide-msegui/apps/ide/sourceform.mfm
 befcommandon=0
 makeoptionson=6
- 63
- 31
- 34
- 32
+ 127
+ 27
+ 102
+ 100
  4095
- 0
+ 127
 compilerusedon=29
- 4095
+ 4031
  0
  0
- 0
+ 64
  0
  0
  0
@@ -512,9 +513,9 @@ debuggerusedon=6
  0
  0
 exeusedon=15
- 4095
+ 4031
  0
- 0
+ 64
  0
  0
  0
@@ -544,14 +545,15 @@ project_creator=
 project_copyright=
 project_license=
 project_time=
-project_date=02:19:00 AM 03/01/2019
+project_date=09:46:02 PM 04/15/2019
 project_comment=
 aftcommandon=0
-unitdirson=4
- 196671
+unitdirson=5
+ 196735
  65599
- 196671
- 65599
+ 200640
+ 196735
+ 65663
 macroon=0
 macronames=0
 macrovalues=0
@@ -772,7 +774,8 @@ hintheight=214
 finddtext=
 findhistory=0
 findoptions=1
-editpos=23
+editpos=21
+ 0,5
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -790,12 +793,9 @@ editpos=23
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,0
  0,-1073741823
  0,-1073741823
- 0,-1073741823
- 0,-1073741823
- 0,-1073741823
+ 21,30
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -817,16 +817,11 @@ bookmarks17=0
 bookmarks18=0
 bookmarks19=0
 bookmarks20=0
-bookmarks21=0
-bookmarks22=0
-sourcefiles=23
+sourcefiles=21
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/sourceform.pas
  ${PROJECTDIR}/actionsmodule.pas
  ${PROJECTDIR}/mseide.pas
- ${PROJECTDIR}/msei18n.pas
- /home/fred/mseguinew/mseide-msegui/apps/ide/actionsmodule.mfm
- /home/fred/mseguinew/mseide-msegui/apps/ide/sourceform.mfm
  ${PROJECTDIR}/actionsmodule.pas
  ${PROJECTDIR}/watchform.mfm
  ${PROJECTDIR}/msedesigner.pas
@@ -835,22 +830,20 @@ sourcefiles=23
  ${PROJECTDIR}/componentstore.pas
  ${PROJECTDIR}/componentstore.mfm
  ${PROJECTDIR}/formdesigner.mfm
- ${PROJECTDIR}/sourceform.mfm
  ${PROJECTDIR}/sourceform.pas
- /home/fred/mseide-msegui/apps/ide/templates/default/dockpanelform.mfm
+ ${PROJECTDIR}/templates/default/dockpanelform.mfm
  ${PROJECTDIR}/panelform.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/projectoptionsform.pas
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/projectoptionsform.pas
-relpaths=23
+ ${PROJECTDIR}/mseide.pas
+ /home/fred/mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
+relpaths=21
  main.pas
  sourceform.pas
  actionsmodule.pas
  mseide.pas
- tools/i18n/msei18n.pas
- mseguinew/mseide-msegui/apps/ide/actionsmodule.mfm
- mseguinew/mseide-msegui/apps/ide/sourceform.mfm
  actionsmodule.pas
  watchform.mfm
  msedesigner.pas
@@ -859,7 +852,6 @@ relpaths=23
  componentstore.pas
  componentstore.mfm
  formdesigner.mfm
- sourceform.mfm
  sourceform.pas
  templates/default/dockpanelform.mfm
  panelform.pas
@@ -867,25 +859,25 @@ relpaths=23
  projectoptionsform.pas
  main.pas
  projectoptionsform.pas
-ismoduletexts=23
+ mseide.pas
+ ../lib/common/kernel/linux/msesysintf1.pas
+ismoduletexts=21
+ 0
+ 0
+ 0
+ 0
+ 0
  0
  0
  0
  0
  0
  -1
- -1
- 0
- 0
- 0
- 0
  0
  0
  -1
  0
- -1
  0
- -1
  0
  0
  0
@@ -920,34 +912,10 @@ nomenumodules=6
  0
  0
 [sourcefo.files_tab]
-order=23
- 0
- 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
- 10
- 11
- 12
- 23
- 13
- 18
- 15
- 19
- 20
- 22
- 21
- 16
- 17
-firsttab=13
-index=15
+firsttab=12
+index=20
 [layout]
-windowlayout=632
+windowlayout=604
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -987,7 +955,7 @@ windowlayout=632
  rcy=0
  wsize=0
  active=0
- visible=1
+ visible=0
  [threadsfo]
  splitdir=0
  useroptions=268451945
@@ -1396,35 +1364,31 @@ windowlayout=632
  useroptions=268582019
  parent=debuggerfo.container
  visible=1
- mdistate=0
+ mdistate=3
  nx=0
  ny=0
- ncx=1350
- ncy=60
+ ncx=0
+ ncy=0
  x=0
- y=0
+ y=47
  cx=1350
- cy=60
+ cy=8
  rcx=0
  rcy=0
  [debuggerfo.edit_options]
- value=1
+ value=X
  [debuggerfo.edit_compilernum]
  value=0
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/apps/ide/templates/default/dockpanelform.mfm
- history=5
-  /home/fred/mseide-msegui/apps/ide/templates/default/dockpanelform.mfm
-  /home/fred/mseide-msegui/apps/ide/projectoptionsform.pas
-  /home/fred/mseide-msegui/apps/ide/sourceform.pas
-  /home/fred/mseide-msegui/apps/ide/componentstore.pas
-  /home/fred/mseguinew/mseide-msegui/
+ value=/home/fred/mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
+ history=1
+  /home/fred/mseide-msegui/apps/ide/main.pas
  [debuggerfo.project_options]
- value=1
+ value=5
  [debuggerfo.hints]
- value=0
+ value=1
  [sourcefo]
  splitdir=0
  useroptions=16489
@@ -1442,32 +1406,8 @@ windowlayout=632
  rcx=0
  rcy=0
  [sourcefo.files_tab]
- order=23
-  0
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  23
-  13
-  18
-  15
-  19
-  20
-  22
-  21
-  16
-  17
- firsttab=13
- index=15
+ firsttab=12
+ index=20
  [cpuc86_64fo]
  irqoff=0
  splitdir=0
@@ -1564,7 +1504,7 @@ windowlayout=632
  [_mse_projectoptionsfo_mse_]
  splitdir=0
  useroptions=268451963
- stackedunder=targetconsolefo
+ stackedunder=mainfo
  parent=
  mdistate=3
  nx=0

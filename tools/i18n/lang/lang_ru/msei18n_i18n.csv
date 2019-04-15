@@ -1,0 +1,170 @@
+name,type,notranslate,comment,value,en
+"mainfo,tgroupbox1,flat,frame.caption",vaString,F,,flat,flat
+"mainfo,tgroupbox1,flat,hint",vaString,F,,Toggle tree/flat view,Toggle tree/flat view
+"mainfo,tgroupbox1,nostring,frame.caption",vaString,F,,no string,no string
+"mainfo,tgroupbox1,nostring,hint",vaString,F,,"Show all rows, that are not string type","Show all rows, that are not string type"
+"mainfo,tgroupbox1,stringonly,frame.caption",vaString,F,,string only,string only
+"mainfo,tgroupbox1,stringonly,hint",vaString,F,,"Show all rows, that are string type","Show all rows, that are string type"
+"mainfo,tgroupbox1,nont,frame.caption",vaString,F,,no NT,no NT
+"mainfo,tgroupbox1,nont,hint",vaString,F,,"Show all rows, that have 'no NT' (No Translate) flag","Show all rows, that have 'no NT' (No Translate) flag"
+"mainfo,tgroupbox1,ntonly,frame.caption",vaString,F,,NT only,NT only
+"mainfo,tgroupbox1,ntonly,hint",vaString,F,,"Show all rows, that have 'NT' (No Translate) flag","Show all rows, that have 'NT' (No Translate) flag"
+"mainfo,tgroupbox1,coloron,frame.caption",vaString,F,,show color,show color
+"mainfo,tgroupbox1,coloron,hint",vaString,F,,"Colorize rows to differentiate translated and not translated values, to see warnings","Colorize rows to differentiate translated and not translated values, to see warnings"
+"mainfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
+"mainfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Type,Type
+"mainfo,grid,fixrows.items,0:,captions.items,3:,caption",vaString,F,,Comment,Comment
+"mainfo,grid,fixrows.items,0:,captions.items,4:,caption",vaString,F,,Value,Value
+"mainfo,workpan,value",vaString,F,,Working...,Working...
+"mainfo,mainmenu1,menu.submenu.items,0:,caption",vaString,F,,&Open,&Open
+"mainfo,mainmenu1,menu.submenu.items,0:,hint",vaString,F,,Open Translation Project (trp),Open Translation Project (trp)
+"mainfo,mainmenu1,menu.submenu.items,1:,caption",vaString,F,,&Save,&Save
+"mainfo,mainmenu1,menu.submenu.items,1:,hint",vaString,F,,Save work into current trd (Translation Data) file,Save work into current trd (Translation Data) file
+"mainfo,mainmenu1,menu.submenu.items,2:,caption",vaString,F,,Save &as,Save &as
+"mainfo,mainmenu1,menu.submenu.items,2:,hint",vaString,F,,Save work into specified trd (Translation Data) file,Save work into specified trd (Translation Data) file
+"mainfo,mainmenu1,menu.submenu.items,3:,caption",vaString,F,,&New,&New
+"mainfo,mainmenu1,menu.submenu.items,3:,hint",vaString,F,,New translation project,New translation project
+"mainfo,mainmenu1,menu.submenu.items,4:,caption",vaString,F,,&Edit,&Edit
+"mainfo,mainmenu1,menu.submenu.items,4:,hint",vaString,F,,Edit project options,Edit project options
+"mainfo,mainmenu1,menu.submenu.items,5:,caption",vaString,F,,&Import,&Import
+"mainfo,mainmenu1,menu.submenu.items,5:,hint",vaString,F,,Import translations from supported file formats,Import translations from supported file formats
+"mainfo,mainmenu1,menu.submenu.items,6:,caption",vaString,F,,Ex&port,Ex&port
+"mainfo,mainmenu1,menu.submenu.items,6:,hint",vaString,F,,Export translations into supported file formats,Export translations into supported file formats
+"mainfo,mainmenu1,menu.submenu.items,7:,caption",vaString,F,,&Make,&Make
+"mainfo,mainmenu1,menu.submenu.items,7:,hint",vaString,F,,Make project by compiling library,Make project by compiling library
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,caption",vaString,F,,&About,&About
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,0:,hint",vaString,F,,"About program: version, license, authors, etc.","About program: version, license, authors, etc."
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,caption",vaString,F,,&Configure MSEi18n,&Configure MSEi18n
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,1:,hint",vaString,F,,Program configuration,Program configuration
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,caption",vaString,F,,&Default headers,&Default headers
+"mainfo,mainmenu1,menu.submenu.items,8:,submenu.items,2:,hint",vaString,F,,Default headers for POT/PO/constants files,Default headers for POT/PO/constants files
+"mainfo,mainmenu1,menu.submenu.items,8:,caption",vaString,F,,Se&ttings,Se&ttings
+"mainfo,mainmenu1,menu.submenu.items,8:,hint",vaString,F,,Program settings,Program settings
+"mainfo,mainmenu1,menu.submenu.items,9:,caption",vaString,F,,Re&fresh,Re&fresh
+"mainfo,mainmenu1,menu.submenu.items,9:,hint",vaString,F,,Refresh display,Refresh display
+"mainfo,mainmenu1,menu.submenu.items,10:,caption",vaString,F,,&Reset,&Reset
+"mainfo,mainmenu1,menu.submenu.items,10:,hint",vaString,F,,Reset translated words to root values,Reset translated words to root values
+"mainfo,mainmenu1,menu.submenu.items,11:,caption",vaString,F,,&Tools,&Tools
+"mainfo,mainmenu1,menu.submenu.items,11:,hint",vaString,F,,Special tools to work with constants to support localization of them,Special tools to work with constants to support localization of them
+"mainfo,mainmenu1,menu.submenu.items,12:,caption",vaString,F,,E&xit,E&xit
+"mainfo,mainmenu1,menu.submenu.items,12:,hint",vaString,F,,Exit from program,Exit from program
+"mainfo,projectfiledialog,controller.filterlist.data,0:,0:",vaString,F,,Translate project,Translate project
+"mainfo,projectfiledialog,controller.captionopen",vaString,F,,Open translate project,Open translate project
+"mainfo,projectfiledialog,controller.captionsave",vaString,F,,Save translate project,Save translate project
+"mainfo,c,strings.data,0:",vaString,F,,name,name
+"mainfo,c,strings.data,1:",vaString,F,,type,type
+"mainfo,c,strings.data,2:",vaString,F,,notranslate,notranslate
+"mainfo,c,strings.data,3:",vaString,F,,comment,comment
+"mainfo,c,strings.data,4:",vaString,F,,value,value
+"mainfo,c,strings.data,5:",vaString,F,,[no project],[no project]
+"mainfo,c,strings.data,6:",vaString,F,,Can not read module,Can not read module
+"mainfo,c,strings.data,7:",vaString,F,,New translate project,New translate project
+"mainfo,c,strings.data,8:",vaString,F,,Exec error,Exec error
+"mainfo,c,strings.data,9:",vaString,F,,Making,Making
+"mainfo,c,strings.data,10:",vaString,F,,overwrites itself,overwrites itself
+"mainfo,c,strings.data,11:",vaString,F,,ERROR,ERROR
+"mainfo,c,strings.data,12:",vaString,F,,Finished OK,Finished OK
+"mainfo,c,strings.data,13:",vaString,F,,Configure MSEi18n,Configure MSEi18n
+"mainfo,c,strings.data,14:",vaString,F,,Data has changed,Data has changed
+"mainfo,c,strings.data,15:",vaString,F,,Do you wish to save,Do you wish to save
+"mainfo,c,strings.data,16:",vaString,F,,CONFIRMATION,CONFIRMATION
+"mainfo,c,strings.data,17:",vaString,F,,Close error:,Close error:
+"mainfo,c,strings.data,18:",vaString,F,,Total rows:,Total rows:
+"mainfo,c,strings.data,19:",vaString,F,,To translate:,To translate:
+"mainfo,c,strings.data,20:",vaString,F,,To not translate:,To not translate:
+"mainfo,c,strings.data,21:",vaString,F,,Yet translated:,Yet translated:
+"mainfo,c,strings.data,22:",vaString,F,,Not yet translated:,Not yet translated:
+"mainfo,c,strings.data,23:",vaString,F,,Do you want to reset to root value?,Do you want to reset to root value?
+"mainfo,c,strings.data,24:",vaString,F,,Data exchange files,Data exchange files
+"mainfo,c,strings.data,25:",vaString,F,,templates files,templates files
+"mainfo,c,strings.data,26:",vaString,F,,translation files,translation files
+"mainfo,c,strings.data,27:",vaString,F,,with context,with context
+"mainfo,c,strings.data,28:",vaString,F,,without context,without context
+"mainfo,c,strings.data,29:",vaString,F,,text files,text files
+"mainfo,c,strings.data,30:",vaString,F,,%s version,%s version
+"mainfo,c,strings.data,31:",vaString,F,,About %s,About %s
+"msememodialogfo,caption",vaString,F,,Enter Memo Text,Enter Memo Text
+"msememodialogfo,tlayouter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
+"msememodialogfo,tlayouter1,tbutton1,caption",vaString,F,,&OK,&OK
+"messagesfo,caption",vaString,F,,Make Language Units,Make Language Units
+"projectfo,caption",vaString,F,,Edit Translate Project,Edit Translate Project
+"projectfo,impexpencoding,frame.caption",vaString,F,,Encoding for imp/exp files,Encoding for imp/exp files
+"projectfo,impexpencoding,hint",vaString,F,,Encoding for imported/exported files,Encoding for imported/exported files
+"projectfo,grid,hint",vaString,F,,Files of project and type of them,Files of project and type of them
+"projectfo,grid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Rootname,Rootname
+"projectfo,grid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,File,File
+"projectfo,grid,fixrows.items,0:,captions.items,2:,caption",vaString,F,,Kind,Kind
+"projectfo,grid,filename,controller.captionopen",vaString,F,,Select unit or form file,Select unit or form file
+"projectfo,datafilename,frame.caption",vaString,F,,Datafile,Datafile
+"projectfo,datafilename,hint",vaString,F,,Translation Data file (trd),Translation Data file (trd)
+"projectfo,datafilename,controller.filterlist.data,0:,0:",vaString,F,,MSEi18n Data Files,MSEi18n Data Files
+"projectfo,datafilename,controller.filterlist.data,1:,0:",vaString,F,,All files,All files
+"projectfo,grid2,hint",vaString,F,,List of languages and their working directories,List of languages and their working directories
+"projectfo,grid2,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Language,Language
+"projectfo,grid2,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Directory,Directory
+"projectfo,makecommand,frame.caption",vaString,F,,Make command,Make command
+"projectfo,makecommand,hint",vaString,F,,Make command,Make command
+"projectfo,makeon,frame.caption",vaString,F,,on,on
+"projectfo,makeon,hint",vaString,F,,Toggle make (make on/make off),Toggle make (make on/make off)
+"projectfo,ok,caption",vaString,F,,OK,OK
+"projectfo,cancel,caption",vaString,F,,Cancel,Cancel
+"projectfo,destname,frame.caption",vaString,F,,Destination Basename (empty = Datafile name),Destination Basename (empty = Datafile name)
+"projectfo,destname,hint",vaString,F,,Name of trp (Translation Project) file,Name of trp (Translation Project) file
+"projectfo,beforemake,frame.caption",vaString,F,,Before make,Before make
+"projectfo,beforemake,hint",vaString,F,,Commands to run before make,Commands to run before make
+"projectfo,aftermake,frame.caption",vaString,F,,After make,After make
+"projectfo,aftermake,hint",vaString,F,,Commands to run after make,Commands to run after make
+"projectfo,memopotheader,frame.caption",vaString,F,,POT header,POT header
+"projectfo,memopotheader,hint",vaString,F,,POT header for exported POT file,POT header for exported POT file
+"projectfo,memopoheader,frame.caption",vaString,F,,PO header,PO header
+"projectfo,memopoheader,hint",vaString,F,,PO header for exported PO file,PO header for exported PO file
+"projectfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
+"projectfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
+"settingsfo,caption",vaString,F,,Configure MSE environment,Configure MSE environment
+"settingsfo,tsplitter1,tbutton2,caption",vaString,F,,&Cancel,&Cancel
+"settingsfo,tsplitter1,tbutton1,caption",vaString,F,,&OK,&OK
+"settingsfo,tsplitter1,shortcutbu,caption",vaString,F,,&Shortcuts,&Shortcuts
+"settingsfo,tlayouter1,printcomm,frame.caption",vaString,F,,Print command,Print command
+"settingsfo,tlayouter1,debugger,hint",vaString,F,,Path to debugger (gdb).,Path to debugger (gdb).
+"settingsfo,tlayouter1,debugger,controller.captionopen",vaString,F,,Debugger path,Debugger path
+"settingsfo,tlayouter1,compiler,hint",vaString,F,,Path to compiler (ppc386).,Path to compiler (ppc386).
+"settingsfo,tlayouter1,compiler,controller.captionopen",vaString,F,,Compiler path,Compiler path
+"settingsfo,tlayouter1,compstoredir,hint",vaString,F,,Directory for component store files.,Directory for component store files.
+"settingsfo,tlayouter1,compstoredir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
+"settingsfo,tlayouter1,compstoredir,controller.captionopen",vaString,F,,Directory for component stores,Directory for component stores
+"settingsfo,tlayouter1,templatedir,hint",vaString,F,,Directory for project template files.,Directory for project template files.
+"settingsfo,tlayouter1,templatedir,controller.filterlist.data,0:,0:",vaString,F,,Project files,Project files
+"settingsfo,tlayouter1,templatedir,controller.captionopen",vaString,F,,Project template directory,Project template directory
+"settingsfo,tlayouter1,syntaxdefdir,hint",vaString,F,,Directory for syntax definition files.,Directory for syntax definition files.
+"settingsfo,tlayouter1,syntaxdefdir,controller.filterlist.data,0:,0:",vaString,F,,Syntax definitions,Syntax definitions
+"settingsfo,tlayouter1,syntaxdefdir,controller.captionopen",vaString,F,,Directory for syntax definition files,Directory for syntax definition files
+"settingsfo,tlayouter1,mselibdir,hint",vaString,F,,Root directory of MSEgui library.,Root directory of MSEgui library.
+"settingsfo,tlayouter1,mselibdir,controller.captionopen",vaString,F,,MSEgui library directory,MSEgui library directory
+"settingsfo,tlayouter1,msedir,hint",vaString,F,,Root directory of MSEgui.,Root directory of MSEgui.
+"settingsfo,tlayouter1,msedir,controller.captionopen",vaString,F,,MSEgui root directory,MSEgui root directory
+"settingsfo,tlayouter1,fpclibdir,hint",vaString,F,,Root directory of FPC library (not used by the default project templates).,Root directory of FPC library (not used by the default project templates).
+"settingsfo,tlayouter1,fpclibdir,controller.captionopen",vaString,F,,FPC library directory,FPC library directory
+"settingsfo,tlayouter1,fpcdir,hint",vaString,F,,Root directory of Free Pascal system (not used by the default project templates).,Root directory of Free Pascal system (not used by the default project templates).
+"settingsfo,tlayouter1,fpcdir,controller.captionopen",vaString,F,,FPC root directory,FPC root directory
+"settingsfo,macrogrid,frame.caption",vaString,F,,Global Macros,Global Macros
+"settingsfo,macrogrid,fixrows.items,0:,captions.items,0:,caption",vaString,F,,Name,Name
+"settingsfo,macrogrid,fixrows.items,0:,captions.items,1:,caption",vaString,F,,Value,Value
+"headerfo,caption",vaString,F,,Tools/Default headers,Tools/Default headers
+"headerfo,memopoheader,frame.caption",vaString,F,,Default PO header,Default PO header
+"headerfo,memopoheader,hint",vaString,F,,Default PO header for created PO file,Default PO header for created PO file
+"headerfo,memopotheader,frame.caption",vaString,F,,Default POT header,Default POT header
+"headerfo,memopotheader,hint",vaString,F,,Default POT header for created POT file,Default POT header for created POT file
+"headerfo,mseconstheader,frame.caption",vaString,F,,Default mseconst header,Default mseconst header
+"headerfo,mseconstheader,hint",vaString,F,,Default header for created mseconsts_*.pas,Default header for created mseconsts_*.pas
+"headerfo,tbutton3,hint",vaString,F,,Create PO file(s) from mseconsts_*.pas,Create PO file(s) from mseconsts_*.pas
+"headerfo,tbutton3,caption",vaString,F,,Create new PO from consts,Create new PO from consts
+"headerfo,tbutton2,hint",vaString,F,,Create mseconstst_*.pas from PO file(s),Create mseconstst_*.pas from PO file(s)
+"headerfo,tbutton2,caption",vaString,F,,Create new consts from PO,Create new consts from PO
+"headerfo,alldir,frame.caption",vaString,F,,All files of directory,All files of directory
+"headerfo,alldir,hint",vaString,F,,Do task for all files of specified directory,Do task for all files of specified directory
+"headerfo,outputdir,frame.caption",vaString,F,,Output directory,Output directory
+"headerfo,outputdir,hint",vaString,F,,Directory to write output files in,Directory to write output files in
+"headerfo,paneldone,labdone,caption",vaString,F,,Done.,Done.
+"headerfo,paneldone,labwork,caption",vaString,F,,Working...,Working...
+"headerfo,impexpfiledialog,controller.captionopen",vaString,F,,Open import file,Open import file
+"headerfo,impexpfiledialog,controller.captionsave",vaString,F,,Save export file,Save export file
