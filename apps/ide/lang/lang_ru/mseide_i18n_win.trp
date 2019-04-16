@@ -2,15 +2,15 @@
 colcount=6
 [projectfo.unitsdir]
 filenames=1
- /home/fred/mseide-msegui/
+ /C:/mseide-msegui/
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=/home/fred/mseide-msegui/
+lastdir=/C:/mseide-msegui/
 filehistory=1
- /home/fred/mseide-msegui/
+ /C:/mseide-msegui/
 filefilterindex=-1
 filefilter=
 [projectfo.memopoheader]
@@ -30,7 +30,7 @@ value=# SOME DESCRIPTIVE TITLE.
 +"Language-Team: LANGUAGE <LL@li.org>\n"
 +"Language: \n"
 +"MIME-Version: 1.0\n"
-+"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Type: text\plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
 [projectfo.memopotheader]
 value=# SOME DESCRIPTIVE TITLE.
@@ -49,12 +49,12 @@ value=# SOME DESCRIPTIVE TITLE.
 +"Language-Team: LANGUAGE <LL@li.org>\n"
 +"Language: \n"
 +"MIME-Version: 1.0\n"
-+"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Type: text\plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
 [projectfo.aftermake]
-value=chmod 777 ./*.so; rm -f ../*.so; cp -f ./*.so ../;
+value=
 [projectfo.beforemake]
-value=rm -f ./*.so
+value=
 [projectfo.destname]
 value=
 [projectfo.makeon]
@@ -62,22 +62,24 @@ value=1
 [projectfo.makecommand]
 value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
-propcolwidthref=789
+propcolwidthref=246
 values0=1
- en
+ ru
 width0=94
 sortdescend0=0
 values1=1
- \home\fred\mseide-msegui\apps\ide\lang_en\
+ C:\mseide-msegui\apps\ide\lang\output\
+width1=543
+sortdescend1=0
 [projectfo.datafilename]
 filenames=1
- \home\fred\mseide-msegui\apps\ide\lang_en\mseide_i18n.trd
+ /C:/mseide-msegui/apps/ide/lang/lang_ru/mseide_i18n.trd
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=\home\fred\mseide-msegui\apps\ide\lang_en\
+lastdir=/C:/mseide-msegui/apps/ide/lang/lang_ru/
 filefilterindex=-1
 filefilter=*.trd
 [projectfo.grid]
@@ -351,10 +353,10 @@ sortdescend2=0
 [projectfo.impexpencoding]
 value=1
 [projectfo]
-x=213
-y=61
+x=200
+y=116
 cx=883
-cy=575
+cy=544
 wsize=0
 active=0
 visible=0

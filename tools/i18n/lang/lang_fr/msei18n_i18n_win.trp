@@ -2,15 +2,15 @@
 colcount=6
 [projectfo.unitsdir]
 filenames=1
- /home/fred/mseide-msegui/
+ /C:/mseide-msegui/
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=/home/fred/mseide-msegui/
+lastdir=/C:/mseide-msegui/
 filehistory=1
- \home\fred\mseide-msegui\
+ /C:/mseide-msegui/
 filefilterindex=-1
 filefilter=
 [projectfo.memopoheader]
@@ -68,18 +68,18 @@ values0=1
 width0=94
 sortdescend0=0
 values1=1
- Z:\home\fred\mseide-msegui\tools\i18n\lang\lang_fr\output\
+ C:\mseide-msegui\tools\i18n\output\
 width1=539
 sortdescend1=0
 [projectfo.datafilename]
 filenames=1
- /home/fred/mseide-msegui/tools/i18n/lang/lang_fr/msei18n_i18n.trd
+ /C:/mseide-msegui/tools/i18n/lang/lang_fr/msei18n_i18n.trd
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=/home/fred/mseide-msegui/tools/i18n/lang/lang_fr/
+lastdir=/C:/mseide-msegui/tools/i18n/lang/lang_fr/
 filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]

@@ -19,7 +19,7 @@ unit project;
 
 interface
 uses
- mseforms,msewidgetgrid,msefiledialog,msestat,msestatfile,msegraphedits,
+ mseforms,msewidgetgrid,msefiledialog,msestat,msestatfile,msegraphedits, 
  msedataedits,msesimplewidgets,msesplitter,msegui,msestrings,msedbedit,msegrids,
  msetypes,mseedit,mseglob,mseguiglob,mseifiglob,msemenus,msememodialog,mseact,
  mseapplication,msedropdownlist,msegraphics,msegraphutils,mseificomp,

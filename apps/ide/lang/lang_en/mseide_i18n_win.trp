@@ -1,15 +1,17 @@
 [projectfo.projectstat]
 colcount=6
 [projectfo.unitsdir]
-filenames=0
-filecolwidth=0
+filenames=1
+ /C:/mseide-msegui/
+filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=
-filehistory=0
-filefilterindex=0
+lastdir=/C:/mseide-msegui/
+filehistory=1
+ /C:/mseide-msegui/
+filefilterindex=-1
 filefilter=
 [projectfo.memopoheader]
 value=# SOME DESCRIPTIVE TITLE.
@@ -28,7 +30,7 @@ value=# SOME DESCRIPTIVE TITLE.
 +"Language-Team: LANGUAGE <LL@li.org>\n"
 +"Language: \n"
 +"MIME-Version: 1.0\n"
-+"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Type: text\plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
 [projectfo.memopotheader]
 value=# SOME DESCRIPTIVE TITLE.
@@ -47,12 +49,12 @@ value=# SOME DESCRIPTIVE TITLE.
 +"Language-Team: LANGUAGE <LL@li.org>\n"
 +"Language: \n"
 +"MIME-Version: 1.0\n"
-+"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Type: text\plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
 [projectfo.aftermake]
-value=chmod 777 ./*.so; rm -f ../*.so; cp -f ./*.so ../;
+value=
 [projectfo.beforemake]
-value=rm -f ./*.so
+value=
 [projectfo.destname]
 value=
 [projectfo.makeon]
@@ -60,22 +62,24 @@ value=1
 [projectfo.makecommand]
 value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
-propcolwidthref=789
+propcolwidthref=246
 values0=1
  en
 width0=94
 sortdescend0=0
 values1=1
- \home\fred\mseide-msegui\apps\ide\lang\lang_en\
+ C:\mseide-msegui\apps\ide\lang\output\
+width1=543
+sortdescend1=0
 [projectfo.datafilename]
 filenames=1
- \home\fred\mseide-msegui\tools\i18n\lang\lang_en\msei18n_i18n.trd
+ /C:/mseide-msegui/apps/ide/lang/lang_en/mseide_i18n.trd
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=\home\fred\mseide-msegui\tools\i18n\lang\lang_en\
+lastdir=/C:/mseide-msegui/apps/ide/lang/lang_en/
 filefilterindex=-1
 filefilter=*.trd
 [projectfo.grid]
@@ -170,92 +174,92 @@ values0=86
 width0=201
 sortdescend0=0
 values1=86
- \home\fred\mseide-msegui\apps\ide\watchpointsform.mfm
- \home\fred\mseide-msegui\apps\ide\watchform.mfm
- \home\fred\mseide-msegui\apps\ide\toolhandlermodule.mfm
- \home\fred\mseide-msegui\apps\ide\threadsform.mfm
- \home\fred\mseide-msegui\apps\ide\templateeditor.mfm
- \home\fred\mseide-msegui\apps\ide\targetconsole.mfm
- \home\fred\mseide-msegui\apps\ide\symbolform.mfm
- \home\fred\mseide-msegui\apps\ide\storedcomponentinfodialog.mfm
- \home\fred\mseide-msegui\apps\ide\stackform.mfm
- \home\fred\mseide-msegui\apps\ide\sourcepage.mfm
- \home\fred\mseide-msegui\apps\ide\sourcehintform.mfm
- \home\fred\mseide-msegui\apps\ide\sourceform.mfm
- \home\fred\mseide-msegui\apps\ide\settaborderform.mfm
- \home\fred\mseide-msegui\apps\ide\setcreateorderform.mfm
- \home\fred\mseide-msegui\apps\ide\selectsubmoduledialogform.mfm
- \home\fred\mseide-msegui\apps\ide\selecteditpageform.mfm
- \home\fred\mseide-msegui\apps\ide\reportdesigner.mfm
- \home\fred\mseide-msegui\apps\ide\replacedialogform.mfm
- \home\fred\mseide-msegui\apps\ide\projecttreeform.mfm
- \home\fred\mseide-msegui\apps\ide\projectoptionsform.mfm
- \home\fred\mseide-msegui\apps\ide\programparametersform.mfm
- \home\fred\mseide-msegui\apps\ide\printform.mfm
- \home\fred\mseide-msegui\apps\ide\panelform2.mfm
- \home\fred\mseide-msegui\apps\ide\objectinspector.mfm
- \home\fred\mseide-msegui\apps\ide\msetemplateselectform.mfm
- \home\fred\mseide-msegui\apps\ide\mseparamentryform.mfm
- \home\fred\mseide-msegui\apps\ide\msecomptree.mfm
- \home\fred\mseide-msegui\apps\ide\messageform.mfm
- \home\fred\mseide-msegui\apps\ide\memoryform.mfm
- \home\fred\mseide-msegui\apps\ide\main.mfm
- \home\fred\mseide-msegui\apps\ide\guitemplates.mfm
- \home\fred\mseide-msegui\apps\ide\formdesigner.mfm
- \home\fred\mseide-msegui\apps\ide\findinfilepage.mfm
- \home\fred\mseide-msegui\apps\ide\findinfileform.mfm
- \home\fred\mseide-msegui\apps\ide\findinfiledialogform.mfm
- \home\fred\mseide-msegui\apps\ide\finddialogform.mfm
- \home\fred\mseide-msegui\apps\ide\disassform.mfm
- \home\fred\mseide-msegui\apps\ide\debuggerform.mfm
- \home\fred\mseide-msegui\apps\ide\cpux86_64form.mfm
- \home\fred\mseide-msegui\apps\ide\cpurl78form.mfm
- \home\fred\mseide-msegui\apps\ide\cpui386form.mfm
- \home\fred\mseide-msegui\apps\ide\cpuform.mfm
- \home\fred\mseide-msegui\apps\ide\cpucpu32form.mfm
- \home\fred\mseide-msegui\apps\ide\cpuavr32form.mfm
- \home\fred\mseide-msegui\apps\ide\cpuarmm3form.mfm
- \home\fred\mseide-msegui\apps\ide\cpuarmform.mfm
- \home\fred\mseide-msegui\apps\ide\componentstore.mfm
- \home\fred\mseide-msegui\apps\ide\componentpaletteform.mfm
- \home\fred\mseide-msegui\apps\ide\commandlineform.mfm
- \home\fred\mseide-msegui\apps\ide\breakpointsform.mfm
- \home\fred\mseide-msegui\apps\ide\actionsmodule.mfm 
- \home\fred\mseide-msegui\lib\common\designutils\msetexteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msetaborderoverrideeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msesysenvmanagereditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msestringlisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msestringintlisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msesettings.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mserichstringeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msereallisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msepropertyeditorsmodule.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseintegerlisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseindexlookupeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseimageselectorform.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseimagelisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseiircoeffeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseififieldeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\mseificlienteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msefircoeffeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msefadeedit.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msefaceselectorform.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msedoublestringlisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msedoublereallisteditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msedbfieldeditor.mfm
- \home\fred\mseide-msegui\lib\common\designutils\msecornermaskeditor.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msecolordialog.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msedirtree.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msedirtreesub.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msefiledialog.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msefiledialogres.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msefontformatdialog.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\mseintegerenter.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msememodialog.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msepopupcalendar.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\mserealenter.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\mseshortcutdialog.mfm
- \home\fred\mseide-msegui\lib\common\dialogs\msestringenter.mfm
+ \apps\ide\watchpointsform.mfm
+ \apps\ide\watchform.mfm
+ \apps\ide\toolhandlermodule.mfm
+ \apps\ide\threadsform.mfm
+ \apps\ide\templateeditor.mfm
+ \apps\ide\targetconsole.mfm
+ \apps\ide\symbolform.mfm
+ \apps\ide\storedcomponentinfodialog.mfm
+ \apps\ide\stackform.mfm
+ \apps\ide\sourcepage.mfm
+ \apps\ide\sourcehintform.mfm
+ \apps\ide\sourceform.mfm
+ \apps\ide\settaborderform.mfm
+ \apps\ide\setcreateorderform.mfm
+ \apps\ide\selectsubmoduledialogform.mfm
+ \apps\ide\selecteditpageform.mfm
+ \apps\ide\reportdesigner.mfm
+ \apps\ide\replacedialogform.mfm
+ \apps\ide\projecttreeform.mfm
+ \apps\ide\projectoptionsform.mfm
+ \apps\ide\programparametersform.mfm
+ \apps\ide\printform.mfm
+ \apps\ide\panelform2.mfm
+ \apps\ide\objectinspector.mfm
+ \apps\ide\msetemplateselectform.mfm
+ \apps\ide\mseparamentryform.mfm
+ \apps\ide\msecomptree.mfm
+ \apps\ide\messageform.mfm
+ \apps\ide\memoryform.mfm
+ \apps\ide\main.mfm
+ \apps\ide\guitemplates.mfm
+ \apps\ide\formdesigner.mfm
+ \apps\ide\findinfilepage.mfm
+ \apps\ide\findinfileform.mfm
+ \apps\ide\findinfiledialogform.mfm
+ \apps\ide\finddialogform.mfm
+ \apps\ide\disassform.mfm
+ \apps\ide\debuggerform.mfm
+ \apps\ide\cpux86_64form.mfm
+ \apps\ide\cpurl78form.mfm
+ \apps\ide\cpui386form.mfm
+ \apps\ide\cpuform.mfm
+ \apps\ide\cpucpu32form.mfm
+ \apps\ide\cpuavr32form.mfm
+ \apps\ide\cpuarmm3form.mfm
+ \apps\ide\cpuarmform.mfm
+ \apps\ide\componentstore.mfm
+ \apps\ide\componentpaletteform.mfm
+ \apps\ide\commandlineform.mfm
+ \apps\ide\breakpointsform.mfm
+ \apps\ide\actionsmodule.mfm 
+ \lib\common\designutils\msetexteditor.mfm
+ \lib\common\designutils\msetaborderoverrideeditor.mfm
+ \lib\common\designutils\msesysenvmanagereditor.mfm
+ \lib\common\designutils\msestringlisteditor.mfm
+ \lib\common\designutils\msestringintlisteditor.mfm
+ \lib\common\designutils\msesettings.mfm
+ \lib\common\designutils\mserichstringeditor.mfm
+ \lib\common\designutils\msereallisteditor.mfm
+ \lib\common\designutils\msepropertyeditorsmodule.mfm
+ \lib\common\designutils\mseintegerlisteditor.mfm
+ \lib\common\designutils\mseindexlookupeditor.mfm
+ \lib\common\designutils\mseimageselectorform.mfm
+ \lib\common\designutils\mseimagelisteditor.mfm
+ \lib\common\designutils\mseiircoeffeditor.mfm
+ \lib\common\designutils\mseififieldeditor.mfm
+ \lib\common\designutils\mseificlienteditor.mfm
+ \lib\common\designutils\msefircoeffeditor.mfm
+ \lib\common\designutils\msefadeedit.mfm
+ \lib\common\designutils\msefaceselectorform.mfm
+ \lib\common\designutils\msedoublestringlisteditor.mfm
+ \lib\common\designutils\msedoublereallisteditor.mfm
+ \lib\common\designutils\msedbfieldeditor.mfm
+ \lib\common\designutils\msecornermaskeditor.mfm
+ \lib\common\dialogs\msecolordialog.mfm
+ \lib\common\dialogs\msedirtree.mfm
+ \lib\common\dialogs\msedirtreesub.mfm
+ \lib\common\dialogs\msefiledialog.mfm
+ \lib\common\dialogs\msefiledialogres.mfm
+ \lib\common\dialogs\msefontformatdialog.mfm
+ \lib\common\dialogs\mseintegerenter.mfm
+ \lib\common\dialogs\msememodialog.mfm
+ \lib\common\dialogs\msepopupcalendar.mfm
+ \lib\common\dialogs\mserealenter.mfm
+ \lib\common\dialogs\mseshortcutdialog.mfm
+ \lib\common\dialogs\msestringenter.mfm
 values2=86
  0
  0
@@ -349,10 +353,10 @@ sortdescend2=0
 [projectfo.impexpencoding]
 value=1
 [projectfo]
-x=213
-y=61
+x=200
+y=116
 cx=883
-cy=575
+cy=544
 wsize=0
 active=0
 visible=0

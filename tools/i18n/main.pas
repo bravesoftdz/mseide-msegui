@@ -19,7 +19,7 @@ unit main;
 
 interface
 uses
- {$ifdef unix}unix,{$endif}mseforms,msefiledialog,msestat,msestatfile, LazUTF8,
+ {$ifdef unix}unix,{$endif}mseforms,msefiledialog,msestat,msestatfile,
  msesimplewidgets,msegrids,msewidgetgrid,msegraphics,msegraphutils,
  mselistbrowser,msedataedits,typinfo,msedatanodes,msegraphedits,msestream,
  mseglob,msemenus,classes,mclasses,msetypes,msestrings,msethreadcomp,mseguiglob,
@@ -171,7 +171,7 @@ var
 uses
  main_mfm,msefileutils,msesystypes,msesys,sysutils,mselist,project,
  rtlconsts,mseprocutils,msestockobjects, headerform,
- mseparser,mseformdatatools,mseresourcetools, 
+ mseparser,mseformdatatools,mseresourcetools, LazUTF8,
  msearrayutils,msesettings,messagesform,mseeditglob,mseformatstr;
 type
  strinconsts = (

@@ -2,14 +2,15 @@
 colcount=6
 [projectfo.unitsdir]
 filenames=1
- \home\fred\mseide-msegui\
+ /C:/mseide-msegui/
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=\home\fred\mseide-msegui\
-filehistory=1
+lastdir=/C:/mseide-msegui/
+filehistory=2
+ /C:/mseide-msegui/
  \home\fred\mseide-msegui\
 filefilterindex=-1
 filefilter=
@@ -68,24 +69,24 @@ values0=1
 width0=94
 sortdescend0=0
 values1=1
- apps\ide\lang\lang_fr\
+ C:\mseide-msegui\apps\ide\lang\output\
 width1=543
 sortdescend1=0
 [projectfo.datafilename]
 filenames=1
- \home\fred\mseide-msegui\apps\ide\lang\lang_fr\mseide_i18n.trd
+ /C:/mseide-msegui/apps/ide/lang/lang_fr/mseide_i18n.trd
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=\home\fred\mseide-msegui\apps\ide\lang\lang_fr\
+lastdir=/C:/mseide-msegui/apps/ide/lang/lang_fr/
 filefilterindex=-1
 filefilter=*.trd
 [projectfo.grid]
 propcolwidthref=541
 values0=86
- 
+ watchpointsfo
  watchfo
  toolhandlermo
  threadsfo
