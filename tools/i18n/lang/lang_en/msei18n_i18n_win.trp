@@ -2,13 +2,13 @@
 colcount=6
 [projectfo.unitsdir]
 filenames=1
- \home\fred\mseide-msegui\
+ /home/fred/mseide-msegui/
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=\home\fred\mseide-msegui\
+lastdir=/home/fred/mseide-msegui/
 filehistory=1
  \home\fred\mseide-msegui\
 filefilterindex=-1
@@ -62,22 +62,24 @@ value=1
 [projectfo.makecommand]
 value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
-propcolwidthref=754
+propcolwidthref=215
 values0=1
  en
 width0=94
 sortdescend0=0
 values1=1
  \home\fred\mseide-msegui\tools\i18n\lang\lang_en\
+width1=539
+sortdescend1=0
 [projectfo.datafilename]
 filenames=1
- \home\fred\mseide-msegui\tools\i18n\lang\lang_en\msei18n_i18n.trd
+ /home/fred/mseide-msegui/tools/i18n/lang/lang_en/msei18n_i18n.trd
 filecolwidth=174
 x=0
 y=0
 cx=0
 cy=0
-lastdir=\home\fred\mseide-msegui\tools\i18n\lang\lang_en\
+lastdir=/home/fred/mseide-msegui/tools/i18n/lang/lang_en/
 filefilterindex=0
 filefilter=*.trd
 [projectfo.grid]

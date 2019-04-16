@@ -63,7 +63,7 @@ begin
 {$ifdef mse_i18n}
   Gettext.GetLanguageIDs(MSELang,MSEFallbackLang);
                
- MSEFallbackLang := 'fr';
+ // MSEFallbackLang := 'fr';
 
  if not loadlangunit('.' + directoryseparator + 'lang' + directoryseparator+ 
  'lang_' + MSEFallbackLang + directoryseparator+

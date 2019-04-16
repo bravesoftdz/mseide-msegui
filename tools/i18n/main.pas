@@ -736,7 +736,7 @@ begin
   mstr1:= mstr1+c[ord(sc_noproject)];
  end
  else begin
-  mstr1:= mstr1+msefileutils.filepath(projectfo.projectstat.filename);
+  mstr1:= mstr1+tosysfilepath(msefileutils.filepath(projectfo.projectstat.filename));
  end;
  caption:= mstr1 + ')';
 end;
@@ -941,7 +941,7 @@ begin
   projectfo.unitsdir.frame.colorclient := cl_ltyellow;
   projectfo.datafilename.frame.colorclient := cl_ltyellow;
   projectfo.dir.frame.colorclient := cl_ltyellow;
-  projectfo.visible := true;
+  onprojectedit(nil);
   projectfo.bringtofront;
   application.processmessages;
  end;
@@ -1668,7 +1668,7 @@ begin
  rootnode.clear;
  try
   for int1:= 0 to projectfo.grid.rowcount - 1 do begin
-   file1:= tmsefilestream.create(projectfo.unitsdir.value+projectfo.filename[int1]);
+   file1:= tmsefilestream.create(tosysfilepath(projectfo.unitsdir.value+projectfo.filename[int1]));
   // writeln(projectfo.unitsdir.value+projectfo.filename[int1]);
    case resfilekindty(projectfo.filekind[int1]) of
     rfk_module: begin
@@ -1712,7 +1712,7 @@ if projloaded then begin
   projectfo.unitsdir.frame.colorclient := cl_ltyellow;
   projectfo.datafilename.frame.colorclient := cl_ltyellow;
   projectfo.dir.frame.colorclient := cl_ltyellow;
-  projectfo.visible := true;
+  onprojectedit(nil);
   projectfo.bringtofront;
   application.processmessages;
      
@@ -1894,14 +1894,14 @@ begin
   if error then break;
   rootnode.transferlang(int1);
   try
-   addmessage(c[ord(sc_making)]+' "'+projectfo.dir[int1]+'".'+lineend);
+   addmessage(c[ord(sc_making)]+' "'+tosysfilepath(projectfo.dir[int1])+'".'+lineend);
    modulenames:= nil;
    resourcenames:= nil;
    for int2:= 0 to projectfo.grid.rowcount - 1 do begin
     if error then break;
     node:= nil;
-    afilename:= filepath(projectfo.dir[int1],msefileutils.filename(projectfo.filename[int2]));
-    if issamefilename(afilename,filepath(projectfo.filename[int2])) then begin
+    afilename:= tosysfilepath(filepath(projectfo.dir[int1],msefileutils.filename(projectfo.filename[int2])));
+    if issamefilename(afilename,tosysfilepath(filepath(projectfo.filename[int2]))) then begin
      addmessage(afilename+' '+c[ord(sc_overwritesitself)]+'.');
      error:= true;
      break;
@@ -1916,7 +1916,7 @@ begin
     if node <> nil then begin
      case resfilekindty(projectfo.filekind[int2]) of
       rfk_resource: begin
-       stream:= tmsefilestream.Create(projectfo.filename[int2],fm_read);
+       stream:= tmsefilestream.Create(tosysfilepath(projectfo.filename[int2]),fm_read);
        try
         stream1:= tmsefilestream.Create(removefileext(afilename)+drcext,fm_create);
         try
@@ -1940,7 +1940,7 @@ begin
        additem(resourcenames,str1);
       end;
       rfk_unit: begin
-       stream:= tmsefilestream.Create(projectfo.filename[int2],fm_read);
+       stream:= tmsefilestream.Create(tosysfilepath(projectfo.filename[int2]),fm_read);
        try
         stream1:= tmsefilestream.Create(afilename,fm_create);
         try
@@ -1997,10 +1997,10 @@ begin
          mstr1:= 'lib'+mstr1+'.so';
          {$endif}
          {$ifdef mswindows}
-         copyfile(mstr1,'../'+mstr1,true);
+          // copyfile(mstr1,'..\'+mstr1,true);
          {$else}
          fpsystem('chmod 777 '+mstr1);
-         fpsystem('cp -f '+mstr1+' '+'../'+mstr1);
+         // fpsystem('cp -f '+mstr1+' '+'../'+mstr1);
          {$endif}
         end;
        end;
@@ -2095,7 +2095,7 @@ begin
    projectfo.unitsdir.frame.colorclient := cl_ltyellow;
   projectfo.datafilename.frame.colorclient := cl_ltyellow;
   projectfo.dir.frame.colorclient := cl_ltyellow;
-  projectfo.visible := true;
+  onprojectedit(sender);
   projectfo.bringtofront;
   application.processmessages;
   end;

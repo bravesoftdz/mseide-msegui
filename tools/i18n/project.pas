@@ -49,7 +49,7 @@ type
    memopoheader: tmemodialogedit;
    unitsdir: tfilenameedit;
    splitter: tsplitter;
-   dir: tdirdropdownedit;
+   dir: tfilenameedit;
    procedure projectstatonupdatestat(const sender: TObject; 
                       const filer: tstatfiler);
    procedure projectstatonafterreadstat(const sender: tobject);
@@ -118,13 +118,13 @@ begin
  try
   mainfo.loadproject;
  except
+  application.handleexception(nil);
   unitsdir.frame.colorclient := cl_ltyellow;
   datafilename.frame.colorclient := cl_ltyellow;
   dir.frame.colorclient := cl_ltyellow;
-  visible := true;
+  mainfo.onprojectedit(sender);
   application.processmessages;
-  application.handleexception(nil);
- end;
+  end;
  {
  for int1:= 0 to high(colwidths) do begin
   if int1 >= mainfo.grid.datacols.count + variantshift then begin

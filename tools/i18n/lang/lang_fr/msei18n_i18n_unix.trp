@@ -62,13 +62,15 @@ value=1
 [projectfo.makecommand]
 value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
-propcolwidthref=211
+propcolwidthref=10
 values0=1
  fr
 width0=94
 sortdescend0=0
 values1=1
- Z:tools\i18n\lang\lang_fr\
+ /home/fred/mseide-msegui/tools/i18n/lang/lang_fr/output/
+width1=744
+sortdescend1=0
 [projectfo.datafilename]
 filenames=1
  /home/fred/mseide-msegui/tools/i18n/lang/lang_fr/msei18n_i18n.trd
@@ -92,7 +94,7 @@ values0=6
 width0=71
 sortdescend0=0
 values1=6
- tools\i18n\main.mfm
+ tools/i18n/main.mfm
  /lib/common/dialogs/msememodialog.mfm
  /tools/i18n/messagesform.mfm
  /tools/i18n/project.mfm

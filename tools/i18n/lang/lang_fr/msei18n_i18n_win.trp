@@ -62,13 +62,13 @@ value=1
 [projectfo.makecommand]
 value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
 [projectfo.grid2]
-propcolwidthref=211
+propcolwidthref=215
 values0=1
  fr
 width0=94
 sortdescend0=0
 values1=1
- /Z:/home/fred/mseide-msegui/tools/i18n/lang/lang_fr/
+ Z:\home\fred\mseide-msegui\tools\i18n\lang\lang_fr\output\
 width1=539
 sortdescend1=0
 [projectfo.datafilename]
