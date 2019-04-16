@@ -36,7 +36,6 @@ type
    impexpfiledialog: tfiledialog;
    grid2: twidgetgrid;
    lang: tstringedit;
-   dir: tdirdropdownedit;
    rootname: tstringedit;
    makecommand: tmemodialogedit;
    makeon: tbooleanedit;
@@ -50,6 +49,7 @@ type
    memopoheader: tmemodialogedit;
    unitsdir: tfilenameedit;
    splitter: tsplitter;
+   dir: tdirdropdownedit;
    procedure projectstatonupdatestat(const sender: TObject; 
                       const filer: tstatfiler);
    procedure projectstatonafterreadstat(const sender: tobject);

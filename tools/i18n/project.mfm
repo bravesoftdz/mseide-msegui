@@ -2,8 +2,8 @@ object projectfo: tprojectfo
   optionswidget = [ow_arrowfocus, ow_subfocus, ow_destroywidgets, ow_hinton]
   onactivate = onactiv
   visible = False
-  bounds_x = 463
-  bounds_y = 137
+  bounds_x = 375
+  bounds_y = 83
   bounds_cx = 646
   bounds_cy = 561
   container.optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousetransparent, ow_destroywidgets]
@@ -143,6 +143,7 @@ object projectfo: tprojectfo
       bounds_cy = 16
       ondataentered = filenamedataentered
       onsetvalue = onsetval
+      controller.options = [fdo_sysfilename, fdo_savelastdir]
       controller.historymaxcount = 0
       controller.captionopen = 'Select unit or form file'
       reffontheight = 14
@@ -209,6 +210,7 @@ object projectfo: tprojectfo
       )
     )
     controller.defaultext = 'trd'
+    controller.options = [fdo_sysfilename, fdo_savelastdir]
     controller.historymaxcount = 0
     reffontheight = 14
   end
@@ -246,8 +248,7 @@ object projectfo: tprojectfo
         dataclass = tgridmsestringdatalist
       end    
       item[dir]
-        width = 546
-        options = [co_fill, co_savevalue]
+        width = 539
         widgetname = 'dir'
         dataclass = tgridmsestringdatalist
       end>
@@ -270,21 +271,23 @@ object projectfo: tprojectfo
       reffontheight = 14
     end
     object dir: tdirdropdownedit
+      optionswidget1 = [ow1_fontglyphheight]
+      optionsskin = [osk_framebuttononly]
       frame.levelo = 0
-      frame.colorclient = -2147483646
-      frame.localprops = [frl_levelo, frl_colorclient]
+      frame.colorclient = -2147483645
+      frame.localprops = [frl_levelo, frl_leveli, frl_colorclient]
       frame.localprops1 = []
-      frame.button.color = -2147483646
+      frame.button.color = -1879048187
       frame.buttons.count = 1
       frame.buttons.items = <      
         item
-          color = -2147483646
+          color = -1879048187
         end>
       taborder = 2
       visible = False
       bounds_x = 95
       bounds_y = 0
-      bounds_cx = 546
+      bounds_cx = 539
       bounds_cy = 16
       reffontheight = 14
     end
@@ -504,7 +507,7 @@ object projectfo: tprojectfo
     bounds_cy = 37
     anchors = [an_left, an_top, an_right]
     statfile = projectstat
-    controller.options = [fdo_directory, fdo_savelastdir]
+    controller.options = [fdo_sysfilename, fdo_directory, fdo_savelastdir]
     reffontheight = 14
   end
   object splitter: tsplitter
@@ -528,6 +531,7 @@ object projectfo: tprojectfo
   end
   object impexpfiledialog: tfiledialog
     controller.filename = 'default.csv'
+    controller.options = [fdo_sysfilename, fdo_savelastdir]
     controller.historymaxcount = 0
     controller.captionopen = 'Open import file'
     controller.captionsave = 'Save export file'

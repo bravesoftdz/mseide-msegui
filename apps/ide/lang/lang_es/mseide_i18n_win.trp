@@ -1,0 +1,362 @@
+[projectfo.projectstat]
+colcount=6
+[projectfo.unitsdir]
+filenames=1
+ /home/fred/mseide-msegui/
+filecolwidth=174
+x=0
+y=0
+cx=0
+cy=0
+lastdir=/home/fred/mseide-msegui/
+filehistory=1
+ /home/fred/mseide-msegui/
+filefilterindex=-1
+filefilter=
+[projectfo.memopoheader]
+value=# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: mseide\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2019-03-04 23:54+0300\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
+[projectfo.memopotheader]
+value=# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: mseide\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2019-03-04 23:54+0300\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
+[projectfo.aftermake]
+value=chmod 777 ./*.so; rm -f ../*.so; cp -f ./*.so ../;
+[projectfo.beforemake]
+value=rm -f ./*.so
+[projectfo.destname]
+value=
+[projectfo.makeon]
+value=1
+[projectfo.makecommand]
+value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
+[projectfo.grid2]
+propcolwidthref=789
+values0=1
+ en
+width0=94
+sortdescend0=0
+values1=1
+ \home\fred\mseide-msegui\apps\ide\lang_en\
+[projectfo.datafilename]
+filenames=1
+ \home\fred\mseide-msegui\apps\ide\lang_en\mseide_i18n.trd
+filecolwidth=174
+x=0
+y=0
+cx=0
+cy=0
+lastdir=\home\fred\mseide-msegui\apps\ide\lang_en\
+filefilterindex=-1
+filefilter=*.trd
+[projectfo.grid]
+propcolwidthref=541
+values0=86
+ watchpointsfo
+ watchfo
+ toolhandlermo
+ threadsfo
+ templateeditorfo
+ targetconsolefo
+ symbolfo
+ storedcomponentinfodialogfo
+ stackfo
+ sourcepage
+ sourcehintfo
+ sourcefo
+ settaborderfo
+ setcreateorderfo
+ selectsubmoduledialogfo
+ selecteditpagefo
+ reportdesignerfo
+ replacedialogfo
+ projecttreefo
+ projectoptionsfo
+ programparametersfo
+ printfo
+ idepanelfo
+ objectinspectorfo
+ msetemplateselectfo
+ mseparamentryfo
+ compnametreefo
+ messagefo
+ memoryfo
+ mainfo
+ guitemplatesmo
+ formdesignerfo
+ findinfilepagefo
+ findinfilefo
+ findinfileadialogfo
+ finddialogfo
+ disassfo
+ debuggerfo
+ cpuc86_64fo
+ cpurl78fo
+ cpui386fo
+ cpufo
+ cpucpu32fo
+ cpuavr32fo
+ cpuarmm3fo
+ cpuarmfo
+ componentstorefo
+ componentpalettefo
+ commandlinefo
+ breakpointsfo
+ actionsmo
+ msetexteditorfo
+ msetaborderoverrideeditorfo
+ msesysenvmanagereditorfo
+ stringlisteditor
+ msestringintlisteditor
+ settingsfo
+ richstringeditorfo
+ reallisteditor
+ msepropertyeditorsmo
+ integerlisteditor
+ mseindexlookupeditorfo
+ imageselectorfo
+ imagelisteditorfo
+ iircoeffeditorfo
+ mseififieldeditorfo
+ mseificlienteditorfo
+ fircoeffeditorfo
+ fadeeditfo
+ faceselectorfo
+ doublestringlisteditor
+ doublereallisteditor
+ msedbfieldeditorfo
+ msecornermaskeditorfo
+ colordialogfo
+ dirtreefo
+ dirtreesubfo
+ filedialogfo
+ filedialogres
+ fontformatdialogfo
+ integerenterfo
+ msememodialogfo
+ msepopupcalendarfo
+ realenterfo
+ mseshortcutdialogfo
+ stringenterfo
+width0=201
+sortdescend0=0
+values1=86
+ \apps\ide\watchpointsform.mfm
+ \apps\ide\watchform.mfm
+ \apps\ide\toolhandlermodule.mfm
+ \apps\ide\threadsform.mfm
+ \apps\ide\templateeditor.mfm
+ \apps\ide\targetconsole.mfm
+ \apps\ide\symbolform.mfm
+ \apps\ide\storedcomponentinfodialog.mfm
+ \apps\ide\stackform.mfm
+ \apps\ide\sourcepage.mfm
+ \apps\ide\sourcehintform.mfm
+ \apps\ide\sourceform.mfm
+ \apps\ide\settaborderform.mfm
+ \apps\ide\setcreateorderform.mfm
+ \apps\ide\selectsubmoduledialogform.mfm
+ \apps\ide\selecteditpageform.mfm
+ \apps\ide\reportdesigner.mfm
+ \apps\ide\replacedialogform.mfm
+ \apps\ide\projecttreeform.mfm
+ \apps\ide\projectoptionsform.mfm
+ \apps\ide\programparametersform.mfm
+ \apps\ide\printform.mfm
+ \apps\ide\panelform2.mfm
+ \apps\ide\objectinspector.mfm
+ \apps\ide\msetemplateselectform.mfm
+ \apps\ide\mseparamentryform.mfm
+ \apps\ide\msecomptree.mfm
+ \apps\ide\messageform.mfm
+ \apps\ide\memoryform.mfm
+ \apps\ide\main.mfm
+ \apps\ide\guitemplates.mfm
+ \apps\ide\formdesigner.mfm
+ \apps\ide\findinfilepage.mfm
+ \apps\ide\findinfileform.mfm
+ \apps\ide\findinfiledialogform.mfm
+ \apps\ide\finddialogform.mfm
+ \apps\ide\disassform.mfm
+ \apps\ide\debuggerform.mfm
+ \apps\ide\cpux86_64form.mfm
+ \apps\ide\cpurl78form.mfm
+ \apps\ide\cpui386form.mfm
+ \apps\ide\cpuform.mfm
+ \apps\ide\cpucpu32form.mfm
+ \apps\ide\cpuavr32form.mfm
+ \apps\ide\cpuarmm3form.mfm
+ \apps\ide\cpuarmform.mfm
+ \apps\ide\componentstore.mfm
+ \apps\ide\componentpaletteform.mfm
+ \apps\ide\commandlineform.mfm
+ \apps\ide\breakpointsform.mfm
+ \apps\ide\actionsmodule.mfm 
+ \lib\common\designutils\msetexteditor.mfm
+ \lib\common\designutils\msetaborderoverrideeditor.mfm
+ \lib\common\designutils\msesysenvmanagereditor.mfm
+ \lib\common\designutils\msestringlisteditor.mfm
+ \lib\common\designutils\msestringintlisteditor.mfm
+ \lib\common\designutils\msesettings.mfm
+ \lib\common\designutils\mserichstringeditor.mfm
+ \lib\common\designutils\msereallisteditor.mfm
+ \lib\common\designutils\msepropertyeditorsmodule.mfm
+ \lib\common\designutils\mseintegerlisteditor.mfm
+ \lib\common\designutils\mseindexlookupeditor.mfm
+ \lib\common\designutils\mseimageselectorform.mfm
+ \lib\common\designutils\mseimagelisteditor.mfm
+ \lib\common\designutils\mseiircoeffeditor.mfm
+ \lib\common\designutils\mseififieldeditor.mfm
+ \lib\common\designutils\mseificlienteditor.mfm
+ \lib\common\designutils\msefircoeffeditor.mfm
+ \lib\common\designutils\msefadeedit.mfm
+ \lib\common\designutils\msefaceselectorform.mfm
+ \lib\common\designutils\msedoublestringlisteditor.mfm
+ \lib\common\designutils\msedoublereallisteditor.mfm
+ \lib\common\designutils\msedbfieldeditor.mfm
+ \lib\common\designutils\msecornermaskeditor.mfm
+ \lib\common\dialogs\msecolordialog.mfm
+ \lib\common\dialogs\msedirtree.mfm
+ \lib\common\dialogs\msedirtreesub.mfm
+ \lib\common\dialogs\msefiledialog.mfm
+ \lib\common\dialogs\msefiledialogres.mfm
+ \lib\common\dialogs\msefontformatdialog.mfm
+ \lib\common\dialogs\mseintegerenter.mfm
+ \lib\common\dialogs\msememodialog.mfm
+ \lib\common\dialogs\msepopupcalendar.mfm
+ \lib\common\dialogs\mserealenter.mfm
+ \lib\common\dialogs\mseshortcutdialog.mfm
+ \lib\common\dialogs\msestringenter.mfm
+values2=86
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+values2_ci=-1
+width2=126
+sortdescend2=0
+[projectfo.impexpencoding]
+value=1
+[projectfo]
+x=213
+y=61
+cx=883
+cy=575
+wsize=0
+active=0
+visible=0
+[mainfo.coloron]
+value=1

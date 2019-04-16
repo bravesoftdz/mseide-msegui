@@ -886,6 +886,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid,filename,bounds_cy",vaInt8,F,,16,
 "projectfo,grid,filename,ondataentered",vaIdent,F,,filenamedataentered,
 "projectfo,grid,filename,onsetvalue",vaIdent,F,,onsetval,
+"projectfo,grid,filename,controller.options",vaSet,F,,"[fdo_sysfilename,fdo_savelastdir]"
 "projectfo,grid,filename,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,grid,filename,controller.captionopen",vaString,F,,Select unit or form file,Sélectionnez le fichier d'unité ou de forme
 "projectfo,grid,filename,reffontheight",vaInt8,F,,14,
@@ -942,6 +943,7 @@ projectfo,vaNull,F,,,
 "projectfo,datafilename,controller.filterlist.data,1:,0:",vaString,F,,All files,Tous les fichiers
 "projectfo,datafilename,controller.filterlist.data,1:,1:",vaString,T,,"""*""",*
 "projectfo,datafilename,controller.defaultext",vaString,T,,trd,trd
+"projectfo,datafilename,controller.options",vaSet,F,,"[fdo_sysfilename,fdo_savelastdir]"
 "projectfo,datafilename,controller.historymaxcount",vaInt8,F,,0,
 "projectfo,datafilename,reffontheight",vaInt8,F,,14,
 "projectfo,grid2",vaNull,F,,,
@@ -974,8 +976,7 @@ projectfo,vaNull,F,,,
 "projectfo,grid2,datacols.items,lang,widgetname",vaString,T,,lang,lang
 "projectfo,grid2,datacols.items,lang,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "projectfo,grid2,datacols.items,dir",vaList,F,,,
-"projectfo,grid2,datacols.items,dir,width",vaInt16,F,,546,
-"projectfo,grid2,datacols.items,dir,options",vaSet,F,,"[co_fill,co_savevalue]",
+"projectfo,grid2,datacols.items,dir,width",vaInt16,F,,543,
 "projectfo,grid2,datacols.items,dir,widgetname",vaString,T,,dir,dir
 "projectfo,grid2,datacols.items,dir,dataclass",vaIdent,F,,tgridmsestringdatalist,
 "projectfo,grid2,datarowheight",vaInt8,F,,16,
@@ -996,21 +997,30 @@ projectfo,vaNull,F,,,
 "projectfo,grid2,lang,bounds_cy",vaInt8,F,,16,
 "projectfo,grid2,lang,reffontheight",vaInt8,F,,14,
 "projectfo,grid2,dir",vaNull,F,,,
+"projectfo,grid2,dir,optionswidget1",vaSet,F,,[ow1_fontglyphheight]
+"projectfo,grid2,dir,optionsskin",vaSet,F,,[osk_framebuttononly]
 "projectfo,grid2,dir,frame.levelo",vaInt8,F,,0,
-"projectfo,grid2,dir,frame.colorclient",vaInt32,F,,-2147483646,
-"projectfo,grid2,dir,frame.localprops",vaSet,F,,"[frl_levelo,frl_colorclient]",
+"projectfo,grid2,dir,frame.colorclient",vaInt32,F,,-2147483645,
+"projectfo,grid2,dir,frame.localprops",vaSet,F,,"[frl_levelo,frl_leveli,frl_colorclient]",
 "projectfo,grid2,dir,frame.localprops1",vaSet,F,,[],
-"projectfo,grid2,dir,frame.button.color",vaInt32,F,,-2147483646,
 "projectfo,grid2,dir,frame.buttons.count",vaInt8,F,,1,
 "projectfo,grid2,dir,frame.buttons.items",vaCollection,F,,,
 "projectfo,grid2,dir,frame.buttons.items,0:",vaList,F,,,
-"projectfo,grid2,dir,frame.buttons.items,0:,color",vaInt32,F,,-2147483646,
+"projectfo,grid2,dir,frame.buttons.items,0:,color",vaInt32,F,,-1879048187,
+"projectfo,grid2,dir,frame.buttons.items,0:,imagenr",vaInt8,F,,17
+"projectfo,grid2,dir,frame.button.color",vaInt32,F,,-1879048187,
+"projectfo,grid2,dir,frame.button.imagenr",vaInt8,F,,17
 "projectfo,grid2,dir,taborder",vaInt8,F,,2,
 "projectfo,grid2,dir,visible",vaFalse,F,,,
 "projectfo,grid2,dir,bounds_x",vaInt8,F,,95,
 "projectfo,grid2,dir,bounds_y",vaInt8,F,,0,
-"projectfo,grid2,dir,bounds_cx",vaInt16,F,,546,
+"projectfo,grid2,dir,bounds_cx",vaInt16,F,,543,
 "projectfo,grid2,dir,bounds_cy",vaInt8,F,,16,
+"projectfo,grid2,dir,ondataentered",vaIdent,F,,filenamedataentered
+"projectfo,grid2,dir,onsetvalue",vaIdent,F,,onsetval
+"projectfo,grid2,dir,controller.options",vaSet,F,,"[fdo_sysfilename,fdo_directory,fdo_savelastdir]"
+"projectfo,grid2,dir,controller.historymaxcount",vaInt8,F,,0
+"projectfo,grid2,dir,controller.captionopen",vaString,F,,Select directory,Select directory
 "projectfo,grid2,dir,reffontheight",vaInt8,F,,14,
 "projectfo,makecommand",vaNull,F,,,
 "projectfo,makecommand,frame.caption",vaString,F,,Make command,Commande de création
@@ -1272,7 +1282,7 @@ msgstr """"
 "projectfo,unitsdir,bounds_cy",vaInt8,F,,37,
 "projectfo,unitsdir,anchors",vaSet,F,,"[an_left,an_top,an_right]",
 "projectfo,unitsdir,statfile",vaIdent,F,,projectstat,
-"projectfo,unitsdir,controller.options",vaSet,F,,"[fdo_directory,fdo_savelastdir]",
+"projectfo,unitsdir,controller.options",vaSet,F,,"[fdo_sysfilename,fdo_directory,fdo_savelastdir]",
 "projectfo,unitsdir,reffontheight",vaInt8,F,,14,
 "projectfo,splitter",vaNull,F,,,
 "projectfo,splitter,color",vaInt32,F,,-1879048189,
@@ -2169,7 +2179,7 @@ end."
 "headerfo,outputdir,bounds_y",vaInt16,F,,159,
 "headerfo,outputdir,bounds_cx",vaInt16,F,,164,
 "headerfo,outputdir,bounds_cy",vaInt8,F,,37,
-"headerfo,outputdir,controller.options",vaSet,F,,[fdo_directory],
+"headerfo,outputdir,controller.options",vaSet,F,,"[fdo_sysfilename,fdo_directory]",
 "headerfo,outputdir,reffontheight",vaInt8,F,,14,
 "headerfo,paneldone",vaNull,F,,,
 "headerfo,paneldone,frame.colorclient",vaInt32,F,,16765345,

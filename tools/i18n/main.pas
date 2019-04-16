@@ -937,12 +937,13 @@ begin
   result:= msestring(node.info.name);
   rootnode.add(node);
  except
+  application.handleexception(self,c[ord(sc_cannotreadmodule)]+' '+stream.filename+':');
   projectfo.unitsdir.frame.colorclient := cl_ltyellow;
   projectfo.datafilename.frame.colorclient := cl_ltyellow;
   projectfo.dir.frame.colorclient := cl_ltyellow;
   projectfo.visible := true;
+  projectfo.bringtofront;
   application.processmessages;
-  application.handleexception(self,c[ord(sc_cannotreadmodule)]+' '+stream.filename+':');
  end;
  memstream.Free;
  stream.Free;
@@ -1708,11 +1709,11 @@ if projloaded then begin
   application.processmessages;
   }
    application.handleexception(self);
-  application.processmessages;
   projectfo.unitsdir.frame.colorclient := cl_ltyellow;
   projectfo.datafilename.frame.colorclient := cl_ltyellow;
   projectfo.dir.frame.colorclient := cl_ltyellow;
   projectfo.visible := true;
+  projectfo.bringtofront;
   application.processmessages;
      
   end;
@@ -2090,12 +2091,13 @@ begin
   try
    setcurrentdirmse(filedir(mstr1));
   except
-  projectfo.unitsdir.frame.colorclient := cl_ltyellow;
+  application.handleexception(nil);
+   projectfo.unitsdir.frame.colorclient := cl_ltyellow;
   projectfo.datafilename.frame.colorclient := cl_ltyellow;
   projectfo.dir.frame.colorclient := cl_ltyellow;
   projectfo.visible := true;
+  projectfo.bringtofront;
   application.processmessages;
-   application.handleexception(nil);
   end;
  end;
  if filer.iswriter then begin

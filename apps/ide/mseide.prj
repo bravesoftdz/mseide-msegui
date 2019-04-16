@@ -775,7 +775,6 @@ finddtext=
 findhistory=0
 findoptions=1
 editpos=21
- 0,5
  0,-1073741823
  0,-1073741823
  0,-1073741823
@@ -794,8 +793,9 @@ editpos=21
  0,-1073741823
  0,-1073741823
  0,-1073741823
+ 0,3
  0,-1073741823
- 21,30
+ 0,30
 bookmarks0=0
 bookmarks1=0
 bookmarks2=0
@@ -836,7 +836,7 @@ sourcefiles=21
  ${PROJECTDIR}/main.pas
  ${PROJECTDIR}/projectoptionsform.pas
  ${PROJECTDIR}/main.pas
- ${PROJECTDIR}/projectoptionsform.pas
+ /home/fred/mseide-msegui/apps/ide/projectoptionsform.pas
  ${PROJECTDIR}/mseide.pas
  /home/fred/mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
 relpaths=21
@@ -913,9 +913,9 @@ nomenumodules=6
  0
 [sourcefo.files_tab]
 firsttab=12
-index=20
+index=18
 [layout]
-windowlayout=604
+windowlayout=605
  [mainfo.basedock]
  splitdir=2
  useroptions=268450944
@@ -1382,8 +1382,9 @@ windowlayout=604
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
- history=1
+ value=/home/fred/mseide-msegui/apps/ide/projectoptionsform.pas
+ history=2
+  /home/fred/mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
   /home/fred/mseide-msegui/apps/ide/main.pas
  [debuggerfo.project_options]
  value=5
@@ -1407,7 +1408,7 @@ windowlayout=604
  rcy=0
  [sourcefo.files_tab]
  firsttab=12
- index=20
+ index=18
  [cpuc86_64fo]
  irqoff=0
  splitdir=0

@@ -1,0 +1,124 @@
+[projectfo.projectstat]
+colcount=6
+[projectfo.unitsdir]
+filenames=1
+ /home/fred/mseide-msegui/
+filecolwidth=174
+x=0
+y=0
+cx=0
+cy=0
+lastdir=/home/fred/mseide-msegui/
+filehistory=1
+ \home\fred\mseide-msegui\
+filefilterindex=-1
+filefilter=
+[projectfo.memopoheader]
+value=# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: msei18n\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2019-03-04 23:54+0300\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text\plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
+[projectfo.memopotheader]
+value=# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: msei18n\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2019-03-04 23:54+0300\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text\plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
+[projectfo.aftermake]
+value=
+[projectfo.beforemake]
+value=
+[projectfo.destname]
+value=
+[projectfo.makeon]
+value=1
+[projectfo.makecommand]
+value=${COMPILER} -Fu${MSELIBDIR}i18n ${LIBFILE} -fPIC -k-gc-sections
+[projectfo.grid2]
+propcolwidthref=211
+values0=1
+ fr
+width0=94
+sortdescend0=0
+values1=1
+ /Z:/home/fred/mseide-msegui/tools/i18n/lang/lang_fr/
+width1=539
+sortdescend1=0
+[projectfo.datafilename]
+filenames=1
+ /home/fred/mseide-msegui/tools/i18n/lang/lang_fr/msei18n_i18n.trd
+filecolwidth=174
+x=0
+y=0
+cx=0
+cy=0
+lastdir=/home/fred/mseide-msegui/tools/i18n/lang/lang_fr/
+filefilterindex=0
+filefilter=*.trd
+[projectfo.grid]
+propcolwidthref=651
+values0=6
+ mainfo
+ msememodialogfo
+ messagesfo
+ projectfo
+ settingsfo
+ headerfo
+width0=71
+sortdescend0=0
+values1=6
+ tools\i18n\main.mfm
+ \lib\common\dialogs\msememodialog.mfm
+ \tools\i18n\messagesform.mfm
+ \tools\i18n\project.mfm
+ \lib\common\designutils\msesettings.mfm
+ \tools\i18n\headerform.mfm
+values2=6
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+values2_ci=-1
+width2=126
+sortdescend2=0
+[projectfo.impexpencoding]
+value=1
+[projectfo]
+x=247
+y=73
+cx=848
+cy=615
+wsize=0
+active=0
+visible=0
+[mainfo.coloron]
+value=1
