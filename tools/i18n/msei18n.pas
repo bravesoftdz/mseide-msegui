@@ -28,7 +28,7 @@ uses
 
  {$ifdef mse_i18n}
   gettext,msei18nutils,msestrings,mseconsts,
-  //{
+  { // All lang registered
   mseconsts_af,mseconsts_am,mseconsts_an,mseconsts_ar,mseconsts_as,
   mseconsts_ast,mseconsts_az,mseconsts_be,mseconsts_bg,mseconsts_bn,
   mseconsts_br,mseconsts_bs,mseconsts_ca,mseconsts_crh,mseconsts_cs,
@@ -49,7 +49,10 @@ uses
   mseconsts_tk,mseconsts_tr,mseconsts_ug,mseconsts_uk,mseconsts_uz,
   mseconsts_uz_Latn,mseconsts_vi,mseconsts_wa,mseconsts_xh,mseconsts_zh,
   mseconsts_zh_HK,mseconsts_zh_TW,
-  //}
+  }
+  
+  mseconsts_de, mseconsts_es, mseconsts_fr, mseconsts_ru,
+
   {$endif}
  
   main,messagesform,project,headerform;
