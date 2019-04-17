@@ -854,7 +854,7 @@ editpos=8
  0,-1073741823
  0,-1073741823
  0,-1073741823
- 0,23
+ 0,666
  0,21
  0,-1073741823
  0,-1073741823
@@ -904,7 +904,7 @@ nomenumodules=1
  0
 [sourcefo.files_tab]
 firsttab=3
-index=4
+index=3
 [layout]
 windowlayout=566
  [mainfo.basedock]
@@ -1373,7 +1373,7 @@ windowlayout=566
  [debuggerfo.edit_compiler]
  value=Pascal
  [debuggerfo.file_history]
- value=/home/fred/mseide-msegui/tools/i18n/project.pas
+ value=/home/fred/mseide-msegui/tools/i18n/main.pas
  history=20
   /home/fred/mseide-msegui/tools/i18n/project.pas
   /home/fred/mseide-msegui/tools/i18n/mseresourceparser.pas
@@ -1396,7 +1396,7 @@ windowlayout=566
   /home/fred/mseide-msegui/tools/i18n/lang/lang_de/msei18n_i18n.csv
   /home/fred/mseide-msegui/tools/i18n/lang/lang_en/msei18n_i18n_win.trp
  [debuggerfo.project_options]
- value=5
+ value=1
  [debuggerfo.hints]
  value=0
  [sourcefo]
@@ -1417,7 +1417,7 @@ windowlayout=566
  rcy=0
  [sourcefo.files_tab]
  firsttab=3
- index=4
+ index=3
  [cpuc86_64fo]
  irqoff=0
  splitdir=0

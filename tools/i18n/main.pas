@@ -344,8 +344,8 @@ begin
         if utf8copy(str2,1,1) = '"' then 
          begin
          str2 :=  (utf8copy(str2,1,utf8length(str2)-1)) ;
-         astro := (utf8copy(str2,2,utf8pos('",',str2)-1)) ;
-         astrt := (utf8copy(str2,utf8pos('",',str2)+2,utf8length(str2)-1-utf8pos('",',str2))) ; 
+         astro := (utf8copy(str2,2,utf8pos('",',str2)-2)) ;
+         astrt := (utf8copy(str2,utf8pos('",',str2)+3,utf8length(str2)-2-utf8pos('",',str2))) ; 
          hasvirg := true;
          end else
          begin 
@@ -355,23 +355,11 @@ begin
           
          if  (hasvirg = true)  then
          begin
-          nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, '\', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, '/', '', [rfReplaceAll]);
-          nodo := utf8StringReplace(nodo, ',', '', [rfReplaceAll]);
-                                     
-          asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
-          asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
-          asdo := utf8StringReplace(asdo, '\', '', [rfReplaceAll]);
-          asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
-          asdo := utf8StringReplace(asdo, '/', '', [rfReplaceAll]);
-          asdo := utf8StringReplace(asdo, ',', '', [rfReplaceAll]);
-          
-           //writeln(nodo);
-           //writeln(asdo);
-           
+          nodo := utf8StringReplace(valuetext, #10, '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo, #13, '', [rfReplaceAll]);
+          asdo := utf8StringReplace(astro, #10, '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, #13, '', [rfReplaceAll]);
+                   
           if (trim(valuetext) <> '') and 
           (trim((nodo)) = trim((asdo))) and  
           (utf8pos(copy(rootstring(','), 1 ,utf8length(rootstring(','))-12),acomp) > 1) and
@@ -430,7 +418,7 @@ begin
          astrt := astrtemp;
          anont := anonttemp;
          acom := acomtmp;
-         astrt := utf8trim(astrt);
+     //    astrt := utf8trim(astrt);
          astrt := utf8StringReplace(astrt, '""', '|', [rfReplaceAll]);
          astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]);
          astrt := utf8StringReplace(astrt, '|', '"', [rfReplaceAll]);
@@ -487,10 +475,8 @@ begin
      if (hasfoundtext = true) then
        begin
             
-         astrt := utf8trim(astrt);
+       //  astrt := utf8trim(astrt);
          astrt := utf8StringReplace(astrt, '""', '"', [rfReplaceAll]);
-        // astrt := utf8StringReplace(astrt, '"', '', [rfReplaceAll]);
-       //  astrt := utf8StringReplace(astrt, '|', '"', [rfReplaceAll]);
          astrt := utf8trim(astrt); 
                             
       if (trim(valuetext) = '') and (typedisp[aindex] = 6) then
@@ -522,16 +508,19 @@ begin
          astrt := utf8copy(str2,1,length(str2)) ;  
          astrt := utf8StringReplace(astrt,  '\"', '"', [rfReplaceAll]);  
        
-          nodo := utf8StringReplace(valuetext, sLineBreak, '', [rfReplaceAll]);
+          nodo := utf8StringReplace(valuetext, #10, '', [rfReplaceAll]);
+          nodo := utf8StringReplace(nodo,#13, '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, ' ', '', [rfReplaceAll]);
           nodo := utf8StringReplace(nodo, '"', '', [rfReplaceAll]);
           
-          asdo := utf8StringReplace(astro, sLineBreak, '', [rfReplaceAll]);
+          asdo := utf8StringReplace(astro, #10, '', [rfReplaceAll]);
+          asdo := utf8StringReplace(asdo, #13, '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, ' ', '', [rfReplaceAll]);
           asdo := utf8StringReplace(asdo, '"', '', [rfReplaceAll]);
          
           int1 := length(rootstring(',')) -12;
-           
+        
+             
              if (trim(valuetext) <> '') and (trim(nodo) = trim(asdo)) and  
                (trim(valuetext) <> trim(astrt))  then 
              begin
@@ -572,7 +561,7 @@ begin
           writeln(astrt);
           writeln(anont);
           }
-         astrt := utf8trim(astrt);
+         // astrt := utf8trim(astrt);
          astrt := utf8StringReplace(astrt, '""', '"', [rfReplaceAll]);
          
           if (utf8copy(valuetext,1,2) <> '" ') and  (utf8copy(astrt,1,2) = '" ') 
@@ -2197,6 +2186,7 @@ procedure tmainfo.beforelangdrawcell(const sender: tcol; const canvas: tcanvas;
                var cellinfo: cellinfoty; var processed: Boolean);
 var
  int1: integer;
+ str1, str2 : utf8string;
  
 begin
  if coloron.value then begin
@@ -2210,9 +2200,18 @@ begin
 //     (system.pos('<',value[row]) > 1) or
 //       (system.pos('<',tstringedit(grid.datacols[col].editwidget)[row]) > 1) then
 //        cellinfo.color:= cl_ltyellow else
-      if (tstringedit(grid.datacols[col].editwidget)[row] = value[row])
-      or (tstringedit(grid.datacols[col].editwidget)[row] = '')        
-       then  cellinfo.color:= cl_ltred
+     str1 := tstringedit(grid.datacols[col].editwidget)[row];
+     str1 := utf8StringReplace(str1, #10, '', [rfReplaceAll]);
+     str1 := utf8StringReplace(str1,#13, '', [rfReplaceAll]);
+   
+     str2 := value[row];
+     str2 := utf8StringReplace(str2, #10, '', [rfReplaceAll]);
+     str2 := utf8StringReplace(str2,#13, '', [rfReplaceAll]);
+   
+     if (str1 = str2) or (str1 = '')        
+       then begin
+         cellinfo.color:= cl_ltred;
+        end
       else cellinfo.color:= cl_ltgreen;
       end;
      //  else 
