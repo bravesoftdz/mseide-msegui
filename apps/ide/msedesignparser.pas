@@ -28,7 +28,7 @@ interface
  {$endif}
 {$endif}
 uses
- mseglob,msedatalist,mselist,mseparser,msetypes,typinfo,msestrings,
+ mseglob,mselist,mseparser,msetypes,typinfo,msestrings,
  msearrayutils;
  
 type
@@ -669,10 +669,11 @@ var
  isfunction: boolean; 
  int1: integer; 
  po1: pchar; 
- {$if FPC_FULLVERSION > 030200}
+ {$if FPC_FULLVERSION > 030100}
  params1: paraminfoarty;
  x : integer;
  {$endif}
+ 
 begin 
  with info do begin 
   kind:= methodkindty(-1); 
@@ -690,7 +691,11 @@ begin
      po1:= @paramlist; 
      for int1:= 0 to paramcount - 1 do begin 
      with params[int1] do begin 
- 
+    
+     {$if FPC_FULLVERSION >= 030100} 
+     {$if declared(AlignTParamFlags)}po1 := AlignTParamFlags(po1);{$endif}
+     {$endif}
+     
      flags:= tparamflags( 
          {$if FPC_FULLVERSION >= 030100} 
        wordset{$else}byteset{$endif}(pbyte(po1)^)); 
@@ -725,7 +730,7 @@ begin
  
  // here filter of pfHidden in flags
  
- {$if FPC_FULLVERSION > 030200}
+ {$if FPC_FULLVERSION > 030100}
   setlength(params1,0);
   for x:=0 to length(info.params) -1 do
  with info.params[x] do if not (pfHidden in flags) then
