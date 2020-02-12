@@ -5,8 +5,8 @@ object mainfo: tmainfo
   frame.grip_size = 10
   frame.grip_options = [go_fixsizebutton, go_floatbutton, go_topbutton, go_backgroundbutton, go_lockbutton, go_nolockbutton, go_buttonhints]
   visible = False
-  bounds_x = 740
-  bounds_y = 149
+  bounds_x = 441
+  bounds_y = 200
   bounds_cx = 459
   bounds_cy = 149
   container.optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousetransparent, ow_destroywidgets]
@@ -189,10 +189,13 @@ object mainfo: tmainfo
             action = actionsmo.print
           end        
           item
-            caption = 'E&xit'
-            state = [as_localcaption, as_localonexecute]
-            options = [mao_shortcutcaption, mao_asyncexecute]
+            caption = '&Quit'
+            state = [as_localcaption, as_localshortcut, as_localonexecute]
             onexecute = exitonexecute
+            sc = (
+              1
+              16465
+            )
           end>
         caption = '&File'
         name = 'file'
@@ -1537,9 +1540,6 @@ object mainfo: tmainfo
       'Source has changed, do you wish to remake project?'
       'Load Window Layout'
       'Docking Area'
-      '%s version'
-      'About %s'
-      'Host'
     )
     left = 256
     top = 64

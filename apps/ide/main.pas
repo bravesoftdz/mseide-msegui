@@ -104,10 +104,7 @@ type
   makeok,             //49 Make OK.
   str_sourcechanged,  //50 Source has changed, do you wish to remake project?
   str_loadwindowlayout,   //51 Load Window Layout
-  dockingarea,         //52 Docking Area
-  sc_version,          //53
-  sc_about,            //54
-  sc_host              //55
+  dockingarea         //52 Docking Area
  );
 
  filekindty = (fk_none,fk_source,fk_unit);
@@ -395,7 +392,7 @@ uses
  mseformdatatools,mseshapes,msefileutils,mseeditglob,
  findinfileform,formdesigner,sourceupdate,actionsmodule,programparametersform,
  objectinspector,msesysutils,cpuform,disassform,
- panelform2,watchpointsform,threadsform,targetconsole,
+ panelform,watchpointsform,threadsform,targetconsole,
  debuggerform,componentpaletteform,componentstore,
  messageform,msesettings,mseintegerenter,symbolform
  {$ifdef unix},mselibc {$endif}, //SIGRT*
@@ -2854,13 +2851,13 @@ end;
 
 procedure tmainfo.aboutonexecute(const sender: TObject);
 begin
- showmessage(StringReplace(c[ord(sc_version)],'%s','MSEide', [rfReplaceAll])+': '+versiontext+c_linefeed+
-             StringReplace(c[ord(sc_version)],'%s','MSEgui', [rfReplaceAll])+': '+mseguiversiontext+c_linefeed+
-             c[ord(sc_host)]+': '+ platformtext+ c_linefeed+
+ showmessage('MSEide version: '+versiontext+c_linefeed+
+             'MSEgui version: '+mseguiversiontext+c_linefeed+
+             'Host: '+ platformtext+ c_linefeed+
              c_linefeed+
              copyrighttext+c_linefeed+
              'by Martin Schreiber'
-             ,StringReplace(c[ord(sc_about)],'%s','MSEide', [rfReplaceAll]));
+             ,actionsmo.c[ord(ac_about)]+' MSEide');
 end;
 
 procedure tmainfo.configureexecute(const sender: TObject);
@@ -3032,7 +3029,7 @@ begin
  awriter.setsection('breakpoints');
  beginpanelplacement();
  try
-  panelform2.updatestat(awriter);
+  panelform.updatestat(awriter);
   awriter.setsection('layout');
   projectstatfile.updatestat('windowlayout',awriter);
  finally
@@ -3058,7 +3055,7 @@ begin
  beginpanelplacement();
  try
   areader.setsection('breakpoints');
-  panelform2.updatestat(areader);
+  panelform.updatestat(areader);
   areader.setsection('layout');
   projectstatfile.options:= projectstatfile.options + 
                                           [sfo_nodata,sfo_nooptions];
